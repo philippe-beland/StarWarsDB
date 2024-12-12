@@ -10,5 +10,5 @@ import Foundation
 class Droid: Codable, Identifiable, Observable {
     let ID: String
     var name: String
-    
+    var comments: String?
 }

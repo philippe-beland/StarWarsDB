@@ -10,5 +10,6 @@ import Foundation
 class Starship: Codable, Identifiable, Observable {
     let ID: String
     var name: String
-    
+    var model: StarshipModel?
+    var comments: String?
 }

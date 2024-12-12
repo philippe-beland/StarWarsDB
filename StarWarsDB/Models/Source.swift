@@ -38,9 +38,10 @@ class Source: Codable, Identifiable, Observable {
     var era: Era
     var sourceType: sourceType
     var publicationDate: Date
-    //var authors
-    //var artists
+    var authors: [Artist]
+    var artists: [Artist]
     var numberPages: Int?
     var isDone: Bool
     
+    var url: URL
 }

@@ -10,5 +10,8 @@ import Foundation
 class Creature: Codable, Identifiable, Observable {
     let ID: String
     var name: String
+    var homeworld: Planet?
+    
+    var url: URL
     
 }

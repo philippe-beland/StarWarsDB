@@ -10,5 +10,4 @@ import Foundation
 class Serie: Codable, Identifiable, Observable {
     let ID: String
     var name: String
-    
 }

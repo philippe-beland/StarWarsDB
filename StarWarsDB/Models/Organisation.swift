@@ -10,5 +10,5 @@ import Foundation
 class Organisation: Codable, Identifiable, Observable {
     let ID: String
     var name: String
-    
+    var comments: String?
 }
