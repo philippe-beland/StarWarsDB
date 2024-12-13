@@ -6,7 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4C1262392D0BBB0700855120 /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1262382D0BBB0700855120 /* Scraper.swift */; };
+		4C1262412D0BBB5E00855120 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 4C1262402D0BBB5E00855120 /* SwiftSoup */; };
+		4C882E272D0BBF7B00A3C0EB /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4C882E262D0BBF7B00A3C0EB /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		4C1262382D0BBB0700855120 /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
 		4C63D31D2CFAA5210058A423 /* StarWarsDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -23,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C882E272D0BBF7B00A3C0EB /* Supabase in Frameworks */,
+				4C1262412D0BBB5E00855120 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +41,9 @@
 		4C63D3142CFAA5210058A423 = {
 			isa = PBXGroup;
 			children = (
+				4C1262382D0BBB0700855120 /* Scraper.swift */,
 				4C63D31F2CFAA5210058A423 /* StarWarsDB */,
+				4C882E252D0BBF7B00A3C0EB /* Frameworks */,
 				4C63D31E2CFAA5210058A423 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,13 @@
 				4C63D31D2CFAA5210058A423 /* StarWarsDB.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4C882E252D0BBF7B00A3C0EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +83,8 @@
 			);
 			name = StarWarsDB;
 			packageProductDependencies = (
+				4C1262402D0BBB5E00855120 /* SwiftSoup */,
+				4C882E262D0BBF7B00A3C0EB /* Supabase */,
 			);
 			productName = StarWarsDB;
 			productReference = 4C63D31D2CFAA5210058A423 /* StarWarsDB.app */;
@@ -94,6 +114,10 @@
 			);
 			mainGroup = 4C63D3142CFAA5210058A423;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4C12623F2D0BBB5E00855120 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				4C882E242D0BBF6600A3C0EB /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4C63D31E2CFAA5210058A423 /* Products */;
 			projectDirPath = "";
@@ -119,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1262392D0BBB0700855120 /* Scraper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +349,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C12623F2D0BBB5E00855120 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.6;
+			};
+		};
+		4C882E242D0BBF6600A3C0EB /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C1262402D0BBB5E00855120 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C12623F2D0BBB5E00855120 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		4C882E262D0BBF7B00A3C0EB /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C882E242D0BBF6600A3C0EB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C63D3152CFAA5210058A423 /* Project object */;
 }

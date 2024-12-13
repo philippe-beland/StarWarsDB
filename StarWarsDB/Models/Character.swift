@@ -7,22 +7,28 @@
 
 import Foundation
 
-class Character: Codable, Identifiable, Observable {
-    let ID: String
+enum Sex: String, Codable {
+    case Male
+    case Female
+    case Other
+}
+
+class Character: DataNode, Record {
+    let id: String
     var name: String
-    var aliases: String
+    var aliases: [StringName]
     var species: Species?
     var homeworld: Planet?
-    var sex: String
-    var affiliation: [Organisation]
+    var sex: Sex
+    var affiliation: [Organization]
     var comments: String?
     var firstAppearance: String?
     var url: String
     
-    init(id: String, name: String, alias: String, species: Species?, homeworld: Planet?, sex: String, affiliation: [Organisation], comments: String?, firstAppearance: String?, url: String) {
-        self.ID = id
+    init(id: String, name: String, aliases: [StringName], species: Species?, homeworld: Planet?, sex: Sex, affiliation: [Organization], comments: String?, firstAppearance: String?, url: String) {
+        self.id = id
         self.name = name
-        self.aliases = alias
+        self.aliases = aliases
         self.species = species
         self.homeworld = homeworld
         self.sex = sex
@@ -30,7 +36,12 @@ class Character: Codable, Identifiable, Observable {
         self.comments = comments
         self.firstAppearance = firstAppearance
         self.url = url
+        
+        super.init(recordType: "Character", tableName: "characters", recordID: self.id)
+    }
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Character(id: "1", name: "Luke Skywalker", alias: "Red 5", species: .example, homeworld: .example, sex: "male", affiliation: [], comments: nil, firstAppearance: nil, url: "")
+    static let example = Character(id: "1", name: "Luke Skywalker", aliases: [StringName("Red 5"), StringName("Red 4"), StringName("Red 3"), StringName("Red 2")], species: .example, homeworld: .example, sex: .Male, affiliation: [Organization.example], comments: nil, firstAppearance: nil, url: "")
 }

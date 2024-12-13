@@ -7,13 +7,19 @@
 
 import Foundation
 
-class Arc: Codable, Identifiable, Observable {
-    let ID: String
+class Arc: DataNode, Record {
+    let id: String
     var name: String
     
     init(id: String, name: String) {
-        self.ID = id
+        self.id = id
         self.name = name
+        
+        super.init(recordType: "Arc", tableName: "arcs", recordID: self.id)
+    }
+    
+    required init(from decoder: any Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
     
     static let example = Arc(id: "1", name: "Battle for the Force")

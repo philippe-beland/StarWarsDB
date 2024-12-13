@@ -7,19 +7,24 @@
 
 import Foundation
 
-class Creature: Codable, Identifiable, Observable {
-    let ID: String
+class Creature: DataNode, Record {
+    let id: String
     var name: String
     var homeworld: Planet?
     
     var url: URL?
     
     init(id: String, name: String, homeworld: Planet?, url: URL?) {
-        self.ID = id
+        self.id = id
         self.name = name
         self.homeworld = homeworld
         self.url = url
         
+        super.init(recordType: "Creature", tableName: "creatures", recordID: self.id)
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
     
     static let example = Creature(id: "1", name: "Dianoga", homeworld: .example, url: nil)

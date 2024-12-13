@@ -1,5 +1,5 @@
 //
-//  Varia.swift
+//  Organization.swift
 //  StarWarsDB
 //
 //  Created by Philippe Beland on 2024-11-29.
@@ -7,25 +7,22 @@
 
 import Foundation
 
-class Varia: DataNode, Record {
+class Organization: DataNode, Record {
     let id: String
     var name: String
-    var url: String?
     var comments: String?
     
-    init(id: String, name: String, url: String?, comments: String?) {
+    init(id: String, name: String, comments: String?) {
         self.id = id
         self.name = name
-        self.url = url
         self.comments = comments
         
-        super.init(recordType: "Varia", tableName: "varias", recordID: self.id)
+        super.init(recordType: "Organization", tableName: "organizations", recordID: self.id)
     }
     
     required init(from decoder: Decoder) throws {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Varia(id: "1", name: "Sabacc", url: nil, comments: "Card Game")
-    
+    static let example = Organization(id: "1", name: "Alphabet Squadron", comments: "The best squadron ever")
 }
