@@ -22,13 +22,13 @@ struct EditSpeciesView: View {
                         SidePanelView(record: species, InfosSection: InfosSection)
                             .frame(width: 350)
                         Spacer()
-                        SourcesSection()
+                        //SourcesSection()
                     }
                 } else {
                     VStack {
                         SidePanelView(record: species, InfosSection: InfosSection)
                         Spacer()
-                        SourcesSection()
+                        //SourcesSection()
                     }
                 }
             }

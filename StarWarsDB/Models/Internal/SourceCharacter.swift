@@ -8,7 +8,7 @@
 import Foundation
 
 @Observable
-class SourceCharacter: DataNode, Equatable {
+class SourceCharacter: DataNode, Equatable, Identifiable {
     let id: UUID
     var source: Source
     var character: Character
@@ -27,7 +27,10 @@ class SourceCharacter: DataNode, Equatable {
         fatalError("init(from:) has not been implemented")
     }
     
+    static let example = SourceCharacter(source: .example, character: .example, appearance: .mentioned)
+    
     static func == (lhs: SourceCharacter, rhs: SourceCharacter) -> Bool {
         lhs.source == rhs.source && lhs.character == rhs.character
     }
+    
 }

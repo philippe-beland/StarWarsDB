@@ -12,6 +12,8 @@ struct EditCharacterView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.dismiss) var dismiss
     
+    @State private var sourceCharacters: [SourceCharacter] = [.example, .example, .example]
+    
     @State private var selectedOption: SourceType = .movies
     
     var body: some View {
@@ -24,13 +26,13 @@ struct EditCharacterView: View {
                         SidePanelView(record: character, InfosSection: InfosSection)
                             .frame(width: 350)
                         Spacer()
-                        SourcesSection()
+                        SourcesSection(sources: sourceCharacters)
                     }
                 } else {
                     VStack {
                         SidePanelView(record: character, InfosSection: InfosSection)
                         Spacer()
-                        SourcesSection()
+                        SourcesSection(sources: sourceCharacters)
                     }
                 }
             }
