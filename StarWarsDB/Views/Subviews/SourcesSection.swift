@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SourcesSection: View {
-    var sources: [SourceCharacter]
-    var groupedEras: [Era: [SourceCharacter]] {
-        Dictionary(grouping: sources, by: { $0.source.era })
+    var sourceItems: [any SourceItem]
+    var groupedEras: [Era: [any SourceItem]] {
+        Dictionary(grouping: sourceItems, by: { $0.source.era })
     }
     
     var body: some View {
@@ -24,8 +24,8 @@ struct SourcesSection: View {
                     ForEach(Era.allCases, id: \.self) { era in
                         if let items = groupedEras[era] {
                             Section(header: Text(era.rawValue)) {
-                                ForEach(items) { sourceCharacter in
-                                    SourceList(sourceCharacter: sourceCharacter)
+                                ForEach(items, id: \.id) { sourceItem in
+                                    SourceList(sourceItem: sourceItem)
                                 }
                             }
                         }
@@ -38,29 +38,29 @@ struct SourcesSection: View {
 }
                                         
 struct SourceList: View {
-    let sourceCharacter: SourceCharacter
+    let sourceItem: any SourceItem
     
     var body: some View {
         HStack {
-            UniverseYear(year: sourceCharacter.source.universeYear)
+            UniverseYear(year: sourceItem.source.universeYear)
                 .padding(10)
             VStack (alignment: .leading) {
-                Text(sourceCharacter.source.name)
-                Text(sourceCharacter.source.publicationDateString)
+                Text(sourceItem.source.name)
+                Text(sourceItem.source.publicationDateString)
                     .font(.caption)
             }
             .padding(10)
             
             VStack (alignment: .center) {
-                Text(sourceCharacter.source.serie?.name ?? "")
-                Text(sourceCharacter.source.number?.description ?? "")
+                Text(sourceItem.source.serie?.name ?? "")
+                Text(sourceItem.source.number?.description ?? "")
             }
             .font(.callout)
             .padding(10)
             
             Spacer()
 
-            AppearanceView(appearance: sourceCharacter.appearance.rawValue)
+            AppearanceView(appearance: sourceItem.appearance.rawValue)
         }
     }
 }
@@ -83,5 +83,5 @@ struct UniverseYear: View {
 }
 
 #Preview {
-    SourcesSection(sources: [.example])
+    SourcesSection(sourceItems: [SourceCharacter.example])
 }

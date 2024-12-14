@@ -26,13 +26,13 @@ struct EditCharacterView: View {
                         SidePanelView(record: character, InfosSection: InfosSection)
                             .frame(width: 350)
                         Spacer()
-                        SourcesSection(sources: sourceCharacters)
+                        SourcesSection(sourceItems: sourceCharacters)
                     }
                 } else {
                     VStack {
                         SidePanelView(record: character, InfosSection: InfosSection)
                         Spacer()
-                        SourcesSection(sources: sourceCharacters)
+                        SourcesSection(sourceItems: sourceCharacters)
                     }
                 }
             }

@@ -8,7 +8,7 @@
 import Foundation
 
 @Observable
-class SourceCharacter: DataNode, Equatable, Identifiable {
+class SourceCharacter: DataNode, Equatable, Identifiable, SourceItem {
     let id: UUID
     var source: Source
     var character: Character

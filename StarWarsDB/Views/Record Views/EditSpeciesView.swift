@@ -12,6 +12,8 @@ struct EditSpeciesView: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.dismiss) var dismiss
     
+    @State private var sourceSpecies: [SourceSpecies] = [.example, .example, .example]
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -22,13 +24,13 @@ struct EditSpeciesView: View {
                         SidePanelView(record: species, InfosSection: InfosSection)
                             .frame(width: 350)
                         Spacer()
-                        //SourcesSection()
+                        SourcesSection(sourceItems: sourceSpecies)
                     }
                 } else {
                     VStack {
                         SidePanelView(record: species, InfosSection: InfosSection)
                         Spacer()
-                        //SourcesSection()
+                        SourcesSection(sourceItems: sourceSpecies)
                     }
                 }
             }
