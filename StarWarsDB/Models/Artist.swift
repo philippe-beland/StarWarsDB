@@ -7,12 +7,13 @@
 
 import Foundation
 
+@Observable
 class Artist: DataNode, Record {
-    let id: String
+    let id: UUID
     var name: String
     
-    init(id: String, name: String) {
-        self.id = id
+    init(name: String) {
+        self.id = UUID()
         self.name = name
         
         super.init(recordType: "Artist", tableName: "artists", recordID: self.id)
@@ -22,6 +23,6 @@ class Artist: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Artist(id: "1", name: "Charles Soule")
+    static let example = Artist(name: "Charles Soule")
     
 }

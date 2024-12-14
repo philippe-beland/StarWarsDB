@@ -29,8 +29,9 @@ enum SourceType: String, Codable, CaseIterable {
     case referenceBook
 }
 
+@Observable
 class Source: DataNode, Record {
-    let id: String
+    let id: UUID
     var name: String
     var serie: Serie?
     var number: Int?
@@ -45,8 +46,8 @@ class Source: DataNode, Record {
     
     var url: URL
     
-    init(id: String, name: String, serie: Serie?, number: Int?, arc: Arc?, era: Era, sourceType: SourceType, publicationDate: Date, authors: [Artist], artists: [Artist], numberPages: Int?, isDone: Bool, url: URL) {
-        self.id = id
+    init(name: String, serie: Serie?, number: Int?, arc: Arc?, era: Era, sourceType: SourceType, publicationDate: Date, authors: [Artist], artists: [Artist], numberPages: Int?, isDone: Bool, url: URL) {
+        self.id = UUID()
         self.name = name
         self.serie = serie
         self.number = number
@@ -67,5 +68,5 @@ class Source: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Source(id: "1", name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), authors: [.example], artists: [.example], numberPages: 200, isDone: false, url: URL(string: "https://swapi.dev/api/films/1")!)
+    static let example = Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), authors: [.example], artists: [.example], numberPages: 200, isDone: false, url: URL(string: "https://swapi.dev/api/films/1")!)
 }

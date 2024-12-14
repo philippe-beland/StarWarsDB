@@ -7,15 +7,16 @@
 
 import Foundation
 
+@Observable
 class Creature: DataNode, Record {
-    let id: String
+    let id: UUID
     var name: String
     var homeworld: Planet?
     
     var url: URL?
     
-    init(id: String, name: String, homeworld: Planet?, url: URL?) {
-        self.id = id
+    init(name: String, homeworld: Planet?, url: URL?) {
+        self.id = UUID()
         self.name = name
         self.homeworld = homeworld
         self.url = url
@@ -27,6 +28,6 @@ class Creature: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Creature(id: "1", name: "Dianoga", homeworld: .example, url: nil)
+    static let example = Creature(name: "Dianoga", homeworld: .example, url: nil)
     
 }

@@ -7,13 +7,14 @@
 
 import Foundation
 
+@Observable
 class Organization: DataNode, Record {
-    let id: String
+    let id: UUID
     var name: String
     var comments: String?
     
-    init(id: String, name: String, comments: String?) {
-        self.id = id
+    init(name: String, comments: String?) {
+        self.id = UUID()
         self.name = name
         self.comments = comments
         
@@ -24,5 +25,5 @@ class Organization: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Organization(id: "1", name: "Alphabet Squadron", comments: "The best squadron ever")
+    static let example = Organization(name: "Alphabet Squadron", comments: "The best squadron ever")
 }

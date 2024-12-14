@@ -13,8 +13,9 @@ enum Sex: String, Codable {
     case Other
 }
 
+@Observable
 class Character: DataNode, Record {
-    let id: String
+    let id: UUID
     var name: String
     var aliases: [StringName]
     var species: Species?
@@ -25,8 +26,8 @@ class Character: DataNode, Record {
     var firstAppearance: String?
     var url: String
     
-    init(id: String, name: String, aliases: [StringName], species: Species?, homeworld: Planet?, sex: Sex, affiliation: [Organization], comments: String?, firstAppearance: String?, url: String) {
-        self.id = id
+    init(name: String, aliases: [StringName], species: Species?, homeworld: Planet?, sex: Sex, affiliation: [Organization], comments: String?, firstAppearance: String?, url: String) {
+        self.id = UUID()
         self.name = name
         self.aliases = aliases
         self.species = species
@@ -43,5 +44,5 @@ class Character: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Character(id: "1", name: "Luke Skywalker", aliases: [StringName("Red 5"), StringName("Red 4"), StringName("Red 3"), StringName("Red 2")], species: .example, homeworld: .example, sex: .Male, affiliation: [Organization.example], comments: nil, firstAppearance: nil, url: "")
+    static let example = Character(name: "Luke Skywalker", aliases: [StringName("Red 5"), StringName("Red 4"), StringName("Red 3"), StringName("Red 2")], species: .example, homeworld: .example, sex: .Male, affiliation: [Organization.example], comments: nil, firstAppearance: nil, url: "")
 }

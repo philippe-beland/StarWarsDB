@@ -7,14 +7,15 @@
 
 import Foundation
 
+@Observable
 class Varia: DataNode, Record {
-    let id: String
+    let id: UUID
     var name: String
     var url: String?
     var comments: String?
     
-    init(id: String, name: String, url: String?, comments: String?) {
-        self.id = id
+    init(name: String, url: String?, comments: String?) {
+        self.id = UUID()
         self.name = name
         self.url = url
         self.comments = comments
@@ -26,6 +27,6 @@ class Varia: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Varia(id: "1", name: "Sabacc", url: nil, comments: "Card Game")
+    static let example = Varia(name: "Sabacc", url: nil, comments: "Card Game")
     
 }

@@ -7,12 +7,12 @@
 
 import Foundation
 
-class DataNode: Codable, Identifiable, Observable {
+class DataNode: Codable {
     let recordType: String
     let tableName: String
-    let recordID: String
+    let recordID: UUID
     
-    init(recordType: String, tableName: String, recordID: String) {
+    init(recordType: String, tableName: String, recordID: UUID) {
         self.recordType = recordType
         self.tableName = tableName
         self.recordID = recordID
@@ -39,7 +39,7 @@ class DataNode: Codable, Identifiable, Observable {
                 try await supabase
                     .from(self.tableName)
                     .update(self)
-                    .eq("id", value: self.recordID)
+                    .eq("id", value: self.recordID.uuidString)
                     .execute()
                 
                 print("\(self.recordType) successfully updated.")
@@ -55,7 +55,7 @@ class DataNode: Codable, Identifiable, Observable {
                 try await supabase
                     .from(self.tableName)
                     .delete()
-                    .eq("id", value: self.recordID)
+                    .eq("id", value: self.recordID.uuidString)
                     .execute()
                 
                 print("\(self.recordType) successfully deleted.")
@@ -68,6 +68,6 @@ class DataNode: Codable, Identifiable, Observable {
 }
 
 protocol Record: Identifiable {
-    var id: String { get }
+    var id: UUID { get }
     var name: String { get set }
 }

@@ -7,8 +7,9 @@
 
 import Foundation
 
+@Observable
 class Species: DataNode, Record {
-    let id: String
+    let id: UUID
     var name: String
     var homeworld: Planet?
     var image: String?
@@ -17,8 +18,8 @@ class Species: DataNode, Record {
     
     var url: URL?
     
-    init(id: String, name: String, homeworld: Planet?, image: String?, firstAppearance: String?, comments: String?, url: URL?) {
-        self.id = id
+    init(name: String, homeworld: Planet?, image: String?, firstAppearance: String?, comments: String?, url: URL?) {
+        self.id = UUID()
         self.name = name
         self.homeworld = homeworld
         self.image = image
@@ -33,5 +34,5 @@ class Species: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Species(id: "1", name: "Twi'lek", homeworld: .example, image: nil, firstAppearance: nil, comments: "The best squadron ever", url: nil)
+    static let example = Species(name: "Twi'lek", homeworld: .example, image: nil, firstAppearance: nil, comments: "The best squadron ever", url: nil)
 }

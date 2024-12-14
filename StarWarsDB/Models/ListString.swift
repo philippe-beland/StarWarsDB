@@ -8,10 +8,11 @@
 import Foundation
 
 class StringName: Record {
-    let id: String = UUID().uuidString
+    let id: UUID
     var name: String
     
     init(_ name: String) {
+        self.id = UUID()
         self.name = name
     }
 }

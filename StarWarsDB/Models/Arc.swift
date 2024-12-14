@@ -7,12 +7,13 @@
 
 import Foundation
 
+@Observable
 class Arc: DataNode, Record {
-    let id: String
+    let id: UUID
     var name: String
     
-    init(id: String, name: String) {
-        self.id = id
+    init(name: String) {
+        self.id = UUID()
         self.name = name
         
         super.init(recordType: "Arc", tableName: "arcs", recordID: self.id)
@@ -22,6 +23,6 @@ class Arc: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Arc(id: "1", name: "Battle for the Force")
+    static let example = Arc(name: "Battle for the Force")
     
 }
