@@ -14,7 +14,7 @@ enum Sex: String, Codable {
 }
 
 @Observable
-class Character: DataNode, Record {
+class Character: DataNode, Record, Hashable {
     let id: UUID
     var name: String
     var aliases: [StringName]
@@ -22,11 +22,13 @@ class Character: DataNode, Record {
     var homeworld: Planet?
     var sex: Sex
     var affiliation: [Organization]
-    var comments: String?
+    var comments: String
     var firstAppearance: String?
-    var url: String
+    var url: String {
+        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    }
     
-    init(name: String, aliases: [StringName], species: Species?, homeworld: Planet?, sex: Sex, affiliation: [Organization], comments: String?, firstAppearance: String?, url: String) {
+    init(name: String, aliases: [StringName], species: Species?, homeworld: Planet?, sex: Sex, affiliation: [Organization], comments: String = "", firstAppearance: String?) {
         self.id = UUID()
         self.name = name
         self.aliases = aliases
@@ -36,7 +38,6 @@ class Character: DataNode, Record {
         self.affiliation = affiliation
         self.comments = comments
         self.firstAppearance = firstAppearance
-        self.url = url
         
         super.init(recordType: "Character", tableName: "characters", recordID: self.id)
     }
@@ -44,5 +45,14 @@ class Character: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Character(name: "Luke Skywalker", aliases: [StringName("Red 5"), StringName("Red 4"), StringName("Red 3"), StringName("Red 2")], species: .example, homeworld: .example, sex: .Male, affiliation: [Organization.example], comments: nil, firstAppearance: nil, url: "")
+    static let example = Character(name: "Luke Skywalker", aliases: [StringName("Red 5"), StringName("Red 4"), StringName("Red 3"), StringName("Red 2")], species: .example, homeworld: .example, sex: .Male, affiliation: [Organization.example], firstAppearance: nil)
+    
+    static func == (lhs: Character, rhs: Character) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(name)
+    }
 }

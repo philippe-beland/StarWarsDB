@@ -8,12 +8,15 @@
 import Foundation
 
 @Observable
-class Serie: DataNode, Record {
+class Serie: DataNode, Record, Hashable {
     let id: UUID
     var name: String
-    var comments: String?
+    var comments: String
+    var url: String {
+        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    }
     
-    init(name: String, comments: String?) {
+    init(name: String, comments: String = "") {
         self.id = UUID()
         self.name = name
         self.comments = comments
@@ -26,4 +29,13 @@ class Serie: DataNode, Record {
     }
     
     static let example = Serie(name: "Star Wars Rebels", comments: "Series about the adventures of Ghost Squadron")
+    
+    static func == (lhs: Serie, rhs: Serie) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(name)
+    }
 }

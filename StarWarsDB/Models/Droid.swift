@@ -8,12 +8,15 @@
 import Foundation
 
 @Observable
-class Droid: DataNode, Record {
+class Droid: DataNode, Record, Hashable {
     let id: UUID
     var name: String
-    var comments: String?
+    var comments: String
+    var url: String {
+        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    }
     
-    init(name: String, comments: String?) {
+    init(name: String, comments: String = "") {
         self.id = UUID()
         self.name = name
         self.comments = comments
@@ -26,4 +29,13 @@ class Droid: DataNode, Record {
     }
     
     static let example = Droid(name: "R2 astromech droid", comments: "Astromech droid with a high degree of mechanical aptitude.")
+    
+    static func == (lhs: Droid, rhs: Droid) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(name)
+    }
 }

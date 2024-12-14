@@ -8,16 +8,17 @@
 import Foundation
 
 @Observable
-class Varia: DataNode, Record {
+class Varia: DataNode, Record, Hashable {
     let id: UUID
     var name: String
-    var url: String?
-    var comments: String?
+    var comments: String
+    var url: String {
+        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    }
     
-    init(name: String, url: String?, comments: String?) {
+    init(name: String, comments: String = "") {
         self.id = UUID()
         self.name = name
-        self.url = url
         self.comments = comments
         
         super.init(recordType: "Varia", tableName: "varias", recordID: self.id)
@@ -27,6 +28,15 @@ class Varia: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Varia(name: "Sabacc", url: nil, comments: "Card Game")
+    static let example = Varia(name: "Sabacc", comments: "Card Game")
+    
+    static func == (lhs: Varia, rhs: Varia) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(name)
+    }
     
 }

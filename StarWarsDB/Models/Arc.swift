@@ -11,10 +11,12 @@ import Foundation
 class Arc: DataNode, Record {
     let id: UUID
     var name: String
+    var comments: String
     
-    init(name: String) {
+    init(name: String, comments: String = "") {
         self.id = UUID()
         self.name = name
+        self.comments = comments
         
         super.init(recordType: "Arc", tableName: "arcs", recordID: self.id)
     }

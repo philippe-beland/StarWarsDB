@@ -8,13 +8,15 @@
 import Foundation
 
 @Observable
-class Artist: DataNode, Record {
+class Artist: DataNode, Record, Hashable {
     let id: UUID
     var name: String
+    var comments: String
     
-    init(name: String) {
+    init(name: String, comments: String = "") {
         self.id = UUID()
         self.name = name
+        self.comments = comments
         
         super.init(recordType: "Artist", tableName: "artists", recordID: self.id)
     }
@@ -24,5 +26,14 @@ class Artist: DataNode, Record {
     }
     
     static let example = Artist(name: "Charles Soule")
+    
+    static func == (lhs: Artist, rhs: Artist) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(name)
+    }
     
 }

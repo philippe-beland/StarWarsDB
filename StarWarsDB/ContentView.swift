@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        EditCharacterView(character: .example)
+        TabView {
+            EditCharacterView(character: .example)
+                .tabItem {
+                    Label("Sources", systemImage: "star")
+                }
+            EditSpeciesView(species: .example)
+                .tabItem {
+                    Label("Records", systemImage: "star")
+                }
+        }
     }
 }
 

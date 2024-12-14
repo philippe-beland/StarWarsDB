@@ -30,7 +30,7 @@ enum SourceType: String, Codable, CaseIterable {
 }
 
 @Observable
-class Source: DataNode, Record {
+class Source: DataNode, Record, Hashable {
     let id: UUID
     var name: String
     var serie: Serie?
@@ -43,10 +43,13 @@ class Source: DataNode, Record {
     var artists: [Artist]
     var numberPages: Int?
     var isDone: Bool
+    var comments: String
     
-    var url: URL
+    var url: String {
+        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    }
     
-    init(name: String, serie: Serie?, number: Int?, arc: Arc?, era: Era, sourceType: SourceType, publicationDate: Date, authors: [Artist], artists: [Artist], numberPages: Int?, isDone: Bool, url: URL) {
+    init(name: String, serie: Serie?, number: Int?, arc: Arc?, era: Era, sourceType: SourceType, publicationDate: Date, authors: [Artist], artists: [Artist], numberPages: Int?, comments: String = "", isDone: Bool) {
         self.id = UUID()
         self.name = name
         self.serie = serie
@@ -58,8 +61,8 @@ class Source: DataNode, Record {
         self.authors = authors
         self.artists = artists
         self.numberPages = numberPages
+        self.comments = comments
         self.isDone = isDone
-        self.url = url
         
         super.init(recordType: "Source", tableName: "sources", recordID: self.id)
     }
@@ -68,5 +71,14 @@ class Source: DataNode, Record {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), authors: [.example], artists: [.example], numberPages: 200, isDone: false, url: URL(string: "https://swapi.dev/api/films/1")!)
+    static let example = Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), authors: [.example], artists: [.example], numberPages: 200, isDone: false)
+    
+    static func == (lhs: Source, rhs: Source) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(name)
+    }
 }

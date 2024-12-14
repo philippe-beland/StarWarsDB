@@ -6,3 +6,28 @@
 //
 
 import Foundation
+
+@Observable
+class SourceCharacter: DataNode, Equatable {
+    let id: UUID
+    var source: Source
+    var character: Character
+    var appearance: AppearanceType
+    
+    init(source: Source, character: Character, appearance: AppearanceType) {
+        self.id = UUID()
+        self.source = source
+        self.character = character
+        self.appearance = appearance
+        
+        super.init(recordType: "SourceCharacter", tableName: "source_character", recordID: self.id)
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
+    }
+    
+    static func == (lhs: SourceCharacter, rhs: SourceCharacter) -> Bool {
+        lhs.source == rhs.source && lhs.character == rhs.character
+    }
+}
