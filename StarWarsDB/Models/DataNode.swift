@@ -71,4 +71,5 @@ protocol Record: Identifiable {
     var id: UUID { get }
     var name: String { get set }
     var comments: String { get set }
+    var url: String { get }
 }

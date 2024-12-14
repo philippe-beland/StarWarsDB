@@ -22,7 +22,7 @@ struct FieldView: View {
     }
 }
 
-struct multiFieldView: View {
+struct MultiFieldView: View {
     var fieldName: String
     var infos: [any Record]
     
@@ -42,5 +42,5 @@ struct multiFieldView: View {
 
 #Preview {
     //FieldView(fieldName: "Name", info: "Luke Skywalker")
-    multiFieldView(fieldName: "Affiliation", infos: Character.example.affiliation)
+    MultiFieldView(fieldName: "Affiliation", infos: Character.example.affiliation)
 }

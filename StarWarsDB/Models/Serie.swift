@@ -28,7 +28,7 @@ class Serie: DataNode, Record, Hashable {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Serie(name: "Star Wars Rebels", comments: "Series about the adventures of Ghost Squadron")
+    static let example = Serie(name: "Rebels", comments: "Series about the adventures of Ghost Squadron")
     
     static func == (lhs: Serie, rhs: Serie) -> Bool {
         lhs.id == rhs.id

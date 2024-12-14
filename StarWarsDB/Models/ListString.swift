@@ -11,6 +11,9 @@ class StringName: Record {
     let id: UUID
     var name: String
     var comments: String
+    var url: String {
+        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    }
     
     init(_ name: String, comments: String = "") {
         self.id = UUID()

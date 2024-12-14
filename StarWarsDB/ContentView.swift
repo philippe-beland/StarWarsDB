@@ -15,7 +15,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Sources", systemImage: "star")
                 }
-            EditSpeciesView(species: .example)
+            ChooseRecordView()
                 .tabItem {
                     Label("Records", systemImage: "star")
                 }

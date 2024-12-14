@@ -11,14 +11,16 @@ import Foundation
 class StarshipModel: DataNode, Record, Hashable {
     let id: UUID
     var name: String
+    var firstAppearance: String?
     var comments: String
     var url: String {
         "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
     }
     
-    init(name: String, comments: String = "") {
+    init(name: String, firstAppearance: String?, comments: String = "") {
         self.id = UUID()
         self.name = name
+        self.firstAppearance = firstAppearance
         self.comments = comments
         
         super.init(recordType: "Starship Model", tableName: "starship_models", recordID: self.id)
@@ -28,7 +30,7 @@ class StarshipModel: DataNode, Record, Hashable {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = StarshipModel(name: "YT-1300", comments: "Best ship!")
+    static let example = StarshipModel(name: "YT-1300", firstAppearance: nil, comments: "Best ship!")
     
     static func == (lhs: StarshipModel, rhs: StarshipModel) -> Bool {
         lhs.id == rhs.id
