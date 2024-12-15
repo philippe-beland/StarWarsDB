@@ -1,0 +1,746 @@
+[
+    {
+        "Nom": "Destroyer Droid",
+        "id": 1
+    },
+    {
+        "Nom": "Pit Droid",
+        "id": 2
+    },
+    {
+        "Nom": "Tactical Droid (Head)",
+        "id": 3
+    },
+    {
+        "Nom": "Probe Droid",
+        "id": 4
+    },
+    {
+        "Nom": "Super Tactical Droid",
+        "id": 5
+    },
+    {
+        "Nom": "B1 Battle Droid",
+        "id": 6
+    },
+    {
+        "Nom": "B2 Super Battle Droid",
+        "id": 7
+    },
+    {
+        "Nom": "ASN-121",
+        "id": 8
+    },
+    {
+        "Nom": "Vulture Droid",
+        "id": 9
+    },
+    {
+        "Nom": "Arakyd Prower 1000",
+        "id": 10
+    },
+    {
+        "Nom": "FX-9 Surgical Assistant",
+        "id": 11
+    },
+    {
+        "Nom": "Tripedal Med Droid (DD-13)",
+        "id": 12
+    },
+    {
+        "Nom": "ME-8D9",
+        "id": 13
+    },
+    {
+        "Nom": "GA-97",
+        "id": 14
+    },
+    {
+        "Nom": "RA-3",
+        "id": 15
+    },
+    {
+        "Nom": "SE-2 (Droïde sur Lah'Mu)",
+        "id": 16
+    },
+    {
+        "Nom": "RZ Protocol Droid",
+        "id": 17
+    },
+    {
+        "Nom": "Viper Droid",
+        "id": 18
+    },
+    {
+        "Nom": "Gonk Droid",
+        "id": 19
+    },
+    {
+        "Nom": "LR-57",
+        "id": 20
+    },
+    {
+        "Nom": "Service Droid",
+        "id": 21
+    },
+    {
+        "Nom": "Security Droid",
+        "id": 22
+    },
+    {
+        "Nom": "First Order Sentry Droid",
+        "id": 23
+    },
+    {
+        "Nom": "Space Buoys",
+        "id": 24
+    },
+    {
+        "Nom": "B1 Battle Droid (Parts)",
+        "id": 25
+    },
+    {
+        "Nom": "Imperial Probe Droid",
+        "id": 26
+    },
+    {
+        "Nom": "Interrogator Droid",
+        "id": 27
+    },
+    {
+        "Nom": "Imperial Communication Droid",
+        "id": 28
+    },
+    {
+        "Nom": "Crab Droid",
+        "id": 29
+    },
+    {
+        "Nom": "Treadwell Droid",
+        "id": 30
+    },
+    {
+        "Nom": "Torture Droid",
+        "id": 31
+    },
+    {
+        "Nom": "Droid Eye",
+        "id": 32
+    },
+    {
+        "Nom": "Rocket Super Battle Droid",
+        "id": 33
+    },
+    {
+        "Nom": "2-1B Droid",
+        "id": 34
+    },
+    {
+        "Nom": "Separatist Probe Droid - Viper recon droid",
+        "id": 35
+    },
+    {
+        "Nom": "Dwarf Spider Droid",
+        "id": 36
+    },
+    {
+        "Nom": "Tactical Droid",
+        "id": 37
+    },
+    {
+        "Nom": "Astromech Dome",
+        "id": 38
+    },
+    {
+        "Nom": "Rabbit Droid",
+        "id": 39
+    },
+    {
+        "Nom": "Small Droid",
+        "id": 40
+    },
+    {
+        "Nom": "Hover Droid",
+        "id": 41
+    },
+    {
+        "Nom": "Viper Probe Droid",
+        "id": 42
+    },
+    {
+        "Nom": "Recon Probe Droid",
+        "id": 43
+    },
+    {
+        "Nom": "Commando Droid",
+        "id": 44
+    },
+    {
+        "Nom": "ID9 Seeker Droid",
+        "id": 45
+    },
+    {
+        "Nom": "3PO Units",
+        "id": 46
+    },
+    {
+        "Nom": "WA-2G",
+        "id": 47
+    },
+    {
+        "Nom": "RA-7 Droid",
+        "id": 48
+    },
+    {
+        "Nom": "KX-series Droids",
+        "id": 49
+    },
+    {
+        "Nom": "Ev-9d9",
+        "id": 50
+    },
+    {
+        "Nom": "Horse-like Droid Mount",
+        "id": 51
+    },
+    {
+        "Nom": "Imperial Torture Droid",
+        "Comments": "Désigné: IT-O torture droid",
+        "id": 52
+    },
+    {
+        "Nom": "Hyena Bomber",
+        "id": 53
+    },
+    {
+        "Nom": "Octopus Droid",
+        "id": 54
+    },
+    {
+        "Nom": "R5 Unit",
+        "id": 55
+    },
+    {
+        "Nom": "KX-Series Droid",
+        "id": 56
+    },
+    {
+        "Nom": "Foreman Droid",
+        "id": 57
+    },
+    {
+        "Nom": "Betty Droid",
+        "id": 58
+    },
+    {
+        "Nom": "Translator Droid",
+        "id": 59
+    },
+    {
+        "Nom": "Buzz Droid",
+        "id": 60
+    },
+    {
+        "Nom": "LeisureMech C5 Bartender droid",
+        "id": 61
+    },
+    {
+        "Nom": "Probes droids (small)",
+        "id": 62
+    },
+    {
+        "Nom": "Police Droid",
+        "id": 63
+    },
+    {
+        "Nom": "7th Sister Droid",
+        "id": 64
+    },
+    {
+        "Nom": "Seventh Sister Droid (Plusieurs)",
+        "id": 65
+    },
+    {
+        "Nom": "Dismantler Droid",
+        "id": 66
+    },
+    {
+        "Nom": "Maul Assassin Droid",
+        "id": 67
+    },
+    {
+        "Nom": "Rogue One Security Droid",
+        "id": 68
+    },
+    {
+        "Nom": "B1 Battle Droid (Head)",
+        "id": 69
+    },
+    {
+        "Nom": "SD-K4 Assassin Droid",
+        "id": 70
+    },
+    {
+        "Nom": "Assassin Probe Killer",
+        "id": 71
+    },
+    {
+        "Nom": "Imperial Infiltrator Droid EXD-9",
+        "id": 72
+    },
+    {
+        "Nom": "Cam Droids",
+        "id": 73
+    },
+    {
+        "Nom": "Imperial Assassin Droid",
+        "id": 74
+    },
+    {
+        "Nom": "Mining Guild Security Droid IG-RM",
+        "id": 75
+    },
+    {
+        "Nom": "ID10 Tactical Droid",
+        "id": 76
+    },
+    {
+        "Nom": "IG Droid",
+        "id": 77
+    },
+    {
+        "Nom": "T3 series?",
+        "id": 78
+    },
+    {
+        "Nom": "BB Unit",
+        "id": 79
+    },
+    {
+        "Nom": "Aqua-Droid",
+        "id": 80
+    },
+    {
+        "Nom": "First Order Probe Droid",
+        "id": 81
+    },
+    {
+        "Nom": "Waiter Droid",
+        "id": 82
+    },
+    {
+        "Nom": "IG-200 Droid",
+        "id": 83
+    },
+    {
+        "Nom": "EV-8D8 (Torture Droid)",
+        "id": 84
+    },
+    {
+        "Nom": "BD-3000",
+        "id": 85
+    },
+    {
+        "Nom": "Demolition Droid",
+        "id": 86
+    },
+    {
+        "Nom": "MSE-6 Droid",
+        "id": 87
+    },
+    {
+        "Nom": "CB Unit",
+        "id": 88
+    },
+    {
+        "Nom": "First Order Security Droid",
+        "id": 89
+    },
+    {
+        "Nom": "IG-86 Assassins Droids",
+        "id": 90
+    },
+    {
+        "Nom": "ASP-7 droid",
+        "id": 91
+    },
+    {
+        "Nom": "Candledroid",
+        "id": 92
+    },
+    {
+        "Nom": "Sith Probe Droid",
+        "id": 93
+    },
+    {
+        "Nom": "Mini-Droid",
+        "id": 94
+    },
+    {
+        "Nom": "Magna-Guard",
+        "id": 95
+    },
+    {
+        "Nom": "RA-3 Droid (Head)",
+        "id": 96
+    },
+    {
+        "Nom": "Hailfire Droid",
+        "id": 97
+    },
+    {
+        "Nom": "Homing Spider Droid",
+        "id": 98
+    },
+    {
+        "Nom": "BX-Commando Droid",
+        "id": 99
+    },
+    {
+        "Nom": "Training Droid",
+        "id": 100
+    },
+    {
+        "Nom": "First Order Mouse Droid",
+        "id": 101
+    },
+    {
+        "Nom": "Blastomech Droid",
+        "id": 102
+    },
+    {
+        "Nom": "D-Wing Security Droid",
+        "id": 103
+    },
+    {
+        "Nom": "Octuptarra Droid",
+        "id": 104
+    },
+    {
+        "Nom": "Astromech Droid",
+        "id": 105
+    },
+    {
+        "Nom": "Waitress Droid",
+        "id": 106
+    },
+    {
+        "Nom": "SE8 Waiter Droid",
+        "id": 107
+    },
+    {
+        "Nom": "MD-15C Medical Droid",
+        "id": 108
+    },
+    {
+        "Nom": "IG-RM Droid",
+        "id": 109
+    },
+    {
+        "Nom": "L-1g Droid",
+        "id": 110
+    },
+    {
+        "Nom": "Remote Droid",
+        "id": 111
+    },
+    {
+        "Nom": "Emperor's Messenger",
+        "id": 112
+    },
+    {
+        "Nom": "Hydroid medusa",
+        "Comments": "From the Karkarodon homeworld",
+        "id": 113
+    },
+    {
+        "Nom": "RX-series Droid",
+        "id": 114
+    },
+    {
+        "Nom": "Ratcatcher Droid",
+        "id": 115
+    },
+    {
+        "Nom": "Z7 series",
+        "id": 116
+    },
+    {
+        "Nom": "PO5",
+        "Comments": "Entertainment Unit",
+        "id": 117
+    },
+    {
+        "Nom": "KT8",
+        "Comments": "Cooking Unit",
+        "id": 118
+    },
+    {
+        "Nom": "FA-4 Pilot Droid",
+        "id": 119
+    },
+    {
+        "Nom": "C-21",
+        "id": 120
+    },
+    {
+        "Nom": "Silverfish droid",
+        "id": 121
+    },
+    {
+        "Nom": "Chroon-Tan B-Machine Midwifery Droid",
+        "id": 122
+    },
+    {
+        "Nom": "GG-Class Serving Droid",
+        "id": 123
+    },
+    {
+        "Nom": "Sniper Droid",
+        "id": 124
+    },
+    {
+        "Nom": "AP Droid",
+        "id": 125
+    },
+    {
+        "Nom": "Medical Droid",
+        "id": 126
+    },
+    {
+        "Nom": "Marwigo Waitress Droid",
+        "id": 127
+    },
+    {
+        "Nom": "Protocol Droid",
+        "id": 128
+    },
+    {
+        "Nom": "Droid Gunship",
+        "id": 129
+    },
+    {
+        "Nom": "HK-87 Hunter Droid",
+        "id": 130
+    },
+    {
+        "Nom": "Aut-0",
+        "id": 131
+    },
+    {
+        "Nom": "Forensic Droid",
+        "id": 132
+    },
+    {
+        "Nom": "Nano-Droid",
+        "id": 133
+    },
+    {
+        "Nom": "Republic Probe Droid",
+        "id": 134
+    },
+    {
+        "Nom": "Spider Droid",
+        "id": 135
+    },
+    {
+        "Nom": "Talker Droid",
+        "Comments": "Old Droid",
+        "id": 136
+    },
+    {
+        "Nom": "A3L-N Sentinal Droid",
+        "id": 137
+    },
+    {
+        "Nom": "Mouse Droid",
+        "id": 138
+    },
+    {
+        "Nom": "Nihil Scav Droid",
+        "id": 139
+    },
+    {
+        "Nom": "8-T Gardening Droid",
+        "id": 140
+    },
+    {
+        "Nom": "TT-8L Gatekeeper Droid",
+        "id": 141
+    },
+    {
+        "Nom": "Cooker Droid",
+        "id": 142
+    },
+    {
+        "Nom": "LEP Droid",
+        "id": 143
+    },
+    {
+        "Nom": "BD Droid",
+        "id": 144
+    },
+    {
+        "Nom": "Ant Droid",
+        "id": 145
+    },
+    {
+        "Nom": "Spokenek Droid",
+        "id": 146
+    },
+    {
+        "Comments": "",
+        "Nom": "1-1A Medical Droid",
+        "id": 147
+    },
+    {
+        "Comments": "",
+        "Nom": "HK Assassin Unit",
+        "id": 148
+    },
+    {
+        "Comments": "",
+        "Nom": "G2 droid",
+        "id": 149
+    },
+    {
+        "Comments": "",
+        "Nom": "New Republic Security Droid",
+        "id": 150
+    },
+    {
+        "Comments": "",
+        "Nom": "E-X Droid",
+        "id": 151
+    },
+    {
+        "Comments": "THe Republic had used them in their first push for the frontier a century or so before.",
+        "Nom": "Courier Droid",
+        "id": 152
+    },
+    {
+        "Comments": "",
+        "Nom": "PK-Ultra",
+        "id": 153
+    },
+    {
+        "Comments": "",
+        "Nom": "Pipa Bird",
+        "id": 154
+    },
+    {
+        "Comments": "",
+        "Nom": "Killdroid",
+        "id": 155
+    },
+    {
+        "Comments": "",
+        "Nom": "Blorp",
+        "id": 156
+    },
+    {
+        "Comments": "",
+        "Nom": "Id Droid",
+        "id": 157
+    },
+    {
+        "Comments": "",
+        "Nom": "GTAW-74 Wielder droid",
+        "id": 158
+    },
+    {
+        "Comments": "",
+        "Nom": "EGL-21 Power Droid",
+        "id": 159
+    },
+    {
+        "Comments": "",
+        "Nom": "Megadroid",
+        "id": 160
+    },
+    {
+        "Comments": "",
+        "Nom": "Enforcer Droid",
+        "id": 161
+    },
+    {
+        "Comments": "",
+        "Nom": "CCL Droid",
+        "id": 162
+    },
+    {
+        "Comments": "",
+        "Nom": "IW-37 Droid",
+        "id": 163
+    },
+    {
+        "Comments": "",
+        "Nom": "HV-7 Droid",
+        "id": 164
+    },
+    {
+        "Comments": "",
+        "Nom": "DT sentry Droid",
+        "id": 165
+    },
+    {
+        "Comments": "",
+        "Nom": "MV-33 Security Droid",
+        "id": 166
+    },
+    {
+        "Comments": "",
+        "Nom": "Roller Mine",
+        "id": 167
+    },
+    {
+        "Comments": "",
+        "Nom": "Scavenger Droid",
+        "id": 168
+    },
+    {
+        "Comments": "",
+        "Nom": "WA-7",
+        "id": 169
+    },
+    {
+        "Comments": "",
+        "Nom": "CZ-1 Tutor Droid",
+        "id": 170
+    },
+    {
+        "Comments": "",
+        "Nom": "JJH2 Astromech",
+        "id": 171
+    },
+    {
+        "Comments": "",
+        "Nom": "WED Repair Droid",
+        "id": 172
+    },
+    {
+        "Comments": "",
+        "Nom": "PAD droid",
+        "id": 173
+    },
+    {
+        "Comments": "",
+        "Nom": "DUM-Serie",
+        "id": 174
+    },
+    {
+        "Comments": "",
+        "Nom": "Warden Droid",
+        "id": 175
+    },
+    {
+        "Comments": "",
+        "Nom": "Mining Droidnaught",
+        "id": 176
+    },
+    {
+        "Comments": "",
+        "Nom": "MSE-6 Repair Droid",
+        "id": 177
+    }
+]
