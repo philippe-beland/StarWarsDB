@@ -22,6 +22,19 @@ struct FieldView: View {
     }
 }
 
+struct FieldVStack: View {
+    var fieldName: String
+    var info: String
+    
+    var body: some View {
+        VStack {
+            Text("\(fieldName):")
+                .bold()
+            Text(info)
+        }
+    }
+}
+
 struct MultiFieldView: View {
     var fieldName: String
     var infos: [any Record]
@@ -40,7 +53,24 @@ struct MultiFieldView: View {
     }
 }
 
+struct MultiFieldVStack: View {
+    var fieldName: String
+    var infos: [any Record]
+    
+    var body: some View {
+        VStack {
+            Text("\(fieldName):")
+                .bold()
+            ForEach(infos, id: \.id) { info in
+                Text(info.name)
+            }
+        }
+    }
+}
+
 #Preview {
-    //FieldView(fieldName: "Name", info: "Luke Skywalker")
+    FieldView(fieldName: "Name", info: "Luke Skywalker")
+    FieldVStack(fieldName: "Name", info: "Luke Skywalker")
     MultiFieldView(fieldName: "Affiliation", infos: Character.example.affiliation)
+    MultiFieldVStack(fieldName: "Affiliation", infos: Character.example.affiliation)
 }

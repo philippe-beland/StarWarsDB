@@ -11,7 +11,7 @@ struct EditStarshipModelView: View {
     @Bindable var starshipModel: StarshipModel
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceStarshipModels: [SourceStarshipModel] = [.example, .example, .example]
+    @State private var sourceStarshipModels: [SourceStarshipModel] = SourceStarshipModel.example
     
     var body: some View {
         NavigationStack {

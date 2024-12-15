@@ -11,7 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            EditCharacterView(character: .example)
+            EditSourceView(source: .example)
                 .tabItem {
                     Label("Sources", systemImage: "star")
                 }

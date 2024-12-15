@@ -11,13 +11,13 @@ import Foundation
 class SourceArtist: DataNode, Equatable, Identifiable, SourceItem {
     let id: UUID
     var source: Source
-    var artist: Artist
+    var entity: Artist
     var appearance: AppearanceType
     
-    init(source: Source, artist: Artist, appearance: AppearanceType) {
+    init(source: Source, entity: Artist, appearance: AppearanceType) {
         self.id = UUID()
         self.source = source
-        self.artist = artist
+        self.entity = entity
         self.appearance = appearance
         
         super.init(recordType: "SourceArtists", tableName: "source_artists", recordID: self.id)
@@ -27,9 +27,12 @@ class SourceArtist: DataNode, Equatable, Identifiable, SourceItem {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = SourceArtist(source: .example, artist: .example, appearance: .mentioned)
+    static let example = [
+        SourceArtist(source: .example, entity: .example, appearance: .mentioned),
+        SourceArtist(source: .example, entity: .example, appearance: .mentioned)
+    ]
     
     static func == (lhs: SourceArtist, rhs: SourceArtist) -> Bool {
-        lhs.source == rhs.source && lhs.artist == rhs.artist
+        lhs.source == rhs.source && lhs.entity == rhs.entity
     }
 }

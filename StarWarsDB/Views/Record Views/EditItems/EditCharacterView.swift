@@ -11,7 +11,7 @@ struct EditCharacterView: View {
     @Bindable var character: Character
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceCharacters: [SourceCharacter] = [.example, .example, .example]
+    @State private var sourceCharacters: [SourceCharacter] = SourceCharacter.example
     
     @State private var selectedOption: SourceType = .movies
     

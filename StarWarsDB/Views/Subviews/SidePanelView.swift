@@ -12,14 +12,10 @@ struct SidePanelView<RecordType: Record, Content: View>: View {
     var InfosSection: Content
     
     var body: some View {
-        VStack {
-            Spacer()
-            Form {
-                ImageView(title: record.name)
-                InfosSection
-                CommentsView(comments: record.comments)
-            }
-            Spacer()
+        Form {
+            ImageView(title: record.name)
+            InfosSection
+            CommentsView(comments: record.comments)
         }
     }
 }

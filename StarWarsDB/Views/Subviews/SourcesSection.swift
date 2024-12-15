@@ -9,24 +9,18 @@ import SwiftUI
 
 struct SourcesSection: View {
     var sourceItems: [any SourceItem]
-    var groupedEras: [Era: [any SourceItem]] {
+    private var groupedEras: [Era: [any SourceItem]] {
         Dictionary(grouping: sourceItems, by: { $0.source.era })
     }
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Appearances")
-                    .bold()
-                    .padding()
-                
-                List {
-                    ForEach(Era.allCases, id: \.self) { era in
-                        if let items = groupedEras[era] {
-                            Section(header: Text(era.rawValue)) {
-                                ForEach(items, id: \.id) { sourceItem in
-                                    SourceList(sourceItem: sourceItem)
-                                }
+            List {
+                ForEach(Era.allCases, id: \.self) { era in
+                    if let items = groupedEras[era] {
+                        Section(header: Text(era.rawValue)) {
+                            ForEach(items, id: \.id) { sourceItem in
+                                SourceList(sourceItem: sourceItem)
                             }
                         }
                     }
@@ -34,29 +28,30 @@ struct SourcesSection: View {
             }
         }
     }
-
 }
                                         
 struct SourceList: View {
     let sourceItem: any SourceItem
     
     var body: some View {
-        HStack {
+        HStack(spacing: 20) {
             UniverseYear(year: sourceItem.source.universeYear)
-                .padding(10)
             VStack (alignment: .leading) {
                 Text(sourceItem.source.name)
+                    .font(.headline)
                 Text(sourceItem.source.publicationDateString)
                     .font(.caption)
+                    .foregroundColor(.secondary)
             }
-            .padding(10)
+            Spacer()
             
-            VStack (alignment: .center) {
+            VStack (alignment: .center, spacing: 4) {
                 Text(sourceItem.source.serie?.name ?? "")
                 Text(sourceItem.source.number?.description ?? "")
+                    .foregroundColor(.secondary)
             }
             .font(.callout)
-            .padding(10)
+            .multilineTextAlignment(.center)
             
             Spacer()
 
@@ -83,5 +78,5 @@ struct UniverseYear: View {
 }
 
 #Preview {
-    SourcesSection(sourceItems: [SourceCharacter.example])
+    SourcesSection(sourceItems: SourceCharacter.example)
 }

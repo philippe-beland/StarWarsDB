@@ -11,13 +11,14 @@ struct EditArtistView: View {
     @Bindable var artist: Artist
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceArtists: [SourceArtist] = [.example, .example, .example]
+    @State private var sourceArtists: [SourceArtist] = SourceArtist.example
     
     var body: some View {
         NavigationStack {
-                RecordContentView(record: artist, sourceItems: sourceArtists, InfosSection: InfosSection)
-            }
+            RecordContentView(record: artist, sourceItems: sourceArtists, InfosSection: InfosSection)
         }
+    }
+    
     private var InfosSection: some View {
         Section("Infos") {
         }

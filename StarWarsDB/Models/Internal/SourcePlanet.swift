@@ -11,13 +11,13 @@ import Foundation
 class SourcePlanet: DataNode, Equatable, Identifiable, SourceItem {
     let id: UUID
     var source: Source
-    var planet: Planet
+    var entity: Planet
     var appearance: AppearanceType
     
-    init(source: Source, planet: Planet, appearance: AppearanceType) {
+    init(source: Source, entity: Planet, appearance: AppearanceType) {
         self.id = UUID()
         self.source = source
-        self.planet = planet
+        self.entity = entity
         self.appearance = appearance
         
         super.init(recordType: "SourcePlanets", tableName: "source_planets", recordID: self.id)
@@ -27,9 +27,17 @@ class SourcePlanet: DataNode, Equatable, Identifiable, SourceItem {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = SourcePlanet(source: .example, planet: .example, appearance: .mentioned)
+    static let example = [
+        SourcePlanet(source: .example, entity: .example, appearance: .mentioned),
+        SourcePlanet(source: .example, entity: .example, appearance: .mentioned),
+        SourcePlanet(source: .example, entity: .example, appearance: .mentioned),
+        SourcePlanet(source: .example, entity: .example, appearance: .mentioned),
+        SourcePlanet(source: .example, entity: .example, appearance: .mentioned),
+        SourcePlanet(source: .example, entity: .example, appearance: .mentioned),
+        SourcePlanet(source: .example, entity: .example, appearance: .mentioned),
+    ]
     
     static func == (lhs: SourcePlanet, rhs: SourcePlanet) -> Bool {
-        lhs.source == rhs.source && lhs.planet == rhs.planet
+        lhs.source == rhs.source && lhs.entity == rhs.entity
     }
 }

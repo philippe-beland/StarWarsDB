@@ -11,7 +11,7 @@ struct EditDroidView: View {
     @Bindable var droid: Droid
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceDroids: [SourceDroid] = [.example, .example, .example]
+    @State private var sourceDroids: [SourceDroid] = SourceDroid.example
     
     var body: some View {
         NavigationStack {

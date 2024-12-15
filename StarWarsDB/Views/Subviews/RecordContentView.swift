@@ -36,5 +36,5 @@ struct RecordContentView<RecordType: Record, Content: View>: View {
 }
 
 #Preview {
-    RecordContentView(record: Character.example, sourceItems: [SourceCharacter.example], InfosSection: Text(Character.example.name))
+    RecordContentView(record: Character.example, sourceItems: SourceCharacter.example, InfosSection: Text(Character.example.name))
 }

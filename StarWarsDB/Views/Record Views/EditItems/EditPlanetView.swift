@@ -11,7 +11,7 @@ struct EditPlanetView: View {
     @Bindable var planet: Planet
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourcePlanets: [SourcePlanet] = [.example, .example, .example]
+    @State private var sourcePlanets: [SourcePlanet] = SourcePlanet.example
     
     var body: some View {
         NavigationStack {

@@ -11,7 +11,7 @@ struct EditOrganizationView: View {
     @Bindable var organization: Organization
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceOrganizations: [SourceOrganization] = [.example, .example, .example]
+    @State private var sourceOrganizations: [SourceOrganization] = SourceOrganization.example
     
     var body: some View {
         NavigationStack {

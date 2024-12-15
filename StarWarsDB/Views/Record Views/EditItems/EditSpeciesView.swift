@@ -11,7 +11,7 @@ struct EditSpeciesView: View {
     @Bindable var species: Species
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceSpecies: [SourceSpecies] = [.example, .example, .example]
+    @State private var sourceSpecies: [SourceSpecies] = SourceSpecies.example
     
     var body: some View {
         NavigationStack {

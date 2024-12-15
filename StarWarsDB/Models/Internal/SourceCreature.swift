@@ -11,13 +11,13 @@ import Foundation
 class SourceCreature: DataNode, Equatable, Identifiable, SourceItem {
     let id: UUID
     var source: Source
-    var creature: Creature
+    var entity: Creature
     var appearance: AppearanceType
     
-    init(source: Source, creature: Creature, appearance: AppearanceType) {
+    init(source: Source, entity: Creature, appearance: AppearanceType) {
         self.id = UUID()
         self.source = source
-        self.creature = creature
+        self.entity = entity
         self.appearance = appearance
         
         super.init(recordType: "SourceCreatures", tableName: "source_creatures", recordID: self.id)
@@ -27,9 +27,16 @@ class SourceCreature: DataNode, Equatable, Identifiable, SourceItem {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = SourceCreature(source: .example, creature: .example, appearance: .mentioned)
+    static let example = [
+        SourceCreature(source: .example, entity: .example, appearance: .mentioned),
+        SourceCreature(source: .example, entity: .example, appearance: .mentioned),
+        SourceCreature(source: .example, entity: .example, appearance: .mentioned),
+        SourceCreature(source: .example, entity: .example, appearance: .mentioned),
+        SourceCreature(source: .example, entity: .example, appearance: .mentioned),
+        SourceCreature(source: .example, entity: .example, appearance: .mentioned),
+    ]
     
     static func == (lhs: SourceCreature, rhs: SourceCreature) -> Bool {
-        lhs.source == rhs.source && lhs.creature == rhs.creature
+        lhs.source == rhs.source && lhs.entity == rhs.entity
     }
 }

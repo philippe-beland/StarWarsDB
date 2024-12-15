@@ -11,13 +11,13 @@ import Foundation
 class SourceStarship: DataNode, Equatable, Identifiable, SourceItem {
     let id: UUID
     var source: Source
-    var starship: Starship
+    var entity: Starship
     var appearance: AppearanceType
     
-    init(source: Source, starship: Starship, appearance: AppearanceType) {
+    init(source: Source, entity: Starship, appearance: AppearanceType) {
         self.id = UUID()
         self.source = source
-        self.starship = starship
+        self.entity = entity
         self.appearance = appearance
         
         super.init(recordType: "SourceStarships", tableName: "source_starships", recordID: self.id)
@@ -27,9 +27,13 @@ class SourceStarship: DataNode, Equatable, Identifiable, SourceItem {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = SourceStarship(source: .example, starship: .example, appearance: .mentioned)
+    static let example = [
+        SourceStarship(source: .example, entity: .example, appearance: .mentioned),
+        SourceStarship(source: .example, entity: .example, appearance: .mentioned),
+        SourceStarship(source: .example, entity: .example, appearance: .mentioned),
+    ]
     
     static func == (lhs: SourceStarship, rhs: SourceStarship) -> Bool {
-        lhs.source == rhs.source && lhs.starship == rhs.starship
+        lhs.source == rhs.source && lhs.entity == rhs.entity
     }
 }

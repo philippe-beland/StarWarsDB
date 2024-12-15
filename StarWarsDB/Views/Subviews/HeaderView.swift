@@ -15,7 +15,7 @@ struct HeaderView: View {
         HStack {
             Spacer()
             Text(name)
-                .font(.title2.bold())
+                .font(.title.bold())
                 .padding()
 
             Button {
@@ -24,7 +24,7 @@ struct HeaderView: View {
                 Image("Site-logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 36, height: 36)
+                    .frame(width: 36, height: 36) // Similar size to SF Symbols
             }
             .buttonStyle(.plain)
             Spacer()

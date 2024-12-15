@@ -11,7 +11,7 @@ struct EditCreatureView: View {
     @Bindable var creature: Creature
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceCreatures: [SourceCreature] = [.example, .example, .example]
+    @State private var sourceCreatures: [SourceCreature] = SourceCreature.example
     
     var body: some View {
         NavigationStack {
