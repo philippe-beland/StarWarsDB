@@ -12,6647 +12,5697 @@
         "id": 2
     },
     {
-        "ID_Test": 2244,
         "Varia": 4,
         "Source": 260,
         "Appearances": "1",
         "id": 3
     },
     {
-        "ID_Test": 2245,
         "Varia": 5,
         "Source": 261,
         "Appearances": "1",
         "id": 4
     },
     {
-        "ID_Test": 2247,
         "Varia": 6,
         "Source": 6,
         "Appearances": "1",
         "id": 5
     },
     {
-        "ID_Test": 2248,
         "Varia": 7,
         "Source": 6,
         "Appearances": "2",
         "id": 6
     },
     {
-        "ID_Test": 2249,
         "Varia": 8,
         "Source": 6,
         "Appearances": "1",
         "id": 7
     },
     {
-        "ID_Test": 2250,
         "Varia": 9,
         "Source": 6,
         "Appearances": "1",
         "id": 8
     },
     {
-        "ID_Test": 2251,
         "Varia": 511,
         "Source": 8,
         "Appearances": "1",
         "id": 9
     },
     {
-        "ID_Test": 2252,
         "Varia": 11,
         "Source": 8,
         "Appearances": "1",
         "id": 10
     },
     {
-        "ID_Test": 2253,
         "Varia": 12,
         "Source": 8,
         "Appearances": "1",
         "id": 11
     },
     {
-        "ID_Test": 2254,
         "Varia": 13,
         "Source": 8,
         "Appearances": "1",
         "id": 12
     },
     {
-        "ID_Test": 2255,
         "Varia": 14,
         "Source": 9,
         "Appearances": "1",
         "id": 13
     },
     {
-        "ID_Test": 2256,
         "Varia": 15,
         "Source": 9,
         "Appearances": "1",
         "id": 14
     },
     {
-        "ID_Test": 2257,
         "Varia": 16,
         "Source": 9,
         "Appearances": "1",
         "id": 15
     },
     {
-        "ID_Test": 2258,
         "Varia": 17,
         "Source": 9,
         "Appearances": "1",
         "id": 16
     },
     {
-        "ID_Test": 2259,
         "Varia": 18,
         "Source": 9,
         "Appearances": "2",
         "id": 17
     },
     {
-        "ID_Test": 2260,
         "Varia": 19,
         "Source": 9,
         "Appearances": "1",
         "id": 18
     },
     {
-        "ID_Test": 2261,
         "Varia": 20,
         "Source": 9,
         "Appearances": "1",
         "id": 19
     },
     {
-        "ID_Test": 2262,
         "Varia": 8,
         "Source": 9,
         "Appearances": "1",
         "id": 20
     },
     {
-        "ID_Test": 2263,
         "Varia": 21,
         "Source": 9,
         "Appearances": "1",
         "id": 21
     },
     {
-        "ID_Test": 2264,
         "Varia": 22,
         "Source": 9,
         "Appearances": "1",
         "id": 22
     },
     {
-        "ID_Test": 2265,
         "Varia": 23,
         "Source": 9,
         "Appearances": "1",
         "id": 23
     },
     {
-        "ID_Test": 2266,
         "Varia": 24,
         "Source": 83,
         "Appearances": "1",
         "id": 24
     },
     {
-        "ID_Test": 2267,
         "Varia": 25,
         "Source": 83,
         "Appearances": "1",
         "id": 25
     },
     {
-        "ID_Test": 2268,
         "Varia": 26,
         "Source": 83,
         "Appearances": "1",
         "id": 26
     },
     {
-        "ID_Test": 2269,
         "Varia": 27,
         "Source": 97,
         "Appearances": "1",
         "id": 27
     },
     {
-        "ID_Test": 2270,
         "Varia": 28,
         "Source": 98,
         "Appearances": "1",
         "id": 28
     },
     {
-        "ID_Test": 2271,
         "Varia": 29,
         "Source": 98,
         "Appearances": "2",
         "id": 29
     },
     {
-        "ID_Test": 2272,
         "Varia": 30,
         "Source": 98,
         "Appearances": "2",
         "id": 30
     },
     {
-        "ID_Test": 2273,
         "Varia": 31,
         "Source": 98,
         "Appearances": "2",
         "id": 31
     },
     {
-        "ID_Test": 2274,
         "Varia": 32,
         "Source": 99,
         "Appearances": "2",
         "id": 32
     },
     {
-        "ID_Test": 2275,
         "Varia": 33,
         "Source": 99,
         "Appearances": "1",
         "id": 33
     },
     {
-        "ID_Test": 2276,
         "Varia": 214,
         "Source": 100,
         "Appearances": "1",
         "id": 34
     },
     {
-        "ID_Test": 2277,
         "Varia": 34,
         "Source": 101,
         "Appearances": "1",
         "id": 35
     },
     {
-        "ID_Test": 2278,
         "Varia": 35,
         "Source": 101,
         "Appearances": "1",
         "id": 36
     },
     {
-        "ID_Test": 2279,
         "Varia": 116,
         "Source": 101,
         "Appearances": "1",
         "id": 37
     },
     {
-        "ID_Test": 2280,
         "Varia": 36,
         "Source": 127,
         "Appearances": "1",
         "id": 38
     },
     {
-        "ID_Test": 2281,
         "Varia": 37,
         "Source": 178,
         "Appearances": "1",
         "id": 39
     },
     {
-        "ID_Test": 2282,
         "Varia": 215,
         "Source": 178,
         "Appearances": "1",
         "id": 40
     },
     {
-        "ID_Test": 2283,
         "Varia": 38,
         "Source": 178,
         "Appearances": "1",
         "id": 41
     },
     {
-        "ID_Test": 2284,
         "Varia": 32,
         "Source": 178,
         "Appearances": "1",
         "id": 42
     },
     {
-        "ID_Test": 2285,
         "Varia": 39,
         "Source": 178,
         "Appearances": "1",
         "id": 43
     },
     {
-        "ID_Test": 2286,
         "Varia": 40,
         "Source": 178,
         "Appearances": "1",
         "id": 44
     },
     {
-        "ID_Test": 2287,
         "Varia": 41,
         "Source": 178,
         "Appearances": "1",
         "id": 45
     },
     {
-        "ID_Test": 2288,
         "Varia": 42,
         "Source": 178,
         "Appearances": "1",
         "id": 46
     },
     {
-        "ID_Test": 2289,
         "Varia": 16,
         "Source": 179,
         "Appearances": "1",
         "id": 47
     },
     {
-        "ID_Test": 2290,
         "Varia": 32,
         "Source": 180,
         "Appearances": "1",
         "id": 48
     },
     {
-        "ID_Test": 2291,
         "Varia": 32,
         "Source": 181,
         "Appearances": "1",
         "id": 49
     },
     {
-        "ID_Test": 2292,
         "Varia": 43,
         "Source": 181,
         "Appearances": "1",
         "id": 50
     },
     {
-        "ID_Test": 2293,
         "Varia": 511,
         "Source": 185,
         "Appearances": "1",
         "id": 51
     },
     {
-        "ID_Test": 2294,
         "Varia": 11,
         "Source": 185,
         "Appearances": "1",
         "id": 52
     },
     {
-        "ID_Test": 2295,
         "Varia": 12,
         "Source": 185,
         "Appearances": "1",
         "id": 53
     },
     {
-        "ID_Test": 2296,
         "Varia": 44,
         "Source": 187,
         "Appearances": "1",
         "id": 54
     },
     {
-        "ID_Test": 2297,
         "Varia": 45,
         "Source": 190,
         "Appearances": "1",
         "id": 55
     },
     {
-        "ID_Test": 2298,
         "Varia": 46,
         "Source": 193,
         "Appearances": "1",
         "id": 56
     },
     {
-        "ID_Test": 2299,
         "Varia": 47,
         "Source": 196,
         "Appearances": "1",
         "id": 57
     },
     {
-        "ID_Test": 2300,
         "Varia": 48,
         "Source": 196,
         "Appearances": "1",
         "id": 58
     },
     {
-        "ID_Test": 2301,
         "Varia": 49,
         "Source": 199,
         "Appearances": "1",
         "id": 59
     },
     {
-        "ID_Test": 2302,
         "Varia": 50,
         "Source": 200,
         "Appearances": "1",
         "id": 60
     },
     {
-        "ID_Test": 2303,
         "Varia": 51,
         "Source": 200,
         "Appearances": "1",
         "id": 61
     },
     {
-        "ID_Test": 2304,
         "Varia": 52,
         "Source": 200,
         "Appearances": "1",
         "id": 62
     },
     {
-        "ID_Test": 2305,
         "Varia": 21,
         "Source": 201,
         "Appearances": "1",
         "id": 63
     },
     {
-        "ID_Test": 2306,
         "Varia": 20,
         "Source": 201,
         "Appearances": "1",
         "id": 64
     },
     {
-        "ID_Test": 2307,
         "Varia": 53,
         "Source": 201,
         "Appearances": "1",
         "id": 65
     },
     {
-        "ID_Test": 2308,
         "Varia": 54,
         "Source": 201,
         "Appearances": "1",
         "id": 66
     },
     {
-        "ID_Test": 2309,
         "Varia": 17,
         "Source": 201,
         "Appearances": "1",
         "id": 67
     },
     {
-        "ID_Test": 2310,
         "Varia": 16,
         "Source": 201,
         "Appearances": "1",
         "id": 68
     },
     {
-        "ID_Test": 2311,
         "Varia": 55,
         "Source": 202,
         "Appearances": "1",
         "id": 69
     },
     {
-        "ID_Test": 2312,
         "Varia": 56,
         "Source": 202,
         "Appearances": "1",
         "id": 70
     },
     {
-        "ID_Test": 2313,
         "Varia": 57,
         "Source": 204,
         "Appearances": "1",
         "id": 71
     },
     {
-        "ID_Test": 2314,
         "Varia": 58,
         "Source": 213,
         "Appearances": "1",
         "id": 72
     },
     {
-        "ID_Test": 2315,
         "Varia": 217,
         "Source": 214,
         "Appearances": "1",
         "id": 73
     },
     {
-        "ID_Test": 2316,
         "Varia": 59,
         "Source": 215,
         "Appearances": "1",
         "id": 74
     },
     {
-        "ID_Test": 2317,
         "Varia": 60,
         "Source": 220,
         "Appearances": "1",
         "id": 75
     },
     {
-        "ID_Test": 2318,
         "Varia": 219,
         "Source": 221,
         "Appearances": "1",
         "id": 76
     },
     {
-        "ID_Test": 2319,
         "Varia": 61,
         "Source": 222,
         "Appearances": "1",
         "id": 77
     },
     {
-        "ID_Test": 2320,
         "Varia": 62,
         "Source": 223,
         "Appearances": "1",
         "id": 78
     },
     {
-        "ID_Test": 2321,
         "Varia": 63,
         "Source": 223,
         "Appearances": "1",
         "id": 79
     },
     {
-        "ID_Test": 2322,
         "Varia": 64,
         "Source": 223,
         "Appearances": "2",
         "id": 80
     },
     {
-        "ID_Test": 2323,
         "Varia": 18,
         "Source": 223,
         "Appearances": "1",
         "id": 81
     },
     {
-        "ID_Test": 2324,
         "Varia": 65,
         "Source": 223,
         "Appearances": "1",
         "id": 82
     },
     {
-        "ID_Test": 2325,
         "Varia": 66,
         "Source": 223,
         "Appearances": "1",
         "id": 83
     },
     {
-        "ID_Test": 2326,
         "Varia": 67,
         "Source": 223,
         "Appearances": "2",
         "id": 84
     },
     {
-        "ID_Test": 2327,
         "Varia": 68,
         "Source": 223,
         "Appearances": "1",
         "id": 85
     },
     {
-        "ID_Test": 2328,
         "Varia": 16,
         "Source": 223,
         "Appearances": "2",
         "id": 86
     },
     {
-        "ID_Test": 2329,
         "Varia": 69,
         "Source": 223,
         "Appearances": "2",
         "id": 87
     },
     {
-        "ID_Test": 2330,
         "Varia": 70,
         "Source": 223,
         "Appearances": "1",
         "id": 88
     },
     {
-        "ID_Test": 2331,
         "Varia": 71,
         "Source": 230,
         "Appearances": "1",
         "id": 89
     },
     {
-        "ID_Test": 2332,
         "Varia": 216,
         "Source": 230,
         "Appearances": "1",
         "id": 90
     },
     {
-        "ID_Test": 2334,
         "Varia": 64,
         "Source": 233,
         "Appearances": "1",
         "id": 91
     },
     {
-        "ID_Test": 2335,
         "Varia": 72,
         "Source": 233,
         "Appearances": "1",
         "id": 92
     },
     {
-        "ID_Test": 2336,
         "Varia": 73,
         "Source": 233,
         "Appearances": "1",
         "id": 93
     },
     {
-        "ID_Test": 2337,
         "Varia": 74,
         "Source": 233,
         "Appearances": "1",
         "id": 94
     },
     {
-        "ID_Test": 2338,
         "Varia": 75,
         "Source": 234,
         "Appearances": "1",
         "id": 95
     },
     {
-        "ID_Test": 2339,
         "Varia": 76,
         "Source": 234,
         "Appearances": "1",
         "id": 96
     },
     {
-        "ID_Test": 2340,
         "Varia": 77,
         "Source": 235,
         "Appearances": "1",
         "id": 97
     },
     {
-        "ID_Test": 2341,
         "Varia": 213,
         "Source": 235,
         "Appearances": "1",
         "id": 98
     },
     {
-        "ID_Test": 2342,
         "Varia": 78,
         "Source": 235,
         "Appearances": "1",
         "id": 99
     },
     {
-        "ID_Test": 2343,
         "Varia": 79,
         "Source": 238,
         "Appearances": "1",
         "id": 100
     },
     {
-        "ID_Test": 2344,
         "Varia": 80,
         "Source": 238,
         "Appearances": "1",
         "id": 101
     },
     {
-        "ID_Test": 2345,
         "Varia": 81,
         "Source": 238,
         "Appearances": "1",
         "id": 102
     },
     {
-        "ID_Test": 2346,
         "Varia": 70,
         "Source": 238,
         "Appearances": "1",
         "id": 103
     },
     {
-        "ID_Test": 2347,
         "Varia": 82,
         "Source": 238,
         "Appearances": "1",
         "id": 104
     },
     {
-        "ID_Test": 2348,
         "Varia": 83,
         "Source": 238,
         "Appearances": "1",
         "id": 105
     },
     {
-        "ID_Test": 2349,
         "Varia": 84,
         "Source": 238,
         "Appearances": "1",
         "id": 106
     },
     {
-        "ID_Test": 2350,
         "Varia": 85,
         "Source": 238,
         "Appearances": "1",
         "id": 107
     },
     {
-        "ID_Test": 2351,
         "Varia": 86,
         "Source": 238,
         "Appearances": "1",
         "id": 108
     },
     {
-        "ID_Test": 2352,
         "Varia": 87,
         "Source": 238,
         "Appearances": "1",
         "id": 109
     },
     {
-        "ID_Test": 2353,
         "Varia": 88,
         "Source": 238,
         "Appearances": "1",
         "id": 110
     },
     {
-        "ID_Test": 2354,
         "Varia": 89,
         "Source": 238,
         "Appearances": "1",
         "id": 111
     },
     {
-        "ID_Test": 2355,
         "Varia": 90,
         "Source": 238,
         "Appearances": "1",
         "id": 112
     },
     {
-        "ID_Test": 2356,
         "Varia": 87,
         "Source": 238,
         "Appearances": "1",
         "id": 113
     },
     {
-        "ID_Test": 2357,
         "Varia": 8,
         "Source": 239,
         "Appearances": "1",
         "id": 114
     },
     {
-        "ID_Test": 2358,
         "Varia": 91,
         "Source": 242,
         "Appearances": "1",
         "id": 115
     },
     {
-        "ID_Test": 2359,
         "Varia": 92,
         "Source": 243,
         "Appearances": "1",
         "id": 116
     },
     {
-        "ID_Test": 2360,
         "Varia": 93,
         "Source": 244,
         "Appearances": "1",
         "id": 117
     },
     {
-        "ID_Test": 2361,
         "Varia": 94,
         "Source": 244,
         "Appearances": "1",
         "id": 118
     },
     {
-        "ID_Test": 2362,
         "Varia": 95,
         "Source": 246,
         "Appearances": "1",
         "id": 119
     },
     {
-        "ID_Test": 2363,
         "Varia": 218,
         "Source": 247,
         "Appearances": "1",
         "id": 120
     },
     {
-        "ID_Test": 2364,
         "Varia": 96,
         "Source": 248,
         "Appearances": "1",
         "id": 121
     },
     {
-        "ID_Test": 2365,
         "Varia": 97,
         "Source": 250,
         "Appearances": "1",
         "id": 122
     },
     {
-        "ID_Test": 2366,
         "Varia": 98,
         "Source": 253,
         "Appearances": "1",
         "id": 123
     },
     {
-        "ID_Test": 2367,
         "Varia": 99,
         "Source": 253,
         "Appearances": "1",
         "id": 124
     },
     {
-        "ID_Test": 2368,
         "Varia": 100,
         "Source": 253,
         "Appearances": "1",
         "id": 125
     },
     {
-        "ID_Test": 2369,
         "Varia": 54,
         "Source": 253,
         "Appearances": "1",
         "id": 126
     },
     {
-        "ID_Test": 2370,
         "Varia": 108,
         "Source": 253,
         "Appearances": "2",
         "id": 127
     },
     {
-        "ID_Test": 2371,
         "Varia": 101,
         "Source": 254,
         "Appearances": "1",
         "id": 128
     },
     {
-        "ID_Test": 2372,
         "Varia": 102,
         "Source": 254,
         "Appearances": "1",
         "id": 129
     },
     {
-        "ID_Test": 2373,
         "Varia": 212,
         "Source": 254,
         "Appearances": "1",
         "id": 130
     },
     {
-        "ID_Test": 2374,
         "Varia": 16,
         "Source": 254,
         "Appearances": "1",
         "id": 131
     },
     {
-        "ID_Test": 2375,
         "Varia": 103,
         "Source": 254,
         "Appearances": "1",
         "id": 132
     },
     {
-        "ID_Test": 2376,
         "Varia": 62,
         "Source": 254,
         "Appearances": "1",
         "id": 133
     },
     {
-        "ID_Test": 2377,
         "Varia": 104,
         "Source": 254,
         "Appearances": "1",
         "id": 134
     },
     {
-        "ID_Test": 2378,
         "Varia": 105,
         "Source": 254,
         "Appearances": "1",
         "id": 135
     },
     {
-        "ID_Test": 2379,
         "Varia": 106,
         "Source": 254,
         "Appearances": "1",
         "id": 136
     },
     {
-        "ID_Test": 2380,
         "Varia": 54,
         "Source": 255,
         "Appearances": "1",
         "id": 137
     },
     {
-        "ID_Test": 2381,
         "Varia": 93,
         "Source": 255,
         "Appearances": "2",
         "id": 138
     },
     {
-        "ID_Test": 2382,
         "Varia": 107,
         "Source": 255,
         "Appearances": "2",
         "id": 139
     },
     {
-        "ID_Test": 2383,
         "Varia": 54,
         "Source": 256,
         "Appearances": "1",
         "id": 140
     },
     {
-        "ID_Test": 2384,
         "Varia": 108,
         "Source": 256,
         "Appearances": "1",
         "id": 141
     },
     {
-        "ID_Test": 2385,
         "Varia": 83,
         "Source": 257,
         "Appearances": "1",
         "id": 142
     },
     {
-        "ID_Test": 2386,
         "Varia": 46,
         "Source": 257,
         "Appearances": "1",
         "id": 143
     },
     {
-        "ID_Test": 2387,
         "Varia": 109,
         "Source": 258,
         "Appearances": "1",
         "id": 144
     },
     {
-        "ID_Test": 2388,
         "Varia": 110,
         "Source": 258,
         "Appearances": "1",
         "id": 145
     },
     {
-        "ID_Test": 2389,
         "Varia": 111,
         "Source": 258,
         "Appearances": "1",
         "id": 146
     },
     {
-        "ID_Test": 2390,
         "Varia": 112,
         "Source": 258,
         "Appearances": "1",
         "id": 147
     },
     {
-        "ID_Test": 2391,
         "Varia": 80,
         "Source": 258,
         "Appearances": "1",
         "id": 148
     },
     {
-        "ID_Test": 2392,
         "Varia": 113,
         "Source": 258,
         "Appearances": "1",
         "id": 149
     },
     {
-        "ID_Test": 2393,
         "Varia": 114,
         "Source": 258,
         "Appearances": "1",
         "id": 150
     },
     {
-        "ID_Test": 2394,
         "Varia": 115,
         "Source": 258,
         "Appearances": "1",
         "id": 151
     },
     {
-        "ID_Test": 2395,
         "Varia": 116,
         "Source": 258,
         "Appearances": "1",
         "id": 152
     },
     {
-        "ID_Test": 2396,
         "Varia": 117,
         "Source": 258,
         "Appearances": "1",
         "id": 153
     },
     {
-        "ID_Test": 2397,
         "Varia": 118,
         "Source": 258,
         "Appearances": "1",
         "id": 154
     },
     {
-        "ID_Test": 2398,
         "Varia": 119,
         "Source": 258,
         "Appearances": "1",
         "id": 155
     },
     {
-        "ID_Test": 2399,
         "Varia": 120,
         "Source": 258,
         "Appearances": "1",
         "id": 156
     },
     {
-        "ID_Test": 2400,
         "Varia": 29,
         "Source": 258,
         "Appearances": "1",
         "id": 157
     },
     {
-        "ID_Test": 2401,
         "Varia": 121,
         "Source": 258,
         "Appearances": "1",
         "id": 158
     },
     {
-        "ID_Test": 2402,
         "Varia": 70,
         "Source": 258,
         "Appearances": "1",
         "id": 159
     },
     {
-        "ID_Test": 2403,
         "Varia": 122,
         "Source": 258,
         "Appearances": "1",
         "id": 160
     },
     {
-        "ID_Test": 2404,
         "Varia": 123,
         "Source": 258,
         "Appearances": "1",
         "id": 161
     },
     {
-        "ID_Test": 2405,
         "Varia": 124,
         "Source": 258,
         "Appearances": "1",
         "id": 162
     },
     {
-        "ID_Test": 2406,
         "Varia": 132,
         "Source": 258,
         "Appearances": "1",
         "id": 163
     },
     {
-        "ID_Test": 2407,
         "Varia": 125,
         "Source": 258,
         "Appearances": "1",
         "id": 164
     },
     {
-        "ID_Test": 2408,
         "Varia": 126,
         "Source": 258,
         "Appearances": "1",
         "id": 165
     },
     {
-        "ID_Test": 2409,
         "Varia": 127,
         "Source": 258,
         "Appearances": "1",
         "id": 166
     },
     {
-        "ID_Test": 2410,
         "Varia": 128,
         "Source": 258,
         "Appearances": "2",
         "id": 167
     },
     {
-        "ID_Test": 2411,
         "Varia": 129,
         "Source": 258,
         "Appearances": "1",
         "id": 168
     },
     {
-        "ID_Test": 2412,
         "Varia": 130,
         "Source": 258,
         "Appearances": "1",
         "id": 169
     },
     {
-        "ID_Test": 2413,
         "Varia": 131,
         "Source": 259,
         "Appearances": "1",
         "id": 170
     },
     {
-        "ID_Test": 2414,
         "Varia": 17,
         "Source": 268,
         "Appearances": "1",
         "id": 171
     },
     {
-        "ID_Test": 2415,
         "Varia": 132,
         "Source": 269,
         "Appearances": "1",
         "id": 172
     },
     {
-        "ID_Test": 2416,
         "Varia": 133,
         "Source": 269,
         "Appearances": "1",
         "id": 173
     },
     {
-        "ID_Test": 2417,
         "Varia": 134,
         "Source": 269,
         "Appearances": "1",
         "id": 174
     },
     {
-        "ID_Test": 2418,
         "Varia": 135,
         "Source": 270,
         "Appearances": "1",
         "id": 175
     },
     {
-        "ID_Test": 2419,
         "Varia": 136,
         "Source": 270,
         "Appearances": "1",
         "id": 176
     },
     {
-        "ID_Test": 2420,
         "Varia": 136,
         "Source": 271,
         "Appearances": "1",
         "id": 177
     },
     {
-        "ID_Test": 2421,
         "Varia": 137,
         "Source": 271,
         "Appearances": "1",
         "id": 178
     },
     {
-        "ID_Test": 2422,
         "Varia": 108,
         "Source": 272,
         "Appearances": "1",
         "id": 179
     },
     {
-        "ID_Test": 2423,
         "Varia": 54,
         "Source": 272,
         "Appearances": "1",
         "id": 180
     },
     {
-        "ID_Test": 2424,
         "Varia": 131,
         "Source": 272,
         "Appearances": "1",
         "id": 181
     },
     {
-        "ID_Test": 2425,
         "Varia": 138,
         "Source": 272,
         "Appearances": "1",
         "id": 182
     },
     {
-        "ID_Test": 2426,
         "Varia": 3,
         "Source": 273,
         "Appearances": "1",
         "id": 183
     },
     {
-        "ID_Test": 2427,
         "Varia": 2,
         "Source": 273,
         "Appearances": "1",
         "id": 184
     },
     {
-        "ID_Test": 2428,
         "Varia": 37,
         "Source": 274,
         "Appearances": "2",
         "id": 185
     },
     {
-        "ID_Test": 2429,
         "Varia": 131,
         "Source": 276,
         "Appearances": "1",
         "id": 186
     },
     {
-        "ID_Test": 2430,
         "Varia": 139,
         "Source": 276,
         "Appearances": "1",
         "id": 187
     },
     {
-        "ID_Test": 2431,
         "Varia": 131,
         "Source": 277,
         "Appearances": "1",
         "id": 188
     },
     {
-        "ID_Test": 2432,
         "Varia": 140,
         "Source": 277,
         "Appearances": "1",
         "id": 189
     },
     {
-        "ID_Test": 2433,
         "Varia": 141,
         "Source": 279,
         "Appearances": "1",
         "id": 190
     },
     {
-        "ID_Test": 2434,
         "Varia": 142,
         "Source": 279,
         "Appearances": "1",
         "id": 191
     },
     {
-        "ID_Test": 2435,
         "Varia": 128,
         "Source": 279,
         "Appearances": "1",
         "id": 192
     },
     {
-        "ID_Test": 2436,
         "Varia": 109,
         "Source": 280,
         "Appearances": "1",
         "id": 193
     },
     {
-        "ID_Test": 2437,
         "Varia": 143,
         "Source": 280,
         "Appearances": "1",
         "id": 194
     },
     {
-        "ID_Test": 2438,
         "Varia": 8,
         "Source": 281,
         "Appearances": "1",
         "id": 195
     },
     {
-        "ID_Test": 2439,
         "Varia": 144,
         "Source": 281,
         "Appearances": "1",
         "id": 196
     },
     {
-        "ID_Test": 2440,
         "Varia": 108,
         "Source": 282,
         "Appearances": "1",
         "id": 197
     },
     {
-        "ID_Test": 2441,
         "Varia": 54,
         "Source": 282,
         "Appearances": "1",
         "id": 198
     },
     {
-        "ID_Test": 2442,
         "Varia": 131,
         "Source": 284,
         "Appearances": "1",
         "id": 199
     },
     {
-        "ID_Test": 2443,
         "Varia": 145,
         "Source": 284,
         "Appearances": "1",
         "id": 200
     },
     {
-        "ID_Test": 2444,
         "Varia": 146,
         "Source": 284,
         "Appearances": "1",
         "id": 201
     },
     {
-        "ID_Test": 2445,
         "Varia": 147,
         "Source": 284,
         "Appearances": "1",
         "id": 202
     },
     {
-        "ID_Test": 2446,
         "Varia": 32,
         "Source": 285,
         "Appearances": "1",
         "id": 203
     },
     {
-        "ID_Test": 2447,
         "Varia": 148,
         "Source": 287,
         "Appearances": "2",
         "id": 204
     },
     {
-        "ID_Test": 2448,
         "Varia": 128,
         "Source": 294,
         "Appearances": "1",
         "id": 205
     },
     {
-        "ID_Test": 2449,
         "Varia": 149,
         "Source": 294,
         "Appearances": "1",
         "id": 206
     },
     {
-        "ID_Test": 2450,
         "Varia": 150,
         "Source": 294,
         "Appearances": "1",
         "id": 207
     },
     {
-        "ID_Test": 2451,
         "Varia": 46,
         "Source": 295,
         "Appearances": "1",
         "id": 208
     },
     {
-        "ID_Test": 2452,
         "Varia": 151,
         "Source": 297,
         "Appearances": "1",
         "id": 209
     },
     {
-        "ID_Test": 2453,
         "Varia": 152,
         "Source": 298,
         "Appearances": "1",
         "id": 210
     },
     {
-        "ID_Test": 2454,
         "Varia": 43,
         "Source": 299,
         "Appearances": "1",
         "id": 211
     },
     {
-        "ID_Test": 2455,
         "Varia": 4,
         "Source": 299,
         "Appearances": "1",
         "id": 212
     },
     {
-        "ID_Test": 2456,
         "Varia": 153,
         "Source": 300,
         "Appearances": "1",
         "id": 213
     },
     {
-        "ID_Test": 2457,
         "Varia": 113,
         "Source": 300,
         "Appearances": "1",
         "id": 214
     },
     {
-        "ID_Test": 2458,
         "Varia": 95,
         "Source": 300,
         "Appearances": "1",
         "id": 215
     },
     {
-        "ID_Test": 2459,
         "Varia": 130,
         "Source": 300,
         "Appearances": "1",
         "id": 216
     },
     {
-        "ID_Test": 2460,
         "Varia": 209,
         "Source": 302,
         "Appearances": "2",
         "id": 217
     },
     {
-        "ID_Test": 2461,
         "Varia": 154,
         "Source": 305,
         "Appearances": "1",
         "id": 218
     },
     {
-        "ID_Test": 2462,
         "Varia": 155,
         "Source": 305,
         "Appearances": "1",
         "id": 219
     },
     {
-        "ID_Test": 2463,
         "Varia": 156,
         "Source": 305,
         "Appearances": "1",
         "id": 220
     },
     {
-        "ID_Test": 2465,
         "Varia": 157,
         "Source": 305,
         "Appearances": "1",
         "id": 221
     },
     {
-        "ID_Test": 2466,
         "Varia": 158,
         "Source": 305,
         "Appearances": "1",
         "id": 222
     },
     {
-        "ID_Test": 2467,
         "Varia": 159,
         "Source": 305,
         "Appearances": "1",
         "id": 223
     },
     {
-        "ID_Test": 2468,
         "Varia": 126,
         "Source": 305,
         "Appearances": "1",
         "id": 224
     },
     {
-        "ID_Test": 2469,
         "Varia": 160,
         "Source": 305,
         "Appearances": "1",
         "id": 225
     },
     {
-        "ID_Test": 2470,
         "Varia": 161,
         "Source": 305,
         "Appearances": "1",
         "id": 226
     },
     {
-        "ID_Test": 2471,
         "Varia": 162,
         "Source": 305,
         "Appearances": "2",
         "id": 227
     },
     {
-        "ID_Test": 2472,
         "Varia": 163,
         "Source": 305,
         "Appearances": "1",
         "id": 228
     },
     {
-        "ID_Test": 2473,
         "Varia": 164,
         "Source": 305,
         "Appearances": "1",
         "id": 229
     },
     {
-        "ID_Test": 2474,
         "Varia": 165,
         "Source": 305,
         "Appearances": "2",
         "id": 230
     },
     {
-        "ID_Test": 2475,
         "Varia": 64,
         "Source": 305,
         "Appearances": "1",
         "id": 231
     },
     {
-        "ID_Test": 2476,
         "Varia": 166,
         "Source": 305,
         "Appearances": "1",
         "id": 232
     },
     {
-        "ID_Test": 2477,
         "Varia": 83,
         "Source": 305,
         "Appearances": "2",
         "id": 233
     },
     {
-        "ID_Test": 2478,
         "Varia": 8,
         "Source": 305,
         "Appearances": "2",
         "id": 234
     },
     {
-        "ID_Test": 2479,
         "Varia": 167,
         "Source": 305,
         "Appearances": "2",
         "id": 235
     },
     {
-        "ID_Test": 2480,
         "Varia": 168,
         "Source": 305,
         "Appearances": "2",
         "id": 236
     },
     {
-        "ID_Test": 2481,
         "Varia": 119,
         "Source": 306,
         "Appearances": "1",
         "id": 237
     },
     {
-        "ID_Test": 2482,
         "Varia": 169,
         "Source": 308,
         "Appearances": "1",
         "id": 238
     },
     {
-        "ID_Test": 2483,
         "Varia": 170,
         "Source": 308,
         "Appearances": "1",
         "id": 239
     },
     {
-        "ID_Test": 2484,
         "Varia": 171,
         "Source": 309,
         "Appearances": "1",
         "id": 240
     },
     {
-        "ID_Test": 2485,
         "Varia": 172,
         "Source": 311,
         "Appearances": "1",
         "id": 241
     },
     {
-        "ID_Test": 2486,
         "Varia": 173,
         "Source": 313,
         "Appearances": "1",
         "id": 242
     },
     {
-        "ID_Test": 2487,
         "Varia": 64,
         "Source": 316,
         "Appearances": "2",
         "id": 243
     },
     {
-        "ID_Test": 2488,
         "Varia": 174,
         "Source": 319,
         "Appearances": "1",
         "id": 244
     },
     {
-        "ID_Test": 2489,
         "Varia": 175,
         "Source": 320,
         "Appearances": "1",
         "id": 245
     },
     {
-        "ID_Test": 2490,
         "Varia": 56,
         "Source": 322,
         "Appearances": "1",
         "id": 246
     },
     {
-        "ID_Test": 2491,
         "Varia": 56,
         "Source": 326,
         "Appearances": "1",
         "id": 247
     },
     {
-        "ID_Test": 2492,
         "Varia": 56,
         "Source": 327,
         "Appearances": "1",
         "id": 248
     },
     {
-        "ID_Test": 2493,
         "Varia": 176,
         "Source": 327,
         "Appearances": "1",
         "id": 249
     },
     {
-        "ID_Test": 2494,
         "Varia": 177,
         "Source": 327,
         "Appearances": "1",
         "id": 250
     },
     {
-        "ID_Test": 2495,
         "Varia": 64,
         "Source": 329,
         "Appearances": "1",
         "id": 251
     },
     {
-        "ID_Test": 2496,
         "Varia": 178,
         "Source": 330,
         "Appearances": "2",
         "id": 252
     },
     {
-        "ID_Test": 2497,
         "Varia": 8,
         "Source": 331,
         "Appearances": "1",
         "id": 253
     },
     {
-        "ID_Test": 2498,
         "Varia": 179,
         "Source": 334,
         "Appearances": "1",
         "id": 254
     },
     {
-        "ID_Test": 2499,
         "Varia": 135,
         "Source": 335,
         "Appearances": "1",
         "id": 255
     },
     {
-        "ID_Test": 2500,
         "Varia": 180,
         "Source": 341,
         "Appearances": "1",
         "id": 256
     },
     {
-        "ID_Test": 2501,
         "Varia": 181,
         "Source": 341,
         "Appearances": "2",
         "id": 257
     },
     {
-        "ID_Test": 2502,
         "Varia": 182,
         "Source": 341,
         "Appearances": "1",
         "id": 258
     },
     {
-        "ID_Test": 2503,
         "Varia": 183,
         "Source": 342,
         "Appearances": "1",
         "id": 259
     },
     {
-        "ID_Test": 2504,
         "Varia": 40,
         "Source": 344,
         "Appearances": "2",
         "id": 260
     },
     {
-        "ID_Test": 2505,
         "Varia": 184,
         "Source": 344,
         "Appearances": "1",
         "id": 261
     },
     {
-        "ID_Test": 2506,
         "Varia": 185,
         "Source": 344,
         "Appearances": "1",
         "id": 262
     },
     {
-        "ID_Test": 2507,
         "Varia": 186,
         "Source": 345,
         "Appearances": "1",
         "id": 263
     },
     {
-        "ID_Test": 2508,
         "Varia": 187,
         "Source": 345,
         "Appearances": "1",
         "id": 264
     },
     {
-        "ID_Test": 2509,
         "Varia": 188,
         "Source": 347,
         "Appearances": "1",
         "id": 265
     },
     {
-        "ID_Test": 2510,
         "Varia": 189,
         "Source": 350,
         "Appearances": "1",
         "id": 266
     },
     {
-        "ID_Test": 2511,
         "Varia": 190,
         "Source": 350,
         "Appearances": "1",
         "id": 267
     },
     {
-        "ID_Test": 2512,
         "Varia": 190,
         "Source": 351,
         "Appearances": "1",
         "id": 268
     },
     {
-        "ID_Test": 2513,
         "Varia": 191,
         "Source": 351,
         "Appearances": "1",
         "id": 269
     },
     {
-        "ID_Test": 2514,
         "Varia": 192,
         "Source": 352,
         "Appearances": "1",
         "id": 270
     },
     {
-        "ID_Test": 2515,
         "Varia": 193,
         "Source": 355,
         "Appearances": "1",
         "id": 271
     },
     {
-        "ID_Test": 2516,
         "Varia": 194,
         "Source": 355,
         "Appearances": "1",
         "id": 272
     },
     {
-        "ID_Test": 2517,
         "Varia": 17,
         "Source": 357,
         "Appearances": "1",
         "id": 273
     },
     {
-        "ID_Test": 2518,
         "Varia": 17,
         "Source": 358,
         "Appearances": "1",
         "id": 274
     },
     {
-        "ID_Test": 2519,
         "Varia": 195,
         "Source": 360,
         "Appearances": "1",
         "id": 275
     },
     {
-        "ID_Test": 2520,
         "Varia": 208,
         "Source": 362,
         "Appearances": "2",
         "id": 276
     },
     {
-        "ID_Test": 2521,
         "Varia": 163,
         "Source": 367,
         "Appearances": "1",
         "id": 277
     },
     {
-        "ID_Test": 2522,
         "Varia": 147,
         "Source": 373,
         "Appearances": "1",
         "id": 278
     },
     {
-        "ID_Test": 2523,
         "Varia": 196,
         "Source": 373,
         "Appearances": "1",
         "id": 279
     },
     {
-        "ID_Test": 2524,
         "Varia": 129,
         "Source": 373,
         "Appearances": "1",
         "id": 280
     },
     {
-        "ID_Test": 2525,
         "Varia": 197,
         "Source": 373,
         "Appearances": "1",
         "id": 281
     },
     {
-        "ID_Test": 2526,
         "Varia": 198,
         "Source": 375,
         "Appearances": "1",
         "id": 282
     },
     {
-        "ID_Test": 2527,
         "Varia": 147,
         "Source": 376,
         "Appearances": "1",
         "id": 283
     },
     {
-        "ID_Test": 2528,
         "Varia": 199,
         "Source": 376,
         "Appearances": "1",
         "id": 284
     },
     {
-        "ID_Test": 2529,
         "Varia": 116,
         "Source": 378,
         "Appearances": "1",
         "id": 285
     },
     {
-        "ID_Test": 2530,
         "Varia": 200,
         "Source": 379,
         "Appearances": "1",
         "id": 286
     },
     {
-        "ID_Test": 2531,
         "Varia": 201,
         "Source": 383,
         "Appearances": "1",
         "id": 287
     },
     {
-        "ID_Test": 2532,
         "Varia": 202,
         "Source": 384,
         "Appearances": "1",
         "id": 288
     },
     {
-        "ID_Test": 2533,
         "Varia": 203,
         "Source": 386,
         "Appearances": "1",
         "id": 289
     },
     {
-        "ID_Test": 2534,
         "Varia": 210,
         "Source": 386,
         "Appearances": "2",
         "id": 290
     },
     {
-        "ID_Test": 2535,
         "Varia": 204,
         "Source": 386,
         "Appearances": "1",
         "id": 291
     },
     {
-        "ID_Test": 2536,
         "Varia": 211,
         "Source": 386,
         "Appearances": "1",
         "id": 292
     },
     {
-        "ID_Test": 2537,
         "Varia": 205,
         "Source": 386,
         "Appearances": "1",
         "id": 293
     },
     {
-        "ID_Test": 2538,
         "Varia": 206,
         "Source": 554,
         "Appearances": "1",
         "id": 294
     },
     {
-        "ID_Test": 2539,
         "Varia": 163,
         "Source": 554,
         "Appearances": "2",
         "id": 295
     },
     {
-        "ID_Test": 2540,
         "Varia": 207,
         "Source": 555,
         "Appearances": "1",
         "id": 296
     },
     {
-        "ID_Test": 2541,
         "Varia": 132,
         "Source": 555,
         "Appearances": "1",
         "id": 297
     },
     {
-        "ID_Test": 2542,
         "Varia": 215,
         "Source": 5,
         "Appearances": "1",
         "id": 298
     },
     {
-        "ID_Test": 2543,
         "Varia": 15,
         "Source": 4,
         "Appearances": "1",
         "id": 299
     },
     {
-        "ID_Test": 2544,
         "Varia": 220,
         "Source": 598,
         "Appearances": "1",
         "id": 300
     },
     {
-        "ID_Test": 2545,
         "Varia": 221,
         "Source": 598,
         "Appearances": "1",
         "id": 301
     },
     {
-        "ID_Test": 2546,
         "Varia": 222,
         "Source": 599,
         "Appearances": "1",
         "id": 302
     },
     {
-        "ID_Test": 2547,
         "Varia": 223,
         "Source": 599,
         "Appearances": "2",
         "id": 303
     },
     {
-        "ID_Test": 2548,
         "Varia": 224,
         "Source": 599,
         "Appearances": "2",
         "id": 304
     },
     {
-        "ID_Test": 2549,
         "Varia": 225,
         "Source": 599,
         "Appearances": "1",
         "id": 305
     },
     {
-        "ID_Test": 2550,
         "Varia": 36,
         "Source": 606,
         "Appearances": "2",
         "id": 306
     },
     {
-        "ID_Test": 2551,
         "Varia": 226,
         "Source": 431,
         "Appearances": "1",
         "id": 307
     },
     {
-        "ID_Test": 2552,
         "Varia": 227,
         "Source": 494,
         "Appearances": "1",
         "id": 308
     },
     {
-        "ID_Test": 2553,
         "Varia": 228,
         "Source": 685,
         "Appearances": "1",
         "id": 309
     },
     {
-        "ID_Test": 2554,
         "Varia": 57,
         "Source": 685,
         "Appearances": "1",
         "id": 310
     },
     {
-        "ID_Test": 2555,
         "Varia": 68,
         "Source": 498,
         "Appearances": "1",
         "id": 311
     },
     {
-        "ID_Test": 2556,
         "Varia": 68,
         "Source": 499,
         "Appearances": "1",
         "id": 312
     },
     {
-        "ID_Test": 2557,
         "Varia": 100,
         "Source": 440,
         "Appearances": "1",
         "id": 313
     },
     {
-        "ID_Test": 2558,
         "Varia": 229,
         "Source": 443,
         "Appearances": "1",
         "id": 314
     },
     {
-        "ID_Test": 2559,
         "Varia": 230,
         "Source": 686,
         "Appearances": "1",
         "id": 315
     },
     {
-        "ID_Test": 2560,
         "Varia": 32,
         "Source": 686,
         "Appearances": "1",
         "id": 316
     },
     {
-        "ID_Test": 2561,
         "Varia": 231,
         "Source": 686,
         "Appearances": "1",
         "id": 317
     },
     {
-        "ID_Test": 2562,
         "Varia": 16,
         "Source": 434,
         "Appearances": "1",
         "id": 318
     },
     {
-        "ID_Test": 2563,
         "Varia": 232,
         "Source": 434,
         "Appearances": "1",
         "id": 319
     },
     {
-        "ID_Test": 2564,
         "Varia": 233,
         "Source": 604,
         "Appearances": "1",
         "id": 320
     },
     {
-        "ID_Test": 2565,
         "Varia": 234,
         "Source": 489,
         "Appearances": "1",
         "id": 321
     },
     {
-        "ID_Test": 2566,
         "Varia": 234,
         "Source": 490,
         "Appearances": "1",
         "id": 322
     },
     {
-        "ID_Test": 2567,
         "Varia": 234,
         "Source": 491,
         "Appearances": "1",
         "id": 323
     },
     {
-        "ID_Test": 2568,
         "Varia": 234,
         "Source": 493,
         "Appearances": "1",
         "id": 324
     },
     {
-        "ID_Test": 2569,
         "Varia": 235,
         "Source": 612,
         "Appearances": "1",
         "id": 325
     },
     {
-        "ID_Test": 2570,
         "Varia": 236,
         "Source": 692,
         "Appearances": "1",
         "id": 326
     },
     {
-        "ID_Test": 2571,
         "Varia": 228,
         "Source": 694,
         "Appearances": "2",
         "id": 327
     },
     {
-        "ID_Test": 2572,
         "Varia": 237,
         "Source": 694,
         "Appearances": "1",
         "id": 328
     },
     {
-        "ID_Test": 2573,
         "Varia": 191,
         "Source": 454,
         "Appearances": "2",
         "id": 329
     },
     {
-        "ID_Test": 2574,
         "Varia": 238,
         "Source": 614,
         "Appearances": "1",
         "id": 330
     },
     {
-        "ID_Test": 2575,
         "Varia": 16,
         "Source": 591,
         "Appearances": "1",
         "id": 331
     },
     {
-        "ID_Test": 2576,
         "Varia": 239,
         "Source": 592,
         "Appearances": "1",
         "id": 332
     },
     {
-        "ID_Test": 2577,
         "Varia": 229,
         "Source": 592,
         "Appearances": "1",
         "id": 333
     },
     {
-        "ID_Test": 2578,
         "Varia": 229,
         "Source": 596,
         "Appearances": "1",
         "id": 334
     },
     {
-        "ID_Test": 2579,
         "Varia": 240,
         "Source": 611,
         "Appearances": "2",
         "id": 335
     },
     {
-        "ID_Test": 2580,
         "Varia": 108,
         "Source": 597,
         "Appearances": "1",
         "id": 336
     },
     {
-        "ID_Test": 2581,
         "Varia": 194,
         "Source": 597,
         "Appearances": "2",
         "id": 337
     },
     {
-        "ID_Test": 2582,
         "Varia": 8,
         "Source": 556,
         "Appearances": "1",
         "id": 338
     },
     {
-        "ID_Test": 2583,
         "Varia": 8,
         "Source": 445,
         "Appearances": "1",
         "id": 339
     },
     {
-        "ID_Test": 2584,
         "Varia": 241,
         "Source": 552,
         "Appearances": "1",
         "id": 340
     },
     {
-        "ID_Test": 2585,
         "Varia": 242,
         "Source": 552,
         "Appearances": "1",
         "id": 341
     },
     {
-        "ID_Test": 2586,
         "Varia": 243,
         "Source": 552,
         "Appearances": "1",
         "id": 342
     },
     {
-        "ID_Test": 2587,
         "Varia": 64,
         "Source": 552,
         "Appearances": "2",
         "id": 343
     },
     {
-        "ID_Test": 2588,
         "Varia": 73,
         "Source": 552,
         "Appearances": "1",
         "id": 344
     },
     {
-        "ID_Test": 2589,
         "Varia": 83,
         "Source": 552,
         "Appearances": "1",
         "id": 345
     },
     {
-        "ID_Test": 2590,
         "Varia": 244,
         "Source": 552,
         "Appearances": "1",
         "id": 346
     },
     {
-        "ID_Test": 2591,
         "Varia": 245,
         "Source": 702,
         "Appearances": "1",
         "id": 347
     },
     {
-        "ID_Test": 2592,
         "Varia": 240,
         "Source": 702,
         "Appearances": "2",
         "id": 348
     },
     {
-        "ID_Test": 2593,
         "Varia": 36,
         "Source": 702,
         "Appearances": "2",
         "id": 349
     },
     {
-        "ID_Test": 2594,
         "Varia": 246,
         "Source": 559,
         "Appearances": "1",
         "id": 350
     },
     {
-        "ID_Test": 2595,
         "Varia": 191,
         "Source": 448,
         "Appearances": "2",
         "id": 351
     },
     {
-        "ID_Test": 2596,
         "Varia": 246,
         "Source": 560,
         "Appearances": "1",
         "id": 352
     },
     {
-        "ID_Test": 2597,
         "Varia": 247,
         "Source": 611,
         "Appearances": "2",
         "id": 353
     },
     {
-        "ID_Test": 2598,
         "Varia": 248,
         "Source": 611,
         "Appearances": "1",
         "id": 354
     },
     {
-        "ID_Test": 2599,
         "Varia": 109,
         "Source": 611,
         "Appearances": "1",
         "id": 355
     },
     {
-        "ID_Test": 2600,
         "Varia": 249,
         "Source": 561,
         "Appearances": "1",
         "id": 356
     },
     {
-        "ID_Test": 2601,
         "Varia": 64,
         "Source": 561,
         "Appearances": "2",
         "id": 357
     },
     {
-        "ID_Test": 2602,
         "Varia": 250,
         "Source": 561,
         "Appearances": "1",
         "id": 358
     },
     {
-        "ID_Test": 2603,
         "Varia": 40,
         "Source": 430,
         "Appearances": "2",
         "id": 359
     },
     {
-        "ID_Test": 2604,
         "Varia": 163,
         "Source": 430,
         "Appearances": "1",
         "id": 360
     },
     {
-        "ID_Test": 2605,
         "Varia": 17,
         "Source": 430,
         "Appearances": "2",
         "id": 361
     },
     {
-        "ID_Test": 2606,
         "Varia": 251,
         "Source": 430,
         "Appearances": "1",
         "id": 362
     },
     {
-        "ID_Test": 2607,
         "Varia": 16,
         "Source": 430,
         "Appearances": "2",
         "id": 363
     },
     {
-        "ID_Test": 2608,
         "Varia": 64,
         "Source": 430,
         "Appearances": "2",
         "id": 364
     },
     {
-        "ID_Test": 2609,
         "Varia": 252,
         "Source": 451,
         "Appearances": "1",
         "id": 365
     },
     {
-        "ID_Test": 2610,
         "Varia": 253,
         "Source": 452,
         "Appearances": "1",
         "id": 366
     },
     {
-        "ID_Test": 2611,
         "Varia": 254,
         "Source": 453,
         "Appearances": "1",
         "id": 367
     },
     {
-        "ID_Test": 2612,
         "Varia": 191,
         "Source": 709,
         "Appearances": "2",
         "id": 368
     },
     {
-        "ID_Test": 2613,
         "Varia": 255,
         "Source": 710,
         "Appearances": "1",
         "id": 369
     },
     {
-        "ID_Test": 2614,
         "Varia": 209,
         "Source": 715,
         "Appearances": "2",
         "id": 370
     },
     {
-        "ID_Test": 2615,
         "Varia": 256,
         "Source": 544,
         "Appearances": "1",
         "id": 371
     },
     {
-        "ID_Test": 2616,
         "Varia": 257,
         "Source": 546,
         "Appearances": "1",
         "id": 372
     },
     {
-        "ID_Test": 2617,
         "Varia": 258,
         "Source": 546,
         "Appearances": "1",
         "id": 373
     },
     {
-        "ID_Test": 2618,
         "Varia": 259,
         "Source": 717,
         "Appearances": "1",
         "id": 374
     },
     {
-        "ID_Test": 2619,
         "Varia": 74,
         "Source": 529,
         "Appearances": "1",
         "id": 375
     },
     {
-        "ID_Test": 2620,
         "Varia": 260,
         "Source": 529,
         "Appearances": "1",
         "id": 376
     },
     {
-        "ID_Test": 2621,
         "Varia": 260,
         "Source": 530,
         "Appearances": "2",
         "id": 377
     },
     {
-        "ID_Test": 2622,
         "Varia": 258,
         "Source": 531,
         "Appearances": "2",
         "id": 378
     },
     {
-        "ID_Test": 2623,
         "Varia": 257,
         "Source": 532,
         "Appearances": "1",
         "id": 379
     },
     {
-        "ID_Test": 2624,
         "Varia": 64,
         "Source": 535,
         "Appearances": "2",
         "id": 380
     },
     {
-        "ID_Test": 2625,
         "Varia": 261,
         "Source": 535,
         "Appearances": "1",
         "id": 381
     },
     {
-        "ID_Test": 2626,
         "Varia": 261,
         "Source": 536,
         "Appearances": "1",
         "id": 382
     },
     {
-        "ID_Test": 2627,
         "Varia": 210,
         "Source": 30,
         "Appearances": "1",
         "id": 383
     },
     {
-        "ID_Test": 2628,
         "Varia": 207,
         "Source": 30,
         "Appearances": "3",
         "id": 384
     },
     {
-        "ID_Test": 2629,
         "Varia": 262,
         "Source": 33,
         "Appearances": "1",
         "id": 385
     },
     {
-        "ID_Test": 2630,
         "Varia": 263,
         "Source": 430,
         "Appearances": "1",
         "id": 386
     },
     {
-        "ID_Test": 2631,
         "Varia": 83,
         "Source": 430,
         "Appearances": "2",
         "id": 387
     },
     {
-        "ID_Test": 2632,
         "Varia": 79,
         "Source": 430,
         "Appearances": "2",
         "id": 388
     },
     {
-        "ID_Test": 2633,
         "Varia": 74,
         "Source": 430,
         "Appearances": "1",
         "id": 389
     },
     {
-        "ID_Test": 2634,
         "Varia": 264,
         "Source": 430,
         "Appearances": "1",
         "id": 390
     },
     {
-        "ID_Test": 2635,
         "Varia": 95,
         "Source": 430,
         "Appearances": "1",
         "id": 391
     },
     {
-        "ID_Test": 2636,
         "Varia": 265,
         "Source": 462,
         "Appearances": "1",
         "id": 392
     },
     {
-        "ID_Test": 2637,
         "Varia": 266,
         "Source": 462,
         "Appearances": "2",
         "id": 393
     },
     {
-        "ID_Test": 2638,
         "Varia": 267,
         "Source": 462,
         "Appearances": "1",
         "id": 394
     },
     {
-        "ID_Test": 2639,
         "Varia": 268,
         "Source": 7,
         "Appearances": "1",
         "id": 395
     },
     {
-        "ID_Test": 2640,
         "Varia": 269,
         "Source": 7,
         "Appearances": "1",
         "id": 396
     },
     {
-        "ID_Test": 2641,
         "Varia": 270,
         "Source": 7,
         "Appearances": "1",
         "id": 397
     },
     {
-        "ID_Test": 2642,
         "Varia": 271,
         "Source": 7,
         "Appearances": "1",
         "id": 398
     },
     {
-        "ID_Test": 2643,
         "Varia": 272,
         "Source": 7,
         "Appearances": "1",
         "id": 399
     },
     {
-        "ID_Test": 2644,
         "Varia": 273,
         "Source": 718,
         "Appearances": "1",
         "id": 400
     },
     {
-        "ID_Test": 2645,
         "Varia": 274,
         "Source": 718,
         "Appearances": "1",
         "id": 401
     },
     {
-        "ID_Test": 2646,
         "Varia": 275,
         "Source": 718,
         "Appearances": "1",
         "id": 402
     },
     {
-        "ID_Test": 2647,
         "Varia": 50,
         "Source": 718,
         "Appearances": "1",
         "id": 403
     },
     {
-        "ID_Test": 2648,
         "Varia": 36,
         "Source": 718,
         "Appearances": "1",
         "id": 404
     },
     {
-        "ID_Test": 2649,
         "Varia": 195,
         "Source": 718,
         "Appearances": "1",
         "id": 405
     },
     {
-        "ID_Test": 2650,
         "Varia": 276,
         "Source": 718,
         "Appearances": "1",
         "id": 406
     },
     {
-        "ID_Test": 2651,
         "Varia": 277,
         "Source": 718,
         "Appearances": "1",
         "id": 407
     },
     {
-        "ID_Test": 2652,
         "Varia": 275,
         "Source": 200,
         "Appearances": "1",
         "id": 408
     },
     {
-        "ID_Test": 2653,
         "Varia": 164,
         "Source": 7,
         "Appearances": "1",
         "id": 409
     },
     {
-        "ID_Test": 2654,
         "Varia": 278,
         "Source": 7,
         "Appearances": "1",
         "id": 410
     },
     {
-        "ID_Test": 2655,
         "Varia": 279,
         "Source": 476,
         "Appearances": "1",
         "id": 411
     },
     {
-        "ID_Test": 2656,
         "Varia": 280,
         "Source": 476,
         "Appearances": "1",
         "id": 412
     },
     {
-        "ID_Test": 2657,
         "Varia": 281,
         "Source": 479,
         "Appearances": "1",
         "id": 413
     },
     {
-        "ID_Test": 2658,
         "Varia": 64,
         "Source": 7,
         "Appearances": "2",
         "id": 414
     },
     {
-        "ID_Test": 2659,
         "Varia": 13,
         "Source": 7,
         "Appearances": "3",
         "id": 415
     },
     {
-        "ID_Test": 2660,
         "Varia": 165,
         "Source": 562,
         "Appearances": "1",
         "id": 416
     },
     {
-        "ID_Test": 2661,
         "Varia": 16,
         "Source": 562,
         "Appearances": "1",
         "id": 417
     },
     {
-        "ID_Test": 2662,
         "Varia": 165,
         "Source": 563,
         "Appearances": "1",
         "id": 418
     },
     {
-        "ID_Test": 2663,
         "Varia": 16,
         "Source": 563,
         "Appearances": "1",
         "id": 419
     },
     {
-        "ID_Test": 2664,
         "Varia": 16,
         "Source": 564,
         "Appearances": "2",
         "id": 420
     },
     {
-        "ID_Test": 2665,
         "Varia": 165,
         "Source": 564,
         "Appearances": "1",
         "id": 421
     },
     {
-        "ID_Test": 2666,
         "Varia": 165,
         "Source": 565,
         "Appearances": "1",
         "id": 422
     },
     {
-        "ID_Test": 2667,
         "Varia": 282,
         "Source": 6,
         "Appearances": "1",
         "id": 423
     },
     {
-        "ID_Test": 2668,
         "Varia": 283,
         "Source": 6,
         "Appearances": "1",
         "id": 424
     },
     {
-        "ID_Test": 2669,
         "Varia": 284,
         "Source": 6,
         "Appearances": "1",
         "id": 425
     },
     {
-        "ID_Test": 2670,
         "Varia": 285,
         "Source": 6,
         "Appearances": "1",
         "id": 426
     },
     {
-        "ID_Test": 2671,
         "Varia": 249,
         "Source": 566,
         "Appearances": "2",
         "id": 427
     },
     {
-        "ID_Test": 2672,
         "Varia": 16,
         "Source": 570,
         "Appearances": "2",
         "id": 428
     },
     {
-        "ID_Test": 2673,
         "Varia": 64,
         "Source": 572,
         "Appearances": "2",
         "id": 429
     },
     {
-        "ID_Test": 2674,
         "Varia": 286,
         "Source": 721,
         "Appearances": "1",
         "id": 430
     },
     {
-        "ID_Test": 2675,
         "Varia": 287,
         "Source": 721,
         "Appearances": "1",
         "id": 431
     },
     {
-        "ID_Test": 2676,
         "Varia": 8,
         "Source": 721,
         "Appearances": "1",
         "id": 432
     },
     {
-        "ID_Test": 2677,
         "Varia": 288,
         "Source": 721,
         "Appearances": "1",
         "id": 433
     },
     {
-        "ID_Test": 2678,
         "Varia": 289,
         "Source": 721,
         "Appearances": "1",
         "id": 434
     },
     {
-        "ID_Test": 2679,
         "Varia": 290,
         "Source": 682,
         "Appearances": "2",
         "id": 435
     },
     {
-        "ID_Test": 2680,
         "Varia": 291,
         "Source": 682,
         "Appearances": "1",
         "id": 436
     },
     {
-        "ID_Test": 2681,
         "Varia": 292,
         "Source": 682,
         "Appearances": "1",
         "id": 437
     },
     {
-        "ID_Test": 2682,
         "Varia": 64,
         "Source": 480,
         "Appearances": "2",
         "id": 438
     },
     {
-        "ID_Test": 2683,
         "Varia": 293,
         "Source": 721,
         "Appearances": "1",
         "id": 439
     },
     {
-        "ID_Test": 2684,
         "Varia": 232,
         "Source": 579,
         "Appearances": "1",
         "id": 440
     },
     {
-        "ID_Test": 2685,
         "Varia": 16,
         "Source": 580,
         "Appearances": "2",
         "id": 441
     },
     {
-        "ID_Test": 2686,
         "Varia": 165,
         "Source": 581,
         "Appearances": "2",
         "id": 442
     },
     {
-        "ID_Test": 2687,
         "Varia": 294,
         "Source": 581,
         "Appearances": "2",
         "id": 443
     },
     {
-        "ID_Test": 2688,
         "Varia": 295,
         "Source": 603,
         "Appearances": "1",
         "id": 444
     },
     {
-        "ID_Test": 2689,
         "Varia": 32,
         "Source": 584,
         "Appearances": "1",
         "id": 445
     },
     {
-        "ID_Test": 2690,
         "Varia": 32,
         "Source": 585,
         "Appearances": "2",
         "id": 446
     },
     {
-        "ID_Test": 2691,
         "Varia": 38,
         "Source": 487,
         "Appearances": "1",
         "id": 447
     },
     {
-        "ID_Test": 2692,
         "Varia": 296,
         "Source": 487,
         "Appearances": "1",
         "id": 448
     },
     {
-        "ID_Test": 2693,
         "Varia": 64,
         "Source": 487,
         "Appearances": "2",
         "id": 449
     },
     {
-        "ID_Test": 2694,
         "Varia": 297,
         "Source": 487,
         "Appearances": "1",
         "id": 450
     },
     {
-        "ID_Test": 2695,
         "Varia": 298,
         "Source": 482,
         "Appearances": "2",
         "id": 451
     },
     {
-        "ID_Test": 2696,
         "Varia": 299,
         "Source": 482,
         "Appearances": "1",
         "id": 452
     },
     {
-        "ID_Test": 2697,
         "Varia": 299,
         "Source": 463,
         "Appearances": "1",
         "id": 453
     },
     {
-        "ID_Test": 2698,
         "Varia": 298,
         "Source": 463,
         "Appearances": "1",
         "id": 454
     },
     {
-        "ID_Test": 2699,
         "Varia": 298,
         "Source": 464,
         "Appearances": "1",
         "id": 455
     },
     {
-        "ID_Test": 2700,
         "Varia": 299,
         "Source": 464,
         "Appearances": "1",
         "id": 456
     },
     {
-        "ID_Test": 2701,
         "Varia": 298,
         "Source": 465,
         "Appearances": "1",
         "id": 457
     },
     {
-        "ID_Test": 2702,
         "Varia": 299,
         "Source": 465,
         "Appearances": "1",
         "id": 458
     },
     {
-        "ID_Test": 2703,
         "Varia": 299,
         "Source": 466,
         "Appearances": "1",
         "id": 459
     },
     {
-        "ID_Test": 2704,
         "Varia": 298,
         "Source": 466,
         "Appearances": "1",
         "id": 460
     },
     {
-        "ID_Test": 2705,
         "Varia": 300,
         "Source": 466,
         "Appearances": "1",
         "id": 461
     },
     {
-        "ID_Test": 2706,
         "Varia": 301,
         "Source": 483,
         "Appearances": "1",
         "id": 462
     },
     {
-        "ID_Test": 2707,
         "Varia": 302,
         "Source": 483,
         "Appearances": "1",
         "id": 463
     },
     {
-        "ID_Test": 2708,
         "Varia": 303,
         "Source": 467,
         "Appearances": "1",
         "id": 464
     },
     {
-        "ID_Test": 2709,
         "Varia": 64,
         "Source": 467,
         "Appearances": "2",
         "id": 465
     },
     {
-        "ID_Test": 2710,
         "Varia": 117,
         "Source": 468,
         "Appearances": "2",
         "id": 466
     },
     {
-        "ID_Test": 2711,
         "Varia": 194,
         "Source": 469,
         "Appearances": "2",
         "id": 467
     },
     {
-        "ID_Test": 2712,
         "Varia": 64,
         "Source": 469,
         "Appearances": "2",
         "id": 468
     },
     {
-        "ID_Test": 2713,
         "Varia": 191,
         "Source": 469,
         "Appearances": "2",
         "id": 469
     },
     {
-        "ID_Test": 2714,
         "Varia": 191,
         "Source": 470,
         "Appearances": "2",
         "id": 470
     },
     {
-        "ID_Test": 2715,
         "Varia": 191,
         "Source": 471,
         "Appearances": "2",
         "id": 471
     },
     {
-        "ID_Test": 2716,
         "Varia": 304,
         "Source": 484,
         "Appearances": "1",
         "id": 472
     },
     {
-        "ID_Test": 2717,
         "Varia": 305,
         "Source": 484,
         "Appearances": "1",
         "id": 473
     },
     {
-        "ID_Test": 2718,
         "Varia": 305,
         "Source": 4,
         "Appearances": "1",
         "id": 474
     },
     {
-        "ID_Test": 2719,
         "Varia": 305,
         "Source": 8,
         "Appearances": "1",
         "id": 475
     },
     {
-        "ID_Test": 2720,
         "Varia": 306,
         "Source": 484,
         "Appearances": "1",
         "id": 476
     },
     {
-        "ID_Test": 2721,
         "Varia": 307,
         "Source": 474,
         "Appearances": "2",
         "id": 477
     },
     {
-        "ID_Test": 2722,
         "Varia": 308,
         "Source": 474,
         "Appearances": "2",
         "id": 478
     },
     {
-        "ID_Test": 2723,
         "Varia": 309,
         "Source": 474,
         "Appearances": "2",
         "id": 479
     },
     {
-        "ID_Test": 2724,
         "Varia": 310,
         "Source": 474,
         "Appearances": "2",
         "id": 480
     },
     {
-        "ID_Test": 2725,
         "Varia": 311,
         "Source": 474,
         "Appearances": "1",
         "id": 481
     },
     {
-        "ID_Test": 2726,
         "Varia": 266,
         "Source": 474,
         "Appearances": "2",
         "id": 482
     },
     {
-        "ID_Test": 2727,
         "Varia": 303,
         "Source": 475,
         "Appearances": "1",
         "id": 483
     },
     {
-        "ID_Test": 2728,
         "Varia": 312,
         "Source": 477,
         "Appearances": "1",
         "id": 484
     },
     {
-        "ID_Test": 2729,
         "Varia": 309,
         "Source": 477,
         "Appearances": "1",
         "id": 485
     },
     {
-        "ID_Test": 2730,
         "Varia": 179,
         "Source": 477,
         "Appearances": "2",
         "id": 486
     },
     {
-        "ID_Test": 2731,
         "Varia": 313,
         "Source": 681,
         "Appearances": "1",
         "id": 487
     },
     {
-        "ID_Test": 2732,
         "Varia": 314,
         "Source": 723,
         "Appearances": "1",
         "id": 488
     },
     {
-        "ID_Test": 2733,
         "Varia": 173,
         "Source": 724,
         "Appearances": "2",
         "id": 489
     },
     {
-        "ID_Test": 2734,
         "Varia": 315,
         "Source": 724,
         "Appearances": "1",
         "id": 490
     },
     {
-        "ID_Test": 2736,
         "Varia": 74,
         "Source": 522,
         "Appearances": "1",
         "id": 491
     },
     {
-        "ID_Test": 2737,
         "Varia": 142,
         "Source": 500,
         "Appearances": "1",
         "id": 492
     },
     {
-        "ID_Test": 2738,
         "Varia": 64,
         "Source": 500,
         "Appearances": "1",
         "id": 493
     },
     {
-        "ID_Test": 2739,
         "Varia": 316,
         "Source": 500,
         "Appearances": "1",
         "id": 494
     },
     {
-        "ID_Test": 2740,
         "Varia": 314,
         "Source": 500,
         "Appearances": "1",
         "id": 495
     },
     {
-        "ID_Test": 2741,
         "Varia": 240,
         "Source": 500,
         "Appearances": "1",
         "id": 496
     },
     {
-        "ID_Test": 2742,
         "Varia": 314,
         "Source": 504,
         "Appearances": "1",
         "id": 497
     },
     {
-        "ID_Test": 2743,
         "Varia": 240,
         "Source": 504,
         "Appearances": "1",
         "id": 498
     },
     {
-        "ID_Test": 2744,
         "Varia": 4,
         "Source": 504,
         "Appearances": "1",
         "id": 499
     },
     {
-        "ID_Test": 2745,
         "Varia": 64,
         "Source": 505,
         "Appearances": "2",
         "id": 500
     },
     {
-        "ID_Test": 2746,
         "Varia": 240,
         "Appearances": "2",
         "id": 501
     },
     {
-        "ID_Test": 2747,
         "Varia": 314,
         "Appearances": "1",
         "id": 502
     },
     {
-        "ID_Test": 2748,
         "Varia": 142,
         "Source": 506,
         "Appearances": "1",
         "id": 503
     },
     {
-        "ID_Test": 2749,
         "Varia": 317,
         "Source": 507,
         "Appearances": "1",
         "id": 504
     },
     {
-        "ID_Test": 2750,
         "Varia": 37,
         "Source": 507,
         "Appearances": "1",
         "id": 505
     },
     {
-        "ID_Test": 2751,
         "Varia": 316,
         "Source": 507,
         "Appearances": "1",
         "id": 506
     },
     {
-        "ID_Test": 2752,
         "Varia": 64,
         "Source": 507,
         "Appearances": "2",
         "id": 507
     },
     {
-        "ID_Test": 2753,
         "Varia": 32,
         "Source": 508,
         "Appearances": "1",
         "id": 508
     },
     {
-        "ID_Test": 2754,
         "Varia": 4,
         "Source": 509,
         "Appearances": "1",
         "id": 509
     },
     {
-        "ID_Test": 2755,
         "Varia": 92,
         "Source": 3,
         "Appearances": "1",
         "id": 510
     },
     {
-        "ID_Test": 2756,
         "Varia": 92,
         "Source": 502,
         "Appearances": "2",
         "id": 511
     },
     {
-        "ID_Test": 2757,
         "Varia": 318,
         "Source": 728,
         "Appearances": "1",
         "id": 512
     },
     {
-        "ID_Test": 2758,
         "Varia": 319,
         "Source": 731,
         "Appearances": "1",
         "id": 513
     },
     {
-        "ID_Test": 2759,
         "Varia": 298,
         "Source": 733,
         "Appearances": "1",
         "id": 514
     },
     {
-        "ID_Test": 2760,
         "Varia": 266,
         "Source": 733,
         "Appearances": "2",
         "id": 515
     },
     {
-        "ID_Test": 2761,
         "Varia": 320,
         "Source": 733,
         "Appearances": "1",
         "id": 516
     },
     {
-        "ID_Test": 2762,
         "Varia": 321,
         "Source": 733,
         "Appearances": "1",
         "id": 517
     },
     {
-        "ID_Test": 2763,
         "Varia": 147,
         "Source": 733,
         "Appearances": "1",
         "id": 518
     },
     {
-        "ID_Test": 2764,
         "Varia": 237,
         "Source": 735,
         "Appearances": "2",
         "id": 519
     },
     {
-        "ID_Test": 2765,
         "Varia": 147,
         "Source": 737,
         "Appearances": "1",
         "id": 520
     },
     {
-        "ID_Test": 2766,
         "Varia": 322,
         "Source": 738,
         "Appearances": "1",
         "id": 521
     },
     {
-        "ID_Test": 2767,
         "Varia": 323,
         "Source": 740,
         "Appearances": "2",
         "id": 522
     },
     {
-        "ID_Test": 2768,
         "Varia": 324,
         "Source": 430,
         "Appearances": "1",
         "id": 523
     },
     {
-        "ID_Test": 2769,
         "Varia": 325,
         "Source": 430,
         "Appearances": "2",
         "id": 524
     },
     {
-        "ID_Test": 2770,
         "Varia": 326,
         "Source": 430,
         "Appearances": "1",
         "id": 525
     },
     {
-        "ID_Test": 2771,
         "Varia": 327,
         "Source": 617,
         "Appearances": "1",
         "id": 526
     },
     {
-        "ID_Test": 2772,
         "Varia": 328,
         "Source": 617,
         "Appearances": "1",
         "id": 527
     },
     {
-        "ID_Test": 2773,
         "Varia": 329,
         "Source": 430,
         "Appearances": "1",
         "id": 528
     },
     {
-        "ID_Test": 2774,
         "Varia": 330,
         "Source": 430,
         "Appearances": "1",
         "id": 529
     },
     {
-        "ID_Test": 2775,
         "Varia": 327,
         "Source": 618,
         "Appearances": "1",
         "id": 530
     },
     {
-        "ID_Test": 2776,
         "Varia": 151,
         "Source": 618,
         "Appearances": "1",
         "id": 531
     },
     {
-        "ID_Test": 2777,
         "Varia": 151,
         "Source": 617,
         "Appearances": "1",
         "id": 532
     },
     {
-        "ID_Test": 2778,
         "Varia": 64,
         "Source": 618,
         "Appearances": "2",
         "id": 533
     },
     {
-        "ID_Test": 2779,
         "Varia": 331,
         "Source": 430,
         "Appearances": "2",
         "id": 534
     },
     {
-        "ID_Test": 2780,
         "Varia": 191,
         "Source": 430,
         "Appearances": "2",
         "id": 535
     },
     {
-        "ID_Test": 2781,
         "Varia": 332,
         "Source": 619,
         "Appearances": "1",
         "id": 536
     },
     {
-        "ID_Test": 2782,
         "Varia": 333,
         "Source": 619,
         "Appearances": "1",
         "id": 537
     },
     {
-        "ID_Test": 2783,
         "Varia": 333,
         "Source": 621,
         "Appearances": "1",
         "id": 538
     },
     {
-        "ID_Test": 2784,
         "Varia": 333,
         "Source": 620,
         "Appearances": "1",
         "id": 539
     },
     {
-        "ID_Test": 2785,
         "Varia": 332,
         "Source": 621,
         "Appearances": "1",
         "id": 540
     },
     {
-        "ID_Test": 2786,
         "Varia": 334,
         "Source": 305,
         "Appearances": "1",
         "id": 541
     },
     {
-        "ID_Test": 2787,
         "Varia": 265,
         "Source": 742,
         "Appearances": "1",
         "id": 542
     },
     {
-        "ID_Test": 2788,
         "Varia": 320,
         "Source": 742,
         "Appearances": "2",
         "id": 543
     },
     {
-        "ID_Test": 2789,
         "Varia": 335,
         "Source": 430,
         "Appearances": "1",
         "id": 544
     },
     {
-        "ID_Test": 2790,
         "Varia": 336,
         "Source": 430,
         "Appearances": "1",
         "id": 545
     },
     {
-        "ID_Test": 2791,
         "Varia": 337,
         "Source": 430,
         "Appearances": "1",
         "id": 546
     },
     {
-        "ID_Test": 2792,
         "Varia": 338,
         "Source": 430,
         "Appearances": "1",
         "id": 547
     },
     {
-        "ID_Test": 2793,
         "Varia": 339,
         "Source": 300,
         "Appearances": "1",
         "id": 548
     },
     {
-        "ID_Test": 2794,
         "Varia": 80,
         "Source": 300,
         "Appearances": "1",
         "id": 549
     },
     {
-        "ID_Test": 2795,
         "Varia": 112,
         "Source": 300,
         "Appearances": "1",
         "id": 550
     },
     {
-        "ID_Test": 2796,
         "Varia": 340,
         "Source": 300,
         "Appearances": "1",
         "id": 551
     },
     {
-        "ID_Test": 2797,
         "Varia": 153,
         "Source": 258,
         "Appearances": "1",
         "id": 552
     },
     {
-        "ID_Test": 2798,
         "Varia": 341,
         "Source": 300,
         "Appearances": "1",
         "id": 553
     },
     {
-        "ID_Test": 2799,
         "Varia": 342,
         "Source": 300,
         "Appearances": "2",
         "id": 554
     },
     {
-        "ID_Test": 2800,
         "Varia": 53,
         "Source": 623,
         "Appearances": "1",
         "id": 555
     },
     {
-        "ID_Test": 2801,
         "Varia": 343,
         "Source": 300,
         "Appearances": "1",
         "id": 556
     },
     {
-        "ID_Test": 2802,
         "Varia": 344,
         "Source": 679,
         "Appearances": "1",
         "id": 557
     },
     {
-        "ID_Test": 2803,
         "Varia": 297,
         "Source": 679,
         "Appearances": "2",
         "id": 558
     },
     {
-        "ID_Test": 2804,
         "Varia": 305,
         "Source": 679,
         "Appearances": "1",
         "id": 559
     },
     {
-        "ID_Test": 2805,
         "Varia": 345,
         "Source": 679,
         "Appearances": "2",
         "id": 560
     },
     {
-        "ID_Test": 2806,
         "Varia": 36,
         "Source": 679,
         "Appearances": "2",
         "id": 561
     },
     {
-        "ID_Test": 2807,
         "Varia": 64,
         "Source": 679,
         "Appearances": "1",
         "id": 562
     },
     {
-        "ID_Test": 2808,
         "Varia": 346,
         "Source": 635,
         "Appearances": "1",
         "id": 563
     },
     {
-        "ID_Test": 2809,
         "Varia": 164,
         "Source": 679,
         "Appearances": "1",
         "id": 564
     },
     {
-        "ID_Test": 2810,
         "Varia": 347,
         "Source": 608,
         "Appearances": "1",
         "id": 565
     },
     {
-        "ID_Test": 2811,
         "Varia": 46,
         "Source": 608,
         "Appearances": "1",
         "id": 566
     },
     {
-        "ID_Test": 2812,
         "Varia": 348,
         "Source": 608,
         "Appearances": "1",
         "id": 567
     },
     {
-        "ID_Test": 2813,
         "Varia": 349,
         "Source": 608,
         "Appearances": "1",
         "id": 568
     },
     {
-        "ID_Test": 2814,
         "Varia": 350,
         "Source": 608,
         "Appearances": "1",
         "id": 569
     },
     {
-        "ID_Test": 2815,
         "Varia": 350,
         "Source": 7,
         "Appearances": "1",
         "id": 570
     },
     {
-        "ID_Test": 2816,
         "Varia": 278,
         "Source": 608,
         "Appearances": "1",
         "id": 571
     },
     {
-        "ID_Test": 2817,
         "Varia": 351,
         "Source": 608,
         "Appearances": "1",
         "id": 572
     },
     {
-        "ID_Test": 2818,
         "Varia": 352,
         "Source": 608,
         "Appearances": "1",
         "id": 573
     },
     {
-        "ID_Test": 2819,
         "Varia": 353,
         "Source": 608,
         "Appearances": "1",
         "id": 574
     },
     {
-        "ID_Test": 2820,
         "Varia": 16,
         "Source": 608,
         "Appearances": "2",
         "id": 575
     },
     {
-        "ID_Test": 2821,
         "Varia": 205,
         "Source": 608,
         "Appearances": "1",
         "id": 576
     },
     {
-        "ID_Test": 2822,
         "Varia": 354,
         "Source": 608,
         "Appearances": "1",
         "id": 577
     },
     {
-        "ID_Test": 2823,
         "Varia": 355,
         "Source": 608,
         "Appearances": "1",
         "id": 578
     },
     {
-        "ID_Test": 2824,
         "Varia": 356,
         "Source": 639,
         "Appearances": "1",
         "id": 579
     },
     {
-        "ID_Test": 2825,
         "Varia": 357,
         "Source": 639,
         "Appearances": "1",
         "id": 580
     },
     {
-        "ID_Test": 2826,
         "Varia": 358,
         "Source": 639,
         "Appearances": "1",
         "id": 581
     },
     {
-        "ID_Test": 2827,
         "Varia": 359,
         "Source": 608,
         "Appearances": "1",
         "id": 582
     },
     {
-        "ID_Test": 2828,
         "Varia": 32,
         "Source": 608,
         "Appearances": "1",
         "id": 583
     },
     {
-        "ID_Test": 2829,
         "Varia": 360,
         "Source": 608,
         "Appearances": "1",
         "id": 584
     },
     {
-        "ID_Test": 2830,
         "Varia": 361,
         "Source": 745,
         "Appearances": "1",
         "id": 585
     },
     {
-        "ID_Test": 2831,
         "Varia": 362,
         "Source": 745,
         "Appearances": "1",
         "id": 586
     },
     {
-        "ID_Test": 2832,
         "Varia": 363,
         "Source": 745,
         "Appearances": "1",
         "id": 587
     },
     {
-        "ID_Test": 2833,
         "Varia": 364,
         "Source": 745,
         "Appearances": "1",
         "id": 588
     },
     {
-        "ID_Test": 2834,
         "Varia": 365,
         "Source": 745,
         "Appearances": "1",
         "id": 589
     },
     {
-        "ID_Test": 2835,
         "Varia": 288,
         "Source": 745,
         "Appearances": "1",
         "id": 590
     },
     {
-        "ID_Test": 2836,
         "Varia": 366,
         "Source": 745,
         "Appearances": "1",
         "id": 591
     },
     {
-        "ID_Test": 2837,
         "Varia": 367,
         "Source": 745,
         "Appearances": "1",
         "id": 592
     },
     {
-        "ID_Test": 2838,
         "Varia": 368,
         "Source": 745,
         "Appearances": "1",
         "id": 593
     },
     {
-        "ID_Test": 2839,
         "Varia": 369,
         "Source": 745,
         "Appearances": "1",
         "id": 594
     },
     {
-        "ID_Test": 2840,
         "Varia": 18,
         "Source": 745,
         "Appearances": "1",
         "id": 595
     },
     {
-        "ID_Test": 2841,
         "Varia": 370,
         "Source": 745,
         "Appearances": "1",
         "id": 596
     },
     {
-        "ID_Test": 2842,
         "Varia": 64,
         "Source": 746,
         "Appearances": "2",
         "id": 597
     },
     {
-        "ID_Test": 2843,
         "Varia": 240,
         "Source": 746,
         "Appearances": "2",
         "id": 598
     },
     {
-        "ID_Test": 2844,
         "Varia": 371,
         "Source": 702,
         "Appearances": "1",
         "id": 599
     },
     {
-        "ID_Test": 2845,
         "Varia": 64,
         "Source": 702,
         "Appearances": "2",
         "id": 600
     },
     {
-        "ID_Test": 2846,
         "Varia": 16,
         "Source": 518,
         "Appearances": "1",
         "id": 601
     },
     {
-        "ID_Test": 2847,
         "Varia": 372,
         "Source": 518,
         "Appearances": "1",
         "id": 602
     },
     {
-        "ID_Test": 2848,
         "Varia": 373,
         "Source": 748,
         "Appearances": "1",
         "id": 603
     },
     {
-        "ID_Test": 2849,
         "Varia": 374,
         "Source": 679,
         "Appearances": "1",
         "id": 604
     },
     {
-        "ID_Test": 2850,
         "Varia": 375,
         "Source": 679,
         "Appearances": "1",
         "id": 605
     },
     {
-        "ID_Test": 2851,
         "Varia": 265,
         "Source": 679,
         "Appearances": "2",
         "id": 606
     },
     {
-        "ID_Test": 2852,
         "Varia": 376,
         "Source": 516,
         "Appearances": "1",
         "id": 607
     },
     {
-        "ID_Test": 2853,
         "Varia": 377,
         "Source": 516,
         "Appearances": "1",
         "id": 608
     },
     {
-        "ID_Test": 2854,
         "Varia": 64,
         "Source": 516,
         "Appearances": "2",
         "id": 609
     },
     {
-        "ID_Test": 2855,
         "Varia": 378,
         "Source": 516,
         "Appearances": "1",
         "id": 610
     },
     {
-        "ID_Test": 2856,
         "Varia": 16,
         "Source": 516,
         "Appearances": "2",
         "id": 611
     },
     {
-        "ID_Test": 2857,
         "Varia": 64,
         "Source": 749,
         "Appearances": "2",
         "id": 612
     },
     {
-        "ID_Test": 2858,
         "Varia": 62,
         "Source": 516,
         "Appearances": "1",
         "id": 613
     },
     {
-        "ID_Test": 2859,
         "Varia": 117,
         "Source": 516,
         "Appearances": "1",
         "id": 614
     },
     {
-        "ID_Test": 2860,
         "Varia": 379,
         "Source": 518,
         "Appearances": "1",
         "id": 615
     },
     {
-        "ID_Test": 2861,
         "Varia": 110,
         "Source": 518,
         "Appearances": "2",
         "id": 616
     },
     {
-        "ID_Test": 2862,
         "Varia": 301,
         "Source": 518,
         "Appearances": "2",
         "id": 617
     },
     {
-        "ID_Test": 2863,
         "Varia": 380,
         "Source": 518,
         "Appearances": "1",
         "id": 618
     },
     {
-        "ID_Test": 2864,
         "Varia": 40,
         "Source": 518,
         "Appearances": "2",
         "id": 619
     },
     {
-        "ID_Test": 2865,
         "Varia": 381,
         "Source": 515,
         "Appearances": "1",
         "id": 620
     },
     {
-        "ID_Test": 2866,
         "Varia": 382,
         "Source": 515,
         "Appearances": "1",
         "id": 621
     },
     {
-        "ID_Test": 2867,
         "Varia": 383,
         "Source": 515,
         "Appearances": "1",
         "id": 622
     },
     {
-        "ID_Test": 2868,
         "Varia": 8,
         "Source": 515,
         "Appearances": "1",
         "id": 623
     },
     {
-        "ID_Test": 2869,
         "Varia": 358,
         "Source": 515,
         "Appearances": "1",
         "id": 624
     },
     {
-        "ID_Test": 2870,
         "Varia": 384,
         "Source": 515,
         "Appearances": "2",
         "id": 625
     },
     {
-        "ID_Test": 2871,
         "Varia": 385,
         "Source": 515,
         "Appearances": "1",
         "id": 626
     },
     {
-        "ID_Test": 2872,
         "Varia": 386,
         "Source": 515,
         "Appearances": "1",
         "id": 627
     },
     {
-        "ID_Test": 2873,
         "Varia": 36,
         "Source": 515,
         "Appearances": "2",
         "id": 628
     },
     {
-        "ID_Test": 2874,
         "Varia": 387,
         "Source": 515,
         "Appearances": "1",
         "id": 629
     },
     {
-        "ID_Test": 2875,
         "Varia": 297,
         "Source": 515,
         "Appearances": "2",
         "id": 630
     },
     {
-        "ID_Test": 2876,
         "Varia": 388,
         "Source": 515,
         "Appearances": "1",
         "id": 631
     },
     {
-        "ID_Test": 2877,
         "Varia": 389,
         "Source": 515,
         "Appearances": "1",
         "id": 632
     },
     {
-        "ID_Test": 2878,
         "Varia": 390,
         "Source": 515,
         "Appearances": "1",
         "id": 633
     },
     {
-        "ID_Test": 2879,
         "Varia": 62,
         "Source": 515,
         "Appearances": "1",
         "id": 634
     },
     {
-        "ID_Test": 2880,
         "Varia": 301,
         "Source": 515,
         "Appearances": "1",
         "id": 635
     },
     {
-        "ID_Test": 2881,
         "Varia": 391,
         "Source": 515,
         "Appearances": "1",
         "id": 636
     },
     {
-        "ID_Test": 2882,
         "Varia": 305,
         "Source": 515,
         "Appearances": "1",
         "id": 637
     },
     {
-        "ID_Test": 2883,
         "Varia": 392,
         "Source": 515,
         "Appearances": "1",
         "id": 638
     },
     {
-        "ID_Test": 2884,
         "Varia": 393,
         "Source": 515,
         "Appearances": "1",
         "id": 639
     },
     {
-        "ID_Test": 2885,
         "Varia": 16,
         "Source": 515,
         "Appearances": "1",
         "id": 640
     },
     {
-        "ID_Test": 2886,
         "Varia": 394,
         "Source": 515,
         "Appearances": "1",
         "id": 641
     },
     {
-        "ID_Test": 2887,
         "Varia": 395,
         "Source": 515,
         "Appearances": "1",
         "id": 642
     },
     {
-        "ID_Test": 2888,
         "Varia": 121,
         "Source": 516,
         "Appearances": "2",
         "id": 643
     },
     {
-        "ID_Test": 2889,
         "Varia": 396,
         "Source": 515,
         "Appearances": "1",
         "id": 644
     },
     {
-        "ID_Test": 2890,
         "Varia": 397,
         "Source": 516,
         "Appearances": "1",
         "id": 645
     },
     {
-        "ID_Test": 2891,
         "Varia": 398,
         "Source": 750,
         "Appearances": "1",
         "id": 646
     },
     {
-        "ID_Test": 2892,
         "Varia": 320,
         "Source": 750,
         "Appearances": "2",
         "id": 647
     },
     {
-        "ID_Test": 2893,
         "Varia": 399,
         "Source": 750,
         "Appearances": "1",
         "id": 648
     },
     {
-        "ID_Test": 2894,
         "Varia": 400,
         "Source": 750,
         "Appearances": "2",
         "id": 649
     },
     {
-        "ID_Test": 2895,
         "Varia": 240,
         "Source": 752,
         "Appearances": "3",
         "id": 650
     },
     {
-        "ID_Test": 2896,
         "Varia": 401,
         "Source": 754,
         "Appearances": "1",
         "id": 651
     },
     {
-        "ID_Test": 2897,
         "Varia": 64,
         "Source": 757,
         "Appearances": "2",
         "id": 652
     },
     {
-        "ID_Test": 2898,
         "Varia": 402,
         "Source": 757,
         "Appearances": "1",
         "id": 653
     },
     {
-        "ID_Test": 2899,
         "Varia": 16,
         "Source": 757,
         "Appearances": "1",
         "id": 654
     },
     {
-        "ID_Test": 2900,
         "Varia": 403,
         "Source": 757,
         "Appearances": "1",
         "id": 655
     },
     {
-        "ID_Test": 2901,
         "Varia": 38,
         "Source": 758,
         "Appearances": "1",
         "id": 656
     },
     {
-        "ID_Test": 2902,
         "Varia": 404,
         "Source": 758,
         "Appearances": "1",
         "id": 657
     },
     {
-        "ID_Test": 2903,
         "Varia": 32,
         "Source": 758,
         "Appearances": "1",
         "id": 658
     },
     {
-        "ID_Test": 2904,
         "Varia": 64,
         "Source": 759,
         "Appearances": "2",
         "id": 659
     },
     {
-        "ID_Test": 2905,
         "Varia": 405,
         "Source": 760,
         "Appearances": "1",
         "id": 660
     },
     {
-        "ID_Test": 2906,
         "Varia": 32,
         "Source": 760,
         "Appearances": "1",
         "id": 661
     },
     {
-        "ID_Test": 2907,
         "Varia": 406,
         "Source": 761,
         "Appearances": "1",
         "id": 662
     },
     {
-        "ID_Test": 2908,
         "Varia": 8,
         "Source": 762,
         "Appearances": "1",
         "id": 663
     },
     {
-        "ID_Test": 2909,
         "Varia": 64,
         "Source": 762,
         "Appearances": "2",
         "id": 664
     },
     {
-        "ID_Test": 2910,
         "Varia": 407,
         "Source": 763,
         "Appearances": "1",
         "id": 665
     },
     {
-        "ID_Test": 2911,
         "Varia": 408,
         "Source": 763,
         "Appearances": "1",
         "id": 666
     },
     {
-        "ID_Test": 2912,
         "Varia": 409,
         "Source": 763,
         "Appearances": "1",
         "id": 667
     },
     {
-        "ID_Test": 2913,
         "Varia": 409,
         "Source": 300,
         "Appearances": "1",
         "id": 668
     },
     {
-        "ID_Test": 2914,
         "Varia": 409,
         "Source": 258,
         "Appearances": "1",
         "id": 669
     },
     {
-        "ID_Test": 2915,
         "Varia": 153,
         "Source": 763,
         "Appearances": "1",
         "id": 670
     },
     {
-        "ID_Test": 2916,
         "Varia": 111,
         "Source": 411,
         "Appearances": "1",
         "id": 671
     },
     {
-        "ID_Test": 2917,
         "Varia": 410,
         "Source": 411,
         "Appearances": "1",
         "id": 672
     },
     {
-        "ID_Test": 2918,
         "Varia": 411,
         "Source": 408,
         "Appearances": "1",
         "id": 673
     },
     {
-        "ID_Test": 2919,
         "Varia": 64,
         "Source": 402,
         "Appearances": "2",
         "id": 674
     },
     {
-        "ID_Test": 2920,
         "Varia": 64,
         "Source": 765,
         "Appearances": "2",
         "id": 675
     },
     {
-        "ID_Test": 2921,
         "Varia": 230,
         "Source": 765,
         "Appearances": "2",
         "id": 676
     },
     {
-        "ID_Test": 2922,
         "Varia": 314,
         "Source": 765,
         "Appearances": "1",
         "id": 677
     },
     {
-        "ID_Test": 2923,
         "Varia": 305,
         "Source": 389,
         "Appearances": "1",
         "id": 678
     },
     {
-        "ID_Test": 2924,
         "Varia": 412,
         "Source": 416,
         "Appearances": "1",
         "id": 679
     },
     {
-        "ID_Test": 2925,
         "Varia": 110,
         "Source": 416,
         "Appearances": "1",
         "id": 680
     },
     {
-        "ID_Test": 2926,
         "Varia": 413,
         "Source": 403,
         "Appearances": "1",
         "id": 681
     },
     {
-        "ID_Test": 2927,
         "Varia": 224,
         "Source": 424,
         "Appearances": "1",
         "id": 682
     },
     {
-        "ID_Test": 2928,
         "Varia": 414,
         "Source": 424,
         "Appearances": "2",
         "id": 683
     },
     {
-        "ID_Test": 2929,
         "Varia": 64,
         "Source": 424,
         "Appearances": "2",
         "id": 684
     },
     {
-        "ID_Test": 2930,
         "Varia": 38,
         "Source": 415,
         "Appearances": "1",
         "id": 685
     },
     {
-        "ID_Test": 2931,
         "Varia": 16,
         "Source": 415,
         "Appearances": "2",
         "id": 686
     },
     {
-        "ID_Test": 2932,
         "Varia": 415,
         "Source": 766,
         "Appearances": "1",
         "id": 687
     },
     {
-        "ID_Test": 2933,
         "Varia": 135,
         "Source": 766,
         "Appearances": "1",
         "id": 688
     },
     {
-        "ID_Test": 2934,
         "Varia": 416,
         "Source": 766,
         "Appearances": "1",
         "id": 689
     },
     {
-        "ID_Test": 2935,
         "Varia": 416,
         "Source": 601,
         "Appearances": "1",
         "id": 690
     },
     {
-        "ID_Test": 2936,
         "Varia": 117,
         "Source": 766,
         "Appearances": "1",
         "id": 691
     },
     {
-        "ID_Test": 2937,
         "Varia": 417,
         "Source": 766,
         "Appearances": "1",
         "id": 692
     },
     {
-        "ID_Test": 2938,
         "Varia": 8,
         "Source": 766,
         "Appearances": "1",
         "id": 693
     },
     {
-        "ID_Test": 2939,
         "Varia": 110,
         "Source": 766,
         "Appearances": "1",
         "id": 694
     },
     {
-        "ID_Test": 2940,
         "Varia": 120,
         "Source": 766,
         "Appearances": "1",
         "id": 695
     },
     {
-        "ID_Test": 2941,
         "Varia": 64,
         "Source": 766,
         "Appearances": "2",
         "id": 696
     },
     {
-        "ID_Test": 2942,
         "Varia": 4,
         "Source": 766,
         "Appearances": "1",
         "id": 697
     },
     {
-        "ID_Test": 2943,
         "Varia": 418,
         "Source": 766,
         "Appearances": "1",
         "id": 698
     },
     {
-        "ID_Test": 2944,
         "Varia": 32,
         "Source": 766,
         "Appearances": "1",
         "id": 699
     },
     {
-        "ID_Test": 2945,
         "Varia": 419,
         "Source": 719,
         "Appearances": "2",
         "id": 700
     },
     {
-        "ID_Test": 2946,
         "Varia": 16,
         "Source": 719,
         "Appearances": "2",
         "id": 701
     },
     {
-        "ID_Test": 2947,
         "Varia": 420,
         "Source": 719,
         "Appearances": "1",
         "id": 702
     },
     {
-        "ID_Test": 2948,
         "Varia": 83,
         "Source": 719,
         "Appearances": "2",
         "id": 703
     },
     {
-        "ID_Test": 2949,
         "Varia": 421,
         "Source": 719,
         "Appearances": "2",
         "id": 704
     },
     {
-        "ID_Test": 2950,
         "Varia": 205,
         "Source": 719,
         "Appearances": "1",
         "id": 705
     },
     {
-        "ID_Test": 2951,
         "Varia": 422,
         "Source": 719,
         "Appearances": "1",
         "id": 706
     },
     {
-        "ID_Test": 2952,
         "Varia": 423,
         "Source": 719,
         "Appearances": "2",
         "id": 707
     },
     {
-        "ID_Test": 2953,
         "Varia": 320,
         "Source": 769,
         "Appearances": "1",
         "id": 708
     },
     {
-        "ID_Test": 2954,
         "Varia": 298,
         "Source": 769,
         "Appearances": "2",
         "id": 709
     },
     {
-        "ID_Test": 2955,
         "Varia": 399,
         "Source": 769,
         "Appearances": "1",
         "id": 710
     },
     {
-        "ID_Test": 2956,
         "Varia": 16,
         "Source": 769,
         "Appearances": "1",
         "id": 711
     },
     {
-        "ID_Test": 2957,
         "Varia": 424,
         "Source": 770,
         "Appearances": "2",
         "id": 712
     },
     {
-        "ID_Test": 2958,
         "Varia": 425,
         "Source": 766,
         "Appearances": "1",
         "id": 713
     },
     {
-        "ID_Test": 2959,
         "Varia": 426,
         "Source": 766,
         "Appearances": "1",
         "id": 714
     },
     {
-        "ID_Test": 2960,
         "Varia": 427,
         "Source": 626,
         "Appearances": "1",
         "id": 715
     },
     {
-        "ID_Test": 2961,
         "Varia": 428,
         "Source": 626,
         "Appearances": "1",
         "id": 716
     },
     {
-        "ID_Test": 2962,
         "Varia": 427,
         "Source": 627,
         "Appearances": "1",
         "id": 717
     },
     {
-        "ID_Test": 2963,
         "Varia": 429,
         "Source": 766,
         "Appearances": "1",
         "id": 718
     },
     {
-        "ID_Test": 2964,
         "Varia": 430,
         "Source": 766,
         "Appearances": "1",
         "id": 719
     },
     {
-        "ID_Test": 2965,
         "Varia": 427,
         "Source": 628,
         "Appearances": "1",
         "id": 720
     },
     {
-        "ID_Test": 2966,
         "Varia": 222,
         "Source": 805,
         "Appearances": "1",
         "id": 721
     },
     {
-        "ID_Test": 2967,
         "Varia": 147,
         "Source": 805,
         "Appearances": "1",
         "id": 722
     },
     {
-        "ID_Test": 2968,
         "Varia": 431,
         "Source": 805,
         "Appearances": "1",
         "id": 723
     },
     {
-        "ID_Test": 2969,
         "Varia": 432,
         "Source": 805,
         "Appearances": "1",
         "id": 724
     },
     {
-        "ID_Test": 2970,
         "Varia": 433,
         "Source": 805,
         "Appearances": "1",
         "id": 725
     },
     {
-        "ID_Test": 2971,
         "Varia": 131,
         "Source": 629,
         "Appearances": "1",
         "id": 726
     },
     {
-        "ID_Test": 2972,
         "Varia": 320,
         "Appearances": "1",
         "id": 727
     },
     {
-        "ID_Test": 2973,
         "Varia": 298,
         "Source": 807,
         "Appearances": "2",
         "id": 728
     },
     {
-        "ID_Test": 2974,
         "Varia": 399,
         "Source": 807,
         "Appearances": "1",
         "id": 729
     },
     {
-        "ID_Test": 2975,
         "Varia": 400,
         "Source": 807,
         "Appearances": "1",
         "id": 730
     },
     {
-        "ID_Test": 2976,
         "Varia": 147,
         "Source": 808,
         "Appearances": "2",
         "id": 731
     },
     {
-        "ID_Test": 2977,
         "Varia": 423,
         "Source": 808,
         "Appearances": "1",
         "id": 732
     },
     {
-        "ID_Test": 2978,
         "Varia": 172,
         "Source": 808,
         "Appearances": "1",
         "id": 733
     },
     {
-        "ID_Test": 2979,
         "Varia": 110,
         "Source": 811,
         "Appearances": "1",
         "id": 734
     },
     {
-        "ID_Test": 2980,
         "Varia": 16,
         "Source": 811,
         "Appearances": "1",
         "id": 735
     },
     {
-        "ID_Test": 2981,
         "Varia": 403,
         "Source": 632,
         "Appearances": "1",
         "id": 736
     },
     {
-        "ID_Test": 2982,
         "Varia": 64,
         "Source": 632,
         "Appearances": "2",
         "id": 737
     },
     {
-        "ID_Test": 2983,
         "Varia": 434,
         "Source": 632,
         "Appearances": "1",
         "id": 738
     },
     {
-        "ID_Test": 2984,
         "Varia": 238,
         "Source": 634,
         "Appearances": "1",
         "id": 739
     },
     {
-        "ID_Test": 2985,
         "Varia": 435,
         "Source": 634,
         "Appearances": "1",
         "id": 740
     },
     {
-        "ID_Test": 2986,
         "Varia": 147,
         "Source": 813,
         "Appearances": "1",
         "id": 741
     },
     {
-        "ID_Test": 2987,
         "Varia": 201,
         "Source": 813,
         "Appearances": "1",
         "id": 742
     },
     {
-        "ID_Test": 2988,
         "Varia": 131,
         "Source": 813,
         "Appearances": "2",
         "id": 743
     },
     {
-        "ID_Test": 2989,
         "Varia": 435,
         "Source": 638,
         "Appearances": "1",
         "id": 744
     },
     {
-        "ID_Test": 2990,
         "Varia": 64,
         "Source": 638,
         "Appearances": "2",
         "id": 745
     },
     {
-        "ID_Test": 2991,
         "Varia": 436,
         "Source": 646,
         "Appearances": "1",
         "id": 746
     },
     {
-        "ID_Test": 2992,
         "Varia": 64,
         "Source": 646,
         "Appearances": "1",
         "id": 747
     },
     {
-        "ID_Test": 2993,
         "Varia": 437,
         "Source": 660,
         "Appearances": "1",
         "id": 748
     },
     {
-        "ID_Test": 2994,
         "Varia": 438,
         "Source": 661,
         "Appearances": "1",
         "id": 749
     },
     {
-        "ID_Test": 2995,
         "Varia": 147,
         "Source": 815,
         "Appearances": "1",
         "id": 750
     },
     {
-        "ID_Test": 2996,
         "Varia": 64,
         "Source": 815,
         "Appearances": "2",
         "id": 751
     },
     {
-        "ID_Test": 2997,
         "Varia": 147,
         "Source": 816,
         "Appearances": "1",
         "id": 752
     },
     {
-        "ID_Test": 2998,
         "Varia": 406,
         "Source": 816,
         "Appearances": "1",
         "id": 753
     },
     {
-        "ID_Test": 2999,
         "Varia": 131,
         "Source": 816,
         "Appearances": "1",
         "id": 754
     },
     {
-        "ID_Test": 3000,
         "Varia": 260,
         "Source": 817,
         "Appearances": "2",
         "id": 755
     },
     {
-        "ID_Test": 3001,
         "Varia": 172,
         "Source": 817,
         "Appearances": "1",
         "id": 756
     },
     {
-        "ID_Test": 3002,
         "Varia": 163,
         "Source": 817,
         "Appearances": "1",
         "id": 757
     },
     {
-        "ID_Test": 3003,
         "Varia": 227,
         "Source": 818,
         "Appearances": "1",
         "id": 758
     },
     {
-        "ID_Test": 3004,
         "Varia": 131,
         "Source": 818,
         "Appearances": "1",
         "id": 759
     },
     {
-        "ID_Test": 3005,
         "Varia": 405,
         "Source": 662,
         "Appearances": "1",
         "id": 760
     },
     {
-        "ID_Test": 3006,
         "Varia": 439,
         "Source": 663,
         "Appearances": "1",
         "id": 761
     },
     {
-        "ID_Test": 3007,
         "Varia": 32,
         "Source": 663,
         "Appearances": "1",
         "id": 762
     },
     {
-        "ID_Test": 3008,
         "Varia": 32,
         "Source": 662,
         "Appearances": "1",
         "id": 763
     },
     {
-        "ID_Test": 3009,
         "Varia": 32,
         "Source": 664,
         "Appearances": "1",
         "id": 764
     },
     {
-        "ID_Test": 3010,
         "Varia": 260,
         "Source": 649,
         "Appearances": "1",
         "id": 765
     },
     {
-        "ID_Test": 3011,
         "Varia": 260,
         "Source": 650,
         "Appearances": "1",
         "id": 766
     },
     {
-        "ID_Test": 3012,
         "Varia": 440,
         "Source": 611,
         "Appearances": "1",
         "id": 767
     },
     {
-        "ID_Test": 3013,
         "Varia": 131,
         "Source": 653,
         "Appearances": "1",
         "id": 768
     },
     {
-        "ID_Test": 3014,
         "Varia": 131,
         "Source": 651,
         "Appearances": "1",
         "id": 769
     },
     {
-        "ID_Test": 3015,
         "Varia": 441,
         "Source": 651,
         "Appearances": "1",
         "id": 770
     },
     {
-        "ID_Test": 3016,
         "Varia": 131,
         "Source": 652,
         "Appearances": "1",
         "id": 771
     },
     {
-        "ID_Test": 3017,
         "Varia": 64,
         "Source": 611,
         "Appearances": "2",
         "id": 772
     },
     {
-        "ID_Test": 3018,
         "Varia": 442,
         "Source": 611,
         "Appearances": "2",
         "id": 773
     },
     {
-        "ID_Test": 3019,
         "Varia": 16,
         "Source": 611,
         "Appearances": "2",
         "id": 774
     },
     {
-        "ID_Test": 3020,
         "Varia": 333,
         "Source": 611,
         "Appearances": "2",
         "id": 775
     },
     {
-        "ID_Test": 3021,
         "Varia": 32,
         "Source": 611,
         "Appearances": "1",
         "id": 776
     },
     {
-        "ID_Test": 3022,
         "Varia": 36,
         "Source": 673,
         "Appearances": "1",
         "id": 777
     },
     {
-        "ID_Test": 3023,
         "Varia": 240,
         "Source": 671,
         "Appearances": "2",
         "id": 778
     },
     {
-        "ID_Test": 3024,
         "Varia": 240,
         "Source": 673,
         "Appearances": "2",
         "id": 779
     },
     {
-        "ID_Test": 3025,
         "Varia": 36,
         "Source": 675,
         "Appearances": "3",
         "id": 780
     },
     {
-        "ID_Test": 3026,
         "Varia": 443,
         "Source": 611,
         "Appearances": "2",
         "id": 781
     },
     {
-        "ID_Test": 3027,
         "Varia": 444,
         "Source": 611,
         "Appearances": "1",
         "id": 782
     },
     {
-        "ID_Test": 3028,
         "Varia": 445,
         "Source": 677,
         "Appearances": "1",
         "id": 783
     },
     {
-        "ID_Test": 3029,
         "Varia": 445,
         "Source": 678,
         "Appearances": "1",
         "id": 784
     },
     {
-        "ID_Test": 3030,
         "Varia": 350,
         "Source": 668,
         "Appearances": "1",
         "id": 785
     },
     {
-        "ID_Test": 3031,
         "Varia": 446,
         "Source": 670,
         "Appearances": "1",
         "id": 786
     },
     {
-        "ID_Test": 3032,
         "Varia": 447,
         "Source": 668,
         "Appearances": "2",
         "id": 787
     },
     {
-        "ID_Test": 3033,
         "Varia": 359,
         "Source": 668,
         "Appearances": "2",
         "id": 788
     },
     {
-        "ID_Test": 3034,
         "Varia": 448,
         "Source": 668,
         "Appearances": "1",
         "id": 789
     },
     {
-        "ID_Test": 3035,
         "Varia": 449,
         "Source": 611,
         "Appearances": "1",
         "id": 790
     },
     {
-        "ID_Test": 3036,
         "Varia": 237,
         "Source": 819,
         "Appearances": "1",
         "id": 791
     },
     {
-        "ID_Test": 3037,
         "Varia": 450,
         "Source": 819,
         "Appearances": "1",
         "id": 792
     },
     {
-        "ID_Test": 3038,
         "Varia": 451,
         "Source": 819,
         "Appearances": "1",
         "id": 793
     },
     {
-        "ID_Test": 3039,
         "Varia": 8,
         "Source": 819,
         "Appearances": "2",
         "id": 794
     },
     {
-        "ID_Test": 3040,
         "Varia": 64,
         "Source": 819,
         "Appearances": "2",
         "id": 795
     },
     {
-        "ID_Test": 3041,
         "Varia": 450,
         "Source": 820,
         "Appearances": "1",
         "id": 796
     },
     {
-        "ID_Test": 3042,
         "Varia": 287,
         "Source": 821,
         "Appearances": "1",
         "id": 797
     },
     {
-        "ID_Test": 3043,
         "Varia": 453,
         "Source": 822,
         "Appearances": "2",
         "id": 798
     },
     {
-        "ID_Test": 3044,
         "Varia": 64,
         "Source": 823,
         "Appearances": "2",
         "id": 799
     },
     {
-        "ID_Test": 3045,
         "Varia": 454,
         "Source": 824,
         "Appearances": "1",
         "id": 800
     },
     {
-        "ID_Test": 3046,
         "Varia": 455,
         "Source": 825,
         "Appearances": "2",
         "id": 801
     },
     {
-        "ID_Test": 3047,
         "Varia": 40,
         "Source": 825,
         "Appearances": "1",
         "id": 802
     },
     {
-        "ID_Test": 3048,
         "Varia": 456,
         "Source": 825,
         "Appearances": "2",
         "id": 803
     },
     {
-        "ID_Test": 3049,
         "Varia": 457,
         "Source": 827,
         "Appearances": "1",
         "id": 804
     },
     {
-        "ID_Test": 3050,
         "Varia": 458,
         "Source": 827,
         "Appearances": "1",
         "id": 805
     },
     {
-        "ID_Test": 3051,
         "Varia": 459,
         "Source": 827,
         "Appearances": "1",
         "id": 806
     },
     {
-        "ID_Test": 3052,
         "Varia": 460,
         "Source": 827,
         "Appearances": "1",
         "id": 807
     },
     {
-        "ID_Test": 3053,
         "Varia": 32,
         "Source": 827,
         "Appearances": "1",
         "id": 808
     },
     {
-        "ID_Test": 3054,
         "Varia": 461,
         "Source": 827,
         "Appearances": "1",
         "id": 809
     },
     {
-        "ID_Test": 3055,
         "Varia": 462,
         "Source": 827,
         "Appearances": "1",
         "id": 810
     },
     {
-        "ID_Test": 3056,
         "Varia": 463,
         "Source": 827,
         "Appearances": "1",
         "id": 811
     },
     {
-        "ID_Test": 3057,
         "Varia": 464,
         "Source": 827,
         "Appearances": "1",
         "id": 812
     },
     {
-        "ID_Test": 3058,
         "Varia": 465,
         "Source": 827,
         "Appearances": "1",
         "id": 813
     },
     {
-        "ID_Test": 3059,
         "Varia": 466,
         "Source": 827,
         "Appearances": "1",
         "id": 814
     },
     {
-        "ID_Test": 3060,
         "Varia": 467,
         "Source": 827,
         "Appearances": "1",
         "id": 815
     },
     {
-        "ID_Test": 3061,
         "Varia": 468,
         "Source": 827,
         "Appearances": "1",
         "id": 816
     },
     {
-        "ID_Test": 3062,
         "Varia": 230,
         "Source": 868,
         "Appearances": "1",
         "id": 817
     },
     {
-        "ID_Test": 3063,
         "Varia": 74,
         "Source": 868,
         "Appearances": "1",
         "id": 818
     },
     {
-        "ID_Test": 3064,
         "Varia": 40,
         "Source": 868,
         "Appearances": "1",
         "id": 819
     },
     {
-        "ID_Test": 3065,
         "Varia": 469,
         "Source": 868,
         "Appearances": "1",
         "id": 820
     },
     {
-        "ID_Test": 3066,
         "Varia": 301,
         "Source": 868,
         "Appearances": "1",
         "id": 821
     },
     {
-        "ID_Test": 3067,
         "Varia": 470,
         "Source": 868,
         "Appearances": "1",
         "id": 822
     },
     {
-        "ID_Test": 3068,
         "Varia": 26,
         "Source": 868,
         "Appearances": "1",
         "id": 823
     },
     {
-        "ID_Test": 3069,
         "Varia": 471,
         "Source": 868,
         "Appearances": "2",
         "id": 824
     },
     {
-        "ID_Test": 3070,
         "Varia": 472,
         "Source": 868,
         "Appearances": "2",
         "id": 825
     },
     {
-        "ID_Test": 3071,
         "Varia": 473,
         "Source": 868,
         "Appearances": "1",
         "id": 826
     },
     {
-        "ID_Test": 3072,
         "Varia": 474,
         "Source": 868,
         "Appearances": "1",
         "id": 827
     },
     {
-        "ID_Test": 3073,
         "Varia": 62,
         "Source": 868,
         "Appearances": "2",
         "id": 828
     },
     {
-        "ID_Test": 3074,
         "Varia": 475,
         "Source": 868,
         "Appearances": "1",
         "id": 829
     },
     {
-        "ID_Test": 3075,
         "Varia": 476,
         "Source": 868,
         "Appearances": "1",
         "id": 830
     },
     {
-        "ID_Test": 3076,
         "Varia": 440,
         "Source": 868,
         "Appearances": "2",
         "id": 831
     },
     {
-        "ID_Test": 3077,
         "Varia": 465,
         "Source": 868,
         "Appearances": "2",
         "id": 832
     },
     {
-        "ID_Test": 3078,
         "Varia": 477,
         "Source": 868,
         "Appearances": "1",
         "id": 833
     },
     {
-        "ID_Test": 3079,
         "Varia": 478,
         "Source": 868,
         "Appearances": "1",
         "id": 834
     },
     {
-        "ID_Test": 3080,
         "Varia": 463,
         "Source": 869,
         "Appearances": "1",
         "id": 835
     },
     {
-        "ID_Test": 3081,
         "Varia": 479,
         "Source": 870,
         "Appearances": "1",
         "id": 836
     },
     {
-        "ID_Test": 3082,
         "Varia": 450,
         "Source": 874,
         "Appearances": "1",
         "id": 837
     },
     {
-        "ID_Test": 3083,
         "Varia": 480,
         "Source": 875,
         "Appearances": "1",
         "id": 838
     },
     {
-        "ID_Test": 3084,
         "Varia": 455,
         "Source": 875,
         "Appearances": "2",
         "id": 839
     },
     {
-        "ID_Test": 3085,
         "Varia": 40,
         "Source": 875,
         "Appearances": "2",
         "id": 840
     },
     {
-        "ID_Test": 3086,
         "Varia": 481,
         "Source": 875,
         "Appearances": "2",
         "id": 841
     },
     {
-        "ID_Test": 3087,
         "Varia": 482,
         "Source": 875,
         "Appearances": "2",
         "id": 842
     },
     {
-        "ID_Test": 3088,
         "Varia": 483,
         "Source": 875,
         "Appearances": "1",
         "id": 843
     },
     {
-        "ID_Test": 3089,
         "Varia": 484,
         "Source": 875,
         "Appearances": "2",
         "id": 844
     },
     {
-        "ID_Test": 3090,
         "Varia": 485,
         "Source": 876,
         "Appearances": "1",
         "id": 845
     },
     {
-        "ID_Test": 3091,
         "Varia": 486,
         "Source": 876,
         "Appearances": "1",
         "id": 846
     },
     {
-        "ID_Test": 3092,
         "Varia": 487,
         "Source": 876,
         "Appearances": "1",
         "id": 847
     },
     {
-        "ID_Test": 3093,
         "Varia": 16,
         "Source": 879,
         "Appearances": "2",
         "id": 848
     },
     {
-        "ID_Test": 3094,
         "Varia": 488,
         "Source": 880,
         "Appearances": "1",
         "id": 849
     },
     {
-        "ID_Test": 3095,
         "Varia": 17,
         "Source": 485,
         "Appearances": "1",
         "id": 850
     },
     {
-        "ID_Test": 3096,
         "Varia": 489,
         "Source": 485,
         "Appearances": "1",
         "id": 851
     },
     {
-        "ID_Test": 3097,
         "Varia": 490,
         "Source": 485,
         "Appearances": "1",
         "id": 852
     },
     {
-        "ID_Test": 3098,
         "Varia": 491,
         "Source": 485,
         "Appearances": "1",
         "id": 853
     },
     {
-        "ID_Test": 3099,
         "Varia": 492,
         "Source": 485,
         "Appearances": "1",
         "id": 854
     },
     {
-        "ID_Test": 3100,
         "Varia": 40,
         "Source": 485,
         "Appearances": "1",
         "id": 855
     },
     {
-        "ID_Test": 3101,
         "Varia": 493,
         "Source": 485,
         "Appearances": "1",
         "id": 856
     },
     {
-        "ID_Test": 3102,
         "Varia": 494,
         "Source": 485,
         "Appearances": "1",
         "id": 857
     },
     {
-        "ID_Test": 3103,
         "Varia": 495,
         "Source": 485,
         "Appearances": "1",
         "id": 858
     },
     {
-        "ID_Test": 3104,
         "Varia": 32,
         "Source": 485,
         "Appearances": "1",
         "id": 859
     },
     {
-        "ID_Test": 3105,
         "Varia": 496,
         "Source": 485,
         "Appearances": "1",
         "id": 860
     },
     {
-        "ID_Test": 3106,
         "Varia": 497,
         "Source": 485,
         "Appearances": "1",
         "id": 861
     },
     {
-        "ID_Test": 3107,
         "Varia": 498,
         "Source": 485,
         "Appearances": "1",
         "id": 862
     },
     {
-        "ID_Test": 3108,
         "Varia": 499,
         "Source": 485,
         "Appearances": "1",
         "id": 863
     },
     {
-        "ID_Test": 3109,
         "Varia": 30,
         "Source": 485,
         "Appearances": "2",
         "id": 864
     },
     {
-        "ID_Test": 3110,
         "Varia": 16,
         "Source": 485,
         "Appearances": "1",
         "id": 865
     },
     {
-        "ID_Test": 3111,
         "Varia": 500,
         "Source": 485,
         "Appearances": "1",
         "id": 866
     },
     {
-        "ID_Test": 3112,
         "Varia": 501,
         "Source": 485,
         "Appearances": "1",
         "id": 867
     },
     {
-        "ID_Test": 3113,
         "Varia": 502,
         "Source": 485,
         "Appearances": "1",
         "id": 868
     },
     {
-        "ID_Test": 3114,
         "Varia": 503,
         "Source": 485,
         "Appearances": "2",
         "id": 869
     },
     {
-        "ID_Test": 3115,
         "Varia": 205,
         "Source": 485,
         "Appearances": "1",
         "id": 870
     },
     {
-        "ID_Test": 3116,
         "Varia": 504,
         "Source": 485,
         "Appearances": "1",
         "id": 871
     },
     {
-        "ID_Test": 3117,
         "Varia": 505,
         "Source": 485,
         "Appearances": "1",
         "id": 872
     },
     {
-        "ID_Test": 3118,
         "Varia": 506,
         "Source": 485,
         "Appearances": "2",
         "id": 873
     },
     {
-        "ID_Test": 3119,
         "Varia": 507,
         "Source": 485,
         "Appearances": "2",
         "id": 874
     },
     {
-        "ID_Test": 3120,
         "Varia": 252,
         "Source": 485,
         "Appearances": "1",
         "id": 875
     },
     {
-        "ID_Test": 3121,
         "Varia": 463,
         "Source": 882,
         "Appearances": "1",
         "id": 876
     },
     {
-        "ID_Test": 3122,
         "Varia": 32,
         "Source": 882,
         "Appearances": "1",
         "id": 877
     },
     {
-        "ID_Test": 3123,
         "Varia": 508,
         "Source": 883,
         "Appearances": "1",
         "id": 878
     },
     {
-        "ID_Test": 3124,
         "Varia": 147,
         "Source": 884,
         "Appearances": "2",
         "id": 879
     },
     {
-        "ID_Test": 3125,
         "Varia": 303,
         "Source": 884,
         "Appearances": "1",
         "id": 880
     },
     {
-        "ID_Test": 3126,
         "Varia": 398,
         "Source": 885,
         "Appearances": "1",
         "id": 881
     },
     {
-        "ID_Test": 3127,
         "Varia": 16,
         "Source": 826,
         "Appearances": "2",
         "id": 882
     },
     {
-        "ID_Test": 3128,
         "Varia": 196,
         "Source": 891,
         "Appearances": "1",
         "id": 883
     },
     {
-        "ID_Test": 3129,
         "Varia": 196,
         "Source": 893,
         "Appearances": "1",
         "id": 884
     },
     {
-        "ID_Test": 3130,
         "Varia": 18,
         "Source": 894,
         "Appearances": "1",
         "id": 885
     },
     {
-        "ID_Test": 3131,
         "Varia": 16,
         "Source": 895,
         "Appearances": "1",
         "id": 886
     },
     {
-        "ID_Test": 3132,
         "Varia": 509,
         "Source": 896,
         "Appearances": "1",
         "id": 887
     },
     {
-        "ID_Test": 3133,
         "Varia": 147,
         "Source": 899,
         "Appearances": "2",
         "id": 888
     },
     {
-        "ID_Test": 3134,
         "Varia": 301,
         "Source": 900,
         "Appearances": "1",
         "id": 889
     },
     {
-        "ID_Test": 3135,
         "Varia": 40,
         "Source": 901,
         "Appearances": "2",
         "id": 890
     },
     {
-        "ID_Test": 3136,
         "Varia": 510,
         "Source": 901,
         "Appearances": "2",
         "id": 891
     },
     {
-        "ID_Test": 3137,
         "Varia": 511,
         "Source": 902,
         "Appearances": "1",
         "id": 892
     },
     {
-        "ID_Test": 3138,
         "Varia": 450,
         "Source": 905,
         "Appearances": "2",
         "id": 893
     },
     {
-        "ID_Test": 3139,
         "Varia": 453,
         "Source": 906,
         "Appearances": "1",
         "id": 894
     },
     {
-        "ID_Test": 3140,
         "Varia": 57,
         "Source": 908,
         "Appearances": "1",
         "id": 895
     },
     {
-        "ID_Test": 3141,
         "Varia": 512,
         "Source": 908,
         "Appearances": "1",
         "id": 896
     },
     {
-        "ID_Test": 3142,
         "Varia": 513,
         "Source": 911,
         "Appearances": "2",
         "id": 897
     },
     {
-        "ID_Test": 3143,
         "Varia": 514,
         "Source": 911,
         "Appearances": "2",
         "id": 898
     },
     {
-        "ID_Test": 3144,
         "Varia": 74,
         "Source": 911,
         "Appearances": "2",
         "id": 899
     },
     {
-        "ID_Test": 3145,
         "Varia": 8,
         "Source": 913,
         "Appearances": "1",
         "id": 900
     },
     {
-        "ID_Test": 3146,
         "Varia": 515,
         "Source": 915,
         "Appearances": "1",
         "id": 901
     },
     {
-        "ID_Test": 3147,
         "Varia": 8,
         "Source": 915,
         "Appearances": "1",
         "id": 902
     },
     {
-        "ID_Test": 3148,
         "Varia": 240,
         "Source": 915,
         "Appearances": "2",
         "id": 903
     },
     {
-        "ID_Test": 3149,
         "Varia": 8,
         "Source": 918,
         "Appearances": "1",
         "id": 904
     },
     {
-        "ID_Test": 3150,
         "Varia": 515,
         "Source": 918,
         "Appearances": "1",
         "id": 905
     },
     {
-        "ID_Test": 3151,
         "Varia": 515,
         "Source": 921,
         "Appearances": "1",
         "id": 906
     },
     {
-        "ID_Test": 3152,
         "Varia": 260,
         "Source": 923,
         "Appearances": "2",
         "id": 907
     },
     {
-        "ID_Test": 3153,
         "Varia": 36,
         "Source": 925,
         "Appearances": "2",
         "id": 908
     },
     {
-        "ID_Test": 3154,
         "Varia": 516,
         "Source": 928,
         "Appearances": "1",
         "id": 909
     },
     {
-        "ID_Test": 3155,
         "Varia": 450,
         "Source": 929,
         "Appearances": "2",
         "id": 910
     },
     {
-        "ID_Test": 3156,
         "Varia": 517,
         "Source": 930,
         "Appearances": "1",
         "id": 911
     },
     {
-        "ID_Test": 3157,
         "Varia": 518,
         "Source": 931,
         "Appearances": "2",
         "id": 912
     },
     {
-        "ID_Test": 3158,
         "Varia": 519,
         "Source": 933,
         "Appearances": "1",
         "id": 913
     },
     {
-        "ID_Test": 3159,
         "Varia": 520,
         "Source": 933,
         "Appearances": "2",
         "id": 914
     },
     {
-        "ID_Test": 3160,
         "Varia": 147,
         "Source": 933,
         "Appearances": "2",
         "id": 915
     },
     {
-        "ID_Test": 3161,
         "Varia": 521,
         "Source": 938,
         "Appearances": "1",
         "id": 916
     },
     {
-        "ID_Test": 3162,
         "Varia": 522,
         "Source": 939,
         "Appearances": "1",
         "id": 917
     },
     {
-        "ID_Test": 3163,
         "Varia": 147,
         "Source": 935,
         "Appearances": "2",
         "id": 918
     },
     {
-        "ID_Test": 3164,
         "Varia": 523,
         "Source": 936,
         "Appearances": "1",
         "id": 919
     },
     {
-        "ID_Test": 3165,
         "Varia": 524,
         "Source": 940,
         "Appearances": "1",
         "id": 920
     },
     {
-        "ID_Test": 3166,
         "Varia": 16,
         "Source": 940,
         "Appearances": "2",
         "id": 921
     },
     {
-        "ID_Test": 3167,
         "Varia": 21,
         "Source": 944,
         "Appearances": "1",
         "id": 922
     },
     {
-        "ID_Test": 3168,
         "Varia": 525,
         "Source": 951,
         "Appearances": "1",
         "id": 923
     },
     {
-        "ID_Test": 3169,
         "Varia": 122,
         "Source": 951,
         "Appearances": "1",
         "id": 924
     },
     {
-        "ID_Test": 3170,
         "Varia": 526,
         "Source": 955,
         "Appearances": "1",
         "id": 925
     },
     {
-        "ID_Test": 3171,
         "Varia": 303,
         "Source": 955,
         "Appearances": "1",
         "id": 926
     },
     {
-        "ID_Test": 3172,
         "Varia": 527,
         "Source": 958,
         "Appearances": "1",
         "id": 927
     },
     {
-        "ID_Test": 3173,
         "Varia": 528,
         "Source": 961,
         "Appearances": "1",
         "id": 928
     },
     {
-        "ID_Test": 3174,
         "Varia": 22,
         "Source": 961,
         "Appearances": "2",
         "id": 929
     },
     {
-        "ID_Test": 3175,
         "Varia": 518,
         "Source": 973,
         "Appearances": "2",
         "id": 930
     },
     {
-        "ID_Test": 3176,
         "Varia": 529,
         "Source": 973,
         "Appearances": "2",
         "id": 931
     },
     {
-        "ID_Test": 3177,
         "Varia": 480,
         "Source": 975,
         "Appearances": "1",
         "id": 932
     },
     {
-        "ID_Test": 3178,
         "Varia": 530,
         "Source": 982,
         "Appearances": "1",
         "id": 933
     },
     {
-        "ID_Test": 3179,
         "Varia": 260,
         "Source": 982,
         "Appearances": "2",
         "id": 934
     },
     {
-        "ID_Test": 3180,
         "Varia": 455,
         "Source": 983,
         "Appearances": "2",
         "id": 935
     },
     {
-        "ID_Test": 3181,
         "Varia": 531,
         "Source": 984,
         "Appearances": "4",
         "id": 936
     },
     {
-        "ID_Test": 3182,
         "Varia": 532,
         "Source": 984,
         "Appearances": "4",
         "id": 937
     },
     {
-        "ID_Test": 3183,
         "Varia": 260,
         "Source": 984,
         "Appearances": "4",
         "id": 938
     },
     {
-        "ID_Test": 3184,
         "Varia": 455,
         "Source": 986,
         "Appearances": "2",
         "id": 939
     },
     {
-        "ID_Test": 3185,
         "Varia": 303,
         "Source": 987,
         "Appearances": "1",
         "id": 940
     },
     {
-        "ID_Test": 3186,
         "Varia": 526,
         "Source": 987,
         "Appearances": "2",
         "id": 941
     },
     {
-        "ID_Test": 3187,
         "Varia": 533,
         "Source": 989,
         "Appearances": "1",
         "id": 942
     },
     {
-        "ID_Test": 3188,
         "Varia": 534,
         "Source": 989,
         "Appearances": "1",
         "id": 943
     },
     {
-        "ID_Test": 3189,
         "Varia": 196,
         "Source": 992,
         "Appearances": "1",
         "id": 944
     },
     {
-        "ID_Test": 3190,
         "Varia": 64,
         "Source": 992,
         "Appearances": "2",
         "id": 945
     },
     {
-        "ID_Test": 3191,
         "Varia": 535,
         "Source": 996,
         "Appearances": "1",
         "id": 946
     },
     {
-        "ID_Test": 3192,
         "Varia": 314,
         "Source": 997,
         "Appearances": "1",
         "id": 947
     },
     {
-        "ID_Test": 3193,
         "Varia": 536,
         "Source": 870,
         "Appearances": "1",
         "id": 948
     },
     {
-        "ID_Test": 3194,
         "Varia": 537,
         "Source": 870,
         "Appearances": "1",
         "id": 949
     },
     {
-        "ID_Test": 3195,
         "Varia": 538,
         "Source": 870,
         "Appearances": "1",
         "id": 950
     },
     {
-        "ID_Test": 3196,
         "Varia": 17,
         "Source": 870,
         "Appearances": "2",
         "id": 951
     },
     {
-        "ID_Test": 3197,
         "Varia": 539,
         "Source": 870,
         "Appearances": "1",
