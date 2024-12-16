@@ -1,0 +1,422 @@
+[
+    {
+        "name": "Adventures (2020-)",
+        "id": "4d428462-35a1-4c38-90c8-e002a492646f"
+    },
+    {
+        "name": "Age of Republic",
+        "id": "1e59a14b-49c5-466d-8706-db032833faf3"
+    },
+    {
+        "name": "Age of Rebellion",
+        "id": "d53a34a0-9ba3-45b4-abbc-cfe22258927d"
+    },
+    {
+        "name": "Age of Resistance",
+        "id": "e391820d-b89d-4344-9c98-2a3fcd79cf2a"
+    },
+    {
+        "name": "Allegiance",
+        "id": "3ce2575f-729c-476b-b82a-6520af44ea82"
+    },
+    {
+        "name": "Bounty Hunters",
+        "id": "7260fd04-73ef-486f-aa20-0f500d19a177"
+    },
+    {
+        "name": "Captain Phasma",
+        "id": "a8b7290f-7e8d-4116-a5b2-4d5f00d428a2"
+    },
+    {
+        "name": "Chewbacca",
+        "id": "afef9598-9877-4925-a2c2-571a889c8a9c"
+    },
+    {
+        "name": "Clone Wars",
+        "id": "4bf5fd6b-6872-4433-abfe-49673371cc6f"
+    },
+    {
+        "name": "Crimson Reign",
+        "id": "02b158e1-96ec-4330-9f95-bcc919b1cf84"
+    },
+    {
+        "name": "Darth Maul",
+        "id": "83a3a383-3bef-4e81-bac0-666606b50185"
+    },
+    {
+        "name": "Darth Maul: Son of Dathomir",
+        "id": "16ccd0b6-6751-43d9-9235-2c480d3cbbab"
+    },
+    {
+        "name": "Darth Vader (2015-2017)",
+        "id": "57acc609-3c55-4964-88b7-17e95969a075"
+    },
+    {
+        "name": "Darth Vader (2020 - )",
+        "id": "d5dd1d52-07fb-4d2f-8c58-fef5aad6bbc9"
+    },
+    {
+        "name": "Darth Vader: Dark Lord of the Sith",
+        "id": "d154d9c1-b6cc-4feb-8cde-a6253b28f85b"
+    },
+    {
+        "name": "Doctor Aphra",
+        "id": "933a8d05-5b6e-4ecd-8b7a-170e422b2150"
+    },
+    {
+        "name": "Doctor Aphra (2020 - )",
+        "id": "0c990414-51f1-4f08-9f29-7b423310ba79"
+    },
+    {
+        "name": "Empire Ascendant",
+        "id": "341e8d5c-b1af-411a-a6eb-e38e810a52df"
+    },
+    {
+        "name": "Forces of Destiny",
+        "id": "a23d0fb9-1139-4757-9c27-9c441eb58c85"
+    },
+    {
+        "name": "From A Certain Point of View",
+        "id": "884512ca-9664-4846-a2e2-5f47aab16a7c"
+    },
+    {
+        "name": "From A Certain Point of View - The Empire Strikes Back",
+        "id": "317ad24b-e99a-4804-bfd3-480fdf6b5a2b"
+    },
+    {
+        "name": "Galaxy's Edge",
+        "id": "d0699c11-b3fc-4df5-a9de-86c43e8bcea8"
+    },
+    {
+        "name": "Ghosts of Vader's Castle",
+        "id": "d53ddbea-d11d-4e08-812c-7d83f273329a"
+    },
+    {
+        "name": "Han Solo",
+        "id": "307d08c1-f73b-44a0-ad60-08370a8a9f55"
+    },
+    {
+        "name": "Han Solo: Imperial Cadet",
+        "id": "d2dd915c-6afb-41e7-ba56-140814e54c4b"
+    },
+    {
+        "name": "Jedi Fallen Order - Dark Temple",
+        "id": "2640e838-69b5-4ad7-b0e1-2ac805eea6f5"
+    },
+    {
+        "name": "Kanan",
+        "id": "f40cd484-5099-4b77-9d67-8c7fd5ce1747"
+    },
+    {
+        "name": "Lando",
+        "id": "04a5c0c4-0c0e-45b3-ab44-acab8ca0dd61"
+    },
+    {
+        "name": "Lando: Double or Nothing",
+        "id": "0ec1abd7-ef33-4606-b8bf-defca71aef58"
+    },
+    {
+        "name": "Life Day",
+        "id": "eaa9798e-d739-4c8d-99b6-8e9f09b610b1"
+    },
+    {
+        "name": "Mace Windu: Jedi of the Republic",
+        "id": "2e3ceac9-0de9-4330-a7a8-401b5757e0aa"
+    },
+    {
+        "name": "Obi-Wan and Anakin",
+        "id": "22b82672-bf12-41f1-9274-518575ac47a5"
+    },
+    {
+        "name": "Poe Dameron",
+        "id": "2f6ed894-a0a3-4cd9-933c-ad239b01a8af"
+    },
+    {
+        "name": "Princess Leia",
+        "id": "7319e791-95de-4981-ad08-1396c9ec40a0"
+    },
+    {
+        "name": "Rebels",
+        "id": "8c70ca37-536d-439f-a788-84723d6fed2c"
+    },
+    {
+        "name": "Resistance",
+        "id": "f2971d25-6692-49f1-b4a4-a17b0003007f"
+    },
+    {
+        "name": "Return to Vader's Castle",
+        "id": "5c6a47b9-3dad-4c00-83fa-040e394eb6dd"
+    },
+    {
+        "name": "Rogue One",
+        "id": "a00a1754-9d48-4dc7-9f00-4653c66b432d"
+    },
+    {
+        "name": "Shattered Empire",
+        "id": "9ab6e3e0-8090-4e1d-afb0-097e07921676"
+    },
+    {
+        "name": "Solo: A Star Wars Story",
+        "id": "788edf62-9e03-4f14-bac5-4418d510ba1b"
+    },
+    {
+        "name": "Star Wars (2015-2019)",
+        "id": "a380e441-d7c0-4243-990e-02d42704161d"
+    },
+    {
+        "name": "Star Wars (2020-)",
+        "id": "5472dd73-c2ff-47c7-a93d-f5cf5b220c62"
+    },
+    {
+        "name": "Tales From Vader's Castle",
+        "id": "6b6610fe-65e6-468f-aad8-92a2aabe7622"
+    },
+    {
+        "name": "Target Vader",
+        "id": "bf9a7186-a878-4c54-834b-fac405ed69ea"
+    },
+    {
+        "name": "The Bad Batch",
+        "id": "15676d34-2de6-4a77-8e65-e4e712747076"
+    },
+    {
+        "name": "The Book of Boba Fett",
+        "id": "757a77ef-db75-493a-bd7c-60d1ff895cec"
+    },
+    {
+        "name": "The Clone Wars: Stories of Light and Dark",
+        "id": "8f849811-1208-486a-ac7c-5e3b88c6785c"
+    },
+    {
+        "name": "The High Republic",
+        "id": "8809a86b-ed76-4cd3-888d-e360cb5d0359"
+    },
+    {
+        "name": "The High Republic Adventures",
+        "id": "499cfd37-b793-485a-942c-2f1e8b7ce652"
+    },
+    {
+        "name": "The Last Jedi",
+        "id": "060b10a0-ceff-4dbf-b07b-ec0a02c8c13a"
+    },
+    {
+        "name": "The Mandalorian",
+        "id": "756354cc-719a-4e4e-ab2c-2a9733c405d4"
+    },
+    {
+        "name": "The Monster of Temple Peak",
+        "id": "e6ec7b4d-de8e-424b-9abc-01fc01eebbc6"
+    },
+    {
+        "name": "The Rise of Kylo Ren",
+        "id": "86dd13a2-805b-48b2-8af4-94075b51138b"
+    },
+    {
+        "name": "TIE Fighter",
+        "id": "29dcc8f3-6e0d-4f75-a9c8-7319f51eb13c"
+    },
+    {
+        "name": "Thrawn",
+        "id": "76b47e64-0e1b-4461-b9c4-2e539488e60c"
+    },
+    {
+        "name": "Trail of Shadows",
+        "id": "431909bf-9ab1-4835-a498-aebdc932f46e"
+    },
+    {
+        "name": "Vader: Dark Visions",
+        "id": "29fd68a2-6fc5-4576-8aa9-98e688aceb74"
+    },
+    {
+        "name": "War of the Bounty Hunters",
+        "id": "896444b6-3bc4-4304-8e9d-aac538bdd31f"
+    },
+    {
+        "name": "The Clone Wars: Battle Tales",
+        "id": "cc749a1b-56f6-4bba-8b13-fbf6286ced68"
+    },
+    {
+        "name": "The Force Awakens",
+        "id": "4f6cc31b-7953-4295-b2d3-6692cf06c584"
+    },
+    {
+        "name": "Eye of the Storm",
+        "id": "c2109aa7-4788-4196-9233-49b5f5a6bb6c"
+    },
+    {
+        "name": "Halcyon Legacy",
+        "id": "2a10bfd8-8f1c-4ad1-8371-44750690c167"
+    },
+    {
+        "name": "Obi-Wan Kenobi",
+        "id": "f7ac96cb-9e85-4683-9b22-db2ae4384ff8"
+    },
+    {
+        "name": "Obi-Wan",
+        "id": "738171f8-aa1b-496e-89a6-5962a0adfa13"
+    },
+    {
+        "name": "Han Solo & Chewbacca",
+        "id": "8010934a-5786-4ab0-a484-37dd7c441fa2"
+    },
+    {
+        "name": "Hyperspace Stories",
+        "id": "655ebb5c-a293-47df-b75d-e2cdffa8a4cd"
+    },
+    {
+        "name": "Andor",
+        "id": "dd570282-5bcf-4e2d-ab27-d05cb955ba7a"
+    },
+    {
+        "name": "The High Republic Phase II",
+        "id": "d88947fb-4e07-404c-a7d0-740e4c6dbdc1"
+    },
+    {
+        "name": "Tales of the Jedi",
+        "id": "e5c62130-4b90-45ba-a3b1-560964aa58c8"
+    },
+    {
+        "name": "Hidden Empire",
+        "id": "a1362ab7-f9f7-4971-9e69-cd9756c7e6c7"
+    },
+    {
+        "name": "Yoda",
+        "id": "cf9ae2a4-5cfc-4644-a53d-190e58944f9f"
+    },
+    {
+        "name": "The High Republic Adventures - Phase II",
+        "id": "c7970ca5-c5c4-475c-ad20-446697064d4d"
+    },
+    {
+        "name": "The High Republic - The Blade",
+        "id": "a2e8ca57-8333-4fd6-a348-a8da3678cc1a"
+    },
+    {
+        "name": "Tales from a Galaxy Far, Far, Away: Aliens: Volume 1",
+        "id": "4907d676-5152-4b33-90ba-93893473e62f"
+    },
+    {
+        "name": "Canto Bight",
+        "id": "ee456d7e-df3b-4516-b8ea-a949833e4fee"
+    },
+    {
+        "name": "Dark Legends",
+        "id": "a85a8fe7-8b1b-4c6a-b3c1-57d00965df43"
+    },
+    {
+        "name": "Starlight Stories",
+        "id": "1a2947fb-368c-48c2-b3aa-ec08bbbc55a2"
+    },
+    {
+        "name": "Stories of Jedi and Sith",
+        "id": "319f425b-5a5f-4200-8ac9-5b67a630f37a"
+    },
+    {
+        "name": "Sana Starros",
+        "id": "74af95e8-b831-4b27-868d-ebf21b5a2eb2"
+    },
+    {
+        "name": "The High Republic Adventures - Phase 2 - The Nameless Terror",
+        "id": "94fe2368-3bae-4680-9990-f3d4ecbb8169"
+    },
+    {
+        "name": "Return of the Jedi",
+        "id": "e3b50f4e-b311-473e-af2f-6de02e433aa4"
+    },
+    {
+        "name": "Darth Vader: Black, White and Red",
+        "id": "be807aa4-bfad-47b0-b807-67021e521443"
+    },
+    {
+        "name": "The High Republic: The Edge of Balance",
+        "id": "e9ad1208-5992-4620-93fd-de3b863613fb"
+    },
+    {
+        "name": "Young Jedi Adventures",
+        "id": "dea10475-ca5e-45aa-91c3-44b981481b40"
+    },
+    {
+        "name": "Ahsoka",
+        "id": "bfea3c6c-0eb7-44c4-8306-9bf058869fd3"
+    },
+    {
+        "name": "Dark Droids",
+        "id": "61de049f-1dc7-4653-8a73-c40eeb06fd4d"
+    },
+    {
+        "name": "Dark Droids: D-Squad",
+        "id": "00123936-5fe9-4a19-a8c6-c21c2dbd5485"
+    },
+    {
+        "name": "The High Republic: Shadows of Starlight",
+        "id": "725f18c3-9188-4eb2-b257-48db4e2127c3"
+    },
+    {
+        "name": "Tales From The Death Star",
+        "id": "5e18b686-68bf-489c-90c9-47beee006751"
+    },
+    {
+        "name": "The High Republic: Phase 3",
+        "id": "0ffda1a1-71e7-4b58-b570-01a36c77a77b"
+    },
+    {
+        "name": "The High Republic Adventures - Phase 3",
+        "id": "54b1ace1-b773-48d9-bb03-12573eb506cf"
+    },
+    {
+        "name": "Thrawn: Alliances",
+        "id": "32fb97b6-57f3-47f8-8b9b-4ec306292860"
+    },
+    {
+        "name": "Mace Windu",
+        "id": "0b56694d-cc2f-440e-8b0c-10e844c53d78"
+    },
+    {
+        "name": "Jango Fett",
+        "id": "6eeceef9-c223-48c4-a5f9-90c528c43f5c"
+    },
+    {
+        "name": "The High Republic Adventures - Saber for Hire",
+        "id": "399f71ef-c7a1-434b-86da-68ca105d65f2"
+    },
+    {
+        "name": "Darth Maul - Black, White & Red",
+        "id": "f8c68ed9-bf43-4341-8d83-0f0320e8d5dc"
+    },
+    {
+        "name": "Tales of the Empire",
+        "id": "518e1b04-05bf-4329-b32b-156af07aaa2d"
+    },
+    {
+        "name": "The Acolyte",
+        "id": "2e2460af-a4f8-4771-b5eb-9eb94f033dfd"
+    },
+    {
+        "name": "Inquisitors",
+        "id": "29c04fd4-20cf-478a-9c0e-592680118851"
+    },
+    {
+        "name": "The High Republic Adventures - Echoes of Fear",
+        "id": "da2f1109-f9ee-44fa-bb96-e33ea0d6bfb5"
+    },
+    {
+        "name": "Adventures in Wild Space",
+        "id": "873591d9-f40c-4202-94f3-0bc12d03398a"
+    },
+    {
+        "name": "Battle of Jakku - Insurgency Rising",
+        "id": "a12c9868-dfaf-401e-ac03-6cf97797700e"
+    },
+    {
+        "name": "Ewoks",
+        "id": "66ad2653-a3d4-4b82-b2c1-16720872ca26"
+    },
+    {
+        "name": "The High Republic Adventures - Dispatches from the Occlusion Zone",
+        "id": "f92a4580-596b-47a9-a6a6-6bd024fe8468"
+    },
+    {
+        "name": "Battle of Jakku - Republic Under Siege",
+        "id": "f7004baa-4f74-4c68-a7ea-07be47011a6b"
+    }
+]

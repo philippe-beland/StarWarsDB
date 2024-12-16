@@ -1,0 +1,7021 @@
+[
+    {
+        "name": "Jedha",
+        "system": "Jedha",
+        "destinations": "Jedha City, Jedi Temple, The Catacombs of Cadera, Ai-jed, Temple of the Kyber",
+        "comments": "Une des rares sources de Kyber Crystals.",
+        "capital_city": "Jedha City",
+        "region": "5",
+        "sector": "Subsecteurs autonomes",
+        "first_appearance_canon": "2bea9710-7ba3-497a-80e6-8cc9c6cdc50d",
+        "id": "636ebe93-57ae-454c-86e2-0341011a0ca9"
+    },
+    {
+        "name": "Coruscant",
+        "system": "Coruscant",
+        "destinations": "Level 1313 Arrth-Eno Prison Complex, Umate",
+        "moons": "Centax 3 (3rd Moon)",
+        "terrain": "Villes",
+        "sector": "Corusca",
+        "first_appearance_legends": "Heir to the Empire",
+        "id": "4f883c75-5fc7-403d-b658-58fb64f82dc4"
+    },
+    {
+        "name": "Tatooine",
+        "system": "Tatoo",
+        "destinations": "Mos Espa , Mos Eisley Mos Pelgo Mos Entha Anchorhead Tosche Station Jundland Wastes Fort Tusken Jundt Massif Beggar's Canyon Jag Crag Gorge, Mos Entha",
+        "suns": "Tatoo I Tatoo II",
+        "moons": "3",
+        "fauna": "Womp Rat Bantha Dewback Worrt Eopie Krayt Dragon Ronto",
+        "comments": "Contrôlée par les Hutts",
+        "region": "7",
+        "terrain": "Déserts",
+        "sector": "Arkanis",
+        "first_appearance_canon": "9d463018-f6e8-42e7-aebc-8e0f0b5c7800",
+        "id": "8039ee6a-ee74-4474-a313-f423e8f2e433"
+    },
+    {
+        "name": "Naboo",
+        "system": "Naboo",
+        "destinations": "Otoh Gunga, Alderaan's Enclave, Theed, Lake Paonga, Varykino",
+        "moons": "3 lunes (Onoam, )",
+        "fauna": "Kaadu Opee sea Monster Sando Aqua Monster Colo Claw Fish Tusk-Cat Shaak",
+        "capital_city": "Theed",
+        "region": "5",
+        "terrain": "Plaines, rivières, cascades",
+        "sector": "Chommell",
+        "first_appearance_canon": "850fa53e-efba-4157-becc-85d81ed30b62",
+        "id": "30de472f-396a-49a3-b91c-bdbe50450cf1"
+    },
+    {
+        "name": "Ring of Kafrene",
+        "comments": "Trading Post",
+        "id": "3d84d46c-f2f6-4d4f-a261-7614a77d9440"
+    },
+    {
+        "name": "Glee Anselm",
+        "id": "cf3b792c-08d0-4db1-8a65-c483e472cfad"
+    },
+    {
+        "name": "Sullust",
+        "comments": "La moitié des Sullustans travaillent pour Soro-Suub.",
+        "id": "69138845-5c86-45d6-a753-b57e3b40b443"
+    },
+    {
+        "name": "Mon Cala",
+        "system": "Mon Cala",
+        "destinations": "Dac City",
+        "suns": "2",
+        "fauna": "Mon Cala Eel",
+        "comments": "Beaucoup de villes marines, mais certaines sont à la surface",
+        "region": "7",
+        "terrain": "Océans",
+        "sector": "Calamari",
+        "id": "e7b54d93-fbd9-4674-be54-308511df13b3"
+    },
+    {
+        "destinations": "Maz Kanata's Castle, Nymeve Lake",
+        "name": "Takodana",
+        "comments": "Située à mi-chemin des Core Worlds et du Wild Space, Takodana est une étape populaire pour les voyageurs, les fugitifs et les contrebandiers.",
+        "region": "5",
+        "id": "5c14808a-2422-418a-8873-88055161365a"
+    },
+    {
+        "destinations": "Pixelito",
+        "name": "Malastare",
+        "terrain": "Forêts",
+        "id": "1c3d17fa-932d-42a2-81e0-c04889271383"
+    },
+    {
+        "name": "Death Star II",
+        "id": "5d5dbf6c-7dfc-4051-9bc5-681724999804"
+    },
+    {
+        "name": "Jakku",
+        "system": "Jakku",
+        "destinations": "Tuanul, Ravin de Kelvin, Cratertown, Désert de Goazon, Avant-poste de Niima, Blowback Town",
+        "fauna": "Happabore",
+        "comments": "Le village sacré de Tuanul est peuplé par les membres de l'Église de la Force - Le Gardien surveille, solitaire, sur son pylône de pierre à l'ombre de la Crête de Carbone",
+        "region": "6",
+        "sector": "Inconnu",
+        "first_appearance_canon": "b7868e5a-da6e-4586-bb1e-4969c199f700",
+        "id": "71ac59ee-5b6a-4ade-95ef-8d8b8aa1456a"
+    },
+    {
+        "name": "Iego Moon",
+        "id": "ef7a7880-a0eb-4c2c-9d4d-91d1fa6110ee"
+    },
+    {
+        "name": "Tund system",
+        "id": "13f5d768-6b46-4650-8a16-0016af1319d9"
+    },
+    {
+        "destinations": "Aldera, Appenza Peak, Glarus Lagoon",
+        "name": "Alderaan",
+        "comments": "Un des plus anciens mondes affiliés à la République Galactique.",
+        "first_appearance_canon": "9d463018-f6e8-42e7-aebc-8e0f0b5c7800",
+        "id": "f520e185-1835-4d29-96c8-54afa53a83e9"
+    },
+    {
+        "name": "Ansion",
+        "id": "06e811dd-6726-4ebd-941d-f42b22ecc6c5"
+    },
+    {
+        "name": "Subterrel",
+        "id": "d08e54fd-1e02-4049-b0f8-aea861665ba2"
+    },
+    {
+        "name": "Kamino",
+        "system": "Kamino",
+        "fauna": "Aiwha",
+        "capital_city": "Tipoca City",
+        "terrain": "Océans",
+        "sector": "Abrion",
+        "first_appearance_canon": "151425bf-4a3c-48d8-a489-21d965cb5114",
+        "id": "8a8ef72f-dd30-4f58-8327-16dfe5ebde4c"
+    },
+    {
+        "name": "Geonosis",
+        "system": "Geonosis",
+        "destinations": "Progate Temple",
+        "moons": "Bahryn",
+        "comments": "Très réputée pour ses industries",
+        "region": "7",
+        "terrain": "Déserts",
+        "sector": "Arkanis",
+        "id": "f67bc7cc-643f-44c8-afb8-51c33b3a217f"
+    },
+    {
+        "name": "Cato Neimoidia",
+        "comments": "Greatest of the Neimoidian purse worlds",
+        "region": "2",
+        "capital_city": "Zarra",
+        "id": "7aa579ce-0bf9-475f-bc73-d85c8f2c6de1"
+    },
+    {
+        "name": "Boz Pity",
+        "id": "2e9fda5f-813e-4d9b-875b-815775d62467"
+    },
+    {
+        "name": "Saleucami",
+        "id": "e985c652-1584-415e-b4cb-3a93ca230f2c"
+    },
+    {
+        "name": "Utapau",
+        "system": "Utapau",
+        "destinations": "Pau City",
+        "fauna": "Dactillion Varactyl Jamel",
+        "comments": "Des tempêtes d'hypervent battent la surface d'Utapau, forçant les habitants à vivres dans les gouffres gigantesques qui creusent la croûte de la planète. Les Amani, récemment arrivés sur Utapau, sont suffisamment robustes pour occuper les plaines de la surface.",
+        "region": "7",
+        "sector": "Tarabba",
+        "id": "a28c9ac8-dd8e-4262-b2e7-e9f8b0997fba"
+    },
+    {
+        "name": "Mustafar",
+        "system": "Mustafar",
+        "destinations": "Gaheen Plains (Vader's Castle)",
+        "moons": "0",
+        "fauna": "Anguille de lave Xandanks Puces de lave",
+        "comments": "Anciennement QG de Black Sun",
+        "region": "7",
+        "terrain": "Lave, Volcans",
+        "sector": "Atravis",
+        "first_appearance_canon": "4d90feac-442e-47af-8743-961810a31498",
+        "id": "f13b85c3-ae09-4249-92a2-05f1f3680dee"
+    },
+    {
+        "name": "Kashyyyk",
+        "system": "Kashyyyk",
+        "destinations": "Shadowlands, Black Forest",
+        "fauna": "Can-Cells",
+        "capital_city": "Kachirho",
+        "region": "5",
+        "terrain": "Forêts",
+        "sector": "Mytaranor",
+        "first_appearance_legends": "Star Wars Holiday Special",
+        "id": "e97b58e2-198c-4fcf-9e30-67b49f76e0c3"
+    },
+    {
+        "name": "Felucia",
+        "comments": "Située au coeur d'une importante route hyperspatiale (Perlemian Trade Route)  Monde fermier couvert de jungles de champignons",
+        "region": "7",
+        "fauna": "Nysillim",
+        "id": "22804c9b-564f-4727-8077-6b95e1d65d09"
+    },
+    {
+        "name": "Polis Massa",
+        "comments": "Autrefois une planète, Polis Massa a été mystérieusement réduite à l'état de champ d'astéroïdes.",
+        "id": "c6b30f6a-c127-4362-9889-49407d672b10"
+    },
+    {
+        "name": "Kessel",
+        "moons": "3",
+        "comments": "Un hémisphère de ce monde est luxuriant et splendide: d'élégants palaces et leurs jardins sompteux s'étendent le long des forêts touffues et de lacs crystallins. De l'autre côté, de vastes colonies d'esclaves suent dans les sinistres mines d'épices.",
+        "terrain": "Forêts, Mines",
+        "first_appearance_canon": "9d463018-f6e8-42e7-aebc-8e0f0b5c7800",
+        "id": "6d356301-58c8-4ee6-ac76-30819fe7ccfd"
+    },
+    {
+        "name": "Dantooine",
+        "comments": "Ancienne base rebelle",
+        "id": "5adf1fa7-1322-4126-8a80-d99d575a8df4"
+    },
+    {
+        "name": "Yavin 4",
+        "system": "Yavin",
+        "destinations": "Massassi Temple, Wetyin's Colony, Gully's Cantina",
+        "suns": "Géante rouge (Yavin)",
+        "fauna": "Oiseaux murmures Stintaril Crabe-lézard Anguille cuirassé Scarabée Piranha Pêcheur Ver Leviathan Runyip Woolamandre",
+        "region": "7",
+        "terrain": "Jungles",
+        "sector": "Gordian Reach",
+        "first_appearance_canon": "9d463018-f6e8-42e7-aebc-8e0f0b5c7800",
+        "id": "ef1fce25-b779-439c-821f-b38ff1ded918"
+    },
+    {
+        "name": "Dagobah",
+        "system": "Dagobah",
+        "destinations": "Dark Side Cave",
+        "fauna": "Accipiptero Elephoth Jubba Bird Araignées des marais Snake-Dragon Limace des marais Sleen",
+        "region": "7",
+        "terrain": "Marais",
+        "sector": "Sluis",
+        "id": "8c06b92f-13a3-47a4-9be2-6ebe1645cb19"
+    },
+    {
+        "name": "Taanab",
+        "id": "022bbd77-43c9-45b2-bbfa-077b2bfbc9d7"
+    },
+    {
+        "name": "Bespin",
+        "system": "Bespin",
+        "destinations": "Cloud City, Ugnorgrad, Chinook Station",
+        "fauna": "Beldon Rawwk Crevette volante Crabe Planeur",
+        "comments": "Source importante de Tibanna Cloud City possède 392 niveaux.",
+        "region": "7",
+        "terrain": "Gaz",
+        "sector": "Anoat",
+        "id": "be7fd41d-692f-42d4-bb8f-b854dd05aced"
+    },
+    {
+        "name": "Wobani",
+        "id": "09993176-0903-4b68-a5a8-8110d27d1dea"
+    },
+    {
+        "name": "Scarif",
+        "region": "7",
+        "id": "81cf47eb-0a2a-4c96-b474-1638a30a8463"
+    },
+    {
+        "name": "Eadu",
+        "comments": "Imperial Kyber Refinery",
+        "region": "7",
+        "terrain": "Orages",
+        "id": "fef22bc9-c05c-4691-bbeb-75acbdd17c13"
+    },
+    {
+        "name": "Eriadu",
+        "destinations": "Phelar Port, Rivoche Ranges, Eriadu City, Carrion Plateau",
+        "comments": "Les Tarkins ont été dans les premiers à s'y installer.",
+        "region": "7",
+        "sector": "Greater Seswenna",
+        "id": "ffef8152-4fc2-4e62-89c9-eea513d9e1e6"
+    },
+    {
+        "name": "Corellia",
+        "destinations": "Phien District, Coronet Spaceport, Coronet City, Doaba Guerfel, Bela Vistal, Foundry, The Bottoms",
+        "suns": "Corell",
+        "comments": "Monde important du Noyau, célèbre pour ses vaisseaux et pilotes",
+        "capital_city": "Coronet City",
+        "first_appearance_canon": "9d463018-f6e8-42e7-aebc-8e0f0b5c7800",
+        "id": "15c0a013-9454-4c17-8846-d55f0ae3c491"
+    },
+    {
+        "name": "Milvayne",
+        "id": "56c55b6c-f1ff-4363-9506-83c930f6d3cd"
+    },
+    {
+        "name": "Ahch-To",
+        "id": "5a7b1510-cd51-4655-ac0e-eedca4b70872"
+    },
+    {
+        "name": "D'Qar",
+        "comments": "Alliance Rebelle et Résistance y ont établis des bases. Secret headquarters of the resistance",
+        "region": "7",
+        "terrain": "Forêts",
+        "first_appearance_canon": "b7868e5a-da6e-4586-bb1e-4969c199f700",
+        "id": "d31bbd50-efc2-41df-a8ea-760c1d7e28bf"
+    },
+    {
+        "system": "Ilum",
+        "name": "Starkiller Base",
+        "region": "8",
+        "sector": "7G",
+        "id": "2aa0cdc0-2905-4b06-875c-a986baee3c16"
+    },
+    {
+        "name": "Hosnian Prime",
+        "destinations": "Chikua City",
+        "id": "18c009f5-a3ab-400f-b1a2-f581b4fce0a3"
+    },
+    {
+        "name": "Crait",
+        "comments": "Was a fully operational mining facility that was abandoned due to a labor dispute.",
+        "id": "c782ce85-07f5-493f-8fc2-b85075a42ce6"
+    },
+    {
+        "name": "Pastoria",
+        "region": "7",
+        "id": "f78b79fe-3f0e-4bab-ac32-2304b2c095d7"
+    },
+    {
+        "destinations": "Canto Bight, Zord's Spa and Bathhouse, Ronen Tagge's Private Penthouse",
+        "name": "Cantonica",
+        "comments": "<br>",
+        "first_appearance_canon": "530fdf83-0039-4959-b254-420306c0206b",
+        "id": "a81f323b-348c-42e2-a8b5-8e6f3393102a"
+    },
+    {
+        "destinations": "Black Spire Outpost",
+        "name": "Batuu",
+        "comments": "Home to ancient ruins and giant petrified black trees.",
+        "id": "a2aca056-a69a-48cb-be51-60b4d547d990"
+    },
+    {
+        "name": "Kullgroon",
+        "id": "9460668d-e1f8-44ce-b4bc-841680f4802d"
+    },
+    {
+        "name": "Vandor",
+        "id": "86a2a6fa-3018-4546-8ecb-c87bb7179ad4"
+    },
+    {
+        "destinations": "Imperial Academy",
+        "name": "Carida",
+        "id": "e6cb45be-05de-4c63-b0fd-3ae0be9bad9d"
+    },
+    {
+        "name": "Mimban",
+        "region": "5",
+        "id": "5e36f792-c164-40b7-aa71-bf656bc6e7f0"
+    },
+    {
+        "name": "Accresker Jail",
+        "id": "fb4e3266-f181-4ac2-b92b-f55ab5e3d761"
+    },
+    {
+        "name": "Barbadel",
+        "id": "b1e38abf-5e75-453c-84ca-db2bae1dc87a"
+    },
+    {
+        "destinations": "Pons Ora",
+        "name": "Abafar",
+        "comments": "Monde aride, riche en rhydonium",
+        "region": "7",
+        "id": "70a02eb8-a4f4-4ef1-8406-048f1daa4525"
+    },
+    {
+        "name": "Dathomir",
+        "system": "Dathomir",
+        "destinations": "Nightsisters Lair, Misty Falls",
+        "suns": "Faible étoile rouge (Domir)",
+        "fauna": "Rancor",
+        "comments": "Abrite les Soeurs de la nuit et les frères de la nuit",
+        "region": "5",
+        "terrain": "Jungle, Forêt, Marais, Montagnes",
+        "sector": "Qelli",
+        "id": "9c18f17a-9015-45a0-ba4a-077d85bbf707"
+    },
+    {
+        "name": "Ithor",
+        "comments": "L'empire force les ithoriens à révéler leurs secrets de technologies fermières, leur promettant de leur épargner une invasion dévastatrice.",
+        "id": "48fe2bd6-f9cc-44be-b018-fed67a9ac7cb"
+    },
+    {
+        "name": "Jelucan",
+        "comments": "Colonisée en deux vagues successives: les secondes colons sont devenus de riches exploitants miniers, alors que les premiers ont conservés leurs rudes traditions montagnardes.",
+        "terrain": "Glace, montagnes vertigineuses",
+        "id": "07b6cf6c-0f33-4f56-9964-a6d5b083f93e"
+    },
+    {
+        "destinations": "The Citadel",
+        "name": "Lola Sayu",
+        "comments": "Site de la Citadelle, prison Jedi",
+        "terrain": "Volcanique",
+        "id": "3f2450c2-401e-45f0-9235-1514a4aec85c"
+    },
+    {
+        "name": "Maridun",
+        "id": "5aefb538-9919-44f5-9ba1-63ed613a2562"
+    },
+    {
+        "name": "Moraband",
+        "comments": "Vallée des seigneurs noirs, sépultures de puissants Sith",
+        "id": "46e3e402-204f-4ac6-8035-6fe4a817b00a"
+    },
+    {
+        "name": "Mortis",
+        "system": "Chrelythiumn",
+        "destinations": "Well of the Dark Side",
+        "comments": "Terre natale des Mortis Gods",
+        "sector": "Inconnu",
+        "id": "4941225b-a841-419c-a40d-0eac9d00954c"
+    },
+    {
+        "name": "Quermia",
+        "id": "c480837d-04cb-41c5-bd6d-653c807aae7f"
+    },
+    {
+        "destinations": "Raxulon",
+        "name": "Raxus",
+        "comments": "Capitale de la Confédération des Systèmes Indépendants durant la Guerre des Clones.",
+        "capital_city": "Raxulon",
+        "terrain": "Forêts, plaines, océans",
+        "id": "e69e842d-8e5c-4e5e-85d3-3f183631f32f"
+    },
+    {
+        "name": "Scipio",
+        "comments": "Quartier général du Clan Bancaire InterGalactique",
+        "terrain": "Glaces",
+        "id": "53779b22-77af-4622-b57a-8c5655475a79"
+    },
+    {
+        "destinations": "Saffia",
+        "name": "Serenno",
+        "capital_city": "Carannia",
+        "terrain": "Forêts",
+        "id": "5e5f3cb2-2f07-426d-b916-643aacf6caf7"
+    },
+    {
+        "name": "Stygeon Prime",
+        "comments": "Prison de haute sécurité - La flèche (???)",
+        "terrain": "Montagnes enneigées",
+        "id": "62170a22-d07e-445c-91f2-bc2a2452be93"
+    },
+    {
+        "name": "Antar 4",
+        "comments": "Lieu des tristement célèbres Atrocités d'Antar, perpétrées par le Grand Moff Tarkin en avertissement aux anciens Séparatistes.",
+        "id": "7716f8f6-da36-407b-93d9-1e4b6dbe968f"
+    },
+    {
+        "name": "Balnab",
+        "comments": "Primitive",
+        "id": "8579db1d-453e-4e79-a8e2-743a7e4cd054"
+    },
+    {
+        "name": "Garel",
+        "id": "8c1baeb2-2ac7-4cc9-bfc0-675be2260615"
+    },
+    {
+        "name": "Gorse",
+        "comments": "Monde minier, dont un hémisphère est perpétuellement plongé dans l'ombre et l'autre baigné par un soleil brûlant.",
+        "moons": "Cynda",
+        "id": "503ab132-4737-435b-bd63-253c21968adc"
+    },
+    {
+        "name": "Kuat",
+        "comments": "Les chantiers navals de Kuat sont renommés partout dans la galaxie. Un vaste anneau artificiel d'usines et de docks de l'espace encercle la planète, ce qui permet de construire les vaisseaux en orbite.",
+        "id": "bdff89ed-fdd0-4d36-8742-71efa1451eab"
+    },
+    {
+        "name": "Lothal",
+        "system": "Lothal",
+        "destinations": "Jhothal, Imperial Academy, Kothal, Tarkin Town",
+        "comments": "Autrefois paisible monde agricole célèbre pour le fruit jogan. La planète est exploitée sans ménagement par l'Empire pour ses minerais et crystaux pour alimenter sa production militaire.  A un temple Jedi",
+        "region": "7",
+        "sector": "Lothal",
+        "first_appearance_canon": "b8793c80-4fe3-4af9-b46c-578157eaeb0c",
+        "id": "7a5c4d36-c544-4b3c-83a5-caded910f266"
+    },
+    {
+        "name": "Mandalore",
+        "system": "Mandalore",
+        "moons": "Concordia",
+        "comments": "Monde autrefois splendide ravagé par des siècles de guerres.",
+        "capital_city": "Sundari",
+        "region": "7",
+        "sector": "Mandalore",
+        "id": "0ed65935-b3f5-4680-974e-5c97e7c10649"
+    },
+    {
+        "name": "Onderon",
+        "destinations": "Unifar Temple, Yolahn Square, Malgan Market",
+        "fauna": "Redoutables créatures",
+        "comments": "Villes protégées par des murs épais",
+        "capital_city": "Iziz",
+        "region": "4",
+        "terrain": "Jungles",
+        "id": "96e32b8f-de78-4e29-8340-28eb8005647c"
+    },
+    {
+        "destinations": "Ord Mantell City",
+        "name": "Ord Mantell",
+        "comments": "Planète montagneuse couverte d'épais nuages roses et habitée par les Falleens et les humains. Célèbre pour être la base du Black Sun.",
+        "region": "5",
+        "id": "48e27be0-99e5-474f-a1a1-632f78fd0bbf"
+    },
+    {
+        "system": "Ruusan",
+        "name": "Ruusan",
+        "moons": "3",
+        "id": "71c3ada7-027b-48cf-9616-f407e0575486"
+    },
+    {
+        "name": "Shantipole",
+        "comments": "Tempêtes font rage entre les flèches montagneuses de Shantipole. L'atmosphère est un piège pour les vaisseaux.",
+        "id": "6a8d4e59-9189-40c2-8ec5-81d2b99dda0b"
+    },
+    {
+        "name": "Shili",
+        "id": "6914eef3-9eae-4cde-b012-9ece5f21542f"
+    },
+    {
+        "destinations": "B'omarr Monks Temple",
+        "name": "Teth",
+        "comments": "Contrôlée par les Hutts. Autrefois occupée par les moines B'omarr.",
+        "terrain": "Montagnes, jungles",
+        "id": "9034a51e-0c1e-4da6-b37d-0237ae4cc7dd"
+    },
+    {
+        "destinations": "Neshorino",
+        "name": "Abednedo",
+        "comments": "Dernier ordre cruel de Palpatine, Operation Cinder, est un plan de vengeance qui doit se déclencher à sa mort. Il vise à détruire des mondes entiers, dont Abednedo.",
+        "id": "f10e2a11-6aa5-46de-a81f-4e1584b1b003"
+    },
+    {
+        "name": "Bardotta",
+        "comments": "Population fascinée par le mysticisme",
+        "terrain": "Montagnes, Glaces",
+        "id": "a94da7d2-5044-4d4d-b5e4-247eb20b0272"
+    },
+    {
+        "name": "Bothawui",
+        "comments": "Denses anneaux d'astéroïdes entourant la géante gazeuse Bothawui permettent aux pilotes de s'entraîner.",
+        "id": "54da7ddb-3be7-4658-9dec-360b3dd6bcfa"
+    },
+    {
+        "name": "Cerea",
+        "comments": "Un beau monde, largement préservé des ravages de la technologie.",
+        "destinations": "Asphodar 3",
+        "id": "2549122f-a8f7-4b03-a295-481e061e89fb"
+    },
+    {
+        "name": "Christophsis",
+        "system": "Christoph",
+        "destinations": "Tophen",
+        "comments": "Forêts de crystals recouvrent sa surface",
+        "capital_city": "Tophen",
+        "region": "7",
+        "sector": "Savareen",
+        "id": "a9e6159a-aaca-448a-9fa0-7fefa62560d3"
+    },
+    {
+        "name": "Devaron",
+        "destinations": "Jedi Temple of Eedit, Tikaroo",
+        "comments": "Abrite un Temple Jedi (Jedi Temple of Eedit)",
+        "terrain": "Forêts, rivières et jungles tropicales",
+        "id": "ad08ad3e-e2f0-46c7-b5d4-f86ba16951ba"
+    },
+    {
+        "name": "Endor",
+        "system": "Endor",
+        "destinations": "Village Ewok de Bright Tree, Campalan Mountain",
+        "moons": "Lune d'Endor",
+        "region": "7",
+        "terrain": "Forêt",
+        "sector": "Modell",
+        "id": "02575e74-8950-4606-a36d-d791feb7e773"
+    },
+    {
+        "name": "Quarzite",
+        "comments": "La vie ne peut se développer à la surface. Les habitants de ce monde ont longtemps combattu pour le contrôle de ses cavernes cristallines souterraines. L'accès à celles-ci n'est possible que par des ascenseurs géants qui conduisent d'une station orbitale à l'intérieur de la croûte de la planète.",
+        "id": "7e507fe4-083b-4257-bd02-94776b8fae81"
+    },
+    {
+        "name": "Rattatak",
+        "comments": "Monde sec et rocailleux",
+        "id": "9867dde3-8ebf-4882-a3eb-df46571fc2fe"
+    },
+    {
+        "name": "Rodia",
+        "system": "Tyrius",
+        "fauna": "Kwazel Maw Plusieurs types de serpents Ghests",
+        "comments": "Les rodiens vivent dans des cités flottantes contenues dans de vastes dômes environnementaux, qui protègent les habitants des effets extrêmes du climat.",
+        "region": "7",
+        "terrain": "Marais, jungles",
+        "sector": "Savareen",
+        "id": "e3dfefdf-2250-4cdb-bf80-7a5a1c96fb4a"
+    },
+    {
+        "name": "Andelm IV",
+        "comments": "Monde isolé connu pour ses scarabées et source d'un minerai rare, la dedlanite",
+        "id": "ab0091e3-947a-404c-8bb4-32669da80fbe"
+    },
+    {
+        "name": "Arkanis",
+        "comments": "La pluie est incessante sur Arkanis, variant de la bruine aux tempêtes intenses. L'Empire y base une académie dirigée par le Commandant Brendol Hux, afin d'entraîner une nouvelle génération d'officiers d'élite. C'est aussi le site du Projet Moissonneur, qui rassemble des enfants sensibles à la Force.",
+        "region": "7",
+        "id": "41ad3914-cec2-4977-b36f-5c042d1dc49c"
+    },
+    {
+        "name": "Hoth",
+        "system": "Hoth",
+        "destinations": "Echo Base",
+        "fauna": "Wampa",
+        "comments": "6th Planet",
+        "region": "7",
+        "terrain": "Glaces",
+        "sector": "Anoat",
+        "id": "71dcbbe6-0a71-44a0-9fbc-f6a6016c2620"
+    },
+    {
+        "name": "Ryloth",
+        "system": "Ryloth",
+        "destinations": "Nabat, Désert Jixuen, Drua, Tann Province",
+        "fauna": "Blurrg Lylek Gutkurr",
+        "capital_city": "Lessu",
+        "region": "7",
+        "terrain": "Volcans, jungles, vallées",
+        "sector": "Gaulus",
+        "id": "0540b660-fab0-4c0d-84ce-c5ddf616eb7e"
+    },
+    {
+        "name": "Castilon",
+        "moons": "2 ?",
+        "comments": "Last Stop before the Unknown Regions",
+        "region": "7",
+        "sector": "Tashton",
+        "id": "a0193d9c-08ff-4663-b3fc-08299edc985e"
+    },
+    {
+        "name": "Fondor",
+        "comments": "There's an Imperial Shipyards on this planet",
+        "id": "7eb47f62-bc99-4b7d-810e-cdc42da1bd10"
+    },
+    {
+        "name": "Lah'Mu",
+        "id": "efcdc000-37af-4a99-820d-22b4a707bbe3"
+    },
+    {
+        "name": "Chandar's Foly",
+        "region": "7",
+        "id": "369e0995-01cc-4edc-91ff-92d9077158e2"
+    },
+    {
+        "name": "Encrust II",
+        "id": "f38695bd-ad17-4c63-9536-58a769cfe146"
+    },
+    {
+        "name": "Strokill Prime",
+        "id": "f0684a9b-a583-4f05-bbc8-cc55e10ff614"
+    },
+    {
+        "name": "Mako-Ta",
+        "region": "7",
+        "id": "5ffe7e35-f873-4a5d-bb31-6b4ad77580ef"
+    },
+    {
+        "name": "Son-Tuul",
+        "region": "7",
+        "id": "8b9a5c30-a20c-45eb-b0e2-295b5bff06d9"
+    },
+    {
+        "name": "Senex-Juvex",
+        "id": "f7b9b387-d1db-4485-a2d3-7709dda8682c"
+    },
+    {
+        "name": "Thannt",
+        "id": "5f53086f-4f57-4f55-b56a-b4a0226dacea"
+    },
+    {
+        "name": "Tiferep Major",
+        "comments": "Ruins of Accresker Jail",
+        "id": "1afbcf6a-9cd8-4e51-bfb7-2e0c37b60708"
+    },
+    {
+        "destinations": "Grail City",
+        "name": "Ikkrukk",
+        "region": "5",
+        "id": "0b4579ef-c08e-40d2-8458-6dbe0817a528"
+    },
+    {
+        "name": "Hovun Four",
+        "id": "7f83b285-3d2a-49e5-8614-d1994b4b5a6f"
+    },
+    {
+        "name": "Munt Ontdal",
+        "id": "4a0dbed0-7e0c-47f1-9097-9c3d48826ba1"
+    },
+    {
+        "name": "X3-299-11",
+        "id": "8fefc7db-4f13-421d-878e-aff0750df720"
+    },
+    {
+        "name": "Hradreek",
+        "comments": "Podrace Planet",
+        "id": "0d989df3-c340-4f5f-a38d-467765c42627"
+    },
+    {
+        "name": "Vrogas Vas",
+        "comments": "Barren world with no known native life forms.  Avait un temple Jedi jadis.  Abrite une secret rebel refueling base",
+        "id": "37fcce6b-e485-4d7d-ba52-3d9fb2cc84d9"
+    },
+    {
+        "name": "Bray",
+        "comments": "\"Planet of Eternal Night\"",
+        "id": "159f9b43-3b8c-4597-af6a-5a3033f602d2"
+    },
+    {
+        "name": "Rendel",
+        "id": "63a9862f-23ed-48db-aa1a-764ba5fc8f17"
+    },
+    {
+        "name": "Ushruu",
+        "id": "e46c836d-ee6d-4f27-9bd4-da888c25f8f0"
+    },
+    {
+        "destinations": "Hutta Town, Wormstew Town",
+        "name": "Nar Shaddaa",
+        "comments": "Surnommé \"Smuggler's Moon\"",
+        "first_appearance_legends": "Star Wars: Dark Empire",
+        "id": "167faf25-9978-47f1-a51c-465c1805754a"
+    },
+    {
+        "name": "Corosi-7",
+        "id": "707a3c45-bbc6-4b87-b338-281c2acf0092"
+    },
+    {
+        "name": "Toydaria",
+        "id": "8ad4a3e9-742d-49a7-959d-e2383446148d"
+    },
+    {
+        "name": "Rugosa",
+        "id": "570822db-79fb-4562-941e-28d12163ce05"
+    },
+    {
+        "name": "Bith",
+        "id": "b05ae3b9-4b18-469d-8a03-5e801e8a278b"
+    },
+    {
+        "name": "Abregado",
+        "id": "a2754fdc-0c59-4dc9-a838-b417167016b2"
+    },
+    {
+        "name": "Barnahof",
+        "region": "7",
+        "id": "e7ec543a-a54a-48e1-aee8-1e15289b7634"
+    },
+    {
+        "name": "Hubin",
+        "id": "a33e13a5-b86d-4e73-9fa6-ec82395e3026"
+    },
+    {
+        "name": "Dene Gois Cluster",
+        "id": "cece4b28-4bf9-4242-bc65-e67951695a41"
+    },
+    {
+        "name": "Ryndellia",
+        "id": "8b70cec4-fe9c-4488-bf4d-72edba0d7b17"
+    },
+    {
+        "name": "Balmorra",
+        "id": "2f24a8bd-aeb9-4ab3-8d5c-22749aa8ecd9"
+    },
+    {
+        "name": "Kaliida Nebula",
+        "id": "db9556e8-ac21-42c6-883d-2b711f59ac02"
+    },
+    {
+        "name": "Ardennia",
+        "id": "ef1310fc-2b0b-42e6-ac6b-5e31e7fb2050"
+    },
+    {
+        "name": "Nantoon",
+        "id": "5cd85269-a1c5-43a9-95f8-d7edb1923cc4"
+    },
+    {
+        "name": "Boiyuh",
+        "id": "b416d91f-bbd5-4de0-9ccf-9ee40f694bfa"
+    },
+    {
+        "name": "Urthak",
+        "id": "fcaa4706-74e2-4776-8f8a-6ec8d5b8c3bc"
+    },
+    {
+        "name": "Zanbar",
+        "id": "6319e39b-824d-4256-816a-4b9a9ac4fc9b"
+    },
+    {
+        "name": "Bri'n",
+        "id": "104bdcf5-e8f4-4416-b15b-991a8373be86"
+    },
+    {
+        "name": "Tehar",
+        "region": "8",
+        "id": "64dd6953-5b76-4fa8-ae34-05c7b936e69a"
+    },
+    {
+        "name": "Rishi",
+        "id": "94db4d92-8f2d-4459-8b9e-212b577d3b7e"
+    },
+    {
+        "destinations": "Am'balaar City, Mount Pasvaal",
+        "name": "Al'doleem",
+        "comments": "River Moon",
+        "region": "5",
+        "id": "19af0c12-4310-4bdc-8f81-ded663670e3b"
+    },
+    {
+        "name": "Cabarria",
+        "region": "2",
+        "id": "cafd996d-4125-4b3f-a6f9-96ca0d13b6d5"
+    },
+    {
+        "name": "Malachor",
+        "id": "6540086c-fe80-4dda-9df5-977750c0b77f"
+    },
+    {
+        "name": "Lasan",
+        "id": "5d0602f1-c2a8-4b40-9fc3-bf0dc3f317b7"
+    },
+    {
+        "name": "Pastil",
+        "id": "993386bb-058b-4cea-a97c-6da58e399657"
+    },
+    {
+        "name": "Tibrin",
+        "terrain": "Coral reefs",
+        "id": "2ea1fe4c-ebda-49fb-beb4-ac5b3f67596e"
+    },
+    {
+        "name": "Dallenor",
+        "region": "5",
+        "id": "ab79ac75-21dd-4bb8-aa3b-f78662fa5e54"
+    },
+    {
+        "name": "Falleen",
+        "id": "e8f1176a-e052-45ec-8f98-4f00957a8d40"
+    },
+    {
+        "name": "Fort Anaxes",
+        "comments": "Abandonné après Clone Wars",
+        "id": "731a2914-1485-444f-932a-6a9f3f0eb5e3"
+    },
+    {
+        "name": "Telerath",
+        "id": "3bb43f99-9c94-4466-9aa0-27255f4a2d32"
+    },
+    {
+        "name": "Seelos",
+        "id": "ef5f34a0-4fc5-4876-86d3-f8e6614ae778"
+    },
+    {
+        "name": "Savareen",
+        "id": "aa5a36e9-6b34-44ef-9239-8f7c35b442a9"
+    },
+    {
+        "name": "Novka",
+        "id": "93be85fc-6382-4fcf-b318-20494929161a"
+    },
+    {
+        "name": "Brentaal IV",
+        "id": "d3c77a54-1a61-4201-8728-5bda0eb5ec65"
+    },
+    {
+        "name": "Cymoon-1",
+        "comments": "La plus grosse usine d'armes de la galaxie. Opéré par KDY, Sienra, Loronoar, Blastech. Au centre du territoire impérial",
+        "id": "25d36aec-9699-4c23-a25f-29a0eb01129b"
+    },
+    {
+        "name": "Bestine",
+        "region": "4",
+        "destinations": "Jahnae",
+        "id": "20896be2-d817-4781-9e57-11c73214f50b"
+    },
+    {
+        "name": "Vanqor",
+        "id": "20ab13ae-c498-4453-8116-96138eb67ec6"
+    },
+    {
+        "name": "Florrum",
+        "region": "7",
+        "sector": "Sertar",
+        "id": "5610524b-5d37-4867-a4ca-5d888fdebf2a"
+    },
+    {
+        "name": "Quell",
+        "id": "27f5dddf-8092-4e36-9890-da53578d4211"
+    },
+    {
+        "name": "Duro",
+        "id": "9ad7ffd2-ad34-4764-9523-a7d3b7565333"
+    },
+    {
+        "name": "Clabron",
+        "id": "555cdaa1-c431-4be8-8ef7-22fa1bc7e132"
+    },
+    {
+        "name": "Ledeve",
+        "id": "52951fb2-dfb8-436c-b25f-5d0d7ea12cc6"
+    },
+    {
+        "name": "Orto Plutonia",
+        "id": "42d49553-832f-4702-839f-3ceb593ce06f"
+    },
+    {
+        "name": "Pantora",
+        "id": "4dfd38e1-520d-498d-8aec-832d223208e5"
+    },
+    {
+        "name": "Millius Prime",
+        "comments": "Sur la lune",
+        "id": "0e49eb26-6c0c-4fc2-bf0d-07483a0f706e"
+    },
+    {
+        "name": "Cianap",
+        "id": "89991ee0-9a1f-40ce-91c5-2a6463e94cb9"
+    },
+    {
+        "name": "Gralak",
+        "region": "7",
+        "id": "0d52d7ad-1c6c-4f54-bc29-553f08f0533a"
+    },
+    {
+        "name": "Numidian Prime",
+        "id": "6c01411c-06b4-4534-898f-bddca3331471"
+    },
+    {
+        "name": "Gamorr",
+        "id": "906b7983-eedc-434c-825f-d373fda4e1f0"
+    },
+    {
+        "name": "Pijal",
+        "id": "4275f2a0-00c2-47e9-a6d9-99a6df403921"
+    },
+    {
+        "name": "Gatalenta",
+        "id": "5d7937ae-ac89-4ccb-a50a-04bdb1773960"
+    },
+    {
+        "name": "Riosa",
+        "id": "a864c788-3f54-4edd-99d7-43d1847b0290"
+    },
+    {
+        "name": "Ceiran",
+        "id": "24a72611-1775-4855-b7bb-56d199846e00"
+    },
+    {
+        "name": "Badtibira",
+        "id": "ea2c75f5-d050-46db-9465-6f1105119174"
+    },
+    {
+        "destinations": "University of Cadomai",
+        "name": "Cadomai",
+        "id": "c7f66b8a-cc44-436d-bf2c-21553b149ec2"
+    },
+    {
+        "name": "Uro",
+        "id": "1a922055-fcf2-49ba-8c11-b0d9f43c5f2d"
+    },
+    {
+        "name": "Byss",
+        "id": "dd977a93-4bd6-4003-a319-80c74d5ec8c5"
+    },
+    {
+        "name": "Shurrupak",
+        "id": "fd1b542f-e5f4-4e78-b629-dc9e5ce1d991"
+    },
+    {
+        "name": "Rinn",
+        "terrain": "Glaces",
+        "id": "c91fe592-b16e-46e5-a823-4c086160064b"
+    },
+    {
+        "name": "Wrea",
+        "id": "c0f35a03-8c13-47e8-bb70-fa511a60d8a1"
+    },
+    {
+        "name": "Wecacoe",
+        "region": "2",
+        "id": "7ef061fa-7ecb-4735-8f4f-53be0f280796"
+    },
+    {
+        "name": "Rango Tan",
+        "id": "ac56940c-cefe-4627-ad52-04eb7e54885b"
+    },
+    {
+        "name": "Kalarassi Five",
+        "id": "3854376a-3f10-4e19-ac93-9820aa99adcc"
+    },
+    {
+        "name": "Mermeia",
+        "comments": "Bar inside an asteroid",
+        "id": "9ec65ce0-d835-4ac9-a166-18c22af49772"
+    },
+    {
+        "name": "Irff",
+        "comments": "Vacation Planet",
+        "id": "026154fe-6baa-4320-b7c3-da1006bf0841"
+    },
+    {
+        "name": "Ibaar",
+        "region": "7",
+        "id": "a36c8d10-e5a8-4fdf-a6a7-cb860232f30f"
+    },
+    {
+        "name": "Lotho Minor",
+        "id": "88389332-7927-4617-b872-7223b8c5c466"
+    },
+    {
+        "system": "Naboo",
+        "name": "Karlinus",
+        "comments": "Renowned for agricultural output.",
+        "sector": "Chomell",
+        "id": "50434786-54b4-47cd-a295-b17d9ad6452b"
+    },
+    {
+        "destinations": "Hanna City, Heroes of the Republic Boulevard, Frander's Bay",
+        "name": "Chandrila",
+        "region": "1",
+        "id": "5d4607a5-a715-46f1-a932-aff0c020c536"
+    },
+    {
+        "name": "Coyerti",
+        "id": "c99f020a-dfc4-4b26-af1c-498b0280f581"
+    },
+    {
+        "name": "Sivad",
+        "id": "8ce9fc12-c98b-4607-a3d7-dd36c9817a99"
+    },
+    {
+        "name": "Thiafena",
+        "id": "59552bfb-900e-4df5-9be4-f55645338b37"
+    },
+    {
+        "name": "Joh'Cire",
+        "comments": "Desert Moon",
+        "id": "d293dd18-5957-49ad-a8dc-1c24dc1dcdf1"
+    },
+    {
+        "name": "Bromlarch",
+        "id": "ecab5a68-c25e-4065-848f-8e825dd7eb3b"
+    },
+    {
+        "name": "Shadda-Bi-Boran",
+        "id": "8192521a-641c-4890-8154-be9fcbffc9dd"
+    },
+    {
+        "name": "Unox",
+        "comments": "Abandonned Spice Mine",
+        "id": "06316bde-4212-443e-bd25-3cbaffce2316"
+    },
+    {
+        "name": "Arbiflux",
+        "region": "7",
+        "id": "5e0ba1fc-e2d6-4b95-b1c0-95832b055732"
+    },
+    {
+        "name": "Carajam",
+        "region": "7",
+        "id": "97779239-726b-4ec9-8cba-96d11930002a"
+    },
+    {
+        "name": "Troiken",
+        "id": "4ac1b254-504e-4fb6-a77e-e0c2767a74dd"
+    },
+    {
+        "destinations": "Motok",
+        "name": "Cyrkon",
+        "region": "7",
+        "id": "8d1cb1e6-6070-41b7-8116-29e4fa82e5b3"
+    },
+    {
+        "name": "Kiros",
+        "id": "d6968192-fed9-4b28-be06-c0c5a50e9f77"
+    },
+    {
+        "name": "Meor Ain",
+        "id": "1709458a-ed4a-490d-800b-a134ff82d719"
+    },
+    {
+        "name": "Del Zinnis",
+        "id": "2e9c4da6-76fb-446c-8ddd-fa9d270f5451"
+    },
+    {
+        "destinations": "Carbon Score Cantina",
+        "system": "Anoat",
+        "name": "Burnin Konn",
+        "region": "7",
+        "id": "eb2e98b1-12b7-4633-bc24-f9c9d505de35"
+    },
+    {
+        "name": "Dannamore",
+        "id": "87d1a035-8a62-434a-9e83-7b1dd1878c16"
+    },
+    {
+        "name": "Mygeeto",
+        "id": "be4e5b0f-cf57-4b29-90ae-a7165484eef9"
+    },
+    {
+        "name": "Bracca",
+        "comments": "The place that the First Order sends any and all claimed New Republic ships to be decommissioned and junked.",
+        "region": "5",
+        "id": "44960c6f-56bd-49b5-b4e9-24ee1060f72e"
+    },
+    {
+        "name": "Dorin",
+        "id": "e6067fbe-336f-45b6-a9ac-588ca91ad34c"
+    },
+    {
+        "name": "Insk",
+        "id": "6beb8414-69ec-4683-97cc-cc40cef8414a"
+    },
+    {
+        "name": "Daxan Beta",
+        "id": "aa7385d4-780d-47ac-9b7c-794696c31d9c"
+    },
+    {
+        "name": "Vanooria",
+        "id": "12ab264c-f677-4034-af5d-3a4e1a426741"
+    },
+    {
+        "name": "Balamak",
+        "id": "312da410-a6a5-4fb7-9327-ce05259c8103"
+    },
+    {
+        "name": "Iktotch",
+        "id": "ea05513b-0e77-4a9e-8fac-49e64a009930"
+    },
+    {
+        "name": "Bormea sector",
+        "id": "e679c29a-4b04-4f8b-93a2-13b305ca3c35"
+    },
+    {
+        "name": "Pressylla",
+        "id": "5d61e65f-1386-4ddd-b323-f27df5cf5af5"
+    },
+    {
+        "name": "Gorma",
+        "id": "5be5beba-c6d8-445a-8601-c93d4e49e08b"
+    },
+    {
+        "name": "Suraz 4",
+        "id": "cbb26c99-2483-43a2-81ce-538f364086ce"
+    },
+    {
+        "name": "Suraz 5",
+        "id": "e3f27456-19bd-469e-bc29-1978ca993ef3"
+    },
+    {
+        "name": "Ord Cestus",
+        "id": "2dd7cc14-bc98-47b8-8355-1e39fe5a55e3"
+    },
+    {
+        "name": "Myomar",
+        "id": "a5f6874a-10b5-4a14-bc38-c2aff3006a21"
+    },
+    {
+        "name": "Lysatra",
+        "id": "298531ab-75bb-480a-abea-7463ef329172"
+    },
+    {
+        "name": "Batonn",
+        "id": "112689a1-e4cd-4b31-9d90-9e0f69dad913"
+    },
+    {
+        "name": "Socorro",
+        "id": "10f735de-3d2f-44b0-af81-0bd98e0ca89e"
+    },
+    {
+        "name": "Moltok",
+        "id": "636ba8ef-b22d-4c55-9e0d-d1942bed7565"
+    },
+    {
+        "name": "Keitum",
+        "id": "4e6d90ce-c827-4de2-96e8-19b17801bb4f"
+    },
+    {
+        "name": "Uba",
+        "sector": "Barsa",
+        "id": "569ce881-418c-4cf2-9c71-06ba87a9eae4"
+    },
+    {
+        "name": "Kril'Dor",
+        "id": "8d4ff3d4-a5ab-44f6-91c2-39e9bff74f64"
+    },
+    {
+        "name": "Umbara",
+        "id": "135b00ee-9398-433e-ba05-19dd5e723c37"
+    },
+    {
+        "name": "Nubia",
+        "id": "561ed740-b7ff-430b-91df-1758f379159e"
+    },
+    {
+        "name": "Cyphar",
+        "id": "d1dfec0e-f7d4-4af0-9c83-41b2398342c4"
+    },
+    {
+        "name": "Kintoni",
+        "id": "4b24f89e-7060-4c69-a236-0b47121df16b"
+    },
+    {
+        "name": "Lansend 26",
+        "id": "58d9820b-226d-4ca9-9224-86a6d9057d99"
+    },
+    {
+        "name": "Botajef",
+        "id": "597c3cd9-5145-46b3-b3b8-d6efb53a365d"
+    },
+    {
+        "name": "Denash",
+        "id": "23614517-e9dd-4c5d-912c-67a68951bbaf"
+    },
+    {
+        "name": "Sammun",
+        "id": "3563d016-15db-4b46-8b51-a5c0903343b5"
+    },
+    {
+        "name": "Takobo",
+        "id": "c53add15-dde2-4a7a-ad06-cc7f33a85380"
+    },
+    {
+        "name": "Chandel",
+        "id": "91b370bf-926b-4e59-93ac-be0236e1ebc9"
+    },
+    {
+        "name": "Concord Dawn",
+        "id": "4f135279-8cfc-46b9-9421-33552f34f5e5"
+    },
+    {
+        "name": "Lira San",
+        "id": "03c72181-be52-446d-89e0-434503872e23"
+    },
+    {
+        "name": "Onsalon Mesa",
+        "id": "07643c1f-5012-41a6-bc03-44529d682f25"
+    },
+    {
+        "name": "Atollon",
+        "id": "e43dc209-0de9-48f5-875f-492d177eec8f"
+    },
+    {
+        "name": "Actlyon",
+        "id": "6ef55165-c16c-43ec-b659-d10e38555b9d"
+    },
+    {
+        "name": "Abelor",
+        "id": "9d6e964b-a9d9-4164-a994-e432b2bf0e29"
+    },
+    {
+        "name": "Linasals",
+        "id": "0286d059-1dcc-458f-8cd4-bed01dce8cc8"
+    },
+    {
+        "name": "Eroudac",
+        "id": "90ca3da9-207b-483d-82d7-5a5fcf22867c"
+    },
+    {
+        "name": "Toledian",
+        "id": "80f069cc-3ce0-42ac-a532-67c5e50fcd01"
+    },
+    {
+        "name": "Urajab",
+        "id": "c811c37e-22fc-4451-aac1-e4ca3b8e0522"
+    },
+    {
+        "name": "Clak'Dor",
+        "id": "7a3461e2-60cf-4484-9058-750e175a6185"
+    },
+    {
+        "name": "Haneli",
+        "id": "14622d01-03ec-4e1a-a5cb-9e3da26c1b94"
+    },
+    {
+        "name": "Ketz",
+        "id": "b2ec691c-27e3-40da-a000-c9db4cab485b"
+    },
+    {
+        "name": "Cuyacan",
+        "id": "ed2e3b80-360f-4598-b393-c2acf3ef4da5"
+    },
+    {
+        "name": "Chibbier",
+        "terrain": "Forêts",
+        "id": "7189f388-2b9a-4e36-ba1b-05721af81d0e"
+    },
+    {
+        "name": "Ielo",
+        "id": "69243fef-8bdc-41cf-ae84-8a05c0654df6"
+    },
+    {
+        "name": "Yarma",
+        "id": "9989b615-6831-44b2-a016-6f7d27a6647f"
+    },
+    {
+        "name": "Teralov",
+        "id": "48be878c-d3c0-445a-a291-580a60f3c36b"
+    },
+    {
+        "name": "Agamar",
+        "id": "d6bfe057-c111-4d6a-8215-272331dd3317"
+    },
+    {
+        "name": "Mykapo",
+        "id": "a5559784-98b0-47f9-82ab-7c61227fbc92"
+    },
+    {
+        "name": "Synistahg",
+        "id": "4e2c91ba-2649-4697-8352-246df44cbc87"
+    },
+    {
+        "name": "Wynkahthu",
+        "id": "462087b5-9882-44dd-bd98-55611d1424e3"
+    },
+    {
+        "name": "Jamiri",
+        "id": "b73220df-d152-4923-8a5d-e9b9e95c8494"
+    },
+    {
+        "name": "Lokud 7",
+        "id": "ebd26634-bbdf-469b-b44b-a4dbd55bad09"
+    },
+    {
+        "name": "Namzor",
+        "region": "5",
+        "id": "a814645e-125c-45fc-9dae-7f61eec0f0c6"
+    },
+    {
+        "name": "Ahn Krantarium",
+        "region": "5",
+        "id": "da58c040-18f1-4477-8ead-7c40fe7c1559"
+    },
+    {
+        "name": "Phelzepham",
+        "region": "5",
+        "id": "8d68297f-4f6f-410e-bd68-e507fd8a2749"
+    },
+    {
+        "name": "Kankalo Belt Containment",
+        "region": "5",
+        "id": "ff22c5c0-be4a-417a-975f-cfaa7b65b9f4"
+    },
+    {
+        "name": "Bar'leth",
+        "id": "24688467-9072-4ce6-aed7-b23fc464f9e8"
+    },
+    {
+        "name": "Draboon",
+        "id": "3eb5be23-d882-4fe5-9132-5842ded5e816"
+    },
+    {
+        "name": "Krownest",
+        "id": "65b15d89-3028-4379-a11a-5da1158b3ccd"
+    },
+    {
+        "name": "Ghorman",
+        "id": "3ac8a174-d015-4fa7-b7de-730d5be10932"
+    },
+    {
+        "name": "Killun-71",
+        "id": "ccb12f33-b8d9-45cf-a890-fb03176ca0c1"
+    },
+    {
+        "name": "Jalindi",
+        "id": "a80ed3c8-edab-4744-a089-f4af7bedea89"
+    },
+    {
+        "name": "Montross",
+        "id": "730c6348-4b37-488f-9ac7-b74fd844d1f0"
+    },
+    {
+        "name": "Salobea",
+        "region": "7",
+        "id": "88218cb5-6e51-45a2-af66-561b090fbcc6"
+    },
+    {
+        "name": "Atanu",
+        "id": "01d08cd8-ddaf-4e7e-90bb-227cb94dda9d"
+    },
+    {
+        "name": "Jabone IV",
+        "id": "589c8fcf-7b40-4329-a268-9cb5f9524829"
+    },
+    {
+        "name": "Lonania Prime",
+        "id": "91bf3c41-26b9-4f2c-9314-f91480dc7b66"
+    },
+    {
+        "name": "Mupin XII",
+        "id": "1a59e8ec-5fcc-43ef-b1e6-5aaa3aa2433e"
+    },
+    {
+        "name": "Lanz Carpo",
+        "comments": "One of the smallest planets in the core, with one of the biggest crime rate",
+        "id": "3fbf2859-6171-4b4b-9322-edb9ec44afe2"
+    },
+    {
+        "name": "K43",
+        "comments": "Uninhabited volcanic world at the edge of Wild Space",
+        "id": "0652794a-f59d-4fd4-9803-dfcab9101234"
+    },
+    {
+        "name": "Sergia",
+        "terrain": "Déserts",
+        "region": "4",
+        "id": "8efa53d7-f988-4bff-a594-64dcce83abf4"
+    },
+    {
+        "name": "Sev Tok",
+        "id": "0ab124e6-b7eb-4709-81d4-5ce0bc7990d4"
+    },
+    {
+        "name": "Kurost",
+        "id": "2f92e1df-26c8-4665-9391-10ef7a3aa8de"
+    },
+    {
+        "name": "Charra",
+        "id": "dd9f9d36-e0cc-4e65-9a14-08df17aeba31"
+    },
+    {
+        "name": "Ja-Bess",
+        "id": "b30a1b3a-5605-49df-b38e-7ce354b9432c"
+    },
+    {
+        "name": "Fikari",
+        "region": "7",
+        "id": "c607f057-6da1-4fff-acf6-799451bc310f"
+    },
+    {
+        "name": "Fellio Asteroid Belt",
+        "region": "7",
+        "id": "9e3d62db-b50c-4495-be8a-04370cb4d3e2"
+    },
+    {
+        "name": "Arvina",
+        "terrain": "Déserts",
+        "region": "7",
+        "id": "83e2dc63-7ce1-4063-844c-55331a69ce48"
+    },
+    {
+        "name": "Demir",
+        "comments": "Surnommé \"The Iron Planet\"",
+        "region": "8",
+        "id": "a8b9dfc5-5ccc-4f1b-bce8-f73b0f2e372e"
+    },
+    {
+        "name": "Necropolis",
+        "comments": "Junkyard Planet",
+        "id": "a8c50af0-7cd8-40b3-b86d-baf169e6e609"
+    },
+    {
+        "system": "Fla'Nagan",
+        "name": "Jhosh",
+        "id": "cb2bf6f7-dd38-44d5-826f-957fd9ca18ad"
+    },
+    {
+        "name": "LX-Robynsun V",
+        "comments": "Il y a une base de la Résistance.",
+        "id": "93e98883-c5f5-4681-8183-00e49412bde5"
+    },
+    {
+        "name": "Usk Minor",
+        "comments": "Imperial Communication Relay",
+        "id": "c6370f15-d38e-485a-9154-cf4a77f3fb58"
+    },
+    {
+        "name": "Centax 3",
+        "comments": "3rd Moon of Coruscant. Nicknamed \"The Aunt\". Headquarters for the Chair for the Coalition For Progress",
+        "region": "1",
+        "id": "3fdb0650-a76f-48b2-9420-3b95257fc1e5"
+    },
+    {
+        "system": "Kudo",
+        "name": "Kudo",
+        "sector": "Corvair",
+        "id": "bb46d818-3b67-494d-b13a-c2ee59413486"
+    },
+    {
+        "name": "Luprora",
+        "comments": "Unsuitable environmental conditions, ",
+        "region": "8",
+        "terrain": "Glaces, Océans",
+        "id": "6266b0b1-0b27-46c8-b8bc-006cf19794dc"
+    },
+    {
+        "name": "Minfar",
+        "terrain": "Jungle",
+        "id": "7ce47b47-de44-4814-9543-5a0d4d5f2302"
+    },
+    {
+        "name": "Umme",
+        "comments": "Galaxy-class hunting",
+        "id": "642c3d5e-b50e-4e01-a683-6ef659765699"
+    },
+    {
+        "name": "Mokivj",
+        "moons": "10 lunes",
+        "comments": "Beautiful Sunset",
+        "id": "badf6552-45ec-437f-b2ca-a372c583f487"
+    },
+    {
+        "name": "Plood",
+        "comments": "Majestic seascapes",
+        "id": "2e21be2f-5e91-48b6-a3ef-685ffcf7dd91"
+    },
+    {
+        "system": "Otomok",
+        "name": "Hays Minor",
+        "comments": "Mining Planet, known more for its ore than its people.",
+        "id": "89426676-6b16-4ec2-bc1a-71b7d84a8a74"
+    },
+    {
+        "name": "Tah'Nuhna",
+        "terrain": "Glaces",
+        "region": "5",
+        "id": "fb6f40d6-4b69-4747-97a0-b50f2d516f83"
+    },
+    {
+        "name": "Anoat",
+        "comments": "Garbage Planet. A eu un camp de la Résistance",
+        "id": "5e6e31b8-2d26-4dfb-9d9a-ef086a22ef15"
+    },
+    {
+        "name": "Unknown Planet (Koth's house)",
+        "id": "7c5bbca6-15b1-408b-8e51-805d5fd63be3"
+    },
+    {
+        "name": "Rishi Maze",
+        "id": "0dafe8ed-1e0e-4780-9e52-465b96420c9a"
+    },
+    {
+        "name": "Hosnian system (Destroyed)",
+        "id": "8c2601f5-9759-4fce-9248-4dc40a8a6dea"
+    },
+    {
+        "name": "Mercy Island",
+        "id": "e5ecfb7d-9e38-48ca-b3d3-0054b64b3cdb"
+    },
+    {
+        "name": "Mako-Ta Base",
+        "id": "2d3f0032-7be0-4749-bc6c-de7807debe21"
+    },
+    {
+        "name": "12th Moon of Falt",
+        "id": "390b2ec4-06c4-46fd-8920-f0be0e7cecad"
+    },
+    {
+        "name": "Mandalorian Asteroid Outpost",
+        "id": "986c0466-6325-4e91-9a9f-f8308a4c31eb"
+    },
+    {
+        "name": "Dead Moon of Antar",
+        "id": "e4ee0c0a-ab32-4706-96fb-2d4f0b7f51f8"
+    },
+    {
+        "name": "Bothawui Prime",
+        "id": "631e7ef2-f79a-4988-85ea-255d77540fab"
+    },
+    {
+        "name": "Ruusan Moon ",
+        "id": "ac253acb-f7e1-43f8-96d8-7617f9a388c5"
+    },
+    {
+        "name": "Rodia?",
+        "id": "b145485e-a00b-413f-a19f-f4041e2cd172"
+    },
+    {
+        "name": "Akkadese Maelstrom",
+        "id": "a6b5c5f7-57d7-4ddb-bf0f-49c9d5e18c73"
+    },
+    {
+        "destinations": "Howlan",
+        "name": "Qhulosk ",
+        "region": "7",
+        "id": "69f0f8b5-7242-4c47-b53f-c605291a696c"
+    },
+    {
+        "name": "Iego",
+        "region": "7",
+        "id": "035119d8-f2bc-4270-8374-60204b3e48b2"
+    },
+    {
+        "name": "Old Republic Medical Station (quelque part - sector 11)",
+        "id": "271abc3f-ef3c-45c6-88ca-ee5df4619742"
+    },
+    {
+        "name": "Death Star I",
+        "first_appearance_canon": "9d463018-f6e8-42e7-aebc-8e0f0b5c7800",
+        "id": "b1d26bc3-a62f-4a2a-a971-1790df32e329"
+    },
+    {
+        "name": "Black Spire",
+        "id": "e26d6bcb-23f3-455b-bc93-fdf7154da76d"
+    },
+    {
+        "name": "Black Stall Station (Bane's Outpost) (Destroyed)",
+        "id": "3c8e5d00-877b-460c-aa36-7a085be6757a"
+    },
+    {
+        "name": "Bogano",
+        "id": "d3237d44-5ee0-4586-a4a0-61a35f184cf4"
+    },
+    {
+        "name": "Beroq (4)",
+        "id": "6dbdac7a-55ee-46ee-afa7-c8a8334d1d79"
+    },
+    {
+        "name": "Bahryn",
+        "comments": "Geonosis Moon",
+        "id": "1d3bfb73-cd9a-41ac-88ea-cc3c7b1635da"
+    },
+    {
+        "name": "Concordia",
+        "id": "e20c665d-2fd3-4d65-a0ec-dcda08ab0b0e"
+    },
+    {
+        "name": "Imperial Refining Platform M36 (Outer Rim)",
+        "id": "5ef51e8c-10b0-4fba-824b-c7f36bd6571a"
+    },
+    {
+        "name": "Archeon Pass",
+        "id": "0044d011-cf40-4b27-beaf-9b60d415ec1d"
+    },
+    {
+        "name": "Garbage Moon of Maher",
+        "id": "5ea7b1d4-c5f9-4505-8b5c-ffc21150cbb0"
+    },
+    {
+        "name": "Brooksdion New Republic Space Station",
+        "id": "1cb85013-1078-4792-9359-ac6cd9b39809"
+    },
+    {
+        "name": "Unknown Ice Planet",
+        "id": "6b86b831-61c2-4cc5-97bc-19b6fc55c9fe"
+    },
+    {
+        "name": "Heva",
+        "id": "2784c491-b630-4b2f-8f98-7166338a007f"
+    },
+    {
+        "name": "Balith",
+        "id": "36ed63ad-0f4d-414b-a46e-99b26356bdec"
+    },
+    {
+        "name": "Arkanis sector",
+        "id": "fdf9c83e-c49a-4b4b-882a-8039f234fc9e"
+    },
+    {
+        "name": "Fuacha",
+        "id": "a758e350-b5aa-4e22-bca7-405310ad3973"
+    },
+    {
+        "name": "Colossus",
+        "id": "8fe235b2-8f44-4ac7-96d9-2196be9f8707"
+    },
+    {
+        "name": "Celsor 3",
+        "id": "07c8d14e-9858-4924-b583-1f99937893be"
+    },
+    {
+        "name": "Aargonar",
+        "id": "290bd9d9-4011-465b-bf7a-e528eae21b9c"
+    },
+    {
+        "name": "Drahgor 3",
+        "id": "884d053f-4711-4f07-aff3-ff148c667c20"
+    },
+    {
+        "name": "Nevarro",
+        "id": "ee3b0f49-98ca-4768-839e-f2736714df54"
+    },
+    {
+        "name": "Ashas Ree",
+        "id": "c5f1017e-204f-4996-ac2c-94019b96e285"
+    },
+    {
+        "name": "Karnac",
+        "id": "41ec7dc1-e2b1-4566-916f-088a5274cb04"
+    },
+    {
+        "name": "Sorgan",
+        "id": "e919b3bd-b9dc-45ee-98c0-cdff095ba0ff"
+    },
+    {
+        "name": "Bakura",
+        "id": "5f511412-bdeb-45e7-ad5d-722541561147"
+    },
+    {
+        "name": "Guavian Space",
+        "id": "ba693507-d200-479a-b007-9c5ee05e46bf"
+    },
+    {
+        "name": "Alzoc III",
+        "id": "ca60c3dc-fd78-4870-be90-e75eeadc4a6f"
+    },
+    {
+        "name": "Cyto Caves of Nora",
+        "id": "5d174039-ad82-4637-8f8d-dbde6e7b78a1"
+    },
+    {
+        "destinations": "The Scyre, Terpsichore Station, Arratu Station, Cleo Station, Calliope Station",
+        "name": "Parnassos",
+        "id": "853717c8-de85-4f8a-a51d-c54578122361"
+    },
+    {
+        "destinations": "Gardulla the Hutt's Palace, Bilbousa Bazaar",
+        "name": "Nal Hutta",
+        "capital_city": "Bilbousa",
+        "id": "5a429dac-74cd-4bd9-957c-1f7f11a8d92e"
+    },
+    {
+        "name": "Faos Station",
+        "id": "db3febf5-bb27-492d-8734-f97797a5dc73"
+    },
+    {
+        "name": "Naraka",
+        "comments": "Prison",
+        "id": "7386631e-5096-4773-a1f7-ea08c0bab1eb"
+    },
+    {
+        "system": "Hosnian",
+        "name": "Raysho",
+        "id": "78b9fad1-ef13-4f75-92ff-4e517317cbf8"
+    },
+    {
+        "destinations": "Spa",
+        "name": "Risso Moon",
+        "id": "033d8f7e-2037-427b-9aa7-218c001d130b"
+    },
+    {
+        "name": "Gilded Descent Casino",
+        "id": "18f369c2-42e0-4e43-88be-1dcd1b2c5bc1"
+    },
+    {
+        "destinations": "Imperial Security Bureau Black Site",
+        "system": "Outer Rim",
+        "name": "Tayron",
+        "id": "460eceb5-6f60-4b9b-81da-7c138ede0aae"
+    },
+    {
+        "name": "Commenor",
+        "id": "1becf9d0-32f0-42bf-b3e1-e553733461f2"
+    },
+    {
+        "name": "Vetine",
+        "sector": "Merrick",
+        "id": "9e1a8f7e-b6e5-4adc-8b7b-16b7d71b6392"
+    },
+    {
+        "name": "Chorin",
+        "comments": "Mining Planet",
+        "id": "5dee8d64-ac38-4a9c-9978-008d6c609600"
+    },
+    {
+        "name": "Lowik",
+        "comments": "Secret Rebel Outpost",
+        "terrain": "Jungle",
+        "id": "fc5edf17-3c5b-487e-aa3b-fc8df2fb7cb0"
+    },
+    {
+        "name": "Corellian Industrial Cluster",
+        "id": "a30d5178-b545-4c0e-a773-265379ce455d"
+    },
+    {
+        "name": "Rentalles",
+        "id": "e3ac5b85-2881-44df-90ef-aace453f02c4"
+    },
+    {
+        "name": "Alaris Prime",
+        "comments": "A un Temple Jedi",
+        "id": "8be15313-622c-4576-8882-94c09432cfe4"
+    },
+    {
+        "name": "Arkania",
+        "id": "b428b7fc-b831-48ba-a936-c24d659132e3"
+    },
+    {
+        "name": "Melm",
+        "id": "bf7c97fd-5353-4ae2-9903-db3672b7a94c"
+    },
+    {
+        "name": "Baraan-Fa",
+        "id": "67670856-082e-4e10-a2b3-58d40b9fc1b4"
+    },
+    {
+        "name": "Sabanash",
+        "id": "8c744c2f-93c4-4363-bca7-37aac12aed60"
+    },
+    {
+        "name": "Moon of Ooloponi",
+        "id": "ea04afb3-955d-4e9a-b72b-d42c6cfa18a7"
+    },
+    {
+        "name": "Upper Etrega",
+        "id": "bafd428a-a750-4150-945e-5c6d80ecc319"
+    },
+    {
+        "name": "Taul",
+        "id": "d5765598-798a-4d4f-a3fb-ebe4d95b7c7b"
+    },
+    {
+        "name": "Sorgal 12",
+        "id": "e49d3b34-5c2c-4223-8c7b-bd8fcecfaa21"
+    },
+    {
+        "name": "Ozri II",
+        "id": "aa7fe87a-f2ca-4284-b977-6fadf3cfaf98"
+    },
+    {
+        "destinations": "Fylar",
+        "name": "Ontotho",
+        "comments": "A joint la République peu avant la Guerre des Clones.  A un Ancient Temple dans la région de Fylar",
+        "id": "6d1519df-d2d6-47a6-939d-687a4f5645a5"
+    },
+    {
+        "name": "Nameel",
+        "id": "e1add791-f788-4910-b5e8-f3b7e2ed1015"
+    },
+    {
+        "name": "Twon Ketee",
+        "id": "9dd8044a-26fb-4ab8-a348-add0a3044f0d"
+    },
+    {
+        "system": "Kellux",
+        "name": "Kellux",
+        "id": "0df4a5be-53bb-4b87-9246-15798dedf738"
+    },
+    {
+        "system": "Drazkel",
+        "name": "Drazkel",
+        "id": "86c344de-2232-452e-9263-dba7bebfd7b2"
+    },
+    {
+        "name": "Moon of Drazkel",
+        "id": "a8442b44-cb80-494b-91dd-bbbdf9f56897"
+    },
+    {
+        "name": "Espirion",
+        "comments": "Heavy militarized, but open to refugees and wanderers - to the point of engineering micro-ecologies to support diverse life forms.",
+        "id": "eb18a2f5-6492-469a-8486-9b27c287018c"
+    },
+    {
+        "name": "Skaradosh",
+        "id": "540ce0d9-56b2-451a-91f7-4a248e2200c5"
+    },
+    {
+        "destinations": "Vargo",
+        "name": "Varkana",
+        "region": "7",
+        "id": "0b77383e-7fc0-48cf-8ef2-fbc27dc65d0d"
+    },
+    {
+        "destinations": "Ogden's Hope",
+        "name": "Elphrona",
+        "comments": "<div><span style=\"font-size: 1em; -webkit-tap-highlight-color: transparent;\">On the Edge of the Outer Rim, almost to the Unknown Regions. Old Jedi Treasure Trove.</span><br></div><div><span style=\"font-size: 1em; -webkit-tap-highlight-color: transparent;\">Mining World</span></div>",
+        "region": "7",
+        "id": "0cbbb5b0-1f0c-472f-8e49-aada1beae614"
+    },
+    {
+        "name": "Aeos Prime",
+        "comments": "Ancien outpost rebelle",
+        "sector": "Aeos",
+        "id": "1e88c835-01dc-4b5f-abb1-35faa1489d1d"
+    },
+    {
+        "name": "Gomar",
+        "id": "51b01c40-00d7-406e-9543-71892050bf43"
+    },
+    {
+        "name": "Yavin",
+        "id": "af3c8a1c-0839-458b-9e00-8dbf948fc6a4"
+    },
+    {
+        "name": "Castell",
+        "comments": "Imperial Colony",
+        "id": "8386b638-5175-46c0-951b-c7412410124b"
+    },
+    {
+        "name": "Amethia Prime",
+        "region": "4",
+        "id": "3ed6f1dc-e36c-4e90-b9c0-25d4e3e893c3"
+    },
+    {
+        "name": "Barabesh system",
+        "id": "59feeb2b-16b4-4ab8-b59f-e2f650c20b75"
+    },
+    {
+        "name": "Vendaxa",
+        "id": "a2234246-d30b-4573-b72e-ce14c7ec01b4"
+    },
+    {
+        "name": "Anaxes",
+        "id": "6e0951a6-88c8-4846-a5d3-fb6dae072ab6"
+    },
+    {
+        "name": "Yalbec Prime",
+        "id": "917507f2-209a-415f-b06a-7b528a38416c"
+    },
+    {
+        "destinations": "Purcoll City",
+        "name": "Skako Minor",
+        "id": "c4d65cb6-b76a-46a9-8f15-a2103d0464b2"
+    },
+    {
+        "name": "Quarantine World III",
+        "comments": "Dépôt de pleins de pièces d'archive",
+        "sector": "Kallidahin Space",
+        "id": "bbe6021f-c449-4d13-913a-c18ccffcc143"
+    },
+    {
+        "name": "Iridonia",
+        "id": "c0282b83-da09-4313-814a-d6bf93f94997"
+    },
+    {
+        "name": "Imdaar",
+        "id": "78ae0ff0-8e59-4841-bfe6-3e729bd4bf3f"
+    },
+    {
+        "name": "Purkoll",
+        "id": "007318ed-bdd7-404c-8ab9-673126c7749f"
+    },
+    {
+        "name": "Ganath Cloud",
+        "id": "edcec374-bb6f-4495-bd31-7cf8df59f280"
+    },
+    {
+        "name": "Trindello system",
+        "id": "2240a5de-73fb-48b5-9fdd-8eeac0c9ec06"
+    },
+    {
+        "name": "moons of Ovise",
+        "id": "11781be9-7955-4522-bfe7-5b2fce4711e9"
+    },
+    {
+        "name": "Blackfel system",
+        "id": "397eda06-056f-4c18-8dd6-86ec8a437610"
+    },
+    {
+        "name": "Modell sector",
+        "id": "ff72f7a4-d2de-482c-916a-ad59896a0519"
+    },
+    {
+        "name": "Monsua Nebula",
+        "id": "6290a54d-6394-4cd5-993c-0d9e5b0868a0"
+    },
+    {
+        "name": "Celanon",
+        "id": "980ce75d-442c-44cf-9482-ada133f2c442"
+    },
+    {
+        "name": "Anthan Prime",
+        "moons": "Anthan 13, Anthan 14",
+        "id": "5e2efd74-3a03-44d3-9af5-b3f91c8218a2"
+    },
+    {
+        "name": "Anthan 13",
+        "id": "187d7cd3-19bb-4a92-8905-74b1e4b0b557"
+    },
+    {
+        "name": "Anthan 14",
+        "id": "3c09c987-4c0f-44f2-8455-cbc7cf81748d"
+    },
+    {
+        "name": "Anthan 12",
+        "id": "7476c3bd-b8b4-46c8-8415-aecbaab3f692"
+    },
+    {
+        "name": "Belderone",
+        "id": "1bb8bfa8-efa9-4492-a3b9-fc3cf5febcd9"
+    },
+    {
+        "name": "Oba Diah",
+        "id": "11bf89c7-53f8-41e4-afc8-3766a225fd17"
+    },
+    {
+        "name": "Stenness",
+        "id": "24bdf4e0-d6ec-404f-a452-7726bfab09de"
+    },
+    {
+        "name": "Anthan 1",
+        "id": "65aa1563-17c3-48ef-98a2-21fe2c1efacb"
+    },
+    {
+        "destinations": "Myrra",
+        "name": "Akiva",
+        "comments": "Une des premières planètes à joindre la Nouvelle République",
+        "capital_city": "Myrra",
+        "id": "b5e27e61-f662-4825-b770-98283811bb9f"
+    },
+    {
+        "name": "Ephemera",
+        "id": "08550dc0-84a2-4b06-8eae-c801ef8836f1"
+    },
+    {
+        "name": "Alsakan",
+        "id": "534c40f9-bb1a-49b9-82fe-34cc8cf3f5a5"
+    },
+    {
+        "name": "Bastatha",
+        "id": "400ef80c-b192-4b6f-b43e-0debd237de3f"
+    },
+    {
+        "name": "Tovash Tchii",
+        "id": "4d37389e-8689-4ba2-8cdb-809f15acbc30"
+    },
+    {
+        "name": "Cardo Minor",
+        "id": "c0dd03e1-28ae-4331-a687-8df6b4c8a455"
+    },
+    {
+        "name": "Nuja",
+        "id": "9bc30e3a-224a-43df-bc88-cc780f64a69a"
+    },
+    {
+        "name": "Inya Prime",
+        "id": "e78ba35c-efba-4753-9c20-1945fd367e7a"
+    },
+    {
+        "name": "Gheia Six",
+        "id": "f051db6f-5256-4d05-9077-695e52ecc7a4"
+    },
+    {
+        "name": "Spira",
+        "id": "700cdc24-a59f-4d03-bb9d-df1f405d5fa6"
+    },
+    {
+        "name": "Thabeska",
+        "id": "cf5f1d4f-0b77-4f16-8a80-7fbd40401348"
+    },
+    {
+        "name": "Raada",
+        "id": "05715d31-d940-4881-96e8-89b0e5b98680"
+    },
+    {
+        "name": "Yerbana",
+        "id": "99614cb4-e0d3-4061-aabe-a129d02666dc"
+    },
+    {
+        "destinations": "Rampart Station",
+        "name": "Pii",
+        "comments": "Mashaling Depot for supply ships bound for Geonosis (Construction Death Star)",
+        "id": "4f445a03-d99e-4417-ab5b-e0e131da681a"
+    },
+    {
+        "name": "Tcoleet III",
+        "id": "6f1a8310-a3a4-4b7f-ab7c-6f31806b1254"
+    },
+    {
+        "destinations": "Lithoporoite Seam",
+        "name": "Shu-Torun",
+        "terrain": "Lave",
+        "id": "c89947bd-a715-4239-b4fa-13eb503a7c5c"
+    },
+    {
+        "name": "Nacronis",
+        "comments": "Destroyed in Operation Cinder",
+        "id": "0d62bd2d-5a05-4ce1-a5f0-aa21885fdbfd"
+    },
+    {
+        "system": "Jinata",
+        "name": "Vardos",
+        "capital_city": "Kestro",
+        "id": "e3930b65-2cf7-4914-97fb-e9ec5ce627cb"
+    },
+    {
+        "name": "Candovant",
+        "id": "f84c72d2-4dcc-4e48-b79d-b214512c55c2"
+    },
+    {
+        "name": "Blacktar Cyst",
+        "id": "271b5ea7-d29e-40bb-8f22-742571e427c9"
+    },
+    {
+        "name": "Mennar-Daye",
+        "id": "4ef25445-26e4-43cc-826d-ecc8d481203a"
+    },
+    {
+        "name": "Beauchen",
+        "id": "d8039e7b-1c16-4267-b6db-9e43e0a4d260"
+    },
+    {
+        "name": "Jiruus",
+        "moons": "Grinning Moon of Jiruus",
+        "id": "f003909e-65c6-487e-800f-99417c2b32e5"
+    },
+    {
+        "name": "Entropian Hive",
+        "id": "ac168ece-8394-42b8-a242-c560dd05f2f5"
+    },
+    {
+        "name": "Trenchenovu",
+        "id": "0b38ff94-6f35-465d-9ded-3d17e955d5fe"
+    },
+    {
+        "name": "Sarapin",
+        "id": "4ef326ca-0c84-4a3e-b4a1-e0affe46d2f0"
+    },
+    {
+        "name": "Oridol Cluster",
+        "comments": "region of densely packed stars and slow-churning cosmic storms that made hyperspace navigation difficult.",
+        "id": "9135fea7-b164-4a28-b0c2-3782359636f9"
+    },
+    {
+        "name": "Kalarba",
+        "id": "ba28b97b-8c4f-4d9a-a33e-47d328a11ac4"
+    },
+    {
+        "name": "Crushank Nebulae",
+        "region": "7",
+        "id": "02eed6ef-cd17-4536-8555-8cb81ce68920"
+    },
+    {
+        "destinations": "Fulan Ro",
+        "name": "Cosmatanic Steppes",
+        "comments": "The Cosmatanic Steppes is a layer of mantle suspended above a gas giant. It's been a center of archaeological digs and scavenging for the last lhundred years of the historical Art Rush.",
+        "region": "7",
+        "id": "adff0ca2-48d0-4d6d-9dc3-2c5af767e7c7"
+    },
+    {
+        "name": "Crelythiumn system",
+        "id": "81aadeed-7a4b-4c0f-b579-4f60b66b38f4"
+    },
+    {
+        "destinations": "The Cave of the Crèche",
+        "name": "Ovanis",
+        "id": "f23a730d-fea1-4812-84af-9d831b5af9f2"
+    },
+    {
+        "destinations": "Prison Fortress of Grakkus The Hutt ",
+        "name": "Megalox Beta",
+        "id": "504411ea-3d0b-409e-9300-0d062df00f9c"
+    },
+    {
+        "name": "Arthon",
+        "id": "2586d875-f6f5-4212-ac0f-a1959c2427d8"
+    },
+    {
+        "name": "Hosra",
+        "id": "5d61f8b1-4bb2-46db-a16e-43b19fbfe93c"
+    },
+    {
+        "name": "Kijimi",
+        "destinations": "Monk's Gate, Dai Bendu Monastery, Kijimi City, Mount Izukika",
+        "moons": "0",
+        "comments": "Destroyed in Episode IX",
+        "terrain": "Montagnes",
+        "sector": "Bryx",
+        "id": "4a28f3a1-752a-4300-9acf-3a45b1c8d5dd"
+    },
+    {
+        "name": "Pheryon",
+        "region": "4",
+        "id": "1b3bed67-2f3d-4684-8667-e02da7302e09"
+    },
+    {
+        "destinations": "The Sliver",
+        "name": "Kaddak",
+        "region": "7",
+        "id": "6770023b-c7a0-4cfd-9d54-731f8d826ff4"
+    },
+    {
+        "name": "Rothana",
+        "comments": "Chantiers navaux",
+        "id": "433d0374-487e-436f-ae23-1404c3ba425e"
+    },
+    {
+        "destinations": "Graf Archive",
+        "name": "Orchis 2",
+        "id": "f12b2528-012b-4f1d-b85a-1f6e8ca6ea43"
+    },
+    {
+        "name": "Riflor",
+        "id": "c114bf97-0a82-41c7-a140-9d4b1c616634"
+    },
+    {
+        "name": "Cona",
+        "id": "357b8924-9bb1-4929-9e7f-89f84c729359"
+    },
+    {
+        "name": "Kubindi",
+        "id": "308d4e1b-c7e0-4ee5-9636-e68431d7e938"
+    },
+    {
+        "name": "Nimban",
+        "id": "d34ef3d0-d56c-4856-b3c2-d093768e38b8"
+    },
+    {
+        "name": "Gentes",
+        "id": "cee19b3c-2be5-446e-af4e-8134d62e5df5"
+    },
+    {
+        "name": "Lutrillia",
+        "id": "fb2078f6-eed8-4270-9994-a9bc56d8a62f"
+    },
+    {
+        "name": "Yag'Dhul",
+        "id": "4b3e5529-b736-4134-8f64-3aa1bce1818d"
+    },
+    {
+        "name": "Dressel",
+        "id": "ef7a6843-df18-4da1-9210-f4815f925bd1"
+    },
+    {
+        "name": "Yar Togna",
+        "id": "5afbec62-bc7e-40fb-a9ad-e61cbb2695b7"
+    },
+    {
+        "name": "Sriluur",
+        "comments": "In the Hutt Space",
+        "id": "33c69122-9a87-42c9-a34b-dc564706d4ce"
+    },
+    {
+        "name": "Lannik",
+        "id": "af5fa8df-3b7b-4f20-98d8-e5b9a03be22e"
+    },
+    {
+        "name": "Makem Te",
+        "id": "322bc320-ba7e-4f28-a18d-e63e12ab5457"
+    },
+    {
+        "name": "Mirial",
+        "id": "219c852f-ffd8-4a96-8faa-9021fe3ce9f2"
+    },
+    {
+        "name": "Klatooine",
+        "id": "f7f33f26-2928-4978-86c2-a885447a21c2"
+    },
+    {
+        "name": "Kintan",
+        "id": "08459cc4-7dcf-4520-a567-ab2d9446ac0b"
+    },
+    {
+        "name": "Kalee",
+        "id": "846e93d9-824e-4194-afae-eaada3eb099b"
+    },
+    {
+        "destinations": "Plateau City",
+        "name": "Kaller",
+        "region": "7",
+        "id": "ace68115-79a3-48a0-a67d-59e94adf7f16"
+    },
+    {
+        "name": "Spalex",
+        "comments": "Possède beaucoup de Thorolide. L'Empire a abandonné vu la résistance pour aller vers des planètes plus dociles.",
+        "region": "7",
+        "id": "9ab51d15-96a5-4ebb-92b7-d1d0f09aa089"
+    },
+    {
+        "name": "Great Forveen Nebula",
+        "region": "5",
+        "id": "979c2d23-63c2-42bb-ba6d-c77d15b6be85"
+    },
+    {
+        "name": "Jaelen",
+        "id": "9cff3cd9-e7f5-4640-a84f-9b1370f1e85b"
+    },
+    {
+        "name": "Hosnian",
+        "id": "124922e8-310b-47de-b777-edffbd25a1b9"
+    },
+    {
+        "name": "Alakatha",
+        "terrain": "Beaches",
+        "id": "200db36a-da15-4d18-af30-de4c07662d75"
+    },
+    {
+        "name": "Skorupon",
+        "id": "317a3b85-e788-49ff-8bb6-ae06265e4e3f"
+    },
+    {
+        "name": "Polyneus",
+        "id": "02c64473-21ef-4e08-b65d-ae081d517f67"
+    },
+    {
+        "name": "Salient",
+        "id": "d808b91a-ee01-45cb-ac32-80b97e7281b9"
+    },
+    {
+        "name": "Grumwall",
+        "id": "a28168b1-aa24-4ac2-a603-a2ae557d944f"
+    },
+    {
+        "name": "Gavana Orbital",
+        "id": "dcbfb591-dbbf-416b-9456-bd0c855a340d"
+    },
+    {
+        "name": "Dhen-Moh",
+        "id": "c2c2005d-597d-4918-8ab7-b4ef39aacc48"
+    },
+    {
+        "name": "Gordian Reach",
+        "id": "c85f18b9-9fbd-4c74-99bd-f3421ff29a67"
+    },
+    {
+        "destinations": "Induchron",
+        "name": "Pandem Nai",
+        "comments": "Gas mining world. Resource-rich.",
+        "id": "c5f08e07-14e7-49d3-8b80-6655292b55b5"
+    },
+    {
+        "name": "Paqualis",
+        "id": "63692352-695c-441f-8c87-f9f12217d6cd"
+    },
+    {
+        "name": "Shalam",
+        "id": "d837c62c-d45b-4f55-8342-071377d23fd8"
+    },
+    {
+        "name": "Jendorn",
+        "id": "8a3ccf72-e2d6-4f9f-913d-25c8a6b761c2"
+    },
+    {
+        "name": "Mek'tradi",
+        "id": "488e3cc4-b2d0-42a7-92f3-7e51f6f602a7"
+    },
+    {
+        "name": "Dryorkeen Cluster",
+        "id": "2ee3f880-a356-44a8-903d-7b6ff1364deb"
+    },
+    {
+        "system": "The Cosmatanic Steppes",
+        "name": "Archaeo-Prime",
+        "id": "f5707012-d3fd-445c-9856-8577eb08dd83"
+    },
+    {
+        "name": "Boothi XII",
+        "comments": "Place without history. Farmers doing their simple life thing, for thousand of years. Architecture hasn't changed for longer than the Republic existed. But much more of it beneath the surface. There is a vault that might have proof of a previous civilization there. A precursor race,.. something.",
+        "id": "9cd5bdf7-b0e0-4022-88f4-61b9e8e9f7a8"
+    },
+    {
+        "name": "Fortress of Garn",
+        "comments": "Also known as the Citadel of Rur.  Headquarters of the Ordu Aspectu",
+        "id": "893cdad1-b3fb-4728-a27f-4edb96f31f02"
+    },
+    {
+        "name": "Thisspias",
+        "id": "34a22a4b-c65a-4990-b3c4-f6b4bd1a3d22"
+    },
+    {
+        "name": "Aleen",
+        "id": "fdf212c0-e9b1-4d35-8308-d315b27929d7"
+    },
+    {
+        "name": "Chad",
+        "id": "33672c57-14ce-4f90-9c1c-f402bb10fce6"
+    },
+    {
+        "name": "Merj",
+        "id": "048bcc00-b6ed-4b09-b04f-3e7e200d3c21"
+    },
+    {
+        "name": "Toola",
+        "id": "70d872f0-5798-48d2-b698-1f24186b536c"
+    },
+    {
+        "name": "Florn",
+        "id": "9021684f-86ed-401a-afe7-25d40ec61036"
+    },
+    {
+        "name": "Ando",
+        "id": "2e3367ec-c4d2-40cd-9a2d-a7e066a371f6"
+    },
+    {
+        "name": "Clak'Dor VII",
+        "id": "3df502b2-516b-488a-9ebb-c358b1b9642d"
+    },
+    {
+        "name": "Vurdon Ka",
+        "id": "23fe0d47-6e89-405c-ad83-297901f1aaa8"
+    },
+    {
+        "name": "Pollillus",
+        "id": "d447a91a-b2a5-4dee-9d3e-78f726b8a5b1"
+    },
+    {
+        "name": "Tund",
+        "id": "145fde5c-d979-4380-8577-42904164f874"
+    },
+    {
+        "name": "Sump",
+        "id": "18d6453d-0473-43b5-8ba7-4be423112665"
+    },
+    {
+        "name": "Er'kit",
+        "id": "55463dd9-a07a-4c20-8983-c1751e87cefc"
+    },
+    {
+        "name": "Ploo IV",
+        "id": "d2d9de1b-3ce2-489f-a8e8-f3f28c9413a5"
+    },
+    {
+        "name": "Kirdo III",
+        "id": "c832e311-875a-4e94-ae25-e7b393cbf0d0"
+    },
+    {
+        "name": "Orto",
+        "id": "f202c85e-b472-4686-b661-9a39d1d0e6cc"
+    },
+    {
+        "name": "Kowak",
+        "id": "41ddafeb-29ab-4d07-bbde-8869a7ba5726"
+    },
+    {
+        "name": "Elom",
+        "id": "0699733f-54fc-41d6-952e-86aafaf793e0"
+    },
+    {
+        "name": "Trandosha",
+        "id": "d362f53e-042b-4b70-b089-ad743b0862e0"
+    },
+    {
+        "name": "Askaji",
+        "id": "32814fb6-fd29-4eea-89b8-57483bf637fd"
+    },
+    {
+        "name": "Gand",
+        "id": "036bc76c-03df-4091-bf8f-4457b2565abb"
+    },
+    {
+        "name": "Crul",
+        "id": "0dc5564a-ac86-426e-a551-a606def125cd"
+    },
+    {
+        "name": "Phatrong",
+        "id": "1f014bf2-d9f8-47b5-a1c1-0cd2bfc6ef90"
+    },
+    {
+        "name": "Li-Toran",
+        "id": "f8da6bed-c91d-4995-bb25-8576a2830726"
+    },
+    {
+        "name": "Dybrin 12",
+        "id": "2bf2bea7-8e67-4172-9eb9-5aa1b811708b"
+    },
+    {
+        "name": "Cosian Space",
+        "id": "9832030e-13ba-4c30-8b7c-f9c59ff45f08"
+    },
+    {
+        "name": "Yablari",
+        "id": "c050991f-7e7c-4d53-807e-d2e964ff964b"
+    },
+    {
+        "name": "Britaxis Minor",
+        "id": "cd3ef769-1425-4d72-9438-b37bc3760faf"
+    },
+    {
+        "name": "Pipada",
+        "id": "c474a504-1c01-4331-a995-428ca62fb7ea"
+    },
+    {
+        "name": "Gigor",
+        "id": "ef624ab1-62ef-4eb0-846c-0634f1845c49"
+    },
+    {
+        "name": "Tal Pi",
+        "id": "6e0ec7d6-d22f-4f7e-a169-8be73415a1ef"
+    },
+    {
+        "name": "Vobes",
+        "id": "7c7646ef-0f6b-4545-be70-7a9ff09ecc76"
+    },
+    {
+        "name": "Maires",
+        "id": "da95a81a-c0bd-4b82-9af5-6ad0d0a46bde"
+    },
+    {
+        "name": "Kooriva",
+        "id": "f75e5dda-b040-40db-a9eb-e717585c416a"
+    },
+    {
+        "name": "Tarn",
+        "id": "3977b7be-8fb7-45b0-8d87-dadbadbe4a5e"
+    },
+    {
+        "name": "Photobranch",
+        "id": "3f6859a4-b1da-406e-ba9f-bc1ee8e5cdae"
+    },
+    {
+        "name": "Neimodia",
+        "id": "94d1b87e-0b9f-4ac1-a9e5-aed962b18d8f"
+    },
+    {
+        "name": "Mileva",
+        "id": "cd84c4d1-013b-4edb-8574-b900a0e26363"
+    },
+    {
+        "name": "Gravlex Med",
+        "id": "41e0896a-605f-4db2-83fc-d90488e06b99"
+    },
+    {
+        "name": "Mikkia",
+        "id": "66648230-ed06-4c4b-9fa2-0d273f2dec85"
+    },
+    {
+        "name": "Skustell",
+        "id": "5d6efb5f-7544-4218-a6f5-65fe75d8b057"
+    },
+    {
+        "name": "Ojom",
+        "id": "b375e4d9-b2b8-4cf9-b01e-fe9f2f91139f"
+    },
+    {
+        "name": "Sembla",
+        "id": "3d35f033-a1bf-4cc7-bd0c-fd7772fefc41"
+    },
+    {
+        "name": "Tholoth",
+        "id": "7695d5cb-b9c7-4703-b6f8-1ac54460979e"
+    },
+    {
+        "name": "Roona",
+        "id": "a102dda3-8524-41de-8dfa-fb429cab414b"
+    },
+    {
+        "name": "Almak",
+        "id": "91a12d65-2efd-40ac-bc2d-372e8dd740cc"
+    },
+    {
+        "name": "Zolan",
+        "id": "72d24b1f-8cbf-4c96-aed1-ccb9ca6209f7"
+    },
+    {
+        "name": "Cholganna",
+        "id": "b04d0c0d-a0db-4aee-bd1a-7f3419812e51"
+    },
+    {
+        "name": "Codian Moon",
+        "id": "3b3b335b-0787-436e-b7a5-a25b50705308"
+    },
+    {
+        "name": "Honoghr",
+        "id": "dceefb0d-3d7e-402d-a899-ea82372f0fc5"
+    },
+    {
+        "name": "Ottega system",
+        "id": "32631372-9db2-4f8b-a715-46de3a7f90a2"
+    },
+    {
+        "name": "New Plympto",
+        "id": "fcaebd19-c4a0-4b30-9d6e-af71995e66d0"
+    },
+    {
+        "name": "Phindar system",
+        "sector": "Mandalore",
+        "id": "360d2658-4965-4362-8862-ae0c7a67094b"
+    },
+    {
+        "name": "Wasskah",
+        "comments": "Lune de Trandosha",
+        "id": "2cdbcdcc-9a72-4b99-950a-e14c93b3603c"
+    },
+    {
+        "name": "Vodran",
+        "id": "17d51a10-094e-4836-8567-48868b14e7bd"
+    },
+    {
+        "name": "Artiod Minor",
+        "id": "b609dc7f-8782-47d4-8cb4-cc7a7fa05131"
+    },
+    {
+        "name": "Danzik",
+        "id": "6d654019-f8af-4477-86a0-97313467e9d8"
+    },
+    {
+        "name": "Octero IV",
+        "id": "32a68bc3-245b-4d18-8777-96e14ed1d076"
+    },
+    {
+        "name": "Manaan",
+        "id": "c707df41-3e3b-4457-ae54-b70e77c1fb0c"
+    },
+    {
+        "name": "Karkaris",
+        "id": "e04e9302-5ee5-4502-a72a-0d8659ff904e"
+    },
+    {
+        "name": "Croce",
+        "id": "ef9e4900-edb0-43f3-b65b-95affee8661a"
+    },
+    {
+        "name": "Patrolia",
+        "id": "1324475a-c093-4dde-aefb-e8387bf92980"
+    },
+    {
+        "name": "Csilla",
+        "capital_city": "Csaplar",
+        "region": "8",
+        "id": "40a32172-7fce-498d-8d32-060ef75ec89d"
+    },
+    {
+        "name": "Ruuria",
+        "id": "22c7ce22-dd9d-4e1e-8a6b-3046cd650ace"
+    },
+    {
+        "name": "Nepotis",
+        "id": "7d0793e3-791c-47ca-89fd-40bfed635bd2"
+    },
+    {
+        "name": "Indoumodo",
+        "id": "b0594f6a-8693-4633-b714-2e6f6c33168b"
+    },
+    {
+        "name": "Bravais",
+        "id": "0b5185a5-55ea-4358-9b47-e12376685a62"
+    },
+    {
+        "name": "Delphidian Cluster",
+        "id": "95566e76-3bcd-47cf-9844-c25461817735"
+    },
+    {
+        "name": "Dowut",
+        "id": "ead89c2f-3d98-43de-bddc-8b8e763f2451"
+    },
+    {
+        "name": "Hasskyn",
+        "id": "71f4bac4-5fe1-430c-8624-a00a390a1d3b"
+    },
+    {
+        "name": "Tansyl 5",
+        "id": "a8d4dc91-803b-45c8-be1a-205d569d675d"
+    },
+    {
+        "name": "Nag Ubdur",
+        "id": "ff15b410-f245-4e8c-9071-52ee55d11d2d"
+    },
+    {
+        "name": "Ubduria",
+        "id": "b6ec8121-d608-49b8-b28e-573d1f55d46b"
+    },
+    {
+        "name": "Zygerria",
+        "comments": "Home of the galaxy's most notorious slave empire.",
+        "id": "f55d923a-2678-423c-a096-c61618ab4080"
+    },
+    {
+        "name": "Kiffu",
+        "id": "1b0dc4bb-7bf7-4246-aed3-653011fd4f7a"
+    },
+    {
+        "name": "Kiffex",
+        "region": "4",
+        "id": "08d32100-f00a-4aba-80be-d16eb6067f8a"
+    },
+    {
+        "system": "Naboo",
+        "name": "Jafan",
+        "comments": "Renowned for agricultural output.  Was a relatively new colony. They'd arrived in the sector some three hundred years ago, and they were still ruled by the family who established the colony.",
+        "sector": "Chomell",
+        "id": "19b3b49d-c04c-43b0-aa42-e1220805c641"
+    },
+    {
+        "system": "Naboo",
+        "name": "Kreeling",
+        "comments": "Mining World",
+        "sector": "Chomell",
+        "id": "d74b4323-20a5-496c-b549-40b730d97aa8"
+    },
+    {
+        "system": "Naboo",
+        "name": "Behpour",
+        "sector": "Chommell",
+        "id": "43c74ba5-0066-442e-8778-2d08092e3232"
+    },
+    {
+        "system": "Naboo",
+        "name": "Chommell Minor",
+        "sector": "Chommell",
+        "id": "ea82beb3-eaad-42a8-932f-590f138add01"
+    },
+    {
+        "name": "Enarc",
+        "id": "a7944ee7-cc29-4df1-b2bf-a8627d296841"
+    },
+    {
+        "name": "Yonta Prime",
+        "id": "35a186bc-0d56-41fa-9a40-6ba07165e5a9"
+    },
+    {
+        "name": "Chyron Belt",
+        "id": "7f287243-8dca-45a7-b5b5-86ed73eedbe4"
+    },
+    {
+        "name": "Fusai",
+        "id": "541a664b-230f-4f34-bc5a-4cb9a23c76b4"
+    },
+    {
+        "name": "Chagar IX",
+        "comments": "Everything revolved around the fighting pits.",
+        "id": "51b78cf4-49a5-4eb7-9847-c7883e501b0c"
+    },
+    {
+        "name": "Tureen VII",
+        "comments": "A aidé les rebelles après Battle of Yavin",
+        "id": "4f9e15cb-eb4e-4811-9891-9bfaf7cd6e17"
+    },
+    {
+        "name": "Skorii-Lei",
+        "id": "5a980f04-690c-4c55-8c1c-0815c89cfd18"
+    },
+    {
+        "name": "Vagadaar system",
+        "id": "1e354db7-95ff-4424-8d67-8522b049f92e"
+    },
+    {
+        "name": "Ajan Kloss",
+        "destinations": "Klosslands",
+        "moons": "2 (Ajan est la lune d'une autre planète - Ajara)",
+        "fauna": "Arboreal Zymod",
+        "region": "7",
+        "terrain": "Broadleaf forests, overgrown cliffs and valleys, grottos and oceans",
+        "sector": "Cademimu",
+        "id": "fa2db1f2-4d92-4002-89bc-beac2706500f"
+    },
+    {
+        "destinations": "Koke Frost",
+        "name": "Exegol",
+        "moons": "Aucune",
+        "region": "8",
+        "terrain": "Barren Rock, Desert Flats",
+        "id": "d0348b63-9a97-45dc-9ee1-7473f117d57a"
+    },
+    {
+        "name": "Pasaana",
+        "system": "Middian",
+        "destinations": "Lurch ",
+        "moons": "1",
+        "region": "3",
+        "terrain": "Desert Bluffs and dunes",
+        "sector": "Ombakond",
+        "id": "3bb14b28-1fbf-453d-ac4f-692e13f8b675"
+    },
+    {
+        "name": "Kef Bir",
+        "region": "7",
+        "system": "Endor",
+        "id": "7cde060c-bb53-4a10-b3aa-e13d53864194"
+    },
+    {
+        "name": "Sinta IV",
+        "id": "c9598047-4775-4154-b70f-17beef14471b"
+    },
+    {
+        "destinations": "Pits",
+        "name": "Griq",
+        "id": "22d5b36f-226c-4419-997d-5450b8b689e1"
+    },
+    {
+        "name": "Horox III",
+        "region": "7",
+        "id": "5eab17e3-91c4-4b43-8e4a-879269f7be8a"
+    },
+    {
+        "destinations": "Citadel of Ktath'atn",
+        "name": "Ktath'atn",
+        "id": "a966b30d-d2d5-419b-ad33-ad5574fce278"
+    },
+    {
+        "name": "Ezaraa",
+        "id": "1caf9ddb-2a2c-44cd-8978-1a6bd7776ef7"
+    },
+    {
+        "name": "Yolthani VI",
+        "id": "c2387a64-5c21-44a6-9c28-ab3c00f38b99"
+    },
+    {
+        "system": "Vandelae",
+        "name": "Aiken Prime",
+        "id": "d151c1ff-6bcb-42d6-8347-00469cc39380"
+    },
+    {
+        "name": "Ansett Island",
+        "id": "e9ac24fd-089e-493d-9cf0-df2bd294771e"
+    },
+    {
+        "name": "Odona",
+        "comments": "Remote world of harsh extremes and secret alcoves long used by pirates and smugglers to avoid the Empire",
+        "id": "9e5f9157-6fc4-46f3-8d81-f3d212f245e9"
+    },
+    {
+        "name": "NaJedha",
+        "id": "520ed521-9781-450a-af9b-411a3f409eab"
+    },
+    {
+        "name": "Merokia",
+        "id": "08bdbbdf-06c4-4d73-9255-50a44b91c6d4"
+    },
+    {
+        "name": "CeSai",
+        "id": "7197b22e-b14f-4cfc-bab6-3c530237d613"
+    },
+    {
+        "name": "Isolate-4",
+        "region": "7",
+        "id": "534ec1e4-5c85-4271-8b87-e4d0732a7867"
+    },
+    {
+        "name": "Sorca Retreat",
+        "id": "542f4d0f-8979-4e1a-b736-3aeee878704a"
+    },
+    {
+        "name": "Zeltros",
+        "id": "3017435f-0819-4a30-bf4b-acfb34e70ea5"
+    },
+    {
+        "name": "Someilk",
+        "region": "7",
+        "id": "2bed08ca-0edc-4994-8144-e7e7a1c660c5"
+    },
+    {
+        "name": "Dendada XVII",
+        "comments": "Imperial Internal Affairs Outpost",
+        "id": "1e94a19a-7998-4516-9b26-81411666c665"
+    },
+    {
+        "name": "Thyron VII",
+        "id": "cb73b8b4-afa3-4d9a-b407-a62b777f0fc6"
+    },
+    {
+        "name": "Hivebase-1",
+        "id": "fd8a299e-d3fb-4771-9c04-371c9f1d8af5"
+    },
+    {
+        "name": "Kartovian Formation",
+        "id": "e361cf9b-0a77-4168-b0f7-e9ce749bfe6f"
+    },
+    {
+        "name": "Asteroid-Hélix",
+        "id": "fefbb201-f612-4252-b5ef-578cfcfff23e"
+    },
+    {
+        "name": "Karga",
+        "id": "aca0cdcc-d6a5-4f41-af04-a35d1c65e127"
+    },
+    {
+        "destinations": "Meridional Ice Cap, Martyrium of Frozen Tears",
+        "name": "Tython",
+        "region": "1",
+        "id": "f344d48c-439a-41f5-98aa-f7c550fa198c"
+    },
+    {
+        "name": "Varnak",
+        "region": "5",
+        "id": "85f3daf9-3c45-4fa2-926c-280b6a4505cf"
+    },
+    {
+        "name": "Minemoon of Mimban",
+        "region": "5",
+        "id": "ae6bca2d-cdb2-46dd-9828-ee0a60c4a0e8"
+    },
+    {
+        "name": "Carnelion IV",
+        "comments": "Dense Debris Field around the Planet Not part of the Republic",
+        "id": "42d1eceb-bc76-40f4-a553-8e9c05025cdb"
+    },
+    {
+        "destinations": "Illmek Island Spaceport",
+        "name": "Lahn",
+        "terrain": "Tropical",
+        "id": "4e18ea57-598c-4bba-8c6f-ae95993d3da5"
+    },
+    {
+        "name": "Moraga",
+        "id": "ae4dd93f-97cc-4451-936d-ca56e7836be5"
+    },
+    {
+        "name": "Kardoa",
+        "id": "d596ed00-304e-4a3d-a967-e93978107248"
+    },
+    {
+        "name": "Haruun Kal",
+        "id": "eb4ee9db-0ba5-42e9-8523-67349e365982"
+    },
+    {
+        "name": "Hissrich",
+        "comments": "The planet is in a state of near-perpetual dark, only gathering light from a distant sun for about one hour per monthly cycle.",
+        "region": "7",
+        "terrain": "Jungle",
+        "id": "57e0f6af-7c31-4d43-90f1-ac5a0beeba88"
+    },
+    {
+        "name": "Mon Gazza",
+        "id": "9d3253fc-5582-4802-80cf-5934e442e971"
+    },
+    {
+        "name": "Mathas",
+        "id": "382da8ab-409e-41b4-9246-9a5b93a56733"
+    },
+    {
+        "name": "Qlint",
+        "id": "b8c97af7-ecba-469c-af50-ef560eeae4f2"
+    },
+    {
+        "name": "Kolkur",
+        "region": "7",
+        "id": "bb4fd813-fe64-417d-8465-abc46b78212d"
+    },
+    {
+        "destinations": "Lost City of Vaale",
+        "system": "Malitoris",
+        "name": "Dianth",
+        "id": "b3aa3c4e-3c9f-4784-9b0a-ca323c94c503"
+    },
+    {
+        "name": "Logal Ri",
+        "comments": "Moon",
+        "id": "c4cc17a7-06d7-48c4-966a-8219bb658bf0"
+    },
+    {
+        "name": "Galmerah",
+        "comments": "Graveyard Planet",
+        "id": "8d92ee7d-1e48-4852-bb58-627e138e51e6"
+    },
+    {
+        "destinations": "Fortress of the Mourner's Wail",
+        "name": "Dotharian",
+        "comments": "Deep in Hutt Space",
+        "id": "2ae39ee0-91f0-41b8-8ed4-63cd033701ae"
+    },
+    {
+        "name": "Chorgad",
+        "id": "d8d1db0f-e2e8-4fcc-bb97-e3a3be0bd883"
+    },
+    {
+        "name": "Hisseen",
+        "id": "057b553d-c794-45ca-8b9a-23eaf7663403"
+    },
+    {
+        "name": "Benglor",
+        "id": "ad6f94d6-f270-40ac-ada7-fd6c20ba095b"
+    },
+    {
+        "destinations": "The Nexus",
+        "name": "Quarmendy",
+        "id": "d211553b-b9fd-4ea4-b47d-48e6e92e385f"
+    },
+    {
+        "name": "Harrikos-Fifteen",
+        "id": "32b8fe7b-66de-435c-b1df-1aa309c587b7"
+    },
+    {
+        "destinations": "Tinker-Town, Gannory's Cantina, Xnapolis, Cousault, Little Neimoidia",
+        "name": "Mrinzebon",
+        "id": "1435a940-b0ab-423e-b212-c3f7d7f9d888"
+    },
+    {
+        "name": "Herdessa",
+        "id": "331e2acb-31e0-4d6c-af52-6849180cff80"
+    },
+    {
+        "name": "Phorsa Gedd",
+        "id": "8362a018-56ea-45b3-b76f-83e106be57e4"
+    },
+    {
+        "name": "Yinchorr",
+        "id": "b98b82e3-5559-4c29-9bd5-97b6716e8de8"
+    },
+    {
+        "name": "Berchest",
+        "id": "d5b396d7-6114-4515-b553-96a526d4c6af"
+    },
+    {
+        "name": "Induchron",
+        "id": "47cdb88a-64b7-4977-9021-e6841a210696"
+    },
+    {
+        "name": "Vnex",
+        "id": "24126ef7-e43e-4300-8553-aec9211a1342"
+    },
+    {
+        "name": "Kerkodia",
+        "id": "47ac2001-afb2-425f-90ab-df1b29086e83"
+    },
+    {
+        "name": "Chazwa",
+        "id": "c56d59ec-4878-4788-9a43-11c089a4ccb8"
+    },
+    {
+        "name": "Harkrova I",
+        "id": "732cdaf9-777b-42f3-827b-e5ffa8fe6461"
+    },
+    {
+        "name": "Thakwaa",
+        "id": "8f06d24d-3fac-4bc3-879f-57b07586cad7"
+    },
+    {
+        "name": "Aigai Minor",
+        "id": "aebb5ca3-eb82-4be3-aa0d-fcd417d8cf2e"
+    },
+    {
+        "name": "Uchinao",
+        "id": "21d7b357-f2f0-4af6-901d-f41af32d5b35"
+    },
+    {
+        "name": "Koiogra",
+        "id": "28ed7b14-5f56-4dfa-bdef-312eb5e949fc"
+    },
+    {
+        "name": "Lyran",
+        "id": "61cf00b8-2ea5-41ca-9487-3149686bdc75"
+    },
+    {
+        "name": "Rentaxius VIII",
+        "id": "4c255a7d-00c7-40b7-b3fd-116004fcc016"
+    },
+    {
+        "name": "H'Grathi",
+        "id": "0193c7a3-aefc-4251-a7cb-65a82f4b8001"
+    },
+    {
+        "name": "Corulag",
+        "id": "c31a4e89-752a-4d73-906c-0163bf2e10d6"
+    },
+    {
+        "name": "Karazak",
+        "comments": "Slaver World",
+        "id": "7fb37d2b-6980-4134-bec4-56b3a813986f"
+    },
+    {
+        "destinations": "Bakerstown",
+        "name": "Vernid",
+        "id": "0b0c30d8-57c2-42f0-9a57-c306c4689abe"
+    },
+    {
+        "name": "Hetnagaro",
+        "comments": "Planète détruite par l'Empire",
+        "id": "354ef105-a756-4d90-9b80-d949fec65f02"
+    },
+    {
+        "name": "Indu San",
+        "id": "9cd777a4-c99b-4a78-bd6a-31dd21098621"
+    },
+    {
+        "name": "Alamass",
+        "id": "f25edd39-3d11-46b3-bd4f-c8b01967a275"
+    },
+    {
+        "destinations": "Solace, Mock, Cairos",
+        "name": "Cerosha",
+        "id": "17e298a8-dffc-4098-bdb5-acfd0b850135"
+    },
+    {
+        "name": "Simoth",
+        "id": "429a3106-d92c-4dc5-ac77-4f47b27bb968"
+    },
+    {
+        "system": "Hoth",
+        "name": "Jhas",
+        "moons": "Jhas Krill",
+        "id": "5d092f1e-7018-4275-8fbb-8b42a5135792"
+    },
+    {
+        "system": "Hoth",
+        "name": "Jhas Krill",
+        "id": "bad4434c-f5b0-4089-bc0c-3fddbd959760"
+    },
+    {
+        "name": "Kaspas",
+        "terrain": "Glaces",
+        "id": "3cfbd01a-37f5-41c0-8224-1b5a6082313c"
+    },
+    {
+        "destinations": "Tiquwe",
+        "name": "Aloxor",
+        "sector": "Essaga",
+        "id": "9c3a6563-9b50-491d-840e-973dfbaed4e7"
+    },
+    {
+        "name": "Ord Pardon",
+        "id": "ecfc606b-0823-44d0-abba-91bbf7257b8e"
+    },
+    {
+        "name": "Radnor",
+        "id": "e27de822-f9f7-4bc8-bb8e-0303a1d510e9"
+    },
+    {
+        "name": "Tanto Winn",
+        "id": "ab7cbdb9-356e-4913-84f6-b366c62cd795"
+    },
+    {
+        "destinations": "Vette Lake, Dande Donjon",
+        "name": "Xu'hu",
+        "id": "7e0a678d-c8e2-4681-96a6-3828014d130f"
+    },
+    {
+        "name": "Pillio",
+        "id": "0e63870a-ee54-4084-aa4f-a4210963328b"
+    },
+    {
+        "name": "Ara Dyelle",
+        "id": "93529f1d-2d22-4841-aa8d-181a785ff479"
+    },
+    {
+        "name": "Otomok",
+        "id": "24c0c2a4-56ca-44c3-960d-77939254d7c8"
+    },
+    {
+        "name": "Pippip 3",
+        "fauna": "Whellay",
+        "id": "388aa41b-0fc2-4b90-ae5d-888a2c571ab6"
+    },
+    {
+        "name": "Zohakka XVII",
+        "id": "4db0544d-bca2-49f5-adb5-d5d434e1f5b4"
+    },
+    {
+        "name": "Pamarthe",
+        "id": "65411f4c-7ae0-419e-9eaf-b7f11878b7c1"
+    },
+    {
+        "name": "Setor",
+        "id": "e670fd55-8662-456d-8db7-099f9c30b299"
+    },
+    {
+        "name": "Kellgar 7",
+        "region": "7",
+        "id": "3d06655a-fbf9-4667-bb3a-588781c1a92f"
+    },
+    {
+        "name": "Sawaya",
+        "id": "c3a7bb8f-7354-4c6b-af43-7597e8922191"
+    },
+    {
+        "name": "Quintil",
+        "region": "7",
+        "id": "65f6f803-6d62-4eac-8c1e-d55fc66513f1"
+    },
+    {
+        "name": "Formos",
+        "id": "0c7fa952-b019-46e1-bbd9-82fb9b29764f"
+    },
+    {
+        "name": "Davezra Way",
+        "id": "e1d11eca-b712-47dd-886b-dae876560727"
+    },
+    {
+        "name": "Moraysi",
+        "comments": "Mining system populated by a race of tan, stout humanoids who were known for their shipbuilding and inventiveness - but also an ability to actualize their schematics.",
+        "region": "7",
+        "id": "b86c4882-a2ec-4271-a108-e9fc750d362f"
+    },
+    {
+        "system": "Opalok",
+        "name": "Yungbrii",
+        "comments": "Cold, rocky, and mountainous.",
+        "region": "5",
+        "id": "7d151875-3006-4d1d-ae9c-19c43137a322"
+    },
+    {
+        "destinations": "The Marimkes Mountains",
+        "system": "Penagosis",
+        "name": "Elkeenar",
+        "id": "5e659133-b809-4617-8807-d058abbf4b5a"
+    },
+    {
+        "name": "Ankot Station",
+        "id": "48fc7ced-85de-46e4-896e-b0e293115540"
+    },
+    {
+        "name": "Torch Nebula",
+        "id": "4cba9b66-67f1-4a91-a439-0a16533759b3"
+    },
+    {
+        "name": "Guat'a",
+        "id": "f6f8ee79-f9fe-4649-9968-d1f6f617040b"
+    },
+    {
+        "system": "Nishmar",
+        "name": "Nishmar",
+        "region": "8",
+        "id": "80398fa3-f90e-4070-ab32-bfe055358ad0"
+    },
+    {
+        "name": "Shownar",
+        "id": "dbeeb89b-8e0a-41ce-b911-2c2665df9cb8"
+    },
+    {
+        "name": "Llanic Spice Run",
+        "id": "78142d5b-9fa8-4caa-bbc7-51fbed7d0b5a"
+    },
+    {
+        "name": "Triellus Trade Route",
+        "id": "302b76d8-1aee-4c1a-b4b2-a71b98b675ac"
+    },
+    {
+        "name": "Llanic",
+        "id": "9b4fceb1-ef6a-4f55-97c5-e9c106cfb6ce"
+    },
+    {
+        "name": "Judakann",
+        "id": "6f305989-a38d-4a4e-8289-080e5c9cf3de"
+    },
+    {
+        "name": "Belsavis",
+        "id": "067b0d75-d5d8-4e94-8dc3-e1ae4ba34b5d"
+    },
+    {
+        "name": "Serelia",
+        "id": "956806bf-ce02-4bcf-8ed0-f97be660fddf"
+    },
+    {
+        "name": "Krystar",
+        "id": "06226610-4eb0-4985-be2d-588e19b2e088"
+    },
+    {
+        "name": "Ilum",
+        "region": "8",
+        "id": "2fe855a2-07fe-47c0-a820-f649d1a54850"
+    },
+    {
+        "destinations": "Ulon Atur, Ulon Ipo-Lito",
+        "name": "Lew'el",
+        "comments": "Means Deluge",
+        "id": "bfdff423-b227-4e9f-a1b6-c39a392a2084"
+    },
+    {
+        "name": "Cro-Akon",
+        "id": "350802e9-1864-4eba-b403-558d7981e1ef"
+    },
+    {
+        "name": "Quan-Shui",
+        "id": "1d9078ed-7eaa-4027-a5c7-b6f0f39f53ae"
+    },
+    {
+        "name": "Teriq Noi",
+        "id": "8c96fd1f-d3cd-45eb-b653-6de87c1d76b3"
+    },
+    {
+        "system": "Agoliba-Tu",
+        "name": "Agoliba-Abo",
+        "terrain": "Jungles",
+        "id": "2aa2ce54-8840-4829-aa69-36624e501b44"
+    },
+    {
+        "system": "Agoliba-Tu",
+        "name": "Agoliba-Ena",
+        "terrain": "Glaciers",
+        "id": "c9fbce27-02af-4245-aaf8-2057e7858bf5"
+    },
+    {
+        "name": "Touksingal",
+        "id": "8dd4cc27-7d5e-4a71-b8c6-0efc0bfa08e6"
+    },
+    {
+        "name": "Taris",
+        "id": "85b425b0-1c87-4760-bad1-a3a7c8157b4e"
+    },
+    {
+        "name": "Derella",
+        "id": "0a0f9808-0989-4f9d-959c-c3db66195f69"
+    },
+    {
+        "name": "Birren",
+        "region": "4",
+        "id": "2592d911-27e6-4923-847e-ce6143de693e"
+    },
+    {
+        "name": "Uyter",
+        "comments": "There's an Imperial Academy",
+        "id": "b2fc1a7f-b76e-48e0-829c-181c0a3f2c36"
+    },
+    {
+        "name": "Calderos Station",
+        "id": "05285713-f796-4f25-bf5a-d46b5ce4a3c7"
+    },
+    {
+        "name": "Istabith",
+        "id": "026767a4-8859-4d30-a710-9d5d06f624a6"
+    },
+    {
+        "name": "Fillithar",
+        "id": "60d215a4-170c-4779-b256-5001c9642470"
+    },
+    {
+        "name": "Iloh",
+        "terrain": "Water World",
+        "id": "e28ac94a-3d6a-41b2-a939-d3a32a61ec70"
+    },
+    {
+        "name": "Harloff Minor",
+        "id": "c6df0329-1bb9-4145-8fd6-6e9c4d6faff6"
+    },
+    {
+        "name": "Itapi Prime",
+        "comments": "Very close to Coruscant",
+        "id": "006779ba-d6f8-4c20-80cd-bee8fff55b9c"
+    },
+    {
+        "name": "Lonera",
+        "id": "a3ced0b0-0daf-4eea-9468-8fafdf4e52a2"
+    },
+    {
+        "name": "Arreyel",
+        "comments": "Former Separatist World Now poor",
+        "region": "4",
+        "id": "b0e080b2-59cc-43e3-996e-9db7fbd1cfa6"
+    },
+    {
+        "name": "Bilbringi",
+        "id": "5996e4f3-8d8b-4912-9649-4180c708fc6f"
+    },
+    {
+        "name": "Onoam",
+        "comments": "Moon of Naboo",
+        "id": "529f08c6-1a50-443a-98c4-af2d0ab02aa6"
+    },
+    {
+        "name": "Caviness IV",
+        "comments": "Bombed by the Empire",
+        "id": "ff67b4ae-3c94-410b-83fb-2d7f10d98639"
+    },
+    {
+        "name": "Qiilura system",
+        "id": "a6e92676-f7ab-4480-8d32-82ecbcf5afa5"
+    },
+    {
+        "name": "Chal Hudda",
+        "region": "7",
+        "terrain": "Marshes",
+        "id": "0e48a06d-8f9c-4c1a-8721-87c9cc60ca8c"
+    },
+    {
+        "name": "Taldot sector",
+        "id": "f72bda23-e617-4619-ba64-f16609a57ecc"
+    },
+    {
+        "name": "Dinwa Prime",
+        "id": "3697ae93-4594-4a5e-9e23-af1d2ab19bed"
+    },
+    {
+        "name": "Ruoss Minor",
+        "id": "bbc698ce-8c0b-45ef-9758-b2de8b2446c5"
+    },
+    {
+        "name": "Anelsana",
+        "id": "96007ddb-d26d-4b48-8a33-1da71cee14ae"
+    },
+    {
+        "name": "Chasmeene",
+        "id": "10ea8060-7945-49c3-894c-696644055dda"
+    },
+    {
+        "name": "Lolet",
+        "id": "cb5cc12e-3b20-44fc-9499-f71e0890b8d3"
+    },
+    {
+        "name": "Gossam",
+        "id": "63c135fa-fbbf-4ebf-bbd6-eb2b245f2450"
+    },
+    {
+        "name": "Hovea Nuket IV",
+        "id": "9e33b594-86f4-4091-88d9-82302799ed69"
+    },
+    {
+        "name": "Kor Vella",
+        "id": "d83f1881-979d-4de5-93bd-aae6408b7c2f"
+    },
+    {
+        "name": "Selonia",
+        "id": "bdb8361e-d128-4f66-a054-8b94b5bcd37d"
+    },
+    {
+        "name": "Drashima III",
+        "id": "635d6fa2-eb3c-4ac4-9711-9c4a9c649e8b"
+    },
+    {
+        "name": "Pasa Novo",
+        "id": "5ae32df8-3fea-40b6-b7b9-d1abaa9874c4"
+    },
+    {
+        "name": "Baltro",
+        "id": "55835698-4a92-4709-bfe0-332c2ed6bdf6"
+    },
+    {
+        "name": "Burundang",
+        "id": "ca83ba16-bf51-426a-b4ec-8ded2000c911"
+    },
+    {
+        "name": "Weigh Station Karambola",
+        "id": "af77ab56-b59a-4cab-9b32-c623fb22c50a"
+    },
+    {
+        "name": "Farfax",
+        "id": "243d0402-fc62-4ad4-83ab-26beb5f3f595"
+    },
+    {
+        "name": "Mesulan Remnants Belt",
+        "comments": "Originally the Ice Moon Mesula",
+        "id": "24fe43fb-4ec4-493e-b2c9-bfcf5e815295"
+    },
+    {
+        "name": "Tarabba",
+        "region": "7",
+        "id": "63b09462-b4b6-4daa-a4a5-3f0499713d1e"
+    },
+    {
+        "name": "Substation Grimdock",
+        "id": "4b446bfd-4dcb-4822-a78f-ed0d7c0e7dd6"
+    },
+    {
+        "name": "Strata 7",
+        "id": "9bcd607b-4329-427c-90a0-49e389c41eb9"
+    },
+    {
+        "system": "Kallea",
+        "name": "Grava",
+        "id": "4adf81df-9422-412f-8b55-de38f0082e79"
+    },
+    {
+        "name": "Ocahont",
+        "id": "64196532-d693-40a3-a0aa-36b9070e59fc"
+    },
+    {
+        "name": "Paucris Major",
+        "comments": "Site of the beginning of the Rebel Fleet",
+        "id": "5ceeb9f3-2333-4925-a9b2-09a670d09d94"
+    },
+    {
+        "name": "Unzel",
+        "id": "591c345a-233c-44c7-a397-f7129e06920e"
+    },
+    {
+        "name": "Mahranee",
+        "id": "7b79e8e7-0e36-4e6a-a166-b9e9a49d7752"
+    },
+    {
+        "system": "Sava",
+        "name": "Praxat Sil",
+        "id": "95f6df25-8b06-47f3-83f7-b65d40b77c2a"
+    },
+    {
+        "name": "Barabaras",
+        "id": "f004c48a-3adc-4aa8-b375-c3e824b5cfa7"
+    },
+    {
+        "name": "Saraf Cobar Station",
+        "id": "4ade70d4-03a2-4818-af61-6daf4f3212f2"
+    },
+    {
+        "name": "Baltizaar",
+        "id": "14835bfd-28dd-490d-b394-4c3db533d0f1"
+    },
+    {
+        "name": "Patitite Pattuna",
+        "id": "d68800ca-ab48-4347-af58-40c7274670e6"
+    },
+    {
+        "name": "Kinyen",
+        "id": "db5c6163-75b9-4116-98e1-5806c781c734"
+    },
+    {
+        "name": "Raydonia",
+        "region": "7",
+        "id": "410ab491-b3a1-4a01-babd-62610e912b4a"
+    },
+    {
+        "name": "Sídi",
+        "region": "7",
+        "id": "5fc05654-134d-42ac-996e-69e40059739f"
+    },
+    {
+        "name": "Mytaranor sector",
+        "id": "9e590df6-27b5-4be9-8518-9cfcf649a0f4"
+    },
+    {
+        "name": "Ghost Nebula",
+        "id": "555030aa-5630-4002-81d1-2d1cd2c1b8ce"
+    },
+    {
+        "name": "Thearterra",
+        "id": "9d2f514a-dbb7-4461-8692-797291bff561"
+    },
+    {
+        "name": "Naporar",
+        "region": "8",
+        "id": "61708282-8947-491a-a81c-b3933b37df58"
+    },
+    {
+        "name": "Dioya",
+        "id": "801d319b-1add-4c53-bcc9-40da41bf4b06"
+    },
+    {
+        "name": "Rentor",
+        "comments": "Physically close to Csilla, yet paradoxically in the backwater of the Chiss Ascendancy",
+        "region": "8",
+        "id": "7e7c415b-5a66-4684-8f77-3fc53a2f53de"
+    },
+    {
+        "name": "The Chaos",
+        "id": "0bbb995a-8828-4e37-ad1e-ff1c6fac6734"
+    },
+    {
+        "name": "Paataasus",
+        "region": "8",
+        "id": "29206a82-d681-43d5-8321-c4ad183495a4"
+    },
+    {
+        "name": "Tempes",
+        "region": "7",
+        "id": "8c34e326-6089-430c-8c15-558f7526f215"
+    },
+    {
+        "name": "Arkax Station",
+        "id": "618b4f34-d714-4545-bdc6-433e25d3d8a4"
+    },
+    {
+        "name": "Arvaka Prime",
+        "id": "b1cf300f-aed3-4e3f-a199-bcde21522982"
+    },
+    {
+        "destinations": "Singularity",
+        "name": "Tellik Four Station",
+        "comments": "LOcated along one of the major hyperspace lanes, it was nominally controlled by the Empire, but Riffraff of all varieties stopped here to repair, rest and refuel.",
+        "id": "bb751fe6-e057-414e-82b8-922d9ce7aaf8"
+    },
+    {
+        "name": "Otor's Hub",
+        "region": "7",
+        "sector": "Ojostor",
+        "id": "eaee8bcb-fc1e-47a4-a774-ea03921f1329"
+    },
+    {
+        "name": "Jeosyn",
+        "comments": "Dreamer's  base of operations",
+        "id": "0061942b-e30b-4eb4-ad40-b6ffee3ec921"
+    },
+    {
+        "name": "Muunilist",
+        "id": "1694af7f-d43b-4145-b211-f03846c7f8d7"
+    },
+    {
+        "name": "Fostar Haven",
+        "id": "2713839c-cc63-4843-abbc-e8132bdc4509"
+    },
+    {
+        "name": "Brentaal system",
+        "id": "7d0c17e2-1bfb-4cad-bbce-6b79db3d0be6"
+    },
+    {
+        "name": "Cavas",
+        "id": "d58d8f10-46e1-4e5d-9ff6-7d9e5442bf70"
+    },
+    {
+        "name": "Yavin Prime",
+        "id": "0c0cdc23-5ba6-4ab4-b499-1415cd82b059"
+    },
+    {
+        "name": "Ringali Nebula",
+        "sector": "Bormea sector",
+        "id": "273ece92-70a0-46b0-8474-2ac15c5ff8ba"
+    },
+    {
+        "name": "Talcene",
+        "id": "7dc19ea8-5f8a-46ab-9885-8eaa3a680047"
+    },
+    {
+        "name": "Meram sector",
+        "id": "f7777902-e240-467b-8d00-8e3ce45480e3"
+    },
+    {
+        "name": "Pothor",
+        "id": "eca33318-6f90-4064-80cd-9e99cdbd1d03"
+    },
+    {
+        "name": "Jeyell",
+        "id": "67ea4050-2862-4e6e-a860-119696c700e8"
+    },
+    {
+        "name": "Desevro",
+        "id": "41daf605-e543-4043-b9a9-d1dfc935574c"
+    },
+    {
+        "name": "Criigo",
+        "region": "7",
+        "id": "6ae361e2-5398-4b15-b955-bcaeca326d2d"
+    },
+    {
+        "name": "Var-Shaa",
+        "id": "d328146f-f6e2-463f-bb73-f9e2aed71f7e"
+    },
+    {
+        "name": "Esseles",
+        "id": "12097bd7-c10b-4c0e-9746-41e1aa8ce5fb"
+    },
+    {
+        "name": "Zavian Abyss",
+        "comments": "A highly volatile area of space",
+        "id": "0dbae12f-5384-4b0b-a777-cce961d9ca09"
+    },
+    {
+        "name": "Remitik",
+        "id": "03ce2fcc-e4b0-4d0c-b3f1-4d72ab1c209e"
+    },
+    {
+        "name": "Merisee",
+        "id": "10828d4c-14b8-4baa-a506-3f20dc818ad6"
+    },
+    {
+        "name": "Nadiri",
+        "id": "01cd245a-1b35-4df0-afd3-025e5b79af1e"
+    },
+    {
+        "name": "Galitan",
+        "id": "6fe43b77-7acb-46e5-8df4-1539d3e097c8"
+    },
+    {
+        "name": "Dosh",
+        "id": "654caff3-911c-4c2b-a59d-82473c35341b"
+    },
+    {
+        "name": "Parkella",
+        "id": "0f2fd8ed-e850-4e52-b2c5-eb64fba719dd"
+    },
+    {
+        "name": "Caliban",
+        "terrain": "Snow",
+        "region": "7",
+        "id": "009864c8-cd89-403c-8206-cddc443984a1"
+    },
+    {
+        "name": "Noaxson",
+        "region": "7",
+        "id": "5b6f8c3d-0527-4a72-9e3d-4654ff6f063b"
+    },
+    {
+        "destinations": "Pammur",
+        "name": "Affadar",
+        "comments": "The Empire started a mining on Affadar after the Battle of Yavin",
+        "id": "fb0383bc-08c4-4c5b-90b1-60e2b55a231d"
+    },
+    {
+        "name": "Kadavo",
+        "id": "c2bfc4fb-edf1-4f5b-a9cb-d1238cf4b551"
+    },
+    {
+        "name": "Anakura",
+        "id": "3a629605-4f02-4597-a4d0-e783c8eaeeb2"
+    },
+    {
+        "name": "Svaaha",
+        "id": "8fcf810f-14df-4958-9c99-d3e129d6673b"
+    },
+    {
+        "name": "Carlac",
+        "terrain": "Neiges",
+        "id": "fffc85a3-5d01-45e0-b2a6-679719606de3"
+    },
+    {
+        "name": "Itani Nebula",
+        "id": "0bf55330-3b8f-4f29-ad74-a6357679cd14"
+    },
+    {
+        "name": "Spur Orbiting Market",
+        "id": "8e8e2f11-e7f0-4b1a-bc6b-3036bfd2687a"
+    },
+    {
+        "system": "Kol Iben",
+        "name": "Trask",
+        "id": "b190b5d2-8428-44f5-8ee2-be2ea566e30e"
+    },
+    {
+        "destinations": "Cirimalk",
+        "name": "Adelphi",
+        "id": "bfbfbfcd-80dc-4e2f-be52-7cd3ba446f88"
+    },
+    {
+        "name": "Orondia",
+        "id": "e13a034f-2012-4d7f-8658-638dd6cfcd85"
+    },
+    {
+        "destinations": "Calodan",
+        "name": "Corvus",
+        "id": "5158d55d-38f5-4c50-86db-1868940688f1"
+    },
+    {
+        "name": "Stobar",
+        "id": "63e1fed6-d2f9-477f-bbe9-e75f621a32d6"
+    },
+    {
+        "system": "Meridian",
+        "name": "Cybloc",
+        "sector": "Cybloc",
+        "id": "b23df759-1f47-4720-8a5b-40d604a6f517"
+    },
+    {
+        "name": "Dilestri",
+        "id": "76e5e295-4fc0-40f6-9bd8-05273e4f7aad"
+    },
+    {
+        "name": "Morak",
+        "comments": "Secret Imperial Mining Hub",
+        "id": "89f750b1-04d2-4c61-9f83-0349ae9907e5"
+    },
+    {
+        "name": "Rashfond",
+        "id": "9332de88-ad5c-4de5-a786-32204ba58462"
+    },
+    {
+        "name": "Parliock",
+        "id": "3c9af113-15ea-4305-a2ce-5fc5b23bdc37"
+    },
+    {
+        "name": "Sarrish",
+        "id": "88f70f88-7996-46c1-8068-5da7041085c5"
+    },
+    {
+        "name": "Tion Cluster",
+        "id": "2772d0c9-2e44-49bc-b260-376868513f21"
+    },
+    {
+        "name": "Sluis Van",
+        "id": "06c73fe3-30f7-4d0d-b39c-f7c150b6b3bb"
+    },
+    {
+        "name": "Asmeru",
+        "id": "4c674c82-42fb-48a5-ae69-2ce08fd2e1e4"
+    },
+    {
+        "name": "Karfeddion",
+        "id": "15b73ad9-c44e-45d8-b3d1-585b2bebeadf"
+    },
+    {
+        "name": "Prefsbelt",
+        "id": "53fe2029-04a6-4a8c-8047-1400de833693"
+    },
+    {
+        "name": "Halcyon",
+        "region": "2",
+        "id": "99cc6b66-5824-4835-b82f-969495d2c65a"
+    },
+    {
+        "name": "Dwartii",
+        "id": "463cb393-aa86-4698-855b-fd8b45d67a39"
+    },
+    {
+        "name": "Ringo Vinda",
+        "id": "44d41af6-de63-48c9-bcdd-9335a1e2210a"
+    },
+    {
+        "destinations": "Murkhana City",
+        "name": "Murkhana",
+        "region": "7",
+        "id": "6d3c4d9b-545e-4c6d-83c1-278bbe07a78f"
+    },
+    {
+        "name": "Fial",
+        "id": "9569b537-232e-4940-9f6f-15c657d8c540"
+    },
+    {
+        "name": "Nilgaard",
+        "id": "b13d7a09-8939-4e2f-892e-7edd22938b8f"
+    },
+    {
+        "name": "Galidraan",
+        "id": "2300a3ad-6c42-4119-9439-e6b33210d63f"
+    },
+    {
+        "name": "Galidraan 3",
+        "id": "b8e83302-a60b-45c6-b899-1124e8c81282"
+    },
+    {
+        "name": "Galidraan 4",
+        "id": "f0b236dc-3344-492e-a51f-208605fb8116"
+    },
+    {
+        "name": "Rhen Var",
+        "id": "a964cf4d-9a55-4c56-a9b1-ff463147ec67"
+    },
+    {
+        "name": "Nam Chorios",
+        "id": "174aaabc-8b85-4aa5-bac8-b7aee0e08293"
+    },
+    {
+        "name": "Trogan",
+        "id": "0802a75e-c8a1-48b1-b279-310c657f8d63"
+    },
+    {
+        "name": "Jomark",
+        "id": "af2029d3-04a4-4c4c-8dae-39b22fde5778"
+    },
+    {
+        "name": "Lucazec",
+        "id": "fd46b5f7-1650-430f-bf91-7bc6317816fb"
+    },
+    {
+        "name": "Centares",
+        "id": "7e37d527-d634-47f1-9886-7d6a7ad6bc75"
+    },
+    {
+        "name": "Lantillies",
+        "id": "7f353902-8737-494d-95ce-60c9ac35d234"
+    },
+    {
+        "system": "Perkell",
+        "name": "Gromas",
+        "id": "4260f6d4-8725-49ec-afc0-b202e1b6d71e"
+    },
+    {
+        "system": "Mandalore",
+        "name": "Phindar",
+        "id": "6514432c-b09f-4cfc-84dd-bb090319f0f1"
+    },
+    {
+        "name": "Zardossa Stix",
+        "id": "b7e83c86-d435-4c7a-ab53-242d691012d7"
+    },
+    {
+        "destinations": "Valley of Extinction",
+        "name": "Wellspring of Life",
+        "id": "7fd6b2b6-e6eb-4b69-a866-3f71fca4fb50"
+    },
+    {
+        "name": "Sumitra",
+        "id": "36201a67-3845-483a-a15c-b56e074fb1e4"
+    },
+    {
+        "name": "Cvetaen",
+        "region": "3",
+        "id": "21a0319f-4843-4b82-a998-9adce8bbee46"
+    },
+    {
+        "name": "Thustra",
+        "id": "db67c6ca-6677-4f3f-af0f-a4a2edc04288"
+    },
+    {
+        "name": "Aquaris",
+        "region": "3",
+        "id": "d366c1e8-cec0-411f-aab6-babca935e63d"
+    },
+    {
+        "name": "Cartao",
+        "id": "c2a7275e-1846-41db-8f37-f2ba5b7f6fdd"
+    },
+    {
+        "destinations": "Ice Station Beta",
+        "name": "Anteevy",
+        "id": "be8de048-3089-4d90-8bfe-521eab1a5ae2"
+    },
+    {
+        "name": "Garos",
+        "id": "deafda45-ac34-43e2-9d16-c0f7c6d5e731"
+    },
+    {
+        "name": "Obroa-skai",
+        "id": "ab952335-7b50-45cf-8adb-afddf1003668"
+    },
+    {
+        "name": "Corsin",
+        "id": "a18b0419-bf38-4114-a09d-8d656167b41b"
+    },
+    {
+        "name": "Nouane",
+        "region": "4",
+        "id": "92abedee-023f-40b6-90b4-f95782c4550e"
+    },
+    {
+        "name": "Atzerri",
+        "id": "b4b5bc0d-2cfe-48bc-81c8-b400566eead4"
+    },
+    {
+        "name": "Bajic",
+        "id": "f96ea797-1d5f-4904-81ff-ed6e2af23874"
+    },
+    {
+        "name": "Elessia",
+        "id": "8c9f3acb-82d9-438c-a55b-bf0768a9fe76"
+    },
+    {
+        "name": "Keshk",
+        "id": "6b835a53-9dc3-4b10-a6f3-4b5481d869b2"
+    },
+    {
+        "name": "Gortus 4",
+        "id": "53f050f6-e553-4f58-94ce-fec24b348aa7"
+    },
+    {
+        "name": "Hadi",
+        "id": "8254b5b1-ea48-4035-b1d9-d5de8c078f09"
+    },
+    {
+        "name": "Arveesh Station",
+        "id": "d3302d98-15e2-4149-90c6-af099c3791ac"
+    },
+    {
+        "destinations": "H'unn Cabaret Pit",
+        "name": "Nar Kaaga",
+        "id": "39c7c651-f36c-47da-8c4b-2178cb7c7c11"
+    },
+    {
+        "name": "Shuraden",
+        "id": "d269a56d-1de5-4239-a16d-0a7e6cd531e5"
+    },
+    {
+        "name": "Starlight Beacon",
+        "id": "df64e4f5-a6f6-4cec-abf1-18ce011270b5"
+    },
+    {
+        "name": "Kur",
+        "id": "3861149b-0fb9-4a41-a7bd-50c2f96da301"
+    },
+    {
+        "name": "Hetzal",
+        "id": "2ed612d3-bd4f-46b9-8ea3-63c70b73b0c4"
+    },
+    {
+        "name": "Dalna",
+        "destinations": "Ferdan",
+        "capital_city": "Saludad",
+        "id": "617ce19b-9bec-46e8-8421-d8883e5f8418"
+    },
+    {
+        "name": "Haileap",
+        "destinations": "Port Haileap",
+        "id": "f49c1592-e3a8-412f-9539-5de305f0399b"
+    },
+    {
+        "name": "Hynestia",
+        "comments": "A un temple Jedi",
+        "id": "9f3f649a-7bdd-433f-b1ac-684d23b7942f"
+    },
+    {
+        "name": "Genetia",
+        "id": "160f454f-d0ac-4b1f-98f5-b298aa1af1e7"
+    },
+    {
+        "system": "Haileap",
+        "name": "Nixus ",
+        "id": "549d3f2e-34c1-40b1-bac9-85d7cc389641"
+    },
+    {
+        "system": "Haileap",
+        "name": "Neralus",
+        "id": "9cece156-0ee3-44f1-a960-6ed7d5366dc0"
+    },
+    {
+        "system": "Dalna",
+        "name": "Wevo",
+        "id": "15b076b1-4b4c-4097-a164-ba2967e78bca"
+    },
+    {
+        "name": "Abregado-rae",
+        "id": "d3c89445-6714-4d2e-8a0b-84d80369dbdc"
+    },
+    {
+        "system": "Hetzal",
+        "name": "The Fruited Moon",
+        "id": "78bfa946-ba6b-45a3-b766-0690ff131828"
+    },
+    {
+        "system": "Hetzal",
+        "name": "The Rooted Moon",
+        "id": "07c2321d-640f-480e-80d6-4f3547ae6ab1"
+    },
+    {
+        "system": "Hetzal",
+        "name": "Hetzal Prime",
+        "capital_city": "Aguirre City",
+        "id": "058d6ba9-190a-479d-a7cf-46675bb4f2a7"
+    },
+    {
+        "name": "Ab Dalis",
+        "region": "7",
+        "id": "7b696180-dd9b-4b67-b86c-5848b53758a3"
+    },
+    {
+        "name": "Bunduki",
+        "id": "9d954300-3be0-4355-b4c5-508c8eccc764"
+    },
+    {
+        "name": "Bastion",
+        "id": "271e6cdd-84d3-4c26-bbf8-cbc5da51e396"
+    },
+    {
+        "name": "Ringlite",
+        "id": "6df3a85d-918a-4149-ada9-cea344d2d33e"
+    },
+    {
+        "name": "Urber",
+        "id": "81c9365e-2bfb-46ff-b1ba-150d784fbf82"
+    },
+    {
+        "name": "Amfar",
+        "id": "c62359fb-dbff-41ad-8089-00e0f2a07243"
+    },
+    {
+        "name": "Ylesia",
+        "id": "38824a0b-dbd1-4d1f-ae90-f4c7aab04838"
+    },
+    {
+        "name": "Travnin",
+        "id": "8c1897da-6c15-4e02-94fc-09f03b67b75a"
+    },
+    {
+        "name": "Qualai",
+        "comments": "Small, low-gravity planet on the edge of the Outer Rim.",
+        "region": "7",
+        "id": "889375aa-0264-4062-b99c-db936035ccbe"
+    },
+    {
+        "name": "Zeitooine",
+        "terrain": "Jungle",
+        "region": "4",
+        "id": "cc2c7f5c-12e4-4694-a125-f505510ec5ab"
+    },
+    {
+        "name": "Vint",
+        "id": "dafd89f4-6d92-4da0-be9d-edb0ae145613"
+    },
+    {
+        "name": "Eiram",
+        "id": "fa3b1d35-89df-44e3-878f-8b7f94308555"
+    },
+    {
+        "name": "E'ronoh",
+        "id": "5d3e070f-62a8-4bfe-a3e0-44e05444f54b"
+    },
+    {
+        "name": "Quolosk",
+        "id": "e7e8f836-beba-43d6-885c-a50e44a05061"
+    },
+    {
+        "name": "Rushan IX",
+        "id": "edc6103b-23d3-4908-913a-3ad87033a15b"
+    },
+    {
+        "name": "Kazlin",
+        "id": "569b24b4-6a23-4a54-9a8a-16bdf13b014c"
+    },
+    {
+        "name": "Thyferra",
+        "id": "2f9b65bb-1e5f-43f1-8ec4-9c4cbbc7029c"
+    },
+    {
+        "name": "Sedri",
+        "id": "ed897e81-b0d1-45d4-84bc-bd0dd9786c5f"
+    },
+    {
+        "name": "Sedri Minor",
+        "id": "36ea41f1-8ac5-41a5-8c56-aac954f14736"
+    },
+    {
+        "name": "Trymant",
+        "id": "da24c95d-b1d9-4368-8d0f-af9d011ba2c8"
+    },
+    {
+        "system": "Trymant",
+        "name": "Trymant IV",
+        "capital_city": "Bralanak City",
+        "id": "e9f87f77-7c7d-46de-84ae-831dff861660"
+    },
+    {
+        "name": "Proto-Branch",
+        "id": "f96bb9cd-8aa6-4226-8b9c-8e797f078ba4"
+    },
+    {
+        "name": "Solodoe",
+        "id": "5bec7c28-1d90-436e-94d5-37e4555487b6"
+    },
+    {
+        "name": "Carosi Eight",
+        "id": "0bb8039c-09fd-45c7-8d9a-dce022659494"
+    },
+    {
+        "name": "Hudalla",
+        "id": "9fcd6b60-5a2f-4d43-8baf-784c56b33fb7"
+    },
+    {
+        "name": "Minashee",
+        "id": "c5a847f4-a540-41e9-899a-0857cfe9a4da"
+    },
+    {
+        "name": "Ossus",
+        "id": "72b408b8-2d50-46f2-9640-a0a3133967ee"
+    },
+    {
+        "name": "Mantooine",
+        "id": "2b03f3e2-8f5c-4f57-a674-b6ea605d9d0e"
+    },
+    {
+        "name": "Lahsbane",
+        "id": "30f44d8c-3800-4864-a2b4-6f1cad938420"
+    },
+    {
+        "name": "Palek",
+        "id": "b740fa9a-ae17-4b20-90f4-847daccaef7c"
+    },
+    {
+        "name": "Mantero",
+        "id": "14aefc32-2f8d-4eec-a8b8-ab6e3d71f89a"
+    },
+    {
+        "name": "Asusto",
+        "comments": "Heavily forested planetoid in the Tamsis Nebula",
+        "id": "4c3d6071-a629-44c5-a8b6-e643c5bc12fa"
+    },
+    {
+        "name": "Thranta",
+        "id": "27170c23-aecd-4968-af6c-d0ae5309d6a4"
+    },
+    {
+        "name": "Station Zeta",
+        "id": "771963b5-b69c-42da-92d7-7a94a494034d"
+    },
+    {
+        "name": "Plin Minor",
+        "id": "e9275931-8763-4b6b-b9ed-6beed161816f"
+    },
+    {
+        "name": "Katarr",
+        "id": "030fd501-fa17-4d2c-b75e-281d91e39841"
+    },
+    {
+        "name": "Coachelle Prime",
+        "id": "cf407d93-e8b4-4b77-a7d5-1caa42da3768"
+    },
+    {
+        "name": "Nithorni",
+        "id": "7c9e1130-3851-4b40-9949-32225d2477b8"
+    },
+    {
+        "name": "Arcona",
+        "id": "58bbd2a4-11f0-403a-8f46-9dd742c892fe"
+    },
+    {
+        "name": "Salliche",
+        "id": "f0bdd098-b917-45f9-986d-24846b28cf31"
+    },
+    {
+        "name": "Galator III",
+        "comments": "Casino Planet",
+        "id": "4b6e4367-d451-4408-94c7-f4df9a4b80e1"
+    },
+    {
+        "name": "Dol'har Hyde",
+        "region": "7",
+        "id": "9abbdb81-7551-4de5-90c3-567063fc247b"
+    },
+    {
+        "name": "Midarr",
+        "id": "bec24d41-9a4e-402f-9047-03e27e71cfed"
+    },
+    {
+        "name": "Kirima",
+        "id": "e2ef073b-9ec4-47c6-b97c-04414ffb4950"
+    },
+    {
+        "name": "Stygmarn",
+        "id": "32b8b7fc-7f8a-47a4-b419-6d5a5449dcf6"
+    },
+    {
+        "name": "Bahlah",
+        "id": "a7360450-6abb-4506-9703-c2df546e3f1f"
+    },
+    {
+        "name": "Malkii",
+        "id": "31320caa-282b-45fe-bdef-221a8ceeadbf"
+    },
+    {
+        "name": "Rekelos",
+        "id": "e393695e-8054-4dce-a409-cb18eb9920ec"
+    },
+    {
+        "name": "Valtos",
+        "id": "c24efe74-0c33-4e01-a82f-ccf44a9998bb"
+    },
+    {
+        "name": "Z-LOQ",
+        "comments": "Asteroid Outpost",
+        "id": "518bc04e-b385-44f7-91c7-ffd1b4924e5e"
+    },
+    {
+        "name": "Quantxi",
+        "comments": "Junk Moon of Ord Mantell",
+        "id": "aa56d7c5-4ce7-454e-903c-3ecec1827938"
+    },
+    {
+        "name": "Nar Kanji",
+        "id": "0881ffb1-b55f-4914-b3a4-79f1996453bd"
+    },
+    {
+        "name": "Bilbousa",
+        "id": "ffc6eb3e-151f-4461-bdb2-cf8d29f977ae"
+    },
+    {
+        "name": "Ordo Moon",
+        "id": "115ce48a-e7d7-42f3-af9f-417afdbae300"
+    },
+    {
+        "name": "Z9-City-7",
+        "id": "c6e84a1e-cc5d-4bac-a080-65c1ede86961"
+    },
+    {
+        "destinations": "Polar Sea",
+        "name": "Jekara",
+        "suns": "2",
+        "region": "5",
+        "terrain": "Frozen Seas",
+        "id": "df0d66d9-62ef-4111-9d35-623f5dd2e68a"
+    },
+    {
+        "name": "Kaderin",
+        "region": "7",
+        "id": "2964b9d6-4fbc-44f3-8104-bf725312ded3"
+    },
+    {
+        "name": "Y'Toub",
+        "id": "1c2e682b-d76f-45cb-9926-1d6393aa09ef"
+    },
+    {
+        "destinations": "Kharvashark Ruins",
+        "name": "Vrant Tarnum",
+        "id": "5a084294-378e-4908-ac23-0b2291ed932d"
+    },
+    {
+        "name": "Giju",
+        "id": "843da109-52f2-4b46-a6d3-70b4fc4c493c"
+    },
+    {
+        "name": "Whiforla 11",
+        "id": "614480a7-97e1-4c5a-ac5f-39b3c6f7f350"
+    },
+    {
+        "name": "Idaflor",
+        "id": "ad68bb74-c6ce-478f-8e9b-cf0219628f44"
+    },
+    {
+        "system": "Lido",
+        "name": "Bora Vio",
+        "id": "d1c44d3a-c100-41fd-aec0-c73482b59de2"
+    },
+    {
+        "name": "Daro",
+        "comments": "Terrestrial planet with no known settlements or installations.",
+        "region": "7",
+        "id": "0d14f4aa-8ee4-4469-b0b6-722badeb581c"
+    },
+    {
+        "name": "Neral's Moon",
+        "id": "4f834198-dc8e-454d-b244-1a8eb3fc2b7d"
+    },
+    {
+        "name": "Daivak",
+        "region": "7",
+        "id": "a46e4331-e3f4-4666-8222-0d620c998eef"
+    },
+    {
+        "name": "Mulita",
+        "id": "0942d473-3008-4bf7-a6a7-15a435b44f66"
+    },
+    {
+        "name": "Amaxine Station",
+        "id": "4716af9f-fe6f-4ef9-a2a8-fa12638c423a"
+    },
+    {
+        "name": "Rseik sector",
+        "id": "125b0ec7-926b-4466-9da3-a10fd4cfb20f"
+    },
+    {
+        "name": "Chortose",
+        "comments": "Agricultural Hub 42",
+        "id": "c86e5965-82ba-48a8-8bbc-8319c6fab3bf"
+    },
+    {
+        "name": "Parwa",
+        "id": "6fd84ab9-13aa-4cb5-8eb3-b5d87ff642d4"
+    },
+    {
+        "name": "Unguule Nebula",
+        "id": "a78ffb74-d8dd-476f-8b97-b4c479eeef03"
+    },
+    {
+        "name": "Mrlsst",
+        "id": "5aeea06c-1334-4be7-b50c-7877e078bc94"
+    },
+    {
+        "system": "Trymant",
+        "name": "Korbatal",
+        "id": "5ca3be36-8d88-4538-a6ad-e17dfa8900b7"
+    },
+    {
+        "system": "Trymant",
+        "name": "Ost Molkar",
+        "id": "38ec4705-0344-4a9f-928e-affe7ebe4a0e"
+    },
+    {
+        "system": "Trymant",
+        "name": "Taz Molkar",
+        "id": "b7810c13-3feb-4a48-a091-577372dccebc"
+    },
+    {
+        "system": "Trymant",
+        "name": "Trymant III",
+        "id": "8289ec95-5c96-4116-8314-3939dd07f9a2"
+    },
+    {
+        "destinations": "Mount Tantiss",
+        "name": "Wayland",
+        "id": "b10fc2bd-0042-4b7a-8663-40aa9d95f3c9"
+    },
+    {
+        "name": "Uba IV",
+        "id": "d1a870b3-207d-4e1d-914a-12dee39db9e2"
+    },
+    {
+        "name": "Saki",
+        "id": "95ee11bb-e927-4036-a732-cffb3d0ada94"
+    },
+    {
+        "name": "Rubinero",
+        "id": "173f0ccd-6c2a-41b7-9dcf-7a8147d8db34"
+    },
+    {
+        "name": "Emita",
+        "id": "51d867c1-215e-4b72-89a2-df8150662124"
+    },
+    {
+        "name": "Karken",
+        "comments": "Former Imperial Outpost",
+        "region": "4",
+        "id": "a4ab50fa-32b5-479e-af94-4de021f7cec9"
+    },
+    {
+        "name": "Canoliss",
+        "id": "c0947fc9-3b7b-43df-a5a4-f02ed6bf4ee6"
+    },
+    {
+        "name": "Rylorii Minor",
+        "comments": "Mining Planet",
+        "region": "6",
+        "id": "2eb1393a-10aa-48a8-bd55-814976c25260"
+    },
+    {
+        "name": "Arkania Minor",
+        "id": "9411b701-eb32-4372-88ab-108fccf2f9ef"
+    },
+    {
+        "name": "Ridlay",
+        "id": "aacc4c42-7dde-492e-b8e6-5a7ca510b073"
+    },
+    {
+        "destinations": "Lonisa City",
+        "name": "Valo",
+        "sector": "Rseik",
+        "id": "7172fd9a-181e-4fd2-bc11-369f9122227f"
+    },
+    {
+        "name": "Soola",
+        "id": "9f0d4ecd-803b-42a4-8ab5-60b97380776d"
+    },
+    {
+        "name": "Aris",
+        "id": "4da50e6e-edc8-460a-983c-38c86558be0b"
+    },
+    {
+        "name": "Port Haven",
+        "id": "c61a39e0-79bd-4373-833e-197a41afe00c"
+    },
+    {
+        "name": "Golrath",
+        "id": "3ef4cfe2-666f-481c-a1b1-7332af02466e"
+    },
+    {
+        "name": "Galov",
+        "id": "0d694c80-ed30-4c7c-b579-5b7917da4a55"
+    },
+    {
+        "name": "Ashas Rine",
+        "id": "99e98048-cc33-49f1-8d3c-541023d1e1e9"
+    },
+    {
+        "name": "Zallo",
+        "id": "ad1b49ae-a693-4a55-b014-d45a644a8ac1"
+    },
+    {
+        "name": "Grizal",
+        "id": "0d16f577-30bc-465d-9566-b69ab4548b49"
+    },
+    {
+        "name": "Cyclor",
+        "region": "5",
+        "id": "1ad9bbc4-b659-4891-a71e-57ee2d04616a"
+    },
+    {
+        "name": "Xais",
+        "region": "7",
+        "id": "a3684893-ba31-4c67-9d37-ea8c3278ede4"
+    },
+    {
+        "name": "Port Lennax",
+        "id": "4ba843e1-97cb-4a6c-8108-ec5a7a65a1d4"
+    },
+    {
+        "name": "Ku'rella",
+        "id": "b1d79ff5-dd17-4ba9-8be2-c6ec0e4d9218"
+    },
+    {
+        "name": "Zav Alox",
+        "id": "31694d7b-1799-4b15-bdf1-0c657d00f0b5"
+    },
+    {
+        "destinations": "Wyke Town",
+        "name": "Loreth",
+        "id": "c3a38de0-8f13-41f3-8e96-183ddfa7a0b6"
+    },
+    {
+        "destinations": "Kul Kenada",
+        "name": "Blarrum",
+        "region": "7",
+        "id": "6ac8cbe6-8b81-458a-af66-ee45fe3170cd"
+    },
+    {
+        "name": "Naratar",
+        "id": "b27999df-1c2e-4549-966b-950beef1b662"
+    },
+    {
+        "name": "Arbra",
+        "sector": "Bon'nyuw-Luq",
+        "id": "4341ad3f-5ee8-4ca6-8e1c-7ca839b46301"
+    },
+    {
+        "name": "Yonder",
+        "id": "189ce609-cece-44e3-8e23-8e779d31018c"
+    },
+    {
+        "name": "Lessa-7",
+        "id": "01812bcf-e7bc-4810-b50c-d0a4c57e9ba7"
+    },
+    {
+        "destinations": "Efavan",
+        "name": "Vorzyd V",
+        "id": "4e0a21b6-49d7-43d5-afc0-69a9194800a8"
+    },
+    {
+        "name": "Vincorba",
+        "region": "3",
+        "id": "a0f15333-44b1-4e05-a9b1-64512c5a9c2b"
+    },
+    {
+        "name": "Calior",
+        "region": "7",
+        "id": "ce6827f0-6e59-4096-9977-6116f2bdb859"
+    },
+    {
+        "destinations": "Moon of Corellia",
+        "name": "Gus Talon",
+        "sector": "Corellia",
+        "id": "c1e3b56d-96a6-44f4-8395-3adb182df253"
+    },
+    {
+        "name": "Endovar",
+        "id": "e7c7f902-b886-412e-aaee-3a4d0cfbfd80"
+    },
+    {
+        "name": "The Maw",
+        "id": "a8655da6-d098-4570-876d-c2a48b4cac96"
+    },
+    {
+        "name": "Kennerla",
+        "id": "fd39aa06-0f0b-474d-b6c9-ee6138d19456"
+    },
+    {
+        "name": "Moon of Naboo",
+        "id": "b0dd2373-eca6-4852-83f4-3481f623a2fc"
+    },
+    {
+        "name": "moons of Bogden",
+        "id": "5c44f8fb-7ecb-4070-9827-6f2f84adcefd"
+    },
+    {
+        "name": "Illenium system",
+        "id": "3e8bc7bd-8a60-4f8b-9361-43f1fc6d6a90"
+    },
+    {
+        "name": "Ponemah Terminal",
+        "id": "e44b5809-6622-48a4-85e6-762739a2eb37"
+    },
+    {
+        "name": "Silo?",
+        "id": "20c3c19c-24d2-4074-9388-5d6723446d76"
+    },
+    {
+        "name": "Oseon Belt",
+        "id": "c0d334b7-ff34-466d-911e-2948f3ef6906"
+    },
+    {
+        "name": "Si'klaata",
+        "id": "9e52be9a-165b-40c7-a01d-70dc40e6ce40"
+    },
+    {
+        "name": "StarCave Nebula",
+        "id": "932bb2fe-f690-4085-a887-76cc8f45053d"
+    },
+    {
+        "name": "Malastare Narrow",
+        "id": "c0058a57-cb7a-4965-9791-c24f14c2718a"
+    },
+    {
+        "name": "Cyrilla",
+        "id": "a62954e6-b5ce-48d2-80bd-7faa034ba352"
+    },
+    {
+        "name": "sector 6",
+        "id": "0719b0ab-1227-4c91-8982-665e6b3b853a"
+    },
+    {
+        "name": "Vargo's Ring",
+        "id": "bbfa1a34-87d9-4332-a16a-abc5df3ba363"
+    },
+    {
+        "name": "Station Theta Black",
+        "comments": "Détruit",
+        "id": "c1d95490-971b-4dee-a595-3e13f9bf1dc4"
+    },
+    {
+        "name": "Vassek",
+        "id": "b0c037f8-2bf2-4bee-a3fd-40c8aad287a3"
+    },
+    {
+        "name": "Huru system",
+        "id": "8efab0ec-4a84-4c24-bafd-66fc90538f04"
+    },
+    {
+        "name": "Byrnum Maw",
+        "id": "ad99ac7f-47e0-46aa-9b30-2093b248ab99"
+    },
+    {
+        "name": "moons of Gozgo",
+        "id": "de2d7db9-89db-44d3-9249-5ad3a6d98f0b"
+    },
+    {
+        "name": "Tamsye Prime",
+        "id": "72758322-be6a-4663-b9a1-c4d818c16e61"
+    },
+    {
+        "name": "Havok Outpost",
+        "id": "3cb001be-f77e-4135-8262-efdbc7002dc1"
+    },
+    {
+        "name": "I'vorcia Prime Preserver",
+        "id": "89c4fca4-0779-4512-9239-fe13c2787785"
+    },
+    {
+        "name": "Second Moon of Thrinittik",
+        "id": "98ad674f-b83a-4a96-a8ef-796e30a0acae"
+    },
+    {
+        "name": "Lost Citadel of Garn",
+        "id": "bbf2696c-3bce-4511-9b4a-8b3a572ed341"
+    },
+    {
+        "name": "Slinani Migration Shrine \"Red Mist\"",
+        "id": "351d7d85-3020-423b-b84c-584e6ba9ff39"
+    },
+    {
+        "name": "Calumdarian",
+        "id": "25692385-e8f5-4ea5-a461-cc26be8375f5"
+    },
+    {
+        "name": "Moon of Avedot",
+        "id": "3c4fa1aa-afdd-4857-828f-05d7f321c879"
+    },
+    {
+        "name": "Zeffo",
+        "id": "ac26ee8a-f3e6-4e8f-bbec-5e5ab6282592"
+    },
+    {
+        "name": "Lateron",
+        "id": "33bec20e-61cc-4429-ba53-37f2c5cc2c03"
+    },
+    {
+        "name": "Nur",
+        "id": "429967b4-5630-466d-8a3d-f751ff88054a"
+    },
+    {
+        "name": "Pressy's Tumble",
+        "comments": "Asteroid Field",
+        "id": "2fa0a871-7ce4-4d18-818b-d0dc1228f74a"
+    },
+    {
+        "name": "Mirrin sector",
+        "id": "6fc0fa37-9eb2-4151-8966-8a3fe2ff117d"
+    },
+    {
+        "name": "Tangenine sector",
+        "id": "d8d0ad4a-8e31-49d2-ac62-5d8365cc7633"
+    },
+    {
+        "name": "Baklek Base",
+        "id": "1a288e18-2e3b-4010-9586-589600e78a69"
+    },
+    {
+        "name": "Oovo IV",
+        "id": "c4c6b225-b710-409c-847b-1d77bc143edf"
+    },
+    {
+        "name": "Thrugii Asteroids",
+        "id": "e9a8740a-b6a3-4606-9fb3-bb03b71032db"
+    },
+    {
+        "name": "Third Moon of Concord Dawn",
+        "id": "02fa3718-fb2a-439c-bc30-4ac6ebd0d8c0"
+    },
+    {
+        "name": "Nixus Hub 218",
+        "id": "4e5b73c8-28fd-4aa3-b8d0-a063e1797649"
+    },
+    {
+        "name": "Yawst system",
+        "id": "f1f440bf-fb01-4f98-88d8-e76985b201b2"
+    },
+    {
+        "name": "Horizon Base",
+        "id": "8bc0586b-49cb-4f92-9128-7513dc87b1c2"
+    },
+    {
+        "name": "Berzite",
+        "id": "cc544790-b560-4976-8a6f-5464a73d46c3"
+    },
+    {
+        "name": "Sereeda Waypoint",
+        "id": "f10b88da-6fde-4eda-bd0e-a69695012e88"
+    },
+    {
+        "name": "New Codia",
+        "id": "2fd65e50-7d32-4cea-b996-e97818d4556f"
+    },
+    {
+        "name": "Cermau",
+        "id": "a2cc444d-166e-4e58-a5b6-809dcc2abc7e"
+    },
+    {
+        "name": "Yakorki",
+        "id": "8d7f33ab-373d-4514-b8f4-ac63b1a17bce"
+    },
+    {
+        "name": "Kalevala",
+        "system": "Mandalorian",
+        "id": "0db1c7cf-f805-4b1c-bd75-49c38c6981e2"
+    },
+    {
+        "name": "Tonnis sector",
+        "id": "7b05d676-c489-4643-8069-febb704dc205"
+    },
+    {
+        "name": "Esaga sector",
+        "id": "054c7973-7389-42a2-990e-da828932e14c"
+    },
+    {
+        "name": "Hydian Way",
+        "id": "027b90a6-cef2-4749-ad1f-a7e5170461cb"
+    },
+    {
+        "name": "Galen system",
+        "id": "91c2ad53-a87a-4324-82f9-631895ef6a3d"
+    },
+    {
+        "name": "Alteno Trade Route",
+        "id": "842be246-e3e8-4e6e-ac5b-0aca29ba5f43"
+    },
+    {
+        "name": "Tandhor-Six",
+        "id": "b8938f6b-597b-4d82-99d2-f31e56af8271"
+    },
+    {
+        "name": "Yuw",
+        "id": "81b9182d-9129-4375-bc78-2bff412ffad6"
+    },
+    {
+        "name": "Lost Souls Asteroid Field",
+        "id": "0ca5f0a5-5050-43e2-9950-71a38b8b4878"
+    },
+    {
+        "name": "Rarlech system",
+        "id": "e1868c52-daa2-48f3-91a2-b9db73aac4d3"
+    },
+    {
+        "name": "Trading Post Sh'ung Tesk",
+        "id": "bffe8a65-5c5f-4c95-b91d-faed76e65afd"
+    },
+    {
+        "name": "Lyjdaa",
+        "id": "6facbf21-b77d-459d-9bd5-65658e8d997f"
+    },
+    {
+        "name": "Ryleel Base",
+        "id": "6ef34230-92b6-4648-8058-cdee2e1c0c7e"
+    },
+    {
+        "name": "Ash Moon 1",
+        "id": "c85081a0-8132-4b82-8b6e-8548ac75d0d0"
+    },
+    {
+        "name": "Valashar",
+        "id": "183ed37c-39d1-48f1-9d9e-347f01f0ea90"
+    },
+    {
+        "name": "Fermic",
+        "id": "da2af03e-107b-4ac3-9f52-4d6f7b919a61"
+    },
+    {
+        "name": "Tevel",
+        "id": "42913157-d686-4b4a-83b7-b119d064c7e0"
+    },
+    {
+        "name": "Ryarten",
+        "id": "0a38cb5c-22f0-4812-8573-bc36942b41a3"
+    },
+    {
+        "name": "Mytar",
+        "id": "5ddac797-4a72-40a7-bae3-a75e617e6879"
+    },
+    {
+        "name": "Mount Gethzerion",
+        "id": "3d02ae09-153b-436d-82ad-07f7e9bff61d"
+    },
+    {
+        "name": "sector Epsilon 51-3",
+        "id": "1677316a-511c-4fd9-8f57-8473e6be3419"
+    },
+    {
+        "name": "Talivar",
+        "id": "8d4dbf75-d6e5-4783-862b-8c7cacdd8135"
+    },
+    {
+        "name": "Wayward Comet",
+        "id": "a5da2916-4f06-4c4d-98e8-748ae4f9fbd9"
+    },
+    {
+        "name": "Sterdic IV",
+        "id": "e10b4e21-e176-42e3-910c-68ba8770a737"
+    },
+    {
+        "name": "Solarine",
+        "id": "1b7544d8-a2ee-4987-a9a1-23f0dbe9d458"
+    },
+    {
+        "name": "Vargos 9",
+        "id": "2d879ac3-a3e3-41bf-82cd-d52147cbbb25"
+    },
+    {
+        "name": "Lehon",
+        "id": "bd99a4e3-0c7c-4874-abad-e2d10d60daa4"
+    },
+    {
+        "name": "Voxx Cluster",
+        "id": "2541ad07-2f21-47cf-ade9-1c7b3653fe56"
+    },
+    {
+        "name": "Chaaktil",
+        "region": "4",
+        "id": "4ba4492c-0245-47ea-a41f-b5de2294d886"
+    },
+    {
+        "name": "Unknown Planet",
+        "id": "405ae344-d5d9-4cf8-b88e-f0f2ec57aecd"
+    },
+    {
+        "name": "Duur",
+        "id": "f7680221-9930-4d1b-a881-a85b30d9d810"
+    },
+    {
+        "name": "No-Space",
+        "id": "f030ef94-ecdf-451c-8630-58e8dc4ac7f4"
+    },
+    {
+        "name": "Everon",
+        "id": "94f76a2b-e5c0-4a60-a82b-7d7dc9f10a7e"
+    },
+    {
+        "name": "Laecor",
+        "region": "7",
+        "id": "68e5ddd0-c377-4f62-83b6-c0075e8c7e3b"
+    },
+    {
+        "name": "Arashar",
+        "id": "ac512ccf-0f43-40d8-8374-cc65117dd218"
+    },
+    {
+        "name": "Gazian",
+        "region": "5",
+        "id": "f1e7c849-c1cf-49be-a562-c67eae77dddd"
+    },
+    {
+        "name": "Axxila",
+        "id": "0f047d0a-d9ed-43d6-9ecd-f111a3c20286"
+    },
+    {
+        "name": "Iakaru",
+        "id": "aa0f6af5-1f63-4dbe-ac73-50b089d87c22"
+    },
+    {
+        "name": "Fest",
+        "id": "d3990324-74d7-41d8-921a-89d89fdca430"
+    },
+    {
+        "name": "Stewjon",
+        "id": "a5a4762e-dd1f-4699-9852-dfcfa1003c93"
+    },
+    {
+        "name": "Champala",
+        "id": "600305be-e1b2-419b-986a-b1854ae786fb"
+    },
+    {
+        "name": "Quilken",
+        "region": "7",
+        "id": "64e0d710-82dd-48bb-ad09-16f67377bb76"
+    },
+    {
+        "name": "Prahvin",
+        "id": "a697f080-93a4-4e17-84f2-e92e65212db5"
+    },
+    {
+        "name": "Choss",
+        "id": "a72698cb-542d-49c9-a025-712003be5001"
+    },
+    {
+        "name": "Chalacta",
+        "id": "b610cb84-f953-4afd-8671-97e9dc268637"
+    },
+    {
+        "name": "Grange",
+        "id": "a55a5fcd-b875-48eb-8110-7b72ba3ffb88"
+    },
+    {
+        "name": "Pendarr III",
+        "id": "6d48fe59-1b7c-4292-a594-ad05d9f3f4fb"
+    },
+    {
+        "name": "Virujansi",
+        "id": "74dfa2e5-be38-4fb5-9dfa-c11875ae0669"
+    },
+    {
+        "name": "Denon",
+        "id": "41b218c2-5e19-49d1-a191-760d677710b1"
+    },
+    {
+        "name": "Hon-Tallos",
+        "id": "d2059e74-03ea-4b16-bb8a-479d5b80ee25"
+    },
+    {
+        "name": "Arvala-7",
+        "id": "737973f8-5f7f-4319-9e7c-14ca5ccd42ad"
+    },
+    {
+        "system": "Kol Iben",
+        "name": "Kol Iben",
+        "id": "8e068fe9-a7e3-41c9-a5d5-d058b1d5a376"
+    },
+    {
+        "name": "Maldo Kreis",
+        "terrain": "Glaces",
+        "id": "ae868c46-a9be-423c-9de9-54cd0f4da127"
+    },
+    {
+        "name": "Panisia",
+        "region": "7",
+        "id": "668394f2-2802-440a-bcd6-339dde5a2d79"
+    },
+    {
+        "name": "Ashla",
+        "comments": "Moon of Tython",
+        "id": "8050df3d-b9a9-47dd-af5e-c9af27495317"
+    },
+    {
+        "name": "Tranchar",
+        "region": "7",
+        "id": "728c04b0-bb76-425d-84fc-7ec27812ae6e"
+    },
+    {
+        "name": "Daiyu",
+        "id": "70a8b238-605a-422d-b950-cbffdef7f842"
+    },
+    {
+        "name": "Tawl",
+        "id": "97b039f5-0398-4f34-80f0-2f7bf9df52b2"
+    },
+    {
+        "name": "Mapuzo",
+        "region": "5",
+        "id": "df88f8cd-a98f-4ae5-bf58-a8527c36ee18"
+    },
+    {
+        "name": "Jabiim",
+        "id": "1558f762-2495-46a0-87b2-4a5380dcbaef"
+    },
+    {
+        "name": "Oro Sankeria",
+        "region": "7",
+        "id": "93fbdc18-93da-4795-bd26-ff7b85114b22"
+    },
+    {
+        "name": "Gabredor III",
+        "id": "70e32935-ee20-4c74-8851-a1c7b1bbac68"
+    },
+    {
+        "system": "Belderone",
+        "name": "Karolia",
+        "id": "3377aca9-7870-4aab-a09a-b1bb297083bd"
+    },
+    {
+        "name": "Tirn III",
+        "id": "5529237a-efaf-4b5f-9151-31ee11fcae2f"
+    },
+    {
+        "name": "Hyperkarn",
+        "id": "815aad76-a2d4-4888-84e4-dda6c6c8b402"
+    },
+    {
+        "name": "Pilio",
+        "id": "6dbacd32-e0f8-4e71-985b-fb0d50df6d22"
+    },
+    {
+        "name": "Yoturba",
+        "region": "5",
+        "id": "e43318b3-4bf3-4fe7-a23d-064288725b87"
+    },
+    {
+        "name": "Primus Cabru",
+        "id": "ff8c0978-236c-4d89-9abe-05229d782b00"
+    },
+    {
+        "system": "Janx",
+        "name": "Boxer Point Station",
+        "region": "4",
+        "id": "11c2a329-bac2-4299-a14e-624eef0bcc2d"
+    },
+    {
+        "name": "Janx II",
+        "region": "4",
+        "id": "f601400a-e594-4983-af3d-3cbb362c4929"
+    },
+    {
+        "name": "Hypori",
+        "id": "8dc257d7-db7b-4cc6-a814-7b28127c0333"
+    },
+    {
+        "name": "Abrion Major",
+        "id": "a1ca84de-5038-46a3-8902-794dd43f94db"
+    },
+    {
+        "name": "Sva'leer",
+        "region": "7",
+        "id": "d16ce5ff-f104-4937-bf40-b552db30a897"
+    },
+    {
+        "name": "Birukai",
+        "id": "1ce28ced-8902-4c53-aa2a-af9c24bd52e7"
+    },
+    {
+        "name": "Moon of Staggec",
+        "id": "bc74566e-7eb6-4e0f-ba9d-d2787678218e"
+    },
+    {
+        "name": "Staggec",
+        "id": "0acadb01-aaf4-486e-bfbd-0ca7f03cb376"
+    },
+    {
+        "name": "Codia I",
+        "id": "bdafeb99-f519-47f7-b31d-0f3adc9fd2a0"
+    },
+    {
+        "name": "Roon",
+        "id": "b77c2abd-d94d-4ae7-8de3-0f2c1e75c06c"
+    },
+    {
+        "name": "Atraken",
+        "id": "b0651615-bbb7-44fe-9525-d3e866174e67"
+    },
+    {
+        "name": "Minntooine",
+        "id": "613af738-54ec-4f3e-b1f1-cb44da3e02d2"
+    },
+    {
+        "name": "Tessen",
+        "id": "5c9ea779-6a91-489f-8bdc-2287a465214f"
+    },
+    {
+        "name": "Balosar",
+        "id": "05d6aac2-e59a-4ba3-b1dd-c04cb2e31616"
+    },
+    {
+        "name": "Sesid",
+        "region": "7",
+        "sector": "Corva",
+        "id": "2ac894bf-3772-41ad-a6a2-7dcfdc2d80e2"
+    },
+    {
+        "name": "Crseih Black Hole",
+        "id": "a1ae6b4e-1ab7-40d5-93af-36e841a49028"
+    },
+    {
+        "name": "Mollo Tanka",
+        "comments": "Planetoid",
+        "id": "4a70424e-eeec-4328-b4d5-886909882deb"
+    },
+    {
+        "name": "Praknat 3",
+        "id": "7b898706-2efb-4937-a7e5-81fa2479dacf"
+    },
+    {
+        "name": "Antillion",
+        "id": "71715b75-e620-49f6-8699-dd78782318cc"
+    },
+    {
+        "name": "Iakar",
+        "id": "c3d69585-4893-47bd-b5c4-5a1095e8372b"
+    },
+    {
+        "name": "Paqualis III",
+        "comments": "Benelex Marshall Headquarters",
+        "region": "4",
+        "id": "d194e766-ac13-41e2-91e6-837368ad6b65"
+    },
+    {
+        "name": "Gulhadar",
+        "comments": "Prison Planet",
+        "id": "608a41a2-902b-4e23-9d6c-d2d6b6f7cdb7"
+    },
+    {
+        "name": "Talor",
+        "id": "a56aeb1d-3905-44d1-b19a-c6308107ce4f"
+    },
+    {
+        "name": "Rystan",
+        "id": "07214605-ac1e-4685-b7ab-41a51caba26d"
+    },
+    {
+        "name": "Dunnak",
+        "id": "5ab98b65-c3f0-4ded-a1f6-e134f5e4c762"
+    },
+    {
+        "name": "Theros Major",
+        "id": "65d1b5ff-b07f-4844-86fe-54c8be1f4c18"
+    },
+    {
+        "name": "Caragon-Viner",
+        "id": "7e05d29e-9125-4d5a-9d17-e0550e9db9ee"
+    },
+    {
+        "name": "Safrifa",
+        "id": "fabf7b17-1f0f-409f-b08b-01bf5da0f829"
+    },
+    {
+        "name": "Keldooine",
+        "id": "27512f01-d125-46f9-815f-5ee7c0c9ae53"
+    },
+    {
+        "name": "Cordota",
+        "id": "0dbda646-d003-42ae-b063-3dc99d329b96"
+    },
+    {
+        "name": "Muqular",
+        "region": "6",
+        "id": "5c31753a-a3da-4f2e-9a42-05c2bdf5032f"
+    },
+    {
+        "name": "Vavarna",
+        "id": "44705479-ee8a-40bf-8d77-4c48987a0a0b"
+    },
+    {
+        "name": "Billaron",
+        "id": "e25337ad-6fd2-4f3e-a391-8a68b8e3b129"
+    },
+    {
+        "name": "Malathon IX",
+        "region": "3",
+        "id": "ba91eb26-084d-42fa-9318-8ee28141c329"
+    },
+    {
+        "system": "Therezar",
+        "name": "Nightside",
+        "id": "f5f76c17-703c-4bee-b3d1-a827cb122864"
+    },
+    {
+        "system": "Therezar",
+        "name": "Therezar",
+        "id": "b0d324bf-cca1-4ce8-8f23-5d5059b53076"
+    },
+    {
+        "system": "Morlani",
+        "name": "Morlana One",
+        "sector": "Free Trade",
+        "id": "e762d6c6-4a82-4ab8-9378-57486e387fa1"
+    },
+    {
+        "name": "Kenari",
+        "region": "5",
+        "id": "88f2ecf1-5e5e-4c04-b870-54030d6ee4b3"
+    },
+    {
+        "name": "Tahina",
+        "id": "a04dc207-43f2-4109-b9e4-337b3a913227"
+    },
+    {
+        "system": "Morlani",
+        "name": "Ferrix",
+        "sector": "Free Trade",
+        "id": "3ec83a6e-f79e-44f2-8248-963f8e0a76d9"
+    },
+    {
+        "system": "Morlani",
+        "name": "Morlana Four",
+        "sector": "Free Trade",
+        "id": "62666043-6e58-4419-9cb0-5b7033599277"
+    },
+    {
+        "name": "Ko-Longava",
+        "id": "55b71967-3755-4c56-971b-609720b6e193"
+    },
+    {
+        "name": "Khomm",
+        "id": "2fab863e-9550-4bbe-84c8-751f2b934c93"
+    },
+    {
+        "system": "Forome",
+        "name": "Forome",
+        "id": "68f7a8f5-d307-4f33-902f-b63e3e1c3639"
+    },
+    {
+        "name": "Tassar",
+        "id": "74d4f6d3-34b4-47b7-a409-0944e02b74c8"
+    },
+    {
+        "comments": "",
+        "name": "Aldhani",
+        "id": "5f2b168e-c807-42f3-962c-fcef142c7281"
+    },
+    {
+        "comments": "",
+        "name": "Arvala-6",
+        "id": "7cbcaa90-d340-4583-b82b-bb33f91ab912"
+    },
+    {
+        "comments": "",
+        "name": "Steelgard",
+        "id": "e4bdb1b1-1e1b-4434-8e29-58aed1e76100"
+    },
+    {
+        "comments": "",
+        "name": "Plexis",
+        "id": "f8b4dd75-ff44-43a2-a212-1d03b7a28158"
+    },
+    {
+        "comments": "",
+        "name": "Eufornis Major",
+        "id": "11a50b72-f360-49cf-8e84-35278722e3b7"
+    },
+    {
+        "comments": "",
+        "name": "Hanna",
+        "id": "5cf8ca80-6781-421b-bdbf-4258cc3eb894"
+    },
+    {
+        "comments": "",
+        "name": "Escalan",
+        "region": "7",
+        "id": "19ff3eec-3e17-4e74-976d-0e310f76519f"
+    },
+    {
+        "comments": "",
+        "name": "Rudun III",
+        "id": "94e3f187-5e5f-454c-a2e8-51fb5d72729c"
+    },
+    {
+        "comments": "",
+        "name": "Torrenoteer Minor",
+        "system": "Torrenoteer",
+        "id": "6d68f111-3583-44a5-8e57-3201a0ab5cf5"
+    },
+    {
+        "comments": "",
+        "name": "Salissia",
+        "id": "5cb82177-016f-498e-8c99-a80de032fc82"
+    },
+    {
+        "comments": "",
+        "name": "Mandrine",
+        "id": "28ae4e62-68ac-4e44-83c1-0670b62704ff"
+    },
+    {
+        "comments": "",
+        "name": "Kiapene",
+        "id": "64630a27-4488-4a31-a121-1644b4e7889c"
+    },
+    {
+        "comments": "",
+        "name": "Derra",
+        "id": "0b4c866d-b22a-426b-b4ce-d753a3dee19e"
+    },
+    {
+        "comments": "",
+        "name": "Ubrikkia",
+        "region": "5",
+        "id": "f270c3b7-e2ad-4d9d-b1e3-b786439b804c"
+    },
+    {
+        "comments": "",
+        "name": "Gizer",
+        "region": "5",
+        "id": "f8fbc58f-6a37-4970-9f97-a929ae0c7a20"
+    },
+    {
+        "comments": "",
+        "name": "Athiss",
+        "id": "dbd72187-d5bf-491c-a792-5068a3300dc1"
+    },
+    {
+        "comments": "",
+        "name": "Japreal",
+        "id": "07bdc432-970f-4852-a270-5d1394d50ab8"
+    },
+    {
+        "comments": "",
+        "name": "Jaresh",
+        "id": "cdbf0ead-a658-4a4e-8642-46c24a34c837"
+    },
+    {
+        "comments": "",
+        "name": "Bothsoliman",
+        "id": "c28196cb-a8c5-4bc0-a506-9a67aba78e61"
+    },
+    {
+        "comments": "",
+        "name": "Shalankie",
+        "id": "d4f22147-75bd-4b85-8bf8-fe5e71cbe82c"
+    },
+    {
+        "comments": "",
+        "name": "Aubreeyan Cluster",
+        "id": "b96577e3-4d68-49fb-8aa8-218a012f081c"
+    },
+    {
+        "comments": "",
+        "name": "Basta Core",
+        "id": "55b75ae7-b026-414c-92fa-e06d931f5dc7"
+    },
+    {
+        "comments": "",
+        "name": "Volta",
+        "id": "4ad833e9-8fdf-477c-8ac7-6294e5ff122d"
+    },
+    {
+        "comments": "",
+        "name": "Alkenzi",
+        "id": "ed18acab-8d4f-43cd-98f5-310632289cd0"
+    },
+    {
+        "comments": "",
+        "name": "Banas",
+        "region": "7",
+        "id": "b8e28a9f-056e-41ee-8bca-eb0c4498beac"
+    },
+    {
+        "comments": "",
+        "name": "Polaar",
+        "id": "ef35af90-41c4-4edd-ba86-34616110e30c"
+    },
+    {
+        "comments": "",
+        "name": "Constancia",
+        "id": "50aecbfd-fd3b-41b3-82cd-1d52350f926a"
+    },
+    {
+        "comments": "",
+        "name": "Pirsen",
+        "sector": "Pirsen",
+        "id": "5ba38a5e-468b-4e6d-b404-bce571c33024"
+    },
+    {
+        "comments": "",
+        "name": "Taw Provode",
+        "id": "bde8e49e-bdc7-4683-8f09-53e6be6921bd"
+    },
+    {
+        "comments": "",
+        "name": "Mircapala",
+        "id": "749cff34-9448-4981-883c-520d918ec197"
+    },
+    {
+        "comments": "",
+        "name": "Neftali",
+        "region": "7",
+        "sector": "Socorro",
+        "id": "369600bf-de4c-4e2e-ac55-e6de6ff94693"
+    },
+    {
+        "comments": "",
+        "name": "Taloraan",
+        "id": "fb3f40c3-4096-4b52-8eb5-068223cca79e"
+    },
+    {
+        "comments": "",
+        "name": "Bpfassh",
+        "id": "33fd3209-61ac-403f-a078-dcd46fc13979"
+    },
+    {
+        "comments": "",
+        "name": "Hebekrr Minor",
+        "id": "d8d830c0-0f4f-46ed-a4c6-30bf7a3120dc"
+    },
+    {
+        "comments": "",
+        "name": "Langston",
+        "id": "98915fc0-8a30-46cc-9e79-0939a52e1fff"
+    },
+    {
+        "comments": "",
+        "name": "Naran-Shiv",
+        "id": "86a1fdde-f966-4f5c-9210-5881e9d85045"
+    },
+    {
+        "comments": "",
+        "name": "Lenahra",
+        "id": "4d4438aa-8991-42d4-bd4e-bf71e766f3ce"
+    },
+    {
+        "comments": "",
+        "name": "Niamos",
+        "id": "d172e85b-6c39-485d-8f15-a2954b676160"
+    },
+    {
+        "comments": "",
+        "name": "Vaced",
+        "id": "e9055df3-9bd5-4476-b8f8-d9a1604ef25e"
+    },
+    {
+        "comments": "",
+        "name": "Galdi",
+        "id": "a2200354-c396-4551-81da-ba2f42f22412"
+    },
+    {
+        "comments": "",
+        "name": "Narkina-5",
+        "id": "35b35889-1f34-485a-a931-226f6bee1681"
+    },
+    {
+        "comments": "",
+        "name": "Giermos",
+        "id": "f780e720-9606-4b23-b2ae-5b0b34564731"
+    },
+    {
+        "comments": "",
+        "name": "Segro Milo",
+        "id": "3cd68d51-5999-4bdc-be07-9ef8263313fa"
+    },
+    {
+        "comments": "",
+        "name": "Raxus Secundus",
+        "id": "3cf81fbe-322c-42d9-81e8-b0e8222c1920"
+    },
+    {
+        "comments": "",
+        "name": "Amloch",
+        "system": "Amloch",
+        "id": "8d9db73e-551e-450b-891e-efd4290783f4"
+    },
+    {
+        "comments": "",
+        "name": "Tikkae",
+        "id": "2923f09a-34a5-4729-99b6-d4fff770d56c"
+    },
+    {
+        "comments": "",
+        "name": "Jondora",
+        "first_appearance_legends": "The Old Republic Game",
+        "id": "cbec3fb8-8863-4af0-8026-1952147b7c56"
+    },
+    {
+        "comments": "",
+        "name": "Dizon Fray",
+        "region": "7",
+        "id": "f7779bc1-a318-4e92-811f-67e3280e9fcb"
+    },
+    {
+        "comments": "",
+        "name": "Tassio Moon",
+        "id": "610ed112-02c6-40ea-8ac0-961f54c4656b"
+    },
+    {
+        "comments": "",
+        "name": "Losazh",
+        "id": "019090b9-09a3-4d0e-8a5c-6732822ce2cc"
+    },
+    {
+        "comments": "",
+        "name": "Spellhaus",
+        "id": "e7d29b47-1798-4a5f-8da8-7ac1cd29cb07"
+    },
+    {
+        "comments": "",
+        "name": "Liskan",
+        "region": "7",
+        "id": "67fc4281-93e8-4a32-91e6-06cd0166a44b"
+    },
+    {
+        "comments": "",
+        "name": "Kligson's Moon",
+        "id": "02d01a28-b273-40ff-8a4a-f22c14c1e36d"
+    },
+    {
+        "comments": "",
+        "name": "Mechis III",
+        "id": "ee33da99-2db6-4390-9768-636ec8aeaaab"
+    },
+    {
+        "comments": "",
+        "name": "Turrak",
+        "region": "7",
+        "system": "Sevarcos",
+        "id": "b44c75c3-0583-42dc-8d60-4c8cc6135011"
+    },
+    {
+        "comments": "",
+        "name": "Besh Gordon",
+        "id": "fd1b6161-9577-431f-bb3b-4f13a9caf82b"
+    },
+    {
+        "comments": "",
+        "name": "The Boneworld",
+        "id": "f45eb178-d0cf-45b5-9855-b5fce482d3cf"
+    },
+    {
+        "comments": "",
+        "name": "Gansevor",
+        "sector": "Tammuz",
+        "region": "7",
+        "capital_city": "Horatio",
+        "destinations": "Firevale, Bethune, Nomad Plains",
+        "id": "8f3154eb-7a45-497b-b334-27ab081bc362"
+    },
+    {
+        "comments": "Agriculture Hub",
+        "name": "Kamil",
+        "id": "bfe75b01-0075-4bd5-96c4-46b5f3f80cf2"
+    },
+    {
+        "comments": "",
+        "name": "Malenko",
+        "id": "4d71d213-b09a-498c-bd8e-b88d17822226"
+    },
+    {
+        "comments": "",
+        "name": "Salstan",
+        "id": "8571c0c9-004c-4783-bbe3-b91a6adda6cd"
+    },
+    {
+        "comments": "",
+        "name": "Cynda",
+        "destinations": "Gorse's Moon",
+        "id": "b38ffee5-3bda-405f-8b0e-65d58c0bfbf4"
+    },
+    {
+        "comments": "",
+        "name": "Kezarat",
+        "id": "8414ba33-b37b-43a4-ac04-4c48ae578456"
+    },
+    {
+        "comments": "",
+        "name": "Calcoraan",
+        "id": "1683e7b6-e2ef-4778-a521-b7b25e6f6da7"
+    },
+    {
+        "comments": "",
+        "name": "Ganthel",
+        "id": "b0da129b-f993-4521-ad13-709468a20c41"
+    },
+    {
+        "comments": "",
+        "name": "Desix",
+        "id": "70f76502-b50a-4432-abff-43e018adcb9f"
+    },
+    {
+        "comments": "",
+        "name": "Daghee",
+        "id": "2b3a53da-0933-4ff8-9d0f-6dec22f7e02d"
+    },
+    {
+        "comments": "",
+        "name": "Dutar",
+        "id": "1566159f-6c22-455e-a948-dc6c5e3fcdbe"
+    },
+    {
+        "comments": "",
+        "name": "Brentaal Minor",
+        "id": "1d606a87-068e-4a38-a77f-d6aefe1cafe9"
+    },
+    {
+        "comments": "",
+        "name": "Wukkar",
+        "id": "7587373d-f140-4ee2-80b6-10f543685113"
+    },
+    {
+        "comments": "",
+        "name": "Miluta",
+        "id": "aaa5dfa4-93e3-48b0-8957-20578cf73f83"
+    },
+    {
+        "comments": "",
+        "name": "Sagamore",
+        "id": "fd246a79-5660-4350-bd07-99c8da1ac0d0"
+    },
+    {
+        "comments": "",
+        "name": "Sasoraan",
+        "id": "1c9af854-9ccd-46b5-ac9e-7a6115f7845a"
+    },
+    {
+        "comments": "",
+        "name": "Iskalon",
+        "id": "c5f0798b-de70-4dcb-865d-2ef772ca0716"
+    },
+    {
+        "comments": "",
+        "name": "Berenge",
+        "id": "0aad1110-7ea9-4b2d-928a-e929cb8143fe"
+    },
+    {
+        "comments": "Space Station",
+        "name": "Gravity's Heart",
+        "id": "0dc211e1-9e85-49ef-b034-c15d673deb52"
+    },
+    {
+        "comments": "",
+        "name": "Laveria",
+        "id": "e670a05f-4f3d-4e14-be38-57fcebeb9fa1"
+    },
+    {
+        "comments": "",
+        "name": "Mirran Six",
+        "id": "75bd828e-3286-439b-a8f7-064f9672dff4"
+    },
+    {
+        "comments": "",
+        "name": "Sag Kemper",
+        "id": "b2a3c87a-02e3-4ef0-80ec-6442f6b925b8"
+    },
+    {
+        "comments": "",
+        "name": "Kronk",
+        "id": "1a28f6da-92dc-475f-9bd7-3472bbef1c74"
+    },
+    {
+        "comments": "",
+        "name": "Everbloom",
+        "id": "8bf660db-02c8-4c58-a105-2bb0422ae747"
+    },
+    {
+        "comments": "",
+        "name": "Dubrovia",
+        "id": "4d12b2c3-f1dd-47f2-ac07-129980f301f3"
+    },
+    {
+        "comments": "",
+        "name": "Vulpter",
+        "id": "d74b8e6d-99ab-41ea-ae5b-27ae7bc873e8"
+    },
+    {
+        "comments": "",
+        "name": "Wor Tandell",
+        "id": "d1538218-c144-4d40-8b1c-15883bce473a"
+    },
+    {
+        "comments": "",
+        "name": "Fedalle",
+        "id": "bbf7ea8e-cd14-41b2-80c4-b05b608ba9a3"
+    },
+    {
+        "comments": "",
+        "name": "Ahakista",
+        "id": "be13adf2-1d65-4d9a-b291-5289c723d291"
+    },
+    {
+        "comments": "",
+        "name": "Nyriaan",
+        "id": "9f05cb3e-7ef8-4efc-99fc-ea37d09ff718"
+    },
+    {
+        "comments": "",
+        "name": "Bestoon",
+        "id": "d98fe1de-a985-49fc-8c14-aa0523a61cc7"
+    },
+    {
+        "comments": "",
+        "name": "Vinsoth",
+        "id": "9ab1366a-0a35-4d8c-a06a-44c2441d4b76"
+    },
+    {
+        "comments": "",
+        "name": "Corvair",
+        "id": "fb73a670-cd80-4ba2-9bfc-6be8d42cbaad"
+    },
+    {
+        "comments": "",
+        "name": "Kudo III",
+        "sector": "Corsair",
+        "system": "Kudo",
+        "region": "4",
+        "id": "ed03f67c-56c1-40ce-bdd1-1de4f110f7ea"
+    },
+    {
+        "name": "Serolonis",
+        "destinations": "Safa Toma",
+        "id": "e0d79fde-9f92-47eb-94f4-4b716d56c3dd"
+    },
+    {
+        "comments": "",
+        "name": "Galpos II",
+        "id": "f436582d-93cf-4a4a-8792-644f9f150674"
+    },
+    {
+        "comments": "",
+        "name": "Mendavi",
+        "id": "2d00e3ef-b27e-4ad5-86b1-51f55c176ffc"
+    },
+    {
+        "comments": "",
+        "name": "Chrona",
+        "id": "804cf7a0-6dc6-47d1-b3e2-2fb98692c70f"
+    },
+    {
+        "comments": "",
+        "name": "Endrias Minor",
+        "id": "1e1f6c92-c8e9-4b8e-8ae0-cd79d052a95f"
+    },
+    {
+        "comments": "",
+        "name": "Carrandar Secundus",
+        "id": "f564e8b6-c879-4368-a574-ccb1da3e24ee"
+    },
+    {
+        "comments": "",
+        "name": "Marleyvane",
+        "id": "3d7382b5-58a9-4be3-82f8-f0445ff225bc"
+    },
+    {
+        "comments": "",
+        "name": "Raithal",
+        "id": "912e1baf-896c-42fb-86d4-98b6afb8306c"
+    },
+    {
+        "comments": "",
+        "name": "Uquine",
+        "region": "2",
+        "id": "83326be4-4bae-4c60-a14d-d6a2030b4d7c"
+    },
+    {
+        "comments": "",
+        "name": "Hosk Station",
+        "id": "fbe906e9-aac4-4de0-aab8-490ccb7e4398"
+    },
+    {
+        "comments": "",
+        "name": "Eufornis Minor",
+        "id": "4a4991bf-750d-4d71-b5bf-89438af4cc26"
+    },
+    {
+        "comments": "",
+        "name": "Abrion",
+        "sector": "Abrion",
+        "id": "82889a6a-392a-43f5-bc96-2f03659ab498"
+    },
+    {
+        "comments": "",
+        "name": "Sipo",
+        "id": "307644a0-780b-4415-b643-9c334e0a2b8f"
+    },
+    {
+        "comments": "",
+        "name": "Cardota",
+        "system": "Hosnian",
+        "region": "1",
+        "id": "202e1860-5014-4820-89df-db84de2048ad"
+    },
+    {
+        "comments": "",
+        "name": "Tirahnn",
+        "id": "55df442a-371b-439f-9852-ee85a364bd8b"
+    },
+    {
+        "comments": "",
+        "name": "Boranda",
+        "id": "52a80cab-3712-4e43-b952-616e779b96f0"
+    },
+    {
+        "comments": "",
+        "name": "Sujimis",
+        "id": "6b14b410-9235-49dd-82a1-302e495ae766"
+    },
+    {
+        "comments": "",
+        "name": "Pasher",
+        "region": "4",
+        "id": "9ec80ffd-44c6-4c6a-b23e-a7d47536cada"
+    },
+    {
+        "comments": "",
+        "name": "Sedratis",
+        "id": "85d9afa1-57ed-4be7-8e0e-dd2bf92c01a9"
+    },
+    {
+        "comments": "",
+        "name": "Kaldar Trinary system",
+        "id": "6216ef61-a428-46d7-8cba-cfba5e40757a"
+    },
+    {
+        "comments": "",
+        "name": "Vadnay",
+        "id": "fb918130-02ab-4aae-8c1b-497a0b72b682"
+    },
+    {
+        "comments": "",
+        "name": "Frezno",
+        "id": "c9d899ab-2785-43a5-94f3-81ee14978d7e"
+    },
+    {
+        "comments": "",
+        "name": "Omereth",
+        "id": "9aaf7b2e-3bce-4f09-90c3-aa9161bb4a93"
+    },
+    {
+        "comments": "",
+        "name": "Sha Qarot",
+        "region": "1",
+        "id": "87893d84-e0cd-4bb0-9b9e-319d77f7cff1"
+    },
+    {
+        "comments": "",
+        "name": "Fex",
+        "region": "1",
+        "id": "e007912a-6cd7-4e33-9e34-45801fdbbd2f"
+    },
+    {
+        "comments": "",
+        "name": "Deris-plata",
+        "id": "c95a09a1-a7ac-44d5-a2b6-dd128032a5e7"
+    },
+    {
+        "comments": "",
+        "name": "Gangi Moon",
+        "id": "94fae43f-461e-437c-bbdb-b5a6b34ec7df"
+    },
+    {
+        "comments": "",
+        "name": "Exodeen",
+        "region": "1",
+        "id": "0226c493-d987-44a6-bbe2-f380dc6e7ae9"
+    },
+    {
+        "comments": "",
+        "name": "Kupoh",
+        "id": "5cd78df0-366c-4bca-870a-679cb4889c76"
+    },
+    {
+        "comments": "",
+        "name": "Daalang",
+        "id": "3991110f-125f-4f48-94d0-3c4285b5a8c4"
+    },
+    {
+        "comments": "",
+        "name": "Zaddja",
+        "id": "52b0be67-3e62-4117-ae1c-4a1a51434cc4"
+    },
+    {
+        "comments": "",
+        "name": "Yaga Minor",
+        "id": "32bf11c9-4fd6-4759-a880-199415b87be3"
+    },
+    {
+        "comments": "",
+        "name": "Aynaboni",
+        "id": "5ec7534c-0c9d-41df-b4f2-9ceeed0861d0"
+    },
+    {
+        "comments": "",
+        "name": "Skara Nal",
+        "id": "1a19f204-145a-49fd-82b4-37b6f707349a"
+    },
+    {
+        "comments": "",
+        "name": "Pyrr IX",
+        "id": "c8fc329b-a910-4777-a304-e1333511e8e4"
+    },
+    {
+        "comments": "",
+        "name": "Ordo Eris",
+        "id": "0211c1d7-9a1a-45a6-ac70-b882e1837828"
+    },
+    {
+        "comments": "",
+        "name": "Barton IV",
+        "id": "de7ac06a-1420-41a6-a85d-6a6bff39b90d"
+    },
+    {
+        "comments": "",
+        "name": "Pabu",
+        "id": "509d1729-6537-4f58-8c31-12422442db78"
+    },
+    {
+        "comments": "",
+        "name": "Corvait II",
+        "id": "6e4cc15f-c3c1-4731-8511-54415b9d93b4"
+    },
+    {
+        "comments": "",
+        "name": "Soika",
+        "id": "aa1b7f96-4248-42ad-9749-39b18a668be1"
+    },
+    {
+        "comments": "",
+        "name": "Plazir-15",
+        "id": "b9c075ef-125c-4dc4-be0d-f1a9be4cf9b3"
+    },
+    {
+        "comments": "",
+        "name": "Karthon",
+        "id": "9179582d-8a5d-4269-ae26-0c84ef99a81d"
+    },
+    {
+        "comments": "",
+        "name": "Paraquaat",
+        "id": "eeaf12fd-6168-459c-a6f4-5a5c27ea24ba"
+    },
+    {
+        "comments": "",
+        "name": "Ipsidon",
+        "destinations": "Mokkotown",
+        "id": "8f8fbdbc-eac0-44b2-8aa3-f241e9ae38b4"
+    },
+    {
+        "comments": "",
+        "name": "Kesh",
+        "region": "8",
+        "id": "8e7d4b8e-e37e-44f3-89c3-cccf4e7f87a9"
+    },
+    {
+        "comments": "Black Market Spaceport",
+        "name": "Depatar",
+        "id": "caa16848-732f-457b-9a5a-87ca5faae55a"
+    },
+    {
+        "comments": "",
+        "name": "Braaken",
+        "id": "1f7bb48a-f769-4318-8007-0f6796bde564"
+    },
+    {
+        "comments": "",
+        "name": "Gloam",
+        "id": "6fa633b9-7097-49ec-aa2d-08809d2635cc"
+    },
+    {
+        "comments": "",
+        "name": "Angcord",
+        "id": "0ba72db5-76db-4eb3-8603-c0a44adbf32a"
+    },
+    {
+        "comments": "",
+        "name": "HS-197",
+        "region": "7",
+        "system": "Horox",
+        "id": "0346a661-125c-480a-96a1-935214c3e3db"
+    },
+    {
+        "comments": "",
+        "name": "Torku",
+        "id": "b0bd8b53-774d-47d7-8080-219bbb50bfbf"
+    },
+    {
+        "comments": "",
+        "name": "Koboh",
+        "id": "159c1fbc-cef5-41d3-ada8-09bec05801d3"
+    },
+    {
+        "comments": "",
+        "name": "Shattered Moon",
+        "id": "422527a0-ce00-4cad-affb-5ca91dde7c5e"
+    },
+    {
+        "comments": "",
+        "name": "Nova Garon",
+        "id": "08c4dfc5-e11a-4c56-ba8b-d60312f61bdf"
+    },
+    {
+        "comments": "",
+        "name": "Tanalorr",
+        "id": "6fdbed15-e9f4-45d4-bc82-a794f63324cf"
+    },
+    {
+        "comments": "",
+        "name": "Wells",
+        "id": "12b0c20c-8a8f-45de-bd7c-9192730094ac"
+    },
+    {
+        "comments": "",
+        "name": "Artemesium",
+        "id": "1dc1d069-aa22-4949-b6b6-8ff980b0d98b"
+    },
+    {
+        "comments": "",
+        "name": "Enthenium",
+        "region": "6",
+        "id": "6158b0bd-8aa3-4aa9-9f64-5a8126db362a"
+    },
+    {
+        "comments": "",
+        "name": "Golatah",
+        "region": "7",
+        "id": "7bc35d2d-9dd3-46da-9ac0-b911cf2415df"
+    },
+    {
+        "comments": "",
+        "name": "Hiorin",
+        "region": "7",
+        "destinations": "Mareti Base",
+        "id": "2f7994a2-70d3-4ac4-9203-e0ea36e29ef9"
+    },
+    {
+        "comments": "",
+        "name": "Tenoo",
+        "id": "e0e21190-7417-48ba-9e4d-5cc58cd33fc8"
+    },
+    {
+        "comments": "",
+        "name": "Zimara",
+        "region": "7",
+        "id": "050250a9-8dba-49c0-965f-7292b48fb835"
+    },
+    {
+        "comments": "",
+        "name": "Sason",
+        "region": "7",
+        "id": "c6115d48-2348-4c84-abb9-b0ac491eda92"
+    },
+    {
+        "comments": "",
+        "name": "D'assem",
+        "id": "c8ed20b6-9771-4ae4-87c5-060e65a25d3d"
+    },
+    {
+        "comments": "",
+        "name": "Sarjenn 3",
+        "id": "2e5a7b36-b565-4ad4-ac1e-dfbcc6687feb"
+    },
+    {
+        "comments": "",
+        "name": "Kellgar Six",
+        "id": "0916f0b4-d229-4b2c-b533-bbf23a9f1518"
+    },
+    {
+        "comments": "",
+        "name": "Desinta",
+        "terrain": "Ice",
+        "id": "809a933f-a1f3-4a0d-a0d6-7851c3f3ac04"
+    },
+    {
+        "comments": "",
+        "name": "Jalucaz",
+        "id": "ee860ddb-5702-4472-8a9b-256dcb445241"
+    },
+    {
+        "comments": "",
+        "name": "Uokara",
+        "region": "8",
+        "id": "5d8b5050-256c-4b3f-ab89-33a9ce42b58e"
+    },
+    {
+        "comments": "",
+        "name": "Tammuz",
+        "id": "c4e4423a-e15e-4957-bf3f-cc1c25fdebd0"
+    },
+    {
+        "comments": "",
+        "name": "Thule",
+        "region": "7",
+        "sector": "Thurra",
+        "system": "Esstran",
+        "id": "d5fbbead-3284-4f28-8195-042e56496128"
+    },
+    {
+        "comments": "",
+        "name": "Praadost II",
+        "id": "b222b146-4d8a-452b-8df1-d6ba1a938dd0"
+    },
+    {
+        "comments": "",
+        "name": "Denab",
+        "id": "1a636268-4d05-43de-91c4-243a03258f4e"
+    },
+    {
+        "comments": "",
+        "name": "Firrhana",
+        "region": "7",
+        "id": "3faa44c1-fd48-4334-8cb4-3113b7092405"
+    },
+    {
+        "comments": "",
+        "name": "Arcana",
+        "id": "611ddb35-6510-476d-a60a-c3671c303b98"
+    },
+    {
+        "comments": "",
+        "name": "Havel Prime",
+        "id": "e7713c06-4e85-4c84-89e9-6f1e0eae0cf0"
+    },
+    {
+        "comments": "",
+        "name": "Keptik",
+        "id": "dbca5cf1-68cc-4372-867b-d8dd2756cc73"
+    },
+    {
+        "comments": "",
+        "name": "Olgothon 3",
+        "region": "7",
+        "id": "07f77db9-8007-46ce-befe-d13b1db0c710"
+    },
+    {
+        "comments": "",
+        "name": "Agaris",
+        "id": "b15e0a66-2aac-4feb-9164-ab690c95b8ec"
+    },
+    {
+        "comments": "Wild Space",
+        "name": "Pkori",
+        "id": "2ab57666-f0a5-4e9c-b43f-6b463d0e5fa1"
+    },
+    {
+        "comments": "",
+        "name": "Frong",
+        "id": "ac872c84-a59f-4f22-8b37-bd3bfeead156"
+    },
+    {
+        "comments": "",
+        "name": "Peridea",
+        "id": "89250e14-6055-48fa-ac61-0deb3452c680"
+    },
+    {
+        "comments": "",
+        "name": "Seatos",
+        "system": "Denab",
+        "id": "d8138ad6-0990-4f0a-9202-07f14f273ef2"
+    },
+    {
+        "comments": "",
+        "name": "Karaxis",
+        "id": "b067349b-09a5-4465-9464-d68f2986413a"
+    },
+    {
+        "comments": "",
+        "name": "Bavana",
+        "id": "1b62a718-ca00-4cf9-91f6-2f1b894329ee"
+    },
+    {
+        "comments": "",
+        "name": "Comantira",
+        "id": "5dc44bf2-1b00-4378-ae67-a011b849b0cf"
+    },
+    {
+        "comments": "",
+        "name": "Gallios",
+        "id": "3844cafc-d9b2-4abb-a66e-116c33a5a609"
+    },
+    {
+        "comments": "",
+        "name": "Kirkeide Station",
+        "id": "153c1cf7-abba-4d38-946a-c6d8e124e733"
+    },
+    {
+        "comments": "",
+        "name": "Travyx Prime",
+        "id": "40475f9b-6d6e-447e-93e5-f9e4fd4b4a1e"
+    },
+    {
+        "comments": "",
+        "name": "Thelj",
+        "id": "ad447259-dd6d-423a-ad48-caaa78efb840"
+    },
+    {
+        "comments": "",
+        "name": "Epikonia",
+        "id": "15559017-0638-4b87-bb06-e6609c72f5ee"
+    },
+    {
+        "comments": "",
+        "name": "Hylanth",
+        "region": "7",
+        "id": "35abec02-2b8b-4032-b8ea-4d355831cf49"
+    },
+    {
+        "comments": "",
+        "name": "Mazah",
+        "id": "ae490f55-30cc-4fdd-99c1-d848a0aa3623"
+    },
+    {
+        "comments": "",
+        "name": "Mareg IX",
+        "id": "0ce8d44a-0729-484e-9bef-b560dfa643df"
+    },
+    {
+        "comments": "",
+        "name": "Farano",
+        "id": "b144e4a8-0f20-42b8-8b13-44fe60783aee"
+    },
+    {
+        "comments": "",
+        "name": "Bursant",
+        "id": "c90f5448-533e-4321-bee3-e25d870e67c8"
+    },
+    {
+        "comments": "",
+        "name": "Norsid",
+        "id": "d5305b6a-4ae2-475d-ab6c-a35db0db30a2"
+    },
+    {
+        "comments": "",
+        "name": "Allard",
+        "id": "3796f0d0-4f9b-477c-87a7-bdbfb75b436f"
+    },
+    {
+        "comments": "",
+        "name": "Rorak 5",
+        "id": "573a70ce-c73a-44c0-82b1-3d73a81c02ed"
+    },
+    {
+        "comments": "",
+        "name": "Kastolar sector",
+        "id": "0dc9bcab-9317-4d2b-9d4e-5d19f05bff2b"
+    },
+    {
+        "comments": "",
+        "name": "Ookbat",
+        "id": "85c097ec-c5c5-40fa-85e7-28f1dc719b18"
+    },
+    {
+        "comments": "",
+        "name": "Cols",
+        "id": "3627790e-a4bd-47a2-929b-866e657c399c"
+    },
+    {
+        "comments": "",
+        "name": "Ballum",
+        "id": "c209eb05-6006-49c0-873c-b448405b3778"
+    },
+    {
+        "comments": "",
+        "name": "Andraven",
+        "id": "3032ef27-c77d-47ad-b8fc-13fe2a7dbbc6"
+    },
+    {
+        "comments": "",
+        "name": "Kalastar",
+        "id": "38dec784-250e-4d84-8a69-c09a99d26241"
+    },
+    {
+        "comments": "",
+        "name": "Yarrum",
+        "id": "0aad3226-db07-4c8a-bf5d-53758ce0081a"
+    },
+    {
+        "comments": "",
+        "name": "Yamradi",
+        "id": "69e855c4-74d7-4dc9-bce3-297a94c01900"
+    },
+    {
+        "comments": "",
+        "name": "Sakavi Tar",
+        "id": "0ede62c3-2132-49ae-9fc5-1621c16d9da6"
+    },
+    {
+        "comments": "",
+        "name": "Antine",
+        "id": "7494c2ce-4f93-4f16-a6eb-37186b80ea8a"
+    },
+    {
+        "comments": "",
+        "name": "Seffi",
+        "id": "7dc7112b-b212-4512-ac11-55c832a65240"
+    },
+    {
+        "comments": "",
+        "name": "Mittoblade",
+        "id": "21ae7dd6-660e-46f5-a79d-6fb16a296fa3"
+    },
+    {
+        "comments": "",
+        "name": "Orrik Cluster",
+        "id": "1020ddf9-c793-48e8-ac9e-11f6881ba329"
+    },
+    {
+        "comments": "",
+        "name": "Orrik III",
+        "id": "d09353e6-07d5-42ca-a7a2-1608062c05ad"
+    },
+    {
+        "comments": "",
+        "name": "Old Lettow",
+        "id": "8959bc53-dfc8-4efa-8b1a-606a28586c2d"
+    },
+    {
+        "comments": "",
+        "name": "Gardaji",
+        "id": "8d8da139-cc2a-49f4-8a02-4ccc58e1888e"
+    },
+    {
+        "comments": "",
+        "name": "Xi Char",
+        "id": "2b9e2959-89f2-42e6-9f98-bcba19e3dab7"
+    },
+    {
+        "comments": "",
+        "name": "Mirgoshirax",
+        "id": "d28c3dbc-2b0b-4a6e-afc3-cf5bff30192e"
+    },
+    {
+        "comments": "",
+        "name": "Rocedila",
+        "region": "7",
+        "id": "d5df663f-dea1-4bae-af2e-d071a7c0e4ae"
+    },
+    {
+        "comments": "",
+        "name": "Bracront",
+        "id": "d17b66af-0144-46c2-871f-bd319bd35ccd"
+    },
+    {
+        "comments": "",
+        "name": "Asternin",
+        "id": "4e97bed1-feba-4094-9d8a-4f76cdeec966"
+    },
+    {
+        "comments": "",
+        "name": "Circarpous",
+        "id": "b7f85fb1-b3e2-434d-96e8-4e09bad546ce"
+    },
+    {
+        "comments": "",
+        "name": "Sarumo",
+        "id": "2dd3e397-6974-4eb4-bced-2db5ff48f62b"
+    },
+    {
+        "comments": "",
+        "name": "Lower Flora Cloud",
+        "id": "a72b2260-ccd6-4350-8177-3024423a698e"
+    },
+    {
+        "comments": "",
+        "name": "Pelkonen",
+        "region": "7",
+        "id": "7413526f-6bec-4667-a417-5b6d195ca258"
+    },
+    {
+        "comments": "",
+        "name": "Rocedila",
+        "id": "6544f363-9b67-4eb8-9811-5005989e7f18"
+    },
+    {
+        "comments": "",
+        "name": "Federian",
+        "id": "ebfee693-feb9-4ce7-b550-c9e16374bd66"
+    },
+    {
+        "comments": "",
+        "name": "Oetrago",
+        "sector": "Triton",
+        "id": "69edeff0-e48a-4868-bf94-0d69d1e4c18a"
+    },
+    {
+        "comments": "",
+        "name": "Devshi",
+        "terrain": "Ocean",
+        "id": "ba446cf1-5e79-4522-aede-36e3153f7706"
+    },
+    {
+        "comments": "",
+        "name": "Ro Mira",
+        "system": "Vergara",
+        "id": "e8e16a94-4dcc-4323-8ef2-53c612dca156"
+    },
+    {
+        "comments": "",
+        "name": "Zastiga",
+        "region": "7",
+        "id": "3cb8546d-3a83-47bf-81e8-134f21b37b27"
+    },
+    {
+        "comments": "",
+        "name": "Hagar Secundus",
+        "id": "dcd9a378-fa51-4e99-bbda-28959eebe4c2"
+    },
+    {
+        "comments": "",
+        "name": "Basteel",
+        "region": "7",
+        "system": "Corva",
+        "id": "83bcb77f-36d7-453b-8e01-3cff12780b90"
+    },
+    {
+        "comments": "",
+        "name": "Galaan",
+        "region": "7",
+        "sector": "Corva",
+        "id": "4c3e3d5c-473c-4917-a2cb-662f3338e59f"
+    },
+    {
+        "comments": "",
+        "name": "Uveron",
+        "region": "2",
+        "id": "5c59b48a-b37d-4883-9289-02353b1b28cd"
+    },
+    {
+        "comments": "",
+        "name": "Samaria",
+        "id": "3d172f11-c4f9-4991-a904-f4a362c571fe"
+    },
+    {
+        "comments": "",
+        "name": "Slandarvia M-9",
+        "region": "5",
+        "id": "ed7a8a8a-2a6e-4542-b880-713cb6114692"
+    },
+    {
+        "comments": "",
+        "name": "Oosalon",
+        "id": "9fd8f181-f2c8-450a-aad9-e29cc1ddcda5"
+    },
+    {
+        "comments": "",
+        "name": "Jaloria",
+        "sector": "Jalor",
+        "id": "d7c01cb5-683a-4f22-847b-24dc953ae15a"
+    },
+    {
+        "comments": "",
+        "name": "Halmad",
+        "region": "7",
+        "id": "fda19181-7e67-4867-94d9-58f1630bff63"
+    },
+    {
+        "comments": "",
+        "name": "Kindosorn",
+        "id": "ea946cbf-8d91-46ff-afbe-5aadb7a01e7f"
+    },
+    {
+        "comments": "",
+        "name": "Lau",
+        "id": "580c1245-b29b-437d-9cb8-10ee7d9dc325"
+    },
+    {
+        "comments": "",
+        "name": "Setron",
+        "id": "a4f5c921-fa6c-4749-9603-1fa12b9d1956"
+    },
+    {
+        "comments": "",
+        "name": "Andro Prime",
+        "id": "15e6cc88-1ae7-427a-a123-2a5c29f10c1c"
+    },
+    {
+        "comments": "",
+        "name": "Erebus",
+        "id": "5608d066-f589-40d8-b31d-841abdbc41e7"
+    },
+    {
+        "comments": "",
+        "name": "Abtin",
+        "id": "3dfd97bd-d046-4cb6-b0b4-50797520bc49"
+    },
+    {
+        "comments": "",
+        "name": "Bororn",
+        "id": "5014b05c-39b7-48e1-ad57-e3a7f15b29d2"
+    },
+    {
+        "comments": "",
+        "name": "Temerancé",
+        "sector": "Rekai",
+        "id": "afb07fd2-b023-4c71-9eff-7689bd377f2e"
+    },
+    {
+        "comments": "",
+        "name": "Hallitron-7",
+        "sector": "Jalor",
+        "id": "238f5a28-dbf1-42c3-9c3e-4878e6fccee7"
+    },
+    {
+        "comments": "",
+        "name": "Roxuli",
+        "id": "792d0cc5-e99e-4972-8cef-fbb9aa40bf49"
+    },
+    {
+        "comments": "",
+        "name": "Suria",
+        "id": "2e8bb4f9-0c10-4451-aa33-367ed0df6129"
+    },
+    {
+        "comments": "",
+        "name": "Tragor Station",
+        "id": "ef10d45d-89ad-434d-9c7e-0a0afa3ecf2f"
+    },
+    {
+        "comments": "",
+        "name": "Moonbender Colony",
+        "region": "7",
+        "id": "1e018701-e500-4958-aa9a-f6c247e598ea"
+    },
+    {
+        "comments": "",
+        "name": "Dawk",
+        "region": "7",
+        "id": "68aec5c3-5db8-46d4-b3bd-0d5b4f9362b7"
+    },
+    {
+        "comments": "",
+        "name": "Chenley Prime",
+        "id": "c30ef130-efe0-4109-9aff-b1e36c7ed8df"
+    },
+    {
+        "comments": "",
+        "name": "Seswenna",
+        "id": "66704abc-8d02-4092-939a-381462b7a75f"
+    },
+    {
+        "comments": "",
+        "name": "Shingcu Station",
+        "id": "938440a1-6697-4bc6-b71b-031912c97551"
+    },
+    {
+        "comments": "",
+        "name": "Targyon",
+        "id": "5d88417d-4109-48fd-af16-50923ac490ab"
+    },
+    {
+        "comments": "",
+        "name": "Regis Kor",
+        "id": "b33c7ecc-2bd3-482b-adfe-5c73db045962"
+    },
+    {
+        "comments": "",
+        "name": "Zayron",
+        "id": "e946edc2-ca5f-44d7-afb1-571553652588"
+    },
+    {
+        "comments": "",
+        "name": "Gerrenthum",
+        "id": "1a2d67b0-b33d-4d2b-87b3-7084edebfdff"
+    },
+    {
+        "comments": "",
+        "name": "Kothlis",
+        "id": "5aa89aa9-6cbe-4de8-a669-68747e77dda5"
+    },
+    {
+        "comments": "",
+        "name": "Kerev Doi",
+        "id": "3fdb6ba8-8d10-4edb-81cd-b827e50c1dd8"
+    },
+    {
+        "comments": "",
+        "name": "Thurhanna Minor",
+        "id": "d526cc3e-9578-4dee-8621-db2e0d39040e"
+    },
+    {
+        "comments": "",
+        "name": "Ivarujar",
+        "id": "5de6e289-1b66-4f91-8e36-a255b2c81cbf"
+    },
+    {
+        "comments": "",
+        "name": "Oulanne",
+        "id": "44115c44-a905-4841-a5de-63ffa7e8c60b"
+    },
+    {
+        "comments": "",
+        "name": "Arieli",
+        "id": "218083a8-543b-4ca8-9ea4-b8cd1118db31"
+    },
+    {
+        "comments": "",
+        "name": "Ivera X",
+        "id": "25d53183-d926-47d8-98d3-d281419a9f91"
+    },
+    {
+        "comments": "",
+        "name": "Miriatin",
+        "id": "8019c112-d320-4cc4-a5f4-b9efcd337ab3"
+    },
+    {
+        "comments": "",
+        "name": "5251977",
+        "id": "418156c2-9d67-49b4-af30-9de451886d21"
+    },
+    {
+        "comments": "",
+        "name": "Nea Dajanam",
+        "id": "57aefda3-9b7b-4c92-97ea-718c631bfd0a"
+    },
+    {
+        "comments": "",
+        "name": "Ponemah",
+        "id": "18b7ec9b-4c05-4187-91e8-e2cf19dac00d"
+    },
+    {
+        "comments": "",
+        "name": "Queluhan Nebula",
+        "id": "d27444f4-9b69-4e81-8835-7a9bd4cc5942"
+    },
+    {
+        "comments": "",
+        "name": "Hinari",
+        "id": "e83e5a05-ff86-4751-a75d-1b09a0c41104"
+    },
+    {
+        "comments": "",
+        "name": "Tiss'el",
+        "id": "0b500907-b0ce-4477-8c17-c082fad9561d"
+    },
+    {
+        "comments": "",
+        "name": "Langsha-Raang",
+        "id": "02928cde-4321-45ad-9726-58847fcf12ec"
+    },
+    {
+        "comments": "",
+        "name": "Andovar",
+        "id": "a12f7f4e-b5ee-42c4-abdd-0c3ce27ce6fb"
+    },
+    {
+        "comments": "",
+        "name": "Naalol",
+        "id": "af5664f3-7dab-4b99-ba07-627af4f85c8b"
+    },
+    {
+        "comments": "",
+        "name": "Dermos",
+        "id": "e98762e0-af1b-4705-a76f-3db48938edaa"
+    },
+    {
+        "comments": "",
+        "name": "Tanis",
+        "id": "ce982eab-fde5-4734-8a71-e74af0bfed40"
+    },
+    {
+        "comments": "",
+        "name": "Juntar",
+        "id": "d2f3f64e-437c-4d00-8a0a-f9aa5e510d1c"
+    },
+    {
+        "comments": "",
+        "name": "Mordal",
+        "id": "032d4bca-083f-4f67-8316-759fbbcc776f"
+    },
+    {
+        "comments": "",
+        "name": "Vulpinus Nebula",
+        "id": "58813269-9fb7-4ea2-a581-c9d30f59fcc5"
+    },
+    {
+        "comments": "",
+        "name": "Caranthanax B.",
+        "region": "7",
+        "id": "c87e2306-42e9-429a-a100-f22cef6737e2"
+    },
+    {
+        "comments": "",
+        "name": "Gan Moradir",
+        "id": "69036139-3e2b-4cce-935b-597ecc6cfa44"
+    },
+    {
+        "comments": "",
+        "name": "Sevarcos",
+        "id": "01546793-e490-43fc-bbb3-b0757fb2ffbe"
+    },
+    {
+        "comments": "",
+        "name": "Tharnaka",
+        "id": "f0859335-edf4-4c94-974f-1862bc0dc137"
+    },
+    {
+        "comments": "",
+        "name": "Dasoor",
+        "id": "58576db1-5eb1-4b7c-b5e0-922e37dbf862"
+    },
+    {
+        "comments": "",
+        "name": "Ando Prime",
+        "id": "ee7e8660-d41e-4369-b4ba-5f5262855f01"
+    },
+    {
+        "comments": "",
+        "name": "Kara-bin",
+        "id": "ebefc935-1ae6-42bf-9f52-d089fc50510c"
+    },
+    {
+        "comments": "",
+        "name": "Warrin Station",
+        "id": "85fba3ef-176f-439b-be30-f9f503102fa4"
+    },
+    {
+        "comments": "",
+        "name": "Andoowell",
+        "id": "6cfceac8-2209-474e-9ace-7ba5581e6ef0"
+    },
+    {
+        "comments": "",
+        "name": "Fanha",
+        "id": "72878ef9-e2e4-4861-943a-1f078615cebb"
+    },
+    {
+        "comments": "",
+        "name": "Tosste",
+        "id": "d341edb7-4903-4af9-92d9-52bbb83f166e"
+    },
+    {
+        "comments": "",
+        "name": "Ogoth Tiir",
+        "id": "f542e6d8-252c-4627-8f9c-71a1c7f74506"
+    },
+    {
+        "comments": "",
+        "name": "Bryndar",
+        "id": "3db32b58-9f7e-489a-960a-71fa61a31e46"
+    },
+    {
+        "comments": "",
+        "name": "Metharian Nebula",
+        "id": "0031e512-3084-4062-b5de-85b9482bc1a1"
+    },
+    {
+        "comments": "",
+        "name": "Minos Cluster",
+        "id": "df7ed1ed-5a6e-4dc4-b082-7c94a95f61d5"
+    },
+    {
+        "comments": "",
+        "name": "Syngia Station",
+        "sector": "Sertar",
+        "id": "efd64ae5-60c3-45b0-833b-a2881412607d"
+    },
+    {
+        "comments": "",
+        "name": "Gesaral Beta",
+        "id": "c03fd590-5305-4c6a-9e4f-a640f1563ad4"
+    },
+    {
+        "comments": "",
+        "name": "Sirpar",
+        "id": "6dbeae49-c5ee-42ce-ac83-e04654eca3a1"
+    },
+    {
+        "comments": "",
+        "name": "Dedoon",
+        "id": "44e01ece-4870-475b-aebd-2751262c60f9"
+    },
+    {
+        "comments": "",
+        "name": "Ootoo Prime",
+        "id": "fff4e520-f695-4ff0-875b-1e9fc3d739fd"
+    },
+    {
+        "comments": "",
+        "name": "Galjaero",
+        "id": "9402ee03-f816-40b9-ae34-56b3c6ed9015"
+    },
+    {
+        "comments": "",
+        "name": "Kondoraan",
+        "id": "5fc91b3e-c7c1-4600-a34e-68f83d8ac183"
+    },
+    {
+        "comments": "",
+        "name": "Omaka",
+        "id": "835c1725-fdaf-4cb0-b3cc-e9ba4fa21acd"
+    },
+    {
+        "comments": "",
+        "name": "Bayora",
+        "id": "5c496a49-a127-42f1-b1d5-0752b97e17fb"
+    },
+    {
+        "comments": "",
+        "name": "Morellia",
+        "id": "a9bef731-69d9-49da-936d-31a61391bc96"
+    },
+    {
+        "comments": "",
+        "name": "Thune",
+        "id": "24e65c25-a91b-4043-bdba-0459f627e861"
+    },
+    {
+        "comments": "",
+        "name": "Haidoral Prime",
+        "id": "907f7bed-3a1c-4893-8607-f7757ee6404c"
+    },
+    {
+        "comments": "",
+        "name": "Crucival",
+        "id": "39229e14-2d7f-470f-8a71-260949191cd4"
+    },
+    {
+        "comments": "",
+        "name": "Vuundalla",
+        "id": "7f26d071-6314-45b1-b13d-eef21323c956"
+    },
+    {
+        "comments": "",
+        "name": "Ueda",
+        "id": "562fa82a-9722-43df-9a74-a187eba4acb5"
+    },
+    {
+        "comments": "",
+        "name": "Brendok",
+        "id": "7c0de992-0690-481f-a05c-77d04700b0df"
+    },
+    {
+        "comments": "",
+        "name": "Ah Re Won",
+        "region": "7",
+        "id": "9c2e95f9-d19a-4840-9882-2f2ac43a7c10"
+    },
+    {
+        "comments": "",
+        "name": "Gerrigon",
+        "id": "f7dc3fbd-f753-4c12-b3f8-7465d83e1d52"
+    },
+    {
+        "comments": "",
+        "name": "Endoviara Seven",
+        "id": "57022eab-3024-46f9-b7f5-61e1c4647c31"
+    },
+    {
+        "comments": "",
+        "name": "Dellalt",
+        "id": "b6420584-197d-4d43-9117-17b8931cbd9a"
+    },
+    {
+        "comments": "",
+        "name": "Olega",
+        "id": "632243d6-e946-4e8c-95ca-bca5b31c5814"
+    },
+    {
+        "comments": "",
+        "name": "Khofar",
+        "region": "7",
+        "id": "50a8ce8f-8f96-44b0-8e01-96bb72028d2d"
+    },
+    {
+        "comments": "",
+        "name": "Bonadan",
+        "id": "b2b2476c-6eb9-4fcc-95d6-7a7481eab29d"
+    },
+    {
+        "comments": "",
+        "name": "Deppani",
+        "id": "74e0b689-43b2-456f-9849-34b04a9316ca"
+    },
+    {
+        "comments": "",
+        "name": "Ayoh 7",
+        "id": "7788a93c-f12e-4d8a-a3ea-a6acd7ca2246"
+    },
+    {
+        "comments": "",
+        "name": "Kalaan",
+        "id": "7f737f21-c778-4403-85fd-fc70d54fc5e0"
+    },
+    {
+        "comments": "",
+        "name": "Maraken",
+        "id": "b96cea36-b3c9-40e0-999c-c4c881c1e6b8"
+    },
+    {
+        "comments": "",
+        "name": "Xirl",
+        "id": "92b3483d-95ac-4c68-a190-db86e3a2f27f"
+    },
+    {
+        "comments": "",
+        "name": "Asyrphus",
+        "id": "a2793b40-84a2-4222-aa34-3cead6c449ce"
+    },
+    {
+        "comments": "",
+        "name": "Bayamor",
+        "id": "b35cde46-87d6-49db-a5f1-ec43ce42095c"
+    },
+    {
+        "comments": "",
+        "name": "Inyusu Tor",
+        "id": "e2f42b7e-eff0-4cc8-a21d-7b18e3e08fe4"
+    },
+    {
+        "comments": "",
+        "name": "Variax",
+        "id": "c7eb77cf-7ce4-4812-8469-61b65162510a"
+    },
+    {
+        "comments": "",
+        "name": "Toshara",
+        "id": "b5d71d3e-bb1d-4c2d-8d7e-1d86b904c275"
+    },
+    {
+        "comments": "",
+        "name": "Ikari",
+        "id": "519cc6a2-bd8c-4519-bc18-52adf85f170c"
+    },
+    {
+        "comments": "",
+        "name": "Klytus V",
+        "id": "ac1386a8-1198-49dc-b716-247ee7b08d6c"
+    },
+    {
+        "comments": "",
+        "name": "Skree",
+        "id": "fe729289-576d-4c23-9b08-dd2fb2cfc0cc"
+    },
+    {
+        "comments": "",
+        "name": "Bosnok",
+        "id": "34d48e7b-ea3f-4329-a48b-2cc5cfdef001"
+    },
+    {
+        "comments": "",
+        "name": "Fuel Station Visavi",
+        "id": "52d60a04-bad5-4d4e-b7cb-259df467e60d"
+    },
+    {
+        "comments": "",
+        "name": "Renpali Space Station",
+        "id": "f40f2de4-0123-4537-ba83-cb46ee882701"
+    },
+    {
+        "comments": "",
+        "name": "Noctu",
+        "id": "d73d74c9-de89-4ae7-81b6-f5ca12475417"
+    },
+    {
+        "comments": "",
+        "name": "Tharl",
+        "id": "71263d20-c868-4baa-afbb-11763cf741c8"
+    },
+    {
+        "comments": "",
+        "name": "Chankin",
+        "id": "9731b869-975c-4791-acb1-48a8f09b4624"
+    },
+    {
+        "comments": "",
+        "name": "Pion",
+        "id": "99a25a5b-f2d7-4ea5-a14b-50dcad28a1c8"
+    },
+    {
+        "comments": "",
+        "name": "Xala",
+        "id": "fc4bf1fb-d998-4161-a095-7b763132f984"
+    },
+    {
+        "comments": "",
+        "name": "Mannius Eight",
+        "id": "71aafb3c-ecc2-4493-891f-b67cd28e9a27"
+    },
+    {
+        "comments": "",
+        "name": "Tozil",
+        "id": "edd09c57-dbfd-4a4f-8107-32244b98f7fa"
+    },
+    {
+        "comments": "",
+        "name": "Vianax",
+        "id": "414520f0-96ae-4653-b429-4848307ea2dd"
+    },
+    {
+        "comments": "",
+        "name": "Veek",
+        "id": "87b75bd8-2cdf-4b2c-924f-7fc6c5fba41c"
+    },
+    {
+        "comments": "",
+        "name": "Bartool",
+        "id": "d7fe67bd-932e-46ca-969a-964a7224b8ab"
+    },
+    {
+        "comments": "",
+        "name": "Dead Moon of Gothol",
+        "id": "0639f4b6-15ab-48a7-9100-86438f2dff82"
+    },
+    {
+        "comments": "",
+        "name": "Niraya",
+        "region": "4",
+        "id": "dc0537e8-3eec-4864-b75a-60207b5304f7"
+    },
+    {
+        "comments": "",
+        "name": "Feleantor",
+        "region": "7",
+        "id": "6280f1e9-5fe8-44b3-8bdb-13c6916c5bf6"
+    },
+    {
+        "comments": "",
+        "name": "Cedone",
+        "id": "1b537d98-f3c0-4e27-a85a-1f66176fdda3"
+    },
+    {
+        "comments": "",
+        "name": "Borlax 14",
+        "id": "ba6c51da-b5a6-497b-9200-88c7dadcb4ba"
+    },
+    {
+        "comments": "",
+        "name": "Faz",
+        "id": "319ec88e-71c3-4982-8de4-a29fe30e1fe4"
+    },
+    {
+        "comments": "",
+        "name": "Sesswanna",
+        "id": "e375c2df-b057-433a-8999-591a96008bbc"
+    },
+    {
+        "comments": "",
+        "name": "Genosha",
+        "id": "74caa194-ccc2-4d34-9446-3a7dce42888a"
+    },
+    {
+        "comments": "",
+        "name": "Parsh",
+        "id": "8f6fa72b-d891-4228-9b93-ac7c4893f77c"
+    },
+    {
+        "comments": "",
+        "name": "Podunk",
+        "id": "70fe330e-f6e5-453e-adf1-2e5c89dac0a5"
+    },
+    {
+        "comments": "",
+        "name": "Ottinger 7",
+        "id": "f09fab77-d20a-48d2-83ad-2abdc587364e"
+    },
+    {
+        "comments": "",
+        "name": "Menthusa",
+        "id": "cb54183c-9da2-4e30-a27f-0de304a1ea43"
+    },
+    {
+        "comments": "",
+        "name": "Veros",
+        "id": "edc43899-500a-4ba0-b4b9-2b06e44241e1"
+    },
+    {
+        "comments": "",
+        "name": "Konthar sector",
+        "id": "b2716f67-b515-4a7f-83c8-fa1ca5346da8"
+    },
+    {
+        "comments": "",
+        "name": "Kathol Rift",
+        "id": "bed0898d-f2ad-40cd-9050-da03279e3dc6"
+    },
+    {
+        "comments": "",
+        "name": "Chargona",
+        "id": "9ff5ae25-e55d-43f0-973d-24991629c8a0"
+    },
+    {
+        "comments": "",
+        "name": "World Between Worlds",
+        "id": "631ebb3a-b7d5-4ce1-9850-83cbdf91ba09"
+    },
+    {
+        "comments": "",
+        "name": "Petris Major",
+        "id": "e3be06ee-96d1-4ecf-910d-5df9e6d9b4d6"
+    },
+    {
+        "comments": "",
+        "name": "Exiss Nine",
+        "id": "84684a44-d08b-4cf2-a052-53d7ccbfb4b8"
+    },
+    {
+        "comments": "",
+        "name": "Theron",
+        "id": "62396cac-c489-4a23-96f1-cf4727ecad92"
+    },
+    {
+        "comments": "",
+        "name": "Noult",
+        "id": "4c5830ef-f1cd-4036-ae9e-ca13f84fcac5"
+    },
+    {
+        "comments": "",
+        "name": "Vivonah",
+        "id": "7cfe4197-5107-47d2-8986-821c8d42521a"
+    },
+    {
+        "comments": "",
+        "name": "Comra",
+        "id": "60224133-bfdc-418f-9a29-af3e2974c83b"
+    },
+    {
+        "comments": "",
+        "name": "Daxam IV",
+        "id": "95b6bfc9-7f95-4f8a-acba-a812d410ac04"
+    }
+]

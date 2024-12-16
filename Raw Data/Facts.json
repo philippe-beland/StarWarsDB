@@ -1,46 +1,5 @@
 [
     {
-        "Faits divers": "- D'Qar: Monde sans vie intelligence - A été scouted avant Bataille d'Endor pour la Rébellion par Corona Squadron (Thane Kyrell et Kendy Idele). - Une base a été installée, mais la guerre s'est achevée avant que la base ne serve. Le rapport a été préservé.",
-        "Keywords": "D'Qar Corona Squadron",
-        "ID_Test": 1,
-        "id": 1
-    },
-    {
-        "Faits divers": "BB-8: Six Swappable circular tool-bay disks can be replaced and upgraded with minimal reprogramming. Converses in 27th generation droidspeak code, a compressed variant of the most common astromech language.",
-        "Keywords": "BB-8",
-        "ID_Test": 2,
-        "id": 2
-    },
-    {
-        "Faits divers": "Après la mort de Palpatine, les peuples se sont révoltés. Un traité de paix a été signé entre l'Empire et la Nouvelle République (\"Galactic Concordances)",
-        "Keywords": "Galactic Concordances",
-        "ID_Test": 3,
-        "id": 3
-    },
-    {
-        "Faits divers": "Un des premiers actes a été de démilitariser le gouvernement.",
-        "ID_Test": 4,
-        "id": 4
-    },
-    {
-        "Faits divers": "La rébellion s'est transformée après Endor en Nouvelle République.",
-        "Keywords": "Nouvelle République",
-        "ID_Test": 5,
-        "id": 5
-    },
-    {
-        "Faits divers": "Après le traité, l'Empire s'est caché dans les Unknown Regions pour se reformer.",
-        "Keywords": "Galactic Empire",
-        "ID_Test": 6,
-        "id": 6
-    },
-    {
-        "Faits divers": "La résistance a été formée par Leia.",
-        "Keywords": "Resistance Leia Organa",
-        "ID_Test": 7,
-        "id": 7
-    },
-    {
         "Source": 1,
         "Faits divers": "- On peut entendre la respiration de Vader à la toute fin du générique.",
         "ID_Test": 8,

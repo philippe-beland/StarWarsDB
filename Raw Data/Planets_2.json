@@ -1,0 +1,8498 @@
+[
+    {
+        "Name": "Jedha",
+        "System": "Jedha",
+        "Places to visit": "Jedha City, Jedi Temple, The Catacombs of Cadera, Ai-jed, Temple of the Kyber",
+        "Comments": "Une des rares sources de Kyber Crystals.",
+        "Capital City": "Jedha City",
+        "Region": "5",
+        "Sector": "Subsecteurs autonomes",
+        "First apparition (Canon)": 8,
+        "real_id": "1",
+        "id": 1
+    },
+    {
+        "Name": "Coruscant",
+        "System": "Coruscant",
+        "Places to visit": "Level 1313\u000bArrth-Eno Prison Complex, Umate",
+        "Moons": "Centax 3 (3rd Moon)",
+        "Terrain": "Villes",
+        "Sector": "Corusca",
+        "First apparition (Legends)": "Heir to the Empire",
+        "real_id": "2",
+        "id": 2
+    },
+    {
+        "Name": "Tatooine",
+        "System": "Tatoo",
+        "Places to visit": "Mos Espa\u000b, Mos Eisley\u000bMos Pelgo\u000bMos Entha\u000bAnchorhead\u000bTosche Station\u000bJundland Wastes\u000bFort Tusken\u000bJundt Massif\u000bBeggar's Canyon\u000bJag Crag Gorge, Mos Entha",
+        "Suns": "Tatoo I\u000bTatoo II",
+        "Moons": "3",
+        "Fauna": "Womp Rat\u000bBantha\u000bDewback\u000bWorrt\u000bEopie\u000bKrayt Dragon\u000bRonto",
+        "Comments": "Contr\u00f4l\u00e9e par les Hutts",
+        "Region": "7",
+        "Terrain": "D\u00e9serts",
+        "Sector": "Arkanis",
+        "First apparition (Canon)": 4,
+        "real_id": "3",
+        "id": 3
+    },
+    {
+        "Name": "Naboo",
+        "System": "Naboo",
+        "Places to visit": "Otoh Gunga, Alderaan's Enclave, Theed, Lake Paonga, Varykino",
+        "Moons": "3 lunes (Onoam, )",
+        "Fauna": "Kaadu\u000bOpee sea Monster\u000bSando Aqua Monster\u000bColo Claw Fish\u000bTusk-Cat\u000bShaak",
+        "Capital City": "Theed",
+        "Region": "5",
+        "Terrain": "Plaines, rivi\u00e8res, cascades",
+        "Sector": "Chommell",
+        "First apparition (Canon)": 1,
+        "real_id": "4",
+        "id": 4
+    },
+    {
+        "Name": "Ring of Kafrene",
+        "Comments": "Trading Post",
+        "real_id": "5",
+        "id": 5
+    },
+    {
+        "Name": "Glee Anselm",
+        "real_id": "6",
+        "id": 6
+    },
+    {
+        "Name": "Sullust",
+        "Comments": "La moiti\u00e9 des Sullustans travaillent pour Soro-Suub.",
+        "real_id": "7",
+        "id": 7
+    },
+    {
+        "Name": "Mon Cala",
+        "System": "Mon Cala",
+        "Places to visit": "Dac City",
+        "Suns": "2",
+        "Fauna": "Mon Cala Eel",
+        "Comments": "Beaucoup de villes marines, mais certaines sont \u00e0 la surface",
+        "Region": "7",
+        "Terrain": "Oc\u00e9ans",
+        "Sector": "Calamari",
+        "real_id": "8",
+        "id": 8
+    },
+    {
+        "Places to visit": "Maz Kanata's Castle, Nymeve Lake",
+        "Name": "Takodana",
+        "Comments": "Situ\u00e9e \u00e0 mi-chemin des Core Worlds et du Wild Space, Takodana est une \u00e9tape populaire pour les voyageurs, les fugitifs et les contrebandiers.",
+        "Region": "5",
+        "real_id": "9",
+        "id": 9
+    },
+    {
+        "Places to visit": "Pixelito",
+        "Name": "Malastare",
+        "Terrain": "For\u00eats",
+        "real_id": "10",
+        "id": 10
+    },
+    {
+        "Name": "Death Star II",
+        "real_id": "11",
+        "id": 11
+    },
+    {
+        "Name": "Jakku",
+        "System": "Jakku",
+        "Places to visit": "Tuanul, Ravin de Kelvin, Cratertown, D\u00e9sert de Goazon, Avant-poste de Niima, Blowback Town",
+        "Fauna": "Happabore",
+        "Comments": "Le village sacr\u00e9 de Tuanul est peupl\u00e9 par les membres de l'\u00c9glise de la Force\u000b- Le Gardien surveille, solitaire, sur son pyl\u00f4ne de pierre \u00e0 l'ombre de la Cr\u00eate de Carbone",
+        "Region": "6",
+        "Sector": "Inconnu",
+        "First apparition (Canon)": 6,
+        "real_id": "12",
+        "id": 12
+    },
+    {
+        "Name": "Iego Moon",
+        "real_id": "13",
+        "id": 13
+    },
+    {
+        "Name": "Tund System",
+        "real_id": "14",
+        "id": 14
+    },
+    {
+        "Places to visit": "Aldera, Appenza Peak, Glarus Lagoon",
+        "Name": "Alderaan",
+        "Comments": "Un des plus anciens mondes affili\u00e9s \u00e0 la R\u00e9publique Galactique.",
+        "First apparition (Canon)": 4,
+        "real_id": "15",
+        "id": 15
+    },
+    {
+        "Name": "Ansion",
+        "real_id": "16",
+        "id": 16
+    },
+    {
+        "Name": "Subterrel",
+        "real_id": "17",
+        "id": 17
+    },
+    {
+        "Name": "Kamino",
+        "System": "Kamino",
+        "Fauna": "Aiwha",
+        "Capital City": "Tipoca City",
+        "Terrain": "Oc\u00e9ans",
+        "Sector": "Abrion",
+        "First apparition (Canon)": 2,
+        "real_id": "18",
+        "id": 18
+    },
+    {
+        "Name": "Geonosis",
+        "System": "Geonosis",
+        "Places to visit": "Progate Temple",
+        "Moons": "Bahryn",
+        "Comments": "Tr\u00e8s r\u00e9put\u00e9e pour ses industries",
+        "Region": "7",
+        "Terrain": "D\u00e9serts",
+        "Sector": "Arkanis",
+        "real_id": "19",
+        "id": 19
+    },
+    {
+        "Name": "Cato Neimoidia",
+        "Comments": "Greatest of the Neimoidian purse worlds",
+        "Region": "2",
+        "Capital City": "Zarra",
+        "real_id": "20",
+        "id": 20
+    },
+    {
+        "Name": "Boz Pity",
+        "real_id": "21",
+        "id": 21
+    },
+    {
+        "Name": "Saleucami",
+        "real_id": "22",
+        "id": 22
+    },
+    {
+        "Name": "Utapau",
+        "System": "Utapau",
+        "Places to visit": "Pau City",
+        "Fauna": "Dactillion\u000bVaractyl\u000bJamel",
+        "Comments": "Des temp\u00eates d'hypervent battent la surface d'Utapau, for\u00e7ant les habitants \u00e0 vivres dans les gouffres gigantesques qui creusent la cro\u00fbte de la plan\u00e8te. Les Amani, r\u00e9cemment arriv\u00e9s sur Utapau, sont suffisamment robustes pour occuper les plaines de la surface.",
+        "Region": "7",
+        "Sector": "Tarabba",
+        "real_id": "23",
+        "id": 23
+    },
+    {
+        "Name": "Mustafar",
+        "System": "Mustafar",
+        "Places to visit": "Gaheen Plains (Vader's Castle)",
+        "Moons": "0",
+        "Fauna": "Anguille de lave\u000bXandanks\u000bPuces de lave",
+        "Comments": "Anciennement QG de Black Sun",
+        "Region": "7",
+        "Terrain": "Lave, Volcans",
+        "Sector": "Atravis",
+        "First apparition (Canon)": 3,
+        "real_id": "24",
+        "id": 24
+    },
+    {
+        "Name": "Kashyyyk",
+        "System": "Kashyyyk",
+        "Places to visit": "Shadowlands, Black Forest",
+        "Fauna": "Can-Cells",
+        "Capital City": "Kachirho",
+        "Region": "5",
+        "Terrain": "For\u00eats",
+        "Sector": "Mytaranor",
+        "First apparition (Legends)": "Star Wars Holiday Special",
+        "real_id": "25",
+        "id": 25
+    },
+    {
+        "Name": "Felucia",
+        "Comments": "Situ\u00e9e au coeur d'une importante route hyperspatiale (Perlemian Trade Route)\u000b\u000bMonde fermier couvert de jungles de champignons",
+        "Region": "7",
+        "Fauna": "Nysillim",
+        "real_id": "26",
+        "id": 26
+    },
+    {
+        "Name": "Polis Massa",
+        "Comments": "Autrefois une plan\u00e8te, Polis Massa a \u00e9t\u00e9 myst\u00e9rieusement r\u00e9duite \u00e0 l'\u00e9tat de champ d'ast\u00e9ro\u00efdes.",
+        "real_id": "27",
+        "id": 27
+    },
+    {
+        "Name": "Kessel",
+        "Moons": "3",
+        "Comments": "Un h\u00e9misph\u00e8re de ce monde est luxuriant et splendide: d'\u00e9l\u00e9gants palaces et leurs jardins sompteux s'\u00e9tendent le long des for\u00eats touffues et de lacs crystallins. De l'autre c\u00f4t\u00e9, de vastes colonies d'esclaves suent dans les sinistres mines d'\u00e9pices.",
+        "Terrain": "For\u00eats, Mines",
+        "First apparition (Canon)": 4,
+        "real_id": "28",
+        "id": 28
+    },
+    {
+        "Name": "Dantooine",
+        "Comments": "Ancienne base rebelle",
+        "real_id": "29",
+        "id": 29
+    },
+    {
+        "Name": "Yavin 4",
+        "System": "Yavin",
+        "Places to visit": "Massassi Temple, Wetyin's Colony, Gully's Cantina",
+        "Suns": "G\u00e9ante rouge (Yavin)",
+        "Fauna": "Oiseaux murmures\u000bStintaril\u000bCrabe-l\u00e9zard\u000bAnguille cuirass\u00e9\u000bScarab\u00e9e Piranha\u000bP\u00eacheur\u000bVer Leviathan\u000bRunyip\u000bWoolamandre",
+        "Region": "7",
+        "Terrain": "Jungles",
+        "Sector": "Gordian Reach",
+        "First apparition (Canon)": 4,
+        "real_id": "30",
+        "id": 30
+    },
+    {
+        "Name": "Dagobah",
+        "System": "Dagobah",
+        "Places to visit": "Dark Side Cave",
+        "Fauna": "Accipiptero\u000bElephoth\u000bJubba Bird\u000bAraign\u00e9es des marais\u000bSnake-Dragon\u000bLimace des marais\u000bSleen",
+        "Region": "7",
+        "Terrain": "Marais",
+        "Sector": "Sluis",
+        "real_id": "31",
+        "id": 31
+    },
+    {
+        "Name": "Taanab",
+        "real_id": "32",
+        "id": 32
+    },
+    {
+        "Name": "Bespin",
+        "System": "Bespin",
+        "Places to visit": "Cloud City, Ugnorgrad, Chinook Station",
+        "Fauna": "Beldon\u000bRawwk\u000bCrevette volante\u000bCrabe Planeur",
+        "Comments": "Source importante de Tibanna\u000bCloud City poss\u00e8de 392 niveaux.",
+        "Region": "7",
+        "Terrain": "Gaz",
+        "Sector": "Anoat",
+        "real_id": "33",
+        "id": 33
+    },
+    {
+        "Name": "Wobani",
+        "real_id": "34",
+        "id": 34
+    },
+    {
+        "Name": "Scarif",
+        "Region": "7",
+        "real_id": "35",
+        "id": 35
+    },
+    {
+        "Name": "Eadu",
+        "Comments": "Imperial Kyber Refinery",
+        "Region": "7",
+        "Terrain": "Orages",
+        "real_id": "36",
+        "id": 36
+    },
+    {
+        "Name": "Eriadu",
+        "Places to visit": "Phelar Port, Rivoche Ranges, Eriadu City, Carrion Plateau",
+        "Comments": "Les Tarkins ont \u00e9t\u00e9 dans les premiers \u00e0 s'y installer.",
+        "Region": "7",
+        "Sector": "Greater Seswenna",
+        "real_id": "37",
+        "id": 37
+    },
+    {
+        "Name": "Corellia",
+        "Places to visit": "Phien District, Coronet Spaceport, Coronet City, Doaba Guerfel, Bela Vistal, Foundry, The Bottoms",
+        "Suns": "Corell",
+        "Comments": "Monde important du Noyau, c\u00e9l\u00e8bre pour ses vaisseaux et pilotes",
+        "Capital City": "Coronet City",
+        "First apparition (Canon)": 4,
+        "real_id": "38",
+        "id": 38
+    },
+    {
+        "Name": "Milvayne",
+        "real_id": "39",
+        "id": 39
+    },
+    {
+        "Name": "Ahch-To",
+        "real_id": "40",
+        "id": 40
+    },
+    {
+        "Name": "D'Qar",
+        "Comments": "Alliance Rebelle et R\u00e9sistance y ont \u00e9tablis des bases.\u000bSecret headquarters of the resistance",
+        "Region": "7",
+        "Terrain": "For\u00eats",
+        "First apparition (Canon)": 6,
+        "real_id": "41",
+        "id": 41
+    },
+    {
+        "System": "Ilum",
+        "Name": "Starkiller Base",
+        "Region": "8",
+        "Sector": "7G",
+        "real_id": "42",
+        "id": 42
+    },
+    {
+        "Name": "Hosnian Prime",
+        "Places to visit": "Chikua City",
+        "real_id": "43",
+        "id": 43
+    },
+    {
+        "Name": "Crait",
+        "Comments": "Was a fully operational mining facility that was abandoned due to a labor dispute.",
+        "real_id": "44",
+        "id": 44
+    },
+    {
+        "Name": "Pastoria",
+        "Region": "7",
+        "real_id": "45",
+        "id": 45
+    },
+    {
+        "Places to visit": "Canto Bight, Zord's Spa and Bathhouse, Ronen Tagge's Private Penthouse",
+        "Name": "Cantonica",
+        "Comments": "<br>",
+        "First apparition (Canon)": 7,
+        "real_id": "46",
+        "id": 46
+    },
+    {
+        "Places to visit": "Black Spire Outpost",
+        "Name": "Batuu",
+        "Comments": "Home to ancient ruins and giant petrified black trees.",
+        "real_id": "47",
+        "id": 47
+    },
+    {
+        "Name": "Kullgroon",
+        "real_id": "48",
+        "id": 48
+    },
+    {
+        "Name": "Vandor",
+        "real_id": "49",
+        "id": 49
+    },
+    {
+        "Places to visit": "Imperial Academy",
+        "Name": "Carida",
+        "real_id": "50",
+        "id": 50
+    },
+    {
+        "Name": "Mimban",
+        "Region": "5",
+        "real_id": "51",
+        "id": 51
+    },
+    {
+        "Name": "Accresker Jail",
+        "real_id": "52",
+        "id": 52
+    },
+    {
+        "Name": "Barbadel",
+        "real_id": "53",
+        "id": 53
+    },
+    {
+        "Places to visit": "Pons Ora",
+        "Name": "Abafar",
+        "Comments": "Monde aride, riche en rhydonium",
+        "Region": "7",
+        "real_id": "54",
+        "id": 54
+    },
+    {
+        "Name": "Dathomir",
+        "System": "Dathomir",
+        "Places to visit": "Nightsisters Lair, Misty Falls",
+        "Suns": "Faible \u00e9toile rouge (Domir)",
+        "Fauna": "Rancor",
+        "Comments": "Abrite les Soeurs de la nuit et les fr\u00e8res de la nuit",
+        "Region": "5",
+        "Terrain": "Jungle, For\u00eat, Marais, Montagnes",
+        "Sector": "Qelli",
+        "real_id": "55",
+        "id": 55
+    },
+    {
+        "Name": "Ithor",
+        "Comments": "L'empire force les ithoriens \u00e0 r\u00e9v\u00e9ler leurs secrets de technologies fermi\u00e8res, leur promettant de leur \u00e9pargner une invasion d\u00e9vastatrice.",
+        "real_id": "56",
+        "id": 56
+    },
+    {
+        "Name": "Jelucan",
+        "Comments": "Colonis\u00e9e en deux vagues successives: les secondes colons sont devenus de riches exploitants miniers, alors que les premiers ont conserv\u00e9s leurs rudes traditions montagnardes.",
+        "Terrain": "Glace, montagnes vertigineuses",
+        "real_id": "57",
+        "id": 57
+    },
+    {
+        "Places to visit": "The Citadel",
+        "Name": "Lola Sayu",
+        "Comments": "Site de la Citadelle, prison Jedi",
+        "Terrain": "Volcanique",
+        "real_id": "58",
+        "id": 58
+    },
+    {
+        "Name": "Maridun",
+        "real_id": "59",
+        "id": 59
+    },
+    {
+        "Name": "Moraband",
+        "Comments": "Vall\u00e9e des seigneurs noirs, s\u00e9pultures de puissants Sith",
+        "real_id": "60",
+        "id": 60
+    },
+    {
+        "Name": "Mortis",
+        "System": "Chrelythiumn",
+        "Places to visit": "Well of the Dark Side",
+        "Comments": "Terre natale des Mortis Gods",
+        "Sector": "Inconnu",
+        "real_id": "61",
+        "id": 61
+    },
+    {
+        "Name": "Quermia",
+        "real_id": "62",
+        "id": 62
+    },
+    {
+        "Places to visit": "Raxulon",
+        "Name": "Raxus",
+        "Comments": "Capitale de la Conf\u00e9d\u00e9ration des Syst\u00e8mes Ind\u00e9pendants durant la Guerre des Clones.",
+        "Capital City": "Raxulon",
+        "Terrain": "For\u00eats, plaines, oc\u00e9ans",
+        "real_id": "63",
+        "id": 63
+    },
+    {
+        "Name": "Scipio",
+        "Comments": "Quartier g\u00e9n\u00e9ral du Clan Bancaire InterGalactique",
+        "Terrain": "Glaces",
+        "real_id": "64",
+        "id": 64
+    },
+    {
+        "Places to visit": "Saffia",
+        "Name": "Serenno",
+        "Capital City": "Carannia",
+        "Terrain": "For\u00eats",
+        "real_id": "65",
+        "id": 65
+    },
+    {
+        "Name": "Stygeon Prime",
+        "Comments": "Prison de haute s\u00e9curit\u00e9 - La fl\u00e8che (???)",
+        "Terrain": "Montagnes enneig\u00e9es",
+        "real_id": "66",
+        "id": 66
+    },
+    {
+        "Name": "Antar 4",
+        "Comments": "Lieu des tristement c\u00e9l\u00e8bres Atrocit\u00e9s d'Antar, perp\u00e9tr\u00e9es par le Grand Moff Tarkin en avertissement aux anciens S\u00e9paratistes.",
+        "real_id": "67",
+        "id": 67
+    },
+    {
+        "Name": "Balnab",
+        "Comments": "Primitive",
+        "real_id": "68",
+        "id": 68
+    },
+    {
+        "Name": "Garel",
+        "real_id": "69",
+        "id": 69
+    },
+    {
+        "Name": "Gorse",
+        "Comments": "Monde minier, dont un h\u00e9misph\u00e8re est perp\u00e9tuellement plong\u00e9 dans l'ombre et l'autre baign\u00e9 par un soleil br\u00fblant.",
+        "Moons": "Cynda",
+        "real_id": "70",
+        "id": 70
+    },
+    {
+        "Name": "Kuat",
+        "Comments": "Les chantiers navals de Kuat sont renomm\u00e9s partout dans la galaxie. Un vaste anneau artificiel d'usines et de docks de l'espace encercle la plan\u00e8te, ce qui permet de construire les vaisseaux en orbite.",
+        "real_id": "71",
+        "id": 71
+    },
+    {
+        "Name": "Lothal",
+        "System": "Lothal",
+        "Places to visit": "Jhothal, Imperial Academy, Kothal, Tarkin Town",
+        "Comments": "Autrefois paisible monde agricole c\u00e9l\u00e8bre pour le fruit jogan.\u000bLa plan\u00e8te est exploit\u00e9e sans m\u00e9nagement par l'Empire pour ses minerais et crystaux pour alimenter sa production militaire.\u000b\u000bA un temple Jedi",
+        "Region": "7",
+        "Sector": "Lothal",
+        "First apparition (Canon)": 1176,
+        "real_id": "72",
+        "id": 72
+    },
+    {
+        "Name": "Mandalore",
+        "System": "Mandalore",
+        "Moons": "Concordia",
+        "Comments": "Monde autrefois splendide ravag\u00e9 par des si\u00e8cles de guerres.",
+        "Capital City": "Sundari",
+        "Region": "7",
+        "Sector": "Mandalore",
+        "real_id": "73",
+        "id": 73
+    },
+    {
+        "Name": "Onderon",
+        "Places to visit": "Unifar Temple, Yolahn Square, Malgan Market",
+        "Fauna": "Redoutables cr\u00e9atures",
+        "Comments": "Villes prot\u00e9g\u00e9es par des murs \u00e9pais",
+        "Capital City": "Iziz",
+        "Region": "4",
+        "Terrain": "Jungles",
+        "real_id": "74",
+        "id": 74
+    },
+    {
+        "Places to visit": "Ord Mantell City",
+        "Name": "Ord Mantell",
+        "Comments": "Plan\u00e8te montagneuse couverte d'\u00e9pais nuages roses et habit\u00e9e par les Falleens et les humains. C\u00e9l\u00e8bre pour \u00eatre la base du Black Sun.",
+        "Region": "5",
+        "real_id": "75",
+        "id": 75
+    },
+    {
+        "System": "Ruusan",
+        "Name": "Ruusan",
+        "Moons": "3",
+        "real_id": "76",
+        "id": 76
+    },
+    {
+        "Name": "Shantipole",
+        "Comments": "Temp\u00eates font rage entre les fl\u00e8ches montagneuses de Shantipole. L'atmosph\u00e8re est un pi\u00e8ge pour les vaisseaux.",
+        "real_id": "77",
+        "id": 77
+    },
+    {
+        "Name": "Shili",
+        "real_id": "78",
+        "id": 78
+    },
+    {
+        "Places to visit": "B'omarr Monks Temple",
+        "Name": "Teth",
+        "Comments": "Contr\u00f4l\u00e9e par les Hutts. Autrefois occup\u00e9e par les moines B'omarr.",
+        "Terrain": "Montagnes, jungles",
+        "real_id": "79",
+        "id": 79
+    },
+    {
+        "Places to visit": "Neshorino",
+        "Name": "Abednedo",
+        "Comments": "Dernier ordre cruel de Palpatine, Operation Cinder, est un plan de vengeance qui doit se d\u00e9clencher \u00e0 sa mort. Il vise \u00e0 d\u00e9truire des mondes entiers, dont Abednedo.",
+        "real_id": "80",
+        "id": 80
+    },
+    {
+        "Name": "Bardotta",
+        "Comments": "Population fascin\u00e9e par le mysticisme",
+        "Terrain": "Montagnes, Glaces",
+        "real_id": "81",
+        "id": 81
+    },
+    {
+        "Name": "Bothawui",
+        "Comments": "Denses anneaux d'ast\u00e9ro\u00efdes entourant la g\u00e9ante gazeuse Bothawui permettent aux pilotes de s'entra\u00eener.",
+        "real_id": "82",
+        "id": 82
+    },
+    {
+        "Name": "Cerea",
+        "Comments": "Un beau monde, largement pr\u00e9serv\u00e9 des ravages de la technologie.",
+        "Places to visit": "Asphodar 3",
+        "real_id": "83",
+        "id": 83
+    },
+    {
+        "Name": "Christophsis",
+        "System": "Christoph",
+        "Places to visit": "Tophen",
+        "Comments": "For\u00eats de crystals recouvrent sa surface",
+        "Capital City": "Tophen",
+        "Region": "7",
+        "Sector": "Savareen",
+        "real_id": "84",
+        "id": 84
+    },
+    {
+        "Name": "Devaron",
+        "Places to visit": "Jedi Temple of Eedit, Tikaroo",
+        "Comments": "Abrite un Temple Jedi (Jedi Temple of Eedit)",
+        "Terrain": "For\u00eats, rivi\u00e8res et jungles tropicales",
+        "real_id": "85",
+        "id": 85
+    },
+    {
+        "Name": "Endor",
+        "System": "Endor",
+        "Places to visit": "Village Ewok de Bright Tree, Campalan Mountain",
+        "Moons": "Lune d'Endor",
+        "Region": "7",
+        "Terrain": "For\u00eat",
+        "Sector": "Modell",
+        "real_id": "86",
+        "id": 86
+    },
+    {
+        "Name": "Quarzite",
+        "Comments": "La vie ne peut se d\u00e9velopper \u00e0 la surface. Les habitants de ce monde ont longtemps combattu pour le contr\u00f4le de ses cavernes cristallines souterraines. L'acc\u00e8s \u00e0 celles-ci n'est possible que par des ascenseurs g\u00e9ants qui conduisent d'une station orbitale \u00e0 l'int\u00e9rieur de la cro\u00fbte de la plan\u00e8te.",
+        "real_id": "87",
+        "id": 87
+    },
+    {
+        "Name": "Rattatak",
+        "Comments": "Monde sec et rocailleux",
+        "real_id": "88",
+        "id": 88
+    },
+    {
+        "Name": "Rodia",
+        "System": "Tyrius",
+        "Fauna": "Kwazel Maw\u000bPlusieurs types de serpents\u000bGhests",
+        "Comments": "Les rodiens vivent dans des cit\u00e9s flottantes contenues dans de vastes d\u00f4mes environnementaux, qui prot\u00e8gent les habitants des effets extr\u00eames du climat.",
+        "Region": "7",
+        "Terrain": "Marais, jungles",
+        "Sector": "Savareen",
+        "real_id": "89",
+        "id": 89
+    },
+    {
+        "Name": "Andelm IV",
+        "Comments": "Monde isol\u00e9 connu pour ses scarab\u00e9es et source d'un minerai rare, la dedlanite",
+        "real_id": "90",
+        "id": 90
+    },
+    {
+        "Name": "Arkanis",
+        "Comments": "La pluie est incessante sur Arkanis, variant de la bruine aux temp\u00eates intenses. L'Empire y base une acad\u00e9mie dirig\u00e9e par le Commandant Brendol Hux, afin d'entra\u00eener une nouvelle g\u00e9n\u00e9ration d'officiers d'\u00e9lite. C'est aussi le site du Projet Moissonneur, qui rassemble des enfants sensibles \u00e0 la Force.",
+        "Region": "7",
+        "real_id": "91",
+        "id": 91
+    },
+    {
+        "Name": "Hoth",
+        "System": "Hoth",
+        "Places to visit": "Echo Base",
+        "Fauna": "Wampa",
+        "Comments": "6th Planet",
+        "Region": "7",
+        "Terrain": "Glaces",
+        "Sector": "Anoat",
+        "real_id": "92",
+        "id": 92
+    },
+    {
+        "Name": "Ryloth",
+        "System": "Ryloth",
+        "Places to visit": "Nabat, D\u00e9sert Jixuen, Drua, Tann Province",
+        "Fauna": "Blurrg\u000bLylek\u000bGutkurr",
+        "Capital City": "Lessu",
+        "Region": "7",
+        "Terrain": "Volcans, jungles, vall\u00e9es",
+        "Sector": "Gaulus",
+        "real_id": "93",
+        "id": 93
+    },
+    {
+        "Name": "Castilon",
+        "Moons": "2 ?",
+        "Comments": "Last Stop before the Unknown Regions",
+        "Region": "7",
+        "Sector": "Tashton",
+        "real_id": "94",
+        "id": 94
+    },
+    {
+        "Name": "Fondor",
+        "Comments": "There's an Imperial Shipyards on this planet",
+        "real_id": "95",
+        "id": 95
+    },
+    {
+        "Name": "Lah'Mu",
+        "real_id": "96",
+        "id": 96
+    },
+    {
+        "Name": "Chandar's Foly",
+        "Region": "7",
+        "real_id": "97",
+        "id": 97
+    },
+    {
+        "Name": "Encrust II",
+        "real_id": "98",
+        "id": 98
+    },
+    {
+        "Name": "Strokill Prime",
+        "real_id": "99",
+        "id": 99
+    },
+    {
+        "Name": "Mako-Ta",
+        "Region": "7",
+        "real_id": "100",
+        "id": 100
+    },
+    {
+        "Name": "Son-Tuul",
+        "Region": "7",
+        "real_id": "101",
+        "id": 101
+    },
+    {
+        "Name": "Senex-Juvex",
+        "real_id": "102",
+        "id": 102
+    },
+    {
+        "Name": "Thannt",
+        "real_id": "103",
+        "id": 103
+    },
+    {
+        "Name": "Tiferep Major",
+        "Comments": "Ruins of Accresker Jail",
+        "real_id": "104",
+        "id": 104
+    },
+    {
+        "Places to visit": "Grail City",
+        "Name": "Ikkrukk",
+        "Region": "5",
+        "real_id": "105",
+        "id": 105
+    },
+    {
+        "Name": "Hovun Four",
+        "real_id": "106",
+        "id": 106
+    },
+    {
+        "Name": "Munt Ontdal",
+        "real_id": "107",
+        "id": 107
+    },
+    {
+        "Name": "X3-299-11",
+        "real_id": "108",
+        "id": 108
+    },
+    {
+        "Name": "Hradreek",
+        "Comments": "Podrace Planet",
+        "real_id": "109",
+        "id": 109
+    },
+    {
+        "Name": "Vrogas Vas",
+        "Comments": "Barren world with no known native life forms.\u000b\u000bAvait un temple Jedi jadis.\u000b\u000bAbrite une secret rebel refueling base",
+        "real_id": "110",
+        "id": 110
+    },
+    {
+        "Name": "Bray",
+        "Comments": "\"Planet of Eternal Night\"",
+        "real_id": "111",
+        "id": 111
+    },
+    {
+        "Name": "Rendel",
+        "real_id": "112",
+        "id": 112
+    },
+    {
+        "Name": "Ushruu",
+        "real_id": "113",
+        "id": 113
+    },
+    {
+        "Places to visit": "Hutta Town, Wormstew Town",
+        "Name": "Nar Shaddaa",
+        "Comments": "Surnomm\u00e9 \"Smuggler's Moon\"",
+        "First apparition (Legends)": "Star Wars: Dark Empire",
+        "real_id": "114",
+        "id": 114
+    },
+    {
+        "Name": "Corosi-7",
+        "real_id": "115",
+        "id": 115
+    },
+    {
+        "Name": "Toydaria",
+        "real_id": "116",
+        "id": 116
+    },
+    {
+        "Name": "Rugosa",
+        "real_id": "117",
+        "id": 117
+    },
+    {
+        "Name": "Bith",
+        "real_id": "118",
+        "id": 118
+    },
+    {
+        "Name": "Abregado",
+        "real_id": "119",
+        "id": 119
+    },
+    {
+        "Name": "Barnahof",
+        "Region": "7",
+        "real_id": "120",
+        "id": 120
+    },
+    {
+        "Name": "Hubin",
+        "real_id": "121",
+        "id": 121
+    },
+    {
+        "Name": "Dene Gois Cluster",
+        "real_id": "122",
+        "id": 122
+    },
+    {
+        "Name": "Ryndellia",
+        "real_id": "123",
+        "id": 123
+    },
+    {
+        "Name": "Balmorra",
+        "real_id": "124",
+        "id": 124
+    },
+    {
+        "Name": "Kaliida Nebula",
+        "real_id": "125",
+        "id": 125
+    },
+    {
+        "Name": "Ardennia",
+        "real_id": "126",
+        "id": 126
+    },
+    {
+        "Name": "Nantoon",
+        "real_id": "127",
+        "id": 127
+    },
+    {
+        "Name": "Boiyuh",
+        "real_id": "128",
+        "id": 128
+    },
+    {
+        "Name": "Urthak",
+        "real_id": "129",
+        "id": 129
+    },
+    {
+        "Name": "Zanbar",
+        "real_id": "130",
+        "id": 130
+    },
+    {
+        "Name": "Bri'n",
+        "real_id": "131",
+        "id": 131
+    },
+    {
+        "Name": "Tehar",
+        "Region": "8",
+        "real_id": "132",
+        "id": 132
+    },
+    {
+        "Name": "Rishi",
+        "real_id": "133",
+        "id": 133
+    },
+    {
+        "Places to visit": "Am'balaar City, Mount Pasvaal",
+        "Name": "Al'doleem",
+        "Comments": "River Moon",
+        "Region": "5",
+        "real_id": "134",
+        "id": 134
+    },
+    {
+        "Name": "Cabarria",
+        "Region": "2",
+        "real_id": "135",
+        "id": 135
+    },
+    {
+        "Name": "Malachor",
+        "real_id": "136",
+        "id": 136
+    },
+    {
+        "Name": "Lasan",
+        "real_id": "137",
+        "id": 137
+    },
+    {
+        "Name": "Pastil",
+        "real_id": "138",
+        "id": 138
+    },
+    {
+        "Name": "Tibrin",
+        "Terrain": "Coral reefs",
+        "real_id": "139",
+        "id": 139
+    },
+    {
+        "Name": "Dallenor",
+        "Region": "5",
+        "real_id": "140",
+        "id": 140
+    },
+    {
+        "Name": "Falleen",
+        "real_id": "141",
+        "id": 141
+    },
+    {
+        "Name": "Fort Anaxes",
+        "Comments": "Abandonn\u00e9 apr\u00e8s Clone Wars",
+        "real_id": "142",
+        "id": 142
+    },
+    {
+        "Name": "Telerath",
+        "real_id": "143",
+        "id": 143
+    },
+    {
+        "Name": "Seelos",
+        "real_id": "144",
+        "id": 144
+    },
+    {
+        "Name": "Savareen",
+        "real_id": "145",
+        "id": 145
+    },
+    {
+        "Name": "Novka",
+        "real_id": "146",
+        "id": 146
+    },
+    {
+        "Name": "Brentaal IV",
+        "real_id": "147",
+        "id": 147
+    },
+    {
+        "Name": "Cymoon-1",
+        "Comments": "La plus grosse usine d'armes de la galaxie. Op\u00e9r\u00e9 par KDY, Sienra, Loronoar, Blastech.\u000bAu centre du territoire imp\u00e9rial",
+        "real_id": "148",
+        "id": 148
+    },
+    {
+        "Name": "Bestine",
+        "Region": "4",
+        "Places to visit": "Jahnae",
+        "real_id": "149",
+        "id": 149
+    },
+    {
+        "Name": "Vanqor",
+        "real_id": "150",
+        "id": 150
+    },
+    {
+        "Name": "Florrum",
+        "Region": "7",
+        "Sector": "Sertar",
+        "real_id": "151",
+        "id": 151
+    },
+    {
+        "Name": "Quell",
+        "real_id": "152",
+        "id": 152
+    },
+    {
+        "Name": "Duro",
+        "real_id": "153",
+        "id": 153
+    },
+    {
+        "Name": "Clabron",
+        "real_id": "154",
+        "id": 154
+    },
+    {
+        "Name": "Ledeve",
+        "real_id": "155",
+        "id": 155
+    },
+    {
+        "Name": "Orto Plutonia",
+        "real_id": "156",
+        "id": 156
+    },
+    {
+        "Name": "Pantora",
+        "real_id": "157",
+        "id": 157
+    },
+    {
+        "Name": "Millius Prime",
+        "Comments": "Sur la lune",
+        "real_id": "158",
+        "id": 158
+    },
+    {
+        "Name": "Cianap",
+        "real_id": "159",
+        "id": 159
+    },
+    {
+        "Name": "Gralak",
+        "Region": "7",
+        "real_id": "160",
+        "id": 160
+    },
+    {
+        "Name": "Numidian Prime",
+        "real_id": "161",
+        "id": 161
+    },
+    {
+        "Name": "Gamorr",
+        "real_id": "162",
+        "id": 162
+    },
+    {
+        "Name": "Pijal",
+        "real_id": "163",
+        "id": 163
+    },
+    {
+        "Name": "Gatalenta",
+        "real_id": "164",
+        "id": 164
+    },
+    {
+        "Name": "Riosa",
+        "real_id": "165",
+        "id": 165
+    },
+    {
+        "Name": "Ceiran",
+        "real_id": "166",
+        "id": 166
+    },
+    {
+        "Name": "Badtibira",
+        "real_id": "167",
+        "id": 167
+    },
+    {
+        "Places to visit": "University of Cadomai",
+        "Name": "Cadomai",
+        "real_id": "168",
+        "id": 168
+    },
+    {
+        "Name": "Uro",
+        "real_id": "169",
+        "id": 169
+    },
+    {
+        "Name": "Byss",
+        "real_id": "170",
+        "id": 170
+    },
+    {
+        "Name": "Shurrupak",
+        "real_id": "171",
+        "id": 171
+    },
+    {
+        "Name": "Rinn",
+        "Terrain": "Glaces",
+        "real_id": "172",
+        "id": 172
+    },
+    {
+        "Name": "Wrea",
+        "real_id": "173",
+        "id": 173
+    },
+    {
+        "Name": "Wecacoe",
+        "Region": "2",
+        "real_id": "174",
+        "id": 174
+    },
+    {
+        "Name": "Rango Tan",
+        "real_id": "175",
+        "id": 175
+    },
+    {
+        "Name": "Kalarassi Five",
+        "real_id": "176",
+        "id": 176
+    },
+    {
+        "Name": "Mermeia",
+        "Comments": "Bar inside an asteroid",
+        "real_id": "177",
+        "id": 177
+    },
+    {
+        "Name": "Irff",
+        "Comments": "Vacation Planet",
+        "real_id": "178",
+        "id": 178
+    },
+    {
+        "Name": "Ibaar",
+        "Region": "7",
+        "real_id": "179",
+        "id": 179
+    },
+    {
+        "Name": "Lotho Minor",
+        "real_id": "180",
+        "id": 180
+    },
+    {
+        "System": "Naboo",
+        "Name": "Karlinus",
+        "Comments": "Renowned for agricultural output.",
+        "Sector": "Chomell",
+        "real_id": "181",
+        "id": 181
+    },
+    {
+        "Places to visit": "Hanna City, Heroes of the Republic Boulevard, Frander's Bay",
+        "Name": "Chandrila",
+        "Region": "1",
+        "real_id": "182",
+        "id": 182
+    },
+    {
+        "Name": "Coyerti",
+        "real_id": "183",
+        "id": 183
+    },
+    {
+        "Name": "Sivad",
+        "real_id": "184",
+        "id": 184
+    },
+    {
+        "Name": "Thiafena",
+        "real_id": "185",
+        "id": 185
+    },
+    {
+        "Name": "Joh'Cire",
+        "Comments": "Desert Moon",
+        "real_id": "186",
+        "id": 186
+    },
+    {
+        "Name": "Bromlarch",
+        "real_id": "187",
+        "id": 187
+    },
+    {
+        "Name": "Shadda-Bi-Boran",
+        "real_id": "188",
+        "id": 188
+    },
+    {
+        "Name": "Unox",
+        "Comments": "Abandonned Spice Mine",
+        "real_id": "189",
+        "id": 189
+    },
+    {
+        "Name": "Arbiflux",
+        "Region": "7",
+        "real_id": "190",
+        "id": 190
+    },
+    {
+        "Name": "Carajam",
+        "Region": "7",
+        "real_id": "191",
+        "id": 191
+    },
+    {
+        "Name": "Troiken",
+        "real_id": "192",
+        "id": 192
+    },
+    {
+        "Places to visit": "Motok",
+        "Name": "Cyrkon",
+        "Region": "7",
+        "real_id": "193",
+        "id": 193
+    },
+    {
+        "Name": "Kiros",
+        "real_id": "194",
+        "id": 194
+    },
+    {
+        "Name": "Meor Ain",
+        "real_id": "195",
+        "id": 195
+    },
+    {
+        "Name": "Del Zinnis",
+        "real_id": "196",
+        "id": 196
+    },
+    {
+        "Places to visit": "Carbon Score Cantina",
+        "System": "Anoat",
+        "Name": "Burnin Konn",
+        "Region": "7",
+        "real_id": "197",
+        "id": 197
+    },
+    {
+        "Name": "Dannamore",
+        "real_id": "198",
+        "id": 198
+    },
+    {
+        "Name": "Mygeeto",
+        "real_id": "199",
+        "id": 199
+    },
+    {
+        "Name": "Bracca",
+        "Comments": "The place that the First Order sends any and all claimed New Republic ships to be decommissioned and junked.",
+        "Region": "5",
+        "real_id": "200",
+        "id": 200
+    },
+    {
+        "Name": "Dorin",
+        "real_id": "201",
+        "id": 201
+    },
+    {
+        "Name": "Insk",
+        "real_id": "202",
+        "id": 202
+    },
+    {
+        "Name": "Daxan Beta",
+        "real_id": "203",
+        "id": 203
+    },
+    {
+        "Name": "Vanooria",
+        "real_id": "204",
+        "id": 204
+    },
+    {
+        "Name": "Balamak",
+        "real_id": "205",
+        "id": 205
+    },
+    {
+        "Name": "Iktotch",
+        "real_id": "206",
+        "id": 206
+    },
+    {
+        "Name": "Bormea Sector",
+        "real_id": "207",
+        "id": 207
+    },
+    {
+        "Name": "Pressylla",
+        "real_id": "208",
+        "id": 208
+    },
+    {
+        "Name": "Gorma",
+        "real_id": "209",
+        "id": 209
+    },
+    {
+        "Name": "Suraz 4",
+        "real_id": "210",
+        "id": 210
+    },
+    {
+        "Name": "Suraz 5",
+        "real_id": "211",
+        "id": 211
+    },
+    {
+        "Name": "Ord Cestus",
+        "real_id": "212",
+        "id": 212
+    },
+    {
+        "Name": "Myomar",
+        "real_id": "213",
+        "id": 213
+    },
+    {
+        "Name": "Lysatra",
+        "real_id": "214",
+        "id": 214
+    },
+    {
+        "Name": "Batonn",
+        "real_id": "215",
+        "id": 215
+    },
+    {
+        "Name": "Socorro",
+        "real_id": "216",
+        "id": 216
+    },
+    {
+        "Name": "Moltok",
+        "real_id": "217",
+        "id": 217
+    },
+    {
+        "Name": "Keitum",
+        "real_id": "218",
+        "id": 218
+    },
+    {
+        "Name": "Uba",
+        "Sector": "Barsa",
+        "real_id": "219",
+        "id": 219
+    },
+    {
+        "Name": "Kril'Dor",
+        "real_id": "220",
+        "id": 220
+    },
+    {
+        "Name": "Umbara",
+        "real_id": "221",
+        "id": 221
+    },
+    {
+        "Name": "Nubia",
+        "real_id": "222",
+        "id": 222
+    },
+    {
+        "Name": "Cyphar",
+        "real_id": "223",
+        "id": 223
+    },
+    {
+        "Name": "Kintoni",
+        "real_id": "224",
+        "id": 224
+    },
+    {
+        "Name": "Lansend 26",
+        "real_id": "225",
+        "id": 225
+    },
+    {
+        "Name": "Botajef",
+        "real_id": "226",
+        "id": 226
+    },
+    {
+        "Name": "Denash",
+        "real_id": "227",
+        "id": 227
+    },
+    {
+        "Name": "Sammun",
+        "real_id": "228",
+        "id": 228
+    },
+    {
+        "Name": "Takobo",
+        "real_id": "229",
+        "id": 229
+    },
+    {
+        "Name": "Chandel",
+        "real_id": "230",
+        "id": 230
+    },
+    {
+        "Name": "Concord Dawn",
+        "real_id": "231",
+        "id": 231
+    },
+    {
+        "Name": "Lira San",
+        "real_id": "232",
+        "id": 232
+    },
+    {
+        "Name": "Onsalon Mesa",
+        "real_id": "233",
+        "id": 233
+    },
+    {
+        "Name": "Atollon",
+        "real_id": "234",
+        "id": 234
+    },
+    {
+        "Name": "Actlyon",
+        "real_id": "235",
+        "id": 235
+    },
+    {
+        "Name": "Abelor",
+        "real_id": "236",
+        "id": 236
+    },
+    {
+        "Name": "Linasals",
+        "real_id": "237",
+        "id": 237
+    },
+    {
+        "Name": "Eroudac",
+        "real_id": "238",
+        "id": 238
+    },
+    {
+        "Name": "Toledian",
+        "real_id": "239",
+        "id": 239
+    },
+    {
+        "Name": "Urajab",
+        "real_id": "240",
+        "id": 240
+    },
+    {
+        "Name": "Clak'Dor",
+        "real_id": "241",
+        "id": 241
+    },
+    {
+        "Name": "Haneli",
+        "real_id": "242",
+        "id": 242
+    },
+    {
+        "Name": "Ketz",
+        "real_id": "243",
+        "id": 243
+    },
+    {
+        "Name": "Cuyacan",
+        "real_id": "244",
+        "id": 244
+    },
+    {
+        "Name": "Chibbier",
+        "Terrain": "For\u00eats",
+        "real_id": "245",
+        "id": 245
+    },
+    {
+        "Name": "Ielo",
+        "real_id": "246",
+        "id": 246
+    },
+    {
+        "Name": "Yarma",
+        "real_id": "247",
+        "id": 247
+    },
+    {
+        "Name": "Teralov",
+        "real_id": "248",
+        "id": 248
+    },
+    {
+        "Name": "Agamar",
+        "real_id": "249",
+        "id": 249
+    },
+    {
+        "Name": "Mykapo",
+        "real_id": "250",
+        "id": 250
+    },
+    {
+        "Name": "Synistahg",
+        "real_id": "251",
+        "id": 251
+    },
+    {
+        "Name": "Wynkahthu",
+        "real_id": "252",
+        "id": 252
+    },
+    {
+        "Name": "Jamiri",
+        "real_id": "253",
+        "id": 253
+    },
+    {
+        "Name": "Lokud 7",
+        "real_id": "254",
+        "id": 254
+    },
+    {
+        "Name": "Namzor",
+        "Region": "5",
+        "real_id": "255",
+        "id": 255
+    },
+    {
+        "Name": "Ahn Krantarium",
+        "Region": "5",
+        "real_id": "256",
+        "id": 256
+    },
+    {
+        "Name": "Phelzepham",
+        "Region": "5",
+        "real_id": "257",
+        "id": 257
+    },
+    {
+        "Name": "Kankalo Belt Containment",
+        "Region": "5",
+        "real_id": "258",
+        "id": 258
+    },
+    {
+        "Name": "Bar'leth",
+        "real_id": "259",
+        "id": 259
+    },
+    {
+        "Name": "Draboon",
+        "real_id": "260",
+        "id": 260
+    },
+    {
+        "Name": "Krownest",
+        "real_id": "261",
+        "id": 261
+    },
+    {
+        "Name": "Ghorman",
+        "real_id": "262",
+        "id": 262
+    },
+    {
+        "Name": "Killun-71",
+        "real_id": "263",
+        "id": 263
+    },
+    {
+        "Name": "Jalindi",
+        "real_id": "264",
+        "id": 264
+    },
+    {
+        "Name": "Montross",
+        "real_id": "265",
+        "id": 265
+    },
+    {
+        "Name": "Salobea",
+        "Region": "7",
+        "real_id": "266",
+        "id": 266
+    },
+    {
+        "Name": "Atanu",
+        "real_id": "267",
+        "id": 267
+    },
+    {
+        "Name": "Jabone IV",
+        "real_id": "268",
+        "id": 268
+    },
+    {
+        "Name": "Lonania Prime",
+        "real_id": "269",
+        "id": 269
+    },
+    {
+        "Name": "Mupin XII",
+        "real_id": "270",
+        "id": 270
+    },
+    {
+        "Name": "Lanz Carpo",
+        "Comments": "One of the smallest planets in the core, with one of the biggest crime rate",
+        "real_id": "271",
+        "id": 271
+    },
+    {
+        "Name": "K43",
+        "Comments": "Uninhabited volcanic world at the edge of Wild Space",
+        "real_id": "272",
+        "id": 272
+    },
+    {
+        "Name": "Sergia",
+        "Terrain": "D\u00e9serts",
+        "Region": "4",
+        "real_id": "273",
+        "id": 273
+    },
+    {
+        "Name": "Sev Tok",
+        "real_id": "274",
+        "id": 274
+    },
+    {
+        "Name": "Kurost",
+        "real_id": "275",
+        "id": 275
+    },
+    {
+        "Name": "Charra",
+        "real_id": "276",
+        "id": 276
+    },
+    {
+        "Name": "Ja-Bess",
+        "real_id": "278",
+        "id": 277
+    },
+    {
+        "Name": "Fikari",
+        "Region": "7",
+        "real_id": "279",
+        "id": 278
+    },
+    {
+        "Name": "Fellio Asteroid Belt",
+        "Region": "7",
+        "real_id": "280",
+        "id": 279
+    },
+    {
+        "Name": "Arvina",
+        "Terrain": "D\u00e9serts",
+        "Region": "7",
+        "real_id": "281",
+        "id": 280
+    },
+    {
+        "Name": "Demir",
+        "Comments": "Surnomm\u00e9 \"The Iron Planet\"",
+        "Region": "8",
+        "real_id": "282",
+        "id": 281
+    },
+    {
+        "Name": "Necropolis",
+        "Comments": "Junkyard Planet",
+        "real_id": "283",
+        "id": 282
+    },
+    {
+        "System": "Fla'Nagan",
+        "Name": "Jhosh",
+        "real_id": "284",
+        "id": 283
+    },
+    {
+        "Name": "LX-Robynsun V",
+        "Comments": "Il y a une base de la R\u00e9sistance.",
+        "real_id": "285",
+        "id": 284
+    },
+    {
+        "Name": "Usk Minor",
+        "Comments": "Imperial Communication Relay",
+        "real_id": "286",
+        "id": 285
+    },
+    {
+        "Name": "Centax 3",
+        "Comments": "3rd Moon of Coruscant. Nicknamed \"The Aunt\".\u000bHeadquarters for the Chair for the Coalition For Progress",
+        "Region": "1",
+        "real_id": "287",
+        "id": 286
+    },
+    {
+        "System": "Kudo",
+        "Name": "Kudo",
+        "Sector": "Corvair",
+        "real_id": "288",
+        "id": 287
+    },
+    {
+        "Name": "Luprora",
+        "Comments": "Unsuitable environmental conditions, ",
+        "Region": "8",
+        "Terrain": "Glaces, Oc\u00e9ans",
+        "real_id": "289",
+        "id": 288
+    },
+    {
+        "Name": "Minfar",
+        "Terrain": "Jungle",
+        "real_id": "290",
+        "id": 289
+    },
+    {
+        "Name": "Umme",
+        "Comments": "Galaxy-class hunting",
+        "real_id": "291",
+        "id": 290
+    },
+    {
+        "Name": "Mokivj",
+        "Moons": "10 lunes",
+        "Comments": "Beautiful Sunset",
+        "real_id": "292",
+        "id": 291
+    },
+    {
+        "Name": "Plood",
+        "Comments": "Majestic seascapes",
+        "real_id": "293",
+        "id": 292
+    },
+    {
+        "System": "Otomok",
+        "Name": "Hays Minor",
+        "Comments": "Mining Planet, known more for its ore than its people.",
+        "real_id": "294",
+        "id": 293
+    },
+    {
+        "Name": "Tah'Nuhna",
+        "Terrain": "Glaces",
+        "Region": "5",
+        "real_id": "295",
+        "id": 294
+    },
+    {
+        "Name": "Anoat",
+        "Comments": "Garbage Planet.\u000bA eu un camp de la R\u00e9sistance",
+        "real_id": "296",
+        "id": 295
+    },
+    {
+        "Name": "Unknown Planet (Koth's house)",
+        "real_id": "297",
+        "id": 296
+    },
+    {
+        "Name": "Rishi Maze",
+        "real_id": "298",
+        "id": 297
+    },
+    {
+        "Name": "Hosnian System (Destroyed)",
+        "real_id": "299",
+        "id": 298
+    },
+    {
+        "Name": "Mercy Island",
+        "real_id": "300",
+        "id": 299
+    },
+    {
+        "Name": "Mako-Ta Base",
+        "real_id": "301",
+        "id": 300
+    },
+    {
+        "Name": "12th Moon of Falt",
+        "real_id": "302",
+        "id": 301
+    },
+    {
+        "Name": "Mandalorian Asteroid Outpost",
+        "real_id": "303",
+        "id": 302
+    },
+    {
+        "Name": "Dead Moon of Antar",
+        "real_id": "304",
+        "id": 303
+    },
+    {
+        "Name": "Bothawui Prime",
+        "real_id": "305",
+        "id": 304
+    },
+    {
+        "Name": "Ruusan Moon ",
+        "real_id": "306",
+        "id": 305
+    },
+    {
+        "Name": "Rodia?",
+        "real_id": "307",
+        "id": 306
+    },
+    {
+        "Name": "Akkadese Maelstrom",
+        "real_id": "308",
+        "id": 307
+    },
+    {
+        "Places to visit": "Howlan",
+        "Name": "Qhulosk ",
+        "Region": "7",
+        "real_id": "309",
+        "id": 308
+    },
+    {
+        "Name": "Iego",
+        "Region": "7",
+        "real_id": "310",
+        "id": 309
+    },
+    {
+        "Name": "Old Republic Medical Station (quelque part - Sector 11)",
+        "real_id": "311",
+        "id": 310
+    },
+    {
+        "Name": "Death Star I",
+        "First apparition (Canon)": 4,
+        "real_id": "312",
+        "id": 311
+    },
+    {
+        "Name": "Black Spire",
+        "real_id": "313",
+        "id": 312
+    },
+    {
+        "Name": "Black Stall Station (Bane's Outpost) (Destroyed)",
+        "real_id": "314",
+        "id": 313
+    },
+    {
+        "Name": "Bogano",
+        "real_id": "315",
+        "id": 314
+    },
+    {
+        "Name": "Beroq (4)",
+        "real_id": "316",
+        "id": 315
+    },
+    {
+        "Name": "Bahryn",
+        "Comments": "Geonosis Moon",
+        "real_id": "317",
+        "id": 316
+    },
+    {
+        "Name": "Concordia",
+        "real_id": "318",
+        "id": 317
+    },
+    {
+        "Name": "Imperial Refining Platform M36 (Outer Rim)",
+        "real_id": "319",
+        "id": 318
+    },
+    {
+        "Name": "Archeon Pass",
+        "real_id": "320",
+        "id": 319
+    },
+    {
+        "Name": "Garbage Moon of Maher",
+        "real_id": "321",
+        "id": 320
+    },
+    {
+        "Name": "Brooksdion New Republic Space Station",
+        "real_id": "322",
+        "id": 321
+    },
+    {
+        "Name": "Unknown Ice Planet",
+        "real_id": "323",
+        "id": 322
+    },
+    {
+        "Name": "Heva",
+        "real_id": "324",
+        "id": 323
+    },
+    {
+        "Name": "Balith",
+        "real_id": "325",
+        "id": 324
+    },
+    {
+        "Name": "Arkanis Sector",
+        "real_id": "326",
+        "id": 325
+    },
+    {
+        "Name": "Fuacha",
+        "real_id": "327",
+        "id": 326
+    },
+    {
+        "Name": "Colossus",
+        "real_id": "328",
+        "id": 327
+    },
+    {
+        "Name": "Celsor 3",
+        "real_id": "329",
+        "id": 328
+    },
+    {
+        "Name": "Aargonar",
+        "real_id": "330",
+        "id": 329
+    },
+    {
+        "Name": "Drahgor 3",
+        "real_id": "331",
+        "id": 330
+    },
+    {
+        "Name": "Nevarro",
+        "real_id": "332",
+        "id": 331
+    },
+    {
+        "Name": "Ashas Ree",
+        "real_id": "333",
+        "id": 332
+    },
+    {
+        "Name": "Karnac",
+        "real_id": "334",
+        "id": 333
+    },
+    {
+        "Name": "Sorgan",
+        "real_id": "335",
+        "id": 334
+    },
+    {
+        "Name": "Bakura",
+        "real_id": "336",
+        "id": 335
+    },
+    {
+        "Name": "Guavian Space",
+        "real_id": "337",
+        "id": 336
+    },
+    {
+        "Name": "Alzoc III",
+        "real_id": "338",
+        "id": 337
+    },
+    {
+        "Name": "Cyto Caves of Nora",
+        "real_id": "339",
+        "id": 338
+    },
+    {
+        "Places to visit": "The Scyre, Terpsichore Station, Arratu Station, Cleo Station, Calliope Station",
+        "Name": "Parnassos",
+        "real_id": "340",
+        "id": 339
+    },
+    {
+        "Places to visit": "Gardulla the Hutt's Palace, Bilbousa Bazaar",
+        "Name": "Nal Hutta",
+        "Capital City": "Bilbousa",
+        "real_id": "341",
+        "id": 340
+    },
+    {
+        "Name": "Faos Station",
+        "real_id": "342",
+        "id": 341
+    },
+    {
+        "Name": "Naraka",
+        "Comments": "Prison",
+        "real_id": "343",
+        "id": 342
+    },
+    {
+        "System": "Hosnian",
+        "Name": "Raysho",
+        "real_id": "344",
+        "id": 343
+    },
+    {
+        "Places to visit": "Spa",
+        "Name": "Risso Moon",
+        "real_id": "345",
+        "id": 344
+    },
+    {
+        "Name": "Gilded Descent Casino",
+        "real_id": "346",
+        "id": 345
+    },
+    {
+        "Places to visit": "Imperial Security Bureau Black Site",
+        "System": "Outer Rim",
+        "Name": "Tayron",
+        "real_id": "347",
+        "id": 346
+    },
+    {
+        "Name": "Commenor",
+        "real_id": "348",
+        "id": 347
+    },
+    {
+        "Name": "Vetine",
+        "Sector": "Merrick",
+        "real_id": "349",
+        "id": 348
+    },
+    {
+        "Name": "Chorin",
+        "Comments": "Mining Planet",
+        "real_id": "350",
+        "id": 349
+    },
+    {
+        "Name": "Lowik",
+        "Comments": "Secret Rebel Outpost",
+        "Terrain": "Jungle",
+        "real_id": "351",
+        "id": 350
+    },
+    {
+        "Name": "Corellian Industrial Cluster",
+        "real_id": "352",
+        "id": 351
+    },
+    {
+        "Name": "Rentalles",
+        "real_id": "353",
+        "id": 352
+    },
+    {
+        "Name": "Alaris Prime",
+        "Comments": "A un Temple Jedi",
+        "real_id": "354",
+        "id": 353
+    },
+    {
+        "Name": "Arkania",
+        "real_id": "355",
+        "id": 354
+    },
+    {
+        "Name": "Melm",
+        "real_id": "356",
+        "id": 355
+    },
+    {
+        "Name": "Baraan-Fa",
+        "real_id": "357",
+        "id": 356
+    },
+    {
+        "Name": "Sabanash",
+        "real_id": "358",
+        "id": 357
+    },
+    {
+        "Name": "Moon of Ooloponi",
+        "real_id": "359",
+        "id": 358
+    },
+    {
+        "Name": "Upper Etrega",
+        "real_id": "360",
+        "id": 359
+    },
+    {
+        "Name": "Taul",
+        "real_id": "361",
+        "id": 360
+    },
+    {
+        "Name": "Sorgal 12",
+        "real_id": "362",
+        "id": 361
+    },
+    {
+        "Name": "Ozri II",
+        "real_id": "363",
+        "id": 362
+    },
+    {
+        "Places to visit": "Fylar",
+        "Name": "Ontotho",
+        "Comments": "A joint la R\u00e9publique peu avant la Guerre des Clones.\u000b\u000bA un Ancient Temple dans la r\u00e9gion de Fylar",
+        "real_id": "364",
+        "id": 363
+    },
+    {
+        "Name": "Nameel",
+        "real_id": "365",
+        "id": 364
+    },
+    {
+        "Name": "Twon Ketee",
+        "real_id": "366",
+        "id": 365
+    },
+    {
+        "System": "Kellux",
+        "Name": "Kellux",
+        "real_id": "367",
+        "id": 366
+    },
+    {
+        "System": "Drazkel",
+        "Name": "Drazkel",
+        "real_id": "368",
+        "id": 367
+    },
+    {
+        "Name": "Moon of Drazkel",
+        "real_id": "369",
+        "id": 368
+    },
+    {
+        "Name": "Espirion",
+        "Comments": "Heavy militarized, but open to refugees and wanderers - to the point of engineering micro-ecologies to support diverse life forms.",
+        "real_id": "370",
+        "id": 369
+    },
+    {
+        "Name": "Skaradosh",
+        "real_id": "371",
+        "id": 370
+    },
+    {
+        "Places to visit": "Vargo",
+        "Name": "Varkana",
+        "Region": "7",
+        "real_id": "372",
+        "id": 371
+    },
+    {
+        "Places to visit": "Ogden's Hope",
+        "Name": "Elphrona",
+        "Comments": "<div><span style=\"font-size: 1em; -webkit-tap-highlight-color: transparent;\">On the Edge of the Outer Rim, almost to the Unknown Regions.\u000bOld Jedi Treasure Trove.</span><br></div><div><span style=\"font-size: 1em; -webkit-tap-highlight-color: transparent;\">Mining World</span></div>",
+        "Region": "7",
+        "real_id": "373",
+        "id": 372
+    },
+    {
+        "Name": "Aeos Prime",
+        "Comments": "Ancien outpost rebelle",
+        "Sector": "Aeos",
+        "real_id": "374",
+        "id": 373
+    },
+    {
+        "Name": "Gomar",
+        "real_id": "375",
+        "id": 374
+    },
+    {
+        "Name": "Yavin",
+        "real_id": "376",
+        "id": 375
+    },
+    {
+        "Name": "Castell",
+        "Comments": "Imperial Colony",
+        "real_id": "377",
+        "id": 376
+    },
+    {
+        "Name": "Amethia Prime",
+        "Region": "4",
+        "real_id": "378",
+        "id": 377
+    },
+    {
+        "Name": "Barabesh System",
+        "real_id": "379",
+        "id": 378
+    },
+    {
+        "Name": "Vendaxa",
+        "real_id": "380",
+        "id": 379
+    },
+    {
+        "Name": "Anaxes",
+        "real_id": "381",
+        "id": 380
+    },
+    {
+        "Name": "Yalbec Prime",
+        "real_id": "382",
+        "id": 381
+    },
+    {
+        "Places to visit": "Purcoll City",
+        "Name": "Skako Minor",
+        "real_id": "383",
+        "id": 382
+    },
+    {
+        "Name": "Quarantine World III",
+        "Comments": "D\u00e9p\u00f4t de pleins de pi\u00e8ces d'archive",
+        "Sector": "Kallidahin Space",
+        "real_id": "384",
+        "id": 383
+    },
+    {
+        "Name": "Iridonia",
+        "real_id": "385",
+        "id": 384
+    },
+    {
+        "Name": "Imdaar",
+        "real_id": "386",
+        "id": 385
+    },
+    {
+        "Name": "Purkoll",
+        "real_id": "387",
+        "id": 386
+    },
+    {
+        "Name": "Ganath Cloud",
+        "real_id": "388",
+        "id": 387
+    },
+    {
+        "Name": "Trindello System",
+        "real_id": "389",
+        "id": 388
+    },
+    {
+        "Name": "Moons of Ovise",
+        "real_id": "390",
+        "id": 389
+    },
+    {
+        "Name": "Blackfel System",
+        "real_id": "391",
+        "id": 390
+    },
+    {
+        "Name": "Modell Sector",
+        "real_id": "392",
+        "id": 391
+    },
+    {
+        "Name": "Monsua Nebula",
+        "real_id": "393",
+        "id": 392
+    },
+    {
+        "Name": "Celanon",
+        "real_id": "394",
+        "id": 393
+    },
+    {
+        "Name": "Anthan Prime",
+        "Moons": "Anthan 13, Anthan 14",
+        "real_id": "395",
+        "id": 394
+    },
+    {
+        "Name": "Anthan 13",
+        "real_id": "396",
+        "id": 395
+    },
+    {
+        "Name": "Anthan 14",
+        "real_id": "397",
+        "id": 396
+    },
+    {
+        "Name": "Anthan 12",
+        "real_id": "398",
+        "id": 397
+    },
+    {
+        "Name": "Belderone",
+        "real_id": "399",
+        "id": 398
+    },
+    {
+        "Name": "Oba Diah",
+        "real_id": "400",
+        "id": 399
+    },
+    {
+        "Name": "Stenness",
+        "real_id": "401",
+        "id": 400
+    },
+    {
+        "Name": "Anthan 1",
+        "real_id": "402",
+        "id": 401
+    },
+    {
+        "Places to visit": "Myrra",
+        "Name": "Akiva",
+        "Comments": "Une des premi\u00e8res plan\u00e8tes \u00e0 joindre la Nouvelle R\u00e9publique",
+        "Capital City": "Myrra",
+        "real_id": "403",
+        "id": 402
+    },
+    {
+        "Name": "Ephemera",
+        "real_id": "404",
+        "id": 403
+    },
+    {
+        "Name": "Alsakan",
+        "real_id": "405",
+        "id": 404
+    },
+    {
+        "Name": "Bastatha",
+        "real_id": "406",
+        "id": 405
+    },
+    {
+        "Name": "Tovash Tchii",
+        "real_id": "407",
+        "id": 406
+    },
+    {
+        "Name": "Cardo Minor",
+        "real_id": "408",
+        "id": 407
+    },
+    {
+        "Name": "Nuja",
+        "real_id": "409",
+        "id": 408
+    },
+    {
+        "Name": "Inya Prime",
+        "real_id": "410",
+        "id": 409
+    },
+    {
+        "Name": "Gheia Six",
+        "real_id": "411",
+        "id": 410
+    },
+    {
+        "Name": "Spira",
+        "real_id": "412",
+        "id": 411
+    },
+    {
+        "Name": "Thabeska",
+        "real_id": "413",
+        "id": 412
+    },
+    {
+        "Name": "Raada",
+        "real_id": "414",
+        "id": 413
+    },
+    {
+        "Name": "Yerbana",
+        "real_id": "415",
+        "id": 414
+    },
+    {
+        "Places to visit": "Rampart Station",
+        "Name": "Pii",
+        "Comments": "Mashaling Depot for supply ships bound for Geonosis (Construction Death Star)",
+        "real_id": "416",
+        "id": 415
+    },
+    {
+        "Name": "Tcoleet III",
+        "real_id": "417",
+        "id": 416
+    },
+    {
+        "Places to visit": "Lithoporoite Seam",
+        "Name": "Shu-Torun",
+        "Terrain": "Lave",
+        "real_id": "418",
+        "id": 417
+    },
+    {
+        "Name": "Nacronis",
+        "Comments": "Destroyed in Operation Cinder",
+        "real_id": "419",
+        "id": 418
+    },
+    {
+        "System": "Jinata",
+        "Name": "Vardos",
+        "Capital City": "Kestro",
+        "real_id": "420",
+        "id": 419
+    },
+    {
+        "Name": "Candovant",
+        "real_id": "421",
+        "id": 420
+    },
+    {
+        "Name": "Blacktar Cyst",
+        "real_id": "422",
+        "id": 421
+    },
+    {
+        "Name": "Mennar-Daye",
+        "real_id": "423",
+        "id": 422
+    },
+    {
+        "Name": "Beauchen",
+        "real_id": "424",
+        "id": 423
+    },
+    {
+        "Name": "Jiruus",
+        "Moons": "Grinning Moon of Jiruus",
+        "real_id": "425",
+        "id": 424
+    },
+    {
+        "Name": "Entropian Hive",
+        "real_id": "426",
+        "id": 425
+    },
+    {
+        "Name": "Trenchenovu",
+        "real_id": "427",
+        "id": 426
+    },
+    {
+        "Name": "Sarapin",
+        "real_id": "428",
+        "id": 427
+    },
+    {
+        "Name": "Oridol Cluster",
+        "Comments": "Region of densely packed stars and slow-churning cosmic storms that made hyperspace navigation difficult.",
+        "real_id": "429",
+        "id": 428
+    },
+    {
+        "Name": "Kalarba",
+        "real_id": "430",
+        "id": 429
+    },
+    {
+        "Name": "Crushank Nebulae",
+        "Region": "7",
+        "real_id": "431",
+        "id": 430
+    },
+    {
+        "Places to visit": "Fulan Ro",
+        "Name": "Cosmatanic Steppes",
+        "Comments": "The Cosmatanic Steppes is a layer of mantle suspended above a gas giant. It's been a center of archaeological digs and scavenging for the last lhundred years of the historical Art Rush.",
+        "Region": "7",
+        "real_id": "432",
+        "id": 431
+    },
+    {
+        "Name": "Crelythiumn System",
+        "real_id": "433",
+        "id": 432
+    },
+    {
+        "Places to visit": "The Cave of the Cr\u00e8che",
+        "Name": "Ovanis",
+        "real_id": "434",
+        "id": 433
+    },
+    {
+        "Places to visit": "Prison\u000bFortress of Grakkus The Hutt ",
+        "Name": "Megalox Beta",
+        "real_id": "435",
+        "id": 434
+    },
+    {
+        "Name": "Arthon",
+        "real_id": "436",
+        "id": 435
+    },
+    {
+        "Name": "Hosra",
+        "real_id": "437",
+        "id": 436
+    },
+    {
+        "Name": "Kijimi",
+        "Places to visit": "Monk's Gate, Dai Bendu Monastery, Kijimi City, Mount Izukika",
+        "Moons": "0",
+        "Comments": "Destroyed in Episode IX",
+        "Terrain": "Montagnes",
+        "Sector": "Bryx",
+        "real_id": "438",
+        "id": 437
+    },
+    {
+        "Name": "Pheryon",
+        "Region": "4",
+        "real_id": "439",
+        "id": 438
+    },
+    {
+        "Places to visit": "The Sliver",
+        "Name": "Kaddak",
+        "Region": "7",
+        "real_id": "440",
+        "id": 439
+    },
+    {
+        "Name": "Rothana",
+        "Comments": "Chantiers navaux",
+        "real_id": "441",
+        "id": 440
+    },
+    {
+        "Places to visit": "Graf Archive",
+        "Name": "Orchis 2",
+        "real_id": "442",
+        "id": 441
+    },
+    {
+        "Name": "Riflor",
+        "real_id": "443",
+        "id": 442
+    },
+    {
+        "Name": "Cona",
+        "real_id": "444",
+        "id": 443
+    },
+    {
+        "Name": "Kubindi",
+        "real_id": "445",
+        "id": 444
+    },
+    {
+        "Name": "Nimban",
+        "real_id": "446",
+        "id": 445
+    },
+    {
+        "Name": "Gentes",
+        "real_id": "447",
+        "id": 446
+    },
+    {
+        "Name": "Lutrillia",
+        "real_id": "448",
+        "id": 447
+    },
+    {
+        "Name": "Yag'Dhul",
+        "real_id": "449",
+        "id": 448
+    },
+    {
+        "Name": "Dressel",
+        "real_id": "450",
+        "id": 449
+    },
+    {
+        "Name": "Yar Togna",
+        "real_id": "451",
+        "id": 450
+    },
+    {
+        "Name": "Sriluur",
+        "Comments": "In the Hutt Space",
+        "real_id": "452",
+        "id": 451
+    },
+    {
+        "Name": "Lannik",
+        "real_id": "453",
+        "id": 452
+    },
+    {
+        "Name": "Makem Te",
+        "real_id": "454",
+        "id": 453
+    },
+    {
+        "Name": "Mirial",
+        "real_id": "455",
+        "id": 454
+    },
+    {
+        "Name": "Klatooine",
+        "real_id": "456",
+        "id": 455
+    },
+    {
+        "Name": "Kintan",
+        "real_id": "457",
+        "id": 456
+    },
+    {
+        "Name": "Kalee",
+        "real_id": "458",
+        "id": 457
+    },
+    {
+        "Places to visit": "Plateau City",
+        "Name": "Kaller",
+        "Region": "7",
+        "real_id": "459",
+        "id": 458
+    },
+    {
+        "Name": "Spalex",
+        "Comments": "Poss\u00e8de beaucoup de Thorolide. L'Empire a abandonn\u00e9 vu la r\u00e9sistance pour aller vers des plan\u00e8tes plus dociles.",
+        "Region": "7",
+        "real_id": "460",
+        "id": 459
+    },
+    {
+        "Name": "Great Forveen Nebula",
+        "Region": "5",
+        "real_id": "461",
+        "id": 460
+    },
+    {
+        "Name": "Jaelen",
+        "real_id": "462",
+        "id": 461
+    },
+    {
+        "Name": "Hosnian",
+        "real_id": "463",
+        "id": 462
+    },
+    {
+        "Name": "Alakatha",
+        "Terrain": "Beaches",
+        "real_id": "464",
+        "id": 463
+    },
+    {
+        "Name": "Skorupon",
+        "real_id": "465",
+        "id": 464
+    },
+    {
+        "Name": "Polyneus",
+        "real_id": "466",
+        "id": 465
+    },
+    {
+        "Name": "Salient",
+        "real_id": "467",
+        "id": 466
+    },
+    {
+        "Name": "Grumwall",
+        "real_id": "468",
+        "id": 467
+    },
+    {
+        "Name": "Gavana Orbital",
+        "real_id": "469",
+        "id": 468
+    },
+    {
+        "Name": "Dhen-Moh",
+        "real_id": "470",
+        "id": 469
+    },
+    {
+        "Name": "Gordian Reach",
+        "real_id": "471",
+        "id": 470
+    },
+    {
+        "Places to visit": "Induchron",
+        "Name": "Pandem Nai",
+        "Comments": "Gas mining world. Resource-rich.",
+        "real_id": "472",
+        "id": 471
+    },
+    {
+        "Name": "Paqualis",
+        "real_id": "473",
+        "id": 472
+    },
+    {
+        "Name": "Shalam",
+        "real_id": "474",
+        "id": 473
+    },
+    {
+        "Name": "Jendorn",
+        "real_id": "475",
+        "id": 474
+    },
+    {
+        "Name": "Mek'tradi",
+        "real_id": "476",
+        "id": 475
+    },
+    {
+        "Name": "Dryorkeen Cluster",
+        "real_id": "477",
+        "id": 476
+    },
+    {
+        "System": "The Cosmatanic Steppes",
+        "Name": "Archaeo-Prime",
+        "real_id": "478",
+        "id": 477
+    },
+    {
+        "Name": "Boothi XII",
+        "Comments": "Place without history. Farmers doing their simple life thing, for thousand of years.\u000bArchitecture hasn't changed for longer than the Republic existed. But much more of it beneath the surface. There is a vault that might have proof of a previous civilization there. A precursor race,.. something.",
+        "real_id": "479",
+        "id": 478
+    },
+    {
+        "Name": "Fortress of Garn",
+        "Comments": "Also known as the Citadel of Rur.\u000b\u000bHeadquarters of the Ordu Aspectu",
+        "real_id": "480",
+        "id": 479
+    },
+    {
+        "Name": "Thisspias",
+        "real_id": "481",
+        "id": 480
+    },
+    {
+        "Name": "Aleen",
+        "real_id": "482",
+        "id": 481
+    },
+    {
+        "Name": "Chad",
+        "real_id": "483",
+        "id": 482
+    },
+    {
+        "Name": "Merj",
+        "real_id": "484",
+        "id": 483
+    },
+    {
+        "Name": "Toola",
+        "real_id": "485",
+        "id": 484
+    },
+    {
+        "Name": "Florn",
+        "real_id": "486",
+        "id": 485
+    },
+    {
+        "Name": "Ando",
+        "real_id": "487",
+        "id": 486
+    },
+    {
+        "Name": "Clak'Dor VII",
+        "real_id": "488",
+        "id": 487
+    },
+    {
+        "Name": "Vurdon Ka",
+        "real_id": "489",
+        "id": 488
+    },
+    {
+        "Name": "Pollillus",
+        "real_id": "490",
+        "id": 489
+    },
+    {
+        "Name": "Tund",
+        "real_id": "491",
+        "id": 490
+    },
+    {
+        "Name": "Sump",
+        "real_id": "492",
+        "id": 491
+    },
+    {
+        "Name": "Er'kit",
+        "real_id": "493",
+        "id": 492
+    },
+    {
+        "Name": "Ploo IV",
+        "real_id": "494",
+        "id": 493
+    },
+    {
+        "Name": "Kirdo III",
+        "real_id": "495",
+        "id": 494
+    },
+    {
+        "Name": "Orto",
+        "real_id": "496",
+        "id": 495
+    },
+    {
+        "Name": "Kowak",
+        "real_id": "497",
+        "id": 496
+    },
+    {
+        "Name": "Elom",
+        "real_id": "498",
+        "id": 497
+    },
+    {
+        "Name": "Trandosha",
+        "real_id": "499",
+        "id": 498
+    },
+    {
+        "Name": "Askaji",
+        "real_id": "500",
+        "id": 499
+    },
+    {
+        "Name": "Gand",
+        "real_id": "501",
+        "id": 500
+    },
+    {
+        "Name": "Crul",
+        "real_id": "502",
+        "id": 501
+    },
+    {
+        "Name": "Phatrong",
+        "real_id": "503",
+        "id": 502
+    },
+    {
+        "Name": "Li-Toran",
+        "real_id": "504",
+        "id": 503
+    },
+    {
+        "Name": "Dybrin 12",
+        "real_id": "505",
+        "id": 504
+    },
+    {
+        "Name": "Cosian Space",
+        "real_id": "506",
+        "id": 505
+    },
+    {
+        "Name": "Yablari",
+        "real_id": "507",
+        "id": 506
+    },
+    {
+        "Name": "Britaxis Minor",
+        "real_id": "508",
+        "id": 507
+    },
+    {
+        "Name": "Pipada",
+        "real_id": "509",
+        "id": 508
+    },
+    {
+        "Name": "Gigor",
+        "real_id": "510",
+        "id": 509
+    },
+    {
+        "Name": "Tal Pi",
+        "real_id": "511",
+        "id": 510
+    },
+    {
+        "Name": "Vobes",
+        "real_id": "512",
+        "id": 511
+    },
+    {
+        "Name": "Maires",
+        "real_id": "513",
+        "id": 512
+    },
+    {
+        "Name": "Kooriva",
+        "real_id": "514",
+        "id": 513
+    },
+    {
+        "Name": "Tarn",
+        "real_id": "515",
+        "id": 514
+    },
+    {
+        "Name": "Photobranch",
+        "real_id": "516",
+        "id": 515
+    },
+    {
+        "Name": "Neimodia",
+        "real_id": "517",
+        "id": 516
+    },
+    {
+        "Name": "Mileva",
+        "real_id": "518",
+        "id": 517
+    },
+    {
+        "Name": "Gravlex Med",
+        "real_id": "519",
+        "id": 518
+    },
+    {
+        "Name": "Mikkia",
+        "real_id": "520",
+        "id": 519
+    },
+    {
+        "Name": "Skustell",
+        "real_id": "521",
+        "id": 520
+    },
+    {
+        "Name": "Ojom",
+        "real_id": "522",
+        "id": 521
+    },
+    {
+        "Name": "Sembla",
+        "real_id": "523",
+        "id": 522
+    },
+    {
+        "Name": "Tholoth",
+        "real_id": "524",
+        "id": 523
+    },
+    {
+        "Name": "Roona",
+        "real_id": "525",
+        "id": 524
+    },
+    {
+        "Name": "Almak",
+        "real_id": "526",
+        "id": 525
+    },
+    {
+        "Name": "Zolan",
+        "real_id": "527",
+        "id": 526
+    },
+    {
+        "Name": "Cholganna",
+        "real_id": "528",
+        "id": 527
+    },
+    {
+        "Name": "Codian Moon",
+        "real_id": "529",
+        "id": 528
+    },
+    {
+        "Name": "Honoghr",
+        "real_id": "530",
+        "id": 529
+    },
+    {
+        "Name": "Ottega System",
+        "real_id": "531",
+        "id": 530
+    },
+    {
+        "Name": "New Plympto",
+        "real_id": "532",
+        "id": 531
+    },
+    {
+        "Name": "Phindar System",
+        "Sector": "Mandalore",
+        "real_id": "533",
+        "id": 532
+    },
+    {
+        "Name": "Wasskah",
+        "Comments": "Lune de Trandosha",
+        "real_id": "534",
+        "id": 533
+    },
+    {
+        "Name": "Vodran",
+        "real_id": "535",
+        "id": 534
+    },
+    {
+        "Name": "Artiod Minor",
+        "real_id": "536",
+        "id": 535
+    },
+    {
+        "Name": "Danzik",
+        "real_id": "537",
+        "id": 536
+    },
+    {
+        "Name": "Octero IV",
+        "real_id": "538",
+        "id": 537
+    },
+    {
+        "Name": "Manaan",
+        "real_id": "539",
+        "id": 538
+    },
+    {
+        "Name": "Karkaris",
+        "real_id": "540",
+        "id": 539
+    },
+    {
+        "Name": "Croce",
+        "real_id": "541",
+        "id": 540
+    },
+    {
+        "Name": "Patrolia",
+        "real_id": "542",
+        "id": 541
+    },
+    {
+        "Name": "Csilla",
+        "Capital City": "Csaplar",
+        "Region": "8",
+        "real_id": "543",
+        "id": 542
+    },
+    {
+        "Name": "Ruuria",
+        "real_id": "544",
+        "id": 543
+    },
+    {
+        "Name": "Nepotis",
+        "real_id": "545",
+        "id": 544
+    },
+    {
+        "Name": "Indoumodo",
+        "real_id": "546",
+        "id": 545
+    },
+    {
+        "Name": "Bravais",
+        "real_id": "547",
+        "id": 546
+    },
+    {
+        "Name": "Delphidian Cluster",
+        "real_id": "548",
+        "id": 547
+    },
+    {
+        "Name": "Dowut",
+        "real_id": "549",
+        "id": 548
+    },
+    {
+        "Name": "Hasskyn",
+        "real_id": "550",
+        "id": 549
+    },
+    {
+        "Name": "Tansyl 5",
+        "real_id": "551",
+        "id": 550
+    },
+    {
+        "Name": "Nag Ubdur",
+        "real_id": "552",
+        "id": 551
+    },
+    {
+        "Name": "Ubduria",
+        "real_id": "553",
+        "id": 552
+    },
+    {
+        "Name": "Zygerria",
+        "Comments": "Home of the galaxy's most notorious slave empire.",
+        "real_id": "554",
+        "id": 553
+    },
+    {
+        "Name": "Kiffu",
+        "real_id": "555",
+        "id": 554
+    },
+    {
+        "Name": "Kiffex",
+        "Region": "4",
+        "real_id": "556",
+        "id": 555
+    },
+    {
+        "System": "Naboo",
+        "Name": "Jafan",
+        "Comments": "Renowned for agricultural output.\u000b\u000bWas a relatively new colony. They'd arrived in the sector some three hundred years ago, and they were still ruled by the family who established the colony.",
+        "Sector": "Chomell",
+        "real_id": "557",
+        "id": 556
+    },
+    {
+        "System": "Naboo",
+        "Name": "Kreeling",
+        "Comments": "Mining World",
+        "Sector": "Chomell",
+        "real_id": "558",
+        "id": 557
+    },
+    {
+        "System": "Naboo",
+        "Name": "Behpour",
+        "Sector": "Chommell",
+        "real_id": "559",
+        "id": 558
+    },
+    {
+        "System": "Naboo",
+        "Name": "Chommell Minor",
+        "Sector": "Chommell",
+        "real_id": "560",
+        "id": 559
+    },
+    {
+        "Name": "Enarc",
+        "real_id": "561",
+        "id": 560
+    },
+    {
+        "Name": "Yonta Prime",
+        "real_id": "562",
+        "id": 561
+    },
+    {
+        "Name": "Chyron Belt",
+        "real_id": "563",
+        "id": 562
+    },
+    {
+        "Name": "Fusai",
+        "real_id": "564",
+        "id": 563
+    },
+    {
+        "Name": "Chagar IX",
+        "Comments": "Everything revolved around the fighting pits.",
+        "real_id": "565",
+        "id": 564
+    },
+    {
+        "Name": "Tureen VII",
+        "Comments": "A aid\u00e9 les rebelles apr\u00e8s Battle of Yavin",
+        "real_id": "566",
+        "id": 565
+    },
+    {
+        "Name": "Skorii-Lei",
+        "real_id": "567",
+        "id": 566
+    },
+    {
+        "Name": "Vagadaar System",
+        "real_id": "568",
+        "id": 567
+    },
+    {
+        "Name": "Ajan Kloss",
+        "Places to visit": "Klosslands",
+        "Moons": "2 (Ajan est la lune d'une autre plan\u00e8te - Ajara)",
+        "Fauna": "Arboreal Zymod",
+        "Region": "7",
+        "Terrain": "Broadleaf forests, overgrown cliffs and valleys, grottos and oceans",
+        "Sector": "Cademimu",
+        "real_id": "569",
+        "id": 568
+    },
+    {
+        "Places to visit": "Koke Frost",
+        "Name": "Exegol",
+        "Moons": "Aucune",
+        "Region": "8",
+        "Terrain": "Barren Rock, Desert Flats",
+        "real_id": "570",
+        "id": 569
+    },
+    {
+        "Name": "Pasaana",
+        "System": "Middian",
+        "Places to visit": "Lurch ",
+        "Moons": "1",
+        "Region": "3",
+        "Terrain": "Desert Bluffs and dunes",
+        "Sector": "Ombakond",
+        "real_id": "571",
+        "id": 570
+    },
+    {
+        "Name": "Kef Bir",
+        "Region": "7",
+        "System": "Endor",
+        "real_id": "572",
+        "id": 571
+    },
+    {
+        "Name": "Sinta IV",
+        "real_id": "573",
+        "id": 572
+    },
+    {
+        "Places to visit": "Pits",
+        "Name": "Griq",
+        "real_id": "574",
+        "id": 573
+    },
+    {
+        "Name": "Horox III",
+        "Region": "7",
+        "real_id": "575",
+        "id": 574
+    },
+    {
+        "Places to visit": "Citadel of Ktath'atn",
+        "Name": "Ktath'atn",
+        "real_id": "576",
+        "id": 575
+    },
+    {
+        "Name": "Ezaraa",
+        "real_id": "577",
+        "id": 576
+    },
+    {
+        "Name": "Yolthani VI",
+        "real_id": "578",
+        "id": 577
+    },
+    {
+        "System": "Vandelae",
+        "Name": "Aiken Prime",
+        "real_id": "579",
+        "id": 578
+    },
+    {
+        "Name": "Ansett Island",
+        "real_id": "580",
+        "id": 579
+    },
+    {
+        "Name": "Odona",
+        "Comments": "Remote world of harsh extremes and secret alcoves long used by pirates and smugglers to avoid the Empire",
+        "real_id": "581",
+        "id": 580
+    },
+    {
+        "Name": "NaJedha",
+        "real_id": "582",
+        "id": 581
+    },
+    {
+        "Name": "Merokia",
+        "real_id": "583",
+        "id": 582
+    },
+    {
+        "Name": "CeSai",
+        "real_id": "584",
+        "id": 583
+    },
+    {
+        "Name": "Isolate-4",
+        "Region": "7",
+        "real_id": "585",
+        "id": 584
+    },
+    {
+        "Name": "Sorca Retreat",
+        "real_id": "586",
+        "id": 585
+    },
+    {
+        "Name": "Zeltros",
+        "real_id": "587",
+        "id": 586
+    },
+    {
+        "Name": "Someilk",
+        "Region": "7",
+        "real_id": "588",
+        "id": 587
+    },
+    {
+        "Name": "Dendada XVII",
+        "Comments": "Imperial Internal Affairs Outpost",
+        "real_id": "589",
+        "id": 588
+    },
+    {
+        "Name": "Thyron VII",
+        "real_id": "590",
+        "id": 589
+    },
+    {
+        "Name": "Hivebase-1",
+        "real_id": "591",
+        "id": 590
+    },
+    {
+        "Name": "Kartovian Formation",
+        "real_id": "592",
+        "id": 591
+    },
+    {
+        "Name": "Asteroid-H\u00e9lix",
+        "real_id": "593",
+        "id": 592
+    },
+    {
+        "Name": "Karga",
+        "real_id": "594",
+        "id": 593
+    },
+    {
+        "Places to visit": "Meridional Ice Cap, Martyrium of Frozen Tears",
+        "Name": "Tython",
+        "Region": "1",
+        "real_id": "595",
+        "id": 594
+    },
+    {
+        "Name": "Varnak",
+        "Region": "5",
+        "real_id": "596",
+        "id": 595
+    },
+    {
+        "Name": "Minemoon of Mimban",
+        "Region": "5",
+        "real_id": "597",
+        "id": 596
+    },
+    {
+        "Name": "Carnelion IV",
+        "Comments": "Dense Debris Field around the Planet\u000bNot part of the Republic",
+        "real_id": "598",
+        "id": 597
+    },
+    {
+        "Places to visit": "Illmek Island Spaceport",
+        "Name": "Lahn",
+        "Terrain": "Tropical",
+        "real_id": "599",
+        "id": 598
+    },
+    {
+        "Name": "Moraga",
+        "real_id": "600",
+        "id": 599
+    },
+    {
+        "Name": "Kardoa",
+        "real_id": "601",
+        "id": 600
+    },
+    {
+        "Name": "Haruun Kal",
+        "real_id": "602",
+        "id": 601
+    },
+    {
+        "Name": "Hissrich",
+        "Comments": "The planet is in a state of near-perpetual dark, only gathering light from a distant sun for about one hour per monthly cycle.",
+        "Region": "7",
+        "Terrain": "Jungle",
+        "real_id": "603",
+        "id": 602
+    },
+    {
+        "Name": "Mon Gazza",
+        "real_id": "604",
+        "id": 603
+    },
+    {
+        "Name": "Mathas",
+        "real_id": "605",
+        "id": 604
+    },
+    {
+        "Name": "Qlint",
+        "real_id": "606",
+        "id": 605
+    },
+    {
+        "Name": "Kolkur",
+        "Region": "7",
+        "real_id": "607",
+        "id": 606
+    },
+    {
+        "Places to visit": "Lost City of Vaale",
+        "System": "Malitoris",
+        "Name": "Dianth",
+        "real_id": "608",
+        "id": 607
+    },
+    {
+        "Name": "Logal Ri",
+        "Comments": "Moon",
+        "real_id": "609",
+        "id": 608
+    },
+    {
+        "Name": "Galmerah",
+        "Comments": "Graveyard Planet",
+        "real_id": "610",
+        "id": 609
+    },
+    {
+        "Places to visit": "Fortress of the Mourner's Wail",
+        "Name": "Dotharian",
+        "Comments": "Deep in Hutt Space",
+        "real_id": "611",
+        "id": 610
+    },
+    {
+        "Name": "Chorgad",
+        "real_id": "612",
+        "id": 611
+    },
+    {
+        "Name": "Hisseen",
+        "real_id": "613",
+        "id": 612
+    },
+    {
+        "Name": "Benglor",
+        "real_id": "614",
+        "id": 613
+    },
+    {
+        "Places to visit": "The Nexus",
+        "Name": "Quarmendy",
+        "real_id": "615",
+        "id": 614
+    },
+    {
+        "Name": "Harrikos-Fifteen",
+        "real_id": "616",
+        "id": 615
+    },
+    {
+        "Places to visit": "Tinker-Town, Gannory's Cantina, Xnapolis, Cousault, Little Neimoidia",
+        "Name": "Mrinzebon",
+        "real_id": "617",
+        "id": 616
+    },
+    {
+        "Name": "Herdessa",
+        "real_id": "618",
+        "id": 617
+    },
+    {
+        "Name": "Phorsa Gedd",
+        "real_id": "619",
+        "id": 618
+    },
+    {
+        "Name": "Yinchorr",
+        "real_id": "620",
+        "id": 619
+    },
+    {
+        "Name": "Berchest",
+        "real_id": "621",
+        "id": 620
+    },
+    {
+        "Name": "Induchron",
+        "real_id": "622",
+        "id": 621
+    },
+    {
+        "Name": "Vnex",
+        "real_id": "623",
+        "id": 622
+    },
+    {
+        "Name": "Kerkodia",
+        "real_id": "624",
+        "id": 623
+    },
+    {
+        "Name": "Chazwa",
+        "real_id": "625",
+        "id": 624
+    },
+    {
+        "Name": "Harkrova I",
+        "real_id": "626",
+        "id": 625
+    },
+    {
+        "Name": "Thakwaa",
+        "real_id": "627",
+        "id": 626
+    },
+    {
+        "Name": "Aigai Minor",
+        "real_id": "628",
+        "id": 627
+    },
+    {
+        "Name": "Uchinao",
+        "real_id": "629",
+        "id": 628
+    },
+    {
+        "Name": "Koiogra",
+        "real_id": "630",
+        "id": 629
+    },
+    {
+        "Name": "Lyran",
+        "real_id": "631",
+        "id": 630
+    },
+    {
+        "Name": "Rentaxius VIII",
+        "real_id": "632",
+        "id": 631
+    },
+    {
+        "Name": "H'Grathi",
+        "real_id": "633",
+        "id": 632
+    },
+    {
+        "Name": "Corulag",
+        "real_id": "634",
+        "id": 633
+    },
+    {
+        "Name": "Karazak",
+        "Comments": "Slaver World",
+        "real_id": "635",
+        "id": 634
+    },
+    {
+        "Places to visit": "Bakerstown",
+        "Name": "Vernid",
+        "real_id": "636",
+        "id": 635
+    },
+    {
+        "Name": "Hetnagaro",
+        "Comments": "Plan\u00e8te d\u00e9truite par l'Empire",
+        "real_id": "637",
+        "id": 636
+    },
+    {
+        "Name": "Indu San",
+        "real_id": "638",
+        "id": 637
+    },
+    {
+        "Name": "Alamass",
+        "real_id": "639",
+        "id": 638
+    },
+    {
+        "Places to visit": "Solace, Mock, Cairos",
+        "Name": "Cerosha",
+        "real_id": "640",
+        "id": 639
+    },
+    {
+        "Name": "Simoth",
+        "real_id": "641",
+        "id": 640
+    },
+    {
+        "System": "Hoth",
+        "Name": "Jhas",
+        "Moons": "Jhas Krill",
+        "real_id": "642",
+        "id": 641
+    },
+    {
+        "System": "Hoth",
+        "Name": "Jhas Krill",
+        "real_id": "643",
+        "id": 642
+    },
+    {
+        "Name": "Kaspas",
+        "Terrain": "Glaces",
+        "real_id": "644",
+        "id": 643
+    },
+    {
+        "Places to visit": "Tiquwe",
+        "Name": "Aloxor",
+        "Sector": "Essaga",
+        "real_id": "645",
+        "id": 644
+    },
+    {
+        "Name": "Ord Pardon",
+        "real_id": "646",
+        "id": 645
+    },
+    {
+        "Name": "Radnor",
+        "real_id": "647",
+        "id": 646
+    },
+    {
+        "Name": "Tanto Winn",
+        "real_id": "648",
+        "id": 647
+    },
+    {
+        "Places to visit": "Vette Lake, Dande Donjon",
+        "Name": "Xu'hu",
+        "real_id": "649",
+        "id": 648
+    },
+    {
+        "Name": "Pillio",
+        "real_id": "650",
+        "id": 649
+    },
+    {
+        "Name": "Ara Dyelle",
+        "real_id": "651",
+        "id": 650
+    },
+    {
+        "Name": "Otomok",
+        "real_id": "652",
+        "id": 651
+    },
+    {
+        "Name": "Pippip 3",
+        "Fauna": "Whellay",
+        "real_id": "653",
+        "id": 652
+    },
+    {
+        "Name": "Zohakka XVII",
+        "real_id": "654",
+        "id": 653
+    },
+    {
+        "Name": "Pamarthe",
+        "real_id": "655",
+        "id": 654
+    },
+    {
+        "Name": "Setor",
+        "real_id": "656",
+        "id": 655
+    },
+    {
+        "Name": "Kellgar 7",
+        "Region": "7",
+        "real_id": "657",
+        "id": 656
+    },
+    {
+        "Name": "Sawaya",
+        "real_id": "658",
+        "id": 657
+    },
+    {
+        "Name": "Quintil",
+        "Region": "7",
+        "real_id": "659",
+        "id": 658
+    },
+    {
+        "Name": "Formos",
+        "real_id": "660",
+        "id": 659
+    },
+    {
+        "Name": "Davezra Way",
+        "real_id": "661",
+        "id": 660
+    },
+    {
+        "Name": "Moraysi",
+        "Comments": "Mining system populated by a race of tan, stout humanoids who were known for their shipbuilding and inventiveness - but also an ability to actualize their schematics.",
+        "Region": "7",
+        "real_id": "662",
+        "id": 661
+    },
+    {
+        "System": "Opalok",
+        "Name": "Yungbrii",
+        "Comments": "Cold, rocky, and mountainous.",
+        "Region": "5",
+        "real_id": "663",
+        "id": 662
+    },
+    {
+        "Places to visit": "The Marimkes Mountains",
+        "System": "Penagosis",
+        "Name": "Elkeenar",
+        "real_id": "664",
+        "id": 663
+    },
+    {
+        "Name": "Ankot Station",
+        "real_id": "665",
+        "id": 664
+    },
+    {
+        "Name": "Torch Nebula",
+        "real_id": "666",
+        "id": 665
+    },
+    {
+        "Name": "Guat'a",
+        "real_id": "667",
+        "id": 666
+    },
+    {
+        "System": "Nishmar",
+        "Name": "Nishmar",
+        "Region": "8",
+        "real_id": "668",
+        "id": 667
+    },
+    {
+        "Name": "Shownar",
+        "real_id": "669",
+        "id": 668
+    },
+    {
+        "Name": "Llanic Spice Run",
+        "real_id": "670",
+        "id": 669
+    },
+    {
+        "Name": "Triellus Trade Route",
+        "real_id": "671",
+        "id": 670
+    },
+    {
+        "Name": "Llanic",
+        "real_id": "672",
+        "id": 671
+    },
+    {
+        "Name": "Judakann",
+        "real_id": "673",
+        "id": 672
+    },
+    {
+        "Name": "Belsavis",
+        "real_id": "674",
+        "id": 673
+    },
+    {
+        "Name": "Serelia",
+        "real_id": "675",
+        "id": 674
+    },
+    {
+        "Name": "Krystar",
+        "real_id": "676",
+        "id": 675
+    },
+    {
+        "Name": "Ilum",
+        "Region": "8",
+        "real_id": "677",
+        "id": 676
+    },
+    {
+        "Places to visit": "Ulon Atur, Ulon Ipo-Lito",
+        "Name": "Lew'el",
+        "Comments": "Means Deluge",
+        "real_id": "678",
+        "id": 677
+    },
+    {
+        "Name": "Cro-Akon",
+        "real_id": "679",
+        "id": 678
+    },
+    {
+        "Name": "Quan-Shui",
+        "real_id": "680",
+        "id": 679
+    },
+    {
+        "Name": "Teriq Noi",
+        "real_id": "681",
+        "id": 680
+    },
+    {
+        "System": "Agoliba-Tu",
+        "Name": "Agoliba-Abo",
+        "Terrain": "Jungles",
+        "real_id": "682",
+        "id": 681
+    },
+    {
+        "System": "Agoliba-Tu",
+        "Name": "Agoliba-Ena",
+        "Terrain": "Glaciers",
+        "real_id": "683",
+        "id": 682
+    },
+    {
+        "Name": "Touksingal",
+        "real_id": "684",
+        "id": 683
+    },
+    {
+        "Name": "Taris",
+        "real_id": "685",
+        "id": 684
+    },
+    {
+        "Name": "Derella",
+        "real_id": "686",
+        "id": 685
+    },
+    {
+        "Name": "Birren",
+        "Region": "4",
+        "real_id": "687",
+        "id": 686
+    },
+    {
+        "Name": "Uyter",
+        "Comments": "There's an Imperial Academy",
+        "real_id": "688",
+        "id": 687
+    },
+    {
+        "Name": "Calderos Station",
+        "real_id": "689",
+        "id": 688
+    },
+    {
+        "Name": "Istabith",
+        "real_id": "690",
+        "id": 689
+    },
+    {
+        "Name": "Fillithar",
+        "real_id": "691",
+        "id": 690
+    },
+    {
+        "Name": "Iloh",
+        "Terrain": "Water World",
+        "real_id": "692",
+        "id": 691
+    },
+    {
+        "Name": "Harloff Minor",
+        "real_id": "693",
+        "id": 692
+    },
+    {
+        "Name": "Itapi Prime",
+        "Comments": "Very close to Coruscant",
+        "real_id": "694",
+        "id": 693
+    },
+    {
+        "Name": "Lonera",
+        "real_id": "695",
+        "id": 694
+    },
+    {
+        "Name": "Arreyel",
+        "Comments": "Former Separatist World\u000bNow poor",
+        "Region": "4",
+        "real_id": "696",
+        "id": 695
+    },
+    {
+        "Name": "Bilbringi",
+        "real_id": "697",
+        "id": 696
+    },
+    {
+        "Name": "Onoam",
+        "Comments": "Moon of Naboo",
+        "real_id": "698",
+        "id": 697
+    },
+    {
+        "Name": "Caviness IV",
+        "Comments": "Bombed by the Empire",
+        "real_id": "699",
+        "id": 698
+    },
+    {
+        "Name": "Qiilura System",
+        "real_id": "700",
+        "id": 699
+    },
+    {
+        "Name": "Chal Hudda",
+        "Region": "7",
+        "Terrain": "Marshes",
+        "real_id": "701",
+        "id": 700
+    },
+    {
+        "Name": "Taldot Sector",
+        "real_id": "702",
+        "id": 701
+    },
+    {
+        "Name": "Dinwa Prime",
+        "real_id": "703",
+        "id": 702
+    },
+    {
+        "Name": "Ruoss Minor",
+        "real_id": "704",
+        "id": 703
+    },
+    {
+        "Name": "Anelsana",
+        "real_id": "705",
+        "id": 704
+    },
+    {
+        "Name": "Chasmeene",
+        "real_id": "706",
+        "id": 705
+    },
+    {
+        "Name": "Lolet",
+        "real_id": "707",
+        "id": 706
+    },
+    {
+        "Name": "Gossam",
+        "real_id": "708",
+        "id": 707
+    },
+    {
+        "Name": "Hovea Nuket IV",
+        "real_id": "709",
+        "id": 708
+    },
+    {
+        "Name": "Kor Vella",
+        "real_id": "710",
+        "id": 709
+    },
+    {
+        "Name": "Selonia",
+        "real_id": "711",
+        "id": 710
+    },
+    {
+        "Name": "Drashima III",
+        "real_id": "712",
+        "id": 711
+    },
+    {
+        "Name": "Pasa Novo",
+        "real_id": "713",
+        "id": 712
+    },
+    {
+        "Name": "Baltro",
+        "real_id": "714",
+        "id": 713
+    },
+    {
+        "Name": "Burundang",
+        "real_id": "715",
+        "id": 714
+    },
+    {
+        "Name": "Weigh Station Karambola",
+        "real_id": "716",
+        "id": 715
+    },
+    {
+        "Name": "Farfax",
+        "real_id": "717",
+        "id": 716
+    },
+    {
+        "Name": "Mesulan Remnants Belt",
+        "Comments": "Originally the Ice Moon Mesula",
+        "real_id": "718",
+        "id": 717
+    },
+    {
+        "Name": "Tarabba",
+        "Region": "7",
+        "real_id": "719",
+        "id": 718
+    },
+    {
+        "Name": "Substation Grimdock",
+        "real_id": "720",
+        "id": 719
+    },
+    {
+        "Name": "Strata 7",
+        "real_id": "721",
+        "id": 720
+    },
+    {
+        "System": "Kallea",
+        "Name": "Grava",
+        "real_id": "722",
+        "id": 721
+    },
+    {
+        "Name": "Ocahont",
+        "real_id": "723",
+        "id": 722
+    },
+    {
+        "Name": "Paucris Major",
+        "Comments": "Site of the beginning of the Rebel Fleet",
+        "real_id": "724",
+        "id": 723
+    },
+    {
+        "Name": "Unzel",
+        "real_id": "725",
+        "id": 724
+    },
+    {
+        "Name": "Mahranee",
+        "real_id": "726",
+        "id": 725
+    },
+    {
+        "System": "Sava",
+        "Name": "Praxat Sil",
+        "real_id": "727",
+        "id": 726
+    },
+    {
+        "Name": "Barabaras",
+        "real_id": "728",
+        "id": 727
+    },
+    {
+        "Name": "Saraf Cobar Station",
+        "real_id": "729",
+        "id": 728
+    },
+    {
+        "Name": "Baltizaar",
+        "real_id": "730",
+        "id": 729
+    },
+    {
+        "Name": "Patitite Pattuna",
+        "real_id": "731",
+        "id": 730
+    },
+    {
+        "Name": "Kinyen",
+        "real_id": "732",
+        "id": 731
+    },
+    {
+        "Name": "Raydonia",
+        "Region": "7",
+        "real_id": "733",
+        "id": 732
+    },
+    {
+        "Name": "S\u00eddi",
+        "Region": "7",
+        "real_id": "734",
+        "id": 733
+    },
+    {
+        "Name": "Mytaranor Sector",
+        "real_id": "735",
+        "id": 734
+    },
+    {
+        "Name": "Ghost Nebula",
+        "real_id": "736",
+        "id": 735
+    },
+    {
+        "Name": "Thearterra",
+        "real_id": "737",
+        "id": 736
+    },
+    {
+        "Name": "Naporar",
+        "Region": "8",
+        "real_id": "738",
+        "id": 737
+    },
+    {
+        "Name": "Dioya",
+        "real_id": "739",
+        "id": 738
+    },
+    {
+        "Name": "Rentor",
+        "Comments": "Physically close to Csilla, yet paradoxically in the backwater of the Chiss Ascendancy",
+        "Region": "8",
+        "real_id": "740",
+        "id": 739
+    },
+    {
+        "Name": "The Chaos",
+        "real_id": "741",
+        "id": 740
+    },
+    {
+        "Name": "Paataasus",
+        "Region": "8",
+        "real_id": "742",
+        "id": 741
+    },
+    {
+        "Name": "Tempes",
+        "Region": "7",
+        "real_id": "743",
+        "id": 742
+    },
+    {
+        "Name": "Arkax Station",
+        "real_id": "744",
+        "id": 743
+    },
+    {
+        "Name": "Arvaka Prime",
+        "real_id": "745",
+        "id": 744
+    },
+    {
+        "Places to visit": "Singularity",
+        "Name": "Tellik Four Station",
+        "Comments": "LOcated along one of the major hyperspace lanes, it was nominally controlled by the Empire, but Riffraff of all varieties stopped here to repair, rest and refuel.",
+        "real_id": "746",
+        "id": 745
+    },
+    {
+        "Name": "Otor's Hub",
+        "Region": "7",
+        "Sector": "Ojostor",
+        "real_id": "747",
+        "id": 746
+    },
+    {
+        "Name": "Jeosyn",
+        "Comments": "Dreamer's  base of operations",
+        "real_id": "748",
+        "id": 747
+    },
+    {
+        "Name": "Muunilist",
+        "real_id": "749",
+        "id": 748
+    },
+    {
+        "Name": "Fostar Haven",
+        "real_id": "750",
+        "id": 749
+    },
+    {
+        "Name": "Brentaal System",
+        "real_id": "751",
+        "id": 750
+    },
+    {
+        "Name": "Cavas",
+        "real_id": "752",
+        "id": 751
+    },
+    {
+        "Name": "Yavin Prime",
+        "real_id": "753",
+        "id": 752
+    },
+    {
+        "Name": "Ringali Nebula",
+        "Sector": "Bormea Sector",
+        "real_id": "754",
+        "id": 753
+    },
+    {
+        "Name": "Talcene",
+        "real_id": "755",
+        "id": 754
+    },
+    {
+        "Name": "Meram Sector",
+        "real_id": "756",
+        "id": 755
+    },
+    {
+        "Name": "Pothor",
+        "real_id": "757",
+        "id": 756
+    },
+    {
+        "Name": "Jeyell",
+        "real_id": "758",
+        "id": 757
+    },
+    {
+        "Name": "Desevro",
+        "real_id": "759",
+        "id": 758
+    },
+    {
+        "Name": "Criigo",
+        "Region": "7",
+        "real_id": "760",
+        "id": 759
+    },
+    {
+        "Name": "Var-Shaa",
+        "real_id": "761",
+        "id": 760
+    },
+    {
+        "Name": "Esseles",
+        "real_id": "762",
+        "id": 761
+    },
+    {
+        "Name": "Zavian Abyss",
+        "Comments": "A highly volatile area of space",
+        "real_id": "763",
+        "id": 762
+    },
+    {
+        "Name": "Remitik",
+        "real_id": "764",
+        "id": 763
+    },
+    {
+        "Name": "Merisee",
+        "real_id": "765",
+        "id": 764
+    },
+    {
+        "Name": "Nadiri",
+        "real_id": "766",
+        "id": 765
+    },
+    {
+        "Name": "Galitan",
+        "real_id": "767",
+        "id": 766
+    },
+    {
+        "Name": "Dosh",
+        "real_id": "768",
+        "id": 767
+    },
+    {
+        "Name": "Parkella",
+        "real_id": "769",
+        "id": 768
+    },
+    {
+        "Name": "Caliban",
+        "Terrain": "Snow",
+        "Region": "7",
+        "real_id": "770",
+        "id": 769
+    },
+    {
+        "Name": "Noaxson",
+        "Region": "7",
+        "real_id": "771",
+        "id": 770
+    },
+    {
+        "Places to visit": "Pammur",
+        "Name": "Affadar",
+        "Comments": "The Empire started a mining on Affadar after the Battle of Yavin",
+        "real_id": "772",
+        "id": 771
+    },
+    {
+        "Name": "Kadavo",
+        "real_id": "773",
+        "id": 772
+    },
+    {
+        "Name": "Anakura",
+        "real_id": "774",
+        "id": 773
+    },
+    {
+        "Name": "Svaaha",
+        "real_id": "775",
+        "id": 774
+    },
+    {
+        "Name": "Carlac",
+        "Terrain": "Neiges",
+        "real_id": "776",
+        "id": 775
+    },
+    {
+        "Name": "Itani Nebula",
+        "real_id": "777",
+        "id": 776
+    },
+    {
+        "Name": "Spur Orbiting Market",
+        "real_id": "778",
+        "id": 777
+    },
+    {
+        "System": "Kol Iben",
+        "Name": "Trask",
+        "real_id": "779",
+        "id": 778
+    },
+    {
+        "Places to visit": "Cirimalk",
+        "Name": "Adelphi",
+        "real_id": "780",
+        "id": 779
+    },
+    {
+        "Name": "Orondia",
+        "real_id": "781",
+        "id": 780
+    },
+    {
+        "Places to visit": "Calodan",
+        "Name": "Corvus",
+        "real_id": "782",
+        "id": 781
+    },
+    {
+        "Name": "Stobar",
+        "real_id": "783",
+        "id": 782
+    },
+    {
+        "System": "Meridian",
+        "Name": "Cybloc",
+        "Sector": "Cybloc",
+        "real_id": "784",
+        "id": 783
+    },
+    {
+        "Name": "Dilestri",
+        "real_id": "785",
+        "id": 784
+    },
+    {
+        "Name": "Morak",
+        "Comments": "Secret Imperial Mining Hub",
+        "real_id": "786",
+        "id": 785
+    },
+    {
+        "Name": "Rashfond",
+        "real_id": "787",
+        "id": 786
+    },
+    {
+        "Name": "Parliock",
+        "real_id": "788",
+        "id": 787
+    },
+    {
+        "Name": "Sarrish",
+        "real_id": "789",
+        "id": 788
+    },
+    {
+        "Name": "Tion Cluster",
+        "real_id": "790",
+        "id": 789
+    },
+    {
+        "Name": "Sluis Van",
+        "real_id": "791",
+        "id": 790
+    },
+    {
+        "Name": "Asmeru",
+        "real_id": "792",
+        "id": 791
+    },
+    {
+        "Name": "Karfeddion",
+        "real_id": "793",
+        "id": 792
+    },
+    {
+        "Name": "Prefsbelt",
+        "real_id": "794",
+        "id": 793
+    },
+    {
+        "Name": "Halcyon",
+        "Region": "2",
+        "real_id": "795",
+        "id": 794
+    },
+    {
+        "Name": "Dwartii",
+        "real_id": "796",
+        "id": 795
+    },
+    {
+        "Name": "Ringo Vinda",
+        "real_id": "797",
+        "id": 796
+    },
+    {
+        "Places to visit": "Murkhana City",
+        "Name": "Murkhana",
+        "Region": "7",
+        "real_id": "798",
+        "id": 797
+    },
+    {
+        "Name": "Fial",
+        "real_id": "799",
+        "id": 798
+    },
+    {
+        "Name": "Nilgaard",
+        "real_id": "800",
+        "id": 799
+    },
+    {
+        "Name": "Galidraan",
+        "real_id": "801",
+        "id": 800
+    },
+    {
+        "Name": "Galidraan 3",
+        "real_id": "802",
+        "id": 801
+    },
+    {
+        "Name": "Galidraan 4",
+        "real_id": "803",
+        "id": 802
+    },
+    {
+        "Name": "Rhen Var",
+        "real_id": "804",
+        "id": 803
+    },
+    {
+        "Name": "Nam Chorios",
+        "real_id": "805",
+        "id": 804
+    },
+    {
+        "Name": "Trogan",
+        "real_id": "806",
+        "id": 805
+    },
+    {
+        "Name": "Jomark",
+        "real_id": "807",
+        "id": 806
+    },
+    {
+        "Name": "Lucazec",
+        "real_id": "808",
+        "id": 807
+    },
+    {
+        "Name": "Centares",
+        "real_id": "809",
+        "id": 808
+    },
+    {
+        "Name": "Lantillies",
+        "real_id": "810",
+        "id": 809
+    },
+    {
+        "System": "Perkell",
+        "Name": "Gromas",
+        "real_id": "811",
+        "id": 810
+    },
+    {
+        "System": "Mandalore",
+        "Name": "Phindar",
+        "real_id": "812",
+        "id": 811
+    },
+    {
+        "Name": "Zardossa Stix",
+        "real_id": "813",
+        "id": 812
+    },
+    {
+        "Places to visit": "Valley of Extinction",
+        "Name": "Wellspring of Life",
+        "real_id": "814",
+        "id": 813
+    },
+    {
+        "Name": "Sumitra",
+        "real_id": "815",
+        "id": 814
+    },
+    {
+        "Name": "Cvetaen",
+        "Region": "3",
+        "real_id": "816",
+        "id": 815
+    },
+    {
+        "Name": "Thustra",
+        "real_id": "817",
+        "id": 816
+    },
+    {
+        "Name": "Aquaris",
+        "Region": "3",
+        "real_id": "818",
+        "id": 817
+    },
+    {
+        "Name": "Cartao",
+        "real_id": "819",
+        "id": 818
+    },
+    {
+        "Places to visit": "Ice Station Beta",
+        "Name": "Anteevy",
+        "real_id": "820",
+        "id": 819
+    },
+    {
+        "Name": "Garos",
+        "real_id": "821",
+        "id": 820
+    },
+    {
+        "Name": "Obroa-skai",
+        "real_id": "822",
+        "id": 821
+    },
+    {
+        "Name": "Corsin",
+        "real_id": "823",
+        "id": 822
+    },
+    {
+        "Name": "Nouane",
+        "Region": "4",
+        "real_id": "824",
+        "id": 823
+    },
+    {
+        "Name": "Atzerri",
+        "real_id": "825",
+        "id": 824
+    },
+    {
+        "Name": "Bajic",
+        "real_id": "826",
+        "id": 825
+    },
+    {
+        "Name": "Elessia",
+        "real_id": "827",
+        "id": 826
+    },
+    {
+        "Name": "Keshk",
+        "real_id": "828",
+        "id": 827
+    },
+    {
+        "Name": "Gortus 4",
+        "real_id": "829",
+        "id": 828
+    },
+    {
+        "Name": "Hadi",
+        "real_id": "830",
+        "id": 829
+    },
+    {
+        "Name": "Arveesh Station",
+        "real_id": "831",
+        "id": 830
+    },
+    {
+        "Places to visit": "H'unn Cabaret Pit",
+        "Name": "Nar Kaaga",
+        "real_id": "832",
+        "id": 831
+    },
+    {
+        "Name": "Shuraden",
+        "real_id": "833",
+        "id": 832
+    },
+    {
+        "Name": "Starlight Beacon",
+        "real_id": "834",
+        "id": 833
+    },
+    {
+        "Name": "Kur",
+        "real_id": "835",
+        "id": 834
+    },
+    {
+        "Name": "Hetzal",
+        "real_id": "836",
+        "id": 835
+    },
+    {
+        "Name": "Dalna",
+        "Places to visit": "Ferdan",
+        "Capital City": "Saludad",
+        "real_id": "837",
+        "id": 836
+    },
+    {
+        "Name": "Haileap",
+        "Places to visit": "Port Haileap",
+        "real_id": "838",
+        "id": 837
+    },
+    {
+        "Name": "Hynestia",
+        "Comments": "A un temple Jedi",
+        "real_id": "839",
+        "id": 838
+    },
+    {
+        "Name": "Genetia",
+        "real_id": "840",
+        "id": 839
+    },
+    {
+        "System": "Haileap",
+        "Name": "Nixus ",
+        "real_id": "841",
+        "id": 840
+    },
+    {
+        "System": "Haileap",
+        "Name": "Neralus",
+        "real_id": "842",
+        "id": 841
+    },
+    {
+        "System": "Dalna",
+        "Name": "Wevo",
+        "real_id": "843",
+        "id": 842
+    },
+    {
+        "Name": "Abregado-rae",
+        "real_id": "844",
+        "id": 843
+    },
+    {
+        "System": "Hetzal",
+        "Name": "The Fruited Moon",
+        "real_id": "845",
+        "id": 844
+    },
+    {
+        "System": "Hetzal",
+        "Name": "The Rooted Moon",
+        "real_id": "846",
+        "id": 845
+    },
+    {
+        "System": "Hetzal",
+        "Name": "Hetzal Prime",
+        "Capital City": "Aguirre City",
+        "real_id": "847",
+        "id": 846
+    },
+    {
+        "Name": "Ab Dalis",
+        "Region": "7",
+        "real_id": "848",
+        "id": 847
+    },
+    {
+        "Name": "Bunduki",
+        "real_id": "849",
+        "id": 848
+    },
+    {
+        "Name": "Bastion",
+        "real_id": "850",
+        "id": 849
+    },
+    {
+        "Name": "Ringlite",
+        "real_id": "851",
+        "id": 850
+    },
+    {
+        "Name": "Urber",
+        "real_id": "852",
+        "id": 851
+    },
+    {
+        "Name": "Amfar",
+        "real_id": "853",
+        "id": 852
+    },
+    {
+        "Name": "Ylesia",
+        "real_id": "854",
+        "id": 853
+    },
+    {
+        "Name": "Travnin",
+        "real_id": "855",
+        "id": 854
+    },
+    {
+        "Name": "Qualai",
+        "Comments": "Small, low-gravity planet on the edge of the Outer Rim.",
+        "Region": "7",
+        "real_id": "856",
+        "id": 855
+    },
+    {
+        "Name": "Zeitooine",
+        "Terrain": "Jungle",
+        "Region": "4",
+        "real_id": "857",
+        "id": 856
+    },
+    {
+        "Name": "Vint",
+        "real_id": "858",
+        "id": 857
+    },
+    {
+        "Name": "Eiram",
+        "real_id": "859",
+        "id": 858
+    },
+    {
+        "Name": "E'ronoh",
+        "real_id": "860",
+        "id": 859
+    },
+    {
+        "Name": "Quolosk",
+        "real_id": "861",
+        "id": 860
+    },
+    {
+        "Name": "Rushan IX",
+        "real_id": "862",
+        "id": 861
+    },
+    {
+        "Name": "Kazlin",
+        "real_id": "863",
+        "id": 862
+    },
+    {
+        "Name": "Thyferra",
+        "real_id": "864",
+        "id": 863
+    },
+    {
+        "Name": "Sedri",
+        "real_id": "865",
+        "id": 864
+    },
+    {
+        "Name": "Sedri Minor",
+        "real_id": "866",
+        "id": 865
+    },
+    {
+        "Name": "Trymant",
+        "real_id": "867",
+        "id": 866
+    },
+    {
+        "System": "Trymant",
+        "Name": "Trymant IV",
+        "Capital City": "Bralanak City",
+        "real_id": "868",
+        "id": 867
+    },
+    {
+        "Name": "Proto-Branch",
+        "real_id": "869",
+        "id": 868
+    },
+    {
+        "Name": "Solodoe",
+        "real_id": "870",
+        "id": 869
+    },
+    {
+        "Name": "Carosi Eight",
+        "real_id": "871",
+        "id": 870
+    },
+    {
+        "Name": "Hudalla",
+        "real_id": "872",
+        "id": 871
+    },
+    {
+        "Name": "Minashee",
+        "real_id": "873",
+        "id": 872
+    },
+    {
+        "Name": "Ossus",
+        "real_id": "874",
+        "id": 873
+    },
+    {
+        "Name": "Mantooine",
+        "real_id": "875",
+        "id": 874
+    },
+    {
+        "Name": "Lahsbane",
+        "real_id": "876",
+        "id": 875
+    },
+    {
+        "Name": "Palek",
+        "real_id": "877",
+        "id": 876
+    },
+    {
+        "Name": "Mantero",
+        "real_id": "878",
+        "id": 877
+    },
+    {
+        "Name": "Asusto",
+        "Comments": "Heavily forested planetoid in the Tamsis Nebula",
+        "real_id": "879",
+        "id": 878
+    },
+    {
+        "Name": "Thranta",
+        "real_id": "880",
+        "id": 879
+    },
+    {
+        "Name": "Station Zeta",
+        "real_id": "881",
+        "id": 880
+    },
+    {
+        "Name": "Plin Minor",
+        "real_id": "882",
+        "id": 881
+    },
+    {
+        "Name": "Katarr",
+        "real_id": "883",
+        "id": 882
+    },
+    {
+        "Name": "Coachelle Prime",
+        "real_id": "884",
+        "id": 883
+    },
+    {
+        "Name": "Nithorni",
+        "real_id": "885",
+        "id": 884
+    },
+    {
+        "Name": "Arcona",
+        "real_id": "886",
+        "id": 885
+    },
+    {
+        "Name": "Salliche",
+        "real_id": "887",
+        "id": 886
+    },
+    {
+        "Name": "Galator III",
+        "Comments": "Casino Planet",
+        "real_id": "888",
+        "id": 887
+    },
+    {
+        "Name": "Dol'har Hyde",
+        "Region": "7",
+        "real_id": "889",
+        "id": 888
+    },
+    {
+        "Name": "Midarr",
+        "real_id": "890",
+        "id": 889
+    },
+    {
+        "Name": "Kirima",
+        "real_id": "891",
+        "id": 890
+    },
+    {
+        "Name": "Stygmarn",
+        "real_id": "892",
+        "id": 891
+    },
+    {
+        "Name": "Bahlah",
+        "real_id": "893",
+        "id": 892
+    },
+    {
+        "Name": "Malkii",
+        "real_id": "894",
+        "id": 893
+    },
+    {
+        "Name": "Rekelos",
+        "real_id": "895",
+        "id": 894
+    },
+    {
+        "Name": "Valtos",
+        "real_id": "896",
+        "id": 895
+    },
+    {
+        "Name": "Z-LOQ",
+        "Comments": "Asteroid Outpost",
+        "real_id": "897",
+        "id": 896
+    },
+    {
+        "Name": "Quantxi",
+        "Comments": "Junk Moon of Ord Mantell",
+        "real_id": "898",
+        "id": 897
+    },
+    {
+        "Name": "Nar Kanji",
+        "real_id": "899",
+        "id": 898
+    },
+    {
+        "Name": "Bilbousa",
+        "real_id": "900",
+        "id": 899
+    },
+    {
+        "Name": "Ordo Moon",
+        "real_id": "901",
+        "id": 900
+    },
+    {
+        "Name": "Z9-City-7",
+        "real_id": "902",
+        "id": 901
+    },
+    {
+        "Places to visit": "Polar Sea",
+        "Name": "Jekara",
+        "Suns": "2",
+        "Region": "5",
+        "Terrain": "Frozen Seas",
+        "real_id": "903",
+        "id": 902
+    },
+    {
+        "Name": "Kaderin",
+        "Region": "7",
+        "real_id": "904",
+        "id": 903
+    },
+    {
+        "Name": "Y'Toub",
+        "real_id": "905",
+        "id": 904
+    },
+    {
+        "Places to visit": "Kharvashark Ruins",
+        "Name": "Vrant Tarnum",
+        "real_id": "906",
+        "id": 905
+    },
+    {
+        "Name": "Giju",
+        "real_id": "907",
+        "id": 906
+    },
+    {
+        "Name": "Whiforla 11",
+        "real_id": "908",
+        "id": 907
+    },
+    {
+        "Name": "Idaflor",
+        "real_id": "909",
+        "id": 908
+    },
+    {
+        "System": "Lido",
+        "Name": "Bora Vio",
+        "real_id": "910",
+        "id": 909
+    },
+    {
+        "Name": "Daro",
+        "Comments": "Terrestrial planet with no known settlements or installations.",
+        "Region": "7",
+        "real_id": "911",
+        "id": 910
+    },
+    {
+        "Name": "Neral's Moon",
+        "real_id": "912",
+        "id": 911
+    },
+    {
+        "Name": "Daivak",
+        "Region": "7",
+        "real_id": "913",
+        "id": 912
+    },
+    {
+        "Name": "Mulita",
+        "real_id": "914",
+        "id": 913
+    },
+    {
+        "Name": "Amaxine Station",
+        "real_id": "915",
+        "id": 914
+    },
+    {
+        "Name": "Rseik Sector",
+        "real_id": "916",
+        "id": 915
+    },
+    {
+        "Name": "Chortose",
+        "Comments": "Agricultural Hub 42",
+        "real_id": "917",
+        "id": 916
+    },
+    {
+        "Name": "Parwa",
+        "real_id": "918",
+        "id": 917
+    },
+    {
+        "Name": "Unguule Nebula",
+        "real_id": "919",
+        "id": 918
+    },
+    {
+        "Name": "Mrlsst",
+        "real_id": "920",
+        "id": 919
+    },
+    {
+        "System": "Trymant",
+        "Name": "Korbatal",
+        "real_id": "921",
+        "id": 920
+    },
+    {
+        "System": "Trymant",
+        "Name": "Ost Molkar",
+        "real_id": "922",
+        "id": 921
+    },
+    {
+        "System": "Trymant",
+        "Name": "Taz Molkar",
+        "real_id": "923",
+        "id": 922
+    },
+    {
+        "System": "Trymant",
+        "Name": "Trymant III",
+        "real_id": "924",
+        "id": 923
+    },
+    {
+        "Places to visit": "Mount Tantiss",
+        "Name": "Wayland",
+        "real_id": "925",
+        "id": 924
+    },
+    {
+        "Name": "Uba IV",
+        "real_id": "926",
+        "id": 925
+    },
+    {
+        "Name": "Saki",
+        "real_id": "927",
+        "id": 926
+    },
+    {
+        "Name": "Rubinero",
+        "real_id": "928",
+        "id": 927
+    },
+    {
+        "Name": "Emita",
+        "real_id": "929",
+        "id": 928
+    },
+    {
+        "Name": "Karken",
+        "Comments": "Former Imperial Outpost",
+        "Region": "4",
+        "real_id": "930",
+        "id": 929
+    },
+    {
+        "Name": "Canoliss",
+        "real_id": "931",
+        "id": 930
+    },
+    {
+        "Name": "Rylorii Minor",
+        "Comments": "Mining Planet",
+        "Region": "6",
+        "real_id": "932",
+        "id": 931
+    },
+    {
+        "Name": "Arkania Minor",
+        "real_id": "933",
+        "id": 932
+    },
+    {
+        "Name": "Ridlay",
+        "real_id": "934",
+        "id": 933
+    },
+    {
+        "Places to visit": "Lonisa City",
+        "Name": "Valo",
+        "Sector": "Rseik",
+        "real_id": "935",
+        "id": 934
+    },
+    {
+        "Name": "Soola",
+        "real_id": "936",
+        "id": 935
+    },
+    {
+        "Name": "Aris",
+        "real_id": "937",
+        "id": 936
+    },
+    {
+        "Name": "Port Haven",
+        "real_id": "938",
+        "id": 937
+    },
+    {
+        "Name": "Golrath",
+        "real_id": "939",
+        "id": 938
+    },
+    {
+        "Name": "Galov",
+        "real_id": "940",
+        "id": 939
+    },
+    {
+        "Name": "Ashas Rine",
+        "real_id": "941",
+        "id": 940
+    },
+    {
+        "Name": "Zallo",
+        "real_id": "942",
+        "id": 941
+    },
+    {
+        "Name": "Grizal",
+        "real_id": "943",
+        "id": 942
+    },
+    {
+        "Name": "Cyclor",
+        "Region": "5",
+        "real_id": "944",
+        "id": 943
+    },
+    {
+        "Name": "Xais",
+        "Region": "7",
+        "real_id": "945",
+        "id": 944
+    },
+    {
+        "Name": "Port Lennax",
+        "real_id": "946",
+        "id": 945
+    },
+    {
+        "Name": "Ku'rella",
+        "real_id": "947",
+        "id": 946
+    },
+    {
+        "Name": "Zav Alox",
+        "real_id": "948",
+        "id": 947
+    },
+    {
+        "Places to visit": "Wyke Town",
+        "Name": "Loreth",
+        "real_id": "949",
+        "id": 948
+    },
+    {
+        "Places to visit": "Kul Kenada",
+        "Name": "Blarrum",
+        "Region": "7",
+        "real_id": "950",
+        "id": 949
+    },
+    {
+        "Name": "Naratar",
+        "real_id": "951",
+        "id": 950
+    },
+    {
+        "Name": "Arbra",
+        "Sector": "Bon'nyuw-Luq",
+        "real_id": "952",
+        "id": 951
+    },
+    {
+        "Name": "Yonder",
+        "real_id": "953",
+        "id": 952
+    },
+    {
+        "Name": "Lessa-7",
+        "real_id": "954",
+        "id": 953
+    },
+    {
+        "Places to visit": "Efavan",
+        "Name": "Vorzyd V",
+        "real_id": "955",
+        "id": 954
+    },
+    {
+        "Name": "Vincorba",
+        "Region": "3",
+        "real_id": "956",
+        "id": 955
+    },
+    {
+        "Name": "Calior",
+        "Region": "7",
+        "real_id": "957",
+        "id": 956
+    },
+    {
+        "Places to visit": "Moon of Corellia",
+        "Name": "Gus Talon",
+        "Sector": "Corellia",
+        "real_id": "958",
+        "id": 957
+    },
+    {
+        "Name": "Endovar",
+        "real_id": "959",
+        "id": 958
+    },
+    {
+        "Name": "The Maw",
+        "real_id": "960",
+        "id": 959
+    },
+    {
+        "Name": "Kennerla",
+        "real_id": "961",
+        "id": 960
+    },
+    {
+        "Name": "Moon of Naboo",
+        "real_id": "962",
+        "id": 961
+    },
+    {
+        "Name": "Moons of Bogden",
+        "real_id": "963",
+        "id": 962
+    },
+    {
+        "Name": "Illenium System",
+        "real_id": "964",
+        "id": 963
+    },
+    {
+        "Name": "Ponemah Terminal",
+        "real_id": "965",
+        "id": 964
+    },
+    {
+        "Name": "Silo?",
+        "real_id": "966",
+        "id": 965
+    },
+    {
+        "Name": "Oseon Belt",
+        "real_id": "967",
+        "id": 966
+    },
+    {
+        "Name": "Si'klaata",
+        "real_id": "968",
+        "id": 967
+    },
+    {
+        "Name": "StarCave Nebula",
+        "real_id": "969",
+        "id": 968
+    },
+    {
+        "Name": "Malastare Narrow",
+        "real_id": "970",
+        "id": 969
+    },
+    {
+        "Name": "Cyrilla",
+        "real_id": "971",
+        "id": 970
+    },
+    {
+        "Name": "Sector 6",
+        "real_id": "972",
+        "id": 971
+    },
+    {
+        "Name": "Vargo\u2019s Ring",
+        "real_id": "973",
+        "id": 972
+    },
+    {
+        "Name": "Station Theta Black",
+        "Comments": "D\u00e9truit",
+        "real_id": "974",
+        "id": 973
+    },
+    {
+        "Name": "Vassek",
+        "real_id": "975",
+        "id": 974
+    },
+    {
+        "Name": "Huru System",
+        "real_id": "976",
+        "id": 975
+    },
+    {
+        "Name": "Byrnum Maw",
+        "real_id": "977",
+        "id": 976
+    },
+    {
+        "Name": "Moons of Gozgo",
+        "real_id": "978",
+        "id": 977
+    },
+    {
+        "Name": "Tamsye Prime",
+        "real_id": "979",
+        "id": 978
+    },
+    {
+        "Name": "Havok Outpost",
+        "real_id": "980",
+        "id": 979
+    },
+    {
+        "Name": "I\u2019vorcia Prime Preserver",
+        "real_id": "981",
+        "id": 980
+    },
+    {
+        "Name": "Second Moon of Thrinittik",
+        "real_id": "982",
+        "id": 981
+    },
+    {
+        "Name": "Lost Citadel of Garn",
+        "real_id": "983",
+        "id": 982
+    },
+    {
+        "Name": "Slinani Migration Shrine \u00ab\u00a0Red Mist\u00a0\u00bb",
+        "real_id": "984",
+        "id": 983
+    },
+    {
+        "Name": "Calumdarian",
+        "real_id": "985",
+        "id": 984
+    },
+    {
+        "Name": "Moon of Avedot",
+        "real_id": "986",
+        "id": 985
+    },
+    {
+        "Name": "Zeffo",
+        "real_id": "987",
+        "id": 986
+    },
+    {
+        "Name": "Lateron",
+        "real_id": "988",
+        "id": 987
+    },
+    {
+        "Name": "Nur",
+        "real_id": "989",
+        "id": 988
+    },
+    {
+        "Name": "Pressy\u2019s Tumble",
+        "Comments": "Asteroid Field",
+        "real_id": "990",
+        "id": 989
+    },
+    {
+        "Name": "Mirrin Sector",
+        "real_id": "991",
+        "id": 990
+    },
+    {
+        "Name": "Tangenine Sector",
+        "real_id": "992",
+        "id": 991
+    },
+    {
+        "Name": "Baklek Base",
+        "real_id": "993",
+        "id": 992
+    },
+    {
+        "Name": "Oovo IV",
+        "real_id": "994",
+        "id": 993
+    },
+    {
+        "Name": "Thrugii Asteroids",
+        "real_id": "995",
+        "id": 994
+    },
+    {
+        "Name": "Third Moon of Concord Dawn",
+        "real_id": "996",
+        "id": 995
+    },
+    {
+        "Name": "Nixus Hub 218",
+        "real_id": "997",
+        "id": 996
+    },
+    {
+        "Name": "Yawst System",
+        "real_id": "998",
+        "id": 997
+    },
+    {
+        "Name": "Horizon Base",
+        "real_id": "999",
+        "id": 998
+    },
+    {
+        "Name": "Berzite",
+        "real_id": "1000",
+        "id": 999
+    },
+    {
+        "Name": "Sereeda Waypoint",
+        "real_id": "1001",
+        "id": 1000
+    },
+    {
+        "Name": "New Codia",
+        "real_id": "1002",
+        "id": 1001
+    },
+    {
+        "Name": "Cermau",
+        "real_id": "1003",
+        "id": 1002
+    },
+    {
+        "Name": "Yakorki",
+        "real_id": "1004",
+        "id": 1003
+    },
+    {
+        "Name": "Kalevala",
+        "System": "Mandalorian",
+        "real_id": "1005",
+        "id": 1004
+    },
+    {
+        "Name": "Tonnis Sector",
+        "real_id": "1006",
+        "id": 1005
+    },
+    {
+        "Name": "Esaga Sector",
+        "real_id": "1007",
+        "id": 1006
+    },
+    {
+        "Name": "Hydian Way",
+        "real_id": "1008",
+        "id": 1007
+    },
+    {
+        "Name": "Galen System",
+        "real_id": "1009",
+        "id": 1008
+    },
+    {
+        "Name": "Alteno Trade Route",
+        "real_id": "1010",
+        "id": 1009
+    },
+    {
+        "Name": "Tandhor-Six",
+        "real_id": "1011",
+        "id": 1010
+    },
+    {
+        "Name": "Yuw",
+        "real_id": "1012",
+        "id": 1011
+    },
+    {
+        "Name": "Lost Souls Asteroid Field",
+        "real_id": "1013",
+        "id": 1012
+    },
+    {
+        "Name": "Rarlech System",
+        "real_id": "1014",
+        "id": 1013
+    },
+    {
+        "Name": "Trading Post Sh\u2019ung Tesk",
+        "real_id": "1015",
+        "id": 1014
+    },
+    {
+        "Name": "Lyjdaa",
+        "real_id": "1016",
+        "id": 1015
+    },
+    {
+        "Name": "Ryleel Base",
+        "real_id": "1017",
+        "id": 1016
+    },
+    {
+        "Name": "Ash Moon 1",
+        "real_id": "1018",
+        "id": 1017
+    },
+    {
+        "Name": "Valashar",
+        "real_id": "1019",
+        "id": 1018
+    },
+    {
+        "Name": "Fermic",
+        "real_id": "1020",
+        "id": 1019
+    },
+    {
+        "Name": "Tevel",
+        "real_id": "1021",
+        "id": 1020
+    },
+    {
+        "Name": "Ryarten",
+        "real_id": "1022",
+        "id": 1021
+    },
+    {
+        "Name": "Mytar",
+        "real_id": "1023",
+        "id": 1022
+    },
+    {
+        "Name": "Mount Gethzerion",
+        "real_id": "1024",
+        "id": 1023
+    },
+    {
+        "Name": "Sector Epsilon 51-3",
+        "real_id": "1025",
+        "id": 1024
+    },
+    {
+        "Name": "Talivar",
+        "real_id": "1026",
+        "id": 1025
+    },
+    {
+        "Name": "Wayward Comet",
+        "real_id": "1027",
+        "id": 1026
+    },
+    {
+        "Name": "Sterdic IV",
+        "real_id": "1028",
+        "id": 1027
+    },
+    {
+        "Name": "Solarine",
+        "real_id": "1029",
+        "id": 1028
+    },
+    {
+        "Name": "Vargos 9",
+        "real_id": "1030",
+        "id": 1029
+    },
+    {
+        "Name": "Lehon",
+        "real_id": "1031",
+        "id": 1030
+    },
+    {
+        "Name": "Voxx Cluster",
+        "real_id": "1032",
+        "id": 1031
+    },
+    {
+        "Name": "Chaaktil",
+        "Region": "4",
+        "real_id": "1033",
+        "id": 1032
+    },
+    {
+        "Name": "Unknown Planet",
+        "real_id": "1034",
+        "id": 1033
+    },
+    {
+        "Name": "Duur",
+        "real_id": "1035",
+        "id": 1034
+    },
+    {
+        "Name": "No-Space",
+        "real_id": "1036",
+        "id": 1035
+    },
+    {
+        "Name": "Everon",
+        "real_id": "1037",
+        "id": 1036
+    },
+    {
+        "Name": "Laecor",
+        "Region": "7",
+        "real_id": "1038",
+        "id": 1037
+    },
+    {
+        "Name": "Arashar",
+        "real_id": "1039",
+        "id": 1038
+    },
+    {
+        "Name": "Gazian",
+        "Region": "5",
+        "real_id": "1040",
+        "id": 1039
+    },
+    {
+        "Name": "Axxila",
+        "real_id": "1041",
+        "id": 1040
+    },
+    {
+        "Name": "Iakaru",
+        "real_id": "1042",
+        "id": 1041
+    },
+    {
+        "Name": "Fest",
+        "real_id": "1043",
+        "id": 1042
+    },
+    {
+        "Name": "Stewjon",
+        "real_id": "1044",
+        "id": 1043
+    },
+    {
+        "Name": "Champala",
+        "real_id": "1045",
+        "id": 1044
+    },
+    {
+        "Name": "Quilken",
+        "Region": "7",
+        "real_id": "1046",
+        "id": 1045
+    },
+    {
+        "Name": "Prahvin",
+        "real_id": "1047",
+        "id": 1046
+    },
+    {
+        "Name": "Choss",
+        "real_id": "1048",
+        "id": 1047
+    },
+    {
+        "Name": "Chalacta",
+        "real_id": "1049",
+        "id": 1048
+    },
+    {
+        "Name": "Grange",
+        "real_id": "1050",
+        "id": 1049
+    },
+    {
+        "Name": "Pendarr III",
+        "real_id": "1051",
+        "id": 1050
+    },
+    {
+        "Name": "Virujansi",
+        "real_id": "1052",
+        "id": 1051
+    },
+    {
+        "Name": "Denon",
+        "real_id": "1053",
+        "id": 1052
+    },
+    {
+        "Name": "Hon-Tallos",
+        "real_id": "1054",
+        "id": 1053
+    },
+    {
+        "Name": "Arvala-7",
+        "real_id": "1055",
+        "id": 1054
+    },
+    {
+        "System": "Kol Iben",
+        "Name": "Kol Iben",
+        "real_id": "1056",
+        "id": 1055
+    },
+    {
+        "Name": "Maldo Kreis",
+        "Terrain": "Glaces",
+        "real_id": "1057",
+        "id": 1056
+    },
+    {
+        "Name": "Panisia",
+        "Region": "7",
+        "real_id": "1058",
+        "id": 1057
+    },
+    {
+        "Name": "Ashla",
+        "Comments": "Moon of Tython",
+        "real_id": "1059",
+        "id": 1058
+    },
+    {
+        "Name": "Tranchar",
+        "Region": "7",
+        "real_id": "1060",
+        "id": 1059
+    },
+    {
+        "Name": "Daiyu",
+        "real_id": "1061",
+        "id": 1060
+    },
+    {
+        "Name": "Tawl",
+        "real_id": "1062",
+        "id": 1061
+    },
+    {
+        "Name": "Mapuzo",
+        "Region": "5",
+        "real_id": "1063",
+        "id": 1062
+    },
+    {
+        "Name": "Jabiim",
+        "real_id": "1064",
+        "id": 1063
+    },
+    {
+        "Name": "Oro Sankeria",
+        "Region": "7",
+        "real_id": "1065",
+        "id": 1064
+    },
+    {
+        "Name": "Gabredor III",
+        "real_id": "1066",
+        "id": 1065
+    },
+    {
+        "System": "Belderone",
+        "Name": "Karolia",
+        "real_id": "1067",
+        "id": 1066
+    },
+    {
+        "Name": "Tirn III",
+        "real_id": "1068",
+        "id": 1067
+    },
+    {
+        "Name": "Hyperkarn",
+        "real_id": "1069",
+        "id": 1068
+    },
+    {
+        "Name": "Pilio",
+        "real_id": "1071",
+        "id": 1069
+    },
+    {
+        "Name": "Yoturba",
+        "Region": "5",
+        "real_id": "1072",
+        "id": 1070
+    },
+    {
+        "Name": "Primus Cabru",
+        "real_id": "1073",
+        "id": 1071
+    },
+    {
+        "System": "Janx",
+        "Name": "Boxer Point Station",
+        "Region": "4",
+        "real_id": "1074",
+        "id": 1072
+    },
+    {
+        "Name": "Janx II",
+        "Region": "4",
+        "real_id": "1075",
+        "id": 1073
+    },
+    {
+        "Name": "Hypori",
+        "real_id": "1076",
+        "id": 1074
+    },
+    {
+        "Name": "Abrion Major",
+        "real_id": "1077",
+        "id": 1075
+    },
+    {
+        "Name": "Sva'leer",
+        "Region": "7",
+        "real_id": "1078",
+        "id": 1076
+    },
+    {
+        "Name": "Birukai",
+        "real_id": "1079",
+        "id": 1077
+    },
+    {
+        "Name": "Moon of Staggec",
+        "real_id": "1080",
+        "id": 1078
+    },
+    {
+        "Name": "Staggec",
+        "real_id": "1081",
+        "id": 1079
+    },
+    {
+        "Name": "Codia I",
+        "real_id": "1082",
+        "id": 1080
+    },
+    {
+        "Name": "Roon",
+        "real_id": "1083",
+        "id": 1081
+    },
+    {
+        "Name": "Atraken",
+        "real_id": "1084",
+        "id": 1082
+    },
+    {
+        "Name": "Minntooine",
+        "real_id": "1085",
+        "id": 1083
+    },
+    {
+        "Name": "Tessen",
+        "real_id": "1086",
+        "id": 1084
+    },
+    {
+        "Name": "Balosar",
+        "real_id": "1087",
+        "id": 1085
+    },
+    {
+        "Name": "Sesid",
+        "Region": "7",
+        "Sector": "Corva",
+        "real_id": "1088",
+        "id": 1086
+    },
+    {
+        "Name": "Crseih Black Hole",
+        "real_id": "1089",
+        "id": 1087
+    },
+    {
+        "Name": "Mollo Tanka",
+        "Comments": "Planetoid",
+        "real_id": "1090",
+        "id": 1088
+    },
+    {
+        "Name": "Praknat 3",
+        "real_id": "1091",
+        "id": 1089
+    },
+    {
+        "Name": "Antillion",
+        "real_id": "1092",
+        "id": 1090
+    },
+    {
+        "Name": "Iakar",
+        "real_id": "1093",
+        "id": 1091
+    },
+    {
+        "Name": "Paqualis III",
+        "Comments": "Benelex Marshall Headquarters",
+        "Region": "4",
+        "real_id": "1094",
+        "id": 1092
+    },
+    {
+        "Name": "Gulhadar",
+        "Comments": "Prison Planet",
+        "real_id": "1095",
+        "id": 1093
+    },
+    {
+        "Name": "Talor",
+        "real_id": "1096",
+        "id": 1094
+    },
+    {
+        "Name": "Rystan",
+        "real_id": "1097",
+        "id": 1095
+    },
+    {
+        "Name": "Dunnak",
+        "real_id": "1098",
+        "id": 1096
+    },
+    {
+        "Name": "Theros Major",
+        "real_id": "1099",
+        "id": 1097
+    },
+    {
+        "Name": "Caragon-Viner",
+        "real_id": "1100",
+        "id": 1098
+    },
+    {
+        "Name": "Safrifa",
+        "real_id": "1101",
+        "id": 1099
+    },
+    {
+        "Name": "Keldooine",
+        "real_id": "1102",
+        "id": 1100
+    },
+    {
+        "Name": "Cordota",
+        "real_id": "1103",
+        "id": 1101
+    },
+    {
+        "Name": "Muqular",
+        "Region": "6",
+        "real_id": "1104",
+        "id": 1102
+    },
+    {
+        "Name": "Vavarna",
+        "real_id": "1105",
+        "id": 1103
+    },
+    {
+        "Name": "Billaron",
+        "real_id": "1106",
+        "id": 1104
+    },
+    {
+        "Name": "Malathon IX",
+        "Region": "3",
+        "real_id": "1107",
+        "id": 1105
+    },
+    {
+        "System": "Therezar",
+        "Name": "Nightside",
+        "real_id": "1108",
+        "id": 1106
+    },
+    {
+        "System": "Therezar",
+        "Name": "Therezar",
+        "real_id": "1109",
+        "id": 1107
+    },
+    {
+        "System": "Morlani",
+        "Name": "Morlana One",
+        "Sector": "Free Trade",
+        "real_id": "1110",
+        "id": 1108
+    },
+    {
+        "Name": "Kenari",
+        "Region": "5",
+        "real_id": "1111",
+        "id": 1109
+    },
+    {
+        "Name": "Tahina",
+        "real_id": "1112",
+        "id": 1110
+    },
+    {
+        "System": "Morlani",
+        "Name": "Ferrix",
+        "Sector": "Free Trade",
+        "real_id": "1113",
+        "id": 1111
+    },
+    {
+        "System": "Morlani",
+        "Name": "Morlana Four",
+        "Sector": "Free Trade",
+        "real_id": "1114",
+        "id": 1112
+    },
+    {
+        "Name": "Ko-Longava",
+        "real_id": "1115",
+        "id": 1113
+    },
+    {
+        "Name": "Khomm",
+        "real_id": "1116",
+        "id": 1114
+    },
+    {
+        "System": "Forome",
+        "Name": "Forome",
+        "real_id": "1117",
+        "id": 1115
+    },
+    {
+        "Name": "Tassar",
+        "real_id": "1118",
+        "id": 1116
+    },
+    {
+        "Comments": "",
+        "Name": "Aldhani",
+        "real_id": "1119",
+        "id": 1117
+    },
+    {
+        "Comments": "",
+        "Name": "Arvala-6",
+        "real_id": "1120",
+        "id": 1118
+    },
+    {
+        "Comments": "",
+        "Name": "Steelgard",
+        "real_id": "1121",
+        "id": 1119
+    },
+    {
+        "Comments": "",
+        "Name": "Plexis",
+        "real_id": "1122",
+        "id": 1120
+    },
+    {
+        "Comments": "",
+        "Name": "Eufornis Major",
+        "real_id": "1123",
+        "id": 1121
+    },
+    {
+        "Comments": "",
+        "Name": "Hanna",
+        "real_id": "1124",
+        "id": 1122
+    },
+    {
+        "Comments": "",
+        "Name": "Escalan",
+        "Region": "7",
+        "real_id": "1125",
+        "id": 1123
+    },
+    {
+        "Comments": "",
+        "Name": "Rudun III",
+        "real_id": "1126",
+        "id": 1124
+    },
+    {
+        "Comments": "",
+        "Name": "Torrenoteer Minor",
+        "System": "Torrenoteer",
+        "real_id": "1127",
+        "id": 1125
+    },
+    {
+        "Comments": "",
+        "Name": "Salissia",
+        "real_id": "1128",
+        "id": 1126
+    },
+    {
+        "Comments": "",
+        "Name": "Mandrine",
+        "real_id": "1129",
+        "id": 1127
+    },
+    {
+        "Comments": "",
+        "Name": "Kiapene",
+        "real_id": "1130",
+        "id": 1128
+    },
+    {
+        "Comments": "",
+        "Name": "Derra",
+        "real_id": "1131",
+        "id": 1129
+    },
+    {
+        "Comments": "",
+        "Name": "Ubrikkia",
+        "Region": "5",
+        "real_id": "1132",
+        "id": 1130
+    },
+    {
+        "Comments": "",
+        "Name": "Gizer",
+        "Region": "5",
+        "real_id": "1133",
+        "id": 1131
+    },
+    {
+        "Comments": "",
+        "Name": "Athiss",
+        "real_id": "1134",
+        "id": 1132
+    },
+    {
+        "Comments": "",
+        "Name": "Japreal",
+        "real_id": "1135",
+        "id": 1133
+    },
+    {
+        "Comments": "",
+        "Name": "Jaresh",
+        "real_id": "1136",
+        "id": 1134
+    },
+    {
+        "Comments": "",
+        "Name": "Bothsoliman",
+        "real_id": "1137",
+        "id": 1135
+    },
+    {
+        "Comments": "",
+        "Name": "Shalankie",
+        "real_id": "1138",
+        "id": 1136
+    },
+    {
+        "Comments": "",
+        "Name": "Aubreeyan Cluster",
+        "real_id": "1139",
+        "id": 1137
+    },
+    {
+        "Comments": "",
+        "Name": "Basta Core",
+        "real_id": "1140",
+        "id": 1138
+    },
+    {
+        "Comments": "",
+        "Name": "Volta",
+        "real_id": "1141",
+        "id": 1139
+    },
+    {
+        "Comments": "",
+        "Name": "Alkenzi",
+        "real_id": "1142",
+        "id": 1140
+    },
+    {
+        "Comments": "",
+        "Name": "Banas",
+        "Region": "7",
+        "real_id": "1143",
+        "id": 1141
+    },
+    {
+        "Comments": "",
+        "Name": "Polaar",
+        "real_id": "1144",
+        "id": 1142
+    },
+    {
+        "Comments": "",
+        "Name": "Constancia",
+        "real_id": "1145",
+        "id": 1143
+    },
+    {
+        "Comments": "",
+        "Name": "Pirsen",
+        "Sector": "Pirsen",
+        "real_id": "1146",
+        "id": 1144
+    },
+    {
+        "Comments": "",
+        "Name": "Taw Provode",
+        "real_id": "1147",
+        "id": 1145
+    },
+    {
+        "Comments": "",
+        "Name": "Mircapala",
+        "real_id": "1148",
+        "id": 1146
+    },
+    {
+        "Comments": "",
+        "Name": "Neftali",
+        "Region": "7",
+        "Sector": "Socorro",
+        "real_id": "1149",
+        "id": 1147
+    },
+    {
+        "Comments": "",
+        "Name": "Taloraan",
+        "real_id": "1150",
+        "id": 1148
+    },
+    {
+        "Comments": "",
+        "Name": "Bpfassh",
+        "real_id": "1151",
+        "id": 1149
+    },
+    {
+        "Comments": "",
+        "Name": "Hebekrr Minor",
+        "real_id": "1152",
+        "id": 1150
+    },
+    {
+        "Comments": "",
+        "Name": "Langston",
+        "real_id": "1153",
+        "id": 1151
+    },
+    {
+        "Comments": "",
+        "Name": "Naran-Shiv",
+        "real_id": "1154",
+        "id": 1152
+    },
+    {
+        "Comments": "",
+        "Name": "Lenahra",
+        "real_id": "1155",
+        "id": 1153
+    },
+    {
+        "Comments": "",
+        "Name": "Niamos",
+        "real_id": "1156",
+        "id": 1154
+    },
+    {
+        "Comments": "",
+        "Name": "Vaced",
+        "real_id": "1157",
+        "id": 1155
+    },
+    {
+        "Comments": "",
+        "Name": "Galdi",
+        "real_id": "1158",
+        "id": 1156
+    },
+    {
+        "Comments": "",
+        "Name": "Narkina-5",
+        "real_id": "1159",
+        "id": 1157
+    },
+    {
+        "Comments": "",
+        "Name": "Giermos",
+        "real_id": "1160",
+        "id": 1158
+    },
+    {
+        "Comments": "",
+        "Name": "Segro Milo",
+        "real_id": "1161",
+        "id": 1159
+    },
+    {
+        "Comments": "",
+        "Name": "Raxus Secundus",
+        "real_id": "1162",
+        "id": 1160
+    },
+    {
+        "Comments": "",
+        "Name": "Amloch",
+        "System": "Amloch",
+        "real_id": "1163",
+        "id": 1161
+    },
+    {
+        "Comments": "",
+        "Name": "Tikkae",
+        "real_id": "1164",
+        "id": 1162
+    },
+    {
+        "Comments": "",
+        "Name": "Jondora",
+        "First apparition (Legends)": "The Old Republic Game",
+        "real_id": "1165",
+        "id": 1163
+    },
+    {
+        "Comments": "",
+        "Name": "Dizon Fray",
+        "Region": "7",
+        "real_id": "1166",
+        "id": 1164
+    },
+    {
+        "Comments": "",
+        "Name": "Tassio Moon",
+        "real_id": "1167",
+        "id": 1165
+    },
+    {
+        "Comments": "",
+        "Name": "Losazh",
+        "real_id": "1168",
+        "id": 1166
+    },
+    {
+        "Comments": "",
+        "Name": "Spellhaus",
+        "real_id": "1169",
+        "id": 1167
+    },
+    {
+        "Comments": "",
+        "Name": "Liskan",
+        "Region": "7",
+        "real_id": "1170",
+        "id": 1168
+    },
+    {
+        "Comments": "",
+        "Name": "Kligson\u2019s Moon",
+        "real_id": "1171",
+        "id": 1169
+    },
+    {
+        "Comments": "",
+        "Name": "Mechis III",
+        "real_id": "1172",
+        "id": 1170
+    },
+    {
+        "Comments": "",
+        "Name": "Turrak",
+        "Region": "7",
+        "System": "Sevarcos",
+        "real_id": "1173",
+        "id": 1171
+    },
+    {
+        "Comments": "",
+        "Name": "Besh Gordon",
+        "real_id": "1174",
+        "id": 1172
+    },
+    {
+        "Comments": "",
+        "Name": "The Boneworld",
+        "real_id": "1175",
+        "id": 1173
+    },
+    {
+        "Comments": "",
+        "Name": "Gansevor",
+        "Sector": "Tammuz",
+        "Region": "7",
+        "Capital City": "Horatio",
+        "Places to visit": "Firevale, Bethune, Nomad Plains",
+        "real_id": "1176",
+        "id": 1174
+    },
+    {
+        "Comments": "Agriculture Hub",
+        "Name": "Kamil",
+        "real_id": "1177",
+        "id": 1175
+    },
+    {
+        "Comments": "",
+        "Name": "Malenko",
+        "real_id": "1178",
+        "id": 1176
+    },
+    {
+        "Comments": "",
+        "Name": "Salstan",
+        "real_id": "1179",
+        "id": 1177
+    },
+    {
+        "Comments": "",
+        "Name": "Cynda",
+        "Places to visit": "Gorse's Moon",
+        "real_id": "1180",
+        "id": 1178
+    },
+    {
+        "Comments": "",
+        "Name": "Kezarat",
+        "real_id": "1181",
+        "id": 1179
+    },
+    {
+        "Comments": "",
+        "Name": "Calcoraan",
+        "real_id": "1182",
+        "id": 1180
+    },
+    {
+        "Comments": "",
+        "Name": "Ganthel",
+        "real_id": "1184",
+        "id": 1181
+    },
+    {
+        "Comments": "",
+        "Name": "Desix",
+        "real_id": "1186",
+        "id": 1182
+    },
+    {
+        "Comments": "",
+        "Name": "Daghee",
+        "real_id": "1187",
+        "id": 1183
+    },
+    {
+        "Comments": "",
+        "Name": "Dutar",
+        "real_id": "1188",
+        "id": 1184
+    },
+    {
+        "Comments": "",
+        "Name": "Brentaal Minor",
+        "real_id": "1189",
+        "id": 1185
+    },
+    {
+        "Comments": "",
+        "Name": "Wukkar",
+        "real_id": "1190",
+        "id": 1186
+    },
+    {
+        "Comments": "",
+        "Name": "Miluta",
+        "real_id": "1191",
+        "id": 1187
+    },
+    {
+        "Comments": "",
+        "Name": "Sagamore",
+        "real_id": "1192",
+        "id": 1188
+    },
+    {
+        "Comments": "",
+        "Name": "Sasoraan",
+        "real_id": "1193",
+        "id": 1189
+    },
+    {
+        "Comments": "",
+        "Name": "Iskalon",
+        "real_id": "1194",
+        "id": 1190
+    },
+    {
+        "Comments": "",
+        "Name": "Berenge",
+        "real_id": "1195",
+        "id": 1191
+    },
+    {
+        "Comments": "Space Station",
+        "Name": "Gravity\u2019s Heart",
+        "real_id": "1196",
+        "id": 1192
+    },
+    {
+        "Comments": "",
+        "Name": "Laveria",
+        "real_id": "1197",
+        "id": 1193
+    },
+    {
+        "Comments": "",
+        "Name": "Mirran Six",
+        "real_id": "1198",
+        "id": 1194
+    },
+    {
+        "Comments": "",
+        "Name": "Sag Kemper",
+        "real_id": "1199",
+        "id": 1195
+    },
+    {
+        "Comments": "",
+        "Name": "Kronk",
+        "real_id": "1200",
+        "id": 1196
+    },
+    {
+        "Comments": "",
+        "Name": "Everbloom",
+        "real_id": "1201",
+        "id": 1197
+    },
+    {
+        "Comments": "",
+        "Name": "Dubrovia",
+        "real_id": "1202",
+        "id": 1198
+    },
+    {
+        "Comments": "",
+        "Name": "Vulpter",
+        "real_id": "1203",
+        "id": 1199
+    },
+    {
+        "Comments": "",
+        "Name": "Wor Tandell",
+        "real_id": "1204",
+        "id": 1200
+    },
+    {
+        "Comments": "",
+        "Name": "Fedalle",
+        "real_id": "1205",
+        "id": 1201
+    },
+    {
+        "Comments": "",
+        "Name": "Ahakista",
+        "real_id": "1206",
+        "id": 1202
+    },
+    {
+        "Comments": "",
+        "Name": "Nyriaan",
+        "real_id": "1207",
+        "id": 1203
+    },
+    {
+        "Comments": "",
+        "Name": "Bestoon",
+        "real_id": "1208",
+        "id": 1204
+    },
+    {
+        "Comments": "",
+        "Name": "Vinsoth",
+        "real_id": "1209",
+        "id": 1205
+    },
+    {
+        "Comments": "",
+        "Name": "Corvair",
+        "real_id": "1210",
+        "id": 1206
+    },
+    {
+        "Comments": "",
+        "Name": "Kudo III",
+        "Sector": "Corsair",
+        "System": "Kudo",
+        "Region": "4",
+        "real_id": "1211",
+        "id": 1207
+    },
+    {
+        "Name": "Serolonis",
+        "Places to visit": "Safa Toma",
+        "real_id": "1212",
+        "id": 1208
+    },
+    {
+        "Comments": "",
+        "Name": "Galpos II",
+        "real_id": "1213",
+        "id": 1209
+    },
+    {
+        "Comments": "",
+        "Name": "Mendavi",
+        "real_id": "1214",
+        "id": 1210
+    },
+    {
+        "Comments": "",
+        "Name": "Chrona",
+        "real_id": "1215",
+        "id": 1211
+    },
+    {
+        "Comments": "",
+        "Name": "Endrias Minor",
+        "real_id": "1216",
+        "id": 1212
+    },
+    {
+        "Comments": "",
+        "Name": "Carrandar Secundus",
+        "real_id": "1217",
+        "id": 1213
+    },
+    {
+        "Comments": "",
+        "Name": "Marleyvane",
+        "real_id": "1218",
+        "id": 1214
+    },
+    {
+        "Comments": "",
+        "Name": "Raithal",
+        "real_id": "1219",
+        "id": 1215
+    },
+    {
+        "Comments": "",
+        "Name": "Uquine",
+        "Region": "2",
+        "real_id": "1220",
+        "id": 1216
+    },
+    {
+        "Comments": "",
+        "Name": "Hosk Station",
+        "real_id": "1222",
+        "id": 1217
+    },
+    {
+        "Comments": "",
+        "Name": "Eufornis Minor",
+        "real_id": "1223",
+        "id": 1218
+    },
+    {
+        "Comments": "",
+        "Name": "Abrion",
+        "Sector": "Abrion",
+        "real_id": "1224",
+        "id": 1219
+    },
+    {
+        "Comments": "",
+        "Name": "Sipo",
+        "real_id": "1225",
+        "id": 1220
+    },
+    {
+        "Comments": "",
+        "Name": "Cardota",
+        "System": "Hosnian",
+        "Region": "1",
+        "real_id": "1226",
+        "id": 1221
+    },
+    {
+        "Comments": "",
+        "Name": "Tirahnn",
+        "real_id": "1227",
+        "id": 1222
+    },
+    {
+        "Comments": "",
+        "Name": "Boranda",
+        "real_id": "1228",
+        "id": 1223
+    },
+    {
+        "Comments": "",
+        "Name": "Sujimis",
+        "real_id": "1229",
+        "id": 1224
+    },
+    {
+        "Comments": "",
+        "Name": "Pasher",
+        "Region": "4",
+        "real_id": "1230",
+        "id": 1225
+    },
+    {
+        "Comments": "",
+        "Name": "Sedratis",
+        "real_id": "1231",
+        "id": 1226
+    },
+    {
+        "Comments": "",
+        "Name": "Kaldar Trinary System",
+        "real_id": "1232",
+        "id": 1227
+    },
+    {
+        "Comments": "",
+        "Name": "Vadnay",
+        "real_id": "1233",
+        "id": 1228
+    },
+    {
+        "Comments": "",
+        "Name": "Frezno",
+        "real_id": "1234",
+        "id": 1229
+    },
+    {
+        "Comments": "",
+        "Name": "Omereth",
+        "real_id": "1235",
+        "id": 1230
+    },
+    {
+        "Comments": "",
+        "Name": "Sha Qarot",
+        "Region": "1",
+        "real_id": "1236",
+        "id": 1231
+    },
+    {
+        "Comments": "",
+        "Name": "Fex",
+        "Region": "1",
+        "real_id": "1237",
+        "id": 1232
+    },
+    {
+        "Comments": "",
+        "Name": "Deris-plata",
+        "real_id": "1238",
+        "id": 1233
+    },
+    {
+        "Comments": "",
+        "Name": "Gangi Moon",
+        "real_id": "1239",
+        "id": 1234
+    },
+    {
+        "Comments": "",
+        "Name": "Exodeen",
+        "Region": "1",
+        "real_id": "1240",
+        "id": 1235
+    },
+    {
+        "Comments": "",
+        "Name": "Kupoh",
+        "real_id": "1241",
+        "id": 1236
+    },
+    {
+        "Comments": "",
+        "Name": "Daalang",
+        "real_id": "1242",
+        "id": 1237
+    },
+    {
+        "Comments": "",
+        "Name": "Zaddja",
+        "real_id": "1243",
+        "id": 1238
+    },
+    {
+        "Comments": "",
+        "Name": "Yaga Minor",
+        "real_id": "1244",
+        "id": 1239
+    },
+    {
+        "Comments": "",
+        "Name": "Aynaboni",
+        "real_id": "1245",
+        "id": 1240
+    },
+    {
+        "Comments": "",
+        "Name": "Skara Nal",
+        "real_id": "1246",
+        "id": 1241
+    },
+    {
+        "Comments": "",
+        "Name": "Pyrr IX",
+        "real_id": "1247",
+        "id": 1242
+    },
+    {
+        "Comments": "",
+        "Name": "Ordo Eris",
+        "real_id": "1248",
+        "id": 1243
+    },
+    {
+        "Comments": "",
+        "Name": "Barton IV",
+        "real_id": "1249",
+        "id": 1244
+    },
+    {
+        "Comments": "",
+        "Name": "Pabu",
+        "real_id": "1250",
+        "id": 1245
+    },
+    {
+        "Comments": "",
+        "Name": "Corvait II",
+        "real_id": "1252",
+        "id": 1246
+    },
+    {
+        "Comments": "",
+        "Name": "Soika",
+        "real_id": "1253",
+        "id": 1247
+    },
+    {
+        "Comments": "",
+        "Name": "Plazir-15",
+        "real_id": "1254",
+        "id": 1248
+    },
+    {
+        "Comments": "",
+        "Name": "Karthon",
+        "real_id": "1255",
+        "id": 1249
+    },
+    {
+        "Comments": "",
+        "Name": "Paraquaat",
+        "real_id": "1256",
+        "id": 1250
+    },
+    {
+        "Comments": "",
+        "Name": "Ipsidon",
+        "Places to visit": "Mokkotown",
+        "real_id": "1257",
+        "id": 1251
+    },
+    {
+        "Comments": "",
+        "Name": "Kesh",
+        "Region": "8",
+        "real_id": "1258",
+        "id": 1252
+    },
+    {
+        "Comments": "Black Market Spaceport",
+        "Name": "Depatar",
+        "real_id": "1259",
+        "id": 1253
+    },
+    {
+        "Comments": "",
+        "Name": "Braaken",
+        "real_id": "1260",
+        "id": 1254
+    },
+    {
+        "Comments": "",
+        "Name": "Gloam",
+        "real_id": "1261",
+        "id": 1255
+    },
+    {
+        "Comments": "",
+        "Name": "Angcord",
+        "real_id": "1262",
+        "id": 1256
+    },
+    {
+        "Comments": "",
+        "Name": "HS-197",
+        "Region": "7",
+        "System": "Horox",
+        "real_id": "1263",
+        "id": 1257
+    },
+    {
+        "Comments": "",
+        "Name": "Torku",
+        "real_id": "1264",
+        "id": 1258
+    },
+    {
+        "Comments": "",
+        "Name": "Koboh",
+        "real_id": "1265",
+        "id": 1259
+    },
+    {
+        "Comments": "",
+        "Name": "Shattered Moon",
+        "real_id": "1266",
+        "id": 1260
+    },
+    {
+        "Comments": "",
+        "Name": "Nova Garon",
+        "real_id": "1267",
+        "id": 1261
+    },
+    {
+        "Comments": "",
+        "Name": "Tanalorr",
+        "real_id": "1268",
+        "id": 1262
+    },
+    {
+        "Comments": "",
+        "Name": "Wells",
+        "real_id": "1269",
+        "id": 1263
+    },
+    {
+        "Comments": "",
+        "Name": "Artemesium",
+        "real_id": "1270",
+        "id": 1264
+    },
+    {
+        "Comments": "",
+        "Name": "Enthenium",
+        "Region": "6",
+        "real_id": "1271",
+        "id": 1265
+    },
+    {
+        "Comments": "",
+        "Name": "Golatah",
+        "Region": "7",
+        "real_id": "1272",
+        "id": 1266
+    },
+    {
+        "Comments": "",
+        "Name": "Hiorin",
+        "Region": "7",
+        "Places to visit": "Mareti Base",
+        "real_id": "1273",
+        "id": 1267
+    },
+    {
+        "Comments": "",
+        "Name": "Tenoo",
+        "real_id": "1274",
+        "id": 1268
+    },
+    {
+        "Comments": "",
+        "Name": "Zimara",
+        "Region": "7",
+        "real_id": "1275",
+        "id": 1269
+    },
+    {
+        "Comments": "",
+        "Name": "Sason",
+        "Region": "7",
+        "real_id": "1276",
+        "id": 1270
+    },
+    {
+        "Comments": "",
+        "Name": "D'assem",
+        "real_id": "1277",
+        "id": 1271
+    },
+    {
+        "Comments": "",
+        "Name": "Sarjenn 3",
+        "real_id": "1279",
+        "id": 1272
+    },
+    {
+        "Comments": "",
+        "Name": "Kellgar Six",
+        "real_id": "1280",
+        "id": 1273
+    },
+    {
+        "Comments": "",
+        "Name": "Desinta",
+        "Terrain": "Ice",
+        "real_id": "1281",
+        "id": 1274
+    },
+    {
+        "Comments": "",
+        "Name": "Jalucaz",
+        "real_id": "1282",
+        "id": 1275
+    },
+    {
+        "Comments": "",
+        "Name": "Uokara",
+        "Region": "8",
+        "real_id": "1283",
+        "id": 1276
+    },
+    {
+        "Comments": "",
+        "Name": "Tammuz",
+        "real_id": "1284",
+        "id": 1277
+    },
+    {
+        "Comments": "",
+        "Name": "Thule",
+        "Region": "7",
+        "Sector": "Thurra",
+        "System": "Esstran",
+        "real_id": "1285",
+        "id": 1278
+    },
+    {
+        "Comments": "",
+        "Name": "Praadost II",
+        "real_id": "1286",
+        "id": 1279
+    },
+    {
+        "Comments": "",
+        "Name": "Denab",
+        "real_id": "1287",
+        "id": 1280
+    },
+    {
+        "Comments": "",
+        "Name": "Firrhana",
+        "Region": "7",
+        "real_id": "1288",
+        "id": 1281
+    },
+    {
+        "Comments": "",
+        "Name": "Arcana",
+        "real_id": "1289",
+        "id": 1282
+    },
+    {
+        "Comments": "",
+        "Name": "Havel Prime",
+        "real_id": "1290",
+        "id": 1283
+    },
+    {
+        "Comments": "",
+        "Name": "Keptik",
+        "real_id": "1291",
+        "id": 1284
+    },
+    {
+        "Comments": "",
+        "Name": "Olgothon 3",
+        "Region": "7",
+        "real_id": "1292",
+        "id": 1285
+    },
+    {
+        "Comments": "",
+        "Name": "Agaris",
+        "real_id": "1293",
+        "id": 1286
+    },
+    {
+        "Comments": "Wild Space",
+        "Name": "Pkori",
+        "real_id": "1294",
+        "id": 1287
+    },
+    {
+        "Comments": "",
+        "Name": "Frong",
+        "real_id": "1295",
+        "id": 1288
+    },
+    {
+        "Comments": "",
+        "Name": "Peridea",
+        "real_id": "1296",
+        "id": 1289
+    },
+    {
+        "Comments": "",
+        "Name": "Seatos",
+        "System": "Denab",
+        "real_id": "1297",
+        "id": 1290
+    },
+    {
+        "Comments": "",
+        "Name": "Karaxis",
+        "real_id": "1298",
+        "id": 1291
+    },
+    {
+        "Comments": "",
+        "Name": "Bavana",
+        "real_id": "1299",
+        "id": 1292
+    },
+    {
+        "Comments": "",
+        "Name": "Comantira",
+        "real_id": "1300",
+        "id": 1293
+    },
+    {
+        "Comments": "",
+        "Name": "Gallios",
+        "real_id": "1301",
+        "id": 1294
+    },
+    {
+        "Comments": "",
+        "Name": "Kirkeide Station",
+        "real_id": "1302",
+        "id": 1295
+    },
+    {
+        "Comments": "",
+        "Name": "Travyx Prime",
+        "real_id": "1303",
+        "id": 1296
+    },
+    {
+        "Comments": "",
+        "Name": "Thelj",
+        "real_id": "1304",
+        "id": 1297
+    },
+    {
+        "Comments": "",
+        "Name": "Epikonia",
+        "real_id": "1305",
+        "id": 1298
+    },
+    {
+        "Comments": "",
+        "Name": "Hylanth",
+        "Region": "7",
+        "real_id": "1306",
+        "id": 1299
+    },
+    {
+        "Comments": "",
+        "Name": "Mazah",
+        "real_id": "1307",
+        "id": 1300
+    },
+    {
+        "Comments": "",
+        "Name": "Mareg IX",
+        "real_id": "1308",
+        "id": 1301
+    },
+    {
+        "Comments": "",
+        "Name": "Farano",
+        "real_id": "1309",
+        "id": 1302
+    },
+    {
+        "Comments": "",
+        "Name": "Bursant",
+        "real_id": "1310",
+        "id": 1303
+    },
+    {
+        "Comments": "",
+        "Name": "Norsid",
+        "real_id": "1311",
+        "id": 1304
+    },
+    {
+        "Comments": "",
+        "Name": "Allard",
+        "real_id": "1312",
+        "id": 1305
+    },
+    {
+        "Comments": "",
+        "Name": "Rorak 5",
+        "real_id": "1313",
+        "id": 1306
+    },
+    {
+        "Comments": "",
+        "Name": "Kastolar Sector",
+        "real_id": "1314",
+        "id": 1307
+    },
+    {
+        "Comments": "",
+        "Name": "Ookbat",
+        "real_id": "1315",
+        "id": 1308
+    },
+    {
+        "Comments": "",
+        "Name": "Cols",
+        "real_id": "1316",
+        "id": 1309
+    },
+    {
+        "Comments": "",
+        "Name": "Ballum",
+        "real_id": "1317",
+        "id": 1310
+    },
+    {
+        "Comments": "",
+        "Name": "Andraven",
+        "real_id": "1318",
+        "id": 1311
+    },
+    {
+        "Comments": "",
+        "Name": "Kalastar",
+        "real_id": "1319",
+        "id": 1312
+    },
+    {
+        "Comments": "",
+        "Name": "Yarrum",
+        "real_id": "1320",
+        "id": 1313
+    },
+    {
+        "Comments": "",
+        "Name": "Yamradi",
+        "real_id": "1321",
+        "id": 1314
+    },
+    {
+        "Comments": "",
+        "Name": "Sakavi Tar",
+        "real_id": "1322",
+        "id": 1315
+    },
+    {
+        "Comments": "",
+        "Name": "Antine",
+        "real_id": "1323",
+        "id": 1316
+    },
+    {
+        "Comments": "",
+        "Name": "Seffi",
+        "real_id": "1324",
+        "id": 1317
+    },
+    {
+        "Comments": "",
+        "Name": "Mittoblade",
+        "real_id": "1325",
+        "id": 1318
+    },
+    {
+        "Comments": "",
+        "Name": "Orrik Cluster",
+        "real_id": "1326",
+        "id": 1319
+    },
+    {
+        "Comments": "",
+        "Name": "Orrik III",
+        "real_id": "1327",
+        "id": 1320
+    },
+    {
+        "Comments": "",
+        "Name": "Old Lettow",
+        "real_id": "1328",
+        "id": 1321
+    },
+    {
+        "Comments": "",
+        "Name": "Gardaji",
+        "real_id": "1329",
+        "id": 1322
+    },
+    {
+        "Comments": "",
+        "Name": "Xi Char",
+        "real_id": "1330",
+        "id": 1323
+    },
+    {
+        "Comments": "",
+        "Name": "Mirgoshirax",
+        "real_id": "1331",
+        "id": 1324
+    },
+    {
+        "Comments": "",
+        "Name": "Rocedila",
+        "Region": "7",
+        "real_id": "1332",
+        "id": 1325
+    },
+    {
+        "Comments": "",
+        "Name": "Bracront",
+        "real_id": "1333",
+        "id": 1326
+    },
+    {
+        "Comments": "",
+        "Name": "Asternin",
+        "real_id": "1334",
+        "id": 1327
+    },
+    {
+        "Comments": "",
+        "Name": "Circarpous",
+        "real_id": "1335",
+        "id": 1328
+    },
+    {
+        "Comments": "",
+        "Name": "Sarumo",
+        "real_id": "1336",
+        "id": 1329
+    },
+    {
+        "Comments": "",
+        "Name": "Lower Flora Cloud",
+        "real_id": "1337",
+        "id": 1330
+    },
+    {
+        "Comments": "",
+        "Name": "Pelkonen",
+        "Region": "7",
+        "real_id": "1338",
+        "id": 1331
+    },
+    {
+        "Comments": "",
+        "Name": "Rocedila",
+        "real_id": "1339",
+        "id": 1332
+    },
+    {
+        "Comments": "",
+        "Name": "Federian",
+        "real_id": "1340",
+        "id": 1333
+    },
+    {
+        "Comments": "",
+        "Name": "Oetrago",
+        "Sector": "Triton",
+        "real_id": "1341",
+        "id": 1334
+    },
+    {
+        "Comments": "",
+        "Name": "Devshi",
+        "Terrain": "Ocean",
+        "real_id": "1342",
+        "id": 1335
+    },
+    {
+        "Comments": "",
+        "Name": "Ro Mira",
+        "System": "Vergara",
+        "real_id": "1343",
+        "id": 1336
+    },
+    {
+        "Comments": "",
+        "Name": "Zastiga",
+        "Region": "7",
+        "real_id": "1344",
+        "id": 1337
+    },
+    {
+        "Comments": "",
+        "Name": "Hagar Secundus",
+        "real_id": "1345",
+        "id": 1338
+    },
+    {
+        "Comments": "",
+        "Name": "Basteel",
+        "Region": "7",
+        "System": "Corva",
+        "real_id": "1346",
+        "id": 1339
+    },
+    {
+        "Comments": "",
+        "Name": "Galaan",
+        "Region": "7",
+        "Sector": "Corva",
+        "real_id": "1347",
+        "id": 1340
+    },
+    {
+        "Comments": "",
+        "Name": "Uveron",
+        "Region": "2",
+        "real_id": "1348",
+        "id": 1341
+    },
+    {
+        "Comments": "",
+        "Name": "Samaria",
+        "real_id": "1349",
+        "id": 1342
+    },
+    {
+        "Comments": "",
+        "Name": "Slandarvia M-9",
+        "Region": "5",
+        "real_id": "1350",
+        "id": 1343
+    },
+    {
+        "Comments": "",
+        "Name": "Oosalon",
+        "real_id": "1352",
+        "id": 1344
+    },
+    {
+        "Comments": "",
+        "Name": "Jaloria",
+        "Sector": "Jalor",
+        "real_id": "1353",
+        "id": 1345
+    },
+    {
+        "Comments": "",
+        "Name": "Halmad",
+        "Region": "7",
+        "real_id": "1354",
+        "id": 1346
+    },
+    {
+        "Comments": "",
+        "Name": "Kindosorn",
+        "real_id": "1355",
+        "id": 1347
+    },
+    {
+        "Comments": "",
+        "Name": "Lau",
+        "real_id": "1356",
+        "id": 1348
+    },
+    {
+        "Comments": "",
+        "Name": "Setron",
+        "real_id": "1357",
+        "id": 1349
+    },
+    {
+        "Comments": "",
+        "Name": "Andro Prime",
+        "real_id": "1358",
+        "id": 1350
+    },
+    {
+        "Comments": "",
+        "Name": "Erebus",
+        "real_id": "1359",
+        "id": 1351
+    },
+    {
+        "Comments": "",
+        "Name": "Abtin",
+        "real_id": "1360",
+        "id": 1352
+    },
+    {
+        "Comments": "",
+        "Name": "Bororn",
+        "real_id": "1361",
+        "id": 1353
+    },
+    {
+        "Comments": "",
+        "Name": "Temeranc\u00e9",
+        "Sector": "Rekai",
+        "real_id": "1362",
+        "id": 1354
+    },
+    {
+        "Comments": "",
+        "Name": "Hallitron-7",
+        "Sector": "Jalor",
+        "real_id": "1363",
+        "id": 1355
+    },
+    {
+        "Comments": "",
+        "Name": "Roxuli",
+        "real_id": "1364",
+        "id": 1356
+    },
+    {
+        "Comments": "",
+        "Name": "Suria",
+        "real_id": "1365",
+        "id": 1357
+    },
+    {
+        "Comments": "",
+        "Name": "Tragor Station",
+        "real_id": "1366",
+        "id": 1358
+    },
+    {
+        "Comments": "",
+        "Name": "Moonbender Colony",
+        "Region": "7",
+        "real_id": "1367",
+        "id": 1359
+    },
+    {
+        "Comments": "",
+        "Name": "Dawk",
+        "Region": "7",
+        "real_id": "1368",
+        "id": 1360
+    },
+    {
+        "Comments": "",
+        "Name": "Chenley Prime",
+        "real_id": "1369",
+        "id": 1361
+    },
+    {
+        "Comments": "",
+        "Name": "Seswenna",
+        "real_id": "1370",
+        "id": 1362
+    },
+    {
+        "Comments": "",
+        "Name": "Shingcu Station",
+        "real_id": "1371",
+        "id": 1363
+    },
+    {
+        "Comments": "",
+        "Name": "Targyon",
+        "real_id": "1372",
+        "id": 1364
+    },
+    {
+        "Comments": "",
+        "Name": "Regis Kor",
+        "real_id": "1373",
+        "id": 1365
+    },
+    {
+        "Comments": "",
+        "Name": "Zayron",
+        "real_id": "1374",
+        "id": 1366
+    },
+    {
+        "Comments": "",
+        "Name": "Gerrenthum",
+        "real_id": "1375",
+        "id": 1367
+    },
+    {
+        "Comments": "",
+        "Name": "Kothlis",
+        "real_id": "1377",
+        "id": 1368
+    },
+    {
+        "Comments": "",
+        "Name": "Kerev Doi",
+        "real_id": "1378",
+        "id": 1369
+    },
+    {
+        "Comments": "",
+        "Name": "Thurhanna Minor",
+        "real_id": "1379",
+        "id": 1370
+    },
+    {
+        "Comments": "",
+        "Name": "Ivarujar",
+        "real_id": "1380",
+        "id": 1371
+    },
+    {
+        "Comments": "",
+        "Name": "Oulanne",
+        "real_id": "1381",
+        "id": 1372
+    },
+    {
+        "Comments": "",
+        "Name": "Arieli",
+        "real_id": "1382",
+        "id": 1373
+    },
+    {
+        "Comments": "",
+        "Name": "Ivera X",
+        "real_id": "1383",
+        "id": 1374
+    },
+    {
+        "Comments": "",
+        "Name": "Miriatin",
+        "real_id": "1384",
+        "id": 1375
+    },
+    {
+        "Comments": "",
+        "Name": "5251977",
+        "real_id": "1385",
+        "id": 1376
+    },
+    {
+        "Comments": "",
+        "Name": "Nea Dajanam",
+        "real_id": "1386",
+        "id": 1377
+    },
+    {
+        "Comments": "",
+        "Name": "Ponemah",
+        "real_id": "1387",
+        "id": 1378
+    },
+    {
+        "Comments": "",
+        "Name": "Queluhan Nebula",
+        "real_id": "1388",
+        "id": 1379
+    },
+    {
+        "Comments": "",
+        "Name": "Hinari",
+        "real_id": "1389",
+        "id": 1380
+    },
+    {
+        "Comments": "",
+        "Name": "Tiss'el",
+        "real_id": "1390",
+        "id": 1381
+    },
+    {
+        "Comments": "",
+        "Name": "Langsha-Raang",
+        "real_id": "1391",
+        "id": 1382
+    },
+    {
+        "Comments": "",
+        "Name": "Andovar",
+        "real_id": "1392",
+        "id": 1383
+    },
+    {
+        "Comments": "",
+        "Name": "Naalol",
+        "real_id": "1393",
+        "id": 1384
+    },
+    {
+        "Comments": "",
+        "Name": "Dermos",
+        "real_id": "1394",
+        "id": 1385
+    },
+    {
+        "Comments": "",
+        "Name": "Tanis",
+        "real_id": "1395",
+        "id": 1386
+    },
+    {
+        "Comments": "",
+        "Name": "Juntar",
+        "real_id": "1396",
+        "id": 1387
+    },
+    {
+        "Comments": "",
+        "Name": "Mordal",
+        "real_id": "1397",
+        "id": 1388
+    },
+    {
+        "Comments": "",
+        "Name": "Vulpinus Nebula",
+        "real_id": "1398",
+        "id": 1389
+    },
+    {
+        "Comments": "",
+        "Name": "Caranthanax B.",
+        "Region": "7",
+        "real_id": "1399",
+        "id": 1390
+    },
+    {
+        "Comments": "",
+        "Name": "Gan Moradir",
+        "real_id": "1400",
+        "id": 1391
+    },
+    {
+        "Comments": "",
+        "Name": "Sevarcos",
+        "real_id": "1401",
+        "id": 1392
+    },
+    {
+        "Comments": "",
+        "Name": "Tharnaka",
+        "real_id": "1402",
+        "id": 1393
+    },
+    {
+        "Comments": "",
+        "Name": "Dasoor",
+        "real_id": "1403",
+        "id": 1394
+    },
+    {
+        "Comments": "",
+        "Name": "Ando Prime",
+        "real_id": "1405",
+        "id": 1395
+    },
+    {
+        "Comments": "",
+        "Name": "Kara-bin",
+        "real_id": "1406",
+        "id": 1396
+    },
+    {
+        "Comments": "",
+        "Name": "Warrin Station",
+        "real_id": "1407",
+        "id": 1397
+    },
+    {
+        "Comments": "",
+        "Name": "Andoowell",
+        "real_id": "1408",
+        "id": 1398
+    },
+    {
+        "Comments": "",
+        "Name": "Fanha",
+        "real_id": "1409",
+        "id": 1399
+    },
+    {
+        "Comments": "",
+        "Name": "Tosste",
+        "real_id": "1410",
+        "id": 1400
+    },
+    {
+        "Comments": "",
+        "Name": "Ogoth Tiir",
+        "real_id": "1411",
+        "id": 1401
+    },
+    {
+        "Comments": "",
+        "Name": "Bryndar",
+        "real_id": "1412",
+        "id": 1402
+    },
+    {
+        "Comments": "",
+        "Name": "Metharian Nebula",
+        "real_id": "1413",
+        "id": 1403
+    },
+    {
+        "Comments": "",
+        "Name": "Minos Cluster",
+        "real_id": "1414",
+        "id": 1404
+    },
+    {
+        "Comments": "",
+        "Name": "Syngia Station",
+        "Sector": "Sertar",
+        "real_id": "1415",
+        "id": 1405
+    },
+    {
+        "Comments": "",
+        "Name": "Gesaral Beta",
+        "real_id": "1416",
+        "id": 1406
+    },
+    {
+        "Comments": "",
+        "Name": "Sirpar",
+        "real_id": "1417",
+        "id": 1407
+    },
+    {
+        "Comments": "",
+        "Name": "Dedoon",
+        "real_id": "1418",
+        "id": 1408
+    },
+    {
+        "Comments": "",
+        "Name": "Ootoo Prime",
+        "real_id": "1419",
+        "id": 1409
+    },
+    {
+        "Comments": "",
+        "Name": "Galjaero",
+        "real_id": "1420",
+        "id": 1410
+    },
+    {
+        "Comments": "",
+        "Name": "Kondoraan",
+        "real_id": "1421",
+        "id": 1411
+    },
+    {
+        "Comments": "",
+        "Name": "Omaka",
+        "real_id": "1422",
+        "id": 1412
+    },
+    {
+        "Comments": "",
+        "Name": "Bayora",
+        "real_id": "1423",
+        "id": 1413
+    },
+    {
+        "Comments": "",
+        "Name": "Morellia",
+        "real_id": "1424",
+        "id": 1414
+    },
+    {
+        "Comments": "",
+        "Name": "Thune",
+        "real_id": "1425",
+        "id": 1415
+    },
+    {
+        "Comments": "",
+        "Name": "Haidoral Prime",
+        "real_id": "1426",
+        "id": 1416
+    },
+    {
+        "Comments": "",
+        "Name": "Crucival",
+        "real_id": "1427",
+        "id": 1417
+    },
+    {
+        "Comments": "",
+        "Name": "Vuundalla",
+        "real_id": "1428",
+        "id": 1418
+    },
+    {
+        "Comments": "",
+        "Name": "Ueda",
+        "real_id": "1429",
+        "id": 1419
+    },
+    {
+        "Comments": "",
+        "Name": "Brendok",
+        "real_id": "1430",
+        "id": 1420
+    },
+    {
+        "Comments": "",
+        "Name": "Ah Re Won",
+        "Region": "7",
+        "real_id": "1432",
+        "id": 1421
+    },
+    {
+        "Comments": "",
+        "Name": "Gerrigon",
+        "real_id": "1433",
+        "id": 1422
+    },
+    {
+        "Comments": "",
+        "Name": "Endoviara Seven",
+        "real_id": "1434",
+        "id": 1423
+    },
+    {
+        "Comments": "",
+        "Name": "Dellalt",
+        "real_id": "1435",
+        "id": 1424
+    },
+    {
+        "Comments": "",
+        "Name": "Olega",
+        "real_id": "1436",
+        "id": 1425
+    },
+    {
+        "Comments": "",
+        "Name": "Khofar",
+        "Region": "7",
+        "real_id": "1437",
+        "id": 1426
+    },
+    {
+        "Comments": "",
+        "Name": "Bonadan",
+        "real_id": "1438",
+        "id": 1427
+    },
+    {
+        "Comments": "",
+        "Name": "Deppani",
+        "real_id": "1439",
+        "id": 1428
+    },
+    {
+        "Comments": "",
+        "Name": "Ayoh 7",
+        "real_id": "1440",
+        "id": 1429
+    },
+    {
+        "Comments": "",
+        "Name": "Kalaan",
+        "real_id": "1442",
+        "id": 1430
+    },
+    {
+        "Comments": "",
+        "Name": "Maraken",
+        "real_id": "1444",
+        "id": 1431
+    },
+    {
+        "Comments": "",
+        "Name": "Xirl",
+        "real_id": "1445",
+        "id": 1432
+    },
+    {
+        "Comments": "",
+        "Name": "Asyrphus",
+        "real_id": "1446",
+        "id": 1433
+    },
+    {
+        "Comments": "",
+        "Name": "Bayamor",
+        "real_id": "1447",
+        "id": 1434
+    },
+    {
+        "Comments": "",
+        "Name": "Inyusu Tor",
+        "real_id": "1448",
+        "id": 1435
+    },
+    {
+        "Comments": "",
+        "Name": "Variax",
+        "real_id": "1449",
+        "id": 1436
+    },
+    {
+        "Comments": "",
+        "Name": "Toshara",
+        "real_id": "1450",
+        "id": 1437
+    },
+    {
+        "Comments": "",
+        "Name": "Ikari",
+        "real_id": "1451",
+        "id": 1438
+    },
+    {
+        "Comments": "",
+        "Name": "Klytus V",
+        "real_id": "1452",
+        "id": 1439
+    },
+    {
+        "Comments": "",
+        "Name": "Skree",
+        "real_id": "1453",
+        "id": 1440
+    },
+    {
+        "Comments": "",
+        "Name": "Bosnok",
+        "real_id": "1454",
+        "id": 1441
+    },
+    {
+        "Comments": "",
+        "Name": "Fuel Station Visavi",
+        "real_id": "1455",
+        "id": 1442
+    },
+    {
+        "Comments": "",
+        "Name": "Renpali Space Station",
+        "real_id": "1456",
+        "id": 1443
+    },
+    {
+        "Comments": "",
+        "Name": "Noctu",
+        "real_id": "1457",
+        "id": 1444
+    },
+    {
+        "Comments": "",
+        "Name": "Tharl",
+        "real_id": "1458",
+        "id": 1445
+    },
+    {
+        "Comments": "",
+        "Name": "Chankin",
+        "real_id": "1459",
+        "id": 1446
+    },
+    {
+        "Comments": "",
+        "Name": "Pion",
+        "real_id": "1460",
+        "id": 1447
+    },
+    {
+        "Comments": "",
+        "Name": "Xala",
+        "real_id": "1461",
+        "id": 1448
+    },
+    {
+        "Comments": "",
+        "Name": "Mannius Eight",
+        "real_id": "1462",
+        "id": 1449
+    },
+    {
+        "Comments": "",
+        "Name": "Tozil",
+        "real_id": "1463",
+        "id": 1450
+    },
+    {
+        "Comments": "",
+        "Name": "Vianax",
+        "real_id": "1464",
+        "id": 1451
+    },
+    {
+        "Comments": "",
+        "Name": "Veek",
+        "real_id": "1465",
+        "id": 1452
+    },
+    {
+        "Comments": "",
+        "Name": "Bartool",
+        "real_id": "1466",
+        "id": 1453
+    },
+    {
+        "Comments": "",
+        "Name": "Dead Moon of Gothol",
+        "real_id": "1467",
+        "id": 1454
+    },
+    {
+        "Comments": "",
+        "Name": "Niraya",
+        "Region": "4",
+        "real_id": "1468",
+        "id": 1455
+    },
+    {
+        "Comments": "",
+        "Name": "Feleantor",
+        "Region": "7",
+        "real_id": "1469",
+        "id": 1456
+    },
+    {
+        "Comments": "",
+        "Name": "Cedone",
+        "real_id": "1470",
+        "id": 1457
+    },
+    {
+        "Comments": "",
+        "Name": "Borlax 14",
+        "real_id": "1471",
+        "id": 1458
+    },
+    {
+        "Comments": "",
+        "Name": "Faz",
+        "real_id": "1472",
+        "id": 1459
+    },
+    {
+        "Comments": "",
+        "Name": "Sesswanna",
+        "real_id": "1473",
+        "id": 1460
+    },
+    {
+        "Comments": "",
+        "Name": "Genosha",
+        "real_id": "1474",
+        "id": 1461
+    },
+    {
+        "Comments": "",
+        "Name": "Parsh",
+        "real_id": "1475",
+        "id": 1462
+    },
+    {
+        "Comments": "",
+        "Name": "Podunk",
+        "real_id": "1476",
+        "id": 1463
+    },
+    {
+        "Comments": "",
+        "Name": "Ottinger 7",
+        "real_id": "1477",
+        "id": 1464
+    },
+    {
+        "Comments": "",
+        "Name": "Menthusa",
+        "real_id": "1478",
+        "id": 1465
+    },
+    {
+        "Comments": "",
+        "Name": "Veros",
+        "real_id": "1479",
+        "id": 1466
+    },
+    {
+        "Comments": "",
+        "Name": "Konthar Sector",
+        "real_id": "1480",
+        "id": 1467
+    },
+    {
+        "Comments": "",
+        "Name": "Kathol Rift",
+        "real_id": "1481",
+        "id": 1468
+    },
+    {
+        "Comments": "",
+        "Name": "Chargona",
+        "real_id": "1482",
+        "id": 1469
+    },
+    {
+        "Comments": "",
+        "Name": "World Between Worlds",
+        "real_id": "1483",
+        "id": 1470
+    },
+    {
+        "Comments": "",
+        "Name": "Petris Major",
+        "real_id": "1484",
+        "id": 1471
+    },
+    {
+        "Comments": "",
+        "Name": "Exiss Nine",
+        "real_id": "1485",
+        "id": 1472
+    },
+    {
+        "Comments": "",
+        "Name": "Theron",
+        "real_id": "1486",
+        "id": 1473
+    },
+    {
+        "Comments": "",
+        "Name": "Noult",
+        "real_id": "1487",
+        "id": 1474
+    },
+    {
+        "Comments": "",
+        "Name": "Vivonah",
+        "real_id": "1488",
+        "id": 1475
+    },
+    {
+        "Comments": "",
+        "Name": "Comra",
+        "real_id": "1489",
+        "id": 1476
+    },
+    {
+        "Comments": "",
+        "Name": "Daxam IV",
+        "real_id": "1490",
+        "id": 1477
+    }
+]

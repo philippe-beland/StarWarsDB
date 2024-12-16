@@ -1,0 +1,3260 @@
+[
+    {
+        "Name": "Bravo Squad",
+        "real_id": "2",
+        "id": 1
+    },
+    {
+        "Name": "Confederacy of Independent Systems",
+        "Comments": "Separatist",
+        "real_id": "3",
+        "id": 2
+    },
+    {
+        "Name": "Phoenix Squadron",
+        "real_id": "4",
+        "id": 3
+    },
+    {
+        "Name": "Rebel Alliance",
+        "real_id": "5",
+        "id": 4
+    },
+    {
+        "Name": "Galactic Empire",
+        "real_id": "6",
+        "id": 5
+    },
+    {
+        "Name": "Clone Trooper (Helmet)",
+        "real_id": "7",
+        "id": 6
+    },
+    {
+        "Name": "Trade Federation",
+        "real_id": "8",
+        "id": 7
+    },
+    {
+        "Name": "Jedi Order",
+        "real_id": "9",
+        "id": 8
+    },
+    {
+        "Name": "Galactic Republic",
+        "real_id": "10",
+        "id": 9
+    },
+    {
+        "Name": "Iron Squadron",
+        "real_id": "11",
+        "id": 10
+    },
+    {
+        "Name": "Palpatine Royal Guard",
+        "real_id": "12",
+        "id": 11
+    },
+    {
+        "Name": "Loyalist Comitee",
+        "real_id": "13",
+        "id": 12
+    },
+    {
+        "Name": "Lost Twenty",
+        "real_id": "14",
+        "id": 13
+    },
+    {
+        "Name": "Commerce Guild",
+        "real_id": "15",
+        "id": 14
+    },
+    {
+        "Name": "Corporate Alliance",
+        "real_id": "16",
+        "id": 15
+    },
+    {
+        "Name": "Techno Union",
+        "real_id": "17",
+        "id": 16
+    },
+    {
+        "Name": "Banking Clan",
+        "real_id": "18",
+        "id": 17
+    },
+    {
+        "Name": "Old Republic",
+        "real_id": "19",
+        "id": 18
+    },
+    {
+        "Name": "Red Squadron",
+        "real_id": "20",
+        "id": 19
+    },
+    {
+        "Name": "Gold Squadron",
+        "real_id": "21",
+        "id": 20
+    },
+    {
+        "Name": "Imperial Royal Guard",
+        "real_id": "22",
+        "id": 21
+    },
+    {
+        "Name": "Green Squadron",
+        "real_id": "23",
+        "id": 22
+    },
+    {
+        "Name": "Gray Squadron",
+        "real_id": "24",
+        "id": 23
+    },
+    {
+        "Name": "First Order",
+        "real_id": "25",
+        "id": 24
+    },
+    {
+        "Name": "Resistance",
+        "real_id": "26",
+        "id": 25
+    },
+    {
+        "Name": "First Order Stormtrooper",
+        "real_id": "27",
+        "id": 26
+    },
+    {
+        "Name": "First Order Flametrooper",
+        "real_id": "28",
+        "id": 27
+    },
+    {
+        "Name": "New Republic",
+        "real_id": "29",
+        "id": 28
+    },
+    {
+        "Name": "Guavian Death Gang",
+        "real_id": "30",
+        "id": 29
+    },
+    {
+        "Name": "Kanjiklub",
+        "real_id": "31",
+        "id": 30
+    },
+    {
+        "Name": "Blue Squadron",
+        "real_id": "32",
+        "id": 31
+    },
+    {
+        "Name": "Knights of Ren",
+        "real_id": "33",
+        "id": 32
+    },
+    {
+        "Name": "Guardians of the Whills",
+        "real_id": "35",
+        "id": 33
+    },
+    {
+        "Name": "Crimson Dawn",
+        "real_id": "36",
+        "id": 34
+    },
+    {
+        "Name": "Hutt Cartel",
+        "real_id": "37",
+        "id": 35
+    },
+    {
+        "Name": "Imperial Stormtrooper",
+        "real_id": "38",
+        "id": 36
+    },
+    {
+        "Name": "Imperial Rangetrooper",
+        "real_id": "39",
+        "id": 37
+    },
+    {
+        "Name": "The Ghost",
+        "real_id": "40",
+        "id": 38
+    },
+    {
+        "Name": "Zakku Rain Cartel",
+        "real_id": "41",
+        "id": 39
+    },
+    {
+        "Name": "Black Sun",
+        "real_id": "42",
+        "id": 40
+    },
+    {
+        "Name": "Pyke Syndicate",
+        "real_id": "43",
+        "id": 41
+    },
+    {
+        "Name": "Shadow Collective",
+        "real_id": "44",
+        "id": 42
+    },
+    {
+        "Name": "Mandalorian",
+        "real_id": "45",
+        "id": 43
+    },
+    {
+        "Name": "Nightbrothers",
+        "real_id": "46",
+        "id": 44
+    },
+    {
+        "Name": "Nightsisters",
+        "real_id": "47",
+        "id": 45
+    },
+    {
+        "Name": "Domino Squad",
+        "real_id": "48",
+        "id": 46
+    },
+    {
+        "Name": "ARC Troopers",
+        "real_id": "49",
+        "id": 47
+    },
+    {
+        "Name": "Rancor Battalion",
+        "real_id": "50",
+        "id": 48
+    },
+    {
+        "Name": "Separatist (Senate)",
+        "real_id": "51",
+        "id": 49
+    },
+    {
+        "Name": "Shu-Torun",
+        "real_id": "52",
+        "id": 50
+    },
+    {
+        "Name": "Warbirds (PIrate gang)",
+        "real_id": "53",
+        "id": 51
+    },
+    {
+        "Name": "Inquisitorius",
+        "real_id": "54",
+        "id": 52
+    },
+    {
+        "Name": "Imperial Security Bureau",
+        "real_id": "55",
+        "id": 53
+    },
+    {
+        "Name": "Sienar Fleet Systems (Mural)",
+        "real_id": "56",
+        "id": 54
+    },
+    {
+        "Name": "Rogue Squadron",
+        "real_id": "57",
+        "id": 55
+    },
+    {
+        "Name": "Mining Guild",
+        "real_id": "58",
+        "id": 56
+    },
+    {
+        "Name": "Squad LRC077",
+        "real_id": "60",
+        "id": 57
+    },
+    {
+        "Name": "Scar Squadron",
+        "Comments": "Also called Task Force 99",
+        "real_id": "61",
+        "id": 58
+    },
+    {
+        "Name": "Delta Squadron",
+        "real_id": "62",
+        "id": 59
+    },
+    {
+        "Name": "Lasat Honor Guard",
+        "real_id": "63",
+        "id": 60
+    },
+    {
+        "Name": "Green Company",
+        "real_id": "64",
+        "id": 61
+    },
+    {
+        "Name": "Carida Squadron",
+        "real_id": "65",
+        "id": 62
+    },
+    {
+        "Name": "Clan Markona",
+        "real_id": "66",
+        "id": 63
+    },
+    {
+        "Name": "Pirates",
+        "real_id": "67",
+        "id": 64
+    },
+    {
+        "Name": "501st",
+        "real_id": "68",
+        "id": 65
+    },
+    {
+        "Name": "Five Syndicates",
+        "real_id": "69",
+        "id": 66
+    },
+    {
+        "Name": "Bomb Squad Clones",
+        "real_id": "70",
+        "id": 67
+    },
+    {
+        "Name": "Wildfire Squad",
+        "real_id": "71",
+        "id": 68
+    },
+    {
+        "Name": "Snow Wolves Squad",
+        "real_id": "72",
+        "id": 69
+    },
+    {
+        "Name": "Calm Tree Squad",
+        "real_id": "73",
+        "id": 70
+    },
+    {
+        "Name": "Empire Public Relations",
+        "real_id": "74",
+        "id": 71
+    },
+    {
+        "Name": "Purple Squad",
+        "real_id": "75",
+        "id": 72
+    },
+    {
+        "Name": "Central Isopter",
+        "real_id": "76",
+        "id": 73
+    },
+    {
+        "Name": "The Coalition For Progress",
+        "real_id": "77",
+        "id": 74
+    },
+    {
+        "Name": "Imperial Propaganda and Misinformation",
+        "real_id": "78",
+        "id": 75
+    },
+    {
+        "Name": "Beta Squadron",
+        "real_id": "79",
+        "id": 76
+    },
+    {
+        "Name": "Ghost Company",
+        "real_id": "80",
+        "id": 77
+    },
+    {
+        "Name": "Lightning Squadron",
+        "real_id": "81",
+        "id": 78
+    },
+    {
+        "Name": "Resistance Fighters",
+        "real_id": "82",
+        "id": 79
+    },
+    {
+        "Name": "Iltan Clan",
+        "real_id": "83",
+        "id": 80
+    },
+    {
+        "Name": "Czerka Corporation",
+        "real_id": "84",
+        "id": 81
+    },
+    {
+        "Name": "InterGalactic Banking Clan",
+        "real_id": "85",
+        "id": 82
+    },
+    {
+        "Name": "Rang Clan",
+        "real_id": "86",
+        "id": 83
+    },
+    {
+        "Name": "Galactic Senate",
+        "real_id": "87",
+        "id": 84
+    },
+    {
+        "Name": "Rogue One",
+        "real_id": "88",
+        "id": 85
+    },
+    {
+        "Name": "Squadron Five",
+        "real_id": "89",
+        "id": 86
+    },
+    {
+        "Name": "204th",
+        "real_id": "90",
+        "id": 87
+    },
+    {
+        "Name": "Gillanium Syndicate",
+        "real_id": "91",
+        "id": 88
+    },
+    {
+        "Name": "Carnivore Battalion",
+        "real_id": "92",
+        "id": 89
+    },
+    {
+        "Name": "Execute Battalion",
+        "real_id": "93",
+        "id": 90
+    },
+    {
+        "Name": "Chair for the Coalition For Progress",
+        "real_id": "94",
+        "id": 91
+    },
+    {
+        "Name": "Red Fury",
+        "real_id": "95",
+        "id": 92
+    },
+    {
+        "Name": "Royal Security Force",
+        "real_id": "96",
+        "id": 93
+    },
+    {
+        "Name": "Hazard Squadron (1-2-3)",
+        "real_id": "97",
+        "id": 94
+    },
+    {
+        "Name": "Ordu Aspectu",
+        "real_id": "98",
+        "id": 95
+    },
+    {
+        "Name": "Slinani (Religious Warrior Clan)",
+        "real_id": "99",
+        "id": 96
+    },
+    {
+        "Name": "Bounty Hunter Guild",
+        "real_id": "100",
+        "id": 97
+    },
+    {
+        "Name": "Partisans",
+        "real_id": "101",
+        "id": 98
+    },
+    {
+        "Name": "Mon Calamari Mercantile Fleet",
+        "real_id": "102",
+        "id": 99
+    },
+    {
+        "Name": "Blade Squadron",
+        "real_id": "103",
+        "id": 100
+    },
+    {
+        "Name": "Death Squadron",
+        "real_id": "104",
+        "id": 101
+    },
+    {
+        "Name": "Clone Trooper",
+        "real_id": "105",
+        "id": 102
+    },
+    {
+        "Name": "Crymorah",
+        "real_id": "106",
+        "id": 103
+    },
+    {
+        "Name": "Audit Division",
+        "real_id": "107",
+        "id": 104
+    },
+    {
+        "Name": "Ben Diffle Fantanines",
+        "real_id": "108",
+        "id": 105
+    },
+    {
+        "Name": "Shadow Wing (204th)",
+        "Comments": "Composed of 6 squadrons. A exist\u00e9 pendant 20 ans.",
+        "real_id": "109",
+        "id": 106
+    },
+    {
+        "Name": "Imperial Scout Trooper",
+        "real_id": "110",
+        "id": 107
+    },
+    {
+        "Name": "Imperial Purge Trooper",
+        "real_id": "111",
+        "id": 108
+    },
+    {
+        "Name": "Imperial Flame Trooper",
+        "real_id": "112",
+        "id": 109
+    },
+    {
+        "Name": "Imperial Rocket Launcher Trooper",
+        "real_id": "113",
+        "id": 110
+    },
+    {
+        "Name": "Imperial Stormtrooper Officer",
+        "real_id": "114",
+        "id": 111
+    },
+    {
+        "Name": "Imperial Scout Trooper Commander",
+        "real_id": "115",
+        "id": 112
+    },
+    {
+        "Name": "Imperial Heavy Assault Trooper",
+        "real_id": "116",
+        "id": 113
+    },
+    {
+        "Name": "Imperial Snow Trooper",
+        "real_id": "117",
+        "id": 114
+    },
+    {
+        "Name": "AT-AT Pilot",
+        "real_id": "118",
+        "id": 115
+    },
+    {
+        "Name": "AT-ST Driver",
+        "real_id": "119",
+        "id": 116
+    },
+    {
+        "Name": "Haxion Brood",
+        "real_id": "120",
+        "id": 117
+    },
+    {
+        "Name": "Senate Guard",
+        "real_id": "121",
+        "id": 118
+    },
+    {
+        "Name": "Black Squadron",
+        "real_id": "122",
+        "id": 119
+    },
+    {
+        "Name": "FN Squad",
+        "real_id": "123",
+        "id": 120
+    },
+    {
+        "Name": "FO Squad",
+        "real_id": "124",
+        "id": 121
+    },
+    {
+        "Name": "FL Squad",
+        "real_id": "125",
+        "id": 122
+    },
+    {
+        "Name": "Rapier Squadron",
+        "real_id": "126",
+        "id": 123
+    },
+    {
+        "Name": "Senate Intelligence Commitee",
+        "real_id": "127",
+        "id": 124
+    },
+    {
+        "Name": "Tango Company",
+        "real_id": "128",
+        "id": 125
+    },
+    {
+        "Name": "Chiss Ascendancy",
+        "real_id": "129",
+        "id": 126
+    },
+    {
+        "Name": "96th Task Force",
+        "real_id": "130",
+        "id": 127
+    },
+    {
+        "Name": "103th",
+        "real_id": "131",
+        "id": 128
+    },
+    {
+        "Name": "125th",
+        "real_id": "132",
+        "id": 129
+    },
+    {
+        "Name": "7th Fleet",
+        "real_id": "133",
+        "id": 130
+    },
+    {
+        "Name": "Chiss Defense Fleet",
+        "real_id": "134",
+        "id": 131
+    },
+    {
+        "Name": "Kanauer Corporation",
+        "real_id": "135",
+        "id": 132
+    },
+    {
+        "Name": "The Protectors",
+        "real_id": "137",
+        "id": 133
+    },
+    {
+        "Name": "Death Watch",
+        "real_id": "138",
+        "id": 134
+    },
+    {
+        "Name": "Ohnaka Transport Solutions",
+        "real_id": "139",
+        "id": 135
+    },
+    {
+        "Name": "Botsini Crew",
+        "real_id": "140",
+        "id": 136
+    },
+    {
+        "Name": "StarFlora Corp",
+        "real_id": "141",
+        "id": 137
+    },
+    {
+        "Name": "Max Rebo Band",
+        "real_id": "142",
+        "id": 138
+    },
+    {
+        "Name": "Death Trooper",
+        "real_id": "143",
+        "id": 139
+    },
+    {
+        "Name": "First Legion",
+        "real_id": "144",
+        "id": 140
+    },
+    {
+        "Name": "Task Force 231",
+        "real_id": "145",
+        "id": 141
+    },
+    {
+        "Name": "Defender Squadron One",
+        "real_id": "146",
+        "id": 142
+    },
+    {
+        "Name": "Maintenance Crew Herf Two",
+        "real_id": "147",
+        "id": 143
+    },
+    {
+        "Name": "Expansionary Defense Fleet",
+        "real_id": "148",
+        "id": 144
+    },
+    {
+        "Name": "Black Squadron (Empire)",
+        "real_id": "149",
+        "id": 145
+    },
+    {
+        "Name": "Mandalorian Royal Guard",
+        "real_id": "150",
+        "id": 146
+    },
+    {
+        "Name": "House Vizsla",
+        "real_id": "151",
+        "id": 147
+    },
+    {
+        "Name": "Clan Wren",
+        "real_id": "152",
+        "id": 148
+    },
+    {
+        "Name": "Senate Riot Clone Trooper",
+        "real_id": "153",
+        "id": 149
+    },
+    {
+        "Name": "Massassi Group",
+        "real_id": "154",
+        "id": 150
+    },
+    {
+        "Name": "Clan Saxon",
+        "real_id": "155",
+        "id": 151
+    },
+    {
+        "Name": "Clan Kryze",
+        "real_id": "156",
+        "id": 152
+    },
+    {
+        "Name": "Clan Vizsla",
+        "real_id": "157",
+        "id": 153
+    },
+    {
+        "Name": "Clan Rook",
+        "real_id": "158",
+        "id": 154
+    },
+    {
+        "Name": "Protectors",
+        "real_id": "159",
+        "id": 155
+    },
+    {
+        "Name": "Clan Eldar",
+        "real_id": "160",
+        "id": 156
+    },
+    {
+        "Name": "Cloud Rider",
+        "real_id": "161",
+        "id": 157
+    },
+    {
+        "Name": "Carpo Organization",
+        "real_id": "162",
+        "id": 158
+    },
+    {
+        "Name": "Imperial Spacetrooper",
+        "real_id": "163",
+        "id": 159
+    },
+    {
+        "Name": "Inferno Squad",
+        "real_id": "164",
+        "id": 160
+    },
+    {
+        "Name": "Danger Squadron",
+        "real_id": "165",
+        "id": 161
+    },
+    {
+        "Name": "Hidden Hand",
+        "real_id": "166",
+        "id": 162
+    },
+    {
+        "Name": "Elders of Kakra",
+        "real_id": "167",
+        "id": 163
+    },
+    {
+        "Name": "New Republic Defense Force",
+        "real_id": "168",
+        "id": 164
+    },
+    {
+        "Name": "Minister of Propaganda",
+        "real_id": "169",
+        "id": 165
+    },
+    {
+        "Name": "Indigo Squadron",
+        "real_id": "170",
+        "id": 166
+    },
+    {
+        "Name": "85th",
+        "real_id": "171",
+        "id": 167
+    },
+    {
+        "Name": "Third Legion",
+        "real_id": "172",
+        "id": 168
+    },
+    {
+        "Name": "Reaper Squadron",
+        "real_id": "173",
+        "id": 169
+    },
+    {
+        "Name": "Isopter",
+        "real_id": "174",
+        "id": 170
+    },
+    {
+        "Name": "CS Squad",
+        "real_id": "175",
+        "id": 171
+    },
+    {
+        "Name": "First Order Security Bureau",
+        "real_id": "176",
+        "id": 172
+    },
+    {
+        "Name": "First Order Scubatrooper",
+        "real_id": "177",
+        "id": 173
+    },
+    {
+        "Name": "Hutt Council",
+        "real_id": "178",
+        "id": 174
+    },
+    {
+        "Name": "Yellow Squadron",
+        "real_id": "179",
+        "id": 175
+    },
+    {
+        "Name": "Corona Squadron",
+        "real_id": "180",
+        "id": 176
+    },
+    {
+        "Name": "Feral Squadron",
+        "real_id": "181",
+        "id": 177
+    },
+    {
+        "Name": "Splash Squadron",
+        "real_id": "182",
+        "id": 178
+    },
+    {
+        "Name": "Cobalt Squadron",
+        "real_id": "183",
+        "id": 179
+    },
+    {
+        "Name": "Exeter Squadron",
+        "real_id": "184",
+        "id": 180
+    },
+    {
+        "Name": "Rampant Squadron",
+        "real_id": "185",
+        "id": 181
+    },
+    {
+        "Name": "Claws",
+        "real_id": "186",
+        "id": 182
+    },
+    {
+        "Name": "Con Star Mining Corporation",
+        "real_id": "187",
+        "id": 183
+    },
+    {
+        "Name": "White Hand",
+        "real_id": "188",
+        "id": 184
+    },
+    {
+        "Name": "Coruscant Security Force Patrol",
+        "real_id": "189",
+        "id": 185
+    },
+    {
+        "Name": "Kaitis Cartel",
+        "real_id": "190",
+        "id": 186
+    },
+    {
+        "Name": "Corellian Engineering Corporation",
+        "real_id": "191",
+        "id": 187
+    },
+    {
+        "Name": "New Republic Defense Fleet",
+        "real_id": "192",
+        "id": 188
+    },
+    {
+        "Name": "212th",
+        "real_id": "193",
+        "id": 189
+    },
+    {
+        "Name": "Clone Flametrooper",
+        "real_id": "194",
+        "id": 190
+    },
+    {
+        "Name": "Imperial Jump Trooper",
+        "real_id": "195",
+        "id": 191
+    },
+    {
+        "Name": "Federation of Trade Route Allocation and Monetization",
+        "real_id": "196",
+        "id": 192
+    },
+    {
+        "Name": "First Order Snowtrooper",
+        "real_id": "197",
+        "id": 193
+    },
+    {
+        "Name": "First Order Raider",
+        "real_id": "199",
+        "id": 194
+    },
+    {
+        "Name": "First Order TIE Pilot",
+        "real_id": "200",
+        "id": 195
+    },
+    {
+        "Name": "Imperial Supercommando",
+        "real_id": "201",
+        "id": 196
+    },
+    {
+        "Name": "Magna Guard",
+        "real_id": "202",
+        "id": 197
+    },
+    {
+        "Name": "Clone Scout Trooper",
+        "real_id": "203",
+        "id": 198
+    },
+    {
+        "Name": "Shadow Squadron",
+        "Comments": "Clone Squadron",
+        "real_id": "204",
+        "id": 199
+    },
+    {
+        "Name": "Shanksham Gang",
+        "real_id": "205",
+        "id": 200
+    },
+    {
+        "Name": "Imperial Shore Trooper",
+        "real_id": "206",
+        "id": 201
+    },
+    {
+        "Name": "Imperial TIE Pilot",
+        "real_id": "207",
+        "id": 202
+    },
+    {
+        "Name": "Third Fleet",
+        "real_id": "208",
+        "id": 203
+    },
+    {
+        "Name": "224th",
+        "real_id": "209",
+        "id": 204
+    },
+    {
+        "Name": "Irving Boys",
+        "real_id": "210",
+        "id": 205
+    },
+    {
+        "Name": "Krypder Riders",
+        "real_id": "211",
+        "id": 206
+    },
+    {
+        "Name": "Imperial Academy",
+        "real_id": "212",
+        "id": 207
+    },
+    {
+        "Name": "Firaxa Syndicate",
+        "Comments": "Op\u00e8re sur Level 1313. Lead\u00e9 par Lacezzi Macran",
+        "real_id": "213",
+        "id": 208
+    },
+    {
+        "Name": "B'omarr Monk",
+        "real_id": "214",
+        "id": 209
+    },
+    {
+        "Name": "Desilijic Clan",
+        "real_id": "215",
+        "id": 210
+    },
+    {
+        "Name": "Clan Rrrt",
+        "real_id": "216",
+        "id": 211
+    },
+    {
+        "Name": "Nojonz Gang",
+        "real_id": "217",
+        "id": 212
+    },
+    {
+        "Name": "Misericorde",
+        "Comments": "Rebel Alliance Intelligence Strike Team",
+        "real_id": "218",
+        "id": 213
+    },
+    {
+        "Name": "Dupei Monk",
+        "real_id": "219",
+        "id": 214
+    },
+    {
+        "Name": "Daa Corporation",
+        "real_id": "220",
+        "id": 215
+    },
+    {
+        "Name": "Sith Order",
+        "real_id": "221",
+        "id": 216
+    },
+    {
+        "Name": "Xrexus Cartel",
+        "real_id": "222",
+        "id": 217
+    },
+    {
+        "Name": "Haddrex Gang",
+        "real_id": "223",
+        "id": 218
+    },
+    {
+        "Name": "Ace Squadron",
+        "real_id": "224",
+        "id": 219
+    },
+    {
+        "Name": "Crimson Corsair",
+        "real_id": "225",
+        "id": 220
+    },
+    {
+        "Name": "Jade Squadron",
+        "real_id": "226",
+        "id": 221
+    },
+    {
+        "Name": "First Order Executioner",
+        "real_id": "227",
+        "id": 222
+    },
+    {
+        "Name": "High Republic",
+        "real_id": "228",
+        "id": 223
+    },
+    {
+        "Name": "Rebel Fleet Fourth Division",
+        "real_id": "229",
+        "id": 224
+    },
+    {
+        "Name": "Rebel Eighth Division",
+        "real_id": "230",
+        "id": 225
+    },
+    {
+        "Name": "Harlok Gang",
+        "real_id": "231",
+        "id": 226
+    },
+    {
+        "Name": "First Order Jumptrooper",
+        "real_id": "232",
+        "id": 227
+    },
+    {
+        "Name": "Droid Gotra",
+        "Comments": "Organization dedicated to droid emancipation",
+        "real_id": "234",
+        "id": 228
+    },
+    {
+        "Name": "Delta Squad",
+        "real_id": "235",
+        "id": 229
+    },
+    {
+        "Name": "Bad Batch",
+        "Comments": "Clone Force 99",
+        "real_id": "236",
+        "id": 230
+    },
+    {
+        "Name": "Jedi Temple Guard",
+        "real_id": "237",
+        "id": 231
+    },
+    {
+        "Name": "Populist",
+        "real_id": "238",
+        "id": 232
+    },
+    {
+        "Name": "Centrist",
+        "real_id": "239",
+        "id": 233
+    },
+    {
+        "Name": "Ryloth Defense Authority",
+        "Comments": "They operate with the full knowledge and support of the Rylothian government.",
+        "real_id": "240",
+        "id": 234
+    },
+    {
+        "Name": "Ryloth Historical Society",
+        "real_id": "241",
+        "id": 235
+    },
+    {
+        "Name": "Phantom Squadron",
+        "real_id": "242",
+        "id": 236
+    },
+    {
+        "Name": "Shu Industries",
+        "real_id": "243",
+        "id": 237
+    },
+    {
+        "Name": "Collective",
+        "Comments": "They were an underground organization of engineers, technicians, and scientists bent on stopping the spread of authoritarianism in all its forms via the use of technology.",
+        "real_id": "244",
+        "id": 238
+    },
+    {
+        "Name": "CorSec",
+        "real_id": "245",
+        "id": 239
+    },
+    {
+        "Name": "Scrapper Guild",
+        "real_id": "246",
+        "id": 240
+    },
+    {
+        "Name": "Dross Squadron",
+        "real_id": "247",
+        "id": 241
+    },
+    {
+        "Name": "Fardi Clan",
+        "Comments": "Ahsoka had met the Fardi Clan at the shipyards when she'd arrived on the planet.",
+        "real_id": "248",
+        "id": 242
+    },
+    {
+        "Name": "Cyan Squadron",
+        "real_id": "249",
+        "id": 243
+    },
+    {
+        "Name": "Delta Squad (Rebellion)",
+        "real_id": "250",
+        "id": 244
+    },
+    {
+        "Name": "Amber Wing",
+        "real_id": "251",
+        "id": 245
+    },
+    {
+        "Name": "Cybot Galactica",
+        "Comments": "Compagnie reconnue pour sa ligne de 3PO",
+        "real_id": "252",
+        "id": 246
+    },
+    {
+        "Name": "Riot Squadron",
+        "Comments": "Fought at Endor",
+        "real_id": "253",
+        "id": 247
+    },
+    {
+        "Name": "Hound Squadron",
+        "real_id": "254",
+        "id": 248
+    },
+    {
+        "Name": "Ore Barons",
+        "real_id": "255",
+        "id": 249
+    },
+    {
+        "Name": "Imperial Special Forces",
+        "real_id": "256",
+        "id": 250
+    },
+    {
+        "Name": "Force-Wielder",
+        "real_id": "257",
+        "id": 251
+    },
+    {
+        "Name": "Squad Pheno-Six",
+        "real_id": "258",
+        "id": 252
+    },
+    {
+        "Name": "The Cr\u00e8che",
+        "real_id": "259",
+        "id": 253
+    },
+    {
+        "Name": "Grakks",
+        "Comments": "Organization of cybernetically enhanced Hutts who operated in Megalox, a notorious prison site, decades after the Battle of Endor.",
+        "real_id": "260",
+        "id": 254
+    },
+    {
+        "Name": "Imperial AT-AT Pilot",
+        "real_id": "261",
+        "id": 255
+    },
+    {
+        "Name": "The Rancs",
+        "Comments": "Criminal Organization",
+        "real_id": "262",
+        "id": 256
+    },
+    {
+        "Name": "Strus Clan",
+        "Comments": "Group based on Jakku",
+        "real_id": "263",
+        "id": 257
+    },
+    {
+        "Name": "Fluzhi Clan",
+        "real_id": "264",
+        "id": 258
+    },
+    {
+        "Name": "Sun-Lamas",
+        "Comments": "Rebel Squad",
+        "real_id": "265",
+        "id": 259
+    },
+    {
+        "Name": "108th",
+        "Comments": "Imperial Fighter Wing",
+        "real_id": "266",
+        "id": 260
+    },
+    {
+        "Name": "Massassi",
+        "real_id": "267",
+        "id": 261
+    },
+    {
+        "Name": "Praetorian Guard",
+        "real_id": "268",
+        "id": 262
+    },
+    {
+        "Name": "Delcontrian Faction",
+        "real_id": "270",
+        "id": 263
+    },
+    {
+        "Name": "Tellonite",
+        "real_id": "271",
+        "id": 264
+    },
+    {
+        "Name": "Caladarian",
+        "real_id": "272",
+        "id": 265
+    },
+    {
+        "Name": "Naboo Royal Space Fighter Corps",
+        "real_id": "273",
+        "id": 266
+    },
+    {
+        "Name": "Green Squadron (Resistance)",
+        "real_id": "274",
+        "id": 267
+    },
+    {
+        "Name": "Imperial AT-ST Pilot",
+        "real_id": "275",
+        "id": 268
+    },
+    {
+        "Name": "k'Jtari",
+        "Comments": "Pirate band",
+        "real_id": "276",
+        "id": 269
+    },
+    {
+        "Name": "Imperial Patrol Trooper",
+        "real_id": "277",
+        "id": 270
+    },
+    {
+        "Name": "White Worm",
+        "real_id": "278",
+        "id": 271
+    },
+    {
+        "Name": "Scrumrat",
+        "real_id": "279",
+        "id": 272
+    },
+    {
+        "Name": "Canto Bight Police",
+        "real_id": "280",
+        "id": 273
+    },
+    {
+        "Name": "Clone Pilot",
+        "real_id": "281",
+        "id": 274
+    },
+    {
+        "Name": "Death Star Gunner",
+        "real_id": "282",
+        "id": 275
+    },
+    {
+        "Name": "Figrin D'an",
+        "real_id": "283",
+        "id": 276
+    },
+    {
+        "Name": "Rockhawkers",
+        "real_id": "284",
+        "id": 277
+    },
+    {
+        "Name": "Muckwackers",
+        "real_id": "285",
+        "id": 278
+    },
+    {
+        "Name": "Sith Eternal",
+        "real_id": "286",
+        "id": 279
+    },
+    {
+        "Name": "Alazmec of Winsit",
+        "Comments": "Based on Mustafar",
+        "real_id": "287",
+        "id": 280
+    },
+    {
+        "Name": "Sith Trooper",
+        "real_id": "288",
+        "id": 281
+    },
+    {
+        "Name": "Sith Jet Trooper",
+        "real_id": "289",
+        "id": 282
+    },
+    {
+        "Name": "Sith Fleet Technician",
+        "real_id": "290",
+        "id": 283
+    },
+    {
+        "Name": "Final Order",
+        "real_id": "291",
+        "id": 284
+    },
+    {
+        "Name": "Krawg Pirate",
+        "real_id": "292",
+        "id": 285
+    },
+    {
+        "Name": "Cyban Front",
+        "real_id": "293",
+        "id": 286
+    },
+    {
+        "Name": "Ezaraa Dominion",
+        "Comments": "Covers 2 continents on Ezaraa",
+        "real_id": "294",
+        "id": 287
+    },
+    {
+        "Name": "Xonti Brothers",
+        "real_id": "295",
+        "id": 288
+    },
+    {
+        "Name": "Son-Tuul Pride",
+        "real_id": "296",
+        "id": 289
+    },
+    {
+        "Name": "Zeph Quintuplets",
+        "real_id": "297",
+        "id": 290
+    },
+    {
+        "Name": "Open",
+        "Comments": "Faction of a Primitive war on Carnelion IV",
+        "real_id": "298",
+        "id": 291
+    },
+    {
+        "Name": "Closed",
+        "Comments": "Faction of a Primitive war on Carnelion IV",
+        "real_id": "299",
+        "id": 292
+    },
+    {
+        "Name": "Rostu Squad",
+        "real_id": "300",
+        "id": 293
+    },
+    {
+        "Name": "Skull Squadron",
+        "Comments": "(Rau's Unit in CW)",
+        "real_id": "301",
+        "id": 294
+    },
+    {
+        "Name": "Mourner's Wail Syndicate",
+        "real_id": "302",
+        "id": 295
+    },
+    {
+        "Name": "Unbroken Clan",
+        "real_id": "303",
+        "id": 296
+    },
+    {
+        "Name": "Barma Battle Group",
+        "real_id": "304",
+        "id": 297
+    },
+    {
+        "Name": "Vanguard Squadron",
+        "real_id": "305",
+        "id": 298
+    },
+    {
+        "Name": "Meteor Squadron",
+        "real_id": "306",
+        "id": 299
+    },
+    {
+        "Name": "Hail Squadron",
+        "real_id": "307",
+        "id": 300
+    },
+    {
+        "Name": "Alphabet Squadron",
+        "real_id": "308",
+        "id": 301
+    },
+    {
+        "Name": "Spectres",
+        "real_id": "309",
+        "id": 302
+    },
+    {
+        "Name": "Cavern Angels",
+        "real_id": "310",
+        "id": 303
+    },
+    {
+        "Name": "Architects of Vaale",
+        "real_id": "311",
+        "id": 304
+    },
+    {
+        "Name": "Amidalan",
+        "Comments": "They pledged to find whoever murdered Padm\u00e9, and kill them.",
+        "real_id": "312",
+        "id": 305
+    },
+    {
+        "Name": "Clone Scuba trooper",
+        "real_id": "313",
+        "id": 306
+    },
+    {
+        "Name": "Gungan Grand Army",
+        "real_id": "314",
+        "id": 307
+    },
+    {
+        "Name": "Crimson Squadron",
+        "Comments": "New Republic",
+        "real_id": "315",
+        "id": 308
+    },
+    {
+        "Name": "Republic Judicial Forces",
+        "real_id": "316",
+        "id": 309
+    },
+    {
+        "Name": "Republic Planetary Security Forces",
+        "real_id": "317",
+        "id": 310
+    },
+    {
+        "Name": "Civilian Defense Force",
+        "Comments": "Organisation sur Yavin 4",
+        "real_id": "318",
+        "id": 311
+    },
+    {
+        "Name": "New Republic Security Bureau",
+        "real_id": "319",
+        "id": 312
+    },
+    {
+        "Name": "Imperial Mining Guild",
+        "real_id": "320",
+        "id": 313
+    },
+    {
+        "Name": "Zualjinn Syndicate",
+        "Comments": "Spice Runners",
+        "real_id": "321",
+        "id": 314
+    },
+    {
+        "Name": "Osako Space Pirates",
+        "real_id": "322",
+        "id": 315
+    },
+    {
+        "Name": "Dai Bendu",
+        "real_id": "323",
+        "id": 316
+    },
+    {
+        "Name": "Kaldana Syndicate",
+        "Comments": "Organization of pirates and shipjackers, formed to take advantage of the inevitable smuggling traffic in Corellian skies.",
+        "real_id": "324",
+        "id": 317
+    },
+    {
+        "Name": "Structgalactis, Inc.",
+        "real_id": "325",
+        "id": 318
+    },
+    {
+        "Name": "Luminous Mist",
+        "real_id": "326",
+        "id": 319
+    },
+    {
+        "Name": "Chandrilan Pathfinding Corps",
+        "real_id": "327",
+        "id": 320
+    },
+    {
+        "Name": "Pneumogray",
+        "real_id": "328",
+        "id": 321
+    },
+    {
+        "Name": "Sienar APL",
+        "real_id": "329",
+        "id": 322
+    },
+    {
+        "Name": "Bespin Wing Guard",
+        "real_id": "330",
+        "id": 323
+    },
+    {
+        "Name": "Calrissian Enterprises",
+        "real_id": "331",
+        "id": 324
+    },
+    {
+        "Name": "Wandering Star",
+        "real_id": "332",
+        "id": 325
+    },
+    {
+        "Name": "Parapa Cartel",
+        "real_id": "333",
+        "id": 326
+    },
+    {
+        "Name": "Sef Con",
+        "Comments": "Former elite assault team stormtroopers.",
+        "real_id": "334",
+        "id": 327
+    },
+    {
+        "Name": "Brotherhood of Wire and Bone",
+        "real_id": "335",
+        "id": 328
+    },
+    {
+        "Name": "Vylar Tech",
+        "real_id": "336",
+        "id": 329
+    },
+    {
+        "Name": "L3 Assault Team",
+        "real_id": "337",
+        "id": 330
+    },
+    {
+        "Name": "Ohnaka Gang",
+        "real_id": "338",
+        "id": 331
+    },
+    {
+        "Name": "Krayt's Claw",
+        "real_id": "339",
+        "id": 332
+    },
+    {
+        "Name": "Mandalorian Super Commandos",
+        "real_id": "340",
+        "id": 333
+    },
+    {
+        "Name": "Singing Mountain",
+        "Comments": "Clan on Dathomir",
+        "real_id": "341",
+        "id": 334
+    },
+    {
+        "Name": "Dreaming River",
+        "Comments": "Clan on Dathomir",
+        "real_id": "342",
+        "id": 335
+    },
+    {
+        "Name": "Blue Coral Divers Clan",
+        "Comments": "Clan on Dathomir",
+        "real_id": "343",
+        "id": 336
+    },
+    {
+        "Name": "Red Hills",
+        "Comments": "Clan on Dathomir",
+        "real_id": "344",
+        "id": 337
+    },
+    {
+        "Name": "Syndicure",
+        "real_id": "345",
+        "id": 338
+    },
+    {
+        "Name": "Vader' Fist",
+        "real_id": "346",
+        "id": 339
+    },
+    {
+        "Name": "The Whills",
+        "real_id": "347",
+        "id": 340
+    },
+    {
+        "Name": "Starlight Squadron",
+        "real_id": "348",
+        "id": 341
+    },
+    {
+        "Name": "Dreamers",
+        "Comments": "Faction des Partisans qui s'est lev\u00e9 apr\u00e8s la mort de Saw.",
+        "real_id": "349",
+        "id": 342
+    },
+    {
+        "Name": "Blood Bone Order",
+        "real_id": "350",
+        "id": 343
+    },
+    {
+        "Name": "Jinata Security",
+        "real_id": "351",
+        "id": 344
+    },
+    {
+        "Name": "Helix Squadron",
+        "real_id": "352",
+        "id": 345
+    },
+    {
+        "Name": "Echo Squadron",
+        "real_id": "353",
+        "id": 346
+    },
+    {
+        "Name": "Talus Group",
+        "real_id": "354",
+        "id": 347
+    },
+    {
+        "Name": "Titan Squadron",
+        "real_id": "355",
+        "id": 348
+    },
+    {
+        "Name": "181st",
+        "real_id": "356",
+        "id": 349
+    },
+    {
+        "Name": "Anvil Squadron",
+        "real_id": "357",
+        "id": 350
+    },
+    {
+        "Name": "Clone Snowtrooper",
+        "real_id": "358",
+        "id": 351
+    },
+    {
+        "Name": "Rebel Fleet Seventh Division",
+        "real_id": "359",
+        "id": 352
+    },
+    {
+        "Name": "Nihil",
+        "real_id": "360",
+        "id": 353
+    },
+    {
+        "Name": "Zygerrian Slave Empire",
+        "real_id": "361",
+        "id": 354
+    },
+    {
+        "Name": "Clone Jumptrooper",
+        "real_id": "362",
+        "id": 355
+    },
+    {
+        "Name": "104th",
+        "Comments": "Wolf Pack",
+        "real_id": "363",
+        "id": 356
+    },
+    {
+        "Name": "Mining Collective",
+        "real_id": "364",
+        "id": 357
+    },
+    {
+        "Name": "Rebel Fleet Second Division",
+        "real_id": "365",
+        "id": 358
+    },
+    {
+        "Name": "Acolyte of the Beyond",
+        "real_id": "366",
+        "id": 359
+    },
+    {
+        "Name": "Naboo Royal Guard",
+        "real_id": "367",
+        "id": 360
+    },
+    {
+        "Name": "Children of the Watch",
+        "Comments": "Old Mandalorian Religious Cult - Veulent ramener the Old Way.",
+        "real_id": "368",
+        "id": 361
+    },
+    {
+        "Name": "Sienar",
+        "real_id": "369",
+        "id": 362
+    },
+    {
+        "Name": "Dark Trooper",
+        "real_id": "370",
+        "id": 363
+    },
+    {
+        "Name": "Imperial Remnants",
+        "real_id": "371",
+        "id": 364
+    },
+    {
+        "Name": "D-Squad",
+        "real_id": "372",
+        "id": 365
+    },
+    {
+        "Name": "Republic Commando",
+        "real_id": "373",
+        "id": 366
+    },
+    {
+        "Name": "Quarren Free Dac Engineering Corps",
+        "real_id": "374",
+        "id": 367
+    },
+    {
+        "Name": "The Grievous Legion",
+        "real_id": "375",
+        "id": 368
+    },
+    {
+        "Name": "Nite Owls",
+        "real_id": "376",
+        "id": 369
+    },
+    {
+        "Name": "Temple Guards",
+        "real_id": "377",
+        "id": 370
+    },
+    {
+        "Name": "Sienar Fleet Systems",
+        "real_id": "378",
+        "id": 371
+    },
+    {
+        "Name": "Outland Regions Security Force",
+        "real_id": "379",
+        "id": 372
+    },
+    {
+        "Name": "Q'anah's Marauders",
+        "real_id": "380",
+        "id": 373
+    },
+    {
+        "Name": "Eriadu Mining",
+        "real_id": "381",
+        "id": 374
+    },
+    {
+        "Name": "Coruscant Underground Police",
+        "real_id": "382",
+        "id": 375
+    },
+    {
+        "Name": "Traxus Division",
+        "real_id": "383",
+        "id": 376
+    },
+    {
+        "Name": "Ruling Council",
+        "real_id": "384",
+        "id": 377
+    },
+    {
+        "Name": "Naval Intelligence Agency",
+        "real_id": "385",
+        "id": 378
+    },
+    {
+        "Name": "COMPNOR",
+        "real_id": "386",
+        "id": 379
+    },
+    {
+        "Name": "Commission for the Protection of the Republic",
+        "real_id": "387",
+        "id": 380
+    },
+    {
+        "Name": "Twelfth Army",
+        "real_id": "388",
+        "id": 381
+    },
+    {
+        "Name": "Sugi",
+        "Comments": "Crime organisation",
+        "real_id": "389",
+        "id": 382
+    },
+    {
+        "Name": "Theed Engineering",
+        "real_id": "390",
+        "id": 383
+    },
+    {
+        "Name": "Cygnus Spaceworks",
+        "real_id": "391",
+        "id": 384
+    },
+    {
+        "Name": "Ubiqtorate",
+        "real_id": "392",
+        "id": 385
+    },
+    {
+        "Name": "Dagoyan Master",
+        "Comments": "Order of mystics on Bardotta",
+        "real_id": "394",
+        "id": 386
+    },
+    {
+        "Name": "Frangawl Clan",
+        "Comments": "Worshippers of an ancient demon, Malmourral.",
+        "real_id": "395",
+        "id": 387
+    },
+    {
+        "Name": "Force Priestess",
+        "real_id": "397",
+        "id": 388
+    },
+    {
+        "Name": "Wiborg Jenssens",
+        "real_id": "398",
+        "id": 389
+    },
+    {
+        "Name": "Tenloss Syndicate",
+        "real_id": "399",
+        "id": 390
+    },
+    {
+        "Name": "Pathfinders",
+        "real_id": "400",
+        "id": 391
+    },
+    {
+        "Name": "Rebel Fleet Sixth Division",
+        "Comments": "Destroyed in Star Wars 10",
+        "real_id": "401",
+        "id": 392
+    },
+    {
+        "Name": "Keshk Corporation",
+        "real_id": "402",
+        "id": 393
+    },
+    {
+        "Name": "Arva Pars",
+        "real_id": "403",
+        "id": 394
+    },
+    {
+        "Name": "D'Armin Syndicate",
+        "real_id": "404",
+        "id": 395
+    },
+    {
+        "Name": "De'rruyet Industries",
+        "real_id": "405",
+        "id": 396
+    },
+    {
+        "Name": "Hal'lath Quadruplets",
+        "real_id": "406",
+        "id": 397
+    },
+    {
+        "Name": "Fytee and the Sleemos",
+        "real_id": "407",
+        "id": 398
+    },
+    {
+        "Name": "Strike",
+        "real_id": "408",
+        "id": 399
+    },
+    {
+        "Name": "Guardians of Javin",
+        "real_id": "409",
+        "id": 400
+    },
+    {
+        "Name": "Storm",
+        "real_id": "410",
+        "id": 401
+    },
+    {
+        "Name": "Tempest Runners",
+        "real_id": "411",
+        "id": 402
+    },
+    {
+        "Name": "Malastare-Sullust Joint Task Force",
+        "real_id": "412",
+        "id": 403
+    },
+    {
+        "Name": "Byne Guild",
+        "real_id": "413",
+        "id": 404
+    },
+    {
+        "Name": "Scantech",
+        "real_id": "414",
+        "id": 405
+    },
+    {
+        "Name": "Republic Defense Coalition",
+        "real_id": "415",
+        "id": 406
+    },
+    {
+        "Name": "Garello Technologies",
+        "real_id": "416",
+        "id": 407
+    },
+    {
+        "Name": "Republic Transport Bureau",
+        "real_id": "417",
+        "id": 408
+    },
+    {
+        "Name": "Valkeri Enterprises",
+        "real_id": "418",
+        "id": 409
+    },
+    {
+        "Name": "Sixth Kin",
+        "real_id": "419",
+        "id": 410
+    },
+    {
+        "Name": "Sorcerers of Tund",
+        "real_id": "420",
+        "id": 411
+    },
+    {
+        "Name": "Yacombe",
+        "real_id": "421",
+        "id": 412
+    },
+    {
+        "Name": "Hawk-Bat Clan",
+        "real_id": "422",
+        "id": 413
+    },
+    {
+        "Name": "Razorclaw Gang",
+        "real_id": "423",
+        "id": 414
+    },
+    {
+        "Name": "Presagers of Hakotei",
+        "real_id": "424",
+        "id": 415
+    },
+    {
+        "Name": "Heliost Clan",
+        "real_id": "425",
+        "id": 416
+    },
+    {
+        "Name": "Daystar Entertainment",
+        "real_id": "426",
+        "id": 417
+    },
+    {
+        "Name": "Tagge Corp",
+        "real_id": "427",
+        "id": 418
+    },
+    {
+        "Name": "Shrikes",
+        "real_id": "428",
+        "id": 419
+    },
+    {
+        "Name": "Morubas Crime Family",
+        "real_id": "429",
+        "id": 420
+    },
+    {
+        "Name": "Winds of Ruin",
+        "real_id": "430",
+        "id": 421
+    },
+    {
+        "Name": "Order of the Sight Voltaic",
+        "real_id": "431",
+        "id": 422
+    },
+    {
+        "Name": "Holowan Droid Foundry",
+        "real_id": "432",
+        "id": 423
+    },
+    {
+        "Name": "Droid Crush of Bestoon",
+        "real_id": "433",
+        "id": 424
+    },
+    {
+        "Name": "Junk Mavens",
+        "real_id": "434",
+        "id": 425
+    },
+    {
+        "Name": "Elite Squad-1",
+        "real_id": "435",
+        "id": 426
+    },
+    {
+        "Name": "Rhokai Gang",
+        "real_id": "436",
+        "id": 427
+    },
+    {
+        "Name": "Moogan",
+        "real_id": "437",
+        "id": 428
+    },
+    {
+        "Name": "Fromm Gang",
+        "real_id": "438",
+        "id": 429
+    },
+    {
+        "Name": "Rebel Fleet Eleven Division",
+        "real_id": "440",
+        "id": 430
+    },
+    {
+        "Name": "Sorosuub",
+        "real_id": "441",
+        "id": 431
+    },
+    {
+        "Name": "TK-Trooper",
+        "real_id": "442",
+        "id": 432
+    },
+    {
+        "Name": "Imperial Commando",
+        "real_id": "443",
+        "id": 433
+    },
+    {
+        "Name": "The Ascendant",
+        "Comments": "Ancient Cult obsessed with powerful, dark technology.",
+        "real_id": "444",
+        "id": 434
+    },
+    {
+        "Name": "Cabarka Union",
+        "real_id": "445",
+        "id": 435
+    },
+    {
+        "Name": "Yallow Fellowship",
+        "real_id": "446",
+        "id": 436
+    },
+    {
+        "Name": "Sabracci Sages",
+        "real_id": "447",
+        "id": 437
+    },
+    {
+        "Name": "Assassin's Guild",
+        "real_id": "448",
+        "id": 438
+    },
+    {
+        "Name": "Dark Squadron",
+        "real_id": "449",
+        "id": 439
+    },
+    {
+        "Name": "Papa Toren",
+        "real_id": "450",
+        "id": 440
+    },
+    {
+        "Name": "Order of the Night Wind",
+        "real_id": "451",
+        "id": 441
+    },
+    {
+        "Name": "Kintan Striders",
+        "real_id": "452",
+        "id": 442
+    },
+    {
+        "Name": "The Mods",
+        "real_id": "453",
+        "id": 443
+    },
+    {
+        "Name": "Squadron D12",
+        "real_id": "459",
+        "id": 444
+    },
+    {
+        "Name": "Halo Squadron",
+        "real_id": "460",
+        "id": 445
+    },
+    {
+        "Name": "Church of the Force",
+        "real_id": "461",
+        "id": 446
+    },
+    {
+        "Name": "Lerct Historical institute ",
+        "real_id": "462",
+        "id": 447
+    },
+    {
+        "Name": "Rebel Fleet Tenth Division",
+        "real_id": "463",
+        "id": 448
+    },
+    {
+        "Name": "Kite, Phard Dynasty",
+        "real_id": "464",
+        "id": 449
+    },
+    {
+        "Name": "Aquillian Ranger",
+        "real_id": "465",
+        "id": 450
+    },
+    {
+        "Name": "Merson Pirates",
+        "real_id": "466",
+        "id": 451
+    },
+    {
+        "Name": "Benelex Marshal Service",
+        "real_id": "467",
+        "id": 452
+    },
+    {
+        "Name": "Locris Security",
+        "real_id": "468",
+        "id": 453
+    },
+    {
+        "Name": "Valo Security Force",
+        "real_id": "469",
+        "id": 454
+    },
+    {
+        "Name": "Incom Corporation",
+        "real_id": "470",
+        "id": 455
+    },
+    {
+        "Name": "Pre-Mor",
+        "real_id": "471",
+        "id": 456
+    },
+    {
+        "Comments": "",
+        "Name": "Hast Antu Gang",
+        "real_id": "473",
+        "id": 457
+    },
+    {
+        "Comments": "Hunt threats to the Sith",
+        "Name": "Darkseekers",
+        "real_id": "474",
+        "id": 458
+    },
+    {
+        "Comments": "",
+        "Name": "Reekrider Cartel",
+        "real_id": "475",
+        "id": 459
+    },
+    {
+        "Comments": "",
+        "Name": "Corporate Sector Authority ",
+        "real_id": "476",
+        "id": 460
+    },
+    {
+        "Comments": "",
+        "Name": "Krayt Head",
+        "real_id": "477",
+        "id": 461
+    },
+    {
+        "Comments": "",
+        "Name": "By The Hand",
+        "real_id": "478",
+        "id": 462
+    },
+    {
+        "Comments": "",
+        "Name": "Path of the Open Hand",
+        "real_id": "479",
+        "id": 463
+    },
+    {
+        "Comments": "",
+        "Name": "Truthsayers of Bpfassh",
+        "real_id": "480",
+        "id": 464
+    },
+    {
+        "Comments": "",
+        "Name": "Black Eye",
+        "real_id": "481",
+        "id": 465
+    },
+    {
+        "Comments": "",
+        "Name": "Lonto",
+        "real_id": "482",
+        "id": 466
+    },
+    {
+        "Comments": "",
+        "Name": "Fallanassi",
+        "real_id": "483",
+        "id": 467
+    },
+    {
+        "Comments": "",
+        "Name": "Matukai",
+        "real_id": "484",
+        "id": 468
+    },
+    {
+        "Comments": "",
+        "Name": "Neimoidian Defense Legion",
+        "real_id": "485",
+        "id": 469
+    },
+    {
+        "Comments": "",
+        "Name": "The Family",
+        "real_id": "486",
+        "id": 470
+    },
+    {
+        "Comments": "",
+        "Name": "RazBohan",
+        "real_id": "487",
+        "id": 471
+    },
+    {
+        "Comments": "Republic<div><br></div>",
+        "Name": "302nd Battalion",
+        "real_id": "488",
+        "id": 472
+    },
+    {
+        "Comments": "",
+        "Name": "Arakyd",
+        "real_id": "489",
+        "id": 473
+    },
+    {
+        "Comments": "",
+        "Name": "Council of Neutral Systems",
+        "real_id": "490",
+        "id": 474
+    },
+    {
+        "Comments": "",
+        "Name": "Daughter of Ferrix",
+        "real_id": "491",
+        "id": 475
+    },
+    {
+        "Comments": "",
+        "Name": "Zerek Besh",
+        "real_id": "492",
+        "id": 476
+    },
+    {
+        "Comments": "",
+        "Name": "Orphans",
+        "real_id": "493",
+        "id": 477
+    },
+    {
+        "Comments": "",
+        "Name": "Sister of Sarrav",
+        "real_id": "494",
+        "id": 478
+    },
+    {
+        "Comments": "",
+        "Name": "Namoi",
+        "real_id": "495",
+        "id": 479
+    },
+    {
+        "Comments": "",
+        "Name": "Dank Graks",
+        "real_id": "496",
+        "id": 480
+    },
+    {
+        "Comments": "On Gorse",
+        "Name": "Calladan Chemworks",
+        "real_id": "498",
+        "id": 481
+    },
+    {
+        "Comments": "",
+        "Name": "Moonglow Polychemical",
+        "real_id": "499",
+        "id": 482
+    },
+    {
+        "Comments": "",
+        "Name": "Dalborg Mining",
+        "real_id": "500",
+        "id": 483
+    },
+    {
+        "Comments": "",
+        "Name": "Transcept Media Solutions",
+        "real_id": "501",
+        "id": 484
+    },
+    {
+        "Comments": "",
+        "Name": "Mynocks",
+        "real_id": "502",
+        "id": 485
+    },
+    {
+        "Comments": "",
+        "Name": "Cyndan Mining Guild",
+        "real_id": "503",
+        "id": 486
+    },
+    {
+        "Comments": "",
+        "Name": "Sarlaccs",
+        "real_id": "504",
+        "id": 487
+    },
+    {
+        "Comments": "",
+        "Name": "Environmental Action Gazette",
+        "real_id": "505",
+        "id": 488
+    },
+    {
+        "Comments": "",
+        "Name": "Ardennian Guild of Technicians",
+        "real_id": "506",
+        "id": 489
+    },
+    {
+        "Comments": "",
+        "Name": "Minerax Consulting",
+        "real_id": "507",
+        "id": 490
+    },
+    {
+        "Comments": "",
+        "Name": "Rothana Heavy Engineering",
+        "real_id": "508",
+        "id": 491
+    },
+    {
+        "Comments": "",
+        "Name": "Echani",
+        "real_id": "509",
+        "id": 492
+    },
+    {
+        "Comments": "",
+        "Name": "Crozo Industrial Products",
+        "real_id": "510",
+        "id": 493
+    },
+    {
+        "Comments": "",
+        "Name": "Royal Togruta Fleet",
+        "real_id": "511",
+        "id": 494
+    },
+    {
+        "Comments": "",
+        "Name": "Priest of Phirma",
+        "real_id": "512",
+        "id": 495
+    },
+    {
+        "Comments": "",
+        "Name": "Lastelle Collective",
+        "real_id": "513",
+        "id": 496
+    },
+    {
+        "Comments": "",
+        "Name": "Galactic Antipiracy Command",
+        "real_id": "514",
+        "id": 497
+    },
+    {
+        "Comments": "",
+        "Name": "Interstellar Thorolide Guild",
+        "real_id": "515",
+        "id": 498
+    },
+    {
+        "Comments": "",
+        "Name": "291th legion",
+        "real_id": "516",
+        "id": 499
+    },
+    {
+        "Comments": "GravBall team",
+        "Name": "Saber Cats",
+        "real_id": "517",
+        "id": 500
+    },
+    {
+        "Comments": "Grav-ball team",
+        "Name": "Green Dragon",
+        "real_id": "518",
+        "id": 501
+    },
+    {
+        "Comments": "",
+        "Name": "Shad Furies",
+        "real_id": "519",
+        "id": 502
+    },
+    {
+        "Comments": "",
+        "Name": "Eriadu Patriot",
+        "real_id": "520",
+        "id": 503
+    },
+    {
+        "Comments": "",
+        "Name": "NRC-077",
+        "real_id": "521",
+        "id": 504
+    },
+    {
+        "Comments": "",
+        "Name": "Unit Aurek",
+        "real_id": "522",
+        "id": 505
+    },
+    {
+        "Comments": "",
+        "Name": "Unit Cresh",
+        "real_id": "523",
+        "id": 506
+    },
+    {
+        "Comments": "",
+        "Name": "Unit Forn",
+        "real_id": "524",
+        "id": 507
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Seatrooper",
+        "real_id": "525",
+        "id": 508
+    },
+    {
+        "Comments": "",
+        "Name": "Green Team",
+        "real_id": "526",
+        "id": 509
+    },
+    {
+        "Comments": "Kylo Ren\u2019s Elite Stormtrooper",
+        "Name": "700th Legion",
+        "real_id": "528",
+        "id": 510
+    },
+    {
+        "Comments": "Kylo Ren\u2019s Elite Stormtrooper<br>",
+        "Name": "9th Legion",
+        "real_id": "529",
+        "id": 511
+    },
+    {
+        "Comments": "",
+        "Name": "Gray Syndicate ",
+        "real_id": "530",
+        "id": 512
+    },
+    {
+        "Comments": "",
+        "Name": "Unit Esk",
+        "real_id": "531",
+        "id": 513
+    },
+    {
+        "Comments": "",
+        "Name": "Unit Dorn",
+        "real_id": "532",
+        "id": 514
+    },
+    {
+        "Comments": "",
+        "Name": "Unit Besh",
+        "real_id": "533",
+        "id": 515
+    },
+    {
+        "Comments": "",
+        "Name": "Chekkoo",
+        "real_id": "534",
+        "id": 516
+    },
+    {
+        "Comments": "Rodian clan",
+        "Name": "Chattza",
+        "real_id": "535",
+        "id": 517
+    },
+    {
+        "Comments": "",
+        "Name": "Utheel Outfitters",
+        "real_id": "536",
+        "id": 518
+    },
+    {
+        "Comments": "",
+        "Name": "The Ancients",
+        "real_id": "537",
+        "id": 519
+    },
+    {
+        "Comments": "",
+        "Name": "Kingdom of Elweys",
+        "real_id": "538",
+        "id": 520
+    },
+    {
+        "Comments": "",
+        "Name": "Gavalox Communications",
+        "real_id": "539",
+        "id": 521
+    },
+    {
+        "Comments": "",
+        "Name": "Bureau of Standards",
+        "real_id": "540",
+        "id": 522
+    },
+    {
+        "Comments": "",
+        "Name": "Neo-Republican",
+        "real_id": "541",
+        "id": 523
+    },
+    {
+        "Comments": "",
+        "Name": "Ghorman Front",
+        "real_id": "542",
+        "id": 524
+    },
+    {
+        "Comments": "(GPE)",
+        "Name": "Galactic Power Engineering",
+        "real_id": "543",
+        "id": 525
+    },
+    {
+        "Comments": "",
+        "Name": "Alderaan Trade Alliance",
+        "real_id": "544",
+        "id": 526
+    },
+    {
+        "Comments": "",
+        "Name": "Vanguard Axis",
+        "real_id": "545",
+        "id": 527
+    },
+    {
+        "Comments": "Band",
+        "Name": "Hakko Drazlip and the Tootle Froots",
+        "real_id": "546",
+        "id": 528
+    },
+    {
+        "Comments": "",
+        "Name": "Nessin Courier & Cargo",
+        "real_id": "547",
+        "id": 529
+    },
+    {
+        "Comments": "",
+        "Name": "Kuat Drive Yards",
+        "real_id": "548",
+        "id": 530
+    },
+    {
+        "Comments": "",
+        "Name": "Polser Couriers",
+        "real_id": "549",
+        "id": 531
+    },
+    {
+        "Comments": "",
+        "Name": "Free Ryloth",
+        "real_id": "550",
+        "id": 532
+    },
+    {
+        "Comments": "",
+        "Name": "Ryloth Imperial Control",
+        "real_id": "551",
+        "id": 533
+    },
+    {
+        "Comments": "",
+        "Name": "New Republic Special Forces",
+        "real_id": "552",
+        "id": 534
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Information Bureau",
+        "real_id": "553",
+        "id": 535
+    },
+    {
+        "Comments": "",
+        "Name": "Republic Science Corps",
+        "real_id": "554",
+        "id": 536
+    },
+    {
+        "Comments": "Empire",
+        "Name": "Advanced Science Division",
+        "real_id": "555",
+        "id": 537
+    },
+    {
+        "Comments": "",
+        "Name": "Pirate Nation",
+        "real_id": "556",
+        "id": 538
+    },
+    {
+        "Comments": "",
+        "Name": "Adelphi Squadron",
+        "real_id": "557",
+        "id": 539
+    },
+    {
+        "Comments": "",
+        "Name": "Ancient Order of Independent Regencies",
+        "real_id": "558",
+        "id": 540
+    },
+    {
+        "Comments": "",
+        "Name": "Findsman",
+        "real_id": "559",
+        "id": 541
+    },
+    {
+        "Comments": "",
+        "Name": "Shadow Council",
+        "real_id": "560",
+        "id": 542
+    },
+    {
+        "Comments": "",
+        "Name": "Scarlet Skulls",
+        "real_id": "561",
+        "id": 543
+    },
+    {
+        "Comments": "",
+        "Name": "Genetian Collective",
+        "real_id": "562",
+        "id": 544
+    },
+    {
+        "Comments": "",
+        "Name": "Bedlam Raiders",
+        "real_id": "563",
+        "id": 545
+    },
+    {
+        "Comments": "",
+        "Name": "Anchorites",
+        "real_id": "564",
+        "id": 546
+    },
+    {
+        "Comments": "",
+        "Name": "Squad 326",
+        "real_id": "565",
+        "id": 547
+    },
+    {
+        "Comments": "",
+        "Name": "Grenth Technologies",
+        "real_id": "566",
+        "id": 548
+    },
+    {
+        "Comments": "",
+        "Name": "Company 326",
+        "real_id": "567",
+        "id": 549
+    },
+    {
+        "Comments": "",
+        "Name": "Krrupt Gang",
+        "real_id": "568",
+        "id": 550
+    },
+    {
+        "Comments": "",
+        "Name": "New Republic Correctional Corps",
+        "real_id": "569",
+        "id": 551
+    },
+    {
+        "Comments": "",
+        "Name": "Colony of the Second Revelation",
+        "real_id": "570",
+        "id": 552
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Shock Trooper",
+        "real_id": "571",
+        "id": 553
+    },
+    {
+        "Comments": "",
+        "Name": "Night Trooper",
+        "real_id": "572",
+        "id": 554
+    },
+    {
+        "Comments": "",
+        "Name": "Wild Squadron",
+        "real_id": "573",
+        "id": 555
+    },
+    {
+        "Comments": "",
+        "Name": "Tofen Raiders",
+        "real_id": "574",
+        "id": 556
+    },
+    {
+        "Comments": "",
+        "Name": "Filthy Zephirs",
+        "real_id": "575",
+        "id": 557
+    },
+    {
+        "Comments": "",
+        "Name": "Firebird Squadron ",
+        "real_id": "576",
+        "id": 558
+    },
+    {
+        "Comments": "",
+        "Name": "Child of the Storm",
+        "real_id": "577",
+        "id": 559
+    },
+    {
+        "Comments": "",
+        "Name": "Galactic Society of Creature Enthusiasts ",
+        "real_id": "578",
+        "id": 560
+    },
+    {
+        "Comments": "",
+        "Name": "BlasTech",
+        "real_id": "579",
+        "id": 561
+    },
+    {
+        "Comments": "",
+        "Name": "Corell Industries",
+        "real_id": "580",
+        "id": 562
+    },
+    {
+        "Comments": "",
+        "Name": "201st Squadron",
+        "real_id": "581",
+        "id": 563
+    },
+    {
+        "Comments": "",
+        "Name": "Electrobaton Purge Trooper",
+        "real_id": "582",
+        "id": 564
+    },
+    {
+        "Comments": "",
+        "Name": "Electrostaff Purge Trooper",
+        "real_id": "583",
+        "id": 565
+    },
+    {
+        "Comments": "",
+        "Name": "Electrohammer Purge Trooper",
+        "real_id": "584",
+        "id": 566
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Shield Trooper",
+        "real_id": "585",
+        "id": 567
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Jetpack Trooper",
+        "real_id": "586",
+        "id": 568
+    },
+    {
+        "Comments": "",
+        "Name": "Schism Imperial",
+        "real_id": "587",
+        "id": 569
+    },
+    {
+        "Comments": "",
+        "Name": "M.A.R. Corps",
+        "real_id": "588",
+        "id": 570
+    },
+    {
+        "Comments": "",
+        "Name": "Hidden Path",
+        "real_id": "589",
+        "id": 571
+    },
+    {
+        "Comments": "",
+        "Name": "Predak Vane",
+        "real_id": "590",
+        "id": 572
+    },
+    {
+        "Comments": "",
+        "Name": "Raxlo Corporation",
+        "real_id": "591",
+        "id": 573
+    },
+    {
+        "Comments": "",
+        "Name": "Had\u2019le Path",
+        "real_id": "593",
+        "id": 574
+    },
+    {
+        "Comments": "",
+        "Name": "Conscription Trooper Pilot",
+        "real_id": "594",
+        "id": 575
+    },
+    {
+        "Comments": "",
+        "Name": "Clone X",
+        "real_id": "595",
+        "id": 576
+    },
+    {
+        "Comments": "",
+        "Name": "Scarabi Merc",
+        "real_id": "596",
+        "id": 577
+    },
+    {
+        "Comments": "",
+        "Name": "Circle of Kavaan",
+        "real_id": "597",
+        "id": 578
+    },
+    {
+        "Comments": "",
+        "Name": "White Current",
+        "real_id": "598",
+        "id": 579
+    },
+    {
+        "Comments": "",
+        "Name": "Vile",
+        "real_id": "600",
+        "id": 580
+    },
+    {
+        "Comments": "",
+        "Name": "Staved Skulls",
+        "real_id": "601",
+        "id": 581
+    },
+    {
+        "Comments": "",
+        "Name": "Filthy Creds",
+        "real_id": "602",
+        "id": 582
+    },
+    {
+        "Comments": "",
+        "Name": "Ro Mira Refinery Security Patrol ",
+        "real_id": "603",
+        "id": 583
+    },
+    {
+        "Comments": "",
+        "Name": "Blood Oath Syndicate",
+        "real_id": "604",
+        "id": 584
+    },
+    {
+        "Comments": "",
+        "Name": "Final Occultation",
+        "real_id": "605",
+        "id": 585
+    },
+    {
+        "Comments": "",
+        "Name": "Mountain Clan",
+        "real_id": "606",
+        "id": 586
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Survey Corps",
+        "real_id": "607",
+        "id": 587
+    },
+    {
+        "Comments": "",
+        "Name": "Diagu",
+        "real_id": "609",
+        "id": 588
+    },
+    {
+        "Comments": "",
+        "Name": "Perlemian Cartel",
+        "real_id": "610",
+        "id": 589
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Future Council",
+        "real_id": "611",
+        "id": 590
+    },
+    {
+        "Comments": "",
+        "Name": "Anklebiter Brigade",
+        "real_id": "612",
+        "id": 591
+    },
+    {
+        "Comments": "",
+        "Name": "Red Key Company",
+        "real_id": "613",
+        "id": 592
+    },
+    {
+        "Comments": "",
+        "Name": "Gangul",
+        "real_id": "614",
+        "id": 593
+    },
+    {
+        "Comments": "",
+        "Name": "Iska Pirates",
+        "real_id": "616",
+        "id": 594
+    },
+    {
+        "Comments": "",
+        "Name": "Order of the Terrible Glare",
+        "real_id": "617",
+        "id": 595
+    },
+    {
+        "Comments": "",
+        "Name": "Red Battalion",
+        "real_id": "618",
+        "id": 596
+    },
+    {
+        "Comments": "",
+        "Name": "Blue Batallion",
+        "real_id": "619",
+        "id": 597
+    },
+    {
+        "Comments": "",
+        "Name": "Cresh-3 Platoon",
+        "real_id": "621",
+        "id": 598
+    },
+    {
+        "Comments": "",
+        "Name": "Comet Runners",
+        "real_id": "622",
+        "id": 599
+    },
+    {
+        "Comments": "",
+        "Name": "CORPSEC",
+        "real_id": "624",
+        "id": 600
+    },
+    {
+        "Comments": "",
+        "Name": "Brendok Coven",
+        "real_id": "625",
+        "id": 601
+    },
+    {
+        "Comments": "Rebel Alliance's Sixty-First Mobile Infantry",
+        "Name": "Twilight Company",
+        "real_id": "626",
+        "id": 602
+    },
+    {
+        "Comments": "",
+        "Name": "Cobalt Laborers Reformation Front",
+        "real_id": "627",
+        "id": 603
+    },
+    {
+        "Comments": "",
+        "Name": "Galactic Tourist Bureau",
+        "real_id": "628",
+        "id": 604
+    },
+    {
+        "Comments": "",
+        "Name": "Phoolian Monks",
+        "real_id": "629",
+        "id": 605
+    },
+    {
+        "Comments": "",
+        "Name": "She\u2019ar Guard",
+        "real_id": "630",
+        "id": 606
+    },
+    {
+        "Comments": "",
+        "Name": "Scimitar Squadron",
+        "real_id": "631",
+        "id": 607
+    },
+    {
+        "Comments": "",
+        "Name": "Unit 7",
+        "real_id": "632",
+        "id": 608
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial 97th Stormtrooper Legion",
+        "real_id": "633",
+        "id": 609
+    },
+    {
+        "Comments": "",
+        "Name": "Alliance Special Forces",
+        "real_id": "634",
+        "id": 610
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Sandtrooper",
+        "real_id": "635",
+        "id": 611
+    },
+    {
+        "Comments": "",
+        "Name": "Rebel Trooper",
+        "real_id": "636",
+        "id": 612
+    }
+]

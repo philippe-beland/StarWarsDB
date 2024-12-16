@@ -88,10 +88,12 @@ def process_records(db: List[str], tables: dict) -> List[dict]:
             id = record_info[0]
             if id[0] == "U":
                 table_id = id[1]
+                record_info234 = ast.literal_eval(record_info[1])
+                record_info234["real_id"] = id[2:]
                 if table_id in records.keys():
-                    records[table_id].append(ast.literal_eval(record_info[1]))
+                    records[table_id].append(record_info234)
                 else:
-                    records[table_id] = [ast.literal_eval(record_info[1])]
+                    records[table_id] = [record_info234]
 
     table_lists = []
 
@@ -100,8 +102,11 @@ def process_records(db: List[str], tables: dict) -> List[dict]:
         for i, record in enumerate(record_list):
             record_names = {}
             for field_id, field in record.items():
-                field_name = tables[table]["fields"][field_id]["name"]
-                record_names[field_name] = field
+                if field_id == "real_id":
+                    record_names["real_id"] = field
+                else:
+                    field_name = tables[table]["fields"][field_id]["name"]
+                    record_names[field_name] = field
             record_names["id"] = i + 1
             records.append(record_names)
         table_lists.append({tables[table]["name"]: records})
@@ -118,7 +123,7 @@ def export_to_json(table_lists: List[dict]) -> None:
     """
     for table in table_lists:
         for table_name, records in table.items():
-            with open(Path("Raw Data", f"{table_name}.json"), "w") as file:
+            with open(Path("Raw Data", f"{table_name}_2.json"), "w") as file:
                 json.dump(records, file, indent=4)
 
 

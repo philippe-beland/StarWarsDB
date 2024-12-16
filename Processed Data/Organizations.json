@@ -1,0 +1,2648 @@
+[
+    {
+        "name": "Bravo Squad",
+        "id": "c845aa3e-1b41-43ac-b5d3-fc2b9a984276"
+    },
+    {
+        "name": "Confederacy of Independent Systems",
+        "comments": "Separatist",
+        "id": "afbfdd46-2a9a-4bca-be84-863f2005dd15"
+    },
+    {
+        "name": "Phoenix Squadron",
+        "id": "fcfab81d-5a04-4167-91c3-921b47b83289"
+    },
+    {
+        "name": "Rebel Alliance",
+        "id": "cb2ce955-1d5b-4a28-8ac6-0c4885b075a8"
+    },
+    {
+        "name": "Galactic Empire",
+        "id": "7f52d34b-6836-4331-9ae1-3370c80d7581"
+    },
+    {
+        "name": "Clone Trooper (Helmet)",
+        "id": "772c3cdb-c080-4bcd-a07c-e5427bf242d4"
+    },
+    {
+        "name": "Trade Federation",
+        "id": "2b6035f3-c093-41e5-94bf-633995c3689e"
+    },
+    {
+        "name": "Jedi Order",
+        "id": "1fbfcb06-6e8f-4746-80b6-3b749cb76175"
+    },
+    {
+        "name": "Galactic Republic",
+        "id": "aaac8a3c-e648-442e-bb58-9e2074f97c7d"
+    },
+    {
+        "name": "Iron Squadron",
+        "id": "fb415be9-ddfb-43f9-b2ff-822283cec4b0"
+    },
+    {
+        "name": "Palpatine Royal Guard",
+        "id": "b8b63741-1df2-4a4b-b15b-907dde98c214"
+    },
+    {
+        "name": "Loyalist Comitee",
+        "id": "43582168-7769-4850-a3e5-e4c8860d3e04"
+    },
+    {
+        "name": "Lost Twenty",
+        "id": "0eb5f6a5-68cf-4517-923a-5d6bde5c9f49"
+    },
+    {
+        "name": "Commerce Guild",
+        "id": "a4b54873-2c61-4691-9361-698981cec957"
+    },
+    {
+        "name": "Corporate Alliance",
+        "id": "65e9d6ff-b807-40d1-9c37-41a2b048678b"
+    },
+    {
+        "name": "Techno Union",
+        "id": "9fa0f23c-e34b-481d-a70b-9780d6577ae3"
+    },
+    {
+        "name": "Banking Clan",
+        "id": "fcb36074-624b-495c-af8c-fa8b9254db96"
+    },
+    {
+        "name": "Old Republic",
+        "id": "bd28baef-4836-4d1e-a6c5-6a9b8bc2bf49"
+    },
+    {
+        "name": "Red Squadron",
+        "id": "8002cdd8-ba63-4232-9177-87bc238fc55c"
+    },
+    {
+        "name": "Gold Squadron",
+        "id": "f18801ed-b72d-48c3-93c7-21c124647b3b"
+    },
+    {
+        "name": "Imperial Royal Guard",
+        "id": "ad7b4921-76b4-45e8-82b7-35300959adce"
+    },
+    {
+        "name": "Green Squadron",
+        "id": "231c676c-d02e-4e3c-a462-d827678861dd"
+    },
+    {
+        "name": "Gray Squadron",
+        "id": "196c324a-f7cc-4347-8809-0d25124e2663"
+    },
+    {
+        "name": "First Order",
+        "id": "52b29144-9aba-456d-a27f-ea7f63c2d3f9"
+    },
+    {
+        "name": "Resistance",
+        "id": "6aca8de9-90c9-49a7-8ea9-af47550b4e26"
+    },
+    {
+        "name": "First Order Stormtrooper",
+        "id": "0296c71c-edf5-4775-9852-fe3743ed704b"
+    },
+    {
+        "name": "First Order Flametrooper",
+        "id": "cad5be44-52d8-41c3-a335-276c687b8c85"
+    },
+    {
+        "name": "New Republic",
+        "id": "2e4fd193-f604-4b32-83e1-377934089e2b"
+    },
+    {
+        "name": "Guavian Death Gang",
+        "id": "cd28c628-00b7-4888-8060-8d4b773e79c4"
+    },
+    {
+        "name": "Kanjiklub",
+        "id": "5f172170-f2f5-41bf-a24c-40a3504422bc"
+    },
+    {
+        "name": "Blue Squadron",
+        "id": "b6f63a5b-da1b-4c0d-a161-9c421e86ec33"
+    },
+    {
+        "name": "Knights of Ren",
+        "id": "a0388ee4-f29e-4706-ba3a-405d05b421e7"
+    },
+    {
+        "name": "Guardians of the Whills",
+        "id": "40bcd009-bc60-4c8a-80db-f314617fbb68"
+    },
+    {
+        "name": "Crimson Dawn",
+        "id": "0e2a5b53-3126-4f64-b75f-ae8efa9bfa2f"
+    },
+    {
+        "name": "Hutt Cartel",
+        "id": "3dce3417-74bb-4fc6-8c7e-884e6645f056"
+    },
+    {
+        "name": "Imperial Stormtrooper",
+        "id": "45031bc3-fa39-4ab6-aa5d-cc66814a76cc"
+    },
+    {
+        "name": "Imperial Rangetrooper",
+        "id": "c403953e-fc43-45d3-a69e-de2d44faa6b4"
+    },
+    {
+        "name": "The Ghost",
+        "id": "6655952f-0fb9-4c59-84f9-52756be67c9f"
+    },
+    {
+        "name": "Zakku Rain Cartel",
+        "id": "4c487382-1992-438f-873c-50e0d347392a"
+    },
+    {
+        "name": "Black Sun",
+        "id": "c899a24f-f54f-4d7d-b7d0-154dabee8115"
+    },
+    {
+        "name": "Pyke Syndicate",
+        "id": "7345a497-438b-41ed-a940-c378d5cc2adb"
+    },
+    {
+        "name": "Shadow Collective",
+        "id": "0caf71e0-e7f1-43cd-9e05-a9e5072dfceb"
+    },
+    {
+        "name": "Mandalorian",
+        "id": "2d06974d-5e79-41d8-bd42-31ab6e18bc38"
+    },
+    {
+        "name": "Nightbrothers",
+        "id": "88bc54b9-992c-40d3-b8a1-546becdbcaa3"
+    },
+    {
+        "name": "Nightsisters",
+        "id": "a49079de-9609-4bf5-b269-5a6e5ff5a14d"
+    },
+    {
+        "name": "Domino Squad",
+        "id": "4b08417f-c261-4933-ad07-55a29da3afc4"
+    },
+    {
+        "name": "ARC Troopers",
+        "id": "698f30b5-9b77-4b18-ab9a-df7b21f32b05"
+    },
+    {
+        "name": "Rancor Battalion",
+        "id": "c7da3d43-50f2-4ad4-94f8-901425a45835"
+    },
+    {
+        "name": "Separatist (Senate)",
+        "id": "dd2b3260-4c27-42d3-890b-cb552cd58d80"
+    },
+    {
+        "name": "Shu-Torun",
+        "id": "c928c8f3-9174-4bac-b2d2-e430a1ccb655"
+    },
+    {
+        "name": "Warbirds (PIrate gang)",
+        "id": "f4c11d55-3058-4358-9963-01f09ff9566b"
+    },
+    {
+        "name": "Inquisitorius",
+        "id": "a6bc1edf-236f-4400-8e58-5006ec8dd16c"
+    },
+    {
+        "name": "Imperial Security Bureau",
+        "id": "07af96db-e61b-4949-97a6-efc20345b50b"
+    },
+    {
+        "name": "Sienar Fleet Systems (Mural)",
+        "id": "db5ecb31-6f1d-4ea4-9e0e-570f23f0b926"
+    },
+    {
+        "name": "Rogue Squadron",
+        "id": "a1bd484b-e689-49c8-9c33-4e1f92f0eab0"
+    },
+    {
+        "name": "Mining Guild",
+        "id": "3534bf32-20c0-4bd1-9bbe-419a5f686db1"
+    },
+    {
+        "name": "Squad LRC077",
+        "id": "d0d65fb0-f5a0-48ef-bc5a-29f64ae7e41a"
+    },
+    {
+        "name": "Scar Squadron",
+        "comments": "Also called Task Force 99",
+        "id": "ffc95fe2-cb07-44b0-85f9-adc5bf09fe66"
+    },
+    {
+        "name": "Delta Squadron",
+        "id": "671362b6-e289-4fce-9a01-9b9b1fa75157"
+    },
+    {
+        "name": "Lasat Honor Guard",
+        "id": "93d56656-0b63-4625-8946-09cb92aa4aca"
+    },
+    {
+        "name": "Green Company",
+        "id": "f62c8787-c180-4c71-99bf-b51e30475885"
+    },
+    {
+        "name": "Carida Squadron",
+        "id": "d9d66da2-e04e-4149-8b2e-3cdb7b4fdd2b"
+    },
+    {
+        "name": "Clan Markona",
+        "id": "e3510fdf-dd32-4a1d-aaef-a4c71e9c0179"
+    },
+    {
+        "name": "Pirates",
+        "id": "5b1b36ef-ca14-411b-b58d-06318baec869"
+    },
+    {
+        "name": "501st",
+        "id": "cc334236-c209-45ad-b415-5ca3b2452c05"
+    },
+    {
+        "name": "Five Syndicates",
+        "id": "281c8c5d-3999-450d-9b5b-ed948ed8527d"
+    },
+    {
+        "name": "Bomb Squad Clones",
+        "id": "ac3fe3f5-ed39-48db-9575-b142510f3f12"
+    },
+    {
+        "name": "Wildfire Squad",
+        "id": "6e986b4c-5a4d-4ffe-a4ae-a05076e4f85a"
+    },
+    {
+        "name": "Snow Wolves Squad",
+        "id": "f009626d-7a1d-4489-affb-8d6b913dfd6a"
+    },
+    {
+        "name": "Calm Tree Squad",
+        "id": "ccf3b994-1d8a-44da-b8b0-20093d598a85"
+    },
+    {
+        "name": "Empire Public Relations",
+        "id": "81debcb8-90ad-44b2-8f35-ffc7807077ee"
+    },
+    {
+        "name": "Purple Squad",
+        "id": "54b7f01b-7f9e-4b54-95ba-45f5528f7254"
+    },
+    {
+        "name": "Central Isopter",
+        "id": "a6d32e88-4a67-401a-845e-c1442d467dc1"
+    },
+    {
+        "name": "The Coalition For Progress",
+        "id": "a2f3db73-2456-44ae-8400-d700ea57ddc2"
+    },
+    {
+        "name": "Imperial Propaganda and Misinformation",
+        "id": "581017a4-48c3-47da-b821-e40e41062086"
+    },
+    {
+        "name": "Beta Squadron",
+        "id": "53396fc2-f885-481d-9431-ed8ece1837e3"
+    },
+    {
+        "name": "Ghost Company",
+        "id": "c89d5c9a-8f67-457d-9754-482b7f8c4b12"
+    },
+    {
+        "name": "Lightning Squadron",
+        "id": "7a9f20e8-c3e1-43e8-b7d1-3c9e24828a0c"
+    },
+    {
+        "name": "Resistance Fighters",
+        "id": "5154c2a9-b692-4868-adda-f69f4d299a88"
+    },
+    {
+        "name": "Iltan Clan",
+        "id": "c2319311-f7dc-44b2-a31f-ae882946340e"
+    },
+    {
+        "name": "Czerka Corporation",
+        "id": "f1689ac0-55f5-4cf9-b63d-a850a00e5c31"
+    },
+    {
+        "name": "InterGalactic Banking Clan",
+        "id": "74a2bf66-2a91-49c8-947d-6058986fd4a9"
+    },
+    {
+        "name": "Rang Clan",
+        "id": "82f86347-4b59-43fa-a411-323a3d1de070"
+    },
+    {
+        "name": "Galactic Senate",
+        "id": "ad962b37-3ba2-4991-ab16-6e07e4eeeb7b"
+    },
+    {
+        "name": "Rogue One",
+        "id": "15b0811b-f594-4e16-8ec8-2d0ea2e90f17"
+    },
+    {
+        "name": "Squadron Five",
+        "id": "1ffacd6e-7811-431f-a4d8-b6c0aeba2ee2"
+    },
+    {
+        "name": "204th",
+        "id": "43f2e5ab-96a8-4e78-a8b0-66febaf285c5"
+    },
+    {
+        "name": "Gillanium Syndicate",
+        "id": "f50be3f4-ed55-4595-a605-564205d1f399"
+    },
+    {
+        "name": "Carnivore Battalion",
+        "id": "1b0e3bf2-8133-4407-b5ae-ec2d9d70f58d"
+    },
+    {
+        "name": "Execute Battalion",
+        "id": "55fbb769-99b3-420b-b6f6-c439850b0a5d"
+    },
+    {
+        "name": "Chair for the Coalition For Progress",
+        "id": "4d9cd10f-319e-4229-8883-4f9a1491e6f8"
+    },
+    {
+        "name": "Red Fury",
+        "id": "4020851b-b875-4368-9ecd-78e7ac1abcc5"
+    },
+    {
+        "name": "Royal Security Force",
+        "id": "3d4b8ef5-4ad4-40db-afd1-40b14fc02151"
+    },
+    {
+        "name": "Hazard Squadron (1-2-3)",
+        "id": "8041db7e-45be-4f2e-8d67-9c97e4b98733"
+    },
+    {
+        "name": "Ordu Aspectu",
+        "id": "d82a1949-96d2-4068-8536-a9c65a0db8b0"
+    },
+    {
+        "name": "Slinani (Religious Warrior Clan)",
+        "id": "089abf7a-cdec-4db3-8e0b-ffde2a3409d2"
+    },
+    {
+        "name": "Bounty Hunter Guild",
+        "id": "537dda0e-8ec7-4186-88c6-76c6c233485a"
+    },
+    {
+        "name": "Partisans",
+        "id": "cfe78ee8-a26e-4980-a6fc-d5f87f14cb99"
+    },
+    {
+        "name": "Mon Calamari Mercantile Fleet",
+        "id": "a51a442d-a086-4aee-abd9-09b0cf03e5d2"
+    },
+    {
+        "name": "Blade Squadron",
+        "id": "1c6d9e1c-e85d-4221-965a-510fe3bb4268"
+    },
+    {
+        "name": "Death Squadron",
+        "id": "266d6690-7ef0-48f9-bd6d-a3ff1fbbc09d"
+    },
+    {
+        "name": "Clone Trooper",
+        "id": "94d56b8e-cf96-49ee-b572-e64cd26409a8"
+    },
+    {
+        "name": "Crymorah",
+        "id": "0b207bcf-3059-4b4d-a66d-550e22b63296"
+    },
+    {
+        "name": "Audit Division",
+        "id": "da9ffa91-1bb6-4b36-9f36-f49bcd45c7ef"
+    },
+    {
+        "name": "Ben Diffle Fantanines",
+        "id": "7cc2ae38-ce53-4bf0-a9a9-0c988955b272"
+    },
+    {
+        "name": "Shadow Wing (204th)",
+        "comments": "Composed of 6 squadrons. A existé pendant 20 ans.",
+        "id": "f344d2b2-8dd4-45d8-8b1a-8aabff41635f"
+    },
+    {
+        "name": "Imperial Scout Trooper",
+        "id": "a082a95c-117e-470f-89c2-31464bb9181b"
+    },
+    {
+        "name": "Imperial Purge Trooper",
+        "id": "23996096-1395-43df-8e66-f29dc30475de"
+    },
+    {
+        "name": "Imperial Flame Trooper",
+        "id": "34e2c34b-5643-4a64-bd43-5e8919054f5e"
+    },
+    {
+        "name": "Imperial Rocket Launcher Trooper",
+        "id": "ca07542a-4bfc-4266-99a4-8c66595482b4"
+    },
+    {
+        "name": "Imperial Stormtrooper Officer",
+        "id": "a31705ce-b9b6-4933-be89-c6aa071f9d66"
+    },
+    {
+        "name": "Imperial Scout Trooper Commander",
+        "id": "ca8b2d65-e25a-4bfd-b538-c36d6213c41d"
+    },
+    {
+        "name": "Imperial Heavy Assault Trooper",
+        "id": "4c740a4e-fea0-4d39-9848-56bb2503905d"
+    },
+    {
+        "name": "Imperial Snow Trooper",
+        "id": "a3d6c599-2bd7-44b1-be02-bca8f796dd1e"
+    },
+    {
+        "name": "AT-AT Pilot",
+        "id": "2c4216be-0738-4fb5-8e67-4dcc00b628c1"
+    },
+    {
+        "name": "AT-ST Driver",
+        "id": "6908b03c-485c-4c44-8051-bdd6c00a1455"
+    },
+    {
+        "name": "Haxion Brood",
+        "id": "2faa8d30-8a3e-4240-a5e8-874d98c27a90"
+    },
+    {
+        "name": "Senate Guard",
+        "id": "2ea5cdb6-7e2a-492a-b4dc-633c2e3f8086"
+    },
+    {
+        "name": "Black Squadron",
+        "id": "7f8c1b71-dc46-4cf0-b391-44dde8b0aadc"
+    },
+    {
+        "name": "FN Squad",
+        "id": "6a447b0b-8b75-4530-bdb0-3e804e1e4657"
+    },
+    {
+        "name": "FO Squad",
+        "id": "6f4ca57c-17ca-4730-a2cf-589376f3a929"
+    },
+    {
+        "name": "FL Squad",
+        "id": "b8bce850-87df-4795-80c3-49b19d5105ad"
+    },
+    {
+        "name": "Rapier Squadron",
+        "id": "193ed37e-c5cd-4d4e-88f3-7d66491ebddc"
+    },
+    {
+        "name": "Senate Intelligence Commitee",
+        "id": "66d1c8b1-2c82-4dc6-bd6b-66f772cd28ec"
+    },
+    {
+        "name": "Tango Company",
+        "id": "797dc8ad-f451-44c0-b9a6-5952150ac285"
+    },
+    {
+        "name": "Chiss Ascendancy",
+        "id": "980bcaba-1c4f-4f49-8aa7-0942ba8cb3f7"
+    },
+    {
+        "name": "96th Task Force",
+        "id": "e74206f0-f0ec-4607-b16b-250c4d96f8c6"
+    },
+    {
+        "name": "103th",
+        "id": "db8bf4f0-89e8-46d6-8a74-b003bade75c8"
+    },
+    {
+        "name": "125th",
+        "id": "d6923ee1-350c-45ea-9587-1a0fbc594db1"
+    },
+    {
+        "name": "7th Fleet",
+        "id": "d160f44e-8114-419f-b45b-518594112de7"
+    },
+    {
+        "name": "Chiss Defense Fleet",
+        "id": "8f000128-3118-41e3-bca8-07e3eba91d50"
+    },
+    {
+        "name": "Kanauer Corporation",
+        "id": "5a7c89ae-ce20-487a-a339-7c33895424f6"
+    },
+    {
+        "name": "The Protectors",
+        "id": "7952977f-328e-49aa-baa2-5283a619d144"
+    },
+    {
+        "name": "Death Watch",
+        "id": "3f793be7-6fe9-4457-a94a-f2907640c9d1"
+    },
+    {
+        "name": "Ohnaka Transport Solutions",
+        "id": "72dc8cc0-8ea0-4e9d-b30b-ad0bb6e4504c"
+    },
+    {
+        "name": "Botsini Crew",
+        "id": "bc41294c-a58a-4dab-b7ff-40df6a471717"
+    },
+    {
+        "name": "StarFlora Corp",
+        "id": "8b68302c-e0fc-42d1-a21a-2eb7a126f391"
+    },
+    {
+        "name": "Max Rebo Band",
+        "id": "6baf0bd2-156a-4dc4-8157-caf76131302f"
+    },
+    {
+        "name": "Death Trooper",
+        "id": "c85edcdc-4d7b-4a70-9a46-253e86be9935"
+    },
+    {
+        "name": "First Legion",
+        "id": "e68e5f5f-d40f-4316-b23b-7517844badfd"
+    },
+    {
+        "name": "Task Force 231",
+        "id": "434248ef-be65-4a01-b75e-9d20acb8434c"
+    },
+    {
+        "name": "Defender Squadron One",
+        "id": "105d2133-860e-49cf-bfba-35556f408d9a"
+    },
+    {
+        "name": "Maintenance Crew Herf Two",
+        "id": "2f4c05a0-420d-4065-a4c7-1ec29a1eaf0b"
+    },
+    {
+        "name": "Expansionary Defense Fleet",
+        "id": "623dc8c0-aff9-48b1-be19-374b501d9f04"
+    },
+    {
+        "name": "Black Squadron (Empire)",
+        "id": "2439e13b-4a5e-44c6-86e9-ccf0f08b322a"
+    },
+    {
+        "name": "Mandalorian Royal Guard",
+        "id": "5521ce03-5efd-4bb5-8be1-e38a1d1cc85f"
+    },
+    {
+        "name": "House Vizsla",
+        "id": "d053f0a4-acfe-432d-bde5-23e4223ad9ef"
+    },
+    {
+        "name": "Clan Wren",
+        "id": "f70d287e-41e6-4415-963b-fec3520ae2a2"
+    },
+    {
+        "name": "Senate Riot Clone Trooper",
+        "id": "1f5d77a3-a011-495a-a30d-95c9b06cb6d4"
+    },
+    {
+        "name": "Massassi Group",
+        "id": "3a98eaf9-1fc6-4b93-8425-5a4f1ac51dca"
+    },
+    {
+        "name": "Clan Saxon",
+        "id": "c01f080a-96e2-4810-ade4-194933867a84"
+    },
+    {
+        "name": "Clan Kryze",
+        "id": "a662594c-c598-4a4a-87e9-41fa88f3869e"
+    },
+    {
+        "name": "Clan Vizsla",
+        "id": "d4f51414-96d2-45d4-beb6-b1fc43c455d8"
+    },
+    {
+        "name": "Clan Rook",
+        "id": "dfd942d7-3b2c-483c-9cfa-f782f60ee077"
+    },
+    {
+        "name": "Protectors",
+        "id": "c2ae8be3-8578-46af-9767-31112dce1f38"
+    },
+    {
+        "name": "Clan Eldar",
+        "id": "239eaa7e-d8fa-4c47-85bb-4a21fcf29d62"
+    },
+    {
+        "name": "Cloud Rider",
+        "id": "bdfbaa17-c705-42df-9020-776f76362031"
+    },
+    {
+        "name": "Carpo Organization",
+        "id": "30ba20cb-608b-4548-86fb-d2decaed589b"
+    },
+    {
+        "name": "Imperial Spacetrooper",
+        "id": "709d6fdf-2b61-40a2-a251-608d445cb225"
+    },
+    {
+        "name": "Inferno Squad",
+        "id": "52aaf7ec-65fd-46c9-a081-a8c3aaad30da"
+    },
+    {
+        "name": "Danger Squadron",
+        "id": "63682f34-6c5a-49c1-a06a-8bccd5844da8"
+    },
+    {
+        "name": "Hidden Hand",
+        "id": "884bbeb0-89c9-4a9a-a5a0-d1ceaf6ad95a"
+    },
+    {
+        "name": "Elders of Kakra",
+        "id": "f89f7581-b74c-4ede-8b13-05863ddb4c77"
+    },
+    {
+        "name": "New Republic Defense Force",
+        "id": "f5928b7c-1a8e-4867-996a-76d454a9fe37"
+    },
+    {
+        "name": "Minister of Propaganda",
+        "id": "82e0cb46-09b4-4a9f-98c1-24d385f720cc"
+    },
+    {
+        "name": "Indigo Squadron",
+        "id": "71b9012c-74e5-4e81-a2c9-31cb22581813"
+    },
+    {
+        "name": "85th",
+        "id": "6e4f23e7-61db-4ea6-a591-4ff10c0d7ea1"
+    },
+    {
+        "name": "Third Legion",
+        "id": "32b06450-062a-4271-a7b9-6a5473355d52"
+    },
+    {
+        "name": "Reaper Squadron",
+        "id": "7094ebb3-59fb-4759-8b5a-3b6945d4347f"
+    },
+    {
+        "name": "Isopter",
+        "id": "3dd83949-b7d1-41a4-8bf6-74b9610a1d43"
+    },
+    {
+        "name": "CS Squad",
+        "id": "e94d534f-9bb5-47a6-b8cc-cea301129146"
+    },
+    {
+        "name": "First Order Security Bureau",
+        "id": "fb5bf1f9-622b-4497-94e9-c91f8551e58e"
+    },
+    {
+        "name": "First Order Scubatrooper",
+        "id": "0fba4849-bcb5-4553-8033-eb4524423b5f"
+    },
+    {
+        "name": "Hutt Council",
+        "id": "feed74c8-61e5-4082-8134-b2d88cc61ecb"
+    },
+    {
+        "name": "Yellow Squadron",
+        "id": "91196c43-0c25-4ad6-a758-e054d3c64061"
+    },
+    {
+        "name": "Corona Squadron",
+        "id": "e91ff6d9-74f7-45a1-9f18-26703556ae6e"
+    },
+    {
+        "name": "Feral Squadron",
+        "id": "6aa44bfa-d7bd-46f0-b709-ba3d7953c6ad"
+    },
+    {
+        "name": "Splash Squadron",
+        "id": "96e74363-54e8-4712-bc73-87955fcd43e7"
+    },
+    {
+        "name": "Cobalt Squadron",
+        "id": "ac74e0e7-467b-486c-aa20-568e03d14b23"
+    },
+    {
+        "name": "Exeter Squadron",
+        "id": "571fd3ff-7bdf-40de-ba40-1d75d9e9d566"
+    },
+    {
+        "name": "Rampant Squadron",
+        "id": "c99659dc-21f8-46e9-a264-cbf31c14b6c6"
+    },
+    {
+        "name": "Claws",
+        "id": "5951fa12-5762-48d5-a5f9-25f2552b36f6"
+    },
+    {
+        "name": "Con Star Mining Corporation",
+        "id": "906b35fa-f557-4057-8d76-5f537fe8276d"
+    },
+    {
+        "name": "White Hand",
+        "id": "560153c3-14ee-4b71-a208-d80b57479f29"
+    },
+    {
+        "name": "Coruscant Security Force Patrol",
+        "id": "4a64da41-d98c-465a-a01d-4f51bf6ef15d"
+    },
+    {
+        "name": "Kaitis Cartel",
+        "id": "a0786142-0c4f-4e27-b772-f4088d6c97e1"
+    },
+    {
+        "name": "Corellian Engineering Corporation",
+        "id": "e8a48dba-cf2a-443e-9fbc-71be03124287"
+    },
+    {
+        "name": "New Republic Defense Fleet",
+        "id": "6a23e274-7ff9-4968-a09b-173ca10e3ed4"
+    },
+    {
+        "name": "212th",
+        "id": "59b9ac95-0921-46d5-b527-07daab392ff7"
+    },
+    {
+        "name": "Clone Flametrooper",
+        "id": "b3c87b79-0e52-49a1-a198-8586c3c227fb"
+    },
+    {
+        "name": "Imperial Jump Trooper",
+        "id": "da3dd778-dcf6-49e4-85d4-59454ff07f2e"
+    },
+    {
+        "name": "Federation of Trade Route Allocation and Monetization",
+        "id": "ceb26ee4-f366-4b2c-b340-f464131a1a21"
+    },
+    {
+        "name": "First Order Snowtrooper",
+        "id": "ffeafcd7-ae8a-4e2b-b6a8-1b4295ec3c86"
+    },
+    {
+        "name": "First Order Raider",
+        "id": "6c6e74db-283c-45b5-9d60-96df054af10e"
+    },
+    {
+        "name": "First Order TIE Pilot",
+        "id": "994a7796-9d00-4af2-972c-6e41a4a7ba08"
+    },
+    {
+        "name": "Imperial Supercommando",
+        "id": "ec0003fb-79de-44b5-acf5-ff6c6f994ed0"
+    },
+    {
+        "name": "Magna Guard",
+        "id": "d0afbf5b-bdd9-40c4-82df-fcbff0ea88e7"
+    },
+    {
+        "name": "Clone Scout Trooper",
+        "id": "6cbb444b-9c53-42e7-ab9e-db46b2feb002"
+    },
+    {
+        "name": "Shadow Squadron",
+        "comments": "Clone Squadron",
+        "id": "3c9739ea-f92b-4ced-8398-fe0a6c040378"
+    },
+    {
+        "name": "Shanksham Gang",
+        "id": "36398e3d-409f-4c98-9e95-69dfc7db229f"
+    },
+    {
+        "name": "Imperial Shore Trooper",
+        "id": "650ff468-88ef-4412-9d17-2ca0e3214d90"
+    },
+    {
+        "name": "Imperial TIE Pilot",
+        "id": "f7910508-e344-42a1-b08f-e5da3a208909"
+    },
+    {
+        "name": "Third Fleet",
+        "id": "6b2f7a27-ded6-4205-9c99-2a8d4dca0936"
+    },
+    {
+        "name": "224th",
+        "id": "464a3368-732c-499c-8287-da8066e53615"
+    },
+    {
+        "name": "Irving Boys",
+        "id": "c05ffc8f-c2d0-46e6-a608-c135b3965792"
+    },
+    {
+        "name": "Krypder Riders",
+        "id": "c3d28980-3a44-45a3-b951-507dd86e9312"
+    },
+    {
+        "name": "Imperial Academy",
+        "id": "a3219fb9-0c51-4041-8871-6550f85dbc30"
+    },
+    {
+        "name": "Firaxa Syndicate",
+        "comments": "Opère sur Level 1313. Leadé par Lacezzi Macran",
+        "id": "7ed69e6c-3f97-4dd5-a977-a89384f4d51a"
+    },
+    {
+        "name": "B'omarr Monk",
+        "id": "c800292d-4272-48d4-b5d4-1d56146daf72"
+    },
+    {
+        "name": "Desilijic Clan",
+        "id": "ee48c199-94fe-4130-bf79-3e9f0f62f8da"
+    },
+    {
+        "name": "Clan Rrrt",
+        "id": "b8c78197-1bb0-4e74-a90d-da09c6337be9"
+    },
+    {
+        "name": "Nojonz Gang",
+        "id": "7c14dd0a-8df4-45e0-85e8-f1a13b9aad6d"
+    },
+    {
+        "name": "Misericorde",
+        "comments": "Rebel Alliance Intelligence Strike Team",
+        "id": "1bd13b67-fc77-4576-bdcf-221dcfa84797"
+    },
+    {
+        "name": "Dupei Monk",
+        "id": "2f8ef908-a81e-47c2-877a-9d858811f75a"
+    },
+    {
+        "name": "Daa Corporation",
+        "id": "76b34beb-c072-4c47-b33d-092c8fdcb2d5"
+    },
+    {
+        "name": "Sith Order",
+        "id": "05a27dca-7c9c-4b3d-beef-4efc676eed17"
+    },
+    {
+        "name": "Xrexus Cartel",
+        "id": "0aceb580-f176-4638-b418-f0ac2f5d11bf"
+    },
+    {
+        "name": "Haddrex Gang",
+        "id": "10c046eb-e114-41be-9e2d-abdf2fbdab0e"
+    },
+    {
+        "name": "Ace Squadron",
+        "id": "3dc830b8-819d-489e-82a8-f08d2fbdb565"
+    },
+    {
+        "name": "Crimson Corsair",
+        "id": "7bf4eaeb-b419-4be7-9748-ada5710775ef"
+    },
+    {
+        "name": "Jade Squadron",
+        "id": "a60acc46-b6e1-409c-9875-e29baa0e00a5"
+    },
+    {
+        "name": "First Order Executioner",
+        "id": "f99f7ab3-a34c-431a-9d64-438725335b26"
+    },
+    {
+        "name": "High Republic",
+        "id": "9ff86379-3def-49ac-85b3-743046482795"
+    },
+    {
+        "name": "Rebel Fleet Fourth Division",
+        "id": "b35e964d-8ac1-4725-bfdc-06315b931bd6"
+    },
+    {
+        "name": "Rebel Eighth Division",
+        "id": "065677c8-54da-401a-b1cb-4ad12cc26f88"
+    },
+    {
+        "name": "Harlok Gang",
+        "id": "dc630c2e-05a4-47ed-abc7-ffd4a144e75e"
+    },
+    {
+        "name": "First Order Jumptrooper",
+        "id": "1654d3c8-360e-46cf-93ca-7ba3d87ea2dd"
+    },
+    {
+        "name": "Droid Gotra",
+        "comments": "Organization dedicated to droid emancipation",
+        "id": "c9f0e494-8a50-4cca-8b74-de9dfcdaf815"
+    },
+    {
+        "name": "Delta Squad",
+        "id": "d8558ab0-e7ad-4dee-8d68-0b2a887d0e89"
+    },
+    {
+        "name": "Bad Batch",
+        "comments": "Clone Force 99",
+        "id": "10550666-065a-4aac-8a45-74e1108440e6"
+    },
+    {
+        "name": "Jedi Temple Guard",
+        "id": "126d5756-436f-4a40-9f4c-677ee1b79514"
+    },
+    {
+        "name": "Populist",
+        "id": "e5b9cd1f-0461-4986-8597-423237277dab"
+    },
+    {
+        "name": "Centrist",
+        "id": "4a25c939-b181-4f6d-a8f8-97953cde7c00"
+    },
+    {
+        "name": "Ryloth Defense Authority",
+        "comments": "They operate with the full knowledge and support of the Rylothian government.",
+        "id": "1787892e-96a2-42b9-bc64-5badd6376dae"
+    },
+    {
+        "name": "Ryloth Historical Society",
+        "id": "55b0e2cb-5854-4457-a66f-6856a31ed2df"
+    },
+    {
+        "name": "Phantom Squadron",
+        "id": "0adfe75e-931b-4776-b7cd-81d878f65386"
+    },
+    {
+        "name": "Shu Industries",
+        "id": "9ed40f39-eee6-4e5d-b52c-a6539bd9c257"
+    },
+    {
+        "name": "Collective",
+        "comments": "They were an underground organization of engineers, technicians, and scientists bent on stopping the spread of authoritarianism in all its forms via the use of technology.",
+        "id": "24cc1dfa-eeee-429a-b6f5-94b5b6a4f2a0"
+    },
+    {
+        "name": "CorSec",
+        "id": "4c70fe9b-4a71-4e9a-9e62-074856d51da3"
+    },
+    {
+        "name": "Scrapper Guild",
+        "id": "47bc766d-3de7-4d5a-8e8c-a5219fb4b859"
+    },
+    {
+        "name": "Dross Squadron",
+        "id": "d164f6dd-21e1-42bc-a4a8-a6b264be6ac9"
+    },
+    {
+        "name": "Fardi Clan",
+        "comments": "Ahsoka had met the Fardi Clan at the shipyards when she'd arrived on the planet.",
+        "id": "38149a4c-a554-471e-b0f3-0133891917f4"
+    },
+    {
+        "name": "Cyan Squadron",
+        "id": "1b9731a5-c0d2-4e2d-aa38-c45695c581e1"
+    },
+    {
+        "name": "Delta Squad (Rebellion)",
+        "id": "c83c4cec-69d7-4691-b144-394447ca8d5a"
+    },
+    {
+        "name": "Amber Wing",
+        "id": "329610d2-c2ed-499d-8883-4567df9fb933"
+    },
+    {
+        "name": "Cybot Galactica",
+        "comments": "Compagnie reconnue pour sa ligne de 3PO",
+        "id": "e3f1971d-2879-47c5-bdd4-bc4a76830c54"
+    },
+    {
+        "name": "Riot Squadron",
+        "comments": "Fought at Endor",
+        "id": "d90e7940-afc1-42a2-9bb9-2ff77ca02b36"
+    },
+    {
+        "name": "Hound Squadron",
+        "id": "27e017a0-c755-49d1-8a5a-d7fc9b18f0ec"
+    },
+    {
+        "name": "Ore Barons",
+        "id": "13775b41-21da-408b-8c91-7257823fe6b6"
+    },
+    {
+        "name": "Imperial Special Forces",
+        "id": "89812ea4-04c9-40dd-a264-9bc4c4646dad"
+    },
+    {
+        "name": "Force-Wielder",
+        "id": "394a37d5-5b31-4a50-804d-55f5b7aa2b47"
+    },
+    {
+        "name": "Squad Pheno-Six",
+        "id": "73127be5-b863-4c61-8cae-d44948407660"
+    },
+    {
+        "name": "The Crèche",
+        "id": "7ca3f7a4-d725-45df-8e4d-82d86e2ba1b9"
+    },
+    {
+        "name": "Grakks",
+        "comments": "Organization of cybernetically enhanced Hutts who operated in Megalox, a notorious prison site, decades after the Battle of Endor.",
+        "id": "c6c36de3-f8eb-4d3a-b5b6-c541e10d6131"
+    },
+    {
+        "name": "Imperial AT-AT Pilot",
+        "id": "0a776abe-1f6c-4a46-99ab-194f924eadbf"
+    },
+    {
+        "name": "The Rancs",
+        "comments": "Criminal Organization",
+        "id": "e145241d-fda8-464d-bd6d-490610739b66"
+    },
+    {
+        "name": "Strus Clan",
+        "comments": "Group based on Jakku",
+        "id": "abcc5113-d219-44e8-a12c-cddaf6363d83"
+    },
+    {
+        "name": "Fluzhi Clan",
+        "id": "cc9cb241-384d-4cc1-9107-ffb1404c00df"
+    },
+    {
+        "name": "Sun-Lamas",
+        "comments": "Rebel Squad",
+        "id": "c6515619-e2a1-4a3d-9a9c-88bcd4e674fc"
+    },
+    {
+        "name": "108th",
+        "comments": "Imperial Fighter Wing",
+        "id": "9623e3dd-c39e-49c4-b7d7-88ebbe174785"
+    },
+    {
+        "name": "Massassi",
+        "id": "68f38b71-1293-429f-8e87-456513694221"
+    },
+    {
+        "name": "Praetorian Guard",
+        "id": "b00b7182-70d8-4cfa-898f-8fedc95f1fdc"
+    },
+    {
+        "name": "Delcontrian Faction",
+        "id": "d37602a0-7e6e-414f-b735-ebf3cf9e9f9e"
+    },
+    {
+        "name": "Tellonite",
+        "id": "5d1a83ab-db20-404d-b4a5-d1802c05cee8"
+    },
+    {
+        "name": "Caladarian",
+        "id": "527c6fb8-4a52-4e09-841c-83383c881b6a"
+    },
+    {
+        "name": "Naboo Royal Space Fighter Corps",
+        "id": "6f00dea2-0e5f-4248-b405-15e70d3d0726"
+    },
+    {
+        "name": "Green Squadron (Resistance)",
+        "id": "32020bf7-2231-496b-a460-1057a1c6877d"
+    },
+    {
+        "name": "Imperial AT-ST Pilot",
+        "id": "f3583fa2-9183-4155-833e-526ed0e8fdee"
+    },
+    {
+        "name": "k'Jtari",
+        "comments": "Pirate band",
+        "id": "8c271b26-20ea-4c97-b128-e915b6e4dcd1"
+    },
+    {
+        "name": "Imperial Patrol Trooper",
+        "id": "53c8ead5-a3cb-4ab8-b4f3-9a2f2e46abf4"
+    },
+    {
+        "name": "White Worm",
+        "id": "ac271104-9503-498c-a1a9-21bcd0821cc5"
+    },
+    {
+        "name": "Scrumrat",
+        "id": "60530fad-7b07-49ed-b18a-0dc0f24fa97c"
+    },
+    {
+        "name": "Canto Bight Police",
+        "id": "cbf642cf-2458-4b82-a3c0-d48417b7c569"
+    },
+    {
+        "name": "Clone Pilot",
+        "id": "8ad0f4de-b76a-4acc-985d-fd8df2a04eab"
+    },
+    {
+        "name": "Death Star Gunner",
+        "id": "15702a68-5722-4a3e-9155-b5181de21938"
+    },
+    {
+        "name": "Figrin D'an",
+        "id": "dae96bbb-6d67-4329-983c-058adea92ded"
+    },
+    {
+        "name": "Rockhawkers",
+        "id": "317106b0-123e-47fe-87be-8834bed86b1d"
+    },
+    {
+        "name": "Muckwackers",
+        "id": "abcfcbcb-a72c-4d30-a496-5634820b40ff"
+    },
+    {
+        "name": "Sith Eternal",
+        "id": "a5781de0-832b-483d-abb8-a66fe9e1945c"
+    },
+    {
+        "name": "Alazmec of Winsit",
+        "comments": "Based on Mustafar",
+        "id": "605dcf42-4d86-47b0-985c-1b93c54480f0"
+    },
+    {
+        "name": "Sith Trooper",
+        "id": "02758b57-3d1a-4640-a18e-6ae779835a74"
+    },
+    {
+        "name": "Sith Jet Trooper",
+        "id": "d8398e31-85af-4660-b084-8cb90f0cca61"
+    },
+    {
+        "name": "Sith Fleet Technician",
+        "id": "dc158653-9309-41eb-b840-938260b8041d"
+    },
+    {
+        "name": "Final Order",
+        "id": "79311602-1aa3-4886-9fd1-ae5ec9f7e15f"
+    },
+    {
+        "name": "Krawg Pirate",
+        "id": "3d51dc92-e420-4724-aa34-59f69ccaf8fb"
+    },
+    {
+        "name": "Cyban Front",
+        "id": "29646756-8037-42d0-8417-c8f3ad0b9877"
+    },
+    {
+        "name": "Ezaraa Dominion",
+        "comments": "Covers 2 continents on Ezaraa",
+        "id": "e71073a0-277d-40e5-ab67-9d3a7d45457c"
+    },
+    {
+        "name": "Xonti Brothers",
+        "id": "91bc66bb-7330-434a-8049-bf511118d947"
+    },
+    {
+        "name": "Son-Tuul Pride",
+        "id": "821e5685-f295-4ec0-9648-4f8e77464d35"
+    },
+    {
+        "name": "Zeph Quintuplets",
+        "id": "7fb13de2-534b-4acf-9e7e-ea69a5ac6b44"
+    },
+    {
+        "name": "Open",
+        "comments": "Faction of a Primitive war on Carnelion IV",
+        "id": "12dd6bbc-9b28-42c1-b5dd-f66ecf1bf410"
+    },
+    {
+        "name": "Closed",
+        "comments": "Faction of a Primitive war on Carnelion IV",
+        "id": "c8587b54-20fe-4ff7-b3de-0ddda4b1630a"
+    },
+    {
+        "name": "Rostu Squad",
+        "id": "97b094b9-176a-4ab6-86a0-8eb521db5fd7"
+    },
+    {
+        "name": "Skull Squadron",
+        "comments": "(Rau's Unit in CW)",
+        "id": "74fcfe24-3882-4cc3-91a4-aae51c6f43e5"
+    },
+    {
+        "name": "Mourner's Wail Syndicate",
+        "id": "aef59357-512f-4711-a084-7a1dd89dca3a"
+    },
+    {
+        "name": "Unbroken Clan",
+        "id": "76307d3c-379e-495d-a1e0-172449d5aa5a"
+    },
+    {
+        "name": "Barma Battle Group",
+        "id": "f03a504d-9954-4cbd-95ac-5723459a36d4"
+    },
+    {
+        "name": "Vanguard Squadron",
+        "id": "82c6bcdc-ee28-41a3-85f7-67220778dd06"
+    },
+    {
+        "name": "Meteor Squadron",
+        "id": "3c6076a3-e351-4e59-a811-efdf4e0dbd9e"
+    },
+    {
+        "name": "Hail Squadron",
+        "id": "970e49a1-df99-4152-8b3c-66b960d8e5a5"
+    },
+    {
+        "name": "Alphabet Squadron",
+        "id": "7d3a986a-1097-4dde-a71d-8bb5ded7044e"
+    },
+    {
+        "name": "Spectres",
+        "id": "83bab319-147e-4342-8e64-9ed09b947663"
+    },
+    {
+        "name": "Cavern Angels",
+        "id": "769d830f-c532-4341-90bc-3e662efb6f79"
+    },
+    {
+        "name": "Architects of Vaale",
+        "id": "526d112c-d44b-45ad-9b39-d130555a0e0a"
+    },
+    {
+        "name": "Amidalan",
+        "comments": "They pledged to find whoever murdered Padmé, and kill them.",
+        "id": "212d11d3-f923-4735-8ec1-04929655c068"
+    },
+    {
+        "name": "Clone Scuba trooper",
+        "id": "a6934ed8-46c9-4912-9a33-7803980dbb5e"
+    },
+    {
+        "name": "Gungan Grand Army",
+        "id": "7d95a074-2690-450c-bdd2-66344d854bbe"
+    },
+    {
+        "name": "Crimson Squadron",
+        "comments": "New Republic",
+        "id": "1913e016-eb75-4cbc-9512-d88ef78e2cbc"
+    },
+    {
+        "name": "Republic Judicial Forces",
+        "id": "e309153e-144e-40de-a175-92f8fc71cd5b"
+    },
+    {
+        "name": "Republic Planetary Security Forces",
+        "id": "13bb0c2b-84e2-4070-8a5b-f9a974ada4db"
+    },
+    {
+        "name": "Civilian Defense Force",
+        "comments": "Organisation sur Yavin 4",
+        "id": "eecf9050-5c24-4a50-ad82-da9a0e91f26f"
+    },
+    {
+        "name": "New Republic Security Bureau",
+        "id": "f429972d-42b7-4b6a-961f-6da4277871af"
+    },
+    {
+        "name": "Imperial Mining Guild",
+        "id": "77160f78-72f1-46a1-a97d-4548a49bb30b"
+    },
+    {
+        "name": "Zualjinn Syndicate",
+        "comments": "Spice Runners",
+        "id": "e8120910-b291-4651-8853-d96b3c04e261"
+    },
+    {
+        "name": "Osako Space Pirates",
+        "id": "836b1de0-03a3-41db-bcfb-f80db59c56fb"
+    },
+    {
+        "name": "Dai Bendu",
+        "id": "bf81f880-c176-48f4-a498-d8829897db97"
+    },
+    {
+        "name": "Kaldana Syndicate",
+        "comments": "Organization of pirates and shipjackers, formed to take advantage of the inevitable smuggling traffic in Corellian skies.",
+        "id": "13d2095d-86dd-485f-96ed-f296a3f42dfe"
+    },
+    {
+        "name": "Structgalactis, Inc.",
+        "id": "b3099da3-8ea6-45a9-81c2-a3b2065ecbf6"
+    },
+    {
+        "name": "Luminous Mist",
+        "id": "65c0e20d-9494-4470-8389-cbb4263c9d5a"
+    },
+    {
+        "name": "Chandrilan Pathfinding Corps",
+        "id": "63a80de6-0b67-4301-87ab-b6ae574744df"
+    },
+    {
+        "name": "Pneumogray",
+        "id": "ecb17849-6024-4cc0-8f65-6908d4e49820"
+    },
+    {
+        "name": "Sienar APL",
+        "id": "f869a4eb-3109-4809-b1d8-4e4e8871ad57"
+    },
+    {
+        "name": "Bespin Wing Guard",
+        "id": "d9fb374f-4a21-4061-b4ba-c1dd04e7ab8a"
+    },
+    {
+        "name": "Calrissian Enterprises",
+        "id": "1143bfec-ca25-4b58-8222-1d99b12b209c"
+    },
+    {
+        "name": "Wandering Star",
+        "id": "4c3cdeea-783e-4136-b6ed-928aceeacac1"
+    },
+    {
+        "name": "Parapa Cartel",
+        "id": "7e36d3d8-66c5-4b25-9c26-7c2902a79127"
+    },
+    {
+        "name": "Sef Con",
+        "comments": "Former elite assault team stormtroopers.",
+        "id": "216ad677-a04b-44f2-a210-a9b2ec004a15"
+    },
+    {
+        "name": "Brotherhood of Wire and Bone",
+        "id": "f0e5d5df-8ecd-4fe4-a674-7704d1e240a5"
+    },
+    {
+        "name": "Vylar Tech",
+        "id": "63c63447-f9e7-4027-9b1e-9b2d5d2887d7"
+    },
+    {
+        "name": "L3 Assault Team",
+        "id": "48174867-ff73-4047-9ad4-e26f9b1ffc6c"
+    },
+    {
+        "name": "Ohnaka Gang",
+        "id": "4e53df14-c5cb-4b0c-aa7a-052a5344b0f9"
+    },
+    {
+        "name": "Krayt's Claw",
+        "id": "e05d5a51-80a4-464b-b3e5-6e5c2f6f28aa"
+    },
+    {
+        "name": "Mandalorian Super Commandos",
+        "id": "42d4ff65-ea7c-4c6f-b2f9-8f5cbeee18c4"
+    },
+    {
+        "name": "Singing Mountain",
+        "comments": "Clan on Dathomir",
+        "id": "3564fbb0-8ebc-4103-80fc-308068e65029"
+    },
+    {
+        "name": "Dreaming River",
+        "comments": "Clan on Dathomir",
+        "id": "517ec7a9-a308-40e7-b1f1-a38753083a38"
+    },
+    {
+        "name": "Blue Coral Divers Clan",
+        "comments": "Clan on Dathomir",
+        "id": "a28259a3-e479-4a38-aada-a5d9b76e5d34"
+    },
+    {
+        "name": "Red Hills",
+        "comments": "Clan on Dathomir",
+        "id": "cd96755e-b52a-4e0d-8e05-cd36d896e21a"
+    },
+    {
+        "name": "Syndicure",
+        "id": "fbcd9f5c-ee6e-4bbc-ae5c-6ffd173c22ca"
+    },
+    {
+        "name": "Vader' Fist",
+        "id": "9e5a78c5-8915-4c16-9528-9250c02291c4"
+    },
+    {
+        "name": "The Whills",
+        "id": "0d1ae5a8-e750-4d1f-ab70-a1f58887d98f"
+    },
+    {
+        "name": "Starlight Squadron",
+        "id": "035a9186-c766-4161-8780-99f0b6dc0121"
+    },
+    {
+        "name": "Dreamers",
+        "comments": "Faction des Partisans qui s'est levé après la mort de Saw.",
+        "id": "5390f538-6e47-4042-8c70-6147cc023746"
+    },
+    {
+        "name": "Blood Bone Order",
+        "id": "92d1d54d-677c-4e74-bd5c-79817a864cb2"
+    },
+    {
+        "name": "Jinata Security",
+        "id": "9cd13abf-e426-483d-9906-9689f0e166d2"
+    },
+    {
+        "name": "Helix Squadron",
+        "id": "e7b93a0c-d6b4-499e-86fe-1c60bdd280ca"
+    },
+    {
+        "name": "Echo Squadron",
+        "id": "c4dae625-15de-42d9-b497-7dae673c702f"
+    },
+    {
+        "name": "Talus Group",
+        "id": "7956b06a-3ac9-49e5-b238-34cf8fd97933"
+    },
+    {
+        "name": "Titan Squadron",
+        "id": "d90ce1fc-fe2c-48e0-8e58-0e29dda4d180"
+    },
+    {
+        "name": "181st",
+        "id": "c32f99b1-286c-4064-b1de-1562fbe65e3b"
+    },
+    {
+        "name": "Anvil Squadron",
+        "id": "64950f6c-fc7d-4133-ade4-f38254198cbf"
+    },
+    {
+        "name": "Clone Snowtrooper",
+        "id": "9088d9b9-0061-4467-98f2-9dd265110c92"
+    },
+    {
+        "name": "Rebel Fleet Seventh Division",
+        "id": "d21d043c-32d5-41c5-8998-2c9f07c5294d"
+    },
+    {
+        "name": "Nihil",
+        "id": "ef96f9e3-a032-45bf-9139-2e60009f305e"
+    },
+    {
+        "name": "Zygerrian Slave Empire",
+        "id": "6ec293e3-a44f-4e98-b374-9394ee54c8bb"
+    },
+    {
+        "name": "Clone Jumptrooper",
+        "id": "89b5dd4a-0060-4274-8478-ed7e919829ba"
+    },
+    {
+        "name": "104th",
+        "comments": "Wolf Pack",
+        "id": "e23900c0-e7a1-4920-b2df-1f7d738aada6"
+    },
+    {
+        "name": "Mining Collective",
+        "id": "a92a6a20-c514-416c-8731-05b2106a65a3"
+    },
+    {
+        "name": "Rebel Fleet Second Division",
+        "id": "465a51a5-bb5e-47a4-bc21-b16652a6943d"
+    },
+    {
+        "name": "Acolyte of the Beyond",
+        "id": "9720ed83-8dcf-4daf-a5a5-0e02bde458a8"
+    },
+    {
+        "name": "Naboo Royal Guard",
+        "id": "54513833-ce84-409b-a45f-f851fb40c4c7"
+    },
+    {
+        "name": "Children of the Watch",
+        "comments": "Old Mandalorian Religious Cult - Veulent ramener the Old Way.",
+        "id": "0af69693-c42d-4f59-b1f7-bed3314a19f7"
+    },
+    {
+        "name": "Sienar",
+        "id": "d9314dea-fb22-416d-87ab-fba50c61bf08"
+    },
+    {
+        "name": "Dark Trooper",
+        "id": "4a28bab7-e8b2-4aa9-bf5a-335a2f7b197a"
+    },
+    {
+        "name": "Imperial Remnants",
+        "id": "c5bdf7d9-ef87-4f5c-acf1-0fab256645d5"
+    },
+    {
+        "name": "D-Squad",
+        "id": "4bbff4c3-fc68-46ca-9efa-048d3656e1fb"
+    },
+    {
+        "name": "Republic Commando",
+        "id": "cf4003b0-1d4c-42da-8bd0-3d61ca14fc9d"
+    },
+    {
+        "name": "Quarren Free Dac Engineering Corps",
+        "id": "d20f61d5-344a-4e37-ba54-498393c4c3e7"
+    },
+    {
+        "name": "The Grievous Legion",
+        "id": "243137cf-c528-44a7-b16e-9e6cee213250"
+    },
+    {
+        "name": "Nite Owls",
+        "id": "04803290-e1d7-4660-9ec8-fe0c7eb07056"
+    },
+    {
+        "name": "Temple Guards",
+        "id": "c94dd147-a853-4cc8-9d13-1a794fe2f98b"
+    },
+    {
+        "name": "Sienar Fleet Systems",
+        "id": "5742dd8e-9488-41ce-b259-bf6fc661bc46"
+    },
+    {
+        "name": "Outland Regions Security Force",
+        "id": "bf315532-7088-4b64-b35a-85544868a51f"
+    },
+    {
+        "name": "Q'anah's Marauders",
+        "id": "7fa16d09-9f08-4af1-8200-2e5c460750a8"
+    },
+    {
+        "name": "Eriadu Mining",
+        "id": "5ebd9fe1-2bdc-41fe-b7dd-9e319a124527"
+    },
+    {
+        "name": "Coruscant Underground Police",
+        "id": "63799d41-f060-4e2e-acd7-512ba9d2b910"
+    },
+    {
+        "name": "Traxus Division",
+        "id": "7534da4b-7a0c-4cc9-b2b1-5384c2f80b87"
+    },
+    {
+        "name": "Ruling Council",
+        "id": "d8f45ebc-5985-4979-bd1d-c2ba22126fab"
+    },
+    {
+        "name": "Naval Intelligence Agency",
+        "id": "c2099662-6ea3-4e39-b036-2b24fc14481a"
+    },
+    {
+        "name": "COMPNOR",
+        "id": "1e8368ae-5834-406b-93cc-d55b065d1f4e"
+    },
+    {
+        "name": "Commission for the Protection of the Republic",
+        "id": "d4a064fb-c6c2-4b63-b86d-c27ab491a35f"
+    },
+    {
+        "name": "Twelfth Army",
+        "id": "9f72cb4b-656d-42fe-b1e5-257513492603"
+    },
+    {
+        "name": "Sugi",
+        "comments": "Crime organisation",
+        "id": "1677d82f-9b96-4615-a5b1-d6210aa32b4a"
+    },
+    {
+        "name": "Theed Engineering",
+        "id": "763e3fdd-299c-4940-8a25-fba975516725"
+    },
+    {
+        "name": "Cygnus Spaceworks",
+        "id": "e72f5a41-1f69-4a08-abd1-369f3ac5559c"
+    },
+    {
+        "name": "Ubiqtorate",
+        "id": "20daba07-f66c-4fa2-ad82-efef43a067e3"
+    },
+    {
+        "name": "Dagoyan Master",
+        "comments": "Order of mystics on Bardotta",
+        "id": "24b75ba9-1396-46e8-a5e9-fa13a5a37d79"
+    },
+    {
+        "name": "Frangawl Clan",
+        "comments": "Worshippers of an ancient demon, Malmourral.",
+        "id": "ec66d247-348d-40c3-bc5f-47fca8846f80"
+    },
+    {
+        "name": "Force Priestess",
+        "id": "5feaaf49-e5c3-418e-a6b0-822e71818815"
+    },
+    {
+        "name": "Wiborg Jenssens",
+        "id": "17613639-9fbc-46a1-891e-2b1780f75e1d"
+    },
+    {
+        "name": "Tenloss Syndicate",
+        "id": "e1933557-fd3b-484b-8339-f4c5836bf5f9"
+    },
+    {
+        "name": "Pathfinders",
+        "id": "7fac0e5b-7ca5-4650-85a6-ede2f7abecde"
+    },
+    {
+        "name": "Rebel Fleet Sixth Division",
+        "comments": "Destroyed in Star Wars 10",
+        "id": "7628b45a-41e9-46b9-9aeb-7f90d413d3b5"
+    },
+    {
+        "name": "Keshk Corporation",
+        "id": "cb94f72b-56c2-48cd-a762-ff686aedb91b"
+    },
+    {
+        "name": "Arva Pars",
+        "id": "012690e7-6f5f-4093-980a-6b363da441e7"
+    },
+    {
+        "name": "D'Armin Syndicate",
+        "id": "05e8818e-fb62-4914-a84a-206e892a3b8a"
+    },
+    {
+        "name": "De'rruyet Industries",
+        "id": "d6a37f62-93ca-43e9-9228-989f749e453f"
+    },
+    {
+        "name": "Hal'lath Quadruplets",
+        "id": "805d70b8-9bd2-4e5d-9f12-cbe03f76597f"
+    },
+    {
+        "name": "Fytee and the Sleemos",
+        "id": "be181664-9635-4572-9ffd-fdeebd72af8b"
+    },
+    {
+        "name": "Strike",
+        "id": "aafc2eb3-822f-44c6-a851-f609c3df255c"
+    },
+    {
+        "name": "Guardians of Javin",
+        "id": "a72ad3e9-61e1-4525-880b-59b88103009f"
+    },
+    {
+        "name": "Storm",
+        "id": "53b72a82-9107-4b61-aa0c-7160c1aeeeb9"
+    },
+    {
+        "name": "Tempest Runners",
+        "id": "dfb0ab2f-09f1-47c9-93ed-2e26462987e2"
+    },
+    {
+        "name": "Malastare-Sullust Joint Task Force",
+        "id": "62d2915b-bf45-4942-ad9c-2de3fb894d1c"
+    },
+    {
+        "name": "Byne Guild",
+        "id": "2cd13d1e-8f06-4e3e-9fc8-426b83852c59"
+    },
+    {
+        "name": "Scantech",
+        "id": "0e379d2d-bc72-4b42-993e-2a6e1554dcfc"
+    },
+    {
+        "name": "Republic Defense Coalition",
+        "id": "a34101d9-2c8b-4f40-9336-9d20e9757e22"
+    },
+    {
+        "name": "Garello Technologies",
+        "id": "b27b9de9-0201-4b77-8886-dba4103a3350"
+    },
+    {
+        "name": "Republic Transport Bureau",
+        "id": "40d1f042-31ef-44ac-a857-a400e62330db"
+    },
+    {
+        "name": "Valkeri Enterprises",
+        "id": "97790066-80f7-4a83-8860-931495fe3463"
+    },
+    {
+        "name": "Sixth Kin",
+        "id": "b545fc07-9e13-48e1-8830-8b113ac1e91b"
+    },
+    {
+        "name": "Sorcerers of Tund",
+        "id": "ffd281e5-525d-4358-b294-cfc9ee1d5f35"
+    },
+    {
+        "name": "Yacombe",
+        "id": "cccc5549-1703-40a9-9de8-9b4fe8205220"
+    },
+    {
+        "name": "Hawk-Bat Clan",
+        "id": "3a82ce57-e9b0-4916-add9-ca2ef53c70b4"
+    },
+    {
+        "name": "Razorclaw Gang",
+        "id": "b7536f47-402d-4867-8974-3790e6d5bf73"
+    },
+    {
+        "name": "Presagers of Hakotei",
+        "id": "9571c625-c016-4a8c-a80a-251fac79b4e1"
+    },
+    {
+        "name": "Heliost Clan",
+        "id": "7e137d8a-86f4-4339-a37a-13293b6d3efc"
+    },
+    {
+        "name": "Daystar Entertainment",
+        "id": "ddae0a74-2b15-4772-8376-20b27bc7b1a2"
+    },
+    {
+        "name": "Tagge Corp",
+        "id": "f58d9cc4-2897-4822-8be9-7be6da6aec08"
+    },
+    {
+        "name": "Shrikes",
+        "id": "c8b2546b-8af5-4725-b545-2aa7678ad485"
+    },
+    {
+        "name": "Morubas Crime Family",
+        "id": "e10b4dae-a94c-4d2d-b729-7a8a61c7ab7b"
+    },
+    {
+        "name": "Winds of Ruin",
+        "id": "d0760078-a03e-43a0-a904-8c584cf761a8"
+    },
+    {
+        "name": "Order of the Sight Voltaic",
+        "id": "4068eb4c-803e-4386-ba91-4f037ada48c6"
+    },
+    {
+        "name": "Holowan Droid Foundry",
+        "id": "3ec5616d-58ed-4649-acb6-53872749c325"
+    },
+    {
+        "name": "Droid Crush of Bestoon",
+        "id": "77e29e61-bfd7-45b6-8f24-a63149fa3de0"
+    },
+    {
+        "name": "Junk Mavens",
+        "id": "7a0985aa-907b-4aa1-8ed9-825a0b3f7f45"
+    },
+    {
+        "name": "Elite Squad-1",
+        "id": "f31a4625-3edb-448d-acb3-5b67f2c5e4ae"
+    },
+    {
+        "name": "Rhokai Gang",
+        "id": "fdcedae8-deb1-42eb-9b6a-7925fc6f7789"
+    },
+    {
+        "name": "Moogan",
+        "id": "2fbe76d7-8257-4f67-975d-e4e5de6e17f0"
+    },
+    {
+        "name": "Fromm Gang",
+        "id": "4d046d4f-a9ce-48cd-bdf1-72f10fbda413"
+    },
+    {
+        "name": "Rebel Fleet Eleven Division",
+        "id": "9d5545fe-a7e3-4532-b57e-870f006826a5"
+    },
+    {
+        "name": "Sorosuub",
+        "id": "135b1319-5ffa-4f60-a224-d75c58cc0123"
+    },
+    {
+        "name": "TK-Trooper",
+        "id": "0cd84798-3229-4e23-974e-d4a7b7fb476a"
+    },
+    {
+        "name": "Imperial Commando",
+        "id": "dd4cf445-0c4c-429f-9f37-7955d8ec414e"
+    },
+    {
+        "name": "The Ascendant",
+        "comments": "Ancient Cult obsessed with powerful, dark technology.",
+        "id": "40dc0d16-0e99-4fc6-ad76-0b282ecf12c8"
+    },
+    {
+        "name": "Cabarka Union",
+        "id": "ed537621-bff2-401c-a3eb-d4c53436411e"
+    },
+    {
+        "name": "Yallow Fellowship",
+        "id": "b06d75e0-232b-46f4-a5a2-c75b1acdd545"
+    },
+    {
+        "name": "Sabracci Sages",
+        "id": "78c6138d-363e-439d-bf1d-991739e46f1b"
+    },
+    {
+        "name": "Assassin's Guild",
+        "id": "f49490ef-15a5-4b04-b066-6ee6a7c55ad9"
+    },
+    {
+        "name": "Dark Squadron",
+        "id": "0f103ca8-bd00-42b3-9769-af527ce6869d"
+    },
+    {
+        "name": "Papa Toren",
+        "id": "dd30d862-6be3-4b09-af0c-9f701f0ae34d"
+    },
+    {
+        "name": "Order of the Night Wind",
+        "id": "ab4f0f1c-e69f-4828-aec9-339f4c1a8482"
+    },
+    {
+        "name": "Kintan Striders",
+        "id": "ba76e9ae-c5d5-4ce8-85f4-b960437a9b67"
+    },
+    {
+        "name": "The Mods",
+        "id": "19bc2e1d-fddb-478a-88a5-432f6b5b7c32"
+    },
+    {
+        "name": "Squadron D12",
+        "id": "e53d6b20-83ac-40a1-b234-e1e6e0c6f0f0"
+    },
+    {
+        "name": "Halo Squadron",
+        "id": "fd2a2811-6215-4e19-b745-04a42c096e32"
+    },
+    {
+        "name": "Church of the Force",
+        "id": "7a92ab87-c381-4051-bde1-cde1f49059c7"
+    },
+    {
+        "name": "Lerct Historical institute ",
+        "id": "cd664ab9-5a16-4882-a82f-36bac76cb3bc"
+    },
+    {
+        "name": "Rebel Fleet Tenth Division",
+        "id": "2369b243-06f2-4616-9266-e85f318d7817"
+    },
+    {
+        "name": "Kite, Phard Dynasty",
+        "id": "4f6b7b87-9c94-44a0-bf8a-9c29624f3e13"
+    },
+    {
+        "name": "Aquillian Ranger",
+        "id": "92ce530c-bfc7-4b7e-854c-6f36ccfcab6a"
+    },
+    {
+        "name": "Merson Pirates",
+        "id": "b1336c96-6ee3-4d7d-80f0-d45b03b45b45"
+    },
+    {
+        "name": "Benelex Marshal Service",
+        "id": "126cc5d8-88ef-4ed2-acdd-de6701fbb1a7"
+    },
+    {
+        "name": "Locris Security",
+        "id": "380fe4a3-9d89-45ed-9852-eb5037ce1c38"
+    },
+    {
+        "name": "Valo Security Force",
+        "id": "cf3070a9-4fa9-4254-bb64-8859e42192d9"
+    },
+    {
+        "name": "Incom Corporation",
+        "id": "c30a6256-5c24-4ee5-b79f-fb9cbd33f3cd"
+    },
+    {
+        "name": "Pre-Mor",
+        "id": "08eed238-d9bb-49fd-8600-5f6de20719e1"
+    },
+    {
+        "comments": "",
+        "name": "Hast Antu Gang",
+        "id": "6926c0e6-de06-4939-b458-fb5d16c0b097"
+    },
+    {
+        "comments": "Hunt threats to the Sith",
+        "name": "Darkseekers",
+        "id": "60633d32-bea9-405a-a854-55264629258f"
+    },
+    {
+        "comments": "",
+        "name": "Reekrider Cartel",
+        "id": "860a087c-03e1-4801-be15-e118154ad73e"
+    },
+    {
+        "comments": "",
+        "name": "Corporate Sector Authority ",
+        "id": "54cc28e0-d4b4-4658-ad75-6a0e8266ef0c"
+    },
+    {
+        "comments": "",
+        "name": "Krayt Head",
+        "id": "066da6e7-962b-41c5-9733-6f1e58ae522c"
+    },
+    {
+        "comments": "",
+        "name": "By The Hand",
+        "id": "7dc726b8-4688-4a0d-8ffc-b7742941009d"
+    },
+    {
+        "comments": "",
+        "name": "Path of the Open Hand",
+        "id": "680204a0-c781-4cea-9ffb-bcdabdad3c83"
+    },
+    {
+        "comments": "",
+        "name": "Truthsayers of Bpfassh",
+        "id": "ecdf587b-dcff-497d-9a70-49d4a4810f16"
+    },
+    {
+        "comments": "",
+        "name": "Black Eye",
+        "id": "49fa786f-be87-47ee-8c5d-2a4865ba900d"
+    },
+    {
+        "comments": "",
+        "name": "Lonto",
+        "id": "abd702f9-5668-4663-8b69-4dd0eab2ea71"
+    },
+    {
+        "comments": "",
+        "name": "Fallanassi",
+        "id": "66fb1265-8e87-4b88-865b-3ad0466a5202"
+    },
+    {
+        "comments": "",
+        "name": "Matukai",
+        "id": "1bcd039d-b623-4385-89b6-430cc2c39399"
+    },
+    {
+        "comments": "",
+        "name": "Neimoidian Defense Legion",
+        "id": "b8a5f1ac-3914-4c54-b4ce-6c4fbe8e9af8"
+    },
+    {
+        "comments": "",
+        "name": "The Family",
+        "id": "edc661e9-5881-49f9-b9b4-34b55b1ca80a"
+    },
+    {
+        "comments": "",
+        "name": "RazBohan",
+        "id": "d508150d-a9c2-43c1-9751-089ee574f06d"
+    },
+    {
+        "comments": "Republic<div><br></div>",
+        "name": "302nd Battalion",
+        "id": "f2414c27-3ad0-4e47-8b59-b11cef14a3fd"
+    },
+    {
+        "comments": "",
+        "name": "Arakyd",
+        "id": "9c36e644-044d-4e8b-9c70-f829315c20e9"
+    },
+    {
+        "comments": "",
+        "name": "Council of Neutral Systems",
+        "id": "f0821c98-cd1e-4a73-bbd8-bcf023687574"
+    },
+    {
+        "comments": "",
+        "name": "Daughter of Ferrix",
+        "id": "871935b1-6496-421d-b766-2898490667e0"
+    },
+    {
+        "comments": "",
+        "name": "Zerek Besh",
+        "id": "86885d87-e14e-401e-ba58-9162c1551591"
+    },
+    {
+        "comments": "",
+        "name": "Orphans",
+        "id": "b338c486-6272-437e-b612-ea10a90e3ef2"
+    },
+    {
+        "comments": "",
+        "name": "Sister of Sarrav",
+        "id": "0e32320b-b3fc-4c13-9f11-177e527e3ac3"
+    },
+    {
+        "comments": "",
+        "name": "Namoi",
+        "id": "e9cb5afd-3d9b-4efa-a61b-5ff0739c8139"
+    },
+    {
+        "comments": "",
+        "name": "Dank Graks",
+        "id": "5eb8701f-996b-4c09-a551-98efbad227dc"
+    },
+    {
+        "comments": "On Gorse",
+        "name": "Calladan Chemworks",
+        "id": "bfe2460c-e36a-4b6c-9c38-c0cd48c79fa3"
+    },
+    {
+        "comments": "",
+        "name": "Moonglow Polychemical",
+        "id": "c72517ca-0126-44a9-8e78-152ecdb745d5"
+    },
+    {
+        "comments": "",
+        "name": "Dalborg Mining",
+        "id": "266ef947-2587-4d7b-9b28-e14eaabfd708"
+    },
+    {
+        "comments": "",
+        "name": "Transcept Media Solutions",
+        "id": "370b5a2f-adc0-478b-948a-9a552bf730da"
+    },
+    {
+        "comments": "",
+        "name": "Mynocks",
+        "id": "4c0836ef-8b94-411c-93b9-a0aba7c03817"
+    },
+    {
+        "comments": "",
+        "name": "Cyndan Mining Guild",
+        "id": "a9d3ab86-aa7d-4cc4-904e-a9e925b774aa"
+    },
+    {
+        "comments": "",
+        "name": "Sarlaccs",
+        "id": "f6ab9b93-c583-4879-a719-7f9c4f3d5888"
+    },
+    {
+        "comments": "",
+        "name": "Environmental Action Gazette",
+        "id": "c16dba7d-fc71-40b3-adc5-143def9d6bae"
+    },
+    {
+        "comments": "",
+        "name": "Ardennian Guild of Technicians",
+        "id": "c2a91e5f-ead6-4b67-998d-bc52bfbf17ab"
+    },
+    {
+        "comments": "",
+        "name": "Minerax Consulting",
+        "id": "ff64fac3-8b74-4135-afb2-06f46ae5c29a"
+    },
+    {
+        "comments": "",
+        "name": "Rothana Heavy Engineering",
+        "id": "99370249-f13f-49de-ba2e-0c8832aff972"
+    },
+    {
+        "comments": "",
+        "name": "Echani",
+        "id": "6ea12fed-9307-4bf1-8d6e-012983af755c"
+    },
+    {
+        "comments": "",
+        "name": "Crozo Industrial Products",
+        "id": "9be92ef6-9f4b-452f-aa61-d420724cc1d2"
+    },
+    {
+        "comments": "",
+        "name": "Royal Togruta Fleet",
+        "id": "2188a10e-6e8c-4c13-b69e-469b5925b77f"
+    },
+    {
+        "comments": "",
+        "name": "Priest of Phirma",
+        "id": "4c4b005e-aa08-4924-821e-6f2b7e62b234"
+    },
+    {
+        "comments": "",
+        "name": "Lastelle Collective",
+        "id": "6020c24c-daf9-47ed-9f4a-d0a368a94d59"
+    },
+    {
+        "comments": "",
+        "name": "Galactic Antipiracy Command",
+        "id": "aa2c7ac1-0fe1-43e7-9ff9-a157bd1bb8b5"
+    },
+    {
+        "comments": "",
+        "name": "Interstellar Thorolide Guild",
+        "id": "7213f081-ffee-421e-97ab-6b9a29c618a3"
+    },
+    {
+        "comments": "",
+        "name": "291th legion",
+        "id": "5607b27e-6440-4330-8281-add06be7f0f2"
+    },
+    {
+        "comments": "GravBall team",
+        "name": "Saber Cats",
+        "id": "ba812344-7a84-45a4-94bd-64d578df2706"
+    },
+    {
+        "comments": "Grav-ball team",
+        "name": "Green Dragon",
+        "id": "08d225ff-294c-49aa-b823-b5a3fe25c18e"
+    },
+    {
+        "comments": "",
+        "name": "Shad Furies",
+        "id": "4aabb15f-4374-4f82-bd22-67595fe8e295"
+    },
+    {
+        "comments": "",
+        "name": "Eriadu Patriot",
+        "id": "440071c0-797e-4439-911c-c518e5fdfcfc"
+    },
+    {
+        "comments": "",
+        "name": "NRC-077",
+        "id": "a6fa86b2-5232-42ad-9b30-004e36dbea10"
+    },
+    {
+        "comments": "",
+        "name": "Unit Aurek",
+        "id": "92e03ac7-d13c-47d5-bcc5-88aec735682a"
+    },
+    {
+        "comments": "",
+        "name": "Unit Cresh",
+        "id": "295c065c-6cad-4622-a40a-aa8ef41ec9c3"
+    },
+    {
+        "comments": "",
+        "name": "Unit Forn",
+        "id": "2e4c397a-d840-49cb-bc28-40179a810ce7"
+    },
+    {
+        "comments": "",
+        "name": "Imperial Seatrooper",
+        "id": "86e2a3c0-553a-471d-a391-8ffe3e9d6575"
+    },
+    {
+        "comments": "",
+        "name": "Green Team",
+        "id": "45a02a29-b11d-4d45-88d8-8845e434f219"
+    },
+    {
+        "comments": "Kylo Ren's Elite Stormtrooper",
+        "name": "700th Legion",
+        "id": "c6898ea2-5ca3-48ce-9a0e-067ff00d1ffe"
+    },
+    {
+        "comments": "Kylo Ren's Elite Stormtrooper<br>",
+        "name": "9th Legion",
+        "id": "7b2fa076-dfa5-4c37-a21a-fab9fb1c490c"
+    },
+    {
+        "comments": "",
+        "name": "Gray Syndicate ",
+        "id": "96782145-315e-4d7b-8412-092a09b1bf9d"
+    },
+    {
+        "comments": "",
+        "name": "Unit Esk",
+        "id": "d7d2478c-2e29-44a5-8931-23e0f15b90b7"
+    },
+    {
+        "comments": "",
+        "name": "Unit Dorn",
+        "id": "ada5ee29-1d54-4f55-a795-19be82733023"
+    },
+    {
+        "comments": "",
+        "name": "Unit Besh",
+        "id": "4bd56faf-07b2-43f5-80eb-d847edd22570"
+    },
+    {
+        "comments": "",
+        "name": "Chekkoo",
+        "id": "6625f398-65d1-4aed-9fd0-2145b9789b70"
+    },
+    {
+        "comments": "Rodian clan",
+        "name": "Chattza",
+        "id": "e8711d01-a0a7-45b3-b6fc-0caebbb8ca52"
+    },
+    {
+        "comments": "",
+        "name": "Utheel Outfitters",
+        "id": "cda71515-509e-47ff-927a-fb35cc24480f"
+    },
+    {
+        "comments": "",
+        "name": "The Ancients",
+        "id": "31206762-fa22-4f7f-9a86-287960ce3536"
+    },
+    {
+        "comments": "",
+        "name": "Kingdom of Elweys",
+        "id": "b369307e-a69b-4846-a336-3e7705317b83"
+    },
+    {
+        "comments": "",
+        "name": "Gavalox Communications",
+        "id": "a09df94c-806b-45d8-a9c2-5b257857803e"
+    },
+    {
+        "comments": "",
+        "name": "Bureau of Standards",
+        "id": "224476f1-522f-40ca-b474-2ecad032757d"
+    },
+    {
+        "comments": "",
+        "name": "Neo-Republican",
+        "id": "e09c4a00-398e-4f34-809a-dca50b4b0d24"
+    },
+    {
+        "comments": "",
+        "name": "Ghorman Front",
+        "id": "232e7c8c-ae19-461e-94dc-855cb60ff21c"
+    },
+    {
+        "comments": "(GPE)",
+        "name": "Galactic Power Engineering",
+        "id": "5e70d085-a597-4bc5-afd8-4777148501cf"
+    },
+    {
+        "comments": "",
+        "name": "Alderaan Trade Alliance",
+        "id": "2f3de27b-e8ab-46e1-baa4-8a88d905c39b"
+    },
+    {
+        "comments": "",
+        "name": "Vanguard Axis",
+        "id": "739199cb-1563-43e3-8f79-ba2fed02092e"
+    },
+    {
+        "comments": "Band",
+        "name": "Hakko Drazlip and the Tootle Froots",
+        "id": "5bc9fff5-d5b9-4fed-bcfe-a75f5ed53215"
+    },
+    {
+        "comments": "",
+        "name": "Nessin Courier & Cargo",
+        "id": "937b55b8-cfc3-4eb4-a3fe-2e814e50cc32"
+    },
+    {
+        "comments": "",
+        "name": "Kuat Drive Yards",
+        "id": "3aa67514-a9be-4cb2-a7c3-94ea475a5cf3"
+    },
+    {
+        "comments": "",
+        "name": "Polser Couriers",
+        "id": "5afd7181-771c-4b9a-b909-1043aea0eee1"
+    },
+    {
+        "comments": "",
+        "name": "Free Ryloth",
+        "id": "0eb793f6-f658-48aa-8a8e-facac017986f"
+    },
+    {
+        "comments": "",
+        "name": "Ryloth Imperial Control",
+        "id": "beaeee8f-9158-49cb-aa34-17796de5033b"
+    },
+    {
+        "comments": "",
+        "name": "New Republic Special Forces",
+        "id": "5457eecd-0407-4797-8708-e1715b0f3be3"
+    },
+    {
+        "comments": "",
+        "name": "Imperial Information Bureau",
+        "id": "3da5fccf-464b-481e-a75a-26eb6088edc1"
+    },
+    {
+        "comments": "",
+        "name": "Republic Science Corps",
+        "id": "bb89edcc-90ca-4c74-bbcb-7737605ed96b"
+    },
+    {
+        "comments": "Empire",
+        "name": "Advanced Science Division",
+        "id": "ea0a82eb-2266-49ca-89f1-773d72b9eaf9"
+    },
+    {
+        "comments": "",
+        "name": "Pirate Nation",
+        "id": "a28667d3-9cc1-40b5-a8d5-9b5a625f85b0"
+    },
+    {
+        "comments": "",
+        "name": "Adelphi Squadron",
+        "id": "3706c881-a168-4023-a11a-767d27306f7c"
+    },
+    {
+        "comments": "",
+        "name": "Ancient Order of Independent Regencies",
+        "id": "5f17a702-cae0-4161-a464-d225c708154d"
+    },
+    {
+        "comments": "",
+        "name": "Findsman",
+        "id": "560b303c-c59b-4415-8e61-8f831390994c"
+    },
+    {
+        "comments": "",
+        "name": "Shadow Council",
+        "id": "de8aaafe-5793-4910-bfd7-472b2ddab431"
+    },
+    {
+        "comments": "",
+        "name": "Scarlet Skulls",
+        "id": "f4e1e6f9-1e05-4d10-b833-062250f03aa8"
+    },
+    {
+        "comments": "",
+        "name": "Genetian Collective",
+        "id": "05c6d06b-af95-464d-8166-0b2b251471a6"
+    },
+    {
+        "comments": "",
+        "name": "Bedlam Raiders",
+        "id": "378062e4-e041-461e-a53f-c4896c97d08d"
+    },
+    {
+        "comments": "",
+        "name": "Anchorites",
+        "id": "d6b1e762-a4c9-4a28-b539-cb064ea4bcad"
+    },
+    {
+        "comments": "",
+        "name": "Squad 326",
+        "id": "30a009ab-6fd2-4f6f-82bc-3010abe22b70"
+    },
+    {
+        "comments": "",
+        "name": "Grenth Technologies",
+        "id": "3751d0e4-78c1-4355-b596-0a09e7119a50"
+    },
+    {
+        "comments": "",
+        "name": "Company 326",
+        "id": "ff488827-26fc-40af-91ea-40a61b32faa9"
+    },
+    {
+        "comments": "",
+        "name": "Krrupt Gang",
+        "id": "db0b0caa-89c2-4900-a9e1-8bf05025080a"
+    },
+    {
+        "comments": "",
+        "name": "New Republic Correctional Corps",
+        "id": "aec99711-8330-4684-a09e-5c5c2e26bd85"
+    },
+    {
+        "comments": "",
+        "name": "Colony of the Second Revelation",
+        "id": "352e7a19-9437-4d82-b6b7-04a0f7275aee"
+    },
+    {
+        "comments": "",
+        "name": "Imperial Shock Trooper",
+        "id": "cc971a29-98f4-4876-8d23-0568c4e45afa"
+    },
+    {
+        "comments": "",
+        "name": "Night Trooper",
+        "id": "e8a6db43-b98e-4cd1-b291-7a53815bb2d5"
+    },
+    {
+        "comments": "",
+        "name": "Wild Squadron",
+        "id": "bc20384e-1fec-4b52-b699-22d212ac754d"
+    },
+    {
+        "comments": "",
+        "name": "Tofen Raiders",
+        "id": "9de323df-cd5d-4758-9d34-d46618130c4b"
+    },
+    {
+        "comments": "",
+        "name": "Filthy Zephirs",
+        "id": "ded20562-8808-43c3-9814-c08e2544d530"
+    },
+    {
+        "comments": "",
+        "name": "Firebird Squadron ",
+        "id": "5963b6de-4996-4319-9521-bc2a742b108e"
+    },
+    {
+        "comments": "",
+        "name": "Child of the Storm",
+        "id": "41563861-ea71-4d90-90a8-ed3a64e9d073"
+    },
+    {
+        "comments": "",
+        "name": "Galactic Society of Creature Enthusiasts ",
+        "id": "cc2c0bb2-0ba5-4b41-8f53-843695bd9d3d"
+    },
+    {
+        "comments": "",
+        "name": "BlasTech",
+        "id": "494bc9b0-c7fe-40fc-b6e1-fb6a16119fd5"
+    },
+    {
+        "comments": "",
+        "name": "Corell Industries",
+        "id": "b0a02833-041e-412e-bf57-31e071d15bc5"
+    },
+    {
+        "comments": "",
+        "name": "201st Squadron",
+        "id": "6909f970-3a7f-4b50-8c2b-4c3eb6d4e062"
+    },
+    {
+        "comments": "",
+        "name": "Electrobaton Purge Trooper",
+        "id": "7b3e0414-88fd-4fd9-a9c1-eb1efe80c198"
+    },
+    {
+        "comments": "",
+        "name": "Electrostaff Purge Trooper",
+        "id": "2539e8a2-13d9-4a3c-9c47-ff2233b41838"
+    },
+    {
+        "comments": "",
+        "name": "Electrohammer Purge Trooper",
+        "id": "b57b0f00-6f61-443c-a0a7-bd3b478aa38e"
+    },
+    {
+        "comments": "",
+        "name": "Imperial Shield Trooper",
+        "id": "a6fbc6c9-f819-45b3-85bb-be91c490dc9d"
+    },
+    {
+        "comments": "",
+        "name": "Imperial Jetpack Trooper",
+        "id": "656a0857-7533-4a54-bf80-3c74bc473b0a"
+    },
+    {
+        "comments": "",
+        "name": "Schism Imperial",
+        "id": "624fe623-2258-4848-8ecf-5c2701adc45a"
+    },
+    {
+        "comments": "",
+        "name": "M.A.R. Corps",
+        "id": "58384b24-a065-437a-b918-0a7c317de1d6"
+    },
+    {
+        "comments": "",
+        "name": "Hidden Path",
+        "id": "047b1cd4-545f-4909-8556-b127a4a63c49"
+    },
+    {
+        "comments": "",
+        "name": "Predak Vane",
+        "id": "032fec23-eaa9-4f1e-90c2-3ee99e8f9a48"
+    },
+    {
+        "comments": "",
+        "name": "Raxlo Corporation",
+        "id": "4fbef0c4-6610-41ad-9535-01ec8b245775"
+    },
+    {
+        "comments": "",
+        "name": "Had'le Path",
+        "id": "b05113fd-0751-43bb-bd61-5b2efa57ff46"
+    },
+    {
+        "comments": "",
+        "name": "Conscription Trooper Pilot",
+        "id": "8b2abae4-b9ab-4bd9-baf1-af699f589b93"
+    },
+    {
+        "comments": "",
+        "name": "Clone X",
+        "id": "ea3b75a0-2a3e-453b-947b-81a73cb33851"
+    },
+    {
+        "comments": "",
+        "name": "Scarabi Merc",
+        "id": "53dba6d5-45fa-422e-bc2c-0cafa00d80a9"
+    },
+    {
+        "comments": "",
+        "name": "Circle of Kavaan",
+        "id": "049cadaf-42f2-4bf2-b9d5-403cc8315cb3"
+    },
+    {
+        "comments": "",
+        "name": "White Current",
+        "id": "414b06c2-e52d-46d8-84d2-caf6d98d1701"
+    },
+    {
+        "comments": "",
+        "name": "Vile",
+        "id": "4b68e892-6740-4e37-ac7d-37bb240757ee"
+    },
+    {
+        "comments": "",
+        "name": "Staved Skulls",
+        "id": "451aee7b-6381-4c01-a5c9-11099fed0a7b"
+    },
+    {
+        "comments": "",
+        "name": "Filthy Creds",
+        "id": "defe915f-3cb2-424d-9009-260abad5cfeb"
+    },
+    {
+        "comments": "",
+        "name": "Ro Mira Refinery Security Patrol ",
+        "id": "353e0696-7f3c-4180-aa05-afe2e234a495"
+    },
+    {
+        "comments": "",
+        "name": "Blood Oath Syndicate",
+        "id": "8c524537-a58e-4f03-9179-01a79cd9a2f9"
+    },
+    {
+        "comments": "",
+        "name": "Final Occultation",
+        "id": "05da8a4d-e73d-4d90-8876-47d8ac3b8eef"
+    },
+    {
+        "comments": "",
+        "name": "Mountain Clan",
+        "id": "397d76dc-d8b0-40c0-9e50-975bda1d979c"
+    },
+    {
+        "comments": "",
+        "name": "Imperial Survey Corps",
+        "id": "1c2d3a0e-aac3-4451-b647-1273368c6d7d"
+    },
+    {
+        "comments": "",
+        "name": "Diagu",
+        "id": "8bb0a70d-d81a-4d0c-999d-2c768ec9124f"
+    },
+    {
+        "comments": "",
+        "name": "Perlemian Cartel",
+        "id": "62729f78-5701-4a1d-ac2b-91998a5ff7cb"
+    },
+    {
+        "comments": "",
+        "name": "Imperial Future Council",
+        "id": "82428df4-941b-4a63-af98-1673776a4ac5"
+    },
+    {
+        "comments": "",
+        "name": "Anklebiter Brigade",
+        "id": "0064484c-d6f5-4970-83f7-e5f5b043ccec"
+    },
+    {
+        "comments": "",
+        "name": "Red Key Company",
+        "id": "76d0384d-e730-437e-a403-1492621afaf7"
+    },
+    {
+        "comments": "",
+        "name": "Gangul",
+        "id": "18b5bd11-fe8f-4b95-81f1-5a2620b2399b"
+    },
+    {
+        "comments": "",
+        "name": "Iska Pirates",
+        "id": "b25dcb61-8fdb-4bfc-9323-61071ff78bba"
+    },
+    {
+        "comments": "",
+        "name": "Order of the Terrible Glare",
+        "id": "7fce07f0-a9f1-41ba-9eb9-918663ff96f9"
+    },
+    {
+        "comments": "",
+        "name": "Red Battalion",
+        "id": "f05ab3b6-8137-462c-a16e-925e9be73b8f"
+    },
+    {
+        "comments": "",
+        "name": "Blue Batallion",
+        "id": "1d155959-7a6b-4b73-8979-945956636c42"
+    },
+    {
+        "comments": "",
+        "name": "Cresh-3 Platoon",
+        "id": "52da8268-b0e0-4534-88c3-a0142e280307"
+    },
+    {
+        "comments": "",
+        "name": "Comet Runners",
+        "id": "f9f23592-2224-4050-8501-b2455c7b09aa"
+    },
+    {
+        "comments": "",
+        "name": "CORPSEC",
+        "id": "de5ef165-2475-43ad-83c9-7093d45e7852"
+    },
+    {
+        "comments": "",
+        "name": "Brendok Coven",
+        "id": "de8a3711-8816-48bf-be64-274b12574df4"
+    },
+    {
+        "comments": "Rebel Alliance's Sixty-First Mobile Infantry",
+        "name": "Twilight Company",
+        "id": "f3d91559-44bf-4232-883d-0183cf5fec51"
+    },
+    {
+        "comments": "",
+        "name": "Cobalt Laborers Reformation Front",
+        "id": "7af01e4f-0fd9-48e3-a732-6fe564736cb5"
+    },
+    {
+        "comments": "",
+        "name": "Galactic Tourist Bureau",
+        "id": "74068452-2daa-4ca7-8962-92f8df06aca6"
+    },
+    {
+        "comments": "",
+        "name": "Phoolian Monks",
+        "id": "6ed10bed-67b8-41be-8ef2-2b094d5ec5ae"
+    },
+    {
+        "comments": "",
+        "name": "She'ar Guard",
+        "id": "a1baf1aa-70e9-470a-8638-ffd9da00dab4"
+    },
+    {
+        "comments": "",
+        "name": "Scimitar Squadron",
+        "id": "9abb76f1-4764-45a7-a383-8cd75a018992"
+    },
+    {
+        "comments": "",
+        "name": "Unit 7",
+        "id": "09ef91c4-5a49-4dc5-a694-ef7a76e5f874"
+    },
+    {
+        "comments": "",
+        "name": "Imperial 97th Stormtrooper Legion",
+        "id": "2bb4bad7-66c0-4fe0-9744-bc3585be00ff"
+    },
+    {
+        "comments": "",
+        "name": "Alliance Special Forces",
+        "id": "ff474fda-99c2-4012-8fa7-7094f81d004f"
+    },
+    {
+        "comments": "",
+        "name": "Imperial Sandtrooper",
+        "id": "3e65e4b8-f827-4c41-a53b-fff863046eb4"
+    },
+    {
+        "comments": "",
+        "name": "Rebel Trooper",
+        "id": "bdc5b8c4-f85d-4cf5-b743-3e962b40e8dd"
+    }
+]

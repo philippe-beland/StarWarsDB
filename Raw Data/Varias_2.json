@@ -1,0 +1,5058 @@
+[
+    {
+        "Name": "Black Melon",
+        "real_id": "1",
+        "id": 1
+    },
+    {
+        "Name": "Geonosis Queen Egg",
+        "real_id": "2",
+        "id": 2
+    },
+    {
+        "Name": "Sonic Blaster",
+        "real_id": "3",
+        "id": 3
+    },
+    {
+        "Name": "Meiloorun",
+        "real_id": "4",
+        "id": 4
+    },
+    {
+        "Name": "Ray Shield",
+        "real_id": "5",
+        "id": 5
+    },
+    {
+        "Name": "Clone Army",
+        "real_id": "6",
+        "id": 6
+    },
+    {
+        "Name": "Trillia Massacre",
+        "real_id": "7",
+        "id": 7
+    },
+    {
+        "Name": "Dejarik",
+        "real_id": "8",
+        "id": 8
+    },
+    {
+        "Name": "Galactic Standard Time",
+        "real_id": "9",
+        "id": 9
+    },
+    {
+        "Name": "War Mantle",
+        "real_id": "10",
+        "id": 10
+    },
+    {
+        "Name": "Cluster-Prism",
+        "real_id": "11",
+        "id": 11
+    },
+    {
+        "Name": "Black-Saber",
+        "real_id": "12",
+        "id": 12
+    },
+    {
+        "Name": "Hyperspace Tracking",
+        "real_id": "13",
+        "id": 13
+    },
+    {
+        "Name": "Hyperfuel",
+        "real_id": "14",
+        "id": 14
+    },
+    {
+        "Name": "Han's Dice",
+        "real_id": "15",
+        "id": 15
+    },
+    {
+        "Name": "Sabacc",
+        "Comments": "A variation of the game use dices.",
+        "real_id": "16",
+        "id": 16
+    },
+    {
+        "Name": "Coaxium",
+        "real_id": "17",
+        "id": 17
+    },
+    {
+        "Name": "Valachord",
+        "real_id": "18",
+        "id": 18
+    },
+    {
+        "Name": "Vos' Weapon",
+        "real_id": "19",
+        "id": 19
+    },
+    {
+        "Name": "Mandalorian Armor",
+        "real_id": "20",
+        "id": 20
+    },
+    {
+        "Name": "Ter\u00e4s K\u00e4si",
+        "real_id": "21",
+        "id": 21
+    },
+    {
+        "Name": "Calrissian Chronicles",
+        "real_id": "22",
+        "id": 22
+    },
+    {
+        "Name": "Savareen Brandy",
+        "real_id": "23",
+        "id": 23
+    },
+    {
+        "Name": "Lucky Trophy",
+        "real_id": "24",
+        "id": 24
+    },
+    {
+        "Name": "Mechanic's Academy",
+        "real_id": "25",
+        "id": 25
+    },
+    {
+        "Name": "Aurodium",
+        "real_id": "26",
+        "id": 26
+    },
+    {
+        "Name": "Acceleration compenser",
+        "real_id": "27",
+        "id": 27
+    },
+    {
+        "Name": "Backward Tailslide",
+        "real_id": "28",
+        "id": 28
+    },
+    {
+        "Name": "Gold",
+        "real_id": "29",
+        "id": 29
+    },
+    {
+        "Name": "Mythra",
+        "real_id": "30",
+        "id": 30
+    },
+    {
+        "Name": "Spice",
+        "real_id": "31",
+        "id": 31
+    },
+    {
+        "Name": "Kyber Crystal",
+        "real_id": "32",
+        "id": 32
+    },
+    {
+        "Name": "CoMar Tri-Tracking Chip",
+        "real_id": "33",
+        "id": 33
+    },
+    {
+        "Name": "Flight Simulator Squadron (all 3)",
+        "real_id": "34",
+        "id": 34
+    },
+    {
+        "Name": "Sublight Star !!?!?",
+        "real_id": "35",
+        "id": 35
+    },
+    {
+        "Name": "Podracer",
+        "real_id": "36",
+        "id": 36
+    },
+    {
+        "Name": "Jedi Code",
+        "real_id": "37",
+        "id": 37
+    },
+    {
+        "Name": "Kloo Horn",
+        "Comments": "Musical Instrument",
+        "real_id": "38",
+        "id": 38
+    },
+    {
+        "Name": "Kohlen crystals",
+        "real_id": "39",
+        "id": 39
+    },
+    {
+        "Name": "Bacta",
+        "real_id": "40",
+        "id": 40
+    },
+    {
+        "Name": "Meryx (Gemstone)",
+        "real_id": "41",
+        "id": 41
+    },
+    {
+        "Name": "Mustafar Fire Diamond",
+        "real_id": "42",
+        "id": 42
+    },
+    {
+        "Name": "Protocol 13",
+        "real_id": "43",
+        "id": 43
+    },
+    {
+        "Name": "Grav-Ball",
+        "real_id": "44",
+        "id": 44
+    },
+    {
+        "Name": "Bounty Hunter (Guild)",
+        "real_id": "45",
+        "id": 45
+    },
+    {
+        "Name": "ComScan",
+        "real_id": "46",
+        "id": 46
+    },
+    {
+        "Name": "Holocron Memory Crystal",
+        "real_id": "47",
+        "id": 47
+    },
+    {
+        "Name": "XC-33 (Torture)",
+        "real_id": "48",
+        "id": 48
+    },
+    {
+        "Name": "Meiloorun Juice",
+        "real_id": "49",
+        "id": 49
+    },
+    {
+        "Name": "Karlini Silk",
+        "real_id": "50",
+        "id": 50
+    },
+    {
+        "Name": "Chinar Tree",
+        "real_id": "51",
+        "id": 51
+    },
+    {
+        "Name": "TriNebulon News",
+        "real_id": "52",
+        "id": 52
+    },
+    {
+        "Name": "Crystal Skull",
+        "real_id": "53",
+        "id": 53
+    },
+    {
+        "Name": "Sith Holocron",
+        "real_id": "54",
+        "id": 54
+    },
+    {
+        "Name": "Chatterplants",
+        "real_id": "55",
+        "id": 55
+    },
+    {
+        "Name": "Farkiller",
+        "real_id": "56",
+        "id": 56
+    },
+    {
+        "Name": "Shiriiwook",
+        "real_id": "57",
+        "id": 57
+    },
+    {
+        "Name": "Kyber Crystal (La liste des enfants sensibles \u00e0 la Force)",
+        "real_id": "58",
+        "id": 58
+    },
+    {
+        "Name": "Starblossom (Nourriture)",
+        "real_id": "59",
+        "id": 59
+    },
+    {
+        "Name": "Electro-Proton Bomb",
+        "real_id": "60",
+        "id": 60
+    },
+    {
+        "Name": "Sith Holocron ?",
+        "real_id": "61",
+        "id": 61
+    },
+    {
+        "Name": "Wroshyr",
+        "real_id": "62",
+        "id": 62
+    },
+    {
+        "Name": "Bonshyyr",
+        "real_id": "63",
+        "id": 63
+    },
+    {
+        "Name": "Clone Wars",
+        "real_id": "64",
+        "id": 64
+    },
+    {
+        "Name": "Healing Stim",
+        "real_id": "65",
+        "id": 65
+    },
+    {
+        "Name": "Potolli-Weave Fabric",
+        "real_id": "66",
+        "id": 66
+    },
+    {
+        "Name": "Project Augur",
+        "real_id": "67",
+        "id": 67
+    },
+    {
+        "Name": "Tomb Guardian",
+        "real_id": "68",
+        "id": 68
+    },
+    {
+        "Name": "Bloody Rancor",
+        "real_id": "69",
+        "id": 69
+    },
+    {
+        "Name": "Doonium",
+        "real_id": "70",
+        "id": 70
+    },
+    {
+        "Name": "Ruuscan Song",
+        "real_id": "71",
+        "id": 71
+    },
+    {
+        "Name": "Numian cream",
+        "real_id": "72",
+        "id": 72
+    },
+    {
+        "Name": "F-11D Blaster Rifle",
+        "real_id": "73",
+        "id": 73
+    },
+    {
+        "Name": "Tibanna Gas",
+        "real_id": "74",
+        "id": 74
+    },
+    {
+        "Name": "Storm \"X'us'R'iia\"",
+        "real_id": "75",
+        "id": 75
+    },
+    {
+        "Name": "God R'iia",
+        "real_id": "76",
+        "id": 76
+    },
+    {
+        "Name": "Operation: Mynock Bite",
+        "real_id": "77",
+        "id": 77
+    },
+    {
+        "Name": "Galactic Concordance",
+        "real_id": "78",
+        "id": 78
+    },
+    {
+        "Name": "Myomar Academy",
+        "real_id": "79",
+        "id": 79
+    },
+    {
+        "Name": "Sy Bisti",
+        "real_id": "80",
+        "id": 80
+    },
+    {
+        "Name": "Red Bype",
+        "real_id": "81",
+        "id": 81
+    },
+    {
+        "Name": "Highland Challenge",
+        "real_id": "82",
+        "id": 82
+    },
+    {
+        "Name": "Skystrike Academy",
+        "real_id": "83",
+        "id": 83
+    },
+    {
+        "Name": "Raithal Academy",
+        "real_id": "84",
+        "id": 84
+    },
+    {
+        "Name": "Swirlydips (Beverage)",
+        "real_id": "85",
+        "id": 85
+    },
+    {
+        "Name": "Polstine Spice",
+        "real_id": "86",
+        "id": 86
+    },
+    {
+        "Name": "Iridium",
+        "real_id": "87",
+        "id": 87
+    },
+    {
+        "Name": "Scarn",
+        "real_id": "88",
+        "id": 88
+    },
+    {
+        "Name": "Shusugaunt",
+        "real_id": "89",
+        "id": 89
+    },
+    {
+        "Name": "Marleyvane shipyards",
+        "real_id": "90",
+        "id": 90
+    },
+    {
+        "Name": "Gravity Lock",
+        "real_id": "91",
+        "id": 91
+    },
+    {
+        "Name": "Third Battle of Mygeeto",
+        "real_id": "92",
+        "id": 92
+    },
+    {
+        "Name": "Ashla",
+        "real_id": "93",
+        "id": 93
+    },
+    {
+        "Name": "Bo-Rifle",
+        "real_id": "94",
+        "id": 94
+    },
+    {
+        "Name": "Clouzon-36",
+        "real_id": "95",
+        "id": 95
+    },
+    {
+        "Name": "Boosahn Keeraw",
+        "real_id": "96",
+        "id": 96
+    },
+    {
+        "Name": "Form IV",
+        "real_id": "97",
+        "id": 97
+    },
+    {
+        "Name": "\"Old Tongue\"",
+        "real_id": "98",
+        "id": 98
+    },
+    {
+        "Name": "The scourge of Malachor",
+        "real_id": "99",
+        "id": 99
+    },
+    {
+        "Name": "Crossguard Lightsaber",
+        "real_id": "100",
+        "id": 100
+    },
+    {
+        "Name": "Sentient 7 and the Clankers (Live band)",
+        "real_id": "101",
+        "id": 101
+    },
+    {
+        "Name": "Surabat grain",
+        "real_id": "102",
+        "id": 102
+    },
+    {
+        "Name": "Oshiran sapphires",
+        "real_id": "103",
+        "id": 103
+    },
+    {
+        "Name": "Topato Stew",
+        "real_id": "104",
+        "id": 104
+    },
+    {
+        "Name": "Frinn Mak Traveling Circus",
+        "real_id": "105",
+        "id": 105
+    },
+    {
+        "Name": "Teklada (mathematical language",
+        "real_id": "106",
+        "id": 106
+    },
+    {
+        "Name": "Bogan",
+        "real_id": "107",
+        "id": 107
+    },
+    {
+        "Name": "Jedi Holocron",
+        "real_id": "108",
+        "id": 108
+    },
+    {
+        "Name": "Holonet",
+        "real_id": "109",
+        "id": 109
+    },
+    {
+        "Name": "Huttese",
+        "real_id": "110",
+        "id": 110
+    },
+    {
+        "Name": "Jawa Trade Language",
+        "real_id": "111",
+        "id": 111
+    },
+    {
+        "Name": "Meese Caulf",
+        "real_id": "112",
+        "id": 112
+    },
+    {
+        "Name": "Cheunh",
+        "real_id": "113",
+        "id": 113
+    },
+    {
+        "Name": "Batuu Brew",
+        "real_id": "114",
+        "id": 114
+    },
+    {
+        "Name": "Black Spire Brew",
+        "real_id": "115",
+        "id": 115
+    },
+    {
+        "Name": "Blurggfire",
+        "real_id": "116",
+        "id": 116
+    },
+    {
+        "Name": "Toniray White",
+        "real_id": "117",
+        "id": 117
+    },
+    {
+        "Name": "Andoan White",
+        "real_id": "118",
+        "id": 118
+    },
+    {
+        "Name": "Moogan Tea",
+        "real_id": "119",
+        "id": 119
+    },
+    {
+        "Name": "Tevraki Whiskey",
+        "real_id": "120",
+        "id": 120
+    },
+    {
+        "Name": "Quadranium",
+        "real_id": "121",
+        "id": 121
+    },
+    {
+        "Name": "Cortosis",
+        "real_id": "122",
+        "id": 122
+    },
+    {
+        "Name": "ELG-3A blaster Pistol",
+        "real_id": "123",
+        "id": 123
+    },
+    {
+        "Name": "S-5 Security grade blaster/ascension gun",
+        "real_id": "124",
+        "id": 124
+    },
+    {
+        "Name": "DL-18",
+        "real_id": "125",
+        "id": 125
+    },
+    {
+        "Name": "DLT-19",
+        "real_id": "126",
+        "id": 126
+    },
+    {
+        "Name": "Interstel Systems",
+        "real_id": "127",
+        "id": 127
+    },
+    {
+        "Name": "Kalikori",
+        "real_id": "128",
+        "id": 128
+    },
+    {
+        "Name": "Carbonite Freezing",
+        "real_id": "129",
+        "id": 129
+    },
+    {
+        "Name": "Marg Sabl",
+        "real_id": "130",
+        "id": 130
+    },
+    {
+        "Name": "Darksaber",
+        "real_id": "131",
+        "id": 131
+    },
+    {
+        "Name": "E-Web Blaster",
+        "real_id": "132",
+        "id": 132
+    },
+    {
+        "Name": "Mandalorian Art",
+        "real_id": "133",
+        "id": 133
+    },
+    {
+        "Name": "Jedi Sentry mask",
+        "real_id": "134",
+        "id": 134
+    },
+    {
+        "Name": "Temple of the Kyber",
+        "real_id": "135",
+        "id": 135
+    },
+    {
+        "Name": "Sword of Khashyun",
+        "real_id": "136",
+        "id": 136
+    },
+    {
+        "Name": "Sith Temple",
+        "real_id": "137",
+        "id": 137
+    },
+    {
+        "Name": "Nightsisters Altar",
+        "real_id": "138",
+        "id": 138
+    },
+    {
+        "Name": "Mandalorian Vambraces",
+        "real_id": "139",
+        "id": 139
+    },
+    {
+        "Name": "Mando'A",
+        "real_id": "140",
+        "id": 140
+    },
+    {
+        "Name": "Indy's Fedora",
+        "real_id": "141",
+        "id": 141
+    },
+    {
+        "Name": "Fulcrum",
+        "real_id": "142",
+        "id": 142
+    },
+    {
+        "Name": "Imperial Senate",
+        "real_id": "143",
+        "id": 143
+    },
+    {
+        "Name": "\"Sleemo\"",
+        "real_id": "144",
+        "id": 144
+    },
+    {
+        "Name": "The Duchess",
+        "real_id": "145",
+        "id": 145
+    },
+    {
+        "Name": "Pre-exile Masters (artistes)",
+        "real_id": "146",
+        "id": 146
+    },
+    {
+        "Name": "Beskar Alloy",
+        "real_id": "147",
+        "id": 147
+    },
+    {
+        "Name": "Carpo Spice",
+        "real_id": "148",
+        "id": 148
+    },
+    {
+        "Name": "Stardust",
+        "real_id": "149",
+        "id": 149
+    },
+    {
+        "Name": "Magnetic Climbers",
+        "real_id": "150",
+        "id": 150
+    },
+    {
+        "Name": "Mortis Gods",
+        "real_id": "151",
+        "id": 151
+    },
+    {
+        "Name": "Joopa Base",
+        "real_id": "152",
+        "id": 152
+    },
+    {
+        "Name": "Third Sight",
+        "real_id": "153",
+        "id": 153
+    },
+    {
+        "Name": "DLT-20A",
+        "real_id": "154",
+        "id": 154
+    },
+    {
+        "Name": "E-11",
+        "real_id": "155",
+        "id": 155
+    },
+    {
+        "Name": "A280",
+        "real_id": "156",
+        "id": 156
+    },
+    {
+        "Name": "TL-50",
+        "real_id": "157",
+        "id": 157
+    },
+    {
+        "Name": "A280-CFE",
+        "real_id": "158",
+        "id": 158
+    },
+    {
+        "Name": "DLT-19X",
+        "real_id": "159",
+        "id": 159
+    },
+    {
+        "Name": "RK-3",
+        "real_id": "160",
+        "id": 160
+    },
+    {
+        "Name": "Blurrg-1120",
+        "real_id": "161",
+        "id": 161
+    },
+    {
+        "Name": "LD-65",
+        "real_id": "162",
+        "id": 162
+    },
+    {
+        "Name": "Operation Cinder",
+        "real_id": "163",
+        "id": 163
+    },
+    {
+        "Name": "Compass",
+        "real_id": "164",
+        "id": 164
+    },
+    {
+        "Name": "Sunspot Prison",
+        "Comments": "Prison used by the Rebel Alliance",
+        "real_id": "165",
+        "id": 165
+    },
+    {
+        "Name": "Parkellan Swing",
+        "real_id": "166",
+        "id": 166
+    },
+    {
+        "Name": "Cubikahd",
+        "real_id": "167",
+        "id": 167
+    },
+    {
+        "Name": "Merenzane Gold",
+        "real_id": "168",
+        "id": 168
+    },
+    {
+        "Name": "Kyber Statue",
+        "real_id": "169",
+        "id": 169
+    },
+    {
+        "Name": "Ki-Adi-Mundi's Lightsaber",
+        "real_id": "170",
+        "id": 170
+    },
+    {
+        "Name": "Bounty Hunter's Code",
+        "real_id": "171",
+        "id": 171
+    },
+    {
+        "Name": "Thermal Detonator",
+        "real_id": "172",
+        "id": 172
+    },
+    {
+        "Name": "Jedi Mind Trick",
+        "real_id": "173",
+        "id": 173
+    },
+    {
+        "Name": "Special Adjutant's Helmet",
+        "real_id": "174",
+        "id": 174
+    },
+    {
+        "Name": "Morogian snap plants",
+        "real_id": "175",
+        "id": 175
+    },
+    {
+        "Name": "Old Mandalorian Mask",
+        "real_id": "176",
+        "id": 176
+    },
+    {
+        "Name": "Clone Trooper Armor",
+        "real_id": "177",
+        "id": 177
+    },
+    {
+        "Name": "Clone",
+        "real_id": "178",
+        "id": 178
+    },
+    {
+        "Name": "Project Swarm",
+        "real_id": "179",
+        "id": 179
+    },
+    {
+        "Name": "GX Engine",
+        "real_id": "180",
+        "id": 180
+    },
+    {
+        "Name": "Balarian Pie",
+        "real_id": "181",
+        "id": 181
+    },
+    {
+        "Name": "Phase Connector",
+        "real_id": "182",
+        "id": 182
+    },
+    {
+        "Name": "Droid Popper",
+        "real_id": "183",
+        "id": 183
+    },
+    {
+        "Name": "Echo Horn",
+        "real_id": "184",
+        "id": 184
+    },
+    {
+        "Name": "Xinda Flower",
+        "real_id": "185",
+        "id": 185
+    },
+    {
+        "Name": "Commerce Treaty of 1647",
+        "real_id": "186",
+        "id": 186
+    },
+    {
+        "Name": "Icon of the Moon Goddess",
+        "real_id": "187",
+        "id": 187
+    },
+    {
+        "Name": "Widowmaker?",
+        "real_id": "188",
+        "id": 188
+    },
+    {
+        "Name": "Electronet",
+        "real_id": "189",
+        "id": 189
+    },
+    {
+        "Name": "Torture Web",
+        "real_id": "190",
+        "id": 190
+    },
+    {
+        "Name": "Tarkin Initiative",
+        "real_id": "191",
+        "id": 191
+    },
+    {
+        "Name": "Cirilian Sour Pastes",
+        "real_id": "192",
+        "id": 192
+    },
+    {
+        "Name": "Iridian Plague",
+        "real_id": "193",
+        "id": 193
+    },
+    {
+        "Name": "Hundred-Year Darkness",
+        "real_id": "194",
+        "id": 194
+    },
+    {
+        "Name": "Jogan Fruit",
+        "real_id": "195",
+        "id": 195
+    },
+    {
+        "Name": "Life Day",
+        "real_id": "196",
+        "id": 196
+    },
+    {
+        "Name": "Calamari Flan",
+        "real_id": "197",
+        "id": 197
+    },
+    {
+        "Name": "Credit Disk",
+        "real_id": "198",
+        "id": 198
+    },
+    {
+        "Name": "Way of the Mandalore",
+        "real_id": "199",
+        "id": 199
+    },
+    {
+        "Name": "Voxx Vortex 5000",
+        "real_id": "200",
+        "id": 200
+    },
+    {
+        "Name": "Computer Spike",
+        "real_id": "201",
+        "id": 201
+    },
+    {
+        "Name": "Trans-binary Deflector",
+        "real_id": "202",
+        "id": 202
+    },
+    {
+        "Name": "Five Sabers",
+        "real_id": "203",
+        "id": 203
+    },
+    {
+        "Name": "Detraxing",
+        "real_id": "204",
+        "id": 204
+    },
+    {
+        "Name": "Pazaak",
+        "real_id": "205",
+        "id": 205
+    },
+    {
+        "Name": "Shield Generator",
+        "real_id": "206",
+        "id": 206
+    },
+    {
+        "Name": "Force Tree on the Jedi Temple",
+        "real_id": "207",
+        "id": 207
+    },
+    {
+        "Name": "Battle of Mon Cala (Clone Wars)",
+        "real_id": "208",
+        "id": 208
+    },
+    {
+        "Name": "Bacta Tank",
+        "real_id": "209",
+        "id": 209
+    },
+    {
+        "Name": "Force",
+        "real_id": "210",
+        "id": 210
+    },
+    {
+        "Name": "B'hedda",
+        "Comments": "Famed Dug Weapon",
+        "real_id": "211",
+        "id": 211
+    },
+    {
+        "Name": "Batuuan Spira",
+        "Comments": "Monnaie",
+        "real_id": "212",
+        "id": 212
+    },
+    {
+        "Name": "Caraya's Soul",
+        "Comments": "Juron",
+        "real_id": "213",
+        "id": 213
+    },
+    {
+        "Name": "Cracek",
+        "Comments": "Langue des Mountain Nikto",
+        "real_id": "214",
+        "id": 214
+    },
+    {
+        "Name": "Growdi harmonique",
+        "Comments": "Instrument dans ROTJ",
+        "real_id": "215",
+        "id": 215
+    },
+    {
+        "Name": "Horntooters",
+        "Comments": " Beverage",
+        "real_id": "216",
+        "id": 216
+    },
+    {
+        "Name": "Nysillum",
+        "Comments": "One of the most valuable crop in the galaxy",
+        "real_id": "217",
+        "id": 217
+    },
+    {
+        "Name": "\"The Hammer of Ryloth\"",
+        "Comments": "Chanson",
+        "real_id": "218",
+        "id": 218
+    },
+    {
+        "Name": "Tusken Wind",
+        "Comments": "Breuvage sacr\u00e9 pour les Tusken Raiders",
+        "real_id": "219",
+        "id": 219
+    },
+    {
+        "Name": "Level 1313",
+        "real_id": "220",
+        "id": 220
+    },
+    {
+        "Name": "Comlink",
+        "real_id": "221",
+        "id": 221
+    },
+    {
+        "Name": "Vibroaxe",
+        "real_id": "222",
+        "id": 222
+    },
+    {
+        "Name": "Blatterborn",
+        "real_id": "223",
+        "id": 223
+    },
+    {
+        "Name": "Zucca",
+        "Comments": "Food",
+        "real_id": "224",
+        "id": 224
+    },
+    {
+        "Name": "Marcan Pipes",
+        "real_id": "225",
+        "id": 225
+    },
+    {
+        "Name": "Borstel RG-9",
+        "real_id": "226",
+        "id": 226
+    },
+    {
+        "Name": "Ion Cannon",
+        "real_id": "227",
+        "id": 227
+    },
+    {
+        "Name": "ST2 Missiles",
+        "real_id": "228",
+        "id": 228
+    },
+    {
+        "Name": "Corellian Wine",
+        "real_id": "229",
+        "id": 229
+    },
+    {
+        "Name": "High Republic Era",
+        "real_id": "230",
+        "id": 230
+    },
+    {
+        "Name": "Jocasta Nu's cache",
+        "real_id": "231",
+        "id": 231
+    },
+    {
+        "Name": "Dedlanite",
+        "real_id": "232",
+        "id": 232
+    },
+    {
+        "Name": "Energy Axe",
+        "real_id": "233",
+        "id": 233
+    },
+    {
+        "Name": "Dragon Void Run",
+        "Comments": "Oldest, most dangerous race in the galaxy",
+        "real_id": "234",
+        "id": 234
+    },
+    {
+        "Name": "Q-2 Blaster Pistol",
+        "real_id": "235",
+        "id": 235
+    },
+    {
+        "Name": "Doza Dive",
+        "Comments": "Manoeuvre de Torra et Venisa Doza",
+        "real_id": "236",
+        "id": 236
+    },
+    {
+        "Name": "Operation Starlight",
+        "real_id": "237",
+        "id": 237
+    },
+    {
+        "Name": "Magick",
+        "real_id": "238",
+        "id": 238
+    },
+    {
+        "Name": "Flash Grenade",
+        "real_id": "239",
+        "id": 239
+    },
+    {
+        "Name": "Order 66",
+        "real_id": "240",
+        "id": 240
+    },
+    {
+        "Name": "Gatalentan tea",
+        "real_id": "241",
+        "id": 241
+    },
+    {
+        "Name": "Tuusah",
+        "Comments": "Has medicinal properties.",
+        "real_id": "242",
+        "id": 242
+    },
+    {
+        "Name": "Carruthian Brandy",
+        "real_id": "243",
+        "id": 243
+    },
+    {
+        "Name": "Cardekkia cheese",
+        "real_id": "244",
+        "id": 244
+    },
+    {
+        "Name": "Empire Day",
+        "real_id": "245",
+        "id": 245
+    },
+    {
+        "Name": "Mandalorian Xenotox",
+        "real_id": "246",
+        "id": 246
+    },
+    {
+        "Name": "Duranium",
+        "real_id": "247",
+        "id": 247
+    },
+    {
+        "Name": "Zeyd Cloth",
+        "real_id": "248",
+        "id": 248
+    },
+    {
+        "Name": "Great Drought",
+        "Comments": "Sur Tatooine, entre 18 BBY et 0 ABY",
+        "real_id": "249",
+        "id": 249
+    },
+    {
+        "Name": "Bocce",
+        "real_id": "250",
+        "id": 250
+    },
+    {
+        "Name": "Rising Prayer",
+        "real_id": "251",
+        "id": 251
+    },
+    {
+        "Name": "Phrik",
+        "Comments": "Metallic Compound",
+        "real_id": "252",
+        "id": 252
+    },
+    {
+        "Name": "Lithoporoite",
+        "real_id": "253",
+        "id": 253
+    },
+    {
+        "Name": "Titanium",
+        "real_id": "254",
+        "id": 254
+    },
+    {
+        "Name": "Triple-Zero Matrix",
+        "Comments": "Dates back to the Old Republic. Was locked down in quarantine\u000b\u000bResurrected with the Tarkin Initiative",
+        "real_id": "255",
+        "id": 255
+    },
+    {
+        "Name": "Operation Upside",
+        "real_id": "256",
+        "id": 256
+    },
+    {
+        "Name": "Thorilide",
+        "Comments": "Material",
+        "real_id": "257",
+        "id": 257
+    },
+    {
+        "Name": "Galaxy Beacon",
+        "Comments": "Holonet Channel, based on Hosnian Prime during the First order conflict.",
+        "real_id": "258",
+        "id": 258
+    },
+    {
+        "Name": "Graff Archive",
+        "real_id": "259",
+        "id": 259
+    },
+    {
+        "Name": "Rhydonium",
+        "real_id": "260",
+        "id": 260
+    },
+    {
+        "Name": "Kazerath Device",
+        "real_id": "261",
+        "id": 261
+    },
+    {
+        "Name": "Freitek Planetary Defense",
+        "real_id": "262",
+        "id": 262
+    },
+    {
+        "Name": "DL-21",
+        "real_id": "263",
+        "id": 263
+    },
+    {
+        "Name": "Irolunn",
+        "real_id": "264",
+        "id": 264
+    },
+    {
+        "Name": "University of Bar'leth",
+        "real_id": "265",
+        "id": 265
+    },
+    {
+        "Name": "Abersyn Symbiotes",
+        "Comments": "Abersyn symbiotes of Boothi XII\u000b\u000bThey're classified beyond quarantine. They have to be fed into a plasma furnace.\u000b\u000bThey can take over someone's brain stem.",
+        "real_id": "266",
+        "id": 266
+    },
+    {
+        "Name": "Archaeoxenobiology",
+        "real_id": "267",
+        "id": 267
+    },
+    {
+        "Name": "Relby K-25 Blaster",
+        "real_id": "268",
+        "id": 268
+    },
+    {
+        "Name": "F'nonc Horn",
+        "real_id": "269",
+        "id": 269
+    },
+    {
+        "Name": "SE-44C Blaster Pistol",
+        "real_id": "270",
+        "id": 270
+    },
+    {
+        "Name": "Glie-44 Blaster Pistol",
+        "Comments": "Standard pistol of the Resistance",
+        "real_id": "271",
+        "id": 271
+    },
+    {
+        "Name": "BlasTech EL-16",
+        "real_id": "272",
+        "id": 272
+    },
+    {
+        "Name": "Theed Conservatory",
+        "real_id": "273",
+        "id": 273
+    },
+    {
+        "Name": "Arbovellum",
+        "Comments": "Real paper",
+        "real_id": "274",
+        "id": 274
+    },
+    {
+        "Name": "Hallikset",
+        "Comments": "Musical stringed instrument, played by Sab\u00e9",
+        "real_id": "275",
+        "id": 275
+    },
+    {
+        "Name": "Hyper-Lag",
+        "Comments": "Jet lag of hyperspace",
+        "real_id": "276",
+        "id": 276
+    },
+    {
+        "Name": "Gallo Mountain University",
+        "real_id": "277",
+        "id": 277
+    },
+    {
+        "Name": "Jedi Texts",
+        "real_id": "278",
+        "id": 278
+    },
+    {
+        "Name": "Holo-Chess",
+        "real_id": "279",
+        "id": 279
+    },
+    {
+        "Name": "Citadel of Rur",
+        "real_id": "280",
+        "id": 280
+    },
+    {
+        "Name": "Domancion Accord",
+        "real_id": "281",
+        "id": 281
+    },
+    {
+        "Name": "Sonn-Blas FWMB-10",
+        "Comments": "Also known as Megablaster",
+        "real_id": "282",
+        "id": 282
+    },
+    {
+        "Name": "Z6 Riot Control Baton",
+        "real_id": "283",
+        "id": 283
+    },
+    {
+        "Name": "Sonn-Blas SE-44C",
+        "Comments": "Blaster Pistol",
+        "real_id": "284",
+        "id": 284
+    },
+    {
+        "Name": "Sonn-Blas F-11D",
+        "Comments": "Blaster Rifle",
+        "real_id": "285",
+        "id": 285
+    },
+    {
+        "Name": "LPA NN-14",
+        "Comments": "Blaster pistol",
+        "real_id": "286",
+        "id": 286
+    },
+    {
+        "Name": "Sith Wayfinder",
+        "real_id": "287",
+        "id": 287
+    },
+    {
+        "Name": "Lightspeed Skipping",
+        "real_id": "288",
+        "id": 288
+    },
+    {
+        "Name": "Hex Charm",
+        "real_id": "289",
+        "id": 289
+    },
+    {
+        "Name": "Ur-Tharn Processor",
+        "real_id": "290",
+        "id": 290
+    },
+    {
+        "Name": "Spavat",
+        "Comments": "Clothes",
+        "real_id": "291",
+        "id": 291
+    },
+    {
+        "Name": "Polysatyr",
+        "real_id": "292",
+        "id": 292
+    },
+    {
+        "Name": "First Order Captain Mediallion",
+        "real_id": "293",
+        "id": 293
+    },
+    {
+        "Name": "Tangoo Melon",
+        "real_id": "294",
+        "id": 294
+    },
+    {
+        "Name": "Cordaxian Ore",
+        "real_id": "295",
+        "id": 295
+    },
+    {
+        "Name": "A99 Aquata Breather",
+        "real_id": "296",
+        "id": 296
+    },
+    {
+        "Name": "Kessel Run",
+        "real_id": "297",
+        "id": 297
+    },
+    {
+        "Name": "Shadow University",
+        "real_id": "298",
+        "id": 298
+    },
+    {
+        "Name": "Technopathy",
+        "real_id": "299",
+        "id": 299
+    },
+    {
+        "Name": "Museum of Bar'leth",
+        "real_id": "300",
+        "id": 300
+    },
+    {
+        "Name": "Shyriiwook",
+        "real_id": "301",
+        "id": 301
+    },
+    {
+        "Name": "Undervine",
+        "real_id": "302",
+        "id": 302
+    },
+    {
+        "Name": "Electro-Tattoos",
+        "real_id": "303",
+        "id": 303
+    },
+    {
+        "Name": "Ardee",
+        "Comments": "Drink",
+        "real_id": "304",
+        "id": 304
+    },
+    {
+        "Name": "Blue Milk",
+        "real_id": "305",
+        "id": 305
+    },
+    {
+        "Name": "Junko",
+        "Comments": "Drink",
+        "real_id": "306",
+        "id": 306
+    },
+    {
+        "Name": "Archicella",
+        "real_id": "307",
+        "id": 307
+    },
+    {
+        "Name": "J'Doon School",
+        "real_id": "308",
+        "id": 308
+    },
+    {
+        "Name": "Kyberite",
+        "real_id": "309",
+        "id": 309
+    },
+    {
+        "Name": "Martyrium of Frozen Tears",
+        "real_id": "310",
+        "id": 310
+    },
+    {
+        "Name": "Hellhulk Guardian",
+        "real_id": "311",
+        "id": 311
+    },
+    {
+        "Name": "Confessional",
+        "real_id": "312",
+        "id": 312
+    },
+    {
+        "Name": "The Ren",
+        "real_id": "313",
+        "id": 313
+    },
+    {
+        "Name": "Holocron",
+        "real_id": "314",
+        "id": 314
+    },
+    {
+        "Name": "Mindsplinter",
+        "Comments": "Discovered by the Mimbanese centeries ago one the Minemoon of Mimban. It belongs to their people, a priceless relic. ",
+        "real_id": "315",
+        "id": 315
+    },
+    {
+        "Name": "Form III",
+        "real_id": "316",
+        "id": 316
+    },
+    {
+        "Name": "Form V",
+        "real_id": "317",
+        "id": 317
+    },
+    {
+        "Name": "Battle of Geonosis",
+        "real_id": "318",
+        "id": 318
+    },
+    {
+        "Name": "Niffin Plague",
+        "Comments": "Malicious disease that attacks the respiratory system over a long period of time, only affecting those born on Mathas.",
+        "real_id": "319",
+        "id": 319
+    },
+    {
+        "Name": "Rings of Vaale",
+        "Comments": "Pair of mythological artifcacts made by an ancient order of guardians.",
+        "real_id": "320",
+        "id": 320
+    },
+    {
+        "Name": "An Empire's Grace",
+        "Comments": "Work of Art",
+        "real_id": "321",
+        "id": 321
+    },
+    {
+        "Name": "Nautila",
+        "Comments": "Language of the Nautolans",
+        "real_id": "322",
+        "id": 322
+    },
+    {
+        "Name": "Battle of Christophsis",
+        "real_id": "323",
+        "id": 323
+    },
+    {
+        "Name": "Sheldra-Ko",
+        "Comments": "Style of music",
+        "real_id": "324",
+        "id": 324
+    },
+    {
+        "Name": "Greater Xnapolis",
+        "real_id": "325",
+        "id": 325
+    },
+    {
+        "Name": "White Book",
+        "Comments": "Rebel Alliance's military field guide",
+        "real_id": "326",
+        "id": 326
+    },
+    {
+        "Name": "Dagger of Mortis",
+        "real_id": "327",
+        "id": 327
+    },
+    {
+        "Name": "Altar of Mortis",
+        "real_id": "328",
+        "id": 328
+    },
+    {
+        "Name": "KD-30 Pistol",
+        "real_id": "329",
+        "id": 329
+    },
+    {
+        "Name": "E-11 Blaster rifle",
+        "real_id": "330",
+        "id": 330
+    },
+    {
+        "Name": "Kuat Drive Yards",
+        "real_id": "331",
+        "id": 331
+    },
+    {
+        "Name": "Nexus Route",
+        "real_id": "332",
+        "id": 332
+    },
+    {
+        "Name": "The Citadel",
+        "real_id": "333",
+        "id": 333
+    },
+    {
+        "Name": "Mantle Defense System",
+        "real_id": "334",
+        "id": 334
+    },
+    {
+        "Name": "XJ9 hypercharger",
+        "real_id": "335",
+        "id": 335
+    },
+    {
+        "Name": "Naikon matrix",
+        "real_id": "336",
+        "id": 336
+    },
+    {
+        "Name": "Warbat Trance",
+        "Comments": "Style of music",
+        "real_id": "337",
+        "id": 337
+    },
+    {
+        "Name": "Mijura",
+        "Comments": "Drink",
+        "real_id": "338",
+        "id": 338
+    },
+    {
+        "Name": "Blosphi",
+        "real_id": "339",
+        "id": 339
+    },
+    {
+        "Name": "Second Sight",
+        "real_id": "340",
+        "id": 340
+    },
+    {
+        "Name": "Chopkic wine",
+        "real_id": "341",
+        "id": 341
+    },
+    {
+        "Name": "Tomo ribenes",
+        "real_id": "342",
+        "id": 342
+    },
+    {
+        "Name": "Chance Cube",
+        "real_id": "343",
+        "id": 343
+    },
+    {
+        "Name": "Olo Tea",
+        "real_id": "344",
+        "id": 344
+    },
+    {
+        "Name": "University of Coruscant",
+        "real_id": "345",
+        "id": 345
+    },
+    {
+        "Name": "Conch",
+        "Comments": "Mon Calamari's musical Instrument. Horn",
+        "real_id": "346",
+        "id": 346
+    },
+    {
+        "Name": "New Republic Senate",
+        "real_id": "347",
+        "id": 347
+    },
+    {
+        "Name": "Abnedish",
+        "real_id": "348",
+        "id": 348
+    },
+    {
+        "Name": "Khalat Robes",
+        "Comments": "Worn by Snoke",
+        "real_id": "349",
+        "id": 349
+    },
+    {
+        "Name": "Uneti Tree",
+        "real_id": "350",
+        "id": 350
+    },
+    {
+        "Name": "Aionomica",
+        "real_id": "351",
+        "id": 351
+    },
+    {
+        "Name": "Rammahgon",
+        "real_id": "352",
+        "id": 352
+    },
+    {
+        "Name": "Droidspeak",
+        "real_id": "353",
+        "id": 353
+    },
+    {
+        "Name": "Clynese",
+        "real_id": "354",
+        "id": 354
+    },
+    {
+        "Name": "Haysian Melt",
+        "Comments": "Best Conductor",
+        "real_id": "355",
+        "id": 355
+    },
+    {
+        "Name": "Explosive knife",
+        "real_id": "356",
+        "id": 356
+    },
+    {
+        "Name": "Mon Cala Crab",
+        "Comments": "Prison",
+        "real_id": "357",
+        "id": 357
+    },
+    {
+        "Name": "Lee Romay",
+        "Comments": "Crustaceans from Mon Cala.",
+        "real_id": "358",
+        "id": 358
+    },
+    {
+        "Name": "Cosmic Force",
+        "real_id": "359",
+        "id": 359
+    },
+    {
+        "Name": "Festival of Return",
+        "real_id": "360",
+        "id": 360
+    },
+    {
+        "Name": "Tarine Tea",
+        "real_id": "361",
+        "id": 361
+    },
+    {
+        "Name": "Sauweceran Tea",
+        "real_id": "362",
+        "id": 362
+    },
+    {
+        "Name": "Jawa Juice",
+        "real_id": "363",
+        "id": 363
+    },
+    {
+        "Name": "Laki Lembeng",
+        "real_id": "364",
+        "id": 364
+    },
+    {
+        "Name": "Calamari waterballad",
+        "real_id": "365",
+        "id": 365
+    },
+    {
+        "Name": "Lyaer'tsa",
+        "Comments": "Traditional Twi'lek weapon equipped with a vibroblade at one end.",
+        "real_id": "366",
+        "id": 366
+    },
+    {
+        "Name": "Zhaboka",
+        "Comments": "Traditional Zabrak weapon. Deadly as hell.",
+        "real_id": "367",
+        "id": 367
+    },
+    {
+        "Name": "Mirkanite",
+        "real_id": "368",
+        "id": 368
+    },
+    {
+        "Name": "Letters of Where and When",
+        "real_id": "369",
+        "id": 369
+    },
+    {
+        "Name": "Holographic disguise Matrix",
+        "Comments": "Personal hologram projector.",
+        "real_id": "370",
+        "id": 370
+    },
+    {
+        "Name": "Crokin",
+        "Comments": "It could be played in teams or with just a pair, and the goals were twofold: get your own pieces on the board, but stay aware of your opponent, and knock any of your opponent's pieces off it.",
+        "real_id": "371",
+        "id": 371
+    },
+    {
+        "Name": "Foundry",
+        "real_id": "372",
+        "id": 372
+    },
+    {
+        "Name": "Gungan Bubble Wort Projector",
+        "real_id": "373",
+        "id": 373
+    },
+    {
+        "Name": "Restraining Harness",
+        "Comments": "More barbaric version of a restraining bolt",
+        "real_id": "374",
+        "id": 374
+    },
+    {
+        "Name": "The Gem",
+        "Comments": "Space station in the Outer Rim",
+        "real_id": "375",
+        "id": 375
+    },
+    {
+        "Name": "Day of Demand",
+        "real_id": "376",
+        "id": 376
+    },
+    {
+        "Name": "Rhindon Sword",
+        "real_id": "377",
+        "id": 377
+    },
+    {
+        "Name": "Archipelago University",
+        "Comments": "On Alderaan",
+        "real_id": "378",
+        "id": 378
+    },
+    {
+        "Name": "Galactic Basic",
+        "real_id": "379",
+        "id": 379
+    },
+    {
+        "Name": "New Shield Generator",
+        "real_id": "380",
+        "id": 380
+    },
+    {
+        "Name": "Moray and Faz",
+        "Comments": "Holo-cartoon",
+        "real_id": "381",
+        "id": 381
+    },
+    {
+        "Name": "Phylanx Redux Transmitter",
+        "real_id": "382",
+        "id": 382
+    },
+    {
+        "Name": "Hemchar Root",
+        "Comments": "One of Maz's hangover cures",
+        "real_id": "383",
+        "id": 383
+    },
+    {
+        "Name": "Free Ryloth Movement",
+        "real_id": "384",
+        "id": 384
+    },
+    {
+        "Name": "Twi'lek",
+        "real_id": "385",
+        "id": 385
+    },
+    {
+        "Name": "Ewokese",
+        "real_id": "386",
+        "id": 386
+    },
+    {
+        "Name": "Vazaveer",
+        "real_id": "387",
+        "id": 387
+    },
+    {
+        "Name": "Prasteen Braak",
+        "Comments": "Utapau's most esteemed medical school",
+        "real_id": "388",
+        "id": 388
+    },
+    {
+        "Name": "Snograth and the Mogwars",
+        "Comments": "Popular Rock Band",
+        "real_id": "389",
+        "id": 389
+    },
+    {
+        "Name": "Saigok",
+        "Comments": "Like dejarik, same madman invented them both in fact, but saigok is way more badass.",
+        "real_id": "390",
+        "id": 390
+    },
+    {
+        "Name": "Magernon's Amnesty",
+        "real_id": "391",
+        "id": 391
+    },
+    {
+        "Name": "Kyrprax",
+        "Comments": "Medical Substance",
+        "real_id": "392",
+        "id": 392
+    },
+    {
+        "Name": "Frizznothese",
+        "real_id": "393",
+        "id": 393
+    },
+    {
+        "Name": "Slivian Iron",
+        "Comments": "Magnetized",
+        "real_id": "394",
+        "id": 394
+    },
+    {
+        "Name": "Trusk",
+        "Comments": "Style of music that was one performed exclusively in the dingiest of establishments and at pitches so high that only the Karvathians could hear it.",
+        "real_id": "395",
+        "id": 395
+    },
+    {
+        "Name": "Valen",
+        "Comments": "Instrument musical",
+        "real_id": "396",
+        "id": 396
+    },
+    {
+        "Name": "Glowwine",
+        "real_id": "397",
+        "id": 397
+    },
+    {
+        "Name": "Bacta Spray",
+        "real_id": "398",
+        "id": 398
+    },
+    {
+        "Name": "Ring of Fortune",
+        "real_id": "399",
+        "id": 399
+    },
+    {
+        "Name": "Ring of Immortality",
+        "real_id": "400",
+        "id": 400
+    },
+    {
+        "Name": "Enhanced Privacy Invasion Bill",
+        "real_id": "401",
+        "id": 401
+    },
+    {
+        "Name": "LL-30",
+        "Comments": "Blaster Rifle",
+        "real_id": "402",
+        "id": 402
+    },
+    {
+        "Name": "The Box",
+        "real_id": "403",
+        "id": 403
+    },
+    {
+        "Name": "Prow",
+        "Comments": "Beverage",
+        "real_id": "404",
+        "id": 404
+    },
+    {
+        "Name": "The Gathering",
+        "real_id": "405",
+        "id": 405
+    },
+    {
+        "Name": "Mandalorian Civil War",
+        "real_id": "406",
+        "id": 406
+    },
+    {
+        "Name": "Questis",
+        "real_id": "407",
+        "id": 407
+    },
+    {
+        "Name": "Taharim Academy",
+        "Comments": "On Naporar",
+        "real_id": "408",
+        "id": 408
+    },
+    {
+        "Name": "Sky-walker",
+        "real_id": "409",
+        "id": 409
+    },
+    {
+        "Name": "Jawaese",
+        "real_id": "410",
+        "id": 410
+    },
+    {
+        "Name": "Gaderfii Stick",
+        "real_id": "411",
+        "id": 411
+    },
+    {
+        "Name": "Figrin D'an and the Modals Nodes",
+        "real_id": "412",
+        "id": 412
+    },
+    {
+        "Name": "Double Jocimer",
+        "Comments": "Musical Instruments",
+        "real_id": "413",
+        "id": 413
+    },
+    {
+        "Name": "Knockback Nectar",
+        "real_id": "414",
+        "id": 414
+    },
+    {
+        "Name": "Future Imperial Leaders Military Preparation School",
+        "Comments": "On Vardos",
+        "real_id": "415",
+        "id": 415
+    },
+    {
+        "Name": "Arrth-Eno Prison Complex",
+        "real_id": "416",
+        "id": 416
+    },
+    {
+        "Name": "Bespin Breeze",
+        "Comments": "Drink",
+        "real_id": "417",
+        "id": 417
+    },
+    {
+        "Name": "Basic",
+        "real_id": "418",
+        "id": 418
+    },
+    {
+        "Name": "Iskalon Uprising",
+        "real_id": "419",
+        "id": 419
+    },
+    {
+        "Name": "Project Starhawk",
+        "real_id": "420",
+        "id": 420
+    },
+    {
+        "Name": "Koshi Star Circuit",
+        "real_id": "421",
+        "id": 421
+    },
+    {
+        "Name": "Magnite Crystal",
+        "Comments": "Essential for Project Starhawk",
+        "real_id": "422",
+        "id": 422
+    },
+    {
+        "Name": "Baradium",
+        "real_id": "423",
+        "id": 423
+    },
+    {
+        "Name": "Project Stardust",
+        "real_id": "424",
+        "id": 424
+    },
+    {
+        "Name": "EMP Grenade",
+        "real_id": "425",
+        "id": 425
+    },
+    {
+        "Name": "DEMP",
+        "Comments": "Destructive electromagnetic pulse ion carbine",
+        "real_id": "426",
+        "id": 426
+    },
+    {
+        "Name": "Electro-Whip",
+        "real_id": "427",
+        "id": 427
+    },
+    {
+        "Name": "Thermal Annihilator",
+        "real_id": "428",
+        "id": 428
+    },
+    {
+        "Name": "Vibroblade",
+        "real_id": "429",
+        "id": 429
+    },
+    {
+        "Name": "Twi'leki",
+        "real_id": "430",
+        "id": 430
+    },
+    {
+        "Name": "Spotchka",
+        "real_id": "431",
+        "id": 431
+    },
+    {
+        "Name": "Silicax Crystal",
+        "real_id": "432",
+        "id": 432
+    },
+    {
+        "Name": "Camtono",
+        "real_id": "433",
+        "id": 433
+    },
+    {
+        "Name": "Dioxis",
+        "real_id": "434",
+        "id": 434
+    },
+    {
+        "Name": "Undead",
+        "real_id": "435",
+        "id": 435
+    },
+    {
+        "Name": "Sansanna Spice",
+        "real_id": "436",
+        "id": 436
+    },
+    {
+        "Name": "Electroguillotine",
+        "real_id": "437",
+        "id": 437
+    },
+    {
+        "Name": "Rocket Launcher",
+        "real_id": "438",
+        "id": 438
+    },
+    {
+        "Name": "Brylark Tree",
+        "real_id": "439",
+        "id": 439
+    },
+    {
+        "Name": "lommite ore",
+        "Comments": "Essential to the productiion of transparasteel",
+        "real_id": "440",
+        "id": 440
+    },
+    {
+        "Name": "Cassius Tree",
+        "real_id": "441",
+        "id": 441
+    },
+    {
+        "Name": "Stygium Crystal",
+        "real_id": "442",
+        "id": 442
+    },
+    {
+        "Name": "Shadowfeeds",
+        "real_id": "443",
+        "id": 443
+    },
+    {
+        "Name": "Hibridium",
+        "real_id": "444",
+        "id": 444
+    },
+    {
+        "Name": "Malmourral",
+        "Comments": "Ancient Demon on Bardotta",
+        "real_id": "445",
+        "id": 445
+    },
+    {
+        "Name": "Balc",
+        "Comments": "Sith Language",
+        "real_id": "446",
+        "id": 446
+    },
+    {
+        "Name": "Living Force",
+        "real_id": "447",
+        "id": 447
+    },
+    {
+        "Name": "Midi-chlorian",
+        "real_id": "448",
+        "id": 448
+    },
+    {
+        "Name": "Tarkin Doctrine",
+        "real_id": "449",
+        "id": 449
+    },
+    {
+        "Name": "Trawak",
+        "Comments": "Language. Its time ended over a thousand years ago. Was spoken only by a small cave-dwelling species that evolved independently of all other flife on its world. It was, supposedly, a combination of ultrasonics, replication of sounds from the natural envrionment and subtle interactions of air, mouthparts.",
+        "real_id": "450",
+        "id": 450
+    },
+    {
+        "Name": "Imperial Museum",
+        "Comments": "Autrefois le Galactic Museum.\u000b\u000bThe Collection has expanded enormously in recent years, as the Empire scours the galaxy and takes what it wishes.",
+        "real_id": "451",
+        "id": 451
+    },
+    {
+        "Name": "Arveesh Station",
+        "real_id": "452",
+        "id": 452
+    },
+    {
+        "Name": "Path Engine",
+        "real_id": "453",
+        "id": 453
+    },
+    {
+        "Name": "Jablogian",
+        "real_id": "454",
+        "id": 454
+    },
+    {
+        "Name": "Great Disaster",
+        "real_id": "455",
+        "id": 455
+    },
+    {
+        "Name": "Arcadian Jazz",
+        "real_id": "456",
+        "id": 456
+    },
+    {
+        "Name": "Rykestra",
+        "Comments": "Popular Dice Game",
+        "real_id": "457",
+        "id": 457
+    },
+    {
+        "Name": "Galaxy Tours",
+        "real_id": "458",
+        "id": 458
+    },
+    {
+        "Name": "ThrillSpace Travels",
+        "real_id": "459",
+        "id": 459
+    },
+    {
+        "Name": "Chandrila Star Lines",
+        "real_id": "460",
+        "id": 460
+    },
+    {
+        "Name": "Joppa Stew",
+        "real_id": "461",
+        "id": 461
+    },
+    {
+        "Name": "Guerillian Theoretical Proof",
+        "real_id": "462",
+        "id": 462
+    },
+    {
+        "Name": "Wayfinding",
+        "real_id": "463",
+        "id": 463
+    },
+    {
+        "Name": "Lightwhip",
+        "real_id": "464",
+        "id": 464
+    },
+    {
+        "Name": "Sith Wars",
+        "real_id": "465",
+        "id": 465
+    },
+    {
+        "Name": "Almanac of the Unknown",
+        "Comments": "Written by Leric Schmireland",
+        "real_id": "466",
+        "id": 466
+    },
+    {
+        "Name": "Mamba Melon",
+        "real_id": "467",
+        "id": 467
+    },
+    {
+        "Name": "Frostberry",
+        "real_id": "468",
+        "id": 468
+    },
+    {
+        "Name": "Gill-Singer",
+        "real_id": "469",
+        "id": 469
+    },
+    {
+        "Name": "Egarian silk",
+        "real_id": "470",
+        "id": 470
+    },
+    {
+        "Name": "Platinum",
+        "real_id": "471",
+        "id": 471
+    },
+    {
+        "Name": "Essurtanium",
+        "real_id": "472",
+        "id": 472
+    },
+    {
+        "Name": "Blade of Bardotta",
+        "real_id": "473",
+        "id": 473
+    },
+    {
+        "Name": "Spinsilk",
+        "real_id": "474",
+        "id": 474
+    },
+    {
+        "Name": "Mole mine",
+        "real_id": "475",
+        "id": 475
+    },
+    {
+        "Name": "Darknet",
+        "real_id": "476",
+        "id": 476
+    },
+    {
+        "Name": "Wreckpunk",
+        "Comments": "Musical style",
+        "real_id": "477",
+        "id": 477
+    },
+    {
+        "Name": "Triazurite",
+        "Comments": "Rare mineral that boosted transmission signals, allowing it to serve as a massive relay point to facilitate better, faster communications among the peoples of the Outer Rim.",
+        "real_id": "478",
+        "id": 478
+    },
+    {
+        "Name": "Wayseeker",
+        "real_id": "479",
+        "id": 479
+    },
+    {
+        "Name": "Nagnol",
+        "real_id": "480",
+        "id": 480
+    },
+    {
+        "Name": "Alazhi",
+        "real_id": "481",
+        "id": 481
+    },
+    {
+        "Name": "Kavam",
+        "real_id": "482",
+        "id": 482
+    },
+    {
+        "Name": "Rejuv",
+        "Comments": "Anc\u00eatre du bacta",
+        "real_id": "483",
+        "id": 483
+    },
+    {
+        "Name": "Barley",
+        "real_id": "484",
+        "id": 484
+    },
+    {
+        "Name": "Bucco Bread",
+        "real_id": "485",
+        "id": 485
+    },
+    {
+        "Name": "Samana Spiced Loaf",
+        "real_id": "486",
+        "id": 486
+    },
+    {
+        "Name": "Bolo-ball",
+        "real_id": "487",
+        "id": 487
+    },
+    {
+        "Name": "T-345",
+        "real_id": "488",
+        "id": 488
+    },
+    {
+        "Name": "Malvern's zersium",
+        "real_id": "489",
+        "id": 489
+    },
+    {
+        "Name": "Battle of Wasted Years",
+        "real_id": "490",
+        "id": 490
+    },
+    {
+        "Name": "Spinner-Web",
+        "real_id": "491",
+        "id": 491
+    },
+    {
+        "Name": "Parang",
+        "real_id": "492",
+        "id": 492
+    },
+    {
+        "Name": "The Sands of Elath",
+        "real_id": "493",
+        "id": 493
+    },
+    {
+        "Name": "The Bestiary of Darth Caldoth",
+        "real_id": "494",
+        "id": 494
+    },
+    {
+        "Name": "Vagni Stone",
+        "real_id": "495",
+        "id": 495
+    },
+    {
+        "Name": "Nerve Disruptor",
+        "real_id": "496",
+        "id": 496
+    },
+    {
+        "Name": "Hand of Skrye",
+        "real_id": "497",
+        "id": 497
+    },
+    {
+        "Name": "Balm of the Luminous",
+        "real_id": "498",
+        "id": 498
+    },
+    {
+        "Name": "Heltraxi",
+        "real_id": "499",
+        "id": 499
+    },
+    {
+        "Name": "Opala Fruit",
+        "real_id": "500",
+        "id": 500
+    },
+    {
+        "Name": "Dragonfire Air Rally",
+        "real_id": "501",
+        "id": 501
+    },
+    {
+        "Name": "M-29 Airspeeder",
+        "real_id": "502",
+        "id": 502
+    },
+    {
+        "Name": "Recardian C-18",
+        "real_id": "503",
+        "id": 503
+    },
+    {
+        "Name": "Batana",
+        "real_id": "504",
+        "id": 504
+    },
+    {
+        "Name": "Soulean brandy",
+        "real_id": "505",
+        "id": 505
+    },
+    {
+        "Name": "Sacanium",
+        "real_id": "506",
+        "id": 506
+    },
+    {
+        "Name": "Zersium",
+        "real_id": "507",
+        "id": 507
+    },
+    {
+        "Name": "Crestracing",
+        "real_id": "508",
+        "id": 508
+    },
+    {
+        "Name": "Grand Engineer",
+        "real_id": "509",
+        "id": 509
+    },
+    {
+        "Name": "Xenobotany",
+        "real_id": "510",
+        "id": 510
+    },
+    {
+        "Name": "Project War-Mantle",
+        "real_id": "511",
+        "id": 511
+    },
+    {
+        "Name": "Boga Noga Ale",
+        "real_id": "512",
+        "id": 512
+    },
+    {
+        "Name": "First Coruscani Migration",
+        "real_id": "513",
+        "id": 513
+    },
+    {
+        "Name": "Whiforla-song",
+        "real_id": "514",
+        "id": 514
+    },
+    {
+        "Name": "Mantell Mix",
+        "real_id": "515",
+        "id": 515
+    },
+    {
+        "Name": "Hygge Nectar",
+        "real_id": "516",
+        "id": 516
+    },
+    {
+        "Name": "Nightmare Conjunction",
+        "real_id": "517",
+        "id": 517
+    },
+    {
+        "Name": "Republic Fair",
+        "real_id": "518",
+        "id": 518
+    },
+    {
+        "Name": "Tomarian's Annual Festival of Light",
+        "real_id": "519",
+        "id": 519
+    },
+    {
+        "Name": "Millaflower",
+        "real_id": "520",
+        "id": 520
+    },
+    {
+        "Name": "The Book of Hondo",
+        "real_id": "521",
+        "id": 521
+    },
+    {
+        "Name": "Electrostaff",
+        "real_id": "522",
+        "id": 522
+    },
+    {
+        "Name": "Hyperspace Disaster",
+        "real_id": "523",
+        "id": 523
+    },
+    {
+        "Name": "Spice Wine",
+        "real_id": "524",
+        "id": 524
+    },
+    {
+        "Name": "Tagge protoblade",
+        "real_id": "525",
+        "id": 525
+    },
+    {
+        "Name": "Thought Dowser",
+        "real_id": "526",
+        "id": 526
+    },
+    {
+        "Name": "Flameout",
+        "Comments": "Drink = Vaschean Rye, Hull stripper and just a touch of spice.",
+        "real_id": "527",
+        "id": 527
+    },
+    {
+        "Name": "Saava Berries",
+        "real_id": "528",
+        "id": 528
+    },
+    {
+        "Name": "Shi-Shok Tree",
+        "Comments": "On Kashyyyk",
+        "real_id": "529",
+        "id": 529
+    },
+    {
+        "Name": "Varazeen Stones",
+        "real_id": "530",
+        "id": 530
+    },
+    {
+        "Name": "Yallow Soothsaber",
+        "real_id": "531",
+        "id": 531
+    },
+    {
+        "Name": "Vitalicron",
+        "real_id": "532",
+        "id": 532
+    },
+    {
+        "Name": "Cantonarive Crown Coin",
+        "real_id": "533",
+        "id": 533
+    },
+    {
+        "Name": "Alderaanian Wine",
+        "real_id": "534",
+        "id": 534
+    },
+    {
+        "Name": "Great Jedi Rumble Race",
+        "real_id": "535",
+        "id": 535
+    },
+    {
+        "Name": "Port in a Storm",
+        "real_id": "536",
+        "id": 536
+    },
+    {
+        "Name": "Kyber Arch",
+        "real_id": "537",
+        "id": 537
+    },
+    {
+        "Name": "Gatalentan meditation practices",
+        "real_id": "538",
+        "id": 538
+    },
+    {
+        "Name": "Neutrino Angler",
+        "real_id": "539",
+        "id": 539
+    },
+    {
+        "Name": "Magrak Syndrome ",
+        "real_id": "540",
+        "id": 540
+    },
+    {
+        "Name": "Night of the Thousand Tears",
+        "real_id": "541",
+        "id": 541
+    },
+    {
+        "Name": "Bebatek",
+        "real_id": "542",
+        "id": 542
+    },
+    {
+        "Name": "Vergence",
+        "real_id": "543",
+        "id": 543
+    },
+    {
+        "Name": "Whip of Sorrows",
+        "real_id": "544",
+        "id": 544
+    },
+    {
+        "Name": "Spark Eternal",
+        "Comments": "Ascendant's tech",
+        "real_id": "545",
+        "id": 545
+    },
+    {
+        "Name": "Nova Crystal",
+        "real_id": "546",
+        "id": 546
+    },
+    {
+        "Name": "Kantak Crystal",
+        "real_id": "547",
+        "id": 547
+    },
+    {
+        "Name": "Sun Jewel",
+        "real_id": "548",
+        "id": 548
+    },
+    {
+        "Name": "Povo Punch",
+        "Comments": "Les Hutts sont allergiques",
+        "real_id": "549",
+        "id": 549
+    },
+    {
+        "Name": "Durga Berry",
+        "real_id": "550",
+        "id": 550
+    },
+    {
+        "Name": "Whistle Bird",
+        "real_id": "551",
+        "id": 551
+    },
+    {
+        "Name": "Krill",
+        "real_id": "552",
+        "id": 552
+    },
+    {
+        "Name": "Mind Flayer",
+        "real_id": "553",
+        "id": 553
+    },
+    {
+        "Name": "Rising Phoenix",
+        "real_id": "554",
+        "id": 554
+    },
+    {
+        "Name": "Krayt Dragon Pearl",
+        "real_id": "555",
+        "id": 555
+    },
+    {
+        "Name": "Manax Root",
+        "real_id": "556",
+        "id": 556
+    },
+    {
+        "Name": "Dozoisian Snark",
+        "real_id": "557",
+        "id": 557
+    },
+    {
+        "Name": "Ziroxin-12",
+        "Comments": "Poison",
+        "real_id": "558",
+        "id": 558
+    },
+    {
+        "Name": "Cyanoxis D-750",
+        "real_id": "559",
+        "id": 559
+    },
+    {
+        "Name": "Yurfloo",
+        "real_id": "560",
+        "id": 560
+    },
+    {
+        "Name": "Kattadan",
+        "Comments": "Ros\u00e9 Wine",
+        "real_id": "561",
+        "id": 561
+    },
+    {
+        "Name": "Ga'Garen Code ",
+        "Comments": "The ancient grimoire whose text had confounded linguists for thousand of years.",
+        "real_id": "562",
+        "id": 562
+    },
+    {
+        "Name": "Barafuraha",
+        "Comments": "Dish",
+        "real_id": "563",
+        "id": 563
+    },
+    {
+        "Name": "Kolto",
+        "real_id": "564",
+        "id": 564
+    },
+    {
+        "Name": "Barash Vow",
+        "Comments": "Extreme commitment to gaining ultimate communion with the Force",
+        "real_id": "565",
+        "id": 565
+    },
+    {
+        "Name": "Unbroken Dagger",
+        "real_id": "566",
+        "id": 566
+    },
+    {
+        "Name": "Glitterslim",
+        "real_id": "567",
+        "id": 567
+    },
+    {
+        "Name": "Ur-kittat",
+        "Comments": "Language of The Sith",
+        "real_id": "568",
+        "id": 568
+    },
+    {
+        "Name": "Calling Gloves",
+        "real_id": "569",
+        "id": 569
+    },
+    {
+        "Name": "Crystallo",
+        "real_id": "571",
+        "id": 570
+    },
+    {
+        "Name": "Pontonese Subrakahn",
+        "real_id": "572",
+        "id": 571
+    },
+    {
+        "Name": "Batuu-Bons",
+        "real_id": "573",
+        "id": 572
+    },
+    {
+        "Name": "Pharorb",
+        "real_id": "574",
+        "id": 573
+    },
+    {
+        "Name": "Batuubucha",
+        "real_id": "575",
+        "id": 574
+    },
+    {
+        "Name": "Akkani",
+        "Comments": "Obi-Wan's Eopie",
+        "real_id": "576",
+        "id": 575
+    },
+    {
+        "Name": "Eadun Silver",
+        "real_id": "577",
+        "id": 576
+    },
+    {
+        "Name": "Death Wind",
+        "real_id": "578",
+        "id": 577
+    },
+    {
+        "Name": "Four Sages of Dwartii",
+        "real_id": "579",
+        "id": 578
+    },
+    {
+        "Name": "The Path",
+        "real_id": "580",
+        "id": 579
+    },
+    {
+        "Name": "Muja Twist",
+        "Comments": "Drink",
+        "real_id": "581",
+        "id": 580
+    },
+    {
+        "Name": "Sweetmallow",
+        "real_id": "582",
+        "id": 581
+    },
+    {
+        "Name": "Vintrium",
+        "real_id": "583",
+        "id": 582
+    },
+    {
+        "Name": "Verillix",
+        "real_id": "584",
+        "id": 583
+    },
+    {
+        "Name": "Montalsian Ale",
+        "real_id": "585",
+        "id": 584
+    },
+    {
+        "Name": "Exmar 326 Sub-Strata Phase-Scanner",
+        "real_id": "586",
+        "id": 585
+    },
+    {
+        "Name": "MSX Tracker",
+        "real_id": "587",
+        "id": 586
+    },
+    {
+        "Name": "Dayanar Seven",
+        "Comments": "Jedi combat maneuvers",
+        "real_id": "588",
+        "id": 587
+    },
+    {
+        "Name": "Alpha-Paraval Seven",
+        "Comments": "Jedi combat maneuvers",
+        "real_id": "589",
+        "id": 588
+    },
+    {
+        "Name": "Bonbreez",
+        "real_id": "590",
+        "id": 589
+    },
+    {
+        "Name": "Zylium 12",
+        "Comments": "Fuel",
+        "real_id": "591",
+        "id": 590
+    },
+    {
+        "Name": "Leveler",
+        "Comments": "Nihil waepon",
+        "real_id": "592",
+        "id": 591
+    },
+    {
+        "Name": "Reedug",
+        "Comments": "Drug",
+        "real_id": "593",
+        "id": 592
+    },
+    {
+        "Name": "Docha Institute",
+        "real_id": "594",
+        "id": 593
+    },
+    {
+        "Name": "Verazeen Stones",
+        "real_id": "595",
+        "id": 594
+    },
+    {
+        "Name": "GoNet",
+        "real_id": "596",
+        "id": 595
+    },
+    {
+        "Name": "Ferona Vivaros",
+        "Comments": "Casino",
+        "real_id": "597",
+        "id": 596
+    },
+    {
+        "Name": "Rodian Splice",
+        "Comments": "Drink",
+        "real_id": "598",
+        "id": 597
+    },
+    {
+        "Name": "Eeshaypher Collection",
+        "Comments": "Forbidden gallery of artifacts, relics, and antiques, all of which were related to the dark side of the Force.",
+        "real_id": "599",
+        "id": 598
+    },
+    {
+        "Name": "Declavian cognac",
+        "real_id": "600",
+        "id": 599
+    },
+    {
+        "Name": "Revnog",
+        "Comments": "Drink",
+        "real_id": "601",
+        "id": 600
+    },
+    {
+        "Name": "NS-9 Starpath Unit",
+        "real_id": "602",
+        "id": 601
+    },
+    {
+        "Name": "Caf",
+        "real_id": "603",
+        "id": 602
+    },
+    {
+        "Comments": "",
+        "Name": "Med nog",
+        "real_id": "604",
+        "id": 603
+    },
+    {
+        "Comments": "",
+        "Name": "Ankarres Sapphire",
+        "real_id": "605",
+        "id": 604
+    },
+    {
+        "Comments": "",
+        "Name": "Vando-fruit",
+        "real_id": "606",
+        "id": 605
+    },
+    {
+        "Comments": "",
+        "Name": "Kiavene",
+        "real_id": "607",
+        "id": 606
+    },
+    {
+        "Comments": "",
+        "Name": "Azuran Steam Service",
+        "real_id": "608",
+        "id": 607
+    },
+    {
+        "Comments": "Drink",
+        "Name": "Abrax",
+        "real_id": "609",
+        "id": 608
+    },
+    {
+        "Comments": "",
+        "Name": "Arc of Eden",
+        "real_id": "610",
+        "id": 609
+    },
+    {
+        "Comments": "",
+        "Name": "Rod of Ages",
+        "real_id": "611",
+        "id": 610
+    },
+    {
+        "Comments": "",
+        "Name": "Rod of Seasons",
+        "real_id": "612",
+        "id": 611
+    },
+    {
+        "Comments": "",
+        "Name": "Rod of Daybreak",
+        "real_id": "613",
+        "id": 612
+    },
+    {
+        "Comments": "Jeu",
+        "Name": "Naboo Kingmaker",
+        "real_id": "614",
+        "id": 613
+    },
+    {
+        "Comments": "",
+        "Name": "Lavorgna's Age of Dragon ",
+        "real_id": "615",
+        "id": 614
+    },
+    {
+        "Comments": "",
+        "Name": "Screen of the Second Sight",
+        "real_id": "616",
+        "id": 615
+    },
+    {
+        "Comments": "The Ability to stopo an opponent\u2019s heart using the Force alone.",
+        "Name": "Morichro",
+        "real_id": "617",
+        "id": 616
+    },
+    {
+        "Comments": "",
+        "Name": "Synthflesh",
+        "real_id": "618",
+        "id": 617
+    },
+    {
+        "Comments": "",
+        "Name": "Shoto Lightsaber",
+        "real_id": "619",
+        "id": 618
+    },
+    {
+        "Comments": "",
+        "Name": "Pak Pak",
+        "real_id": "620",
+        "id": 619
+    },
+    {
+        "Comments": "",
+        "Name": "Franikhad",
+        "real_id": "621",
+        "id": 620
+    },
+    {
+        "Comments": "",
+        "Name": "Fire Mountain Rally",
+        "real_id": "622",
+        "id": 621
+    },
+    {
+        "Comments": "",
+        "Name": "Agaric Ale",
+        "real_id": "623",
+        "id": 622
+    },
+    {
+        "Comments": "",
+        "Name": "Shatterpoint",
+        "real_id": "624",
+        "id": 623
+    },
+    {
+        "Comments": "",
+        "Name": "Nyix",
+        "real_id": "625",
+        "id": 624
+    },
+    {
+        "Comments": "",
+        "Name": "Athio Seven Hundred",
+        "real_id": "626",
+        "id": 625
+    },
+    {
+        "Comments": "",
+        "Name": "Coruscant's Festival of Stars",
+        "real_id": "627",
+        "id": 626
+    },
+    {
+        "Comments": "",
+        "Name": "Tunqstoid Steel",
+        "real_id": "628",
+        "id": 627
+    },
+    {
+        "Comments": "",
+        "Name": "Null blade",
+        "real_id": "629",
+        "id": 628
+    },
+    {
+        "Comments": "",
+        "Name": "Kezarat Convoy",
+        "real_id": "630",
+        "id": 629
+    },
+    {
+        "Comments": "",
+        "Name": "Elysium Sunrise",
+        "real_id": "631",
+        "id": 630
+    },
+    {
+        "Comments": "Togruta\u2019s Language",
+        "Name": "Togruti",
+        "real_id": "632",
+        "id": 631
+    },
+    {
+        "Comments": "",
+        "Name": "Drowser",
+        "real_id": "633",
+        "id": 632
+    },
+    {
+        "Comments": "",
+        "Name": "Chubb",
+        "real_id": "634",
+        "id": 633
+    },
+    {
+        "Comments": "",
+        "Name": "Fermata Cage",
+        "real_id": "635",
+        "id": 634
+    },
+    {
+        "Comments": "",
+        "Name": "Screaming Key",
+        "real_id": "636",
+        "id": 635
+    },
+    {
+        "Comments": "Musical Instruments of the Scalvi",
+        "Name": "Taratti",
+        "real_id": "637",
+        "id": 636
+    },
+    {
+        "Comments": "Grows on Turrak",
+        "Name": "Sukka Tree",
+        "real_id": "638",
+        "id": 637
+    },
+    {
+        "Comments": "",
+        "Name": "Firebird of Colsassa",
+        "real_id": "639",
+        "id": 638
+    },
+    {
+        "Comments": "",
+        "Name": "Wicket Ball",
+        "real_id": "640",
+        "id": 639
+    },
+    {
+        "Comments": "",
+        "Name": "Ambercryst",
+        "real_id": "641",
+        "id": 640
+    },
+    {
+        "Comments": "",
+        "Name": "Exo Lug Twin Injector",
+        "real_id": "642",
+        "id": 641
+    },
+    {
+        "Comments": "",
+        "Name": "Battle of Slag's Pit",
+        "real_id": "643",
+        "id": 642
+    },
+    {
+        "Comments": "",
+        "Name": "Secrets of the Jedi",
+        "real_id": "644",
+        "id": 643
+    },
+    {
+        "Comments": "",
+        "Name": "Cassadrean Matrix",
+        "real_id": "645",
+        "id": 644
+    },
+    {
+        "Comments": "They were awarded when a Jedi Knight was elevated to the rank of Jedi Master, both to the Jedi Knight themselves and to the Master who had trained them. Command practice back in the early days of the Order.",
+        "Name": "Tythonian Mastery Tokens",
+        "real_id": "646",
+        "id": 645
+    },
+    {
+        "Comments": "",
+        "Name": "Muttamok Oil",
+        "real_id": "647",
+        "id": 646
+    },
+    {
+        "Comments": "",
+        "Name": "Recainium",
+        "real_id": "648",
+        "id": 647
+    },
+    {
+        "Comments": "",
+        "Name": "Dantari Flu",
+        "real_id": "649",
+        "id": 648
+    },
+    {
+        "Comments": "",
+        "Name": "Ualaqian Jazz",
+        "real_id": "650",
+        "id": 649
+    },
+    {
+        "Comments": "",
+        "Name": "Hyper-Gazers",
+        "real_id": "651",
+        "id": 650
+    },
+    {
+        "Comments": "",
+        "Name": "Rycrit Wrap",
+        "real_id": "652",
+        "id": 651
+    },
+    {
+        "Comments": "",
+        "Name": "Barabbian",
+        "real_id": "653",
+        "id": 652
+    },
+    {
+        "Comments": "",
+        "Name": "Blood Moon Uprising",
+        "real_id": "654",
+        "id": 653
+    },
+    {
+        "Comments": "",
+        "Name": "Lariat of Armistice",
+        "real_id": "655",
+        "id": 654
+    },
+    {
+        "Comments": "",
+        "Name": "Mystic Nine",
+        "real_id": "656",
+        "id": 655
+    },
+    {
+        "Comments": "",
+        "Name": "Cypanid",
+        "real_id": "657",
+        "id": 656
+    },
+    {
+        "Comments": "",
+        "Name": "Emmarian Cloud",
+        "real_id": "658",
+        "id": 657
+    },
+    {
+        "Comments": "",
+        "Name": "Tolium",
+        "real_id": "659",
+        "id": 658
+    },
+    {
+        "Comments": "",
+        "Name": "Gnostra-berry Wine",
+        "real_id": "660",
+        "id": 659
+    },
+    {
+        "Comments": "",
+        "Name": "Age of Exploration",
+        "real_id": "661",
+        "id": 660
+    },
+    {
+        "Comments": "Written by Master Evelyn Qwisp",
+        "Name": "Meditations",
+        "real_id": "662",
+        "id": 661
+    },
+    {
+        "Comments": "Sylvestri\u2019s Doll",
+        "Name": "Beti",
+        "real_id": "663",
+        "id": 662
+    },
+    {
+        "Comments": "",
+        "Name": "Solubrian",
+        "real_id": "664",
+        "id": 663
+    },
+    {
+        "Comments": "",
+        "Name": "Relgim Run",
+        "real_id": "665",
+        "id": 664
+    },
+    {
+        "Comments": "",
+        "Name": "Bitmus Cloud",
+        "real_id": "666",
+        "id": 665
+    },
+    {
+        "Comments": "",
+        "Name": "Bemeer Fruit",
+        "real_id": "667",
+        "id": 666
+    },
+    {
+        "Comments": "",
+        "Name": "Wellsian Leather",
+        "real_id": "668",
+        "id": 667
+    },
+    {
+        "Comments": "",
+        "Name": "Medpac",
+        "real_id": "669",
+        "id": 668
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Enforcement DataCore",
+        "real_id": "670",
+        "id": 669
+    },
+    {
+        "Comments": "",
+        "Name": "Stormblade Bloodfest",
+        "real_id": "671",
+        "id": 670
+    },
+    {
+        "Comments": "",
+        "Name": "Tragia Leaves",
+        "real_id": "672",
+        "id": 671
+    },
+    {
+        "Comments": "",
+        "Name": "Festival of Balance",
+        "real_id": "673",
+        "id": 672
+    },
+    {
+        "Comments": "",
+        "Name": "Unknown Alien Protocols",
+        "real_id": "674",
+        "id": 673
+    },
+    {
+        "Comments": "",
+        "Name": "Riot Racing",
+        "real_id": "675",
+        "id": 674
+    },
+    {
+        "Comments": "",
+        "Name": "Sfs P-s4 ion ",
+        "real_id": "676",
+        "id": 675
+    },
+    {
+        "Comments": "",
+        "Name": "Caspian\u2019s Maw",
+        "real_id": "677",
+        "id": 676
+    },
+    {
+        "Comments": "Band",
+        "Name": "Plexo-33",
+        "real_id": "678",
+        "id": 677
+    },
+    {
+        "Comments": "Vsis",
+        "Name": "Vocational School for Institutional Security",
+        "real_id": "679",
+        "id": 678
+    },
+    {
+        "Comments": "",
+        "Name": "Arkanis Academy",
+        "real_id": "680",
+        "id": 679
+    },
+    {
+        "Comments": "",
+        "Name": "Juati signet",
+        "real_id": "681",
+        "id": 680
+    },
+    {
+        "Comments": "Language",
+        "Name": "Alarin",
+        "real_id": "682",
+        "id": 681
+    },
+    {
+        "Comments": "Language",
+        "Name": "Myo",
+        "real_id": "683",
+        "id": 682
+    },
+    {
+        "Comments": "Language (possibly from Kenari)",
+        "Name": "Nari",
+        "real_id": "684",
+        "id": 683
+    },
+    {
+        "Comments": "",
+        "Name": "Eye of the Aldhani",
+        "real_id": "685",
+        "id": 684
+    },
+    {
+        "Comments": "",
+        "Name": "Dray Milk",
+        "real_id": "686",
+        "id": 685
+    },
+    {
+        "Comments": "",
+        "Name": "Finkly Conference",
+        "real_id": "687",
+        "id": 686
+    },
+    {
+        "Comments": "",
+        "Name": "Base Cay",
+        "real_id": "688",
+        "id": 687
+    },
+    {
+        "Comments": "",
+        "Name": "Corellian Champagne",
+        "real_id": "689",
+        "id": 688
+    },
+    {
+        "Comments": "",
+        "Name": "Dagobah Slug Slinger",
+        "real_id": "690",
+        "id": 689
+    },
+    {
+        "Comments": "",
+        "Name": "White Wampa Ale",
+        "real_id": "691",
+        "id": 690
+    },
+    {
+        "Comments": "",
+        "Name": "Doklist",
+        "real_id": "692",
+        "id": 691
+    },
+    {
+        "Comments": "",
+        "Name": "Blurggfire",
+        "real_id": "693",
+        "id": 692
+    },
+    {
+        "Comments": "",
+        "Name": "Gambuu Dart",
+        "real_id": "694",
+        "id": 693
+    },
+    {
+        "Comments": "",
+        "Name": "Trilon Wishing Tree",
+        "real_id": "696",
+        "id": 694
+    },
+    {
+        "Comments": "",
+        "Name": "Jazz",
+        "real_id": "697",
+        "id": 695
+    },
+    {
+        "Comments": "",
+        "Name": "Bespin Fizz",
+        "real_id": "698",
+        "id": 696
+    },
+    {
+        "Comments": "",
+        "Name": "Fuzzy Tauntaun",
+        "real_id": "699",
+        "id": 697
+    },
+    {
+        "Comments": "",
+        "Name": "Moogyyrko Sap",
+        "real_id": "700",
+        "id": 698
+    },
+    {
+        "Comments": "",
+        "Name": "The Well",
+        "real_id": "701",
+        "id": 699
+    },
+    {
+        "Comments": "",
+        "Name": "Phelarion School",
+        "real_id": "702",
+        "id": 700
+    },
+    {
+        "Comments": "",
+        "Name": "Project Unity",
+        "real_id": "703",
+        "id": 701
+    },
+    {
+        "Comments": "",
+        "Name": "ZX-5 Access Disk",
+        "real_id": "704",
+        "id": 702
+    },
+    {
+        "Comments": "",
+        "Name": "Project Harvester",
+        "real_id": "705",
+        "id": 703
+    },
+    {
+        "Comments": "",
+        "Name": "Stealth Armor",
+        "real_id": "706",
+        "id": 704
+    },
+    {
+        "Comments": "",
+        "Name": "Thinekk Tree",
+        "real_id": "707",
+        "id": 705
+    },
+    {
+        "Comments": "",
+        "Name": "Grand Pearl of Novak",
+        "real_id": "708",
+        "id": 706
+    },
+    {
+        "Comments": "",
+        "Name": "Blade of Zakata Par",
+        "real_id": "709",
+        "id": 707
+    },
+    {
+        "Comments": "",
+        "Name": "Skara Nal",
+        "real_id": "710",
+        "id": 708
+    },
+    {
+        "Comments": "",
+        "Name": "Heart of the Mountain",
+        "real_id": "711",
+        "id": 709
+    },
+    {
+        "Comments": "",
+        "Name": "Belmont Diadem",
+        "real_id": "712",
+        "id": 710
+    },
+    {
+        "Comments": "",
+        "Name": "Baudraxite",
+        "real_id": "713",
+        "id": 711
+    },
+    {
+        "Comments": "",
+        "Name": "Medspike",
+        "real_id": "714",
+        "id": 712
+    },
+    {
+        "Comments": "",
+        "Name": "Public Order Resentencing Directive",
+        "real_id": "715",
+        "id": 713
+    },
+    {
+        "Comments": "",
+        "Name": "Peezos",
+        "real_id": "716",
+        "id": 714
+    },
+    {
+        "Comments": "",
+        "Name": "Narkinian",
+        "real_id": "717",
+        "id": 715
+    },
+    {
+        "Comments": "",
+        "Name": "Pink Milk",
+        "real_id": "718",
+        "id": 716
+    },
+    {
+        "Comments": "",
+        "Name": "Seismic Charges",
+        "real_id": "719",
+        "id": 717
+    },
+    {
+        "Comments": "Spice",
+        "Name": "Ryll",
+        "real_id": "720",
+        "id": 718
+    },
+    {
+        "Comments": "",
+        "Name": "Ipsium",
+        "real_id": "721",
+        "id": 719
+    },
+    {
+        "Comments": "",
+        "Name": "Theenwine",
+        "real_id": "722",
+        "id": 720
+    },
+    {
+        "Comments": "",
+        "Name": "Mandalorian Purge",
+        "real_id": "723",
+        "id": 721
+    },
+    {
+        "Comments": "",
+        "Name": "New Republic War Tribunal",
+        "real_id": "724",
+        "id": 722
+    },
+    {
+        "Comments": "",
+        "Name": "Dirge of Valaunt",
+        "real_id": "725",
+        "id": 723
+    },
+    {
+        "Comments": "Native tongue",
+        "Name": "Ryl",
+        "real_id": "726",
+        "id": 724
+    },
+    {
+        "Comments": "",
+        "Name": "Boonta Eve",
+        "real_id": "727",
+        "id": 725
+    },
+    {
+        "Comments": "",
+        "Name": "Pog Soup",
+        "real_id": "728",
+        "id": 726
+    },
+    {
+        "Comments": "",
+        "Name": "Gelatin Surprise",
+        "real_id": "729",
+        "id": 727
+    },
+    {
+        "Comments": "",
+        "Name": "Amnesty Program",
+        "real_id": "731",
+        "id": 728
+    },
+    {
+        "Comments": "",
+        "Name": "Re-Integration Institute",
+        "real_id": "732",
+        "id": 729
+    },
+    {
+        "Comments": "",
+        "Name": "Benduday",
+        "real_id": "733",
+        "id": 730
+    },
+    {
+        "Comments": "",
+        "Name": "Coruscant Accords",
+        "real_id": "734",
+        "id": 731
+    },
+    {
+        "Comments": "",
+        "Name": "Plan 88",
+        "real_id": "735",
+        "id": 732
+    },
+    {
+        "Comments": "",
+        "Name": "Galadag",
+        "real_id": "736",
+        "id": 733
+    },
+    {
+        "Comments": "",
+        "Name": "Sacha-Lo",
+        "real_id": "737",
+        "id": 734
+    },
+    {
+        "Comments": "Pastry",
+        "Name": "Shoshak",
+        "real_id": "738",
+        "id": 735
+    },
+    {
+        "Comments": "",
+        "Name": "Peggat",
+        "real_id": "739",
+        "id": 736
+    },
+    {
+        "Comments": "",
+        "Name": "Nepenth\u00e9",
+        "real_id": "740",
+        "id": 737
+    },
+    {
+        "Comments": "",
+        "Name": "T\u2019Karra Flower",
+        "real_id": "741",
+        "id": 738
+    },
+    {
+        "Comments": "",
+        "Name": "Project Necromancer",
+        "real_id": "743",
+        "id": 739
+    },
+    {
+        "Comments": "",
+        "Name": "Dillweed",
+        "real_id": "744",
+        "id": 740
+    },
+    {
+        "Comments": "",
+        "Name": "Galactic Comms Network",
+        "real_id": "746",
+        "id": 741
+    },
+    {
+        "Comments": "",
+        "Name": "Joru",
+        "real_id": "747",
+        "id": 742
+    },
+    {
+        "Comments": "",
+        "Name": "Calenada",
+        "real_id": "748",
+        "id": 743
+    },
+    {
+        "Comments": "",
+        "Name": "Echo Stone",
+        "real_id": "749",
+        "id": 744
+    },
+    {
+        "Comments": "",
+        "Name": "C3-42",
+        "real_id": "750",
+        "id": 745
+    },
+    {
+        "Comments": "",
+        "Name": "Shroud",
+        "real_id": "751",
+        "id": 746
+    },
+    {
+        "Comments": "",
+        "Name": "Circlet of Saresh",
+        "real_id": "752",
+        "id": 747
+    },
+    {
+        "Comments": "",
+        "Name": "Ahrisa",
+        "real_id": "753",
+        "id": 748
+    },
+    {
+        "Comments": "",
+        "Name": "Operation Titan",
+        "real_id": "754",
+        "id": 749
+    },
+    {
+        "Comments": "",
+        "Name": "Rod of Power",
+        "real_id": "755",
+        "id": 750
+    },
+    {
+        "Comments": "",
+        "Name": "Bogan Collection",
+        "real_id": "756",
+        "id": 751
+    },
+    {
+        "Comments": "",
+        "Name": "Zeilla Flower",
+        "real_id": "757",
+        "id": 752
+    },
+    {
+        "Comments": "",
+        "Name": "Mandoline",
+        "real_id": "758",
+        "id": 753
+    },
+    {
+        "Comments": "",
+        "Name": "Hand of Siberus",
+        "real_id": "759",
+        "id": 754
+    },
+    {
+        "Comments": "",
+        "Name": "Rooknik",
+        "real_id": "760",
+        "id": 755
+    },
+    {
+        "Comments": "",
+        "Name": "Kythoo's Bell",
+        "real_id": "761",
+        "id": 756
+    },
+    {
+        "Comments": "",
+        "Name": "Sason Temple",
+        "real_id": "762",
+        "id": 757
+    },
+    {
+        "Comments": "",
+        "Name": "Screaming Citadel",
+        "real_id": "763",
+        "id": 758
+    },
+    {
+        "Comments": "",
+        "Name": "Gherlian Fur",
+        "real_id": "764",
+        "id": 759
+    },
+    {
+        "Comments": "",
+        "Name": "Rock-Wart Venom",
+        "real_id": "765",
+        "id": 760
+    },
+    {
+        "Comments": "",
+        "Name": "Zaly Shield",
+        "real_id": "766",
+        "id": 761
+    },
+    {
+        "Comments": "Dish",
+        "Name": "Nanceli",
+        "real_id": "767",
+        "id": 762
+    },
+    {
+        "Comments": "",
+        "Name": "Durasteel",
+        "real_id": "768",
+        "id": 763
+    },
+    {
+        "Comments": "Poison fatal for Falleen",
+        "Name": "Syntox",
+        "real_id": "769",
+        "id": 764
+    },
+    {
+        "Comments": "",
+        "Name": "Bosovir",
+        "real_id": "770",
+        "id": 765
+    },
+    {
+        "Comments": "",
+        "Name": "Jedi Tournament",
+        "real_id": "771",
+        "id": 766
+    },
+    {
+        "Comments": "Martial Arts",
+        "Name": "Zama-Shiwo",
+        "real_id": "772",
+        "id": 767
+    },
+    {
+        "Comments": "",
+        "Name": "Sunburst Gem",
+        "real_id": "773",
+        "id": 768
+    },
+    {
+        "Comments": "",
+        "Name": "Deychin tea",
+        "real_id": "774",
+        "id": 769
+    },
+    {
+        "Comments": "",
+        "Name": "Datacron",
+        "real_id": "775",
+        "id": 770
+    },
+    {
+        "Comments": "",
+        "Name": "Bota",
+        "real_id": "776",
+        "id": 771
+    },
+    {
+        "Comments": "",
+        "Name": "Bachani",
+        "real_id": "777",
+        "id": 772
+    },
+    {
+        "Comments": "Plant",
+        "Name": "Nakkis",
+        "real_id": "778",
+        "id": 773
+    },
+    {
+        "Comments": "",
+        "Name": "Coma bloom",
+        "real_id": "779",
+        "id": 774
+    },
+    {
+        "Comments": "",
+        "Name": "Mosterna",
+        "real_id": "780",
+        "id": 775
+    },
+    {
+        "Comments": "",
+        "Name": "Mandaba",
+        "real_id": "781",
+        "id": 776
+    },
+    {
+        "Comments": "",
+        "Name": "Ballad of Bosovir",
+        "real_id": "782",
+        "id": 777
+    },
+    {
+        "Comments": "",
+        "Name": "Zatochi",
+        "real_id": "783",
+        "id": 778
+    },
+    {
+        "Comments": "",
+        "Name": "Bokken Saber",
+        "real_id": "784",
+        "id": 779
+    },
+    {
+        "Comments": "",
+        "Name": "Galukk",
+        "real_id": "785",
+        "id": 780
+    },
+    {
+        "Comments": "",
+        "Name": "Monava weed",
+        "real_id": "786",
+        "id": 781
+    },
+    {
+        "Comments": "",
+        "Name": "Trial of the Spirit",
+        "real_id": "787",
+        "id": 782
+    },
+    {
+        "Comments": "",
+        "Name": "Dust Juice",
+        "real_id": "788",
+        "id": 783
+    },
+    {
+        "Comments": "",
+        "Name": "Hookah pipe",
+        "real_id": "789",
+        "id": 784
+    },
+    {
+        "Comments": "",
+        "Name": "Kajaka root",
+        "real_id": "790",
+        "id": 785
+    },
+    {
+        "Comments": "",
+        "Name": "Code Cylinder",
+        "real_id": "791",
+        "id": 786
+    },
+    {
+        "Comments": "",
+        "Name": "Psychometry",
+        "real_id": "792",
+        "id": 787
+    },
+    {
+        "Comments": "",
+        "Name": "Water of Life",
+        "real_id": "793",
+        "id": 788
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Minefield",
+        "real_id": "794",
+        "id": 789
+    },
+    {
+        "Comments": "",
+        "Name": "Gift of Shadows",
+        "real_id": "795",
+        "id": 790
+    },
+    {
+        "Comments": "",
+        "Name": "Blade of Talzin",
+        "real_id": "796",
+        "id": 791
+    },
+    {
+        "Comments": "",
+        "Name": "Singing stones",
+        "real_id": "797",
+        "id": 792
+    },
+    {
+        "Comments": "",
+        "Name": "A350 Blasterfire",
+        "real_id": "798",
+        "id": 793
+    },
+    {
+        "Comments": "",
+        "Name": "Raxian Humanitarian Award",
+        "real_id": "799",
+        "id": 794
+    },
+    {
+        "Comments": "",
+        "Name": "Stormwall",
+        "real_id": "800",
+        "id": 795
+    },
+    {
+        "Comments": "",
+        "Name": "Occlusion Zone",
+        "real_id": "801",
+        "id": 796
+    },
+    {
+        "Comments": "",
+        "Name": "Class-Seven Stun Collar",
+        "real_id": "802",
+        "id": 797
+    },
+    {
+        "Comments": "",
+        "Name": "Kava Berry",
+        "real_id": "803",
+        "id": 798
+    },
+    {
+        "Comments": "",
+        "Name": "Koko Noodle",
+        "real_id": "804",
+        "id": 799
+    },
+    {
+        "Comments": "",
+        "Name": "Bocha",
+        "real_id": "805",
+        "id": 800
+    },
+    {
+        "Comments": "",
+        "Name": "Joba oil",
+        "real_id": "806",
+        "id": 801
+    },
+    {
+        "Comments": "",
+        "Name": "Sparkle-fire Seeds",
+        "real_id": "808",
+        "id": 802
+    },
+    {
+        "Comments": "",
+        "Name": "Banzon",
+        "real_id": "809",
+        "id": 803
+    },
+    {
+        "Comments": "",
+        "Name": "Gravity\u2019s Heart",
+        "real_id": "810",
+        "id": 804
+    },
+    {
+        "Comments": "",
+        "Name": "Lystrater",
+        "real_id": "811",
+        "id": 805
+    },
+    {
+        "Comments": "",
+        "Name": "Night of Sorrows",
+        "real_id": "812",
+        "id": 806
+    },
+    {
+        "Comments": "",
+        "Name": "Desi's Noodle",
+        "real_id": "813",
+        "id": 807
+    },
+    {
+        "Comments": "",
+        "Name": "Protocol 23",
+        "real_id": "815",
+        "id": 808
+    },
+    {
+        "Comments": "",
+        "Name": "Santale Sweep",
+        "real_id": "816",
+        "id": 809
+    },
+    {
+        "Comments": "",
+        "Name": "Yara plant",
+        "real_id": "817",
+        "id": 810
+    },
+    {
+        "Comments": "Measure compounded energy output from crystals",
+        "Name": "Mertigan",
+        "real_id": "818",
+        "id": 811
+    },
+    {
+        "Comments": "",
+        "Name": "Lompop",
+        "real_id": "819",
+        "id": 812
+    },
+    {
+        "Comments": "",
+        "Name": "Soikan Civil War",
+        "real_id": "820",
+        "id": 813
+    },
+    {
+        "Comments": "",
+        "Name": "Andraven Flute",
+        "real_id": "821",
+        "id": 814
+    },
+    {
+        "Comments": "",
+        "Name": "Priorite",
+        "real_id": "822",
+        "id": 815
+    },
+    {
+        "Comments": "",
+        "Name": "Galactic Creature Guide",
+        "real_id": "823",
+        "id": 816
+    },
+    {
+        "Comments": "",
+        "Name": "Hidden Path",
+        "real_id": "824",
+        "id": 817
+    },
+    {
+        "Comments": "Bar",
+        "Name": "Serendipity ",
+        "real_id": "825",
+        "id": 818
+    },
+    {
+        "Comments": "",
+        "Name": "Zeffo Astrium",
+        "real_id": "826",
+        "id": 819
+    },
+    {
+        "Comments": "",
+        "Name": "Karnite",
+        "real_id": "827",
+        "id": 820
+    },
+    {
+        "Comments": "",
+        "Name": "MK-270 Imperial Pulverizers",
+        "real_id": "828",
+        "id": 821
+    },
+    {
+        "Comments": "",
+        "Name": "Mushbloom",
+        "real_id": "829",
+        "id": 822
+    },
+    {
+        "Comments": "",
+        "Name": "Hydraatis",
+        "real_id": "830",
+        "id": 823
+    },
+    {
+        "Comments": "",
+        "Name": "Mushling",
+        "real_id": "831",
+        "id": 824
+    },
+    {
+        "Comments": "",
+        "Name": "Fire lichen",
+        "real_id": "832",
+        "id": 825
+    },
+    {
+        "Comments": "",
+        "Name": "Brula Fruit",
+        "real_id": "833",
+        "id": 826
+    },
+    {
+        "Comments": "",
+        "Name": "Bleeding Gut",
+        "real_id": "834",
+        "id": 827
+    },
+    {
+        "Comments": "",
+        "Name": "Featherfern",
+        "real_id": "835",
+        "id": 828
+    },
+    {
+        "Comments": "",
+        "Name": "Kalpi",
+        "real_id": "836",
+        "id": 829
+    },
+    {
+        "Comments": "",
+        "Name": "Dreamwort",
+        "real_id": "837",
+        "id": 830
+    },
+    {
+        "Comments": "",
+        "Name": "Royal Fluzz",
+        "real_id": "838",
+        "id": 831
+    },
+    {
+        "Comments": "",
+        "Name": "Gillypod",
+        "real_id": "839",
+        "id": 832
+    },
+    {
+        "Comments": "",
+        "Name": "Milk Grass",
+        "real_id": "840",
+        "id": 833
+    },
+    {
+        "Comments": "",
+        "Name": "Tar",
+        "real_id": "841",
+        "id": 834
+    },
+    {
+        "Comments": "",
+        "Name": "Tuber Maw",
+        "real_id": "842",
+        "id": 835
+    },
+    {
+        "Comments": "",
+        "Name": "Palm Fruit Shell",
+        "real_id": "843",
+        "id": 836
+    },
+    {
+        "Comments": "",
+        "Name": "Koboh Spiker",
+        "real_id": "844",
+        "id": 837
+    },
+    {
+        "Comments": "",
+        "Name": "Spine Fluff",
+        "real_id": "845",
+        "id": 838
+    },
+    {
+        "Comments": "",
+        "Name": "Pine Fern",
+        "real_id": "846",
+        "id": 839
+    },
+    {
+        "Comments": "",
+        "Name": "Fire Pineapple",
+        "real_id": "847",
+        "id": 840
+    },
+    {
+        "Comments": "",
+        "Name": "Goldenlight Moss",
+        "real_id": "848",
+        "id": 841
+    },
+    {
+        "Comments": "",
+        "Name": "Bluebell Squish",
+        "real_id": "849",
+        "id": 842
+    },
+    {
+        "Comments": "",
+        "Name": "Cactus Ball",
+        "real_id": "850",
+        "id": 843
+    },
+    {
+        "Comments": "",
+        "Name": "Crimson Jelly Spire",
+        "real_id": "851",
+        "id": 844
+    },
+    {
+        "Comments": "",
+        "Name": "Guardian Protocols",
+        "real_id": "852",
+        "id": 845
+    },
+    {
+        "Comments": "",
+        "Name": "Lightsaber Nullifier",
+        "real_id": "853",
+        "id": 846
+    },
+    {
+        "Comments": "Unarmed Force Combat",
+        "Name": "Shon-Ju",
+        "real_id": "854",
+        "id": 847
+    },
+    {
+        "Comments": "",
+        "Name": "Tranlang Database",
+        "real_id": "855",
+        "id": 848
+    },
+    {
+        "Comments": "",
+        "Name": "Dragnet",
+        "real_id": "856",
+        "id": 849
+    },
+    {
+        "Comments": "",
+        "Name": "Lamta",
+        "real_id": "857",
+        "id": 850
+    },
+    {
+        "Comments": "",
+        "Name": "Chidinkalu",
+        "real_id": "858",
+        "id": 851
+    },
+    {
+        "Comments": "",
+        "Name": "Coaxium Ultra",
+        "real_id": "859",
+        "id": 852
+    },
+    {
+        "Comments": "",
+        "Name": "Micropram",
+        "real_id": "860",
+        "id": 853
+    },
+    {
+        "Comments": "",
+        "Name": "DC-17",
+        "real_id": "861",
+        "id": 854
+    },
+    {
+        "Comments": "",
+        "Name": "Hope of Glee Anselm",
+        "real_id": "862",
+        "id": 855
+    },
+    {
+        "Comments": "Fruit",
+        "Name": "Cachu",
+        "real_id": "863",
+        "id": 856
+    },
+    {
+        "Comments": "Card Game",
+        "Name": "Balaans",
+        "real_id": "864",
+        "id": 857
+    },
+    {
+        "Comments": "",
+        "Name": "Tactical Plan 18",
+        "real_id": "865",
+        "id": 858
+    },
+    {
+        "Comments": "",
+        "Name": "Corusca Gem",
+        "real_id": "866",
+        "id": 859
+    },
+    {
+        "Comments": "",
+        "Name": "Viodle",
+        "real_id": "867",
+        "id": 860
+    },
+    {
+        "Comments": "",
+        "Name": "Rumble Bass",
+        "real_id": "868",
+        "id": 861
+    },
+    {
+        "Comments": "",
+        "Name": "Waterwine Peach",
+        "real_id": "869",
+        "id": 862
+    },
+    {
+        "Comments": "",
+        "Name": "Operation Yellow Moon",
+        "real_id": "871",
+        "id": 863
+    },
+    {
+        "Comments": "",
+        "Name": "A-280 Rifle",
+        "real_id": "872",
+        "id": 864
+    },
+    {
+        "Comments": "",
+        "Name": "Shockball",
+        "real_id": "873",
+        "id": 865
+    },
+    {
+        "Comments": "",
+        "Name": "Horvax-16 Transmitter",
+        "real_id": "874",
+        "id": 866
+    },
+    {
+        "Comments": "",
+        "Name": "Horvax-8 Transmitter",
+        "real_id": "875",
+        "id": 867
+    },
+    {
+        "Comments": "",
+        "Name": "Corellian Brandy",
+        "real_id": "876",
+        "id": 868
+    },
+    {
+        "Comments": "",
+        "Name": "Distinguised Medal of Imperial Honor",
+        "real_id": "877",
+        "id": 869
+    },
+    {
+        "Comments": "",
+        "Name": "Corellian rum",
+        "real_id": "878",
+        "id": 870
+    },
+    {
+        "Comments": "",
+        "Name": "Ithorese",
+        "real_id": "879",
+        "id": 871
+    },
+    {
+        "Comments": "",
+        "Name": "Vreenak Bloom",
+        "real_id": "880",
+        "id": 872
+    },
+    {
+        "Comments": "",
+        "Name": "Albeekian Sun Grass",
+        "real_id": "881",
+        "id": 873
+    },
+    {
+        "Comments": "",
+        "Name": "Grumple Vine",
+        "real_id": "882",
+        "id": 874
+    },
+    {
+        "Comments": "",
+        "Name": "Vonduun Helmet",
+        "real_id": "883",
+        "id": 875
+    },
+    {
+        "Comments": "",
+        "Name": "Queen of the Core Network",
+        "real_id": "884",
+        "id": 876
+    },
+    {
+        "Comments": "",
+        "Name": "Galactic Expansion",
+        "real_id": "885",
+        "id": 877
+    },
+    {
+        "Comments": "",
+        "Name": "Kar-shak",
+        "real_id": "886",
+        "id": 878
+    },
+    {
+        "Comments": "",
+        "Name": "Chatta-ragul",
+        "real_id": "887",
+        "id": 879
+    },
+    {
+        "Comments": "Martial art",
+        "Name": "Zavat",
+        "real_id": "888",
+        "id": 880
+    },
+    {
+        "Comments": "",
+        "Name": "Imperial Combat Exercises",
+        "real_id": "889",
+        "id": 881
+    },
+    {
+        "Comments": "",
+        "Name": "Lucryte",
+        "real_id": "890",
+        "id": 882
+    },
+    {
+        "Comments": "",
+        "Name": "Korlappi shell",
+        "real_id": "891",
+        "id": 883
+    },
+    {
+        "Comments": "",
+        "Name": "323 Rakhmann concussion-miner",
+        "real_id": "892",
+        "id": 884
+    },
+    {
+        "Comments": "",
+        "Name": "Bezorite",
+        "real_id": "893",
+        "id": 885
+    },
+    {
+        "Comments": "",
+        "Name": "Kesium gas",
+        "real_id": "894",
+        "id": 886
+    },
+    {
+        "Comments": "",
+        "Name": "Mosberry",
+        "real_id": "895",
+        "id": 887
+    },
+    {
+        "Comments": "",
+        "Name": "Kessel-Run",
+        "real_id": "896",
+        "id": 888
+    },
+    {
+        "Comments": "",
+        "Name": "Kinro",
+        "real_id": "897",
+        "id": 889
+    },
+    {
+        "Comments": "",
+        "Name": "Kukuia nut",
+        "real_id": "898",
+        "id": 890
+    },
+    {
+        "Comments": "",
+        "Name": "Lothal Imperial Academy",
+        "real_id": "899",
+        "id": 891
+    },
+    {
+        "Comments": "",
+        "Name": "Operation Guiding Light",
+        "real_id": "900",
+        "id": 892
+    },
+    {
+        "Comments": "Gem",
+        "Name": "Kuggerag",
+        "real_id": "901",
+        "id": 893
+    },
+    {
+        "Comments": "",
+        "Name": "Ootooian Opal",
+        "real_id": "902",
+        "id": 894
+    },
+    {
+        "Comments": "",
+        "Name": "Jellyfruit Festival",
+        "real_id": "903",
+        "id": 895
+    },
+    {
+        "Comments": "",
+        "Name": "Broadleaf Tree",
+        "real_id": "904",
+        "id": 896
+    },
+    {
+        "Comments": "",
+        "Name": "Sky Skimming",
+        "real_id": "905",
+        "id": 897
+    },
+    {
+        "Comments": "",
+        "Name": "Gomgourd",
+        "real_id": "906",
+        "id": 898
+    },
+    {
+        "Comments": "",
+        "Name": "Dunkutu Day",
+        "real_id": "907",
+        "id": 899
+    },
+    {
+        "Comments": "",
+        "Name": "Lightning Ceremony",
+        "real_id": "908",
+        "id": 900
+    },
+    {
+        "Comments": "",
+        "Name": "Tree of Life",
+        "real_id": "909",
+        "id": 901
+    },
+    {
+        "Comments": "",
+        "Name": "Tenga Rock",
+        "real_id": "910",
+        "id": 902
+    },
+    {
+        "Comments": "",
+        "Name": "Khormian Brandy",
+        "real_id": "911",
+        "id": 903
+    },
+    {
+        "Comments": "",
+        "Name": "Malkhani Insurrections",
+        "real_id": "912",
+        "id": 904
+    },
+    {
+        "Comments": "",
+        "Name": "Meknek",
+        "real_id": "913",
+        "id": 905
+    },
+    {
+        "Comments": "",
+        "Name": "Bunta",
+        "real_id": "914",
+        "id": 906
+    },
+    {
+        "Comments": "",
+        "Name": "Ascension",
+        "real_id": "915",
+        "id": 907
+    },
+    {
+        "Comments": "",
+        "Name": "Tr\u00e0kata",
+        "real_id": "916",
+        "id": 908
+    },
+    {
+        "Comments": "",
+        "Name": "Rakmelon",
+        "real_id": "917",
+        "id": 909
+    },
+    {
+        "Comments": "",
+        "Name": "Gotis",
+        "real_id": "918",
+        "id": 910
+    },
+    {
+        "Comments": "",
+        "Name": "Polycarbonate",
+        "real_id": "919",
+        "id": 911
+    },
+    {
+        "Comments": "",
+        "Name": "Transparasteel",
+        "real_id": "920",
+        "id": 912
+    },
+    {
+        "Comments": "",
+        "Name": "Chalcopyrite",
+        "real_id": "921",
+        "id": 913
+    },
+    {
+        "Comments": "",
+        "Name": "A-300 Blaster Rifle",
+        "real_id": "922",
+        "id": 914
+    },
+    {
+        "Comments": "",
+        "Name": "Duramentium",
+        "real_id": "923",
+        "id": 915
+    },
+    {
+        "Comments": "",
+        "Name": "Chrodium",
+        "real_id": "924",
+        "id": 916
+    },
+    {
+        "Comments": "",
+        "Name": "Grim Rose",
+        "real_id": "925",
+        "id": 917
+    },
+    {
+        "Comments": "",
+        "Name": "Barelia Flower",
+        "real_id": "926",
+        "id": 918
+    },
+    {
+        "Comments": "",
+        "Name": "Quadanium",
+        "real_id": "927",
+        "id": 919
+    },
+    {
+        "Comments": "",
+        "Name": "Bofa Fruit",
+        "real_id": "928",
+        "id": 920
+    },
+    {
+        "Comments": "",
+        "Name": "Gorlap Egg",
+        "real_id": "929",
+        "id": 921
+    },
+    {
+        "Comments": "",
+        "Name": "Japor wood",
+        "real_id": "930",
+        "id": 922
+    },
+    {
+        "Comments": "",
+        "Name": "Journal of the Wheels",
+        "real_id": "931",
+        "id": 923
+    },
+    {
+        "Comments": "",
+        "Name": "Phirmist",
+        "real_id": "932",
+        "id": 924
+    },
+    {
+        "Comments": "",
+        "Name": "Klikklak",
+        "real_id": "933",
+        "id": 925
+    },
+    {
+        "Comments": "",
+        "Name": "Dirtrag Academy",
+        "real_id": "934",
+        "id": 926
+    }
+]

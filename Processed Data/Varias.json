@@ -1,0 +1,4132 @@
+[
+    {
+        "name": "Black Melon",
+        "id": "103bad5f-bbdc-4e27-a456-2e385d95b6ba"
+    },
+    {
+        "name": "Geonosis Queen Egg",
+        "id": "90a20777-b9e5-4e30-aa2a-7283d57f32d0"
+    },
+    {
+        "name": "Sonic Blaster",
+        "id": "5e865aab-1181-4151-ad41-0247055e8093"
+    },
+    {
+        "name": "Meiloorun",
+        "id": "5ed8a115-14f7-4040-b6a0-631311ba9f61"
+    },
+    {
+        "name": "Ray Shield",
+        "id": "9e41418c-3654-4397-9b39-05682ffba926"
+    },
+    {
+        "name": "Clone Army",
+        "id": "38bf67b2-8089-4a7c-b848-785d11ccaf03"
+    },
+    {
+        "name": "Trillia Massacre",
+        "id": "a463545d-7740-4792-bbdf-70a4f353fede"
+    },
+    {
+        "name": "Dejarik",
+        "id": "406cb193-85e9-4170-8bd9-5477b2b0b59f"
+    },
+    {
+        "name": "Galactic Standard Time",
+        "id": "27152913-6ddc-4ecf-88f9-fb2d4ed18e10"
+    },
+    {
+        "name": "War Mantle",
+        "id": "d8cda7da-6118-4c79-b744-a15c2eded036"
+    },
+    {
+        "name": "Cluster-Prism",
+        "id": "739d6590-5750-4d08-a241-ee9060285162"
+    },
+    {
+        "name": "Black-Saber",
+        "id": "a802cdca-4a1e-4aa0-b68b-492a47ab7960"
+    },
+    {
+        "name": "Hyperspace Tracking",
+        "id": "f615414b-68a5-4fc5-a749-a324795a5d11"
+    },
+    {
+        "name": "Hyperfuel",
+        "id": "1bdf361b-73bb-4a34-9df8-9bd45f03aa79"
+    },
+    {
+        "name": "Han's Dice",
+        "id": "f857b6e9-b8f0-4316-81e7-c646dfcb28ed"
+    },
+    {
+        "name": "Sabacc",
+        "Comments": "A variation of the game use dices.",
+        "id": "b3589dd3-92ff-45de-9a95-78fd77cde1b7"
+    },
+    {
+        "name": "Coaxium",
+        "id": "15881a12-6c26-4b90-89c3-c35e70882802"
+    },
+    {
+        "name": "Valachord",
+        "id": "a6b19a2f-7e1f-4808-9caf-950eb928f8c6"
+    },
+    {
+        "name": "Vos' Weapon",
+        "id": "1fa662a8-7113-4413-a5c7-99257d73fd0b"
+    },
+    {
+        "name": "Mandalorian Armor",
+        "id": "cf87c6fd-13de-4a9a-b044-8e45d29b8574"
+    },
+    {
+        "name": "Teräs Käsi",
+        "id": "2e1d384b-ae9a-4826-8054-ab58a15403f7"
+    },
+    {
+        "name": "Calrissian Chronicles",
+        "id": "f92d9fe1-f46c-4cc2-ab9d-8932287eac2e"
+    },
+    {
+        "name": "Savareen Brandy",
+        "id": "a7627451-b30f-40ca-b8e1-eabd9fc846c7"
+    },
+    {
+        "name": "Lucky Trophy",
+        "id": "2bc5d4be-b539-4ad7-b59e-2a8cc680859d"
+    },
+    {
+        "name": "Mechanic's Academy",
+        "id": "684b7f33-d76e-430e-a6c3-908f05caf7e4"
+    },
+    {
+        "name": "Aurodium",
+        "id": "27092339-01e9-4c48-9645-0196ee5a5ffd"
+    },
+    {
+        "name": "Acceleration compenser",
+        "id": "c2255d7f-2ec5-446f-b445-00acf1990973"
+    },
+    {
+        "name": "Backward Tailslide",
+        "id": "000ad343-7a5d-476e-9950-ff625462ac6a"
+    },
+    {
+        "name": "Gold",
+        "id": "5991c9de-e95d-488a-945a-a5f0c84dbaed"
+    },
+    {
+        "name": "Mythra",
+        "id": "4adc3e58-588c-423a-9cd8-d416bd591aef"
+    },
+    {
+        "name": "Spice",
+        "id": "e696cbc1-858c-4491-b65d-3a72659912ee"
+    },
+    {
+        "name": "Kyber Crystal",
+        "id": "27cf5944-4493-4185-b2ba-7f15b439bd73"
+    },
+    {
+        "name": "CoMar Tri-Tracking Chip",
+        "id": "62441fe0-4033-4162-8116-80737f067bd3"
+    },
+    {
+        "name": "Flight Simulator Squadron (all 3)",
+        "id": "ba472d1b-bf1a-435e-8bdd-01d91b6cea6f"
+    },
+    {
+        "name": "Sublight Star !!?!?",
+        "id": "280cef23-ce4e-4db9-bc6f-50134e43ecb7"
+    },
+    {
+        "name": "Podracer",
+        "id": "bc96ba68-1f1d-4887-bbab-f97093e134cd"
+    },
+    {
+        "name": "Jedi Code",
+        "id": "4b6b2e07-2652-4738-8e35-e048666ce9bb"
+    },
+    {
+        "name": "Kloo Horn",
+        "Comments": "Musical Instrument",
+        "id": "808add07-8406-4301-b726-a96fdd506ecb"
+    },
+    {
+        "name": "Kohlen crystals",
+        "id": "114e44a7-e2c3-40ab-b700-7f4e5ef350c7"
+    },
+    {
+        "name": "Bacta",
+        "id": "7db51738-df58-423e-adb4-5b518760288a"
+    },
+    {
+        "name": "Meryx (Gemstone)",
+        "id": "c111170c-dc97-4a96-b5a3-90bbd29f16e2"
+    },
+    {
+        "name": "Mustafar Fire Diamond",
+        "id": "cb2cdfe4-1df8-4f9b-b47a-9b6162bd33fe"
+    },
+    {
+        "name": "Protocol 13",
+        "id": "2329e784-c7b0-44b3-8d41-95baf8a4b0ae"
+    },
+    {
+        "name": "Grav-Ball",
+        "id": "6231898b-4103-4e32-a30e-3ceddf8dbce7"
+    },
+    {
+        "name": "Bounty Hunter (Guild)",
+        "id": "668c6930-164a-4e66-b0ef-4f6e70f7c088"
+    },
+    {
+        "name": "ComScan",
+        "id": "177c152f-072e-482e-ac8c-3399df95239b"
+    },
+    {
+        "name": "Holocron Memory Crystal",
+        "id": "e84f85d5-8f2c-47df-9933-ecebe825969f"
+    },
+    {
+        "name": "XC-33 (Torture)",
+        "id": "1834b935-1db4-4d02-93e3-4f61437cf92a"
+    },
+    {
+        "name": "Meiloorun Juice",
+        "id": "571bc77b-1b75-471a-891c-a96feb726fa2"
+    },
+    {
+        "name": "Karlini Silk",
+        "id": "2ffad907-91c8-42b3-8dbd-7c0ff84af1f1"
+    },
+    {
+        "name": "Chinar Tree",
+        "id": "a574741c-70ec-4d3e-946a-ddf58c9b5b4e"
+    },
+    {
+        "name": "TriNebulon News",
+        "id": "b22ac6ae-cb3c-4041-9ed1-3324fec7ca3d"
+    },
+    {
+        "name": "Crystal Skull",
+        "id": "1180a62e-9058-4ca9-835a-f84bb2065fcd"
+    },
+    {
+        "name": "Sith Holocron",
+        "id": "9fac5663-0cbb-47c1-9bea-bb218a4bdea5"
+    },
+    {
+        "name": "Chatterplants",
+        "id": "fb6f2060-4d30-4451-83df-c1464fe06e86"
+    },
+    {
+        "name": "Farkiller",
+        "id": "b1ea095f-81b1-4150-b960-962b0e822eef"
+    },
+    {
+        "name": "Shiriiwook",
+        "id": "c7689f6b-5ea0-4aa1-80d7-bc4411187242"
+    },
+    {
+        "name": "Kyber Crystal (La liste des enfants sensibles à la Force)",
+        "id": "36cb8a70-e2d7-4551-91f2-e7bf37c18408"
+    },
+    {
+        "name": "Starblossom (Nourriture)",
+        "id": "f3478407-d78c-41b2-a8d3-c0d23a44847d"
+    },
+    {
+        "name": "Electro-Proton Bomb",
+        "id": "b2d45c60-bee2-45eb-a922-a432cf0e5f8b"
+    },
+    {
+        "name": "Sith Holocron ?",
+        "id": "2a7100e4-4265-4930-95fa-c0918e234d22"
+    },
+    {
+        "name": "Wroshyr",
+        "id": "0ef1a593-3e53-4c26-9e0f-4e7ec1b342ea"
+    },
+    {
+        "name": "Bonshyyr",
+        "id": "474e7836-84b0-4bf4-9676-d7eeeeca9b95"
+    },
+    {
+        "name": "Clone Wars",
+        "id": "9b71e7f9-a61f-46b7-b724-f09f71d379da"
+    },
+    {
+        "name": "Healing Stim",
+        "id": "f1d331ff-8160-4fd0-a84d-834f25783c22"
+    },
+    {
+        "name": "Potolli-Weave Fabric",
+        "id": "2404bf21-69f8-4158-9369-4440b349d98f"
+    },
+    {
+        "name": "Project Augur",
+        "id": "d95de970-e13e-4789-9d9b-6d351e0aee8e"
+    },
+    {
+        "name": "Tomb Guardian",
+        "id": "374b55a0-d7b9-404b-a7f7-d5494c27ba2e"
+    },
+    {
+        "name": "Bloody Rancor",
+        "id": "784cce5b-7405-4828-9ce5-c255b0d6180a"
+    },
+    {
+        "name": "Doonium",
+        "id": "caa09b07-03e5-40f3-a7ad-0ea7a69929e0"
+    },
+    {
+        "name": "Ruuscan Song",
+        "id": "9b61e266-41cb-4a3b-b0f4-2aac4184e28f"
+    },
+    {
+        "name": "Numian cream",
+        "id": "39fc5d1f-39d2-4bcb-a64a-308f2a04eb9c"
+    },
+    {
+        "name": "F-11D Blaster Rifle",
+        "id": "7acb5c1f-8d21-4769-a2ae-2fe749e0eb02"
+    },
+    {
+        "name": "Tibanna Gas",
+        "id": "8a9b7592-3ef3-44af-ad72-476b993c634a"
+    },
+    {
+        "name": "Storm \"X'us'R'iia\"",
+        "id": "9f745b98-0e9e-417a-b0ba-d3ae98405be9"
+    },
+    {
+        "name": "God R'iia",
+        "id": "c5fadce4-8d22-477b-ae75-b20e3130bb04"
+    },
+    {
+        "name": "Operation: Mynock Bite",
+        "id": "0cd0d26d-5b26-473c-8aba-2404196e2775"
+    },
+    {
+        "name": "Galactic Concordance",
+        "id": "fdd9395c-af46-4b7d-9176-1110a1ce1112"
+    },
+    {
+        "name": "Myomar Academy",
+        "id": "c4e720b6-225d-4088-bf97-d23fabbc4b6c"
+    },
+    {
+        "name": "Sy Bisti",
+        "id": "e688c990-1229-40d6-8954-b620e81b5dde"
+    },
+    {
+        "name": "Red Bype",
+        "id": "388c40c7-810f-4a8b-b128-9db7f29394dd"
+    },
+    {
+        "name": "Highland Challenge",
+        "id": "e0299e29-0348-41fb-b43c-1231912b2724"
+    },
+    {
+        "name": "Skystrike Academy",
+        "id": "e42f87e6-f94c-4080-8ac2-e8917c185141"
+    },
+    {
+        "name": "Raithal Academy",
+        "id": "5e864daa-82da-4414-b0f2-48c80621d2c3"
+    },
+    {
+        "name": "Swirlydips (Beverage)",
+        "id": "d528f08f-e325-4974-a01a-ad88b82c0024"
+    },
+    {
+        "name": "Polstine Spice",
+        "id": "1217816b-7b14-49cb-9fd0-ab8cab4dcd47"
+    },
+    {
+        "name": "Iridium",
+        "id": "b6d41975-409a-4fbf-ab8f-616f49c1849d"
+    },
+    {
+        "name": "Scarn",
+        "id": "239cc604-7b83-4dcf-adbc-493aeeb98d39"
+    },
+    {
+        "name": "Shusugaunt",
+        "id": "84712501-435e-471c-813c-c60d6795ac75"
+    },
+    {
+        "name": "Marleyvane shipyards",
+        "id": "df990abf-ab61-4a24-95fb-78e01b3e77d5"
+    },
+    {
+        "name": "Gravity Lock",
+        "id": "9ad49135-d60a-4d49-a401-0abaebdca9bf"
+    },
+    {
+        "name": "Third Battle of Mygeeto",
+        "id": "637edbaa-feb1-4837-aa97-54be986af84d"
+    },
+    {
+        "name": "Ashla",
+        "id": "261f1de7-a2d0-4b8e-85d9-b779efcc6aa3"
+    },
+    {
+        "name": "Bo-Rifle",
+        "id": "5161ab97-47ee-4ca8-b3fb-18a437e88702"
+    },
+    {
+        "name": "Clouzon-36",
+        "id": "4d7236d1-d684-433f-8285-5b7b6557086c"
+    },
+    {
+        "name": "Boosahn Keeraw",
+        "id": "0149acdf-4857-4f26-8623-44a0d0ba19d3"
+    },
+    {
+        "name": "Form IV",
+        "id": "a28a81c9-d2bf-4b59-b4f3-41fe290f9d06"
+    },
+    {
+        "name": "\"Old Tongue\"",
+        "id": "00dc352b-eb9c-4798-b6dc-bfec0c9da5a3"
+    },
+    {
+        "name": "The scourge of Malachor",
+        "id": "b5d1df6f-8881-497c-9d20-6d85a831b693"
+    },
+    {
+        "name": "Crossguard Lightsaber",
+        "id": "fb0fff95-f1e2-473e-8379-09f3bdd733de"
+    },
+    {
+        "name": "Sentient 7 and the Clankers (Live band)",
+        "id": "a1ff5af3-1c3d-4f63-86ff-b8a541616528"
+    },
+    {
+        "name": "Surabat grain",
+        "id": "41c542ce-5f66-4284-ae8d-a0332bf71ddf"
+    },
+    {
+        "name": "Oshiran sapphires",
+        "id": "4ed89fd0-00f2-4bca-a938-765b8949a6c9"
+    },
+    {
+        "name": "Topato Stew",
+        "id": "71fb9a03-8430-4c53-beb3-8b97fd839f69"
+    },
+    {
+        "name": "Frinn Mak Traveling Circus",
+        "id": "1b26a845-e6af-421f-9180-240eb435fcaa"
+    },
+    {
+        "name": "Teklada (mathematical language",
+        "id": "6d20e752-8cd0-4241-b85e-71b6eec6a866"
+    },
+    {
+        "name": "Bogan",
+        "id": "5a810f68-f22e-4eeb-9cd6-dd424eb2f36d"
+    },
+    {
+        "name": "Jedi Holocron",
+        "id": "b776663c-c06b-4fcd-a486-9daeae6d675a"
+    },
+    {
+        "name": "Holonet",
+        "id": "714a3f3c-e635-46da-9bab-cb17719edba8"
+    },
+    {
+        "name": "Huttese",
+        "id": "c3500036-681a-4e4f-8cd6-a34a2343465e"
+    },
+    {
+        "name": "Jawa Trade Language",
+        "id": "d53c30b7-b9e7-4e44-82c1-b58cf1fab1f0"
+    },
+    {
+        "name": "Meese Caulf",
+        "id": "84c48363-88c9-48db-8d79-05946ccb0191"
+    },
+    {
+        "name": "Cheunh",
+        "id": "18fc738a-317d-4453-9246-2e287da4979e"
+    },
+    {
+        "name": "Batuu Brew",
+        "id": "6f62e80b-07d8-441e-aa35-186e78c9f0f7"
+    },
+    {
+        "name": "Black Spire Brew",
+        "id": "937badc0-6a28-4912-a98e-a69f114a66a8"
+    },
+    {
+        "name": "Blurggfire",
+        "id": "b5646b36-932a-4fcd-95c9-5cde85753751"
+    },
+    {
+        "name": "Toniray White",
+        "id": "96557256-5d36-41a0-a97b-326ee4ac7200"
+    },
+    {
+        "name": "Andoan White",
+        "id": "c4ec1fe8-ef4d-40ff-9f66-be56bb313b6d"
+    },
+    {
+        "name": "Moogan Tea",
+        "id": "657494ff-2104-49de-93cb-2f0e3789a6d2"
+    },
+    {
+        "name": "Tevraki Whiskey",
+        "id": "d3edff84-eb8d-4934-9054-a394057300a7"
+    },
+    {
+        "name": "Quadranium",
+        "id": "b13fbaa4-859b-4a84-a7bc-68128bc00348"
+    },
+    {
+        "name": "Cortosis",
+        "id": "2ea01c2b-1829-46a0-99bf-24b5c72c40f0"
+    },
+    {
+        "name": "ELG-3A blaster Pistol",
+        "id": "28d4d543-b979-4b45-936d-02021b57ec3b"
+    },
+    {
+        "name": "S-5 Security grade blaster/ascension gun",
+        "id": "53d45eae-4854-4d9d-9be0-65a4bbdfe0e9"
+    },
+    {
+        "name": "DL-18",
+        "id": "abb34394-de58-4577-9ce0-9334a7aec600"
+    },
+    {
+        "name": "DLT-19",
+        "id": "7f0b4b11-5f4e-4973-b3f5-b58cf284a75a"
+    },
+    {
+        "name": "Interstel Systems",
+        "id": "aa354940-7832-4ede-92f2-2e7fb27f3b49"
+    },
+    {
+        "name": "Kalikori",
+        "id": "917c0c05-30b1-448a-9f67-ce6446fade15"
+    },
+    {
+        "name": "Carbonite Freezing",
+        "id": "12fe412b-5eed-4822-bc1d-dcb560896741"
+    },
+    {
+        "name": "Marg Sabl",
+        "id": "7a23e6bc-b59a-484a-830d-4a283e4e2fc9"
+    },
+    {
+        "name": "Darksaber",
+        "id": "2b1853ba-a187-43cf-bf5c-bbdb36ed0420"
+    },
+    {
+        "name": "E-Web Blaster",
+        "id": "8f1a3ef2-2412-4059-8cac-f71beda7b498"
+    },
+    {
+        "name": "Mandalorian Art",
+        "id": "a2b88a06-5a28-4c46-8075-a90bec5cc801"
+    },
+    {
+        "name": "Jedi Sentry mask",
+        "id": "926cc48c-943e-434e-bbd9-37f0a03c5287"
+    },
+    {
+        "name": "Temple of the Kyber",
+        "id": "897d88f3-3bf4-45a3-9c71-e058a153d1ce"
+    },
+    {
+        "name": "Sword of Khashyun",
+        "id": "d7daaddc-fb5d-401f-aae8-260c719ce107"
+    },
+    {
+        "name": "Sith Temple",
+        "id": "591ca17d-904a-440d-b894-90cb7f92795d"
+    },
+    {
+        "name": "Nightsisters Altar",
+        "id": "bca07cb6-d910-4557-bb3b-8dbeec6d1b22"
+    },
+    {
+        "name": "Mandalorian Vambraces",
+        "id": "64746075-88cc-42cb-acb8-5de18894a2e9"
+    },
+    {
+        "name": "Mando'A",
+        "id": "8b62d5d8-95c8-4c01-9fb1-c2632ef55d8c"
+    },
+    {
+        "name": "Indy's Fedora",
+        "id": "c5e90e21-f65b-4185-97f6-d7d70ed08dab"
+    },
+    {
+        "name": "Fulcrum",
+        "id": "73c1f7e4-d6bb-417a-bc99-c5fcf6e21f99"
+    },
+    {
+        "name": "Imperial Senate",
+        "id": "7ce431c8-1385-4516-9b02-3060b91bb475"
+    },
+    {
+        "name": "\"Sleemo\"",
+        "id": "c26669c9-45fd-4e65-9802-eda1e91dd88c"
+    },
+    {
+        "name": "The Duchess",
+        "id": "2862c967-e07b-42ef-8d9c-b0a399482804"
+    },
+    {
+        "name": "Pre-exile Masters (artistes)",
+        "id": "8a76a88f-ebb8-4fbd-994c-56334941a084"
+    },
+    {
+        "name": "Beskar Alloy",
+        "id": "c7d11a5f-eae8-4d08-9f7d-df73196b5b08"
+    },
+    {
+        "name": "Carpo Spice",
+        "id": "85bdd497-92e9-497d-b963-36b0183b0457"
+    },
+    {
+        "name": "Stardust",
+        "id": "93ce26d5-92af-4f36-b1d8-2efe2e4f9817"
+    },
+    {
+        "name": "Magnetic Climbers",
+        "id": "f54292f7-6759-4f74-a875-8430e2fafaf2"
+    },
+    {
+        "name": "Mortis Gods",
+        "id": "0837ccb5-94df-4d50-bc5a-0a7bfa2f36c4"
+    },
+    {
+        "name": "Joopa Base",
+        "id": "85839805-4676-4870-9409-e1365d5ee3e5"
+    },
+    {
+        "name": "Third Sight",
+        "id": "a883441a-ae60-4490-aede-aff08a9e341c"
+    },
+    {
+        "name": "DLT-20A",
+        "id": "e9b96db2-fb7d-4a79-849f-f4cfcfbe27f2"
+    },
+    {
+        "name": "E-11",
+        "id": "4be85e29-8f64-49e3-a1cf-edad4529718e"
+    },
+    {
+        "name": "A280",
+        "id": "e6599af9-91c3-4438-8d38-ccf4e8f04813"
+    },
+    {
+        "name": "TL-50",
+        "id": "66ae0909-df1e-4a25-9657-aff02c6a16a9"
+    },
+    {
+        "name": "A280-CFE",
+        "id": "7cf5dca9-0f77-42ea-963c-a14ef5bef10c"
+    },
+    {
+        "name": "DLT-19X",
+        "id": "d5558c7b-73ca-4e7f-b15e-a73466a0cef6"
+    },
+    {
+        "name": "RK-3",
+        "id": "b77efbad-80ef-499a-9201-a38d27a2dfee"
+    },
+    {
+        "name": "Blurrg-1120",
+        "id": "63f3a0b0-3404-4040-88cb-cc23c88b8d61"
+    },
+    {
+        "name": "LD-65",
+        "id": "23d8a110-f43f-4e25-a614-9395feca8b95"
+    },
+    {
+        "name": "Operation Cinder",
+        "id": "61bec390-c368-43b7-b4a0-537ca4931502"
+    },
+    {
+        "name": "Compass",
+        "id": "b7c81e90-2a1b-44f5-8c4e-0331c74cddb1"
+    },
+    {
+        "name": "Sunspot Prison",
+        "Comments": "Prison used by the Rebel Alliance",
+        "id": "195fc198-5139-46d6-a47a-d4640be83540"
+    },
+    {
+        "name": "Parkellan Swing",
+        "id": "ce230d94-b923-495c-a715-e311637c6a47"
+    },
+    {
+        "name": "Cubikahd",
+        "id": "c1c55899-bfa2-47bb-b01c-fe2085796013"
+    },
+    {
+        "name": "Merenzane Gold",
+        "id": "ad0026eb-125b-416c-8926-95d695cb95ce"
+    },
+    {
+        "name": "Kyber Statue",
+        "id": "e5d9552e-58e3-4a05-b2fa-8c0d19b4c510"
+    },
+    {
+        "name": "Ki-Adi-Mundi's Lightsaber",
+        "id": "db7a0894-619d-4c15-b949-7fd97c4f83cb"
+    },
+    {
+        "name": "Bounty Hunter's Code",
+        "id": "3e7684f6-cc3d-453b-bd4e-d11aeb1ccb45"
+    },
+    {
+        "name": "Thermal Detonator",
+        "id": "1a08b651-671e-4114-9d1a-15f8b4b05789"
+    },
+    {
+        "name": "Jedi Mind Trick",
+        "id": "d76e9e0b-27e2-4498-afaf-f8c4d2afdd19"
+    },
+    {
+        "name": "Special Adjutant's Helmet",
+        "id": "faf13e8b-e983-4aff-80af-e61b7dd0bde0"
+    },
+    {
+        "name": "Morogian snap plants",
+        "id": "09b5e365-875b-46c2-a01d-01191475517d"
+    },
+    {
+        "name": "Old Mandalorian Mask",
+        "id": "1d3882ce-5837-418e-8be0-f3ad40fe7b14"
+    },
+    {
+        "name": "Clone Trooper Armor",
+        "id": "e42b3e7d-0965-4db5-b969-e39f4e403a64"
+    },
+    {
+        "name": "Clone",
+        "id": "6737d4a3-12e1-4168-a552-234d6f6da097"
+    },
+    {
+        "name": "Project Swarm",
+        "id": "d5f0b614-1d7c-4df6-bdbb-11a8c8373b8e"
+    },
+    {
+        "name": "GX Engine",
+        "id": "7f165d92-f4ef-4976-84a7-cb9d2eee5f70"
+    },
+    {
+        "name": "Balarian Pie",
+        "id": "a407fb92-d79b-407b-b7c0-cd09012900d1"
+    },
+    {
+        "name": "Phase Connector",
+        "id": "6f7f5c5f-136c-4a71-b388-8d9f93941fd4"
+    },
+    {
+        "name": "Droid Popper",
+        "id": "c15f5b25-edef-45f3-95d6-3a83a5979040"
+    },
+    {
+        "name": "Echo Horn",
+        "id": "14ba6f08-0258-48a3-9d20-1c941b865e91"
+    },
+    {
+        "name": "Xinda Flower",
+        "id": "4c31f312-0850-496f-86e2-a7b3749c0339"
+    },
+    {
+        "name": "Commerce Treaty of 1647",
+        "id": "33ec0bbc-222b-4097-b7a2-474e6a12c57d"
+    },
+    {
+        "name": "Icon of the Moon Goddess",
+        "id": "70ebf08d-b3bf-4025-adcf-133ef54e0248"
+    },
+    {
+        "name": "Widowmaker?",
+        "id": "c1642dce-e5fb-43b4-9a76-7f44d6dd89cf"
+    },
+    {
+        "name": "Electronet",
+        "id": "5ed43c2d-964e-486d-9737-07f67925718c"
+    },
+    {
+        "name": "Torture Web",
+        "id": "01ad8bea-60a6-4e6a-bf36-6797776aea44"
+    },
+    {
+        "name": "Tarkin Initiative",
+        "id": "44269d89-457b-4290-8304-1fbcf8e9cc80"
+    },
+    {
+        "name": "Cirilian Sour Pastes",
+        "id": "bc8b3062-bb11-4b3d-9cb0-d107f7db67bf"
+    },
+    {
+        "name": "Iridian Plague",
+        "id": "b23d00d9-6bef-4c52-b480-cd3a79657010"
+    },
+    {
+        "name": "Hundred-Year Darkness",
+        "id": "9d75bb5a-688f-4caa-ab8d-bcb0ef915a4e"
+    },
+    {
+        "name": "Jogan Fruit",
+        "id": "7bfebf4c-84ba-42af-9e47-2016afb9a069"
+    },
+    {
+        "name": "Life Day",
+        "id": "3c9c53bc-77e5-4fab-8b31-e729b118af83"
+    },
+    {
+        "name": "Calamari Flan",
+        "id": "79508697-f507-414d-a79d-dee1160bbe03"
+    },
+    {
+        "name": "Credit Disk",
+        "id": "8599c490-51a7-4ecc-b9ff-443e4eadb692"
+    },
+    {
+        "name": "Way of the Mandalore",
+        "id": "6638ebd5-a858-4c5e-af02-9353b8eeb1e9"
+    },
+    {
+        "name": "Voxx Vortex 5000",
+        "id": "fa167413-1a9d-43de-a9e6-432fbf817455"
+    },
+    {
+        "name": "Computer Spike",
+        "id": "0df88c11-b5a1-4dda-82b2-f4f4d7ea162e"
+    },
+    {
+        "name": "Trans-binary Deflector",
+        "id": "d340caf8-6d80-4e5c-8d17-fc27d830e486"
+    },
+    {
+        "name": "Five Sabers",
+        "id": "3b0c3350-79a1-46dd-b113-45cb46b684db"
+    },
+    {
+        "name": "Detraxing",
+        "id": "767118ba-b0c9-4681-9a50-b6e29d878a44"
+    },
+    {
+        "name": "Pazaak",
+        "id": "8c75411c-37d1-410f-b75c-3f6d2a2e7cc4"
+    },
+    {
+        "name": "Shield Generator",
+        "id": "c1b35f43-3011-4932-a169-b11d264ff3b1"
+    },
+    {
+        "name": "Force Tree on the Jedi Temple",
+        "id": "a38f42c6-3665-4e97-8096-1e3114932af8"
+    },
+    {
+        "name": "Battle of Mon Cala (Clone Wars)",
+        "id": "66609bd3-c952-45e6-9f6f-53fc51c7fe58"
+    },
+    {
+        "name": "Bacta Tank",
+        "id": "e64f97bc-e035-4b6a-bae3-8a4d66b635e0"
+    },
+    {
+        "name": "Force",
+        "id": "fde852fa-4173-4749-87c2-650d8d956848"
+    },
+    {
+        "name": "B'hedda",
+        "Comments": "Famed Dug Weapon",
+        "id": "c97ed560-a62b-4f0d-a536-43454ccf8b57"
+    },
+    {
+        "name": "Batuuan Spira",
+        "Comments": "Monnaie",
+        "id": "cc643ea8-be39-48bb-9005-9e59ccf69831"
+    },
+    {
+        "name": "Caraya's Soul",
+        "Comments": "Juron",
+        "id": "d1860036-247c-458e-8061-fef60de14a51"
+    },
+    {
+        "name": "Cracek",
+        "Comments": "Langue des Mountain Nikto",
+        "id": "fe83f619-39a3-4d63-8c00-ae7fb6bfbcc9"
+    },
+    {
+        "name": "Growdi harmonique",
+        "Comments": "Instrument dans ROTJ",
+        "id": "ec17addb-f820-4b0a-91ee-718f70d0a662"
+    },
+    {
+        "name": "Horntooters",
+        "Comments": " Beverage",
+        "id": "7e82c930-5794-420e-8f1c-bcc2534992b4"
+    },
+    {
+        "name": "Nysillum",
+        "Comments": "One of the most valuable crop in the galaxy",
+        "id": "d0ae2730-99e3-49eb-a4e9-93d8c6ca27be"
+    },
+    {
+        "name": "\"The Hammer of Ryloth\"",
+        "Comments": "Chanson",
+        "id": "33710187-e02a-42b1-aec2-3648f3b07600"
+    },
+    {
+        "name": "Tusken Wind",
+        "Comments": "Breuvage sacré pour les Tusken Raiders",
+        "id": "9d56b46d-b0ef-435c-916f-a6039f10b732"
+    },
+    {
+        "name": "Level 1313",
+        "id": "58ab1435-ec7e-4fef-8c9e-dee1fe3b7fed"
+    },
+    {
+        "name": "Comlink",
+        "id": "1b81c889-259b-4a63-b9b9-1131205795e0"
+    },
+    {
+        "name": "Vibroaxe",
+        "id": "3d2dd4d0-5f66-4732-a795-96990918623f"
+    },
+    {
+        "name": "Blatterborn",
+        "id": "222082ec-1708-4ae9-9c00-8ba7fad6f358"
+    },
+    {
+        "name": "Zucca",
+        "Comments": "Food",
+        "id": "f24cd8d5-c059-47e3-9522-e08fe15ab02c"
+    },
+    {
+        "name": "Marcan Pipes",
+        "id": "3ba1f2ca-b228-46a8-8efe-ca2712baea2a"
+    },
+    {
+        "name": "Borstel RG-9",
+        "id": "4e4bd87f-05f0-4fdf-a26a-b519332e9b92"
+    },
+    {
+        "name": "Ion Cannon",
+        "id": "e7fa68e5-e701-4c90-9e67-e15da1191bf2"
+    },
+    {
+        "name": "ST2 Missiles",
+        "id": "68186568-626c-4fc4-a5ca-a7cb313ad9f3"
+    },
+    {
+        "name": "Corellian Wine",
+        "id": "b9ab2bf6-5409-4a7b-b20b-88a6cc39cdbd"
+    },
+    {
+        "name": "High Republic Era",
+        "id": "4201afa5-966d-4f99-8fd9-9922e1f8a25f"
+    },
+    {
+        "name": "Jocasta Nu's cache",
+        "id": "4030f5e3-1a10-4a8b-bb05-4f9fd7654ecf"
+    },
+    {
+        "name": "Dedlanite",
+        "id": "fd3a36a0-5d29-421e-b83b-1b850a7dda90"
+    },
+    {
+        "name": "Energy Axe",
+        "id": "725df0e0-00f7-4f35-86c5-f40bd3710cd0"
+    },
+    {
+        "name": "Dragon Void Run",
+        "Comments": "Oldest, most dangerous race in the galaxy",
+        "id": "53a51e2a-7010-498c-84af-f2a7d4801279"
+    },
+    {
+        "name": "Q-2 Blaster Pistol",
+        "id": "f0ce03e7-12e5-4c83-9d8f-71e569b46f54"
+    },
+    {
+        "name": "Doza Dive",
+        "Comments": "Manoeuvre de Torra et Venisa Doza",
+        "id": "49f98dc0-8021-4cbb-a49c-76a5a22e88f0"
+    },
+    {
+        "name": "Operation Starlight",
+        "id": "4ba69582-77c2-4322-8fce-e02c977769e7"
+    },
+    {
+        "name": "Magick",
+        "id": "5646f2e9-ce0e-4205-bd29-5ceae2424129"
+    },
+    {
+        "name": "Flash Grenade",
+        "id": "503794bb-067f-46e9-9478-ce9df25ec7e9"
+    },
+    {
+        "name": "Order 66",
+        "id": "ab13a390-2606-4b2b-9b6d-b3dfbf581057"
+    },
+    {
+        "name": "Gatalentan tea",
+        "id": "657d7c47-a41b-4163-be8a-c5eff077fa22"
+    },
+    {
+        "name": "Tuusah",
+        "Comments": "Has medicinal properties.",
+        "id": "174c8007-81e1-42a2-b429-1e17ac0bbedd"
+    },
+    {
+        "name": "Carruthian Brandy",
+        "id": "33ca0adb-314f-4b28-8d46-f05b0595249d"
+    },
+    {
+        "name": "Cardekkia cheese",
+        "id": "c64879b3-cbc4-4609-9f7a-60b36a8238b2"
+    },
+    {
+        "name": "Empire Day",
+        "id": "4cf57e50-3d8d-47d7-b5a7-1fbc6b8c2a00"
+    },
+    {
+        "name": "Mandalorian Xenotox",
+        "id": "08802046-2d47-4179-a1f3-0dd6b859e5ce"
+    },
+    {
+        "name": "Duranium",
+        "id": "3b72f6c2-20dd-40b6-bd16-5dce12aad9f4"
+    },
+    {
+        "name": "Zeyd Cloth",
+        "id": "8aea50a1-9e6a-4132-9b66-111d11390049"
+    },
+    {
+        "name": "Great Drought",
+        "Comments": "Sur Tatooine, entre 18 BBY et 0 ABY",
+        "id": "e92a66b7-d0e7-4af7-8648-0279da4c1463"
+    },
+    {
+        "name": "Bocce",
+        "id": "37b85780-ec5a-4d6c-b227-266dc9499d11"
+    },
+    {
+        "name": "Rising Prayer",
+        "id": "60d9bba8-5447-4b6e-84c8-2a57ef5fbd79"
+    },
+    {
+        "name": "Phrik",
+        "Comments": "Metallic Compound",
+        "id": "fc59b189-4ac5-4268-8345-1d73a73c502a"
+    },
+    {
+        "name": "Lithoporoite",
+        "id": "375dc2a1-e26a-4c99-b24e-4ad712ac63c2"
+    },
+    {
+        "name": "Titanium",
+        "id": "915e44c4-8994-49cb-987f-5957c2b4765d"
+    },
+    {
+        "name": "Triple-Zero Matrix",
+        "Comments": "Dates back to the Old Republic. Was locked down in quarantine  Resurrected with the Tarkin Initiative",
+        "id": "37f3d55f-6d5c-4555-b5ab-97b3f38c71ce"
+    },
+    {
+        "name": "Operation Upside",
+        "id": "d0346754-f6bd-4ab4-b938-bbebd43903ec"
+    },
+    {
+        "name": "Thorilide",
+        "Comments": "Material",
+        "id": "ba34cd43-052c-4102-98c8-72c1f4f26974"
+    },
+    {
+        "name": "Galaxy Beacon",
+        "Comments": "Holonet Channel, based on Hosnian Prime during the First order conflict.",
+        "id": "00ed6b54-8afc-47c2-ace5-4b7763e188fe"
+    },
+    {
+        "name": "Graff Archive",
+        "id": "225bfec3-f2c0-403d-81b0-092df569435d"
+    },
+    {
+        "name": "Rhydonium",
+        "id": "e506b166-8519-48b7-9d09-bf27d7b2d4fb"
+    },
+    {
+        "name": "Kazerath Device",
+        "id": "42194131-d00e-4f14-833a-d4e6648b5077"
+    },
+    {
+        "name": "Freitek Planetary Defense",
+        "id": "acdca8a0-47c4-4259-8259-745bf9077604"
+    },
+    {
+        "name": "DL-21",
+        "id": "1093fe59-8ae8-4306-bab9-df6e672c8587"
+    },
+    {
+        "name": "Irolunn",
+        "id": "0549710f-27c1-4756-9bc5-8c1b75f24aba"
+    },
+    {
+        "name": "University of Bar'leth",
+        "id": "e5645b4d-de7e-47c6-857d-90505f408cde"
+    },
+    {
+        "name": "Abersyn Symbiotes",
+        "Comments": "Abersyn symbiotes of Boothi XII  They're classified beyond quarantine. They have to be fed into a plasma furnace.  They can take over someone's brain stem.",
+        "id": "b8b149c8-0862-4ba4-b92f-fca3ce48c6e6"
+    },
+    {
+        "name": "Archaeoxenobiology",
+        "id": "ff9987e3-0f18-4270-88e8-d25a9707ed21"
+    },
+    {
+        "name": "Relby K-25 Blaster",
+        "id": "0802c03b-a3c4-4dc4-99a8-90906f4fc0c5"
+    },
+    {
+        "name": "F'nonc Horn",
+        "id": "a3717a8b-d53d-4966-bec5-479280648a3d"
+    },
+    {
+        "name": "SE-44C Blaster Pistol",
+        "id": "7fff8a9e-3298-4d2d-b9a4-a177abbcce1d"
+    },
+    {
+        "name": "Glie-44 Blaster Pistol",
+        "Comments": "Standard pistol of the Resistance",
+        "id": "85f86541-c428-4cc1-9b51-dd4dcd7471bd"
+    },
+    {
+        "name": "BlasTech EL-16",
+        "id": "a34b48af-013f-448b-9902-241537a27714"
+    },
+    {
+        "name": "Theed Conservatory",
+        "id": "3213bd80-f3c0-4c0a-9c81-203064ca7d7e"
+    },
+    {
+        "name": "Arbovellum",
+        "Comments": "Real paper",
+        "id": "8c942e13-1f1c-4939-bd7b-2c4ca88eae28"
+    },
+    {
+        "name": "Hallikset",
+        "Comments": "Musical stringed instrument, played by Sabé",
+        "id": "ca871914-aafe-4989-bd27-98a1023d0d97"
+    },
+    {
+        "name": "Hyper-Lag",
+        "Comments": "Jet lag of hyperspace",
+        "id": "524098c1-564f-4e60-be1a-a0b27e891b3e"
+    },
+    {
+        "name": "Gallo Mountain University",
+        "id": "bdcd0f0c-b96f-483b-9244-53f7a365f25e"
+    },
+    {
+        "name": "Jedi Texts",
+        "id": "916a67cd-17f2-4220-8832-4f5f2ed3cb2d"
+    },
+    {
+        "name": "Holo-Chess",
+        "id": "75464457-6abf-47b1-a8b6-ba2db5655022"
+    },
+    {
+        "name": "Citadel of Rur",
+        "id": "bae626da-fe1d-4802-939e-543261b18d78"
+    },
+    {
+        "name": "Domancion Accord",
+        "id": "fb39d3f3-0c5e-4d81-8cdb-277e9e0732e7"
+    },
+    {
+        "name": "Sonn-Blas FWMB-10",
+        "Comments": "Also known as Megablaster",
+        "id": "45c69e50-d5e8-4acf-9d71-0de79a44e79a"
+    },
+    {
+        "name": "Z6 Riot Control Baton",
+        "id": "f0ba8b37-e8af-4ee8-af20-3bd8f2cddf22"
+    },
+    {
+        "name": "Sonn-Blas SE-44C",
+        "Comments": "Blaster Pistol",
+        "id": "f267ab0c-04fa-4179-bf64-0b2f3719821d"
+    },
+    {
+        "name": "Sonn-Blas F-11D",
+        "Comments": "Blaster Rifle",
+        "id": "386eda5e-f068-4dae-bab6-6bac91c4ffbe"
+    },
+    {
+        "name": "LPA NN-14",
+        "Comments": "Blaster pistol",
+        "id": "0258988b-9d37-4520-89f6-45846bebdb57"
+    },
+    {
+        "name": "Sith Wayfinder",
+        "id": "c9fb1059-0a49-4e43-825e-53a40791ddaa"
+    },
+    {
+        "name": "Lightspeed Skipping",
+        "id": "ab1676f6-4cef-49b0-ad77-9b367eb499f8"
+    },
+    {
+        "name": "Hex Charm",
+        "id": "dacd6a1a-4c61-446f-8536-f47dcb641c18"
+    },
+    {
+        "name": "Ur-Tharn Processor",
+        "id": "beace449-db52-454a-af44-2eb8146251df"
+    },
+    {
+        "name": "Spavat",
+        "Comments": "Clothes",
+        "id": "bd131b01-bd47-432f-9177-e0b7c5f80532"
+    },
+    {
+        "name": "Polysatyr",
+        "id": "2d35c6f1-c440-4eb5-a038-df49aed1c7bd"
+    },
+    {
+        "name": "First Order Captain Mediallion",
+        "id": "74f86950-a7c8-4e41-a67f-2f9a2b33b928"
+    },
+    {
+        "name": "Tangoo Melon",
+        "id": "5736b75f-59ca-406a-ae9f-e66f26521917"
+    },
+    {
+        "name": "Cordaxian Ore",
+        "id": "7368c381-0cb2-4062-8f47-31fe3940b26d"
+    },
+    {
+        "name": "A99 Aquata Breather",
+        "id": "0e33c902-5af5-4626-a72c-d27c82c29f2d"
+    },
+    {
+        "name": "Kessel Run",
+        "id": "090d0bbb-5790-40f4-95d8-98f2dcca1e50"
+    },
+    {
+        "name": "Shadow University",
+        "id": "0b7263fb-3a2a-4e4e-91f9-a7ea6cb7562a"
+    },
+    {
+        "name": "Technopathy",
+        "id": "8dc5a8e2-9d0c-48b1-ad11-600b226e8d69"
+    },
+    {
+        "name": "Museum of Bar'leth",
+        "id": "6c84a3f1-21b5-428c-ac01-10508c70d0c2"
+    },
+    {
+        "name": "Shyriiwook",
+        "id": "909fdb03-0160-4c48-9c2f-0d3eb93b84cf"
+    },
+    {
+        "name": "Undervine",
+        "id": "05e8e9dd-bc14-490b-8b89-7ce80359b075"
+    },
+    {
+        "name": "Electro-Tattoos",
+        "id": "b9b5c546-2070-45d6-ac9b-a224f4fb7ba5"
+    },
+    {
+        "name": "Ardee",
+        "Comments": "Drink",
+        "id": "4761a4c2-1ba9-49ba-a6d4-a7410ac6c668"
+    },
+    {
+        "name": "Blue Milk",
+        "id": "8904f701-27f9-48d1-81d2-425423195a19"
+    },
+    {
+        "name": "Junko",
+        "Comments": "Drink",
+        "id": "d147468a-0d66-4533-bb43-7dee75345279"
+    },
+    {
+        "name": "Archicella",
+        "id": "829f21ee-9a7f-4f03-8804-59a2a1df5428"
+    },
+    {
+        "name": "J'Doon School",
+        "id": "192db4d8-bafb-4209-87ff-8ff2c6990789"
+    },
+    {
+        "name": "Kyberite",
+        "id": "d75f126f-e22a-48b4-bccc-d25b6eb6c8f2"
+    },
+    {
+        "name": "Martyrium of Frozen Tears",
+        "id": "b1ab0e63-a64e-40e7-a5a5-08a5682f584b"
+    },
+    {
+        "name": "Hellhulk Guardian",
+        "id": "53db996f-db7e-4592-8869-6f6057aa4291"
+    },
+    {
+        "name": "Confessional",
+        "id": "b66663eb-1364-4ec3-8aad-0f014250b096"
+    },
+    {
+        "name": "The Ren",
+        "id": "4d1b24ee-02e6-43a1-b21c-6339786379cc"
+    },
+    {
+        "name": "Holocron",
+        "id": "11291386-ef3f-49e4-9cb0-bede830f3bc7"
+    },
+    {
+        "name": "Mindsplinter",
+        "Comments": "Discovered by the Mimbanese centeries ago one the Minemoon of Mimban. It belongs to their people, a priceless relic. ",
+        "id": "d827646e-40cc-4558-8b34-83939f33e125"
+    },
+    {
+        "name": "Form III",
+        "id": "e636263f-d3ae-4fb4-9feb-9ac48796d275"
+    },
+    {
+        "name": "Form V",
+        "id": "9b78d36c-5635-4b5f-b92d-1d240628eeb4"
+    },
+    {
+        "name": "Battle of Geonosis",
+        "id": "25c8ae4e-5862-47ff-9437-8d5952af6cdb"
+    },
+    {
+        "name": "Niffin Plague",
+        "Comments": "Malicious disease that attacks the respiratory system over a long period of time, only affecting those born on Mathas.",
+        "id": "bec43296-1034-41df-82c0-85d5c1a332cf"
+    },
+    {
+        "name": "Rings of Vaale",
+        "Comments": "Pair of mythological artifcacts made by an ancient order of guardians.",
+        "id": "f63bc274-3771-4ad2-b71d-ceaa67d64c4d"
+    },
+    {
+        "name": "An Empire's Grace",
+        "Comments": "Work of Art",
+        "id": "174ec15e-6ec9-44f4-96c9-090211703af6"
+    },
+    {
+        "name": "Nautila",
+        "Comments": "Language of the Nautolans",
+        "id": "1e041a83-0a5e-4b65-b1cb-01b51dc9d204"
+    },
+    {
+        "name": "Battle of Christophsis",
+        "id": "00ea0ae9-fe49-4fb3-8ce9-6066c0ded39d"
+    },
+    {
+        "name": "Sheldra-Ko",
+        "Comments": "Style of music",
+        "id": "d1f6ed14-03e7-40c9-b67b-94988b405337"
+    },
+    {
+        "name": "Greater Xnapolis",
+        "id": "3cf19614-6038-412e-92ab-359c20b4d64e"
+    },
+    {
+        "name": "White Book",
+        "Comments": "Rebel Alliance's military field guide",
+        "id": "db73e432-6819-4c0d-9274-fed6f18858a5"
+    },
+    {
+        "name": "Dagger of Mortis",
+        "id": "77728b02-17f6-440f-886e-45614d0145e0"
+    },
+    {
+        "name": "Altar of Mortis",
+        "id": "d3a6e055-1a62-44a7-9312-d3ee602dd2fc"
+    },
+    {
+        "name": "KD-30 Pistol",
+        "id": "2a6f91df-9540-4ca8-8df6-65986c29ee1f"
+    },
+    {
+        "name": "E-11 Blaster rifle",
+        "id": "dff09bf8-2149-45d9-b633-510b844af212"
+    },
+    {
+        "name": "Kuat Drive Yards",
+        "id": "e64dbdf1-131a-4322-95b5-ce35a29db80d"
+    },
+    {
+        "name": "Nexus Route",
+        "id": "bcdabd41-4c75-4f26-9a7f-30d1444ecb80"
+    },
+    {
+        "name": "The Citadel",
+        "id": "2113e7ee-8204-4951-93ba-9933623fb765"
+    },
+    {
+        "name": "Mantle Defense System",
+        "id": "f4ec2b09-edad-4eea-8c3b-ab91997f8fa6"
+    },
+    {
+        "name": "XJ9 hypercharger",
+        "id": "027cebd3-8fa1-448a-a739-c27e145e457c"
+    },
+    {
+        "name": "Naikon matrix",
+        "id": "1e0a78bd-aed6-4f3f-926e-78858e38604b"
+    },
+    {
+        "name": "Warbat Trance",
+        "Comments": "Style of music",
+        "id": "88e7543d-1be9-4e1c-8b74-c0ce10944e1a"
+    },
+    {
+        "name": "Mijura",
+        "Comments": "Drink",
+        "id": "fee39f21-653d-46e2-85b2-2e42356239c9"
+    },
+    {
+        "name": "Blosphi",
+        "id": "bb87c402-eeae-41e7-a196-166f624f6cd1"
+    },
+    {
+        "name": "Second Sight",
+        "id": "9dba5e39-1c78-424e-bcb2-b34dff2ceb2a"
+    },
+    {
+        "name": "Chopkic wine",
+        "id": "c277f431-f416-4fbb-a292-b3d30a0483d7"
+    },
+    {
+        "name": "Tomo ribenes",
+        "id": "24d07e7a-2e5c-463c-a45e-8556ea04f641"
+    },
+    {
+        "name": "Chance Cube",
+        "id": "38f5cb87-44b2-4d1b-9729-0626feac07b3"
+    },
+    {
+        "name": "Olo Tea",
+        "id": "2cff3e75-8d0f-4362-8762-113394aee6d3"
+    },
+    {
+        "name": "University of Coruscant",
+        "id": "93292794-76cf-467e-9159-2d2da50638ff"
+    },
+    {
+        "name": "Conch",
+        "Comments": "Mon Calamari's musical Instrument. Horn",
+        "id": "68a57bfa-f03a-4cf2-bcb5-61b274e2a96f"
+    },
+    {
+        "name": "New Republic Senate",
+        "id": "4693b5fe-c37b-4d83-9d06-1527028596d6"
+    },
+    {
+        "name": "Abnedish",
+        "id": "5057a677-cd71-452d-8fda-f5289238fd9d"
+    },
+    {
+        "name": "Khalat Robes",
+        "Comments": "Worn by Snoke",
+        "id": "79669d83-c4a3-4daf-920c-ac7c9dc52013"
+    },
+    {
+        "name": "Uneti Tree",
+        "id": "4b1bd3e1-8187-4297-90a7-a66c7c048508"
+    },
+    {
+        "name": "Aionomica",
+        "id": "364f9fd8-6d2d-4c66-8967-0592c33a1d9d"
+    },
+    {
+        "name": "Rammahgon",
+        "id": "0d13fc9c-e435-43a7-ac93-2ec4065eea2c"
+    },
+    {
+        "name": "Droidspeak",
+        "id": "31beb2b2-5091-4565-82f0-a1916bbc18a8"
+    },
+    {
+        "name": "Clynese",
+        "id": "76a83c76-8ffc-42ff-b999-e83c6a8cf54b"
+    },
+    {
+        "name": "Haysian Melt",
+        "Comments": "Best Conductor",
+        "id": "c5aaab37-f2e1-46e8-ba1d-13dac77fc30f"
+    },
+    {
+        "name": "Explosive knife",
+        "id": "2b76955c-4698-4230-986c-b00d10deb4b0"
+    },
+    {
+        "name": "Mon Cala Crab",
+        "Comments": "Prison",
+        "id": "348b8053-5f67-46f0-8cfc-5fb26be10825"
+    },
+    {
+        "name": "Lee Romay",
+        "Comments": "Crustaceans from Mon Cala.",
+        "id": "10a07088-1f36-454b-b895-b8b9f0178cb5"
+    },
+    {
+        "name": "Cosmic Force",
+        "id": "d0a530eb-b259-425c-8ec0-9ae517c65bdd"
+    },
+    {
+        "name": "Festival of Return",
+        "id": "a88c3996-d69c-4079-8c68-79a3e9b63bee"
+    },
+    {
+        "name": "Tarine Tea",
+        "id": "ac87db00-df3b-4361-b9fa-9fe58631db49"
+    },
+    {
+        "name": "Sauweceran Tea",
+        "id": "331b6a72-5aea-4cad-adbb-a501931d04c1"
+    },
+    {
+        "name": "Jawa Juice",
+        "id": "3e9e21c0-21a3-41ef-9bb5-e9b79eca66ce"
+    },
+    {
+        "name": "Laki Lembeng",
+        "id": "3ecff861-8655-4e7e-b32f-5149b211f727"
+    },
+    {
+        "name": "Calamari waterballad",
+        "id": "55960c3c-7e12-48ba-9dd9-243651474b95"
+    },
+    {
+        "name": "Lyaer'tsa",
+        "Comments": "Traditional Twi'lek weapon equipped with a vibroblade at one end.",
+        "id": "5f90708d-6ad5-42c5-994f-12d602829152"
+    },
+    {
+        "name": "Zhaboka",
+        "Comments": "Traditional Zabrak weapon. Deadly as hell.",
+        "id": "d78ad488-908f-4f0f-87c0-40bfaa73681d"
+    },
+    {
+        "name": "Mirkanite",
+        "id": "81193a31-06b7-4639-84ec-149bf06019cb"
+    },
+    {
+        "name": "Letters of Where and When",
+        "id": "11c535ff-d19e-4bfc-a2e9-571c94509cee"
+    },
+    {
+        "name": "Holographic disguise Matrix",
+        "Comments": "Personal hologram projector.",
+        "id": "249ccc4b-7001-468e-b99e-325b203aeb77"
+    },
+    {
+        "name": "Crokin",
+        "Comments": "It could be played in teams or with just a pair, and the goals were twofold: get your own pieces on the board, but stay aware of your opponent, and knock any of your opponent's pieces off it.",
+        "id": "e8828f59-6444-4209-8be4-44a7033e6134"
+    },
+    {
+        "name": "Foundry",
+        "id": "88e996a9-5582-4129-b78f-a711d254cd0a"
+    },
+    {
+        "name": "Gungan Bubble Wort Projector",
+        "id": "9470c565-f926-435d-be27-3a2380c7a876"
+    },
+    {
+        "name": "Restraining Harness",
+        "Comments": "More barbaric version of a restraining bolt",
+        "id": "e748d455-4ab1-4100-ad99-6102ea204854"
+    },
+    {
+        "name": "The Gem",
+        "Comments": "Space station in the Outer Rim",
+        "id": "3a6edafd-8b5e-44a4-9b41-93c3f208c0a6"
+    },
+    {
+        "name": "Day of Demand",
+        "id": "ac29048e-72a0-4102-ae3a-ad587a662147"
+    },
+    {
+        "name": "Rhindon Sword",
+        "id": "6c2f5857-45d4-4880-88bc-67bf9fae8ef8"
+    },
+    {
+        "name": "Archipelago University",
+        "Comments": "On Alderaan",
+        "id": "3b394b5e-7330-4a60-b1f0-4da28340a430"
+    },
+    {
+        "name": "Galactic Basic",
+        "id": "fbf2594a-ecd9-4952-bbfa-d7ad65fa7c56"
+    },
+    {
+        "name": "New Shield Generator",
+        "id": "ee0de3c8-2989-44b7-86b7-53cdc57dcc2f"
+    },
+    {
+        "name": "Moray and Faz",
+        "Comments": "Holo-cartoon",
+        "id": "058fffa4-a864-4f14-8cff-4e3a370507d1"
+    },
+    {
+        "name": "Phylanx Redux Transmitter",
+        "id": "4dc7e349-c830-40dd-9bbb-efba5faf69d1"
+    },
+    {
+        "name": "Hemchar Root",
+        "Comments": "One of Maz's hangover cures",
+        "id": "0ea0c5b9-627f-4cad-8250-3584da3a8bcb"
+    },
+    {
+        "name": "Free Ryloth Movement",
+        "id": "8ae3c738-ffdb-47f4-b035-1f83628d351b"
+    },
+    {
+        "name": "Twi'lek",
+        "id": "14101f38-9b65-46f7-aa9e-4c0e2ded8760"
+    },
+    {
+        "name": "Ewokese",
+        "id": "d7f0eacd-70ec-4ec7-96de-fda5b6ed0406"
+    },
+    {
+        "name": "Vazaveer",
+        "id": "241e7580-1ee0-46b4-a02b-1e7abad3d791"
+    },
+    {
+        "name": "Prasteen Braak",
+        "Comments": "Utapau's most esteemed medical school",
+        "id": "8dd20285-f0d0-476d-8504-ed9093479d52"
+    },
+    {
+        "name": "Snograth and the Mogwars",
+        "Comments": "Popular Rock Band",
+        "id": "28e4809e-42c1-44b6-9ba6-742c66ea9605"
+    },
+    {
+        "name": "Saigok",
+        "Comments": "Like dejarik, same madman invented them both in fact, but saigok is way more badass.",
+        "id": "98138075-b6d1-4883-9d07-5b6351ca47fe"
+    },
+    {
+        "name": "Magernon's Amnesty",
+        "id": "70ab91ca-afbd-42eb-a7e2-caafc823be29"
+    },
+    {
+        "name": "Kyrprax",
+        "Comments": "Medical Substance",
+        "id": "930c75ae-5094-4fbe-8f4f-732a304fd022"
+    },
+    {
+        "name": "Frizznothese",
+        "id": "4316f26b-975e-4782-ab91-535b23c18032"
+    },
+    {
+        "name": "Slivian Iron",
+        "Comments": "Magnetized",
+        "id": "f71cb4eb-128c-4a5c-9d04-168acdc7f1dc"
+    },
+    {
+        "name": "Trusk",
+        "Comments": "Style of music that was one performed exclusively in the dingiest of establishments and at pitches so high that only the Karvathians could hear it.",
+        "id": "ae8faa7f-bc03-4ad3-bb5a-dad77d62039c"
+    },
+    {
+        "name": "Valen",
+        "Comments": "Instrument musical",
+        "id": "902f2861-3df5-4e82-843c-bf1ae00b2c74"
+    },
+    {
+        "name": "Glowwine",
+        "id": "1d98756e-c24a-4407-84ff-388c405a12db"
+    },
+    {
+        "name": "Bacta Spray",
+        "id": "d8ad9993-49ce-44f0-91b2-d29a0f146c64"
+    },
+    {
+        "name": "Ring of Fortune",
+        "id": "f3b7165a-4597-4e96-96c3-0d3de820ee16"
+    },
+    {
+        "name": "Ring of Immortality",
+        "id": "09ee70fa-a784-465c-a5f7-b5016b81b722"
+    },
+    {
+        "name": "Enhanced Privacy Invasion Bill",
+        "id": "4b3b8c44-2184-49c4-af84-cd5664452305"
+    },
+    {
+        "name": "LL-30",
+        "Comments": "Blaster Rifle",
+        "id": "dd95d772-96ed-453c-9bfc-b237b77f583d"
+    },
+    {
+        "name": "The Box",
+        "id": "ae655c2d-9d4d-4846-a5f7-bb1061e177a0"
+    },
+    {
+        "name": "Prow",
+        "Comments": "Beverage",
+        "id": "9dbd8ccf-7fe2-4459-955a-37785ad3919b"
+    },
+    {
+        "name": "The Gathering",
+        "id": "71d05654-517b-4788-9e91-ed644da0b7c1"
+    },
+    {
+        "name": "Mandalorian Civil War",
+        "id": "796c44b0-9ee4-49a6-b22e-868f12848082"
+    },
+    {
+        "name": "Questis",
+        "id": "fec6ac3b-f9e5-45a6-9828-3717e193ee8f"
+    },
+    {
+        "name": "Taharim Academy",
+        "Comments": "On Naporar",
+        "id": "ceed175c-c42d-46c3-a077-2ff0a892aa56"
+    },
+    {
+        "name": "Sky-walker",
+        "id": "2424f1ac-f127-4d8f-b83d-00e86cff8dab"
+    },
+    {
+        "name": "Jawaese",
+        "id": "0be20920-38c2-491b-8429-6755ed19afba"
+    },
+    {
+        "name": "Gaderfii Stick",
+        "id": "594e396e-f324-4610-bafc-c32d3b511463"
+    },
+    {
+        "name": "Figrin D'an and the Modals Nodes",
+        "id": "5ed2c588-65ca-48f7-af82-d1578498379d"
+    },
+    {
+        "name": "Double Jocimer",
+        "Comments": "Musical Instruments",
+        "id": "8e21cd78-4051-4d42-9f9b-1b9e37a9e460"
+    },
+    {
+        "name": "Knockback Nectar",
+        "id": "3217168c-c993-4f75-9960-23308dafaf0a"
+    },
+    {
+        "name": "Future Imperial Leaders Military Preparation School",
+        "Comments": "On Vardos",
+        "id": "4df3cb1c-82ed-485e-a816-0178f1470317"
+    },
+    {
+        "name": "Arrth-Eno Prison Complex",
+        "id": "98c1e01d-921f-4833-b6bd-56ed199ce4e4"
+    },
+    {
+        "name": "Bespin Breeze",
+        "Comments": "Drink",
+        "id": "5138b7b9-eb8e-413a-ae85-6406d07c2947"
+    },
+    {
+        "name": "Basic",
+        "id": "260b1734-734e-47b1-ab4b-fd30e181cb9c"
+    },
+    {
+        "name": "Iskalon Uprising",
+        "id": "7a88b0de-8078-4329-a625-b3efa3fee887"
+    },
+    {
+        "name": "Project Starhawk",
+        "id": "6310466a-4a70-404b-a82c-fbf33bed0683"
+    },
+    {
+        "name": "Koshi Star Circuit",
+        "id": "4571ea21-f360-488f-8edd-c1ee0e887dcc"
+    },
+    {
+        "name": "Magnite Crystal",
+        "Comments": "Essential for Project Starhawk",
+        "id": "1990e5a1-fa29-4433-b848-79335c2e4532"
+    },
+    {
+        "name": "Baradium",
+        "id": "3ed4d856-b036-47ce-bc1d-c77fda85358d"
+    },
+    {
+        "name": "Project Stardust",
+        "id": "7946bc28-5665-4e06-9735-026edb9c5ce6"
+    },
+    {
+        "name": "EMP Grenade",
+        "id": "7cc650d5-d49b-4aa5-a98e-4e940fa808d9"
+    },
+    {
+        "name": "DEMP",
+        "Comments": "Destructive electromagnetic pulse ion carbine",
+        "id": "ce094681-7df9-439e-9da3-07484d098e63"
+    },
+    {
+        "name": "Electro-Whip",
+        "id": "6258641a-4ab0-45b7-8ba8-a430579ea7ef"
+    },
+    {
+        "name": "Thermal Annihilator",
+        "id": "90fa597c-3a81-497f-b5d4-48acb954f4a9"
+    },
+    {
+        "name": "Vibroblade",
+        "id": "4fcb7363-56de-4abb-ab35-085c9ba5e01e"
+    },
+    {
+        "name": "Twi'leki",
+        "id": "9bf58a7b-a4d0-44af-ac4a-93f07baf9b90"
+    },
+    {
+        "name": "Spotchka",
+        "id": "8ab8c981-e48f-460d-bdac-49e3fc5b602c"
+    },
+    {
+        "name": "Silicax Crystal",
+        "id": "a2b5fab4-7297-4e17-9e36-567ad51bc090"
+    },
+    {
+        "name": "Camtono",
+        "id": "6d6b195e-ec9f-46b9-a005-0c840420eab0"
+    },
+    {
+        "name": "Dioxis",
+        "id": "876a76ab-77ab-4906-9194-0a92613ac9f1"
+    },
+    {
+        "name": "Undead",
+        "id": "bd947bc2-4466-40e0-a337-b26f1cba9604"
+    },
+    {
+        "name": "Sansanna Spice",
+        "id": "2dcd83e1-a3f5-4f6f-8f04-6cfcfa7e70ad"
+    },
+    {
+        "name": "Electroguillotine",
+        "id": "64cba236-4895-4939-9ebe-2955c2e5efbb"
+    },
+    {
+        "name": "Rocket Launcher",
+        "id": "d24a5a54-964f-4f0b-9cb2-e115dec43b1f"
+    },
+    {
+        "name": "Brylark Tree",
+        "id": "d2ce30aa-12b1-4798-9934-82fe9ccdda6d"
+    },
+    {
+        "name": "lommite ore",
+        "Comments": "Essential to the productiion of transparasteel",
+        "id": "fad6ae37-b4fc-499e-bcd7-c022bac0d919"
+    },
+    {
+        "name": "Cassius Tree",
+        "id": "6d06c89d-bac7-4b56-a68f-54ce4c1e4ed3"
+    },
+    {
+        "name": "Stygium Crystal",
+        "id": "04deab58-3fc9-45a6-8e44-73f87e856e49"
+    },
+    {
+        "name": "Shadowfeeds",
+        "id": "4da97973-6953-4f0f-b6a7-816ca4f305b0"
+    },
+    {
+        "name": "Hibridium",
+        "id": "17477b33-0395-4dcc-8eca-0166d9d32194"
+    },
+    {
+        "name": "Malmourral",
+        "Comments": "Ancient Demon on Bardotta",
+        "id": "7674bdb5-d001-4d3c-9477-3c0d4d76db23"
+    },
+    {
+        "name": "Balc",
+        "Comments": "Sith Language",
+        "id": "38c2f4bb-1745-404f-8afb-8daf842d731a"
+    },
+    {
+        "name": "Living Force",
+        "id": "db892de3-20d4-4535-8f44-e80f7c600a1a"
+    },
+    {
+        "name": "Midi-chlorian",
+        "id": "d954bd84-bbfe-47b8-a904-1fb07db91e92"
+    },
+    {
+        "name": "Tarkin Doctrine",
+        "id": "ef717b4d-6ad3-47e4-a127-4a472a865d98"
+    },
+    {
+        "name": "Trawak",
+        "Comments": "Language. Its time ended over a thousand years ago. Was spoken only by a small cave-dwelling species that evolved independently of all other flife on its world. It was, supposedly, a combination of ultrasonics, replication of sounds from the natural envrionment and subtle interactions of air, mouthparts.",
+        "id": "1a4412cc-e12e-4f0d-a02f-6fc6597d370c"
+    },
+    {
+        "name": "Imperial Museum",
+        "Comments": "Autrefois le Galactic Museum.  The Collection has expanded enormously in recent years, as the Empire scours the galaxy and takes what it wishes.",
+        "id": "c1899ad8-552b-4e5d-b8e9-ac224bf760d6"
+    },
+    {
+        "name": "Arveesh Station",
+        "id": "037e6009-dcf5-4c88-b8f2-3aa3e3c73945"
+    },
+    {
+        "name": "Path Engine",
+        "id": "12c59aba-0591-4248-9bef-9255cc4214eb"
+    },
+    {
+        "name": "Jablogian",
+        "id": "3785086f-f2c7-432c-b2d7-43cc2924764c"
+    },
+    {
+        "name": "Great Disaster",
+        "id": "7db4335c-bb11-4380-8c81-832a68930309"
+    },
+    {
+        "name": "Arcadian Jazz",
+        "id": "7abb2799-43b9-413d-9453-c3d8fd32c479"
+    },
+    {
+        "name": "Rykestra",
+        "Comments": "Popular Dice Game",
+        "id": "7e3dbda1-6363-458f-9d60-e153a8507abb"
+    },
+    {
+        "name": "Galaxy Tours",
+        "id": "471a1169-02cd-4794-b933-52b41eb7882e"
+    },
+    {
+        "name": "ThrillSpace Travels",
+        "id": "a13cd214-4ef0-44b9-baba-5494ad45f811"
+    },
+    {
+        "name": "Chandrila Star Lines",
+        "id": "77f70bcd-874c-4e36-b791-6473aca76e05"
+    },
+    {
+        "name": "Joppa Stew",
+        "id": "a7043633-c2b7-4fb3-8362-0edb3bd86e38"
+    },
+    {
+        "name": "Guerillian Theoretical Proof",
+        "id": "46e81e83-41ca-4c64-9d44-7765fdf46b2a"
+    },
+    {
+        "name": "Wayfinding",
+        "id": "7335c9fc-3c6a-479f-ae97-ac49c842dc18"
+    },
+    {
+        "name": "Lightwhip",
+        "id": "0cce0825-d844-4ae8-9e44-7d717b26afd2"
+    },
+    {
+        "name": "Sith Wars",
+        "id": "e93dadd0-bd94-4c10-a883-5b2c07f0aafa"
+    },
+    {
+        "name": "Almanac of the Unknown",
+        "Comments": "Written by Leric Schmireland",
+        "id": "7115e825-1a8b-4aa8-aaf9-fceeb884d1c9"
+    },
+    {
+        "name": "Mamba Melon",
+        "id": "3e4e7c65-8d4e-40df-bf56-4def8aab1625"
+    },
+    {
+        "name": "Frostberry",
+        "id": "787f300c-530e-4647-8e36-2122ec451b74"
+    },
+    {
+        "name": "Gill-Singer",
+        "id": "f13f625d-b1fa-4793-b269-b623f5bb3f10"
+    },
+    {
+        "name": "Egarian silk",
+        "id": "c5dfaf48-c404-4828-888f-85a89a209a74"
+    },
+    {
+        "name": "Platinum",
+        "id": "df2976f5-da75-4d15-b407-4d246e8ff7b7"
+    },
+    {
+        "name": "Essurtanium",
+        "id": "5ff588cc-df63-41a9-81fe-4d4a7b50271c"
+    },
+    {
+        "name": "Blade of Bardotta",
+        "id": "3b2cc075-60de-4c66-8743-78061c285cd2"
+    },
+    {
+        "name": "Spinsilk",
+        "id": "83048119-e6b3-4e89-bca6-fed0f29ffaf0"
+    },
+    {
+        "name": "Mole mine",
+        "id": "92f06503-e12f-4de0-a2e9-325c8134fa7a"
+    },
+    {
+        "name": "Darknet",
+        "id": "90b5de6c-9aa4-48a6-b15e-a9350165f76e"
+    },
+    {
+        "name": "Wreckpunk",
+        "Comments": "Musical style",
+        "id": "d419eb67-196f-469e-bd58-049b5662b2ef"
+    },
+    {
+        "name": "Triazurite",
+        "Comments": "Rare mineral that boosted transmission signals, allowing it to serve as a massive relay point to facilitate better, faster communications among the peoples of the Outer Rim.",
+        "id": "1c88b673-1b7c-4660-9914-2e1f949fbe62"
+    },
+    {
+        "name": "Wayseeker",
+        "id": "42c95d58-0df6-47be-b427-68a38d4f19d1"
+    },
+    {
+        "name": "Nagnol",
+        "id": "87f2826c-dfa4-40f0-a025-3e3c4c311529"
+    },
+    {
+        "name": "Alazhi",
+        "id": "d1bd987b-5478-4793-b9a9-cf71eede368d"
+    },
+    {
+        "name": "Kavam",
+        "id": "fee5366a-dd5a-432b-9571-91a80bae5f10"
+    },
+    {
+        "name": "Rejuv",
+        "Comments": "Ancêtre du bacta",
+        "id": "b2a43af8-b5d8-4bf0-9cde-00dacaeba38e"
+    },
+    {
+        "name": "Barley",
+        "id": "c09d7dab-d701-496d-9fbe-577ad96e08f6"
+    },
+    {
+        "name": "Bucco Bread",
+        "id": "489316de-eeda-49ad-ba48-7195ed7e214e"
+    },
+    {
+        "name": "Samana Spiced Loaf",
+        "id": "5a43d841-18db-4ab3-8f1b-07d46e779439"
+    },
+    {
+        "name": "Bolo-ball",
+        "id": "d4bbfcad-749f-4da4-aae8-9626fe9d85f7"
+    },
+    {
+        "name": "T-345",
+        "id": "fb7645dd-51d1-4d57-9237-6bb14fd48760"
+    },
+    {
+        "name": "Malvern's zersium",
+        "id": "160b65ce-4680-4f04-97f9-a3cf55d4261d"
+    },
+    {
+        "name": "Battle of Wasted Years",
+        "id": "2bcb4a74-0f39-488e-a87e-c61a19f55bef"
+    },
+    {
+        "name": "Spinner-Web",
+        "id": "2e2369cd-0c70-40e1-8dc0-6a32d71aa695"
+    },
+    {
+        "name": "Parang",
+        "id": "f60630ab-9578-47e1-ad05-0a9b7fa9685c"
+    },
+    {
+        "name": "The Sands of Elath",
+        "id": "a173012c-9e30-4bf8-9082-509e5ee6dbe6"
+    },
+    {
+        "name": "The Bestiary of Darth Caldoth",
+        "id": "e56c2e80-5d39-41ac-bcbd-cee95943a564"
+    },
+    {
+        "name": "Vagni Stone",
+        "id": "8032a037-41fd-4165-8443-e47cef1e1e1c"
+    },
+    {
+        "name": "Nerve Disruptor",
+        "id": "0f7255ca-04fc-48f7-bec3-7c31df5aeb52"
+    },
+    {
+        "name": "Hand of Skrye",
+        "id": "76f608bd-1f68-4f7b-ac7b-b91bfb8aeff1"
+    },
+    {
+        "name": "Balm of the Luminous",
+        "id": "0f12b58b-ee56-42d8-a65b-664bd27d727d"
+    },
+    {
+        "name": "Heltraxi",
+        "id": "28fec822-282a-4f3f-b563-af632ffc8b42"
+    },
+    {
+        "name": "Opala Fruit",
+        "id": "b5b7ed05-6c8a-4506-b735-52d8f8dc23ae"
+    },
+    {
+        "name": "Dragonfire Air Rally",
+        "id": "19f48115-ef28-4a87-b568-2738b1ab8d09"
+    },
+    {
+        "name": "M-29 Airspeeder",
+        "id": "0eeaf545-8648-4c8d-983c-29147dc5d9eb"
+    },
+    {
+        "name": "Recardian C-18",
+        "id": "63823095-0359-4b3b-babb-136ffc1d84d8"
+    },
+    {
+        "name": "Batana",
+        "id": "56ba5c1a-9935-44b2-b5c1-80c50240786e"
+    },
+    {
+        "name": "Soulean brandy",
+        "id": "6d37633f-e964-4ce6-ba01-396a0feaef70"
+    },
+    {
+        "name": "Sacanium",
+        "id": "020c5f34-5264-4490-8e0d-9ce162a4a182"
+    },
+    {
+        "name": "Zersium",
+        "id": "82d63099-413f-4454-a143-007551101d08"
+    },
+    {
+        "name": "Crestracing",
+        "id": "c0f9baaa-bedc-4ee0-98f2-4e6ca15d2877"
+    },
+    {
+        "name": "Grand Engineer",
+        "id": "da1f7fb4-74e2-46c9-a79a-81656e75f5fd"
+    },
+    {
+        "name": "Xenobotany",
+        "id": "51558048-7bb3-4bbe-a931-196f334aa70c"
+    },
+    {
+        "name": "Project War-Mantle",
+        "id": "a32f04a4-f64d-41f9-bae3-179b1acf03ef"
+    },
+    {
+        "name": "Boga Noga Ale",
+        "id": "ebfe6e39-15f7-44a4-bd70-1a68609dfcdd"
+    },
+    {
+        "name": "First Coruscani Migration",
+        "id": "2d4a3290-28b0-424c-8ffa-6c06b23ae5b3"
+    },
+    {
+        "name": "Whiforla-song",
+        "id": "5a6894a6-4f11-440d-87dd-be099284d30e"
+    },
+    {
+        "name": "Mantell Mix",
+        "id": "9c3c415e-e513-40eb-bea3-1713b470dd83"
+    },
+    {
+        "name": "Hygge Nectar",
+        "id": "345f1ef1-2e8d-4f2d-8528-e346f928cf42"
+    },
+    {
+        "name": "Nightmare Conjunction",
+        "id": "3afbbb1e-4c22-4eee-91b2-2ca01e7637e7"
+    },
+    {
+        "name": "Republic Fair",
+        "id": "a885b9b5-ab9a-4b54-99da-5a2d897e6534"
+    },
+    {
+        "name": "Tomarian's Annual Festival of Light",
+        "id": "76778de5-cea7-43dd-91b6-d6ac618f7f84"
+    },
+    {
+        "name": "Millaflower",
+        "id": "d7751f5a-8e8a-4bed-89ac-8e6fa587bb64"
+    },
+    {
+        "name": "The Book of Hondo",
+        "id": "c3d95b8b-c976-4fd6-882b-e12bdbb70fc8"
+    },
+    {
+        "name": "Electrostaff",
+        "id": "a6007493-ce63-4175-8fb1-c48695e81c83"
+    },
+    {
+        "name": "Hyperspace Disaster",
+        "id": "f02da68e-4254-44ca-b41a-a9b4d62b623b"
+    },
+    {
+        "name": "Spice Wine",
+        "id": "bb382e04-32d1-4ebe-bb2c-f9ab6a54cdd3"
+    },
+    {
+        "name": "Tagge protoblade",
+        "id": "0efe01ca-d80c-4711-a586-b399663810e7"
+    },
+    {
+        "name": "Thought Dowser",
+        "id": "f37c75e7-e8f9-4f54-a65d-2c64bc63bde8"
+    },
+    {
+        "name": "Flameout",
+        "Comments": "Drink = Vaschean Rye, Hull stripper and just a touch of spice.",
+        "id": "2b202cd4-95ac-473c-b045-d014f2680ad1"
+    },
+    {
+        "name": "Saava Berries",
+        "id": "a3258fb1-7caf-4947-9f83-3617472ae365"
+    },
+    {
+        "name": "Shi-Shok Tree",
+        "Comments": "On Kashyyyk",
+        "id": "05c6eb5f-50f5-4990-ab7d-dbdccc01d6b8"
+    },
+    {
+        "name": "Varazeen Stones",
+        "id": "0e80710e-fc16-438e-b942-c312a3275341"
+    },
+    {
+        "name": "Yallow Soothsaber",
+        "id": "0ebb1b67-7079-4e63-be3f-d66fde3c716e"
+    },
+    {
+        "name": "Vitalicron",
+        "id": "dbbb08fc-2b92-4e79-bf6f-5c170122fca1"
+    },
+    {
+        "name": "Cantonarive Crown Coin",
+        "id": "1f007430-f267-4120-aadf-d3c32e383481"
+    },
+    {
+        "name": "Alderaanian Wine",
+        "id": "e539a98b-6a18-4014-a1ce-668e36ce878f"
+    },
+    {
+        "name": "Great Jedi Rumble Race",
+        "id": "ad264884-1458-4b05-8bcd-fb0b1618de02"
+    },
+    {
+        "name": "Port in a Storm",
+        "id": "a81d7997-e860-42c7-adce-8ef09b99eb87"
+    },
+    {
+        "name": "Kyber Arch",
+        "id": "c13cfd50-3005-4462-98a9-a828e8f632f4"
+    },
+    {
+        "name": "Gatalentan meditation practices",
+        "id": "a220767f-c353-41fc-9dd5-60f33468cf38"
+    },
+    {
+        "name": "Neutrino Angler",
+        "id": "341a9454-e453-436a-9ddf-9b5caf78c8e8"
+    },
+    {
+        "name": "Magrak Syndrome ",
+        "id": "aa3ae16e-a241-482b-9f84-3d719bd69069"
+    },
+    {
+        "name": "Night of the Thousand Tears",
+        "id": "d4499c80-5f9a-4419-9aba-7caf217a6012"
+    },
+    {
+        "name": "Bebatek",
+        "id": "2b06cf7d-f005-448a-8991-679675759149"
+    },
+    {
+        "name": "Vergence",
+        "id": "ffb11b7a-ff05-48fc-9586-3b15f6dbc4b0"
+    },
+    {
+        "name": "Whip of Sorrows",
+        "id": "cec02eb7-b763-454d-aa01-87a25fb6867d"
+    },
+    {
+        "name": "Spark Eternal",
+        "Comments": "Ascendant's tech",
+        "id": "2a13545b-08ab-4862-afad-3c7083be22a5"
+    },
+    {
+        "name": "Nova Crystal",
+        "id": "b92831dc-d7fd-4372-a6fe-77c6d476d346"
+    },
+    {
+        "name": "Kantak Crystal",
+        "id": "8bf2c637-b180-4289-9f31-c0d8fa37f19f"
+    },
+    {
+        "name": "Sun Jewel",
+        "id": "2956698d-8403-424d-aa47-debe34d046a1"
+    },
+    {
+        "name": "Povo Punch",
+        "Comments": "Les Hutts sont allergiques",
+        "id": "861afaea-777c-4f12-b146-a76a30551aab"
+    },
+    {
+        "name": "Durga Berry",
+        "id": "f7511dde-16ea-4a02-8360-e85ecc4929fb"
+    },
+    {
+        "name": "Whistle Bird",
+        "id": "ee387317-19e6-4a92-b8ae-7801306b7441"
+    },
+    {
+        "name": "Krill",
+        "id": "143c36c8-3f41-483a-a2e0-35c5dff0db0f"
+    },
+    {
+        "name": "Mind Flayer",
+        "id": "cbb1f6ae-c9b7-424c-9786-3a1940f9fe7f"
+    },
+    {
+        "name": "Rising Phoenix",
+        "id": "b5cae805-97af-40d4-bc22-efb0e02c8c3e"
+    },
+    {
+        "name": "Krayt Dragon Pearl",
+        "id": "eb6f3b7e-307b-4281-bb60-295d5de71f69"
+    },
+    {
+        "name": "Manax Root",
+        "id": "277353aa-4507-4cd4-bcd9-701c608d377d"
+    },
+    {
+        "name": "Dozoisian Snark",
+        "id": "51ee8221-740d-4b89-8206-153e1be8495a"
+    },
+    {
+        "name": "Ziroxin-12",
+        "Comments": "Poison",
+        "id": "8851f0f7-60c4-47cb-9f7b-6a2e4db19698"
+    },
+    {
+        "name": "Cyanoxis D-750",
+        "id": "40bff155-08dd-4436-bfaa-0901c2c46062"
+    },
+    {
+        "name": "Yurfloo",
+        "id": "3815676d-a360-4d6b-b6d9-5ca95dae97ae"
+    },
+    {
+        "name": "Kattadan",
+        "Comments": "Rosé Wine",
+        "id": "f1c2a77e-343e-4f15-8f39-ca375a4d52a0"
+    },
+    {
+        "name": "Ga'Garen Code ",
+        "Comments": "The ancient grimoire whose text had confounded linguists for thousand of years.",
+        "id": "7bc95172-1901-406b-a5e2-3c0f89213117"
+    },
+    {
+        "name": "Barafuraha",
+        "Comments": "Dish",
+        "id": "63b78050-b5b3-4edf-b9f8-974cf332c849"
+    },
+    {
+        "name": "Kolto",
+        "id": "6af32f08-cb9f-4a6a-a46a-1f4bf5af9e70"
+    },
+    {
+        "name": "Barash Vow",
+        "Comments": "Extreme commitment to gaining ultimate communion with the Force",
+        "id": "1c2dafcd-98a5-45bf-8ba0-560fe59075db"
+    },
+    {
+        "name": "Unbroken Dagger",
+        "id": "19460ecf-779e-4fff-87e6-4629cb5a7d8a"
+    },
+    {
+        "name": "Glitterslim",
+        "id": "c5561be0-c1b6-475f-ade9-e525fa6569ee"
+    },
+    {
+        "name": "Ur-kittat",
+        "Comments": "Language of The Sith",
+        "id": "fdd395c3-e061-4de1-ae4c-97375f4803a8"
+    },
+    {
+        "name": "Calling Gloves",
+        "id": "35d29f14-2bf8-4b25-b04a-14af4d70e538"
+    },
+    {
+        "name": "Crystallo",
+        "id": "63fe1c52-c7f9-482d-8da5-c82baf5e4749"
+    },
+    {
+        "name": "Pontonese Subrakahn",
+        "id": "5f9d2e2d-869c-4d87-94d1-2e167613b1ad"
+    },
+    {
+        "name": "Batuu-Bons",
+        "id": "778241e4-96cc-4ee0-8b0f-eb2bec14fbc0"
+    },
+    {
+        "name": "Pharorb",
+        "id": "b5fe61ee-9b11-4247-910b-1f8540f6e471"
+    },
+    {
+        "name": "Batuubucha",
+        "id": "2f4d6cf5-18de-4cc4-b5d4-f1c36d01cc6d"
+    },
+    {
+        "name": "Akkani",
+        "Comments": "Obi-Wan's Eopie",
+        "id": "240963f2-7640-4197-be4b-e245375930f4"
+    },
+    {
+        "name": "Eadun Silver",
+        "id": "455f2d34-7749-43ac-aec7-ae02ae9dab50"
+    },
+    {
+        "name": "Death Wind",
+        "id": "2197bf22-101d-4349-b79d-c24a04405a7e"
+    },
+    {
+        "name": "Four Sages of Dwartii",
+        "id": "87c58e23-1fab-4326-a592-a99c4f6ed335"
+    },
+    {
+        "name": "The Path",
+        "id": "7ad176d4-40ba-4789-94f1-9520e7e62c24"
+    },
+    {
+        "name": "Muja Twist",
+        "Comments": "Drink",
+        "id": "d2289973-d198-4bc5-97d1-fdf96ad11f1d"
+    },
+    {
+        "name": "Sweetmallow",
+        "id": "bd700ddc-3d34-47cd-9bee-b9a3597c9653"
+    },
+    {
+        "name": "Vintrium",
+        "id": "2c70aa31-9930-446e-ac78-d2d07c3934ec"
+    },
+    {
+        "name": "Verillix",
+        "id": "17136da2-df6d-4384-9a7d-c76b70e426b2"
+    },
+    {
+        "name": "Montalsian Ale",
+        "id": "e9c1feab-8fd6-4bc1-a8fd-f2961bbe1d83"
+    },
+    {
+        "name": "Exmar 326 Sub-Strata Phase-Scanner",
+        "id": "c225514d-6c14-40f3-84b0-98d888c22663"
+    },
+    {
+        "name": "MSX Tracker",
+        "id": "38663b70-245c-40b1-a03e-adc30ede7b6b"
+    },
+    {
+        "name": "Dayanar Seven",
+        "Comments": "Jedi combat maneuvers",
+        "id": "5eec0c1a-c59a-41de-96da-856c12bc6ae8"
+    },
+    {
+        "name": "Alpha-Paraval Seven",
+        "Comments": "Jedi combat maneuvers",
+        "id": "be459b16-332f-497c-a316-a0658b69c7a9"
+    },
+    {
+        "name": "Bonbreez",
+        "id": "3d730fa6-c5d1-4788-b888-ae47c15230bd"
+    },
+    {
+        "name": "Zylium 12",
+        "Comments": "Fuel",
+        "id": "3515644f-5d2f-4ad9-bb97-125d71557c05"
+    },
+    {
+        "name": "Leveler",
+        "Comments": "Nihil waepon",
+        "id": "2a0bcf3f-d335-42c6-a2f4-04965cb167b6"
+    },
+    {
+        "name": "Reedug",
+        "Comments": "Drug",
+        "id": "e1d05cc9-2c77-4a9e-8d8e-1103bcb29a2c"
+    },
+    {
+        "name": "Docha Institute",
+        "id": "17217a2a-a606-459e-899f-e98557dd9b1f"
+    },
+    {
+        "name": "Verazeen Stones",
+        "id": "53aed94c-c6c6-45c5-85b9-174ca4e595cf"
+    },
+    {
+        "name": "GoNet",
+        "id": "6a87cecb-b911-4b74-8ad6-f8c3f3b63b47"
+    },
+    {
+        "name": "Ferona Vivaros",
+        "Comments": "Casino",
+        "id": "44b8a793-2100-45a5-8c85-45e95f2b496a"
+    },
+    {
+        "name": "Rodian Splice",
+        "Comments": "Drink",
+        "id": "a9e44fdf-52ff-4cc8-a2a9-703e53ce617e"
+    },
+    {
+        "name": "Eeshaypher Collection",
+        "Comments": "Forbidden gallery of artifacts, relics, and antiques, all of which were related to the dark side of the Force.",
+        "id": "8334b78a-8e7f-4bac-88a5-fcc088d6af15"
+    },
+    {
+        "name": "Declavian cognac",
+        "id": "56530357-cbd7-4bb4-bbe3-5841f498e0d2"
+    },
+    {
+        "name": "Revnog",
+        "Comments": "Drink",
+        "id": "5cf63c6e-b2f9-4dd6-8d5b-313236268631"
+    },
+    {
+        "name": "NS-9 Starpath Unit",
+        "id": "98c569bc-0437-467d-8513-2521ec1950b9"
+    },
+    {
+        "name": "Caf",
+        "id": "34b852ee-6758-47b4-b436-d1a3d5c82918"
+    },
+    {
+        "Comments": "",
+        "name": "Med nog",
+        "id": "2430c47e-bf3b-43f8-984c-4a786c84e1f1"
+    },
+    {
+        "Comments": "",
+        "name": "Ankarres Sapphire",
+        "id": "595bd777-b3d8-4e97-83e3-c089e4445eed"
+    },
+    {
+        "Comments": "",
+        "name": "Vando-fruit",
+        "id": "cc7dfc4e-34ba-4cc5-a07f-0e1b01f5a5a0"
+    },
+    {
+        "Comments": "",
+        "name": "Kiavene",
+        "id": "a95e0e3d-f7ac-46f3-8b6e-c451a7b05a9f"
+    },
+    {
+        "Comments": "",
+        "name": "Azuran Steam Service",
+        "id": "332f681f-d233-4253-beff-2e6b8836b56f"
+    },
+    {
+        "Comments": "Drink",
+        "name": "Abrax",
+        "id": "baf3bf8d-ad37-4e25-bbbe-4e894c9c80b3"
+    },
+    {
+        "Comments": "",
+        "name": "Arc of Eden",
+        "id": "9745d3e4-e33c-4f24-b988-a2c74d80d572"
+    },
+    {
+        "Comments": "",
+        "name": "Rod of Ages",
+        "id": "2df95d8b-e599-4913-bbec-9b29751571ac"
+    },
+    {
+        "Comments": "",
+        "name": "Rod of Seasons",
+        "id": "c52f5134-7abe-4209-aa6f-8a79b4acceea"
+    },
+    {
+        "Comments": "",
+        "name": "Rod of Daybreak",
+        "id": "eac53f47-17c4-4c72-891d-cb3f15e94c2f"
+    },
+    {
+        "Comments": "Jeu",
+        "name": "Naboo Kingmaker",
+        "id": "5f321f36-1ff8-4e42-90d0-01b3dd07e48f"
+    },
+    {
+        "Comments": "",
+        "name": "Lavorgna's Age of Dragon ",
+        "id": "e2f42d19-74ef-4b06-99e9-e0bf9558b88c"
+    },
+    {
+        "Comments": "",
+        "name": "Screen of the Second Sight",
+        "id": "eb9dbf42-4e58-4edb-b44f-b15acd125805"
+    },
+    {
+        "Comments": "The Ability to stopo an opponent's heart using the Force alone.",
+        "name": "Morichro",
+        "id": "5bf33c57-41f0-4e5d-81d6-0145e578cc76"
+    },
+    {
+        "Comments": "",
+        "name": "Synthflesh",
+        "id": "e49e9134-2cce-4397-896e-82cfb4454d07"
+    },
+    {
+        "Comments": "",
+        "name": "Shoto Lightsaber",
+        "id": "161983f1-a8df-4e7c-ab9d-39ca2e3b154e"
+    },
+    {
+        "Comments": "",
+        "name": "Pak Pak",
+        "id": "d7acc0e6-9979-4ec6-a12e-4411374e0874"
+    },
+    {
+        "Comments": "",
+        "name": "Franikhad",
+        "id": "050ae368-9356-48ec-a07c-53d32f172ec7"
+    },
+    {
+        "Comments": "",
+        "name": "Fire Mountain Rally",
+        "id": "481a9fbe-5a74-42aa-a7a0-e74c2f9fe384"
+    },
+    {
+        "Comments": "",
+        "name": "Agaric Ale",
+        "id": "61d4f460-12fb-4843-8031-37767da54e02"
+    },
+    {
+        "Comments": "",
+        "name": "Shatterpoint",
+        "id": "979ea18d-b33b-4f05-bf3d-90266a0d2393"
+    },
+    {
+        "Comments": "",
+        "name": "Nyix",
+        "id": "07899840-82d3-47fe-9fe0-883a527632de"
+    },
+    {
+        "Comments": "",
+        "name": "Athio Seven Hundred",
+        "id": "81e1edf1-6517-48a8-bbf1-be5a02895392"
+    },
+    {
+        "Comments": "",
+        "name": "Coruscant's Festival of Stars",
+        "id": "46123875-268d-46c3-94b0-00bb0c23d4aa"
+    },
+    {
+        "Comments": "",
+        "name": "Tunqstoid Steel",
+        "id": "8a77d75d-76bd-4296-8d9a-dcd8641c6161"
+    },
+    {
+        "Comments": "",
+        "name": "Null blade",
+        "id": "81f686d1-1a32-4162-8eb2-42c8bcde5665"
+    },
+    {
+        "Comments": "",
+        "name": "Kezarat Convoy",
+        "id": "ff6e69c6-0609-4eef-85e0-3f8883bfb9ac"
+    },
+    {
+        "Comments": "",
+        "name": "Elysium Sunrise",
+        "id": "1922a227-65ab-4e74-8e5c-3206eb596cdd"
+    },
+    {
+        "Comments": "Togruta's Language",
+        "name": "Togruti",
+        "id": "987c5827-ca77-4059-86d3-cb27753e47db"
+    },
+    {
+        "Comments": "",
+        "name": "Drowser",
+        "id": "1137d023-2951-4a01-80b1-4b7718293f2d"
+    },
+    {
+        "Comments": "",
+        "name": "Chubb",
+        "id": "5be7107f-1729-4eb0-9d47-610b7c4f6894"
+    },
+    {
+        "Comments": "",
+        "name": "Fermata Cage",
+        "id": "7c328261-990a-41b2-9102-238a0b548b40"
+    },
+    {
+        "Comments": "",
+        "name": "Screaming Key",
+        "id": "ab0acbdb-16d9-40fc-88b5-60b3e54862f4"
+    },
+    {
+        "Comments": "Musical Instruments of the Scalvi",
+        "name": "Taratti",
+        "id": "ce37e000-55bd-4f14-9c72-f41bb815eaa2"
+    },
+    {
+        "Comments": "Grows on Turrak",
+        "name": "Sukka Tree",
+        "id": "b29fd77b-680b-474a-9a11-4087e0be7ac8"
+    },
+    {
+        "Comments": "",
+        "name": "Firebird of Colsassa",
+        "id": "6cd71e67-4442-41b4-b036-0498f2a842e5"
+    },
+    {
+        "Comments": "",
+        "name": "Wicket Ball",
+        "id": "1f779a34-dbbc-4345-95f8-4decff084ed0"
+    },
+    {
+        "Comments": "",
+        "name": "Ambercryst",
+        "id": "b575aa78-89c0-40be-869e-c39f2e89e618"
+    },
+    {
+        "Comments": "",
+        "name": "Exo Lug Twin Injector",
+        "id": "28a068c3-90b3-4fb0-bf33-e4d23a995786"
+    },
+    {
+        "Comments": "",
+        "name": "Battle of Slag's Pit",
+        "id": "5ec31430-0f83-4fc5-9264-3c5eeaf9eb77"
+    },
+    {
+        "Comments": "",
+        "name": "Secrets of the Jedi",
+        "id": "b85a928a-1b0d-4fcc-965a-bc79ed024f7a"
+    },
+    {
+        "Comments": "",
+        "name": "Cassadrean Matrix",
+        "id": "2fed62f0-e764-4c7e-b688-5e05239ab786"
+    },
+    {
+        "Comments": "They were awarded when a Jedi Knight was elevated to the rank of Jedi Master, both to the Jedi Knight themselves and to the Master who had trained them. Command practice back in the early days of the Order.",
+        "name": "Tythonian Mastery Tokens",
+        "id": "b6ac822a-cb97-4726-b6ae-f351446d9a40"
+    },
+    {
+        "Comments": "",
+        "name": "Muttamok Oil",
+        "id": "759b8fbf-05bf-4f67-97e2-1cdd96e7e08c"
+    },
+    {
+        "Comments": "",
+        "name": "Recainium",
+        "id": "5b199be1-1603-4d5e-b4e3-fdb43e1fafa2"
+    },
+    {
+        "Comments": "",
+        "name": "Dantari Flu",
+        "id": "02dbfda7-c79b-4991-9052-646c1db9b9a1"
+    },
+    {
+        "Comments": "",
+        "name": "Ualaqian Jazz",
+        "id": "93c29c71-b4d5-4022-99ff-76812ab11ed1"
+    },
+    {
+        "Comments": "",
+        "name": "Hyper-Gazers",
+        "id": "a4db8022-770f-4956-ba61-04d73c01a6fa"
+    },
+    {
+        "Comments": "",
+        "name": "Rycrit Wrap",
+        "id": "3deb3918-5b05-41b3-b0a6-72b8ab7af322"
+    },
+    {
+        "Comments": "",
+        "name": "Barabbian",
+        "id": "e56318aa-47ba-4c9e-9d5b-219a1731ad98"
+    },
+    {
+        "Comments": "",
+        "name": "Blood Moon Uprising",
+        "id": "c3496536-ae7a-4c30-852e-a414c104868d"
+    },
+    {
+        "Comments": "",
+        "name": "Lariat of Armistice",
+        "id": "1bf8564b-22fc-4ef7-88a1-ec03ee91ecca"
+    },
+    {
+        "Comments": "",
+        "name": "Mystic Nine",
+        "id": "1909dda7-7168-46bf-93ec-3a12a1f82a97"
+    },
+    {
+        "Comments": "",
+        "name": "Cypanid",
+        "id": "11283af7-21e3-4194-8f1c-29f1c56d38ea"
+    },
+    {
+        "Comments": "",
+        "name": "Emmarian Cloud",
+        "id": "a81cf1e2-ba3d-4294-b6b3-37cd8aae548d"
+    },
+    {
+        "Comments": "",
+        "name": "Tolium",
+        "id": "139570b1-d24f-4b1a-851b-47cac0f69812"
+    },
+    {
+        "Comments": "",
+        "name": "Gnostra-berry Wine",
+        "id": "1adfe221-7d4c-477f-b105-a02ee13abb04"
+    },
+    {
+        "Comments": "",
+        "name": "Age of Exploration",
+        "id": "05acb6ca-58bd-4f3e-9ee7-2e89c8ed00e6"
+    },
+    {
+        "Comments": "Written by Master Evelyn Qwisp",
+        "name": "Meditations",
+        "id": "c951afd9-4b87-47a8-8459-81ea0f3e0284"
+    },
+    {
+        "Comments": "Sylvestri's Doll",
+        "name": "Beti",
+        "id": "1ad77550-620b-497f-9b3d-f0bde95a4939"
+    },
+    {
+        "Comments": "",
+        "name": "Solubrian",
+        "id": "7b893615-9f98-4171-9b55-1490e24791d7"
+    },
+    {
+        "Comments": "",
+        "name": "Relgim Run",
+        "id": "79f6f198-e167-4129-b326-71a6f0c3a505"
+    },
+    {
+        "Comments": "",
+        "name": "Bitmus Cloud",
+        "id": "1ca4888e-a2a5-4637-a604-c5be226c8814"
+    },
+    {
+        "Comments": "",
+        "name": "Bemeer Fruit",
+        "id": "03d12096-7128-41c0-8c8f-1a6dc7ba4f72"
+    },
+    {
+        "Comments": "",
+        "name": "Wellsian Leather",
+        "id": "c78e770d-70ca-40dc-95d7-fe65f0ed7eb5"
+    },
+    {
+        "Comments": "",
+        "name": "Medpac",
+        "id": "ff4ae0a4-8772-4580-9b74-2d33712104bb"
+    },
+    {
+        "Comments": "",
+        "name": "Imperial Enforcement DataCore",
+        "id": "28f21f1d-24fc-41a1-bfb3-c07cd807b6ca"
+    },
+    {
+        "Comments": "",
+        "name": "Stormblade Bloodfest",
+        "id": "ba8014e0-bb03-4cc5-b0bd-5a553a2e2c3a"
+    },
+    {
+        "Comments": "",
+        "name": "Tragia Leaves",
+        "id": "36cbbfc8-a62f-4c44-9487-80074f9e42e6"
+    },
+    {
+        "Comments": "",
+        "name": "Festival of Balance",
+        "id": "493f63dc-6ed0-461c-b23a-3922b384128f"
+    },
+    {
+        "Comments": "",
+        "name": "Unknown Alien Protocols",
+        "id": "5f20198e-3fbf-489d-8a3a-d5add2d3dd4b"
+    },
+    {
+        "Comments": "",
+        "name": "Riot Racing",
+        "id": "058c46be-e8d5-43cd-82e3-6d2f380a868e"
+    },
+    {
+        "Comments": "",
+        "name": "Sfs P-s4 ion ",
+        "id": "99324dcc-40a6-4c61-8ae8-f600d71e0bc5"
+    },
+    {
+        "Comments": "",
+        "name": "Caspian's Maw",
+        "id": "fa833aea-84f0-4aa2-9ce4-8ebe2e6579d1"
+    },
+    {
+        "Comments": "Band",
+        "name": "Plexo-33",
+        "id": "42be0c38-37f0-4e14-93d8-d44770bad150"
+    },
+    {
+        "Comments": "Vsis",
+        "name": "Vocational School for Institutional Security",
+        "id": "10d459be-1e9a-49eb-af9c-992d452f5756"
+    },
+    {
+        "Comments": "",
+        "name": "Arkanis Academy",
+        "id": "f8f524fa-321a-4914-a5ac-e64f33077c92"
+    },
+    {
+        "Comments": "",
+        "name": "Juati signet",
+        "id": "2665db13-83cd-4e46-a4a6-dddbb9dcf5b1"
+    },
+    {
+        "Comments": "Language",
+        "name": "Alarin",
+        "id": "d1601ff9-9e83-412d-891a-c6016683a0da"
+    },
+    {
+        "Comments": "Language",
+        "name": "Myo",
+        "id": "b4c1ca8f-580e-4307-9431-8499d6b662ca"
+    },
+    {
+        "Comments": "Language (possibly from Kenari)",
+        "name": "Nari",
+        "id": "168fd938-b7af-4e1b-8da6-b189abef2766"
+    },
+    {
+        "Comments": "",
+        "name": "Eye of the Aldhani",
+        "id": "2ac3436d-0d3d-40fa-b36b-0ca1ddf86191"
+    },
+    {
+        "Comments": "",
+        "name": "Dray Milk",
+        "id": "3e8d2cfc-206c-4ff6-bd23-1c9d915c68f5"
+    },
+    {
+        "Comments": "",
+        "name": "Finkly Conference",
+        "id": "9798a162-6262-44cf-9f0f-6638bec6402d"
+    },
+    {
+        "Comments": "",
+        "name": "Base Cay",
+        "id": "3fee5c03-470f-4b36-9492-b89a476499cf"
+    },
+    {
+        "Comments": "",
+        "name": "Corellian Champagne",
+        "id": "ec7fda41-bd50-4338-868b-6127ecd03385"
+    },
+    {
+        "Comments": "",
+        "name": "Dagobah Slug Slinger",
+        "id": "078a2463-bb65-4b26-9474-642f18752016"
+    },
+    {
+        "Comments": "",
+        "name": "White Wampa Ale",
+        "id": "fdf6b18e-4612-43c1-bed7-046065765d28"
+    },
+    {
+        "Comments": "",
+        "name": "Doklist",
+        "id": "508b9430-423a-4e4b-aed6-fa79d50de3c1"
+    },
+    {
+        "Comments": "",
+        "name": "Blurggfire",
+        "id": "595fa085-4401-4acf-94db-accf60600c23"
+    },
+    {
+        "Comments": "",
+        "name": "Gambuu Dart",
+        "id": "13b4b9e8-ee46-4094-b939-87f7f9eab095"
+    },
+    {
+        "Comments": "",
+        "name": "Trilon Wishing Tree",
+        "id": "6a432a33-df9b-4ddf-9a2a-c4f6aa5768fb"
+    },
+    {
+        "Comments": "",
+        "name": "Jazz",
+        "id": "6e073ae8-5083-4ae4-ac37-6b98b83465a8"
+    },
+    {
+        "Comments": "",
+        "name": "Bespin Fizz",
+        "id": "ab1f411e-9bcb-47ee-8c68-f5458c4a09b3"
+    },
+    {
+        "Comments": "",
+        "name": "Fuzzy Tauntaun",
+        "id": "a6364fed-14ee-4d07-b7fe-d91fc6221852"
+    },
+    {
+        "Comments": "",
+        "name": "Moogyyrko Sap",
+        "id": "a1c7a22b-9957-46f5-a74a-1370b1f1232c"
+    },
+    {
+        "Comments": "",
+        "name": "The Well",
+        "id": "6f324f57-e90a-4841-8eb1-2544d98d98e0"
+    },
+    {
+        "Comments": "",
+        "name": "Phelarion School",
+        "id": "22c4c838-6361-45d2-9fe1-077d2c2ae63d"
+    },
+    {
+        "Comments": "",
+        "name": "Project Unity",
+        "id": "754439dd-c691-4d06-bd41-9f4d48c4d7ca"
+    },
+    {
+        "Comments": "",
+        "name": "ZX-5 Access Disk",
+        "id": "4ad8d8ea-7296-4ac8-8544-1401732bab5a"
+    },
+    {
+        "Comments": "",
+        "name": "Project Harvester",
+        "id": "8489525e-eb57-452f-bdae-7b5ba3778351"
+    },
+    {
+        "Comments": "",
+        "name": "Stealth Armor",
+        "id": "1ec8e21d-e64f-4197-ad65-2a3fe2bfbde8"
+    },
+    {
+        "Comments": "",
+        "name": "Thinekk Tree",
+        "id": "c5dc2a7f-a8c8-4018-baa2-25698e43bca8"
+    },
+    {
+        "Comments": "",
+        "name": "Grand Pearl of Novak",
+        "id": "8022fe2a-49ae-456c-9c51-98589f7aa451"
+    },
+    {
+        "Comments": "",
+        "name": "Blade of Zakata Par",
+        "id": "ad337dde-5786-4fd9-9774-35d09aaef020"
+    },
+    {
+        "Comments": "",
+        "name": "Skara Nal",
+        "id": "2bcb4fb2-d2df-4456-8767-98d1c295b859"
+    },
+    {
+        "Comments": "",
+        "name": "Heart of the Mountain",
+        "id": "a6d08d68-368f-41da-a3ab-39242429bb1f"
+    },
+    {
+        "Comments": "",
+        "name": "Belmont Diadem",
+        "id": "25cd8804-8a87-40f3-8fe7-4187ae4b1141"
+    },
+    {
+        "Comments": "",
+        "name": "Baudraxite",
+        "id": "feb87cf8-a6a5-4419-8659-cafd417d7de1"
+    },
+    {
+        "Comments": "",
+        "name": "Medspike",
+        "id": "a770bacd-f22b-4e42-a499-4fcae336cdf8"
+    },
+    {
+        "Comments": "",
+        "name": "Public Order Resentencing Directive",
+        "id": "9ec03e73-b009-4db9-ab5e-d1906c710edf"
+    },
+    {
+        "Comments": "",
+        "name": "Peezos",
+        "id": "18ab3c73-776a-405e-b274-7900bca0101a"
+    },
+    {
+        "Comments": "",
+        "name": "Narkinian",
+        "id": "38bedda2-09b6-49a5-b5af-68e00d977fb8"
+    },
+    {
+        "Comments": "",
+        "name": "Pink Milk",
+        "id": "27e594fe-e37e-4c55-aa9c-78267304e1f2"
+    },
+    {
+        "Comments": "",
+        "name": "Seismic Charges",
+        "id": "2f7c9e00-6a43-4cb4-9bc2-76057ea24b6a"
+    },
+    {
+        "Comments": "Spice",
+        "name": "Ryll",
+        "id": "090bc672-4f95-4b57-a64d-cd24d4b8b6f5"
+    },
+    {
+        "Comments": "",
+        "name": "Ipsium",
+        "id": "b82c9b40-0b1a-4e3c-92f1-9ed3141a0e12"
+    },
+    {
+        "Comments": "",
+        "name": "Theenwine",
+        "id": "88b957fb-fc28-4f5e-9efa-a50395bf7028"
+    },
+    {
+        "Comments": "",
+        "name": "Mandalorian Purge",
+        "id": "831b627b-fb5a-4982-8f08-fedeaebc419c"
+    },
+    {
+        "Comments": "",
+        "name": "New Republic War Tribunal",
+        "id": "a06de99d-2755-480a-8269-86dc66c25880"
+    },
+    {
+        "Comments": "",
+        "name": "Dirge of Valaunt",
+        "id": "07e58aef-2ffd-40b9-bc45-422a59d1d18f"
+    },
+    {
+        "Comments": "Native tongue",
+        "name": "Ryl",
+        "id": "3e48abb7-e592-49f8-bdec-3aae590b02af"
+    },
+    {
+        "Comments": "",
+        "name": "Boonta Eve",
+        "id": "352dd785-b75b-4e19-8f96-5591cbc632ee"
+    },
+    {
+        "Comments": "",
+        "name": "Pog Soup",
+        "id": "68b1a17c-a371-4abb-8cdb-e24f7e726b56"
+    },
+    {
+        "Comments": "",
+        "name": "Gelatin Surprise",
+        "id": "a4c76ea3-96b0-4635-a1a9-69ebc78bf631"
+    },
+    {
+        "Comments": "",
+        "name": "Amnesty Program",
+        "id": "98b0d04e-91e7-48ed-8ac0-59c26a3316b8"
+    },
+    {
+        "Comments": "",
+        "name": "Re-Integration Institute",
+        "id": "41ebdd8c-330c-4467-8db1-a67f517b89df"
+    },
+    {
+        "Comments": "",
+        "name": "Benduday",
+        "id": "861f2d86-61fe-4814-889c-0b2c995a90cf"
+    },
+    {
+        "Comments": "",
+        "name": "Coruscant Accords",
+        "id": "23794251-67db-4a12-b7c7-6654bf517961"
+    },
+    {
+        "Comments": "",
+        "name": "Plan 88",
+        "id": "18386d93-cd21-4f17-a26c-ce2922723ab4"
+    },
+    {
+        "Comments": "",
+        "name": "Galadag",
+        "id": "943894e3-7d76-4307-abe5-df24cefb0d34"
+    },
+    {
+        "Comments": "",
+        "name": "Sacha-Lo",
+        "id": "04d914c1-aaec-4692-8306-719d70c74587"
+    },
+    {
+        "Comments": "Pastry",
+        "name": "Shoshak",
+        "id": "d2be661a-e190-4784-be36-bb1d7acc41de"
+    },
+    {
+        "Comments": "",
+        "name": "Peggat",
+        "id": "957ee7b7-39e2-4841-aea2-dff9b4a7d779"
+    },
+    {
+        "Comments": "",
+        "name": "Nepenthé",
+        "id": "d7318b86-2d18-4ca2-b642-1e4d8779f9b7"
+    },
+    {
+        "Comments": "",
+        "name": "T'Karra Flower",
+        "id": "c1912912-1644-4000-84e7-584106193ab2"
+    },
+    {
+        "Comments": "",
+        "name": "Project Necromancer",
+        "id": "7b650eb1-cb16-430d-a240-015e59209dc9"
+    },
+    {
+        "Comments": "",
+        "name": "Dillweed",
+        "id": "625e2f6c-c230-4407-b7b5-b6e4a2763441"
+    },
+    {
+        "Comments": "",
+        "name": "Galactic Comms Network",
+        "id": "7c0bcbfc-2b03-4bdf-a6bc-216bf5cbad37"
+    },
+    {
+        "Comments": "",
+        "name": "Joru",
+        "id": "a3a14bc5-09d1-4b74-a6a7-007bc26390dc"
+    },
+    {
+        "Comments": "",
+        "name": "Calenada",
+        "id": "8627fce9-17fb-4b42-bb33-58d9a6c816fe"
+    },
+    {
+        "Comments": "",
+        "name": "Echo Stone",
+        "id": "e2904052-171e-41bb-b7b8-63af1903401a"
+    },
+    {
+        "Comments": "",
+        "name": "C3-42",
+        "id": "4fa1dcb3-b49f-49bb-be71-6d0a39a58897"
+    },
+    {
+        "Comments": "",
+        "name": "Shroud",
+        "id": "3ba17d05-9e4e-429f-91cd-ff64cd2cbf90"
+    },
+    {
+        "Comments": "",
+        "name": "Circlet of Saresh",
+        "id": "a38e93e1-dc90-42ab-9859-f2771da3240e"
+    },
+    {
+        "Comments": "",
+        "name": "Ahrisa",
+        "id": "1240582a-e0f4-4de2-858b-de8051132c01"
+    },
+    {
+        "Comments": "",
+        "name": "Operation Titan",
+        "id": "7d3921f4-fcf5-46ee-b29a-a8dff7bf0bc8"
+    },
+    {
+        "Comments": "",
+        "name": "Rod of Power",
+        "id": "01060d27-216c-44cf-91ee-5da46901047c"
+    },
+    {
+        "Comments": "",
+        "name": "Bogan Collection",
+        "id": "f0db7bba-fa52-4ddb-9300-cb8cd0c2972d"
+    },
+    {
+        "Comments": "",
+        "name": "Zeilla Flower",
+        "id": "b0b20dc0-1a0f-4a63-bc9f-f26bebeb7fb7"
+    },
+    {
+        "Comments": "",
+        "name": "Mandoline",
+        "id": "75b506c0-38f3-40d0-9875-e09c5c969aca"
+    },
+    {
+        "Comments": "",
+        "name": "Hand of Siberus",
+        "id": "42e90d92-b00c-46eb-8d79-560e46873079"
+    },
+    {
+        "Comments": "",
+        "name": "Rooknik",
+        "id": "511f0c88-4aa5-41ef-90c1-8046b6e7b555"
+    },
+    {
+        "Comments": "",
+        "name": "Kythoo's Bell",
+        "id": "26c8b05c-3224-402d-a04f-42efb18edc45"
+    },
+    {
+        "Comments": "",
+        "name": "Sason Temple",
+        "id": "658e9b66-0857-4ca5-a346-deca43c8822e"
+    },
+    {
+        "Comments": "",
+        "name": "Screaming Citadel",
+        "id": "81ecac5b-ee64-4c4a-9e38-5d3b4c742c26"
+    },
+    {
+        "Comments": "",
+        "name": "Gherlian Fur",
+        "id": "a6c9979d-2804-4cbd-b5b8-4cb4ab3ec0d3"
+    },
+    {
+        "Comments": "",
+        "name": "Rock-Wart Venom",
+        "id": "87e85e94-224e-4fe7-91f9-88c19e60bcb0"
+    },
+    {
+        "Comments": "",
+        "name": "Zaly Shield",
+        "id": "270e1556-e11c-40d8-a8ef-3637f616b519"
+    },
+    {
+        "Comments": "Dish",
+        "name": "Nanceli",
+        "id": "c0085877-a34f-4c53-a49f-7fcc7cc81fc9"
+    },
+    {
+        "Comments": "",
+        "name": "Durasteel",
+        "id": "3f135a53-ffe3-410b-8e24-41c7148a7db0"
+    },
+    {
+        "Comments": "Poison fatal for Falleen",
+        "name": "Syntox",
+        "id": "2c62978d-c0c8-40e3-aff3-7669bf410597"
+    },
+    {
+        "Comments": "",
+        "name": "Bosovir",
+        "id": "589b520a-42ca-4e07-a628-679280ade43f"
+    },
+    {
+        "Comments": "",
+        "name": "Jedi Tournament",
+        "id": "6a3c830b-dda7-4321-a8c0-9c65ace58137"
+    },
+    {
+        "Comments": "Martial Arts",
+        "name": "Zama-Shiwo",
+        "id": "fba10d6e-d146-4ba4-b428-b7c47047b05d"
+    },
+    {
+        "Comments": "",
+        "name": "Sunburst Gem",
+        "id": "e032aa34-b096-48ae-8006-80715f65562f"
+    },
+    {
+        "Comments": "",
+        "name": "Deychin tea",
+        "id": "9bab60fa-2ced-4568-91c9-1e37e68f7982"
+    },
+    {
+        "Comments": "",
+        "name": "Datacron",
+        "id": "5069c9ef-46d9-4ffb-b2b2-788aed6cb593"
+    },
+    {
+        "Comments": "",
+        "name": "Bota",
+        "id": "8560f948-98e6-479d-a872-39a76200b909"
+    },
+    {
+        "Comments": "",
+        "name": "Bachani",
+        "id": "c530c962-6f8e-4384-a1c5-ea564a2fb640"
+    },
+    {
+        "Comments": "Plant",
+        "name": "Nakkis",
+        "id": "9010ae06-2b30-4f24-8152-9ec63c840693"
+    },
+    {
+        "Comments": "",
+        "name": "Coma bloom",
+        "id": "b8eaf7b5-11b4-47a6-81eb-f12942e8d951"
+    },
+    {
+        "Comments": "",
+        "name": "Mosterna",
+        "id": "a18be888-5a86-4bb4-a27c-659d7efe1a14"
+    },
+    {
+        "Comments": "",
+        "name": "Mandaba",
+        "id": "40df9a49-4071-4c14-ae49-27955852709a"
+    },
+    {
+        "Comments": "",
+        "name": "Ballad of Bosovir",
+        "id": "4e40e1fe-a184-4d87-9c5b-56fc41eed2cf"
+    },
+    {
+        "Comments": "",
+        "name": "Zatochi",
+        "id": "06d35afe-b9bd-4553-9be0-0c166cb9728a"
+    },
+    {
+        "Comments": "",
+        "name": "Bokken Saber",
+        "id": "9f27a575-b858-4661-a471-07e3ef7bcdee"
+    },
+    {
+        "Comments": "",
+        "name": "Galukk",
+        "id": "49eea4bf-8266-4736-9599-42c806c63e20"
+    },
+    {
+        "Comments": "",
+        "name": "Monava weed",
+        "id": "93b50940-60b8-492e-852e-18e0f8ef7799"
+    },
+    {
+        "Comments": "",
+        "name": "Trial of the Spirit",
+        "id": "8e4f692d-367a-44e6-ada2-4d4726a6cb52"
+    },
+    {
+        "Comments": "",
+        "name": "Dust Juice",
+        "id": "8fdf016a-e728-4383-8117-4a04c1e6546c"
+    },
+    {
+        "Comments": "",
+        "name": "Hookah pipe",
+        "id": "96e1e775-543e-41e4-88dc-b9567ffe79a6"
+    },
+    {
+        "Comments": "",
+        "name": "Kajaka root",
+        "id": "05bc675c-227a-4a16-9455-b247f8c6efe5"
+    },
+    {
+        "Comments": "",
+        "name": "Code Cylinder",
+        "id": "5b82f3b5-6fd9-481e-83e7-82edd81fa191"
+    },
+    {
+        "Comments": "",
+        "name": "Psychometry",
+        "id": "94d49017-5eaa-4e16-9811-2fde69555d85"
+    },
+    {
+        "Comments": "",
+        "name": "Water of Life",
+        "id": "bd96451c-855b-4b78-802e-ae1bb223bbd1"
+    },
+    {
+        "Comments": "",
+        "name": "Imperial Minefield",
+        "id": "ae59c355-3cc4-46ba-b75e-87427f3eac99"
+    },
+    {
+        "Comments": "",
+        "name": "Gift of Shadows",
+        "id": "33178313-0c73-4036-8b5e-6b775cd67565"
+    },
+    {
+        "Comments": "",
+        "name": "Blade of Talzin",
+        "id": "95a34fd1-66c4-4c8b-88a6-bb77f13d33c0"
+    },
+    {
+        "Comments": "",
+        "name": "Singing stones",
+        "id": "8e16a10f-109a-4343-8ebf-127c38fa157e"
+    },
+    {
+        "Comments": "",
+        "name": "A350 Blasterfire",
+        "id": "28a1763a-a717-4e53-8668-7d8b2ac56e9c"
+    },
+    {
+        "Comments": "",
+        "name": "Raxian Humanitarian Award",
+        "id": "e3b88f16-7ddb-40b1-ad39-9fc8a5497e21"
+    },
+    {
+        "Comments": "",
+        "name": "Stormwall",
+        "id": "44f6001a-c874-4d6c-9d88-c482f7c6193a"
+    },
+    {
+        "Comments": "",
+        "name": "Occlusion Zone",
+        "id": "0a25c63a-b2dc-42ee-b11d-366a202e8156"
+    },
+    {
+        "Comments": "",
+        "name": "Class-Seven Stun Collar",
+        "id": "5c152b79-175f-4963-8843-500d4f66f27f"
+    },
+    {
+        "Comments": "",
+        "name": "Kava Berry",
+        "id": "0225947f-e664-4f24-bd6d-8a04755ecd37"
+    },
+    {
+        "Comments": "",
+        "name": "Koko Noodle",
+        "id": "bc42be57-5e6a-4024-8ced-77900e5d8919"
+    },
+    {
+        "Comments": "",
+        "name": "Bocha",
+        "id": "85f15596-7a76-4835-be49-ea2897659d45"
+    },
+    {
+        "Comments": "",
+        "name": "Joba oil",
+        "id": "5de99a7b-310a-4e89-a653-8e318d9949fb"
+    },
+    {
+        "Comments": "",
+        "name": "Sparkle-fire Seeds",
+        "id": "71fabae3-c9f4-48ed-bd6d-f317bb5b20af"
+    },
+    {
+        "Comments": "",
+        "name": "Banzon",
+        "id": "f93ddc22-5b50-4158-a334-ca06442f9a05"
+    },
+    {
+        "Comments": "",
+        "name": "Gravity's Heart",
+        "id": "2b3d871f-e5f0-42f7-a24c-63b596d10bc8"
+    },
+    {
+        "Comments": "",
+        "name": "Lystrater",
+        "id": "4e03ed18-a449-4cbc-bd84-3f21797f9886"
+    },
+    {
+        "Comments": "",
+        "name": "Night of Sorrows",
+        "id": "8456dcbe-af92-4d44-be9b-83055bd5c52b"
+    },
+    {
+        "Comments": "",
+        "name": "Desi's Noodle",
+        "id": "006a4679-ca6e-40af-8a6a-65a222be789f"
+    },
+    {
+        "Comments": "",
+        "name": "Protocol 23",
+        "id": "60d652c6-b1f1-4092-80c2-c8722c6e62ba"
+    },
+    {
+        "Comments": "",
+        "name": "Santale Sweep",
+        "id": "4ec6d7a7-a169-4dda-8ef6-5824bad1b823"
+    },
+    {
+        "Comments": "",
+        "name": "Yara plant",
+        "id": "fdb97721-07a3-4743-b54b-2f876dd49e6d"
+    },
+    {
+        "Comments": "Measure compounded energy output from crystals",
+        "name": "Mertigan",
+        "id": "cead8ef8-92a8-4106-9399-2f2fba5e9b2f"
+    },
+    {
+        "Comments": "",
+        "name": "Lompop",
+        "id": "0faae481-540b-453b-adda-f1c95d81712d"
+    },
+    {
+        "Comments": "",
+        "name": "Soikan Civil War",
+        "id": "267578e7-ff4f-45af-b92c-4b21d74d96a0"
+    },
+    {
+        "Comments": "",
+        "name": "Andraven Flute",
+        "id": "7b343d74-645c-4fa5-895a-025871abe78f"
+    },
+    {
+        "Comments": "",
+        "name": "Priorite",
+        "id": "a10ccb30-c033-4121-9a80-4cbf9f082909"
+    },
+    {
+        "Comments": "",
+        "name": "Galactic Creature Guide",
+        "id": "508bc4af-22dd-49e3-b438-15cc4830660b"
+    },
+    {
+        "Comments": "",
+        "name": "Hidden Path",
+        "id": "c0d07543-3610-43ca-aafb-cc1ca0b752a6"
+    },
+    {
+        "Comments": "Bar",
+        "name": "Serendipity ",
+        "id": "1e539964-d64b-4de6-b7d7-53d77893e318"
+    },
+    {
+        "Comments": "",
+        "name": "Zeffo Astrium",
+        "id": "c561b45d-d979-4a5b-a3af-120adc74d69e"
+    },
+    {
+        "Comments": "",
+        "name": "Karnite",
+        "id": "bf3caee4-c058-4430-8057-f099de0ea2a7"
+    },
+    {
+        "Comments": "",
+        "name": "MK-270 Imperial Pulverizers",
+        "id": "89750c2f-4f96-4647-b572-aaff49c28dba"
+    },
+    {
+        "Comments": "",
+        "name": "Mushbloom",
+        "id": "2f8b5a6f-ccf5-43ff-a62a-ed9e0d29204b"
+    },
+    {
+        "Comments": "",
+        "name": "Hydraatis",
+        "id": "a4db39f2-493f-4334-857f-4aa2e62c909e"
+    },
+    {
+        "Comments": "",
+        "name": "Mushling",
+        "id": "490b4114-fcb5-41a1-92cc-2b79f9d43250"
+    },
+    {
+        "Comments": "",
+        "name": "Fire lichen",
+        "id": "a45772b0-627e-4d2e-8378-07154726ff2e"
+    },
+    {
+        "Comments": "",
+        "name": "Brula Fruit",
+        "id": "d842f9dd-df0b-44a6-84b2-77f3296b61a1"
+    },
+    {
+        "Comments": "",
+        "name": "Bleeding Gut",
+        "id": "2749ac81-dd18-4a3d-848e-fa56ad6bd9d4"
+    },
+    {
+        "Comments": "",
+        "name": "Featherfern",
+        "id": "750a58e8-f8b4-4cf7-b2ba-7800caa68307"
+    },
+    {
+        "Comments": "",
+        "name": "Kalpi",
+        "id": "d0b13206-d2b3-4348-9f0c-c19825ade5f7"
+    },
+    {
+        "Comments": "",
+        "name": "Dreamwort",
+        "id": "e164bf72-521e-4c41-ba27-fae9ebaa6413"
+    },
+    {
+        "Comments": "",
+        "name": "Royal Fluzz",
+        "id": "d8391736-e267-49ae-9b27-7bea1a98f858"
+    },
+    {
+        "Comments": "",
+        "name": "Gillypod",
+        "id": "0b20d7e6-739a-4859-9ea8-b9dedb515d23"
+    },
+    {
+        "Comments": "",
+        "name": "Milk Grass",
+        "id": "8a76fd7d-0b77-4c29-8816-21c6d8df74b3"
+    },
+    {
+        "Comments": "",
+        "name": "Tar",
+        "id": "159f107b-2e1c-483f-be08-01e993e24cb6"
+    },
+    {
+        "Comments": "",
+        "name": "Tuber Maw",
+        "id": "ec03dd72-209c-42d5-90f0-a4913920c7a0"
+    },
+    {
+        "Comments": "",
+        "name": "Palm Fruit Shell",
+        "id": "573620e6-b98f-4a9d-ac36-8b0a518e6c4f"
+    },
+    {
+        "Comments": "",
+        "name": "Koboh Spiker",
+        "id": "ed4f955b-9fde-408d-b8da-c48eb3d03feb"
+    },
+    {
+        "Comments": "",
+        "name": "Spine Fluff",
+        "id": "c3391e2b-030c-42a5-9d10-dad988cf16fc"
+    },
+    {
+        "Comments": "",
+        "name": "Pine Fern",
+        "id": "9ad791fc-bcba-4710-91a9-8bec7f48afdc"
+    },
+    {
+        "Comments": "",
+        "name": "Fire Pineapple",
+        "id": "5d22a014-5df7-4e55-940b-8f6148d02c3c"
+    },
+    {
+        "Comments": "",
+        "name": "Goldenlight Moss",
+        "id": "7c1de925-ff6d-4295-886e-df3467e70bce"
+    },
+    {
+        "Comments": "",
+        "name": "Bluebell Squish",
+        "id": "a8b57e55-6ea8-472f-8409-fe5c91dea1dd"
+    },
+    {
+        "Comments": "",
+        "name": "Cactus Ball",
+        "id": "968f1d67-a21d-49b9-982e-0b3d21ca8fee"
+    },
+    {
+        "Comments": "",
+        "name": "Crimson Jelly Spire",
+        "id": "f5abb508-4ca9-4359-843b-83bdd103cd71"
+    },
+    {
+        "Comments": "",
+        "name": "Guardian Protocols",
+        "id": "c3cf97ba-fa8c-4fce-9dec-49fc2bdb8f05"
+    },
+    {
+        "Comments": "",
+        "name": "Lightsaber Nullifier",
+        "id": "43e406f6-7498-4557-82ff-b7f191fb62a8"
+    },
+    {
+        "Comments": "Unarmed Force Combat",
+        "name": "Shon-Ju",
+        "id": "1fab9b29-0986-4c0f-aa0c-fe1c3c4445b3"
+    },
+    {
+        "Comments": "",
+        "name": "Tranlang Database",
+        "id": "96b93136-d92a-43f5-a8ce-1cc4575aed3f"
+    },
+    {
+        "Comments": "",
+        "name": "Dragnet",
+        "id": "fa07892a-7b8d-4549-b66c-c3a67fb9a3e8"
+    },
+    {
+        "Comments": "",
+        "name": "Lamta",
+        "id": "3df3ad2e-4b51-4214-960b-7f9c7a25ade0"
+    },
+    {
+        "Comments": "",
+        "name": "Chidinkalu",
+        "id": "66869141-650e-43ab-8296-cf828374c6f4"
+    },
+    {
+        "Comments": "",
+        "name": "Coaxium Ultra",
+        "id": "b7eecf8d-c855-4191-ae99-0fd7ccc4272d"
+    },
+    {
+        "Comments": "",
+        "name": "Micropram",
+        "id": "04595d28-4a83-4333-a43c-4a5e8740e339"
+    },
+    {
+        "Comments": "",
+        "name": "DC-17",
+        "id": "479b668f-7151-489f-b531-c12e2c0b13ee"
+    },
+    {
+        "Comments": "",
+        "name": "Hope of Glee Anselm",
+        "id": "cdd023ed-6767-4af3-bfc1-98a27cd4b42d"
+    },
+    {
+        "Comments": "Fruit",
+        "name": "Cachu",
+        "id": "5cb28af2-8d44-4fb4-ac5e-61c33dd1b62b"
+    },
+    {
+        "Comments": "Card Game",
+        "name": "Balaans",
+        "id": "a7f2c51c-8312-4a4d-b1bf-497f88dadcf1"
+    },
+    {
+        "Comments": "",
+        "name": "Tactical Plan 18",
+        "id": "0314fd14-4bcb-495e-96f0-3cd152dd3b70"
+    },
+    {
+        "Comments": "",
+        "name": "Corusca Gem",
+        "id": "1c57d574-9f05-4213-a349-baa9cd436385"
+    },
+    {
+        "Comments": "",
+        "name": "Viodle",
+        "id": "596e0054-6264-4614-823a-08103b3dec89"
+    },
+    {
+        "Comments": "",
+        "name": "Rumble Bass",
+        "id": "983ca7c3-4a17-44ea-bd28-1db29989db24"
+    },
+    {
+        "Comments": "",
+        "name": "Waterwine Peach",
+        "id": "62e5d90b-f332-4489-8f32-c1c61f8833b6"
+    },
+    {
+        "Comments": "",
+        "name": "Operation Yellow Moon",
+        "id": "31ccc8b9-90f3-4289-af1c-01d95c9e9006"
+    },
+    {
+        "Comments": "",
+        "name": "A-280 Rifle",
+        "id": "ab2f5217-0f69-464d-b33f-4eb97e5a8d92"
+    },
+    {
+        "Comments": "",
+        "name": "Shockball",
+        "id": "7c71d79f-26fc-42f6-92e0-53a70523e8d6"
+    },
+    {
+        "Comments": "",
+        "name": "Horvax-16 Transmitter",
+        "id": "c8ef7593-2e6c-42a3-a071-fe7eba81cf6e"
+    },
+    {
+        "Comments": "",
+        "name": "Horvax-8 Transmitter",
+        "id": "8bf5d4a3-fce6-483a-a15e-2255b1ba3203"
+    },
+    {
+        "Comments": "",
+        "name": "Corellian Brandy",
+        "id": "8be0b5cd-0a3a-41d9-ae14-c5206756f1dd"
+    },
+    {
+        "Comments": "",
+        "name": "Distinguised Medal of Imperial Honor",
+        "id": "4944305e-ac92-4647-bc85-8de9bc5e20f3"
+    },
+    {
+        "Comments": "",
+        "name": "Corellian rum",
+        "id": "6b3a62d8-adce-45b4-9749-0bc22cdfc383"
+    },
+    {
+        "Comments": "",
+        "name": "Ithorese",
+        "id": "33fb8a4d-d6e7-44a7-8d4f-0c07c0208f51"
+    },
+    {
+        "Comments": "",
+        "name": "Vreenak Bloom",
+        "id": "b8e1f295-51dc-46ca-873b-272295e25d44"
+    },
+    {
+        "Comments": "",
+        "name": "Albeekian Sun Grass",
+        "id": "5fce4525-3699-4bb5-85a0-4dab25271bca"
+    },
+    {
+        "Comments": "",
+        "name": "Grumple Vine",
+        "id": "fa162cb6-8e65-4184-9557-f505f8f9b87b"
+    },
+    {
+        "Comments": "",
+        "name": "Vonduun Helmet",
+        "id": "ce0e7197-980f-4e62-aa7a-1e3eb8bbab4b"
+    },
+    {
+        "Comments": "",
+        "name": "Queen of the Core Network",
+        "id": "8cc72ec4-e433-4520-afa8-5de02a7d7eff"
+    },
+    {
+        "Comments": "",
+        "name": "Galactic Expansion",
+        "id": "160f35de-3424-434e-88ab-0abda2949ff9"
+    },
+    {
+        "Comments": "",
+        "name": "Kar-shak",
+        "id": "d41c82d0-ccbf-459a-81a5-748916cff671"
+    },
+    {
+        "Comments": "",
+        "name": "Chatta-ragul",
+        "id": "12c182bf-dfc8-45d5-b539-648286221f4a"
+    },
+    {
+        "Comments": "Martial art",
+        "name": "Zavat",
+        "id": "7c9ec4dd-9015-443a-a8b6-4046f736ea6f"
+    },
+    {
+        "Comments": "",
+        "name": "Imperial Combat Exercises",
+        "id": "c2f7af72-7db9-48f6-928b-6776f1a6acbd"
+    },
+    {
+        "Comments": "",
+        "name": "Lucryte",
+        "id": "71d4dee8-99f1-43cd-b5a5-93bf42344214"
+    },
+    {
+        "Comments": "",
+        "name": "Korlappi shell",
+        "id": "3713f618-1662-4576-b12a-f658150ff584"
+    },
+    {
+        "Comments": "",
+        "name": "323 Rakhmann concussion-miner",
+        "id": "e2996b7e-4113-49e4-9203-2761c817ee0e"
+    },
+    {
+        "Comments": "",
+        "name": "Bezorite",
+        "id": "940c9475-46c5-43ff-9e6c-2c5369101583"
+    },
+    {
+        "Comments": "",
+        "name": "Kesium gas",
+        "id": "770988dc-914d-4c34-b486-71966e3fcae2"
+    },
+    {
+        "Comments": "",
+        "name": "Mosberry",
+        "id": "cf078b67-bae5-427c-8823-10a75e4758d3"
+    },
+    {
+        "Comments": "",
+        "name": "Kessel-Run",
+        "id": "13b8bfbf-bac9-4fb4-9ce5-74d7dbf74366"
+    },
+    {
+        "Comments": "",
+        "name": "Kinro",
+        "id": "2b8b6757-7c56-41fb-b423-00ca6f68d634"
+    },
+    {
+        "Comments": "",
+        "name": "Kukuia nut",
+        "id": "d13153cd-c85a-4f56-a0ac-62d5331482d1"
+    },
+    {
+        "Comments": "",
+        "name": "Lothal Imperial Academy",
+        "id": "0b4511d5-2015-4c87-b945-508272110a60"
+    },
+    {
+        "Comments": "",
+        "name": "Operation Guiding Light",
+        "id": "b578e04b-ba80-4c7d-880c-53dba75fd61c"
+    },
+    {
+        "Comments": "Gem",
+        "name": "Kuggerag",
+        "id": "dbaacbb5-8ac5-4de3-9359-e559301b6e21"
+    },
+    {
+        "Comments": "",
+        "name": "Ootooian Opal",
+        "id": "74e709e0-1be7-4a4c-bd36-9cb764f1f278"
+    },
+    {
+        "Comments": "",
+        "name": "Jellyfruit Festival",
+        "id": "c101ef09-7127-49cd-bf5d-49cad26750b4"
+    },
+    {
+        "Comments": "",
+        "name": "Broadleaf Tree",
+        "id": "9be59aa0-e83d-4ec1-95f0-0f06ed08a383"
+    },
+    {
+        "Comments": "",
+        "name": "Sky Skimming",
+        "id": "e72fee5c-dc8c-4aa4-bf75-26e5d92922d5"
+    },
+    {
+        "Comments": "",
+        "name": "Gomgourd",
+        "id": "2af333c5-cf94-4e97-a5b1-04ba9c9b897c"
+    },
+    {
+        "Comments": "",
+        "name": "Dunkutu Day",
+        "id": "c8c3927a-20d1-4e13-bf8c-b2caa1292092"
+    },
+    {
+        "Comments": "",
+        "name": "Lightning Ceremony",
+        "id": "380ea8c9-4f89-4dff-b73f-8e261873bb35"
+    },
+    {
+        "Comments": "",
+        "name": "Tree of Life",
+        "id": "36e5cf25-a546-48e9-ae61-9fbe4928facb"
+    },
+    {
+        "Comments": "",
+        "name": "Tenga Rock",
+        "id": "06708ad5-0add-4cfc-a8e2-94254913628a"
+    },
+    {
+        "Comments": "",
+        "name": "Khormian Brandy",
+        "id": "1b2e3d55-e3db-4eba-aea8-13a8963d9164"
+    },
+    {
+        "Comments": "",
+        "name": "Malkhani Insurrections",
+        "id": "2b4b2a0a-eb3a-4bb4-84e0-193f564ad099"
+    },
+    {
+        "Comments": "",
+        "name": "Meknek",
+        "id": "e54df37d-ef5c-4ad2-882e-8aab6e097465"
+    },
+    {
+        "Comments": "",
+        "name": "Bunta",
+        "id": "424a53d2-d515-4712-a77f-3215f76ecc36"
+    },
+    {
+        "Comments": "",
+        "name": "Ascension",
+        "id": "2cd6e1d9-42c1-4a86-a575-a860e96d0c0c"
+    },
+    {
+        "Comments": "",
+        "name": "Tràkata",
+        "id": "d7a0b646-5c86-4da0-aba3-442651a9d07a"
+    },
+    {
+        "Comments": "",
+        "name": "Rakmelon",
+        "id": "237092f9-3a1f-42b1-ad1f-e3631a22ccc8"
+    },
+    {
+        "Comments": "",
+        "name": "Gotis",
+        "id": "1b48e5d5-f8dd-4350-9b6e-07e529630fff"
+    },
+    {
+        "Comments": "",
+        "name": "Polycarbonate",
+        "id": "feb58f1a-783f-4f32-a168-de6339ef8892"
+    },
+    {
+        "Comments": "",
+        "name": "Transparasteel",
+        "id": "30af774d-0c94-432d-af77-330e96ade5f9"
+    },
+    {
+        "Comments": "",
+        "name": "Chalcopyrite",
+        "id": "178b6f91-1281-428a-877a-1628a18c6733"
+    },
+    {
+        "Comments": "",
+        "name": "A-300 Blaster Rifle",
+        "id": "34d52b73-a00b-40ec-9c99-85eae9bd8cc6"
+    },
+    {
+        "Comments": "",
+        "name": "Duramentium",
+        "id": "aa7b19ba-b8f1-4915-9f62-e01388c2b8fd"
+    },
+    {
+        "Comments": "",
+        "name": "Chrodium",
+        "id": "07e7569e-0660-4ffd-9b70-42c9d24fe660"
+    },
+    {
+        "Comments": "",
+        "name": "Grim Rose",
+        "id": "d2e77016-726b-4a46-9c02-dcb28d308d50"
+    },
+    {
+        "Comments": "",
+        "name": "Barelia Flower",
+        "id": "a51714ad-e1dd-420d-a642-e504fd7be206"
+    },
+    {
+        "Comments": "",
+        "name": "Quadanium",
+        "id": "f32cff7a-8304-4e24-98e4-5aaeb8132a06"
+    },
+    {
+        "Comments": "",
+        "name": "Bofa Fruit",
+        "id": "3dad3335-e04a-4f0a-8f3e-1cf8be812b9c"
+    },
+    {
+        "Comments": "",
+        "name": "Gorlap Egg",
+        "id": "27cc2ea7-c697-4215-a348-a0cd5049c430"
+    },
+    {
+        "Comments": "",
+        "name": "Japor wood",
+        "id": "cb7c5b9b-8b2b-48c2-addb-13de3356ed13"
+    },
+    {
+        "Comments": "",
+        "name": "Journal of the Wheels",
+        "id": "2ec5065e-aad9-4de3-a874-417c7e818234"
+    },
+    {
+        "Comments": "",
+        "name": "Phirmist",
+        "id": "6d709a0c-4d0a-4b13-a000-64cfc62c720e"
+    },
+    {
+        "Comments": "",
+        "name": "Klikklak",
+        "id": "a0955596-04be-4658-b28d-125bb80f0dd3"
+    },
+    {
+        "Comments": "",
+        "name": "Dirtrag Academy",
+        "id": "3aaa00ca-51ce-4671-b509-d3e0ba86bac8"
+    }
+]
