@@ -22,6 +22,7 @@ struct ScrollAppearancesView: View {
                                 imageName: sourceItem.entity.image ?? "",
                                 appearance: sourceItem.appearance)
                         }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
             }

@@ -19,7 +19,8 @@ enum Era: String, CaseIterable {
     case newJediOrder = "New Jedi Order"
 }
 
-enum SourceType: String {
+enum SourceType: String, CaseIterable {
+    case all = "All"
     case movies = "Movie"
     case comics = "Comic Book"
     case novels = "Novel"
@@ -27,6 +28,19 @@ enum SourceType: String {
     case tvShow = "TV Serie"
     case videoGame = "Video Game"
     case referenceBook = "Reference Book"
+    
+    var description: String {
+        switch self {
+        case .all: return ""
+        case .movies: return "Movies"
+        case .comics: return "Comics"
+        case .novels: return "Novels"
+        case .shortStory: return "Short Story"
+        case .tvShow: return "TV Serie"
+        case .videoGame: return "Video Game"
+        case .referenceBook: return "Reference Book"
+        }
+    }
 }
 
 enum SortingSourceOrder: String, CaseIterable {

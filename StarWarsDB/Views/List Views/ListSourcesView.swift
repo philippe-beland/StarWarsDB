@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ListSourcesView: View {
     @State private var sortOrder: SortingSourceOrder = .publicationDate
+    @State private var selectedView: SourceType = .movies
     @State private var searchText: String = ""
+    @State private var isDoneFilter: Bool = false
     @State private var showNewSourceSheet = false
     @State private var sources: [Source] = Source.examples
     
@@ -34,30 +36,28 @@ struct ListSourcesView: View {
             .toolbar { toolbarContent }
         }
         .onChange(of: searchText) { handleSearchTextChange() }
-        .onChange(of: sortOrder) { handleSortOrderChange() }
+        .onChange(of: selectedView) { handleParameterChange() }
+        .onChange(of: sortOrder) { handleParameterChange() }
+        .onChange(of: isDoneFilter) { handleParameterChange() }
         //.task { await loadInitialSources() }
     }
     
-    private func handleSeletedViewChange() {
-        //
+    private func handleParameterChange() {
+        Task {
+            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, isDone: isDoneFilter, filter: searchText)
+        }
     }
     
     private func handleSearchTextChange() {
         Task {
             if !searchText.isEmpty && searchText.count > 3 {
-                sources = await loadSources(sort: sortOrder.rawValue, filter: searchText)
+                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, isDone: isDoneFilter, filter: searchText)
             }
         }
     }
     
-    private func handleSortOrderChange() {
-        Task {
-            sources = await loadSources(sort: sortOrder.rawValue, filter: searchText)
-        }
-    }
-    
     private func loadInitialSources() async {
-        sources = await loadSources(sort: sortOrder.rawValue, filter: searchText)
+        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, isDone: isDoneFilter, filter: searchText)
     }
     
     private func deleteSource(_ source: Source) {
@@ -87,15 +87,20 @@ struct ListSourcesView: View {
             }
         }
         
-//        ToolbarItem(placement: .topBarLeading) {
-//            Menu("Source Type") {
-//                ForEach(SourceType.allCases, id: \.self) { sourceType in
-//                    Button(sourceType.rawValue) {
-//                        selectedView = sourceType
-//                    }
-//                }
-//            }
-//        }
+        ToolbarItem(placement: .topBarLeading) {
+            Menu("Source Type") {
+                ForEach(SourceType.allCases, id: \.self) { sourceType in
+                    Button(sourceType.rawValue) {
+                        selectedView = sourceType
+                    }
+                }
+            }
+        }
+        
+        ToolbarItem(placement: .topBarLeading) {
+            Toggle("ToDo", isOn: $isDoneFilter)
+                .toggleStyle(ButtonToggleStyle())
+        }
     }
 }
 

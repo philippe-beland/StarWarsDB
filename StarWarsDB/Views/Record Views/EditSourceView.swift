@@ -57,28 +57,28 @@ struct EditSourceView: View {
                     .padding()
                     
                 Form {
-                    Section(header: Text("Characters").font(.subheadline)) {
+                    Section(header: headerWithButton(title: "Characters", action: {})) {
                         ScrollAppearancesView(sourceItems: sourceCharacters, entityType: .character)
                     }
-                    Section(header: Text("Species").font(.subheadline)) {
+                    Section(header: headerWithButton(title: "Species", action: {})) {
                         ScrollAppearancesView(sourceItems: sourceSpecies, entityType: .species)
                     }
-                    Section(header: Text("Planets").font(.subheadline)) {
+                    Section(header: headerWithButton(title: "Planets", action: {}))  {
                         ScrollAppearancesView(sourceItems: sourcePlanets, entityType: .planet)
                     }
-                    Section(header: Text("Organizations").font(.subheadline)) {
+                    Section(header: headerWithButton(title: "Organizations", action: {})) {
                         ScrollAppearancesView(sourceItems: sourceOrganizations, entityType: .organization)
                     }
-                    Section(header: Text("Starships").font(.subheadline)) {
+                    Section(header: headerWithButton(title: "Starships", action: {}))  {
                         ScrollAppearancesView(sourceItems: sourceStarships, entityType: .starship)
                     }
-                    Section(header: Text("Creatures").font(.subheadline)) {
+                    Section(header: headerWithButton(title: "Creatures", action: {}))  {
                         ScrollAppearancesView(sourceItems: sourceCreatures, entityType: .creature)
                     }
-                    Section(header: Text("Droids").font(.subheadline)) {
+                    Section(header: headerWithButton(title: "Droids", action: {})) {
                         ScrollAppearancesView(sourceItems: sourceDroids, entityType: .droid)
                     }
-                    Section(header: Text("Starship Models").font(.subheadline)) {
+                    Section(header: headerWithButton(title: "Starship Models", action: {})) {
                         ScrollAppearancesView(sourceItems: sourceStarshipModels, entityType: .starshipModel)
                     }
                 }
@@ -90,6 +90,20 @@ struct EditSourceView: View {
         let id = UUID()
         let fieldName: String
         let view: AnyView
+    }
+    
+    private func headerWithButton(title: String, action: @escaping () -> Void) -> some View {
+        HStack {
+            Text(title)
+                .font(.subheadline)
+            Spacer()
+            Button(action: action) {
+                Image(systemName: "plus")
+                    .foregroundColor(.blue)
+            }
+            .buttonStyle(BorderlessButtonStyle()) // Ensures the button doesn't affect other interactions
+        }
+        .padding(.vertical, 4) // Adjust padding if needed
     }
     
     private var infosSection: [InfoSection] {

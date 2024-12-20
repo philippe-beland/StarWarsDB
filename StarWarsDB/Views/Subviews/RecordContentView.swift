@@ -14,7 +14,7 @@ struct RecordContentView<Content: View>: View {
     var InfosSection: Content
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HeaderView(name: record.name, urlString: record.url)
             
             if horizontalSizeClass == .regular {

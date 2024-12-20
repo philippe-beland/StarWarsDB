@@ -36,13 +36,15 @@ func loadEntities(entityType: EntityType, sort: String, filter: String = "") asy
     return entities
 }
 
-func loadSources(sort: String, filter: String = "") async -> [Source] {
+func loadSources(sort: String, sourceType: SourceType, isDone: Bool, filter: String = "") async -> [Source] {
     var sources: [Source] = []
     
     do {
         sources = try await supabase
             .from("sources")
             .select("id, name, type, release_date, number, commentary, image, serie!inner(*)")
+            .eq("type", value: sourceType.description)
+            .eq("is_done", value: isDone)
             .ilike("name", pattern: "%\(filter)%")
             .order(sort)
             .limit(40)
