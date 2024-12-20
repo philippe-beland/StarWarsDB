@@ -7,6 +7,17 @@
 
 import Foundation
 
+enum EntityType: String, Codable {
+    case character = "Character"
+    case creature = "Creature"
+    case droid = "Droid"
+    case organization = "Organization"
+    case planet = "Planet"
+    case species = "Species"
+    case starshipModel = "Starship Model"
+    case starship = "Starship"
+}
+
 class DataNode: Codable {
     let recordType: String
     let tableName: String
@@ -67,7 +78,40 @@ class DataNode: Codable {
     }
 }
 
-protocol Record: Identifiable {
+class Entity: DataNode, Record {
+    var id: UUID
+    var name: String
+    var comments: String
+    var image: String?
+    var url: String{
+        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    }
+    
+    init(name: String, comments: String, image: String?, recordType: String, tableName: String) {
+        self.id = UUID()
+        self.name = name
+        self.comments = comments
+        self.image = image
+        
+        super.init(recordType: recordType, tableName: tableName, recordID: self.id)
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
+    }
+    
+    static func == (lhs: Entity, rhs: Entity) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(name)
+    }
+    
+}
+
+protocol Record: Identifiable, Hashable {
     var id: UUID { get }
     var name: String { get set }
     var comments: String { get set }

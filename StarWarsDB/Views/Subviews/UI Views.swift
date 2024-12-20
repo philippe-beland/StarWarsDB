@@ -71,6 +71,6 @@ struct MultiFieldVStack: View {
 #Preview {
     FieldView(fieldName: "Name", info: "Luke Skywalker")
     FieldVStack(fieldName: "Name", info: "Luke Skywalker")
-    MultiFieldView(fieldName: "Affiliation", infos: Character.example.affiliation)
-    MultiFieldVStack(fieldName: "Affiliation", infos: Character.example.affiliation)
+    MultiFieldView(fieldName: "Affiliation", infos: Character.example.affiliations)
+    MultiFieldVStack(fieldName: "Affiliation", infos: Character.example.affiliations)
 }

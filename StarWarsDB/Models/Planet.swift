@@ -20,46 +20,30 @@ enum Region: String, Codable {
 }
 
 @Observable
-class Planet: DataNode, Record, Hashable {
-    let id: UUID
-    var name: String
+class Planet: Entity {
     var region: Region?
     var sector: String?
+    var fauna: String?
     var system: String?
-    var capital: String?
+    var capitalCity: String?
     var destinations: [StringName]
     var firstAppearance: String?
-    var comments: String
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
-    }
     
-    init(name: String, region: Region? = nil, sector: String? = nil, system: String? = nil, capital: String? = nil, destinations: [StringName], firstAppearance: String? = nil, comments: String = "") {
-        self.id = UUID()
-        self.name = name
+    init(name: String, region: Region? = nil, sector: String? = nil, system: String? = nil, fauna: String? = nil, capitalCity: String? = nil, destinations: [StringName], firstAppearance: String? = nil, image: String?, comments: String = "") {
         self.region = region
         self.sector = sector
         self.system = system
-        self.capital = capital
+        self.fauna = fauna
+        self.capitalCity = capitalCity
         self.destinations = destinations
         self.firstAppearance = firstAppearance
-        self.comments = comments
         
-        super.init(recordType: "Planet", tableName: "planets", recordID: self.id)
+        super.init(name: name, comments: comments, image: image, recordType: "Planet", tableName: "planets")
     }
     
     required init(from decoder: Decoder) throws {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Planet(name: "Tatooine", region: .outerRim, sector: "Arkanis", system: "Tatoo", capital: "Mos Eisley", destinations: [StringName("Anchorhead"), StringName("Bestine"), StringName("Freetown"), StringName("Mos Espa")], firstAppearance: "A New Hope", comments: "Tatooine was a sparsely inhabited circumbinary desert planet located in the galaxy's Outer Rim Territories. Part of a binary star system, the planet orbited two scorching suns, resulting in the world lacking the necessary surface water to sustain large populations. As a result, many residents of the planet instead drew water from the atmosphere via moisture farms. The planet also had little surface vegetation. It was the homeworld to the native Jawa and Tusken Raider species and of Anakin and Luke Skywalker, who would go on to shape galactic history.")
-    
-    static func == (lhs: Planet, rhs: Planet) -> Bool {
-        lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-        hasher.combine(name)
-    }
+    static let example = Planet(name: "Tatooine", region: .outerRim, sector: "Arkanis", system: "Tatoo", capitalCity: "Mos Eisley", destinations: [StringName("Anchorhead"), StringName("Bestine"), StringName("Freetown"), StringName("Mos Espa")], firstAppearance: "A New Hope", image: "Tatooine", comments: "Tatooine was a sparsely inhabited circumbinary desert planet located in the galaxy's Outer Rim Territories. Part of a binary star system, the planet orbited two scorching suns, resulting in the world lacking the necessary surface water to sustain large populations. As a result, many residents of the planet instead drew water from the atmosphere via moisture farms. The planet also had little surface vegetation. It was the homeworld to the native Jawa and Tusken Raider species and of Anakin and Luke Skywalker, who would go on to shape galactic history.")
 }

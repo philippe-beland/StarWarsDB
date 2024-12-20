@@ -14,45 +14,49 @@ enum Sex: String, Codable {
 }
 
 @Observable
-class Character: DataNode, Record, Hashable {
-    let id: UUID
-    var name: String
+class Character: Entity {
     var aliases: [StringName]
     var species: Species?
     var homeworld: Planet?
     var sex: Sex
-    var affiliation: [Organization]
-    var comments: String
+    var affiliations: [Organization]
     var firstAppearance: String?
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    
+    var alias: String {
+        var _alias: [String] = []
+        for alias in aliases{
+            _alias.append(alias.name)
+        }
+         
+        return _alias.joined(separator: ", ")
     }
     
-    init(name: String, aliases: [StringName], species: Species?, homeworld: Planet?, sex: Sex, affiliation: [Organization], comments: String = "", firstAppearance: String?) {
-        self.id = UUID()
-        self.name = name
+    var affiliation: String {
+        var organizations: [String] = []
+        for org in affiliations{
+            organizations.append(org.name)
+        }
+         
+        return organizations.joined(separator: ", ")
+    }
+    
+    init(name: String, aliases: [StringName], species: Species?, homeworld: Planet?, sex: Sex, affiliations: [Organization], image: String?, comments: String = "", firstAppearance: String?) {
         self.aliases = aliases
         self.species = species
         self.homeworld = homeworld
         self.sex = sex
-        self.affiliation = affiliation
-        self.comments = comments
+        self.affiliations = affiliations
         self.firstAppearance = firstAppearance
         
-        super.init(recordType: "Character", tableName: "characters", recordID: self.id)
+        super.init(name: name, comments: comments, image: image, recordType: "Character", tableName: "characters")
     }
     required init(from decoder: Decoder) throws {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Character(name: "Luke Skywalker", aliases: [StringName("Red 5"), StringName("Red 4"), StringName("Red 3"), StringName("Red 2")], species: .example, homeworld: .example, sex: .Male, affiliation: [Organization.example], firstAppearance: nil)
+    static let example = Character(name: "Luke Skywalker", aliases: [StringName("Red 5"), StringName("Red 4"), StringName("Red 3"), StringName("Red 2")], species: .example, homeworld: .example, sex: .Male, affiliations: [Organization.example], image: "Luke_Skywalker",  firstAppearance: nil)
     
-    static func == (lhs: Character, rhs: Character) -> Bool {
-        lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-        hasher.combine(name)
-    }
+    static let examples = [
+        Character(name: "Luke Skywalker", aliases: [StringName("Red 5"), StringName("Red 4"), StringName("Red 3"), StringName("Red 2")], species: .example, homeworld: .example, sex: .Male, affiliations: [Organization.example], image: "Luke_Skywalker",  firstAppearance: nil),
+        Character(name: "Luke Skywalker", aliases: [StringName("Red 5"), StringName("Red 4"), StringName("Red 3"), StringName("Red 2")], species: .example, homeworld: .example, sex: .Male, affiliations: [Organization.example], image: "Luke_Skywalker",  firstAppearance: nil)]
 }

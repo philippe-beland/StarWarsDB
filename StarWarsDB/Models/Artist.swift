@@ -8,20 +8,10 @@
 import Foundation
 
 @Observable
-class Artist: DataNode, Record, Hashable {
-    let id: UUID
-    var name: String
-    var comments: String
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
-    }
+class Artist: Entity {
     
     init(name: String, comments: String = "") {
-        self.id = UUID()
-        self.name = name
-        self.comments = comments
-        
-        super.init(recordType: "Artist", tableName: "artists", recordID: self.id)
+        super.init(name: name, comments: comments, image: nil, recordType: "Artist", tableName: "artists")
     }
     
     required init(from decoder: any Decoder) throws {
@@ -29,14 +19,4 @@ class Artist: DataNode, Record, Hashable {
     }
     
     static let example = Artist(name: "Charles Soule")
-    
-    static func == (lhs: Artist, rhs: Artist) -> Bool {
-        lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-        hasher.combine(name)
-    }
-    
 }

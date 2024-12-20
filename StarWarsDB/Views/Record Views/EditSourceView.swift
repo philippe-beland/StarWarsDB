@@ -58,28 +58,28 @@ struct EditSourceView: View {
                     
                 Form {
                     Section(header: Text("Characters").font(.subheadline)) {
-                        ScrollAppearancesView(sourceItems: sourceCharacters)
+                        ScrollAppearancesView(sourceItems: sourceCharacters, entityType: .character)
                     }
                     Section(header: Text("Species").font(.subheadline)) {
-                        ScrollAppearancesView(sourceItems: sourceSpecies)
+                        ScrollAppearancesView(sourceItems: sourceSpecies, entityType: .species)
                     }
                     Section(header: Text("Planets").font(.subheadline)) {
-                        ScrollAppearancesView(sourceItems: sourcePlanets)
+                        ScrollAppearancesView(sourceItems: sourcePlanets, entityType: .planet)
                     }
                     Section(header: Text("Organizations").font(.subheadline)) {
-                        ScrollAppearancesView(sourceItems: sourceOrganizations)
+                        ScrollAppearancesView(sourceItems: sourceOrganizations, entityType: .organization)
                     }
                     Section(header: Text("Starships").font(.subheadline)) {
-                        ScrollAppearancesView(sourceItems: sourceStarships)
+                        ScrollAppearancesView(sourceItems: sourceStarships, entityType: .starship)
                     }
                     Section(header: Text("Creatures").font(.subheadline)) {
-                        ScrollAppearancesView(sourceItems: sourceCreatures)
+                        ScrollAppearancesView(sourceItems: sourceCreatures, entityType: .creature)
                     }
                     Section(header: Text("Droids").font(.subheadline)) {
-                        ScrollAppearancesView(sourceItems: sourceDroids)
+                        ScrollAppearancesView(sourceItems: sourceDroids, entityType: .droid)
                     }
                     Section(header: Text("Starship Models").font(.subheadline)) {
-                        ScrollAppearancesView(sourceItems: sourceStarshipModels)
+                        ScrollAppearancesView(sourceItems: sourceStarshipModels, entityType: .starshipModel)
                     }
                 }
             }
@@ -99,8 +99,8 @@ struct EditSourceView: View {
             InfoSection(fieldName: "Arc", view: AnyView(FieldVStack(fieldName: "Arc", info: source.arc?.name ?? ""))),
             InfoSection(fieldName: "Era", view: AnyView(FieldVStack(fieldName: "Era", info: source.era.rawValue))),
             InfoSection(fieldName: "Source Type", view: AnyView(FieldVStack(fieldName: "Source Type", info: source.sourceType.rawValue))),
-            InfoSection(fieldName: "Authors", view: AnyView(MultiFieldVStack(fieldName: "Authors", infos: source.authors))),
-            InfoSection(fieldName: "Artists", view: AnyView(MultiFieldVStack(fieldName: "Artists", infos: source.artists))),
+            //InfoSection(fieldName: "Authors", view: AnyView(MultiFieldVStack(fieldName: "Authors", infos: source.authors))),
+            //InfoSection(fieldName: "Artists", view: AnyView(MultiFieldVStack(fieldName: "Artists", infos: source.artists))),
             InfoSection(fieldName: "Number Pages", view: AnyView(FieldVStack(fieldName: "Number Pages", info: source.numberPages?.description ?? ""))),
         ]
         

@@ -23,7 +23,7 @@ struct EditPlanetView: View {
             FieldView(fieldName: "Region", info: planet.region?.rawValue ?? "")
             FieldView(fieldName: "Sector", info: planet.sector ?? "")
             FieldView(fieldName: "System", info: planet.system ?? "")
-            FieldView(fieldName: "Capital", info: planet.capital ?? "")
+            FieldView(fieldName: "Capital", info: planet.capitalCity ?? "")
             MultiFieldView(fieldName: "Destinations", infos: planet.destinations)
             FieldView(fieldName: "First Appearance", info: planet.firstAppearance ?? "")
         }

@@ -8,36 +8,18 @@
 import Foundation
 
 @Observable
-class Droid: DataNode, Record, Hashable {
-    let id: UUID
-    var name: String
-    var comments: String
+class Droid: Entity {
     var firstAppearance: String?
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
-    }
     
-    init(name: String, firstAppearance: String?, comments: String = "") {
-        self.id = UUID()
-        self.name = name
+    init(name: String, firstAppearance: String?, image: String?, comments: String = "") {
         self.firstAppearance = firstAppearance
-        self.comments = comments
         
-        super.init(recordType: "Droid", tableName: "droids", recordID: self.id)
+        super.init(name: name, comments: comments, image: image, recordType: "Droid", tableName: "droids")
     }
     
     required init(from decoder: Decoder) throws {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Droid(name: "R2 astromech droid", firstAppearance: nil, comments: "Astromech droid with a high degree of mechanical aptitude.")
-    
-    static func == (lhs: Droid, rhs: Droid) -> Bool {
-        lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-        hasher.combine(name)
-    }
+    static let example = Droid(name: "R2 astromech droid", firstAppearance: nil, image: "R2_astromech_droid", comments: "Astromech droid with a high degree of mechanical aptitude.")
 }

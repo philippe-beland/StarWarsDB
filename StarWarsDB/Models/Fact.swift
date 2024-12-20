@@ -10,12 +10,12 @@ import Foundation
 @Observable
 class Fact: DataNode {
     let id: UUID
-    var text: String
+    var fact: String
     var keywords: [String]
     
-    init(text: String, keywords: [String]) {
+    init(fact: String, keywords: [String]) {
         self.id = UUID()
-        self.text = text
+        self.fact = fact
         self.keywords = keywords
         
         super.init(recordType: "Fact", tableName: "facts", recordID: self.id)
@@ -25,5 +25,5 @@ class Fact: DataNode {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Fact(text: "Battle for the Force", keywords: ["Star Wars"])
+    static let example = Fact(fact: "Battle for the Force", keywords: ["Star Wars"])
 }

@@ -20,4 +20,13 @@ class StringName: Record {
         self.name = name
         self.comments = comments
     }
+    
+    static func == (lhs: StringName, rhs: StringName) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(name)
+    }
 }

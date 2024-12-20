@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct SidePanelView<RecordType: Record, Content: View>: View {
-    var record: RecordType
+struct SidePanelView<Content: View>: View {
+    var record: Entity
     var InfosSection: Content
     
     var body: some View {

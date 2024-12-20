@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SourcesSection: View {
-    var sourceItems: [any SourceItem]
-    private var groupedEras: [Era: [any SourceItem]] {
+    var sourceItems: [SourceItem]
+    private var groupedEras: [Era: [SourceItem]] {
         Dictionary(grouping: sourceItems, by: { $0.source.era })
     }
     
@@ -19,8 +19,10 @@ struct SourcesSection: View {
                 ForEach(Era.allCases, id: \.self) { era in
                     if let items = groupedEras[era] {
                         Section(header: Text(era.rawValue)) {
-                            ForEach(items, id: \.id) { sourceItem in
-                                SourceList(sourceItem: sourceItem)
+                            ForEach(items) { sourceItem in
+                                NavigationLink(destination: EditSourceView(source: sourceItem.source)) {
+                                    SourceList(sourceItem: sourceItem)
+                                }
                             }
                         }
                     }
@@ -31,7 +33,7 @@ struct SourcesSection: View {
 }
                                         
 struct SourceList: View {
-    let sourceItem: any SourceItem
+    let sourceItem: SourceItem
     
     var body: some View {
         HStack(spacing: 20) {

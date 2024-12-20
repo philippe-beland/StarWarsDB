@@ -8,19 +8,10 @@
 import Foundation
 
 @Observable
-class SourceCharacter: DataNode, Equatable, Identifiable, SourceItem {
-    let id: UUID
-    var source: Source
-    var entity: Character
-    var appearance: AppearanceType
+class SourceCharacter: SourceItem {
     
     init(source: Source, entity: Character, appearance: AppearanceType) {
-        self.id = UUID()
-        self.source = source
-        self.entity = entity
-        self.appearance = appearance
-        
-        super.init(recordType: "SourceCharacter", tableName: "source_character", recordID: self.id)
+        super.init(source: source, entity: entity, appearance: appearance, recordType: "SourceCharacters", tableName: "source_characters")
     }
     
     required init(from decoder: Decoder) throws {
@@ -28,21 +19,16 @@ class SourceCharacter: DataNode, Equatable, Identifiable, SourceItem {
     }
     
     static let example = [
+        SourceCharacter(source: .example, entity: .example, appearance: .present),
         SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
         SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
+        SourceCharacter(source: .example, entity: .example, appearance: .image),
         SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
         SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
+        SourceCharacter(source: .example, entity: .example, appearance: .flashback),
         SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
-        SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
-        SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
-        SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
-        SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
+        SourceCharacter(source: .example, entity: .example, appearance: .vision),
         SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
         SourceCharacter(source: .example, entity: .example, appearance: .mentioned),
     ]
-    
-    static func == (lhs: SourceCharacter, rhs: SourceCharacter) -> Bool {
-        lhs.source == rhs.source && lhs.entity == rhs.entity
-    }
-    
 }

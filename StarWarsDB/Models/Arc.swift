@@ -8,26 +8,18 @@
 import Foundation
 
 @Observable
-class Arc: DataNode, Record {
-    let id: UUID
-    var name: String
-    var comments: String
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
-    }
+class Arc: Entity {
+    var serie: Serie
     
-    init(name: String, comments: String = "") {
-        self.id = UUID()
-        self.name = name
-        self.comments = comments
+    init(name: String, serie: Serie, comments: String = "") {
+        self.serie = serie
         
-        super.init(recordType: "Arc", tableName: "arcs", recordID: self.id)
+        super.init(name: name, comments: comments, image: nil, recordType: "Arc", tableName: "arcs")
     }
     
     required init(from decoder: any Decoder) throws {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Arc(name: "Battle for the Force")
-    
+    static let example = Arc(name: "Battle for the Force", serie: .example)
 }

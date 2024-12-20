@@ -8,40 +8,20 @@
 import Foundation
 
 @Observable
-class Species: DataNode, Record, Hashable {
-    let id: UUID
-    var name: String
+class Species: Entity {
     var homeworld: Planet?
-    var image: String?
     var firstAppearance: String?
-    var comments: String
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
-    }
     
-    init(name: String, homeworld: Planet?, image: String?, firstAppearance: String?, comments: String = "") {
-        self.id = UUID()
-        self.name = name
+    init(name: String, homeworld: Planet?, firstAppearance: String?, image: String?, comments: String = "") {
         self.homeworld = homeworld
-        self.image = image
         self.firstAppearance = firstAppearance
-        self.comments = comments
         
-        super.init(recordType: "Species", tableName: "species", recordID: self.id)
+        super.init(name: name, comments: comments, image: image, recordType: "Species", tableName: "species")
     }
     
     required init(from decoder: Decoder) throws {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Species(name: "Twi'lek", homeworld: .example, image: nil, firstAppearance: nil)
-    
-    static func == (lhs: Species, rhs: Species) -> Bool {
-        lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-        hasher.combine(name)
-    }
+    static let example = Species(name: "Twi'lek", homeworld: .example, firstAppearance: nil, image: "Twi'lek")
 }

@@ -16,10 +16,8 @@ struct EditCharacterView: View {
     @State private var selectedOption: SourceType = .movies
     
     var body: some View {
-        NavigationStack {
-                RecordContentView(record: character, sourceItems: sourceCharacters, InfosSection: InfosSection)
-            }
-        }
+        RecordContentView(record: character, sourceItems: sourceCharacters, InfosSection: InfosSection)
+    }
     
     private var InfosSection: some View {
         Section("Infos") {
@@ -27,7 +25,7 @@ struct EditCharacterView: View {
             FieldView(fieldName: "Sex", info: character.sex.rawValue)
             FieldView(fieldName: "Species", info: character.species!.name)
             FieldView(fieldName: "Homeworld", info: character.homeworld!.name)
-            MultiFieldView(fieldName: "Affiliation", infos: character.affiliation)
+            MultiFieldView(fieldName: "Affiliation", infos: character.affiliations)
             FieldView(fieldName: "First Appearance", info: character.firstAppearance ?? "")
         }
     }

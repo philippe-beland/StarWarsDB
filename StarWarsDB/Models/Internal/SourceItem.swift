@@ -7,11 +7,26 @@
 
 import Foundation
 
-protocol SourceItem: Identifiable {
-    associatedtype RecordType: Record
-    var id: UUID { get }
-    var source: Source {get set}
-    var entity: RecordType { get set }
-    var appearance: AppearanceType { get set }
+class SourceItem: DataNode, Equatable, Identifiable {
+    var id: UUID
+    var source: Source
+    var entity: Entity
+    var appearance: AppearanceType
+    
+    init (source: Source, entity: Entity, appearance: AppearanceType, recordType: String, tableName: String) {
+        self.id = UUID()
+        self.source = source
+        self.entity = entity
+        self.appearance = appearance
+        
+        super.init(recordType: recordType, tableName: tableName, recordID: self.id)
+    }
+                   
+    required init(from decoder: Decoder) throws {
+       fatalError("init(from:) has not been implemented")
+    }
 
+    static func == (lhs: SourceItem, rhs: SourceItem) -> Bool {
+       lhs.source == rhs.source && lhs.entity == rhs.entity
+    }
 }

@@ -8,19 +8,10 @@
 import Foundation
 
 @Observable
-class SourceArtist: DataNode, Equatable, Identifiable, SourceItem {
-    let id: UUID
-    var source: Source
-    var entity: Artist
-    var appearance: AppearanceType
+class SourceArtist: SourceItem {
     
     init(source: Source, entity: Artist, appearance: AppearanceType) {
-        self.id = UUID()
-        self.source = source
-        self.entity = entity
-        self.appearance = appearance
-        
-        super.init(recordType: "SourceArtists", tableName: "source_artists", recordID: self.id)
+        super.init(source: source, entity: entity, appearance: appearance, recordType: "SourceArtists", tableName: "source_artists")
     }
     
     required init(from decoder: Decoder) throws {
@@ -31,8 +22,4 @@ class SourceArtist: DataNode, Equatable, Identifiable, SourceItem {
         SourceArtist(source: .example, entity: .example, appearance: .mentioned),
         SourceArtist(source: .example, entity: .example, appearance: .mentioned)
     ]
-    
-    static func == (lhs: SourceArtist, rhs: SourceArtist) -> Bool {
-        lhs.source == rhs.source && lhs.entity == rhs.entity
-    }
 }

@@ -8,38 +8,20 @@
 import Foundation
 
 @Observable
-class Starship: DataNode, Record, Hashable {
-    let id: UUID
-    var name: String
+class Starship: Entity {
     var model: StarshipModel?
     var firstAppearance: String?
-    var comments: String
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
-    }
     
-    init(name: String, model: StarshipModel?, firstAppearance: String?, comments: String = "") {
-        self.id = UUID()
-        self.name = name
-        self.model = model
+    init(name: String, model: StarshipModel?, firstAppearance: String?, image: String?, comments: String = "") {
         self.firstAppearance = firstAppearance
-        self.comments = comments
+        self.model = model
         
-        super.init(recordType: "Starship", tableName: "starships", recordID: self.id)
+        super.init(name: name, comments: comments, image: image, recordType: "Starship", tableName: "starships")
     }
     
     required init(from decoder: Decoder) throws {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Starship(name: "Millenium Falcon", model: .example, firstAppearance: nil, comments: "The best squadron ever")
-    
-    static func == (lhs: Starship, rhs: Starship) -> Bool {
-        lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-        hasher.combine(name)
-    }
+    static let example = Starship(name: "Millenium Falcon", model: .example, firstAppearance: nil, image: "Millenium_Falcon", comments: "The best squadron ever")
 }

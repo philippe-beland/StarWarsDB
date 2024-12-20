@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct RecordContentView<RecordType: Record, Content: View>: View {
+struct RecordContentView<Content: View>: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    var record: RecordType
-    var sourceItems: [any SourceItem]
+    var record: Entity
+    var sourceItems: [SourceItem]
     var InfosSection: Content
     
     var body: some View {

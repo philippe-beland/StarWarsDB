@@ -29,6 +29,11 @@ enum SourceType: String {
     case referenceBook = "Reference Book"
 }
 
+enum SortingSourceOrder: String, CaseIterable {
+    case publicationDate
+    case universeYear
+}
+
 @Observable
 class Source: DataNode, Record, Hashable {
     let id: UUID
@@ -40,10 +45,11 @@ class Source: DataNode, Record, Hashable {
     var sourceType: SourceType
     var publicationDate: Date
     var universeYear: Int?
-    var authors: [Artist]
-    var artists: [Artist]
+    //var authors: [Artist]  Not necessary//sourceArtists
+    //var artists: [Artist]  Not necessary//sourceArtists
     var numberPages: Int?
     var isDone: Bool
+    var image: String?
     var comments: String
     
     let dateFormatter = DateFormatter()
@@ -59,7 +65,7 @@ class Source: DataNode, Record, Hashable {
         "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
     }
     
-    init(name: String, serie: Serie?, number: Int?, arc: Arc?, era: Era, sourceType: SourceType, publicationDate: Date, universeYear: Int?, authors: [Artist], artists: [Artist], numberPages: Int?, comments: String = "", isDone: Bool) {
+    init(name: String, serie: Serie?, number: Int?, arc: Arc?, era: Era, sourceType: SourceType, publicationDate: Date, universeYear: Int?, authors: [Artist], artists: [Artist], numberPages: Int?, image: String?, comments: String = "", isDone: Bool) {
         self.id = UUID()
         self.name = name
         self.serie = serie
@@ -69,9 +75,10 @@ class Source: DataNode, Record, Hashable {
         self.sourceType = sourceType
         self.publicationDate = publicationDate
         self.universeYear = universeYear
-        self.authors = authors
-        self.artists = artists
+        //self.authors = authors
+        //self.artists = artists
         self.numberPages = numberPages
+        self.image = image
         self.comments = comments
         self.isDone = isDone
         
@@ -82,7 +89,13 @@ class Source: DataNode, Record, Hashable {
         fatalError("init(from:) has not been implemented")
     }
     
-    static let example = Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, authors: [.example], artists: [.example], numberPages: 200, isDone: false)
+    static let example = Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, authors: [.example], artists: [.example], numberPages: 200, image: "A New Hope", isDone: false)
+    
+    static let examples = [
+        Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, authors: [.example], artists: [.example], numberPages: 200, image: "A New Hope", isDone: false),
+        Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, authors: [.example], artists: [.example], numberPages: 200, image: "A New Hope", isDone: false),
+        Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, authors: [.example], artists: [.example], numberPages: 200, image: "A New Hope", isDone: false)
+    ]
     
     static func == (lhs: Source, rhs: Source) -> Bool {
         lhs.id == rhs.id
