@@ -10,6 +10,8 @@ class StarshipModel(BaseModel):
 
     id: UUID
     name: str
+    class_type: Optional[str] = None
+    line: Optional[str] = None
     first_appearance: Optional[str] = None
     comments: Optional[str] = None
     image: Optional[str] = None

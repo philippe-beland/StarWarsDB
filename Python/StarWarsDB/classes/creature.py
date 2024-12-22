@@ -12,6 +12,7 @@ class Creature(BaseModel):
 
     id: UUID
     name: str
+    designation: Optional[str] = None
     homeworld_id: Optional[str] = None
     homeworld: Optional[Planet] = None
     first_appearance: Optional[str] = None

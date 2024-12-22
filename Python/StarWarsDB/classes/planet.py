@@ -12,7 +12,6 @@ class Planet(BaseModel):
     name: str
     region: Optional[str] = None
     sector: Optional[str] = None
-    fauna: Optional[str] = None
     system: Optional[str] = None
     capital_city: Optional[str] = None
     destinations: List[str] = []
