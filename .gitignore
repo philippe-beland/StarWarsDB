@@ -90,3 +90,5 @@ fastlane/test_output
 iOSInjectionProject/
 .DS_Store
 /Python/Star Wars raw Data
+/Python/StarWarsDB/Star Wars raw Data
+/Python/StarWarsDB.egg-info

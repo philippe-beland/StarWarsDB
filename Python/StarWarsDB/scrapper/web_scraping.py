@@ -7,39 +7,45 @@ class WookieepediaScraping:
     Class to scrap online
     """
 
-    def __init__(self, url):
+    def __init__(self):
         """Init class"""
+
+    def _scrape_web(self, entity_name):
+        url = f"https://starwars.fandom.com/wiki/{entity_name.replace(' ', '_')}"
         url_data = urlopen(url)
         url_html = url_data.read()
         url_data.close()
 
         html = soup(url_html, "html.parser")
-        self.infobox = html.find("aside", class_="portable-infobox")
+        infobox = html.find("aside", class_="portable-infobox")
 
-    def scrape_character(self):
+        return infobox
+
+    def scrape_character(self, entity_name: str):
         """Scrape character"""
-        image_url = self.infobox.find(
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
             "figure",
             class_="pi-item pi-image",
         )
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        home_world = self.infobox.find(
+        home_world = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "homeworld"},
         )
         home_world = home_world.find("a").text if home_world else None
 
-        species = self.infobox.find(
+        species = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "species"},
         )
         species = species.find("a").text if species else None
 
-        sex = self.infobox.find(
+        sex = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "gender"},
@@ -54,23 +60,24 @@ class WookieepediaScraping:
         }
         return info_dict
 
-    def scrape_creature(self):
+    def scrape_creature(self, entity_name: str):
         """Scrape creature"""
-        image_url = self.infobox.find(
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
             "figure",
             class_="pi-item pi-image",
         )
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        home_world = self.infobox.find(
+        home_world = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "planet"},
         )
         home_world = home_world.find("a").text if home_world else None
 
-        designation = self.infobox.find(
+        designation = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "designation"},
@@ -84,16 +91,17 @@ class WookieepediaScraping:
         }
         return info_dict
 
-    def scrape_droid(self):
+    def scrape_droid(self, entity_name: str):
         """Scrape droid"""
-        image_url = self.infobox.find(
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
             "figure",
             class_="pi-item pi-image",
         )
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        class_type = self.infobox.find(
+        class_type = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "class"},
@@ -107,39 +115,40 @@ class WookieepediaScraping:
 
         return info_dict
 
-    def scrape_planet(self):
+    def scrape_planet(self, entity_name: str):
         """
         Scrape planet
         """
-        image_url = self.infobox.find(
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
             "figure",
             class_="pi-item pi-image",
         )
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        region = self.infobox.find(
+        region = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "region"},
         )
         region = region.find("a").text if region else None
 
-        sector = self.infobox.find(
+        sector = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "sector"},
         )
         sector = sector.find("a").text if sector else None
 
-        system = self.infobox.find(
+        system = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "system"},
         )
         system = system.find("a").text if system else None
 
-        capital_city = self.infobox.find(
+        capital_city = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "capital"},
@@ -156,16 +165,17 @@ class WookieepediaScraping:
 
         return info_dict
 
-    def scrape_source(self):
+    def scrape_source(self, entity_name: str):
         """Scrape source"""
-        image_url = self.infobox.find(
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
             "figure",
             class_="pi-item pi-image",
         )
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        timeline = self.infobox.find(
+        timeline = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "timeline"},
@@ -180,16 +190,17 @@ class WookieepediaScraping:
 
         return info_dict
 
-    def scrape_species(self):
+    def scrape_species(self, entity_name: str):
         """Scrape species"""
-        image_url = self.infobox.find(
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
             "figure",
             class_="pi-item pi-image",
         )
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        homeworld = self.infobox.find(
+        homeworld = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "planet"},
@@ -204,23 +215,24 @@ class WookieepediaScraping:
 
         return info_dict
 
-    def scrape_starship_model(self):
+    def scrape_starship_model(self, entity_name: str):
         """Scrape starship model"""
-        image_url = self.infobox.find(
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
             "figure",
             class_="pi-item pi-image",
         )
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        class_type = self.infobox.find(
+        class_type = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "type"},
         )
         class_type = class_type.find("a").text if class_type else None
 
-        line = self.infobox.find(
+        line = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "model"},
@@ -236,16 +248,17 @@ class WookieepediaScraping:
 
         return info_dict
 
-    def scrape_model(self):
-        """Scrape model"""
-        image_url = self.infobox.find(
+    def scrape_starship(self, entity_name: str):
+        """Scrape Starship"""
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
             "figure",
             class_="pi-item pi-image",
         )
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        product_line = self.infobox.find(
+        product_line = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "line"},

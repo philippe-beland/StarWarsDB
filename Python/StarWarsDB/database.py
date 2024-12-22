@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 import uuid
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 from StarWarsDB.classes.arc import Arc
 from StarWarsDB.classes.artist import Artist
@@ -987,8 +987,50 @@ class StarWarsDB:
             for source_varia in source_varia_raw
         ]
 
+    def find_planet_id(self, planet_name: str) -> Optional[str]:
+        """
+        Find the planet id from the planet name
 
-x = StarWarsDB()
+        Args:
+            planet_name (str): The planet name
 
-# x.add_missing_species()
-# x.add_missing_starship_models()
+        Returns:
+            Optional[str]: The planet id
+        """
+        for id, value in self.planets.items():
+            if value.name == planet_name:
+                return id
+
+        return None
+
+    def find_species_id(self, species_name: str) -> Optional[str]:
+        """
+        Find the species id from the species name
+
+        Args:
+            species_name (str): The species name
+
+        Returns:
+            Optional[str]: The species id
+        """
+        for id, value in self.species.items():
+            if value.name == species_name:
+                return id
+
+        return None
+
+    def find_starship_model_id(self, starship_model_name: str) -> Optional[str]:
+        """
+        Find the starship model id from the starship model name
+
+        Args:
+            starship_model_name (str): The starship model name
+
+        Returns:
+            Optional[str]: The starship model id
+        """
+        for id, value in self.starship_models.items():
+            if value.name == starship_model_name:
+                return id
+
+        return None
