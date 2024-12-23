@@ -16,6 +16,7 @@ enum EntityType: String, Codable {
     case species = "Species"
     case starshipModel = "Starship Model"
     case starship = "Starship"
+    case varia = "Varia"
 }
 
 class DataNode: Codable {
@@ -81,17 +82,17 @@ class DataNode: Codable {
 class Entity: DataNode, Record {
     var id: UUID
     var name: String
-    var comments: String
-    var image: String?
+    var comments: String?
+    var firstAppearance: String?
     var url: String{
         "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
     }
     
-    init(name: String, comments: String, image: String?, recordType: String, tableName: String) {
-        self.id = UUID()
+    init(id: UUID, name: String, comments: String?, firstAppearance: String?, recordType: String, tableName: String) {
+        self.id = id
         self.name = name
         self.comments = comments
-        self.image = image
+        self.firstAppearance = firstAppearance
         
         super.init(recordType: recordType, tableName: tableName, recordID: self.id)
     }
@@ -114,6 +115,6 @@ class Entity: DataNode, Record {
 protocol Record: Identifiable, Hashable {
     var id: UUID { get }
     var name: String { get set }
-    var comments: String { get set }
+    var comments: String? { get set }
     var url: String { get }
 }

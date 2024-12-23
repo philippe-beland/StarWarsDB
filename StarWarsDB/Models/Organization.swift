@@ -9,16 +9,30 @@ import Foundation
 
 @Observable
 class Organization: Entity {
-    var firstAppearance: String?
     
-    init(name: String, firstAppearance: String?, image: String?, comments: String = "") {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case firstAppearance = "first_appearance"
+        case comments
+    }
+    
+    init(name: String, firstAppearance: String?, comments: String = "") {
+        let id = UUID()
         
-        super.init(name: name, comments: comments, image: image, recordType: "Organization", tableName: "organizations")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Organization", tableName: "organizations")
     }
     
     required init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let id = try container.decode(UUID.self, forKey: .id)
+        let name = try container.decode(String.self, forKey: .name)
+        let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
+        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Organization", tableName: "organizations")
     }
     
-    static let example = Organization(name: "Alphabet Squadron", firstAppearance: nil, image: "Alphabet_Squadron", comments: "The best squadron ever")
+    static let example = Organization(name: "Alphabet Squadron", firstAppearance: nil, comments: "The best squadron ever")
 }

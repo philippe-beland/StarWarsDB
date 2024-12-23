@@ -13,8 +13,8 @@ class SourceItem: DataNode, Equatable, Identifiable {
     var entity: Entity
     var appearance: AppearanceType
     
-    init (source: Source, entity: Entity, appearance: AppearanceType, recordType: String, tableName: String) {
-        self.id = UUID()
+    init (id: UUID, source: Source, entity: Entity, appearance: AppearanceType, recordType: String, tableName: String) {
+        self.id = id
         self.source = source
         self.entity = entity
         self.appearance = appearance

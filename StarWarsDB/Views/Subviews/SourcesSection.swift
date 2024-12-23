@@ -41,7 +41,7 @@ struct SourceList: View {
             VStack (alignment: .leading) {
                 Text(sourceItem.source.name)
                     .font(.headline)
-                Text(sourceItem.source.publicationDateString)
+                Text(sourceItem.source.publicationDate.description)
                     .font(.caption)
                     .foregroundColor(.secondary)
             }

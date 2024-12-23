@@ -21,6 +21,7 @@ struct EditEntityView: View {
         case .species: EditSpeciesView(species: entity as! Species)
         case .starshipModel: EditStarshipModelView(starshipModel: entity as! StarshipModel)
         case .starship: EditStarshipView(starship: entity as! Starship)
+        case .varia: EditVariaView(varia: entity as! Varia)
         }
     }
 }

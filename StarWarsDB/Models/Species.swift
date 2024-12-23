@@ -10,18 +10,33 @@ import Foundation
 @Observable
 class Species: Entity {
     var homeworld: Planet?
-    var firstAppearance: String?
     
-    init(name: String, homeworld: Planet?, firstAppearance: String?, image: String?, comments: String = "") {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case homeworld
+        case firstAppearance = "first_appearance"
+        case comments
+    }
+    
+    init(name: String, homeworld: Planet?, firstAppearance: String?, comments: String = "") {
+        let id = UUID()
         self.homeworld = homeworld
-        self.firstAppearance = firstAppearance
         
-        super.init(name: name, comments: comments, image: image, recordType: "Species", tableName: "species")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Species", tableName: "species")
     }
     
     required init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let id = try container.decode(UUID.self, forKey: .id)
+        let name = try container.decode(String.self, forKey: .name)
+        self.homeworld = try container.decodeIfPresent(Planet.self, forKey: .homeworld)
+        let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
+        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Species", tableName: "species")
     }
     
-    static let example = Species(name: "Twi'lek", homeworld: .example, firstAppearance: nil, image: "Twi'lek")
+    static let example = Species(name: "Twi'lek", homeworld: .example, firstAppearance: nil)
 }

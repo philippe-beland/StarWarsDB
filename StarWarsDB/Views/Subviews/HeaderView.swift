@@ -24,7 +24,7 @@ struct HeaderView: View {
                 Image("Site-logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 36, height: 36) // Similar size to SF Symbols
+                    .frame(width: 36, height: 36)
             }
             .buttonStyle(.plain)
             Spacer()

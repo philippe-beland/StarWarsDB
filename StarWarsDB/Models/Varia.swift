@@ -10,13 +10,29 @@ import Foundation
 @Observable
 class Varia: Entity {
     
-    init(name: String, image: String?, comments: String = "") {
-        super.init(name: name, comments: comments, image: image, recordType: "Varia", tableName: "varias")
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case firstAppearance = "first_appearance"
+        case comments
+    }
+    
+    init(name: String, firstAppearance: String?, comments: String = "") {
+        let id = UUID()
+
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Varia", tableName: "varias")
     }
     
     required init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let id = try container.decode(UUID.self, forKey: .id)
+        let name = try container.decode(String.self, forKey: .name)
+        let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
+        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Varia", tableName: "varias")
     }
     
-    static let example = Varia(name: "Sabacc", image: "Sabacc", comments: "Card Game")
+    static let example = Varia(name: "Sabacc", firstAppearance: nil, comments: "Card Game")
 }

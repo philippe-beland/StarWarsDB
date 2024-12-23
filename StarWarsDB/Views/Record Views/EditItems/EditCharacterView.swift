@@ -22,10 +22,10 @@ struct EditCharacterView: View {
     private var InfosSection: some View {
         Section("Infos") {
             MultiFieldView(fieldName: "Aliases", infos: character.aliases)
-            FieldView(fieldName: "Sex", info: character.sex.rawValue)
+            FieldView(fieldName: "Gender", info: character.gender.rawValue)
             FieldView(fieldName: "Species", info: character.species!.name)
             FieldView(fieldName: "Homeworld", info: character.homeworld!.name)
-            MultiFieldView(fieldName: "Affiliation", infos: character.affiliations)
+            MultiFieldView(fieldName: "Affiliation", entities: character.affiliations)
             FieldView(fieldName: "First Appearance", info: character.firstAppearance ?? "")
         }
     }

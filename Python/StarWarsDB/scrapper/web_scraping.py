@@ -31,12 +31,12 @@ class WookieepediaScraping:
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        home_world = infobox.find(
+        homeworld = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "homeworld"},
         )
-        home_world = home_world.find("a").text if home_world else None
+        homeworld = homeworld.find("a").text if homeworld else None
 
         species = infobox.find(
             "div",
@@ -54,7 +54,7 @@ class WookieepediaScraping:
 
         info_dict = {
             "image_url": image_url,
-            "home_world": home_world,
+            "homeworld": homeworld,
             "species": species,
             "sex": sex,
         }
@@ -70,12 +70,12 @@ class WookieepediaScraping:
 
         image_url = image_url.find("img")["src"] if image_url else None
 
-        home_world = infobox.find(
+        homeworld = infobox.find(
             "div",
             class_="pi-item pi-data pi-item-spacing pi-border-color",
             attrs={"data-source": "planet"},
         )
-        home_world = home_world.find("a").text if home_world else None
+        homeworld = homeworld.find("a").text if homeworld else None
 
         designation = infobox.find(
             "div",
@@ -86,7 +86,7 @@ class WookieepediaScraping:
 
         info_dict = {
             "image_url": image_url,
-            "home_world": home_world,
+            "homeworld": homeworld,
             "designation": designation,
         }
         return info_dict
@@ -161,6 +161,22 @@ class WookieepediaScraping:
             "sector": sector,
             "system": system,
             "capital_city": capital_city,
+        }
+
+        return info_dict
+
+    def scrape_organization(self, entity_name: str):
+        """Scrape organization"""
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
+            "figure",
+            class_="pi-item pi-image",
+        )
+
+        image_url = image_url.find("img")["src"] if image_url else None
+
+        info_dict = {
+            "image_url": image_url,
         }
 
         return info_dict
@@ -268,6 +284,21 @@ class WookieepediaScraping:
         info_dict = {
             "image_url": image_url,
             "product_line": product_line,
+        }
+
+        return info_dict
+
+    def scrape_varias(self, entity_name: str):
+        """Scrape varias"""
+        infobox = self._scrape_web(entity_name)
+        image_url = infobox.find(
+            "figure",
+            class_="pi-item pi-image",
+        )
+
+        image_url = image_url.find("img")["src"] if image_url else None
+        info_dict = {
+            "image_url": image_url,
         }
 
         return info_dict

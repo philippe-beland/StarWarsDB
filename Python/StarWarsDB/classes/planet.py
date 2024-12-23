@@ -26,3 +26,16 @@ class Planet(BaseModel):
 
     def __repr__(self):
         return f"{self.name}"
+
+    def to_json(self):
+        return {
+            "id": str(self.id),
+            "name": self.name,
+            "region": self.region,
+            "sector": self.sector,
+            "system": self.system,
+            "capital_city": self.capital_city,
+            "destinations": self.destinations,
+            "first_appearance": self.first_appearance,
+            "comments": self.comments,
+        }

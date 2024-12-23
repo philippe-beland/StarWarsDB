@@ -21,6 +21,7 @@ struct EntityRowView: View {
             case .species: SpeciesRowView(species: entity as! Species)
             case .starshipModel: StarshipModelRowView(starshipModel: entity as! StarshipModel)
             case .starship: StarshipRowView(starship: entity as! Starship)
+            case .varia: VariaRowView(varia: entity as! Varia)
         }
     }
     
@@ -31,7 +32,7 @@ struct CharacterRowView: View {
     
     var body: some View {
         HStack {
-            Image("Luke_Skywalker")
+            Image(character.id.uuidString)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
@@ -57,7 +58,7 @@ struct CreatureRowView: View {
     
     var body: some View {
         HStack {
-            Image("Luke_Skywalker")
+            Image(creature.id.uuidString)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
@@ -75,7 +76,7 @@ struct DroidRowView: View {
     
     var body: some View {
         HStack {
-            Image("Luke_Skywalker")
+            Image(droid.id.uuidString)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
@@ -91,7 +92,7 @@ struct OrganizationRowView: View {
     
     var body: some View {
         HStack {
-            Image("Luke_Skywalker")
+            Image(organization.id.uuidString)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
@@ -107,7 +108,7 @@ struct PlanetRowView: View {
     
     var body: some View {
         HStack {
-            Image("Luke_Skywalker")
+            Image(planet.id.uuidString)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
@@ -131,7 +132,7 @@ struct SpeciesRowView: View {
     
     var body: some View {
         HStack {
-            Image("Luke_Skywalker")
+            Image(species.id.uuidString)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
@@ -149,7 +150,7 @@ struct StarshipModelRowView: View {
     
     var body: some View {
         HStack {
-            Image("Luke_Skywalker")
+            Image(starshipModel.id.uuidString)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
@@ -165,7 +166,7 @@ struct StarshipRowView: View {
     
     var body: some View {
         HStack {
-            Image("Luke_Skywalker")
+            Image(starship.id.uuidString)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50)
@@ -174,6 +175,22 @@ struct StarshipRowView: View {
             Text(starship.name)
             Text(starship.model?.name ?? "")
                 .font(.callout)
+        }
+    }
+}
+
+struct VariaRowView: View {
+    let varia: Varia
+    
+    var body: some View {
+        HStack {
+            Image(varia.id.uuidString)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 50, height: 50)
+                .clipShape(Circle())
+            
+            Text(varia.name)
         }
     }
 }

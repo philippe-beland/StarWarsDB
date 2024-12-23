@@ -24,3 +24,12 @@ class Species(BaseModel):
 
     def __repr__(self):
         return f"{self.name}"
+
+    def to_json(self):
+        return {
+            "id": str(self.id),
+            "name": self.name,
+            "homeworld_id": self.homeworld_id,
+            "first_appearance": self.first_appearance,
+            "comments": self.comments,
+        }

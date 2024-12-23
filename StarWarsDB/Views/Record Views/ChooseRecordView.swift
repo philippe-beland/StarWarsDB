@@ -44,6 +44,7 @@ struct ChooseRecordView: View {
             RecordMenuItem(imageName: "Dianoga", type: .creature, destinationView: AnyView(EditCreatureView(creature: .example))),
             RecordMenuItem(imageName: "R2_astromech_droid", type: .droid, destinationView: AnyView(EditDroidView(droid: .example))),
             RecordMenuItem(imageName: "YT-1300", type: .starshipModel, destinationView: AnyView(EditStarshipModelView(starshipModel: .example))),
+            RecordMenuItem(imageName: "YT-1300", type: .varia, destinationView: AnyView(EditVariaView(varia: .example)))
         ]
     }
 }

@@ -37,15 +37,19 @@ struct FieldVStack: View {
 
 struct MultiFieldView: View {
     var fieldName: String
-    var infos: [any Record]
+    var infos: [String] = []
+    var entities: [Entity] = []
     
     var body: some View {
         HStack {
             Text(fieldName).bold()
             Spacer()
             VStack {
-                ForEach(infos, id: \.id) { info in
-                    Text(info.name)
+                ForEach(infos, id:\.self) { info in
+                    Text(info)
+                }
+                ForEach(entities) { entity in
+                    Text(entity.name)
                 }
             }
         }
@@ -55,14 +59,18 @@ struct MultiFieldView: View {
 
 struct MultiFieldVStack: View {
     var fieldName: String
-    var infos: [any Record]
+    var infos: [String] = []
+    var entities: [Entity] = []
     
     var body: some View {
         VStack {
             Text("\(fieldName):")
                 .bold()
-            ForEach(infos, id: \.id) { info in
-                Text(info.name)
+            ForEach(infos, id:\.self) { info in
+                Text(info)
+            }
+            ForEach(entities) { entity in
+                Text(entity.name)
             }
         }
     }
@@ -71,6 +79,6 @@ struct MultiFieldVStack: View {
 #Preview {
     FieldView(fieldName: "Name", info: "Luke Skywalker")
     FieldVStack(fieldName: "Name", info: "Luke Skywalker")
-    MultiFieldView(fieldName: "Affiliation", infos: Character.example.affiliations)
-    MultiFieldVStack(fieldName: "Affiliation", infos: Character.example.affiliations)
+    MultiFieldView(fieldName: "Affiliation", entities: Character.example.affiliations)
+    MultiFieldVStack(fieldName: "Affiliation", entities: Character.example.affiliations)
 }

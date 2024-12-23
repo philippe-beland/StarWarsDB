@@ -11,10 +11,10 @@ enum Region: String, Codable {
     case deepCore = "Deep Core"
     case core = "Core Worlds"
     case colonies = "Colonies"
-    case innerRim = "Inner Rim"
+    case innerRim = "Inner Rim Territories"
     case expansion = "Expansion Region"
-    case midRim = "Mid Rim"
-    case outerRim = "Outer Rim"
+    case midRim = "Mid Rim Territories"
+    case outerRim = "Outer Rim Territories"
     case unknown = "Unknown Regions"
     case wildSpace = "Wild Space"
 }
@@ -23,27 +23,48 @@ enum Region: String, Codable {
 class Planet: Entity {
     var region: Region?
     var sector: String?
-    var fauna: String?
     var system: String?
     var capitalCity: String?
-    var destinations: [StringName]
-    var firstAppearance: String?
+    var destinations: [String]
     
-    init(name: String, region: Region? = nil, sector: String? = nil, system: String? = nil, fauna: String? = nil, capitalCity: String? = nil, destinations: [StringName], firstAppearance: String? = nil, image: String?, comments: String = "") {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case region
+        case sector
+        case system
+        case capitalCity = "capital_city"
+        case destinations
+        case firstAppearance = "first_appearance"
+        case comments
+    }
+    
+    init(name: String, region: Region? = nil, sector: String? = nil, system: String? = nil, capitalCity: String? = nil, destinations: [String], firstAppearance: String? = nil, comments: String = "") {
+        
+        let id = UUID()
         self.region = region
         self.sector = sector
         self.system = system
-        self.fauna = fauna
         self.capitalCity = capitalCity
         self.destinations = destinations
-        self.firstAppearance = firstAppearance
         
-        super.init(name: name, comments: comments, image: image, recordType: "Planet", tableName: "planets")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Planet", tableName: "planets")
     }
     
     required init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let id = try container.decode(UUID.self, forKey: .id)
+        let name = try container.decode(String.self, forKey: .name)
+        self.region = try container.decodeIfPresent(Region.self, forKey: .region)
+        self.sector = try container.decodeIfPresent(String.self, forKey: .sector)
+        self.capitalCity = try container.decodeIfPresent(String.self, forKey: .capitalCity)
+        self.destinations = try container.decode([String].self, forKey: .destinations)
+        let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
+        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Planet", tableName: "planets")
     }
     
-    static let example = Planet(name: "Tatooine", region: .outerRim, sector: "Arkanis", system: "Tatoo", capitalCity: "Mos Eisley", destinations: [StringName("Anchorhead"), StringName("Bestine"), StringName("Freetown"), StringName("Mos Espa")], firstAppearance: "A New Hope", image: "Tatooine", comments: "Tatooine was a sparsely inhabited circumbinary desert planet located in the galaxy's Outer Rim Territories. Part of a binary star system, the planet orbited two scorching suns, resulting in the world lacking the necessary surface water to sustain large populations. As a result, many residents of the planet instead drew water from the atmosphere via moisture farms. The planet also had little surface vegetation. It was the homeworld to the native Jawa and Tusken Raider species and of Anakin and Luke Skywalker, who would go on to shape galactic history.")
+    static let example = Planet(name: "Tatooine", region: .outerRim, sector: "Arkanis", system: "Tatoo", capitalCity: "Mos Eisley", destinations: ["Anchorhead", "Bestine", "Freetown", "Mos Espa"], firstAppearance: "A New Hope", comments: "Tatooine was a sparsely inhabited circumbinary desert planet located in the galaxy's Outer Rim Territories. Part of a binary star system, the planet orbited two scorching suns, resulting in the world lacking the necessary surface water to sustain large populations. As a result, many residents of the planet instead drew water from the atmosphere via moisture farms. The planet also had little surface vegetation. It was the homeworld to the native Jawa and Tusken Raider species and of Anakin and Luke Skywalker, who would go on to shape galactic history.")
 }

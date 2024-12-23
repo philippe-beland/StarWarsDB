@@ -15,19 +15,26 @@ email = os.getenv("SUPABASE_EMAIL")
 password = os.getenv("SUPABASE_PASSWORD")
 response = supabase.auth.sign_in_with_password({"email": email, "password": password})
 
-current_dir: Path = Path(__file__).parent
-data_dir: Path = Path(current_dir, "Batman DB", "Ressources")
-
-file = Path(data_dir, "source_gadget.json")
-
-with open(file, "r") as f:
-    records = json.load(f)
+current_dir: Path = Path(__file__).parent.parent
+data_dir: Path = Path(current_dir, "Star Wars raw Data", "Final Records")
 
 try:
-    response = supabase.table("source_gadget").insert(records).execute()
-    print(response)
+    file = Path(data_dir, "Sources2.json")
+
+    with open(file, "r") as f:
+        records = json.load(f)
+
+    def insert_data(records: dict, table_name: str):
+        try:
+            response = supabase.table(table_name).insert(records).execute()
+            print(response)
+        except Exception as e:
+            print(e)
+            print("Error while inserting data")
+
+    insert_data(records, "sources")
 except Exception as e:
     print(e)
-    print("Error while inserting data")
+    print("Error while reading data")
 
 response = supabase.auth.sign_out()

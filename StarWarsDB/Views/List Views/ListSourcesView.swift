@@ -13,7 +13,7 @@ struct ListSourcesView: View {
     @State private var searchText: String = ""
     @State private var isDoneFilter: Bool = false
     @State private var showNewSourceSheet = false
-    @State private var sources: [Source] = Source.examples
+    @State private var sources: [Source] = []
     
     let layout = [GridItem(.adaptive(minimum: 200, maximum: 300)),]
     
@@ -22,12 +22,8 @@ struct ListSourcesView: View {
             ScrollView {
                 LazyVGrid(columns: layout) {
                     ForEach(sources) { source in
-                        NavigationLink(destination: EditSourceView(source: source)) {
-                            SourceGridView(source: source)
-                        }
-                        .contextMenu {
-                            Button("Delete", role: .destructive, action: { deleteSource(source) })
-                        }
+                        SourceNavigationLink(source: source)
+                            .contextMenu { SourceContextMenu(source: source) }
                     }
                 }
             }
@@ -39,7 +35,7 @@ struct ListSourcesView: View {
         .onChange(of: selectedView) { handleParameterChange() }
         .onChange(of: sortOrder) { handleParameterChange() }
         .onChange(of: isDoneFilter) { handleParameterChange() }
-        //.task { await loadInitialSources() }
+        .task { await loadInitialSources() }
     }
     
     private func handleParameterChange() {
@@ -65,6 +61,18 @@ struct ListSourcesView: View {
             sources.remove(at: index)
         }
         source.delete()
+    }
+    
+    @ViewBuilder
+    private func SourceNavigationLink(source: Source) -> some View {
+        NavigationLink(destination: EditSourceView(source: source)) {
+            SourceGridView(source: source)
+        }
+    }
+
+    @ViewBuilder
+    func SourceContextMenu(source: Source) -> some View {
+        Button("Delete", role: .destructive, action: { deleteSource(source) })
     }
     
     @ToolbarContentBuilder

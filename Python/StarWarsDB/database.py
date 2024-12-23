@@ -484,7 +484,7 @@ class StarWarsDB:
         Returns:
             Dict[str, Character]: List of characters
         """
-        file = Path(self.data_path, "Pre-scraping", "Characters.json")
+        file = Path(self.data_path, "Final Records", "Characters.json")
         with open(file, "r", encoding="utf-8") as file:
             character_raw = json.load(file)
 
@@ -498,6 +498,7 @@ class StarWarsDB:
                 sex=character.get("sex", None),
                 affiliations_id=character.get("affiliations", []),
                 first_appearance=character.get("first_appearance", None),
+                is_scrapped=character.get("is_scrapped", False),
                 comments=character.get("comments", ""),
             )
             for character in character_raw
@@ -646,7 +647,7 @@ class StarWarsDB:
         Returns:
             Dict[str, Source]: List of sources
         """
-        file = Path(self.data_path, "Pre-scraping", "Sources.json")
+        file = Path(self.data_path, "Final Records", "Sources.json")
         with open(file, "r", encoding="utf-8") as file:
             source_raw = json.load(file)
 

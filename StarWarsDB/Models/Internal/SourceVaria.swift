@@ -10,12 +10,28 @@ import Foundation
 @Observable
 class SourceVaria: SourceItem {
     
+    enum CodingKeys: String, CodingKey {
+        case id
+        case source
+        case entity
+        case appearance
+    }
+    
     init(source: Source, entity: Varia, appearance: AppearanceType) {
-        super.init(source: source, entity: entity, appearance: appearance, recordType: "SourceVarias", tableName: "source_varias")
+        let id = UUID()
+        
+        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceVarias", tableName: "source_varias")
     }
     
     required init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let id = try container.decode(UUID.self, forKey: .id)
+        let source = try container.decode(Source.self, forKey: .source)
+        let entity = try container.decode(Artist.self, forKey: .entity)
+        let appearance = try container.decode(AppearanceType.self, forKey: .appearance)
+        
+        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceVarias", tableName: "source_varias")
     }
     
     static let example = [

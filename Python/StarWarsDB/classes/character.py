@@ -23,6 +23,7 @@ class Character(BaseModel):
     affiliations_id: List[str] = []
     affiliations: List[Organization] = []
     first_appearance: Optional[str] = None
+    is_scrapped: bool = False
     comments: Optional[str] = None
     image: Optional[str] = None
 
@@ -33,3 +34,17 @@ class Character(BaseModel):
 
     def __repr__(self):
         return f"{self.name}"
+
+    def to_json(self):
+        return {
+            "id": str(self.id),
+            "name": self.name,
+            "aliases": self.aliases,
+            "species_id": self.species_id,
+            "homeworld_id": self.homeworld_id,
+            "sex": self.sex,
+            "affiliations_id": self.affiliations_id,
+            "first_appearance": self.first_appearance,
+            "is_scrapped": self.is_scrapped,
+            "comments": self.comments,
+        }

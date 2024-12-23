@@ -22,3 +22,12 @@ class Droid(BaseModel):
 
     def __repr__(self):
         return f"{self.name}"
+
+    def to_json(self):
+        return {
+            "id": str(self.id),
+            "name": self.name,
+            "class_type": self.class_type,
+            "first_appearance": self.first_appearance,
+            "comments": self.comments,
+        }

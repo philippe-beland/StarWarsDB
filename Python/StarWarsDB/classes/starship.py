@@ -24,3 +24,13 @@ class Starship(BaseModel):
 
     def __repr__(self):
         return f"{self.name}"
+
+    def to_json(self):
+        return {
+            "id": str(self.id),
+            "name": self.name,
+            "model_id": self.model_id,
+            "first_appearance": self.first_appearance,
+            "comments": self.comments,
+            "image": self.image,
+        }

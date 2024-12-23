@@ -19,7 +19,7 @@ struct ScrollAppearancesView: View {
                         NavigationLink(destination: EditEntityView(entityType: entityType, entity: sourceItem.entity)) {
                             RecordEntryView(
                                 name: sourceItem.entity.name ,
-                                imageName: sourceItem.entity.image ?? "",
+                                imageName: sourceItem.entity.id.uuidString,
                                 appearance: sourceItem.appearance)
                         }
                         .buttonStyle(PlainButtonStyle())

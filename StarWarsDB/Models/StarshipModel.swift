@@ -9,16 +9,40 @@ import Foundation
 
 @Observable
 class StarshipModel: Entity {
-    var firstAppearance: String?
+    var classType: String?
+    var line: String?
     
-    init(name: String, firstAppearance: String?, image: String?, comments: String = "") {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case classType = "class_type"
+        case line
+        case firstAppearance = "first_appearance"
+        case comments
+    }
+    
+    init(name: String, classType: String?, line: String?, firstAppearance: String?, comments: String = "") {
+        let id = UUID()
         
-        super.init(name: name, comments: comments, image: image, recordType: "Starship Model", tableName: "starship_models")
+        self.classType = classType
+        self.line = line
+        
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Starship Model", tableName: "starship_models")
     }
     
     required init(from decoder: Decoder) throws {
-        fatalError("init(from:) has not been implemented")
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let id = try container.decode(UUID.self, forKey: .id)
+        let name = try container.decode(String.self, forKey: .name)
+        self.classType = try container.decodeIfPresent(String.self, forKey: .classType)
+        self.line = try container.decodeIfPresent(String.self, forKey: .line)
+        let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
+        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Starship Model", tableName: "starship_models")
+
     }
     
-    static let example = StarshipModel(name: "YT-1300", firstAppearance: nil, image: "YT-1300", comments: "Best ship!")
+    static let example = StarshipModel(name: "YT-1300", classType: "Starfighter", line: nil, firstAppearance: nil, comments: "Best ship!")
 }

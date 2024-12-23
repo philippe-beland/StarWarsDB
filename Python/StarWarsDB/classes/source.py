@@ -56,3 +56,19 @@ class Source(BaseModel):
 
     def __repr__(self):
         return f"{self.name}"
+
+    def to_json(self):
+        return {
+            "id": str(self.id),
+            "name": self.name,
+            "serie_id": self.serie_id,
+            "number": self.number,
+            "arc_id": self.arc_id,
+            "era": self.era,
+            "source_type": self.source_type,
+            "publication_date": self.publication_date,
+            "universe_year": self.universe_year,
+            "number_pages": self.number_pages,
+            "is_done": self.is_done,
+            "comments": self.comments,
+        }

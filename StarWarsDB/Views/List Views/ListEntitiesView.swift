@@ -13,7 +13,7 @@ struct ListEntitiesView: View {
     @State private var sortOrder: String = "name"
     @State private var searchText = ""
     @State private var showNewEntitySheet = false
-    @State private var entities: [Entity] = Character.examples
+    @State private var entities = [Entity]()
     
     var body: some View {
         NavigationStack {
@@ -30,7 +30,7 @@ struct ListEntitiesView: View {
             .toolbar { ToolbarContent }
         }
         .onChange(of: searchText) { handleSearchTextChange() }
-        //.task { await loadInitialEntities() }
+        .task { await loadInitialEntities() }
     }
     
     private func handleSearchTextChange() {
@@ -42,7 +42,7 @@ struct ListEntitiesView: View {
     }
     
     private func loadInitialEntities() async {
-        entities = await loadEntities(entityType: entityType, sort: sortOrder)
+        entities = await loadEntities(entityType: entityType, sort: sortOrder, filter: searchText)
     }
     
     private func deleteEntity(_ indexSet: IndexSet) {
@@ -68,5 +68,5 @@ struct ListEntitiesView: View {
 }
 
 #Preview {
-    ListEntitiesView(entityType: .character)
+    ListEntitiesView(entityType: .creature)
 }
