@@ -493,9 +493,9 @@ class StarWarsDB:
                 id=character["id"],
                 name=character["name"],
                 aliases=character.get("aliases", []),
-                species_id=character.get("species", None),
-                homeworld_id=character.get("homeworld", None),
-                sex=character.get("sex", None),
+                species_id=character.get("species_id", None),
+                homeworld_id=character.get("homeworld_id", None),
+                sex=character.get("gender", None),
                 affiliations_id=character.get("affiliations", []),
                 first_appearance=character.get("first_appearance", None),
                 is_scrapped=character.get("is_scrapped", False),
@@ -610,7 +610,6 @@ class StarWarsDB:
                 name=planet["name"],
                 region=planet.get("region", None),
                 sector=planet.get("sector", None),
-                fauna=planet.get("fauna", None),
                 system=planet.get("system", None),
                 capital_city=planet.get("capital_city", None),
                 destinations=planet.get("destinations", []),
@@ -806,7 +805,7 @@ class StarWarsDB:
         Returns:
             List[SourceCharacter]: The list of source characters
         """
-        file = Path(self.data_path, "Pre-scraping", "SourceCharacters.json")
+        file = Path(self.data_path, "Final Records", "SourceCharacters.json")
         with open(file, "r", encoding="utf-8") as file:
             source_character_raw = json.load(file)
 
@@ -1035,3 +1034,19 @@ class StarWarsDB:
                 return id
 
         return None
+
+
+db = StarWarsDB()
+
+import pandas as pd
+
+# Import csv
+file = Path("sources_rows.csv")
+df = pd.read_csv(file)
+
+list_2 = []
+for x in db.sources.keys():
+    if x not in df["id"].to_list():
+        list_2.append(x)
+
+print(list_2)

@@ -419,4 +419,4 @@ def update_planets(min: int, max: int):
         )
 
 
-update_characters(0, 5000)
+update_characters(0, 100000)

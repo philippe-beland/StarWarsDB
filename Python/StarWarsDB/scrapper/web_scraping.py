@@ -11,7 +11,7 @@ class WookieepediaScraping:
         """Init class"""
 
     def _scrape_web(self, entity_name):
-        url = f"https://starwars.fandom.com/wiki/{entity_name.replace(' ', '_')}"
+        url = f"https://starwars.fandom.com/wiki/{entity_name.replace(' ', '_').replace('é', 'e')}"
         url_data = urlopen(url)
         url_html = url_data.read()
         url_data.close()

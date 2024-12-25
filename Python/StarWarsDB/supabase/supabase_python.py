@@ -19,15 +19,16 @@ current_dir: Path = Path(__file__).parent.parent
 data_dir: Path = Path(current_dir, "Star Wars raw Data", "Final Records")
 
 try:
-    file = Path(data_dir, "Sources2.json")
+    file = Path(data_dir, "Sources.json")
 
     with open(file, "r") as f:
         records = json.load(f)
 
     def insert_data(records: dict, table_name: str):
         try:
-            response = supabase.table(table_name).insert(records).execute()
-            print(response)
+            for x in records[0:1]:
+                response = supabase.table(table_name).insert(x).execute()
+                print(response)
         except Exception as e:
             print(e)
             print("Error while inserting data")

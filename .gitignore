@@ -94,3 +94,6 @@ iOSInjectionProject/
 /Python/StarWarsDB.egg-info
 Python/keys.env
 /Python/StarWarsDB/Images
+/StarWarsDB/Assets.xcassets
+StarWarsDB/.DS_Store
+*.pyc
