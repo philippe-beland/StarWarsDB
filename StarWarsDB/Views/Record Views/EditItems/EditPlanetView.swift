@@ -11,22 +11,18 @@ struct EditPlanetView: View {
     @Bindable var planet: Planet
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourcePlanets: [SourcePlanet] = SourcePlanet.example
+    @State private var sourcePlanets = [SourcePlanet]()
     
     var body: some View {
         NavigationStack {
-                RecordContentView(record: planet, sourceItems: sourcePlanets, InfosSection: InfosSection)
+            RecordContentView(record: planet, sourceItems: sourcePlanets, InfosSection: PlanetInfoSection(planet: planet))
             }
+        .task { await loadInitialSources() }
         }
-    private var InfosSection: some View {
-        Section("Infos") {
-            FieldView(fieldName: "Region", info: planet.region?.rawValue ?? "")
-            FieldView(fieldName: "Sector", info: planet.sector ?? "")
-            FieldView(fieldName: "System", info: planet.system ?? "")
-            FieldView(fieldName: "Capital", info: planet.capitalCity ?? "")
-            MultiFieldView(fieldName: "Destinations", infos: planet.destinations)
-            FieldView(fieldName: "First Appearance", info: planet.firstAppearance ?? "")
-        }
+
+    
+    private func loadInitialSources() async {
+        sourcePlanets = await loadSourcePlanets(recordField: "planet", recordID: planet.id.uuidString)
     }
 }
 

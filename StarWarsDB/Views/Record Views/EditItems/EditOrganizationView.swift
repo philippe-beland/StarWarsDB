@@ -11,17 +11,17 @@ struct EditOrganizationView: View {
     @Bindable var organization: Organization
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceOrganizations: [SourceOrganization] = SourceOrganization.example
+    @State private var sourceOrganizations = [SourceOrganization]()
     
     var body: some View {
         NavigationStack {
-                RecordContentView(record: organization, sourceItems: sourceOrganizations, InfosSection: InfosSection)
+            RecordContentView(record: organization, sourceItems: sourceOrganizations, InfosSection: OrganizationInfoSection(organization: organization))
             }
+        .task { await loadInitialSources() }
         }
-    private var InfosSection: some View {
-        Section("Infos") {
-            FieldView(fieldName: "First Appearance", info: organization.firstAppearance ?? "")
-        }
+    
+    private func loadInitialSources() async {
+        sourceOrganizations = await loadSourceOrganizations(recordField: "organization", recordID: organization.id.uuidString)
     }
 }
 

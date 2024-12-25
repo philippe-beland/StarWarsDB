@@ -27,16 +27,25 @@ struct EntityRowView: View {
     
 }
 
+func imageOrPlaceholder(for id: UUID) -> Image {
+    if let uiImage = UIImage(named: id.uuidString.lowercased()) {
+        return Image(uiImage: uiImage)
+    } else {
+        return Image(systemName: "person.crop.circle.fill")
+    }
+}
+
 struct CharacterRowView: View {
     let character: Character
     
     var body: some View {
         HStack {
-            Image(character.id.uuidString)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
+            imageOrPlaceholder(for: character.id)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .foregroundStyle(.secondary)
             
             VStack (alignment: .leading) {
                 Text(character.name)
@@ -44,11 +53,12 @@ struct CharacterRowView: View {
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
+            Spacer()
             Text(character.species?.name ?? "")
                 .font(.callout)
             Spacer()
-            Text(character.affiliation)
-                .font(.callout)
+//            Text(character.affiliation)
+//                .font(.callout)
         }
     }
 }
@@ -58,11 +68,12 @@ struct CreatureRowView: View {
     
     var body: some View {
         HStack {
-            Image(creature.id.uuidString)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
+            imageOrPlaceholder(for: creature.id)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .foregroundStyle(.secondary)
             
             Text(creature.name)
             Text(creature.homeworld?.name ?? "")
@@ -76,11 +87,12 @@ struct DroidRowView: View {
     
     var body: some View {
         HStack {
-            Image(droid.id.uuidString)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
+            imageOrPlaceholder(for: droid.id)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .foregroundStyle(.secondary)
 
             Text(droid.name)
         }
@@ -92,11 +104,12 @@ struct OrganizationRowView: View {
     
     var body: some View {
         HStack {
-            Image(organization.id.uuidString)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
+            imageOrPlaceholder(for: organization.id)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .foregroundStyle(.secondary)
             
             Text(organization.name)
         }
@@ -108,20 +121,21 @@ struct PlanetRowView: View {
     
     var body: some View {
         HStack {
-            Image(planet.id.uuidString)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
+            imageOrPlaceholder(for: planet.id)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .foregroundStyle(.secondary)
             
             VStack (alignment: .leading) {
                 Text(planet.name)
-                Text(planet.region?.rawValue ?? "")
+                Text(planet.region.rawValue)
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
             Spacer()
-            Text(planet.capitalCity ?? "")
+            Text(planet.capitalCity)
                 .font(.callout)
         }
     }
@@ -132,13 +146,15 @@ struct SpeciesRowView: View {
     
     var body: some View {
         HStack {
-            Image(species.id.uuidString)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
+            imageOrPlaceholder(for: species.id)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .foregroundStyle(.secondary)
             
             Text(species.name)
+            Spacer()
             Text(species.homeworld?.name ?? "")
                 .font(.callout)
         }
@@ -150,11 +166,12 @@ struct StarshipModelRowView: View {
     
     var body: some View {
         HStack {
-            Image(starshipModel.id.uuidString)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
+            imageOrPlaceholder(for: starshipModel.id)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .foregroundStyle(.secondary)
             
             Text(starshipModel.name)
         }
@@ -166,11 +183,12 @@ struct StarshipRowView: View {
     
     var body: some View {
         HStack {
-            Image(starship.id.uuidString)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
+            imageOrPlaceholder(for: starship.id)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .foregroundStyle(.secondary)
             
             Text(starship.name)
             Text(starship.model?.name ?? "")
@@ -184,11 +202,12 @@ struct VariaRowView: View {
     
     var body: some View {
         HStack {
-            Image(varia.id.uuidString)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
+            imageOrPlaceholder(for: varia.id)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                    .foregroundStyle(.secondary)
             
             Text(varia.name)
         }

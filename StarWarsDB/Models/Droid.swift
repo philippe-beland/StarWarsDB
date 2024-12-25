@@ -11,7 +11,7 @@ import Foundation
 class Droid: Entity {
     var classType: String?
     
-    init(name: String, classType: String?, firstAppearance: String?, comments: String = "") {
+    init(name: String, classType: String?, firstAppearance: String?, comments: String?) {
         let id = UUID()
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Droid", tableName: "droids")

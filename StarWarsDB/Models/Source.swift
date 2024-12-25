@@ -28,19 +28,6 @@ enum SourceType: String, Decodable, CaseIterable {
     case tvShow = "TV Serie"
     case videoGame = "Video Game"
     case referenceBook = "Reference Book"
-    
-    var description: String {
-        switch self {
-        case .all: return ""
-        case .movies: return "Movies"
-        case .comics: return "Comics"
-        case .novels: return "Novels"
-        case .shortStory: return "Short Story"
-        case .tvShow: return "TV Serie"
-        case .videoGame: return "Video Game"
-        case .referenceBook: return "Reference Book"
-        }
-    }
 }
 
 enum SortingSourceOrder: String, CaseIterable {
@@ -125,17 +112,14 @@ class Source: DataNode, Record, Hashable {
         } else {
             self.name = ""
         }
-        
         self.serie = try container.decodeIfPresent(Serie.self, forKey: .serie)
         self.number = try container.decodeIfPresent(Int.self, forKey: .number)
         self.arc = try container.decodeIfPresent(Arc.self, forKey: .arc)
         self.era = try container.decode(Era.self, forKey: .era)
         self.sourceType = try container.decode(SourceType.self, forKey: .sourceType)
-        
+
         let publicationDate = try container.decode(String.self, forKey: .publicationDate)
-        
         self.publicationDate = DateFormatterProvider.shared.dateFormatter.date(from: publicationDate) ?? Date()
-            
         self.universeYear = try container.decodeIfPresent(Int.self, forKey: .universeYear)
         self.numberPages = try container.decodeIfPresent(Int.self, forKey: .numberPages)
         self.isDone = try container.decode(Bool.self, forKey: .isDone)

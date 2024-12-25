@@ -11,17 +11,17 @@ struct EditDroidView: View {
     @Bindable var droid: Droid
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceDroids: [SourceDroid] = SourceDroid.example
+    @State private var sourceDroids = [SourceDroid]()
     
     var body: some View {
         NavigationStack {
-                RecordContentView(record: droid, sourceItems: sourceDroids, InfosSection: InfosSection)
+            RecordContentView(record: droid, sourceItems: sourceDroids, InfosSection: DroidInfoSection(droid: droid))
             }
+        .task { await loadInitialSources() }
         }
-    private var InfosSection: some View {
-        Section("Infos") {
-            FieldView(fieldName: "First Appearance", info: droid.firstAppearance ?? "")
-        }
+    
+    private func loadInitialSources() async {
+        sourceDroids = await loadSourceDroids(recordField: "droid", recordID: droid.id.uuidString)
     }
 }
 

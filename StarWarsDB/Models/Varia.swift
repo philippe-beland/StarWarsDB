@@ -17,7 +17,7 @@ class Varia: Entity {
         case comments
     }
     
-    init(name: String, firstAppearance: String?, comments: String = "") {
+    init(name: String, firstAppearance: String?, comments: String? = nil) {
         let id = UUID()
 
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Varia", tableName: "varias")

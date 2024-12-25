@@ -12,28 +12,28 @@ let supabase = SupabaseClient(
     supabaseURL: URL(string: Secrets.supabaseURL.rawValue)!,
     supabaseKey: Secrets.apiKey.rawValue)
 
-func loadEntities(entityType: EntityType, sort: String, filter: String = "") async -> [Entity] {
+func loadEntities(entityType: EntityType, sort: SortingItemOrder, filter: String = "") async -> [Entity] {
     let entities: [Entity]
     
     switch entityType {
     case .character:
-        entities = await loadCharacters(sort: sort, filter: filter)
+        entities = await loadCharacters(sort: sort.rawValue, filter: filter)
     case .creature:
-        entities = await loadCreatures(sort: sort, filter: filter)
+        entities = await loadCreatures(sort: sort.rawValue, filter: filter)
     case .droid:
-        entities = await loadDroids(sort: sort, filter: filter)
+        entities = await loadDroids(sort: sort.rawValue, filter: filter)
     case .organization:
-        entities = await loadOrganizations(sort: sort, filter: filter)
+        entities = await loadOrganizations(sort: sort.rawValue, filter: filter)
     case .planet:
-        entities = await loadPlanets(sort: sort, filter: filter)
+        entities = await loadPlanets(sort: sort.rawValue, filter: filter)
     case .species:
-        entities = await loadSpecies(sort: sort, filter: filter)
+        entities = await loadSpecies(sort: sort.rawValue, filter: filter)
     case .starship:
-        entities = await loadStarships(sort: sort, filter: filter)
+        entities = await loadStarships(sort: sort.rawValue, filter: filter)
     case .starshipModel:
-        entities = await loadStarshipModels(sort: sort, filter: filter)
+        entities = await loadStarshipModels(sort: sort.rawValue, filter: filter)
     case .varia:
-        entities = await loadVarias(sort: sort, filter: filter)
+        entities = await loadVarias(sort: sort.rawValue, filter: filter)
     }
     return entities
 }
@@ -42,20 +42,30 @@ func loadSources(sort: String, sourceType: SourceType, isDone: Bool, filter: Str
     var sources: [Source] = []
     
     do {
-        sources = try await supabase
+        var query = supabase
             .from("sources")
-            .select("id, name, serie!inner(*), number, arc!inner(id, name, serie!inner(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments")
-            //.eq("is_done", value: isDone)
-            //.ilike("source_type", pattern: sourceType.description)
-            .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
-            .limit(40)
-            .execute()
-            .value
+            .select("id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments")
+        
+        if sourceType != .all {
+            query = query.eq("source_type", value: sourceType.rawValue)
+        }
+        
+        if isDone {
+            query = query.eq("is_done", value: false)
+        }
+        
+        if !filter.isEmpty {
+            query = query.ilike("name", pattern: "%\(filter)%")
+        }
+        
+        query = query.order(sort).limit(100) as! PostgrestFilterBuilder
+        sources = try await query.execute().value
+
         print("Sources successfully loaded")
     } catch {
         print("Failed to fetch Sources: \(error)")
     }
+    print(sources.count)
     
     return sources
 }
@@ -66,7 +76,7 @@ func loadCharacters(sort: String, filter: String = "") async -> [Character] {
     do {
         characters = try await supabase
             .from("characters")
-            .select("id, name, aliases, species!inner(*), homeworld!inner(*), gender, affiliations, first_appearance, comments")
+            .select("id, name, aliases, species(id, name, homeworld(*), first_appearance, comments), homeworld(*), gender, affiliations, first_appearance, comments")
             .ilike("name", pattern: "%\(filter)%")
             .order(sort)
             .limit(40)
@@ -86,7 +96,7 @@ func loadCreatures(sort: String, filter: String = "") async -> [Creature] {
     do {
         creatures = try await supabase
             .from("creatures")
-            .select("id, name, designation, homeworld!inner(*), first_appearance, comments")
+            .select("id, name, designation, homeworld(*), first_appearance, comments")
             .ilike("name", pattern: "%\(filter)%")
             .order(sort)
             .limit(40)
@@ -166,7 +176,7 @@ func loadSpecies(sort: String, filter: String = "") async -> [Species] {
     do {
         species = try await supabase
             .from("species")
-            .select("id, name, homeworld!inner(*), first_appearance, comments")
+            .select("id, name, homeworld(*), first_appearance, comments")
             .ilike("name", pattern: "%\(filter)%")
             .order(sort)
             .limit(40)
@@ -245,7 +255,7 @@ func loadSourceCharacters(recordField: String, recordID: String) async -> [Sourc
     do {
         sourceItems = try await supabase
             .from("source_characters")
-            .select("id, source!inner(id, name, serie!inner(*), number, arc!inner(*), era, source_type, publication_date, universe_year, number_pages, is_done, comments), character!inner(*), appearance")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), character!inner(id, name, aliases, species(id, name, homeworld(*), first_appearance, comments), homeworld(*), gender, affiliations, first_appearance, comments), appearance")
             .eq(recordField, value: recordID)
             .execute()
             .value
@@ -261,7 +271,7 @@ func loadSourceCreatures(recordField: String, recordID: String) async -> [Source
     do {
         sourceItems = try await supabase
             .from("source_creatures")
-            .select("id, source!inner(id, name, serie!inner(*), number, arc!inner(*), era, source_type, publication_date, universe_year, number_pages, is_done, comments), creature!inner(*), appearance")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), creature!inner(id, name, designation, homeworld(*), first_appearance, comments), appearance")
             .eq(recordField, value: recordID)
             .execute()
             .value
@@ -277,7 +287,7 @@ func loadSourceDroids(recordField: String, recordID: String) async -> [SourceDro
     do {
         sourceItems = try await supabase
             .from("source_droids")
-            .select("id, source!inner(id, name, serie!inner(*), number, arc!inner(*), era, source_type, publication_date, universe_year, number_pages, is_done, comments), droid!inner(*), appearance")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), droid!inner(*), appearance")
             .eq(recordField, value: recordID)
             .execute()
             .value
@@ -293,7 +303,7 @@ func loadSourceOrganizations(recordField: String, recordID: String) async -> [So
     do {
         sourceItems = try await supabase
             .from("source_organizations")
-            .select("id, source!inner(id, name, serie!inner(*), number, arc!inner(*), era, source_type, publication_date, universe_year, number_pages, is_done, comments), organization!inner(*), appearance")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), organization!inner(*), appearance")
             .eq(recordField, value: recordID)
             .execute()
             .value
@@ -309,7 +319,7 @@ func loadSourcePlanets(recordField: String, recordID: String) async -> [SourcePl
     do {
         sourceItems = try await supabase
             .from("source_planets")
-            .select("id, source!inner(id, name, serie!inner(*), number, arc!inner(*), era, source_type, publication_date, universe_year, number_pages, is_done, comments), planet!inner(*), appearance")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), planet!inner(*), appearance")
             .eq(recordField, value: recordID)
             .execute()
             .value
@@ -325,7 +335,7 @@ func loadSourceSpecies(recordField: String, recordID: String) async -> [SourceSp
     do {
         sourceItems = try await supabase
             .from("source_species")
-            .select("id, source!inner(id, name, serie!inner(*), number, arc!inner(*), era, source_type, publication_date, universe_year, number_pages, is_done, comments), species!inner(*), appearance")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), species!inner(id, name, homeworld(*), first_appearance, comments), appearance")
             .eq(recordField, value: recordID)
             .execute()
             .value
@@ -340,8 +350,8 @@ func loadSourceStarships(recordField: String, recordID: String) async -> [Source
     var sourceItems = [SourceStarship]()
     do {
         sourceItems = try await supabase
-            .from("source_starship_models")
-            .select("id, source!inner(id, name, serie!inner(*), number, arc!inner(*), era, source_type, publication_date, universe_year, number_pages, is_done, comments), starship!inner(*), appearance")
+            .from("source_starships")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), starship!inner(id, name, first_appearance, comments), appearance")
             .eq(recordField, value: recordID)
             .execute()
             .value
@@ -356,8 +366,8 @@ func loadSourceStarshipModels(recordField: String, recordID: String) async -> [S
     var sourceItems = [SourceStarshipModel]()
     do {
         sourceItems = try await supabase
-            .from("source_starships")
-            .select("id, source!inner(id, name, serie!inner(*), number, arc!inner(*), era, source_type, publication_date, universe_year, number_pages, is_done, comments), starship_model!inner(*), appearance")
+            .from("source_starship_models")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), starship_model!inner(*), appearance")
             .eq(recordField, value: recordID)
             .execute()
             .value
@@ -373,7 +383,7 @@ func loadSourceVarias(recordField: String, recordID: String) async -> [SourceVar
     do {
         sourceItems = try await supabase
             .from("source_varias")
-            .select("id, source!inner(id, name, serie!inner(*), number, arc!inner(*), era, source_type, publication_date, universe_year, number_pages, is_done, comments), varia!inner(*), appearance")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), varia!inner(*), appearance")
             .eq(recordField, value: recordID)
             .execute()
             .value

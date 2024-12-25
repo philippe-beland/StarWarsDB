@@ -11,18 +11,17 @@ struct EditSpeciesView: View {
     @Bindable var species: Species
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceSpecies: [SourceSpecies] = SourceSpecies.example
+    @State private var sourceSpecies = [SourceSpecies]()
     
     var body: some View {
         NavigationStack {
-                RecordContentView(record: species, sourceItems: sourceSpecies, InfosSection: InfosSection)
+            RecordContentView(record: species, sourceItems: sourceSpecies, InfosSection: SpeciesInfoSection(species: species))
             }
+        .task { await loadInitialSources() }
         }
-    private var InfosSection: some View {
-        Section("Infos") {
-            FieldView(fieldName: "Homeworld", info: species.homeworld!.name)
-            FieldView(fieldName: "First Appearance", info: species.firstAppearance ?? "")
-        }
+    
+    private func loadInitialSources() async {
+        sourceSpecies = await loadSourceSpecies(recordField: "species", recordID: species.id.uuidString)
     }
 }
 

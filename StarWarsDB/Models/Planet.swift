@@ -7,24 +7,28 @@
 
 import Foundation
 
-enum Region: String, Codable {
+enum Region: String, Codable, CaseIterable {
     case deepCore = "Deep Core"
     case core = "Core Worlds"
     case colonies = "Colonies"
     case innerRim = "Inner Rim Territories"
     case expansion = "Expansion Region"
     case midRim = "Mid Rim Territories"
+    case westernReaches = "Western Reaches"
     case outerRim = "Outer Rim Territories"
-    case unknown = "Unknown Regions"
+    case unknownRegion = "Unknown Regions"
     case wildSpace = "Wild Space"
+    case extraGalactic = "Extragalactic"
+    case unknown = "Unknown"
+    
 }
 
 @Observable
 class Planet: Entity {
-    var region: Region?
-    var sector: String?
-    var system: String?
-    var capitalCity: String?
+    var region: Region
+    var sector: String
+    var system: String
+    var capitalCity: String
     var destinations: [String]
     
     enum CodingKeys: String, CodingKey {
@@ -39,13 +43,13 @@ class Planet: Entity {
         case comments
     }
     
-    init(name: String, region: Region? = nil, sector: String? = nil, system: String? = nil, capitalCity: String? = nil, destinations: [String], firstAppearance: String? = nil, comments: String = "") {
+    init(name: String, region: Region? = nil, sector: String? = nil, system: String? = nil, capitalCity: String? = nil, destinations: [String], firstAppearance: String? = nil, comments: String? = nil) {
         
         let id = UUID()
-        self.region = region
-        self.sector = sector
-        self.system = system
-        self.capitalCity = capitalCity
+        self.region = region ?? .unknown
+        self.sector = sector ?? ""
+        self.system = system ?? ""
+        self.capitalCity = capitalCity ?? ""
         self.destinations = destinations
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Planet", tableName: "planets")
@@ -56,9 +60,10 @@ class Planet: Entity {
         
         let id = try container.decode(UUID.self, forKey: .id)
         let name = try container.decode(String.self, forKey: .name)
-        self.region = try container.decodeIfPresent(Region.self, forKey: .region)
-        self.sector = try container.decodeIfPresent(String.self, forKey: .sector)
-        self.capitalCity = try container.decodeIfPresent(String.self, forKey: .capitalCity)
+        self.region = try container.decodeIfPresent(Region.self, forKey: .region) ?? .unknown
+        self.sector = try container.decodeIfPresent(String.self, forKey: .sector) ?? ""
+        self.system = try container.decodeIfPresent(String.self, forKey: .system) ?? ""
+        self.capitalCity = try container.decodeIfPresent(String.self, forKey: .capitalCity) ?? ""
         self.destinations = try container.decode([String].self, forKey: .destinations)
         let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
         let comments = try container.decodeIfPresent(String.self, forKey: .comments)

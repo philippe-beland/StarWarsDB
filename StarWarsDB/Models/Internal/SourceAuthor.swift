@@ -13,7 +13,7 @@ class SourceAuthor: SourceItem {
     enum CodingKeys: String, CodingKey {
         case id
         case source
-        case entity
+        case entity = "artist"
         case appearance
     }
     
@@ -29,7 +29,9 @@ class SourceAuthor: SourceItem {
         let id = try container.decode(UUID.self, forKey: .id)
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Artist.self, forKey: .entity)
-        let appearance = try container.decode(AppearanceType.self, forKey: .appearance)
+        let _appearance = try container.decode(Int.self, forKey: .appearance)
+        
+        let appearance = AppearanceType(rawValue: _appearance.description) ?? .present
         
         super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceAuthors", tableName: "source_authors")
     }

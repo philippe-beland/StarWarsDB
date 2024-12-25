@@ -21,14 +21,43 @@ enum RecordType: String, CaseIterable {
 struct EditSourceView: View {
     @Bindable var source: Source
     
-    var sourceCharacters: [SourceCharacter] = SourceCharacter.example
-    var sourceCreatures: [SourceCreature] = SourceCreature.example
-    var sourceDroids: [SourceDroid] = SourceDroid.example
-    var sourceOrganizations: [SourceOrganization] = SourceOrganization.example
-    var sourcePlanets: [SourcePlanet] = SourcePlanet.example
-    var sourceSpecies: [SourceSpecies] = SourceSpecies.example
-    var sourceStarships: [SourceStarship] = SourceStarship.example
-    var sourceStarshipModels: [SourceStarshipModel] = SourceStarshipModel.example
+    @State private var sourceCharacters = [SourceCharacter]()
+    @State private var sourceCreatures = [SourceCreature]()
+    @State private var sourceDroids = [SourceDroid]()
+    @State private var sourceOrganizations = [SourceOrganization]()
+    @State private var sourcePlanets = [SourcePlanet]()
+    @State private var sourceSpecies = [SourceSpecies]()
+    @State private var sourceStarships = [SourceStarship]()
+    @State private var sourceStarshipModels = [SourceStarshipModel]()
+    @State private var sourceVarias = [SourceVaria]()
+    
+    private var sortedCharacters: [SourceCharacter] {
+        sourceCharacters.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+    private var sortedCreatures: [SourceCreature] {
+        sourceCreatures.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+    private var sortedDroids: [SourceDroid] {
+        sourceDroids.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+    private var sortedOrganizations: [SourceOrganization] {
+        sourceOrganizations.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+    private var sortedPlanets: [SourcePlanet] {
+        sourcePlanets.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+    private var sortedSpecies: [SourceSpecies] {
+        sourceSpecies.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+    private var sortedStarships: [SourceStarship] {
+        sourceStarships.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+    private var sortedStarshipModels: [SourceStarshipModel] {
+        sourceStarshipModels.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+    private var sortedVarias: [SourceVaria] {
+        sourceVarias.sorted(by: { $0.entity.name < $1.entity.name })
+    }
     
     let layout = [GridItem(.adaptive(minimum: 200, maximum: 300))]
     
@@ -58,32 +87,36 @@ struct EditSourceView: View {
                     
                 Form {
                     Section(header: headerWithButton(title: "Characters", action: {})) {
-                        ScrollAppearancesView(sourceItems: sourceCharacters, entityType: .character)
+                        ScrollAppearancesView(sourceItems: sortedCharacters, entityType: .character)
                     }
                     Section(header: headerWithButton(title: "Species", action: {})) {
-                        ScrollAppearancesView(sourceItems: sourceSpecies, entityType: .species)
+                        ScrollAppearancesView(sourceItems: sortedSpecies, entityType: .species)
                     }
                     Section(header: headerWithButton(title: "Planets", action: {}))  {
-                        ScrollAppearancesView(sourceItems: sourcePlanets, entityType: .planet)
+                        ScrollAppearancesView(sourceItems: sortedPlanets, entityType: .planet)
                     }
                     Section(header: headerWithButton(title: "Organizations", action: {})) {
-                        ScrollAppearancesView(sourceItems: sourceOrganizations, entityType: .organization)
+                        ScrollAppearancesView(sourceItems: sortedOrganizations, entityType: .organization)
                     }
                     Section(header: headerWithButton(title: "Starships", action: {}))  {
-                        ScrollAppearancesView(sourceItems: sourceStarships, entityType: .starship)
+                        ScrollAppearancesView(sourceItems: sortedStarships, entityType: .starship)
                     }
                     Section(header: headerWithButton(title: "Creatures", action: {}))  {
-                        ScrollAppearancesView(sourceItems: sourceCreatures, entityType: .creature)
+                        ScrollAppearancesView(sourceItems: sortedCreatures, entityType: .creature)
                     }
                     Section(header: headerWithButton(title: "Droids", action: {})) {
-                        ScrollAppearancesView(sourceItems: sourceDroids, entityType: .droid)
+                        ScrollAppearancesView(sourceItems: sortedDroids, entityType: .droid)
                     }
                     Section(header: headerWithButton(title: "Starship Models", action: {})) {
-                        ScrollAppearancesView(sourceItems: sourceStarshipModels, entityType: .starshipModel)
+                        ScrollAppearancesView(sourceItems: sortedStarshipModels, entityType: .starshipModel)
+                    }
+                    Section(header: headerWithButton(title: "Varias", action: {})) {
+                        ScrollAppearancesView(sourceItems: sortedVarias, entityType: .varia)
                     }
                 }
             }
         }
+        .task { await loadInitialSources() }
     }
     
     private struct InfoSection: Identifiable {
@@ -106,26 +139,38 @@ struct EditSourceView: View {
         .padding(.vertical, 4) // Adjust padding if needed
     }
     
+    private func loadInitialSources() async {
+        sourceCharacters = await loadSourceCharacters(recordField: "source", recordID: source.id.uuidString)
+        sourceCreatures = await loadSourceCreatures(recordField: "source", recordID: source.id.uuidString)
+        sourceDroids = await loadSourceDroids(recordField: "source", recordID: source.id.uuidString)
+        sourceOrganizations = await loadSourceOrganizations(recordField: "source", recordID: source.id.uuidString)
+        sourcePlanets = await loadSourcePlanets(recordField: "source", recordID: source.id.uuidString)
+        sourceSpecies = await loadSourceSpecies(recordField: "source", recordID: source.id.uuidString)
+        sourceStarships = await loadSourceStarships(recordField: "source", recordID: source.id.uuidString)
+        sourceStarshipModels = await loadSourceStarshipModels(recordField: "source", recordID: source.id.uuidString)
+        sourceVarias = await loadSourceVarias(recordField: "source", recordID: source.id.uuidString)
+    }
+    
     private var infosSection: [InfoSection] {
         var sections: [InfoSection] = [
             InfoSection(fieldName: "Serie", view: AnyView(Text("\(source.serie?.name ?? ""): \(source.number?.description ?? "")"))),
-            InfoSection(fieldName: "Number", view: AnyView(FieldVStack(fieldName: "Number", info: source.number?.description ?? ""))),
-            InfoSection(fieldName: "Arc", view: AnyView(FieldVStack(fieldName: "Arc", info: source.arc?.name ?? ""))),
-            InfoSection(fieldName: "Era", view: AnyView(FieldVStack(fieldName: "Era", info: source.era.rawValue))),
-            InfoSection(fieldName: "Source Type", view: AnyView(FieldVStack(fieldName: "Source Type", info: source.sourceType.rawValue))),
+            //InfoSection(fieldName: "Number", view: AnyView(FieldVStack(fieldName: "Number", info: source.number?.description ?? ""))),
+            //InfoSection(fieldName: "Arc", view: AnyView(FieldVStack(fieldName: "Arc", info: source.arc?.name ?? ""))),
+            //InfoSection(fieldName: "Era", view: AnyView(FieldVStack(fieldName: "Era", info: source.era.rawValue))),
+            //InfoSection(fieldName: "Source Type", view: AnyView(FieldVStack(fieldName: "Source Type", info: source.sourceType.rawValue))),
             //InfoSection(fieldName: "Authors", view: AnyView(MultiFieldVStack(fieldName: "Authors", infos: source.authors))),
             //InfoSection(fieldName: "Artists", view: AnyView(MultiFieldVStack(fieldName: "Artists", infos: source.artists))),
-            InfoSection(fieldName: "Number Pages", view: AnyView(FieldVStack(fieldName: "Number Pages", info: source.numberPages?.description ?? ""))),
+            //InfoSection(fieldName: "Number Pages", view: AnyView(FieldVStack(fieldName: "Number Pages", info: source.numberPages?.description ?? ""))),
         ]
         
-        if let year = source.universeYear {
-            sections.append(
-                InfoSection(
-                    fieldName: "In-Universe Year",
-                    view: AnyView(FieldVStack(fieldName: "In-Universe Year", info: "\(abs(year)) \(year > 0 ? "ABY" : "BBY")"))
-                )
-            )
-        }
+//        if let year = source.universeYear {
+//            sections.append(
+//                InfoSection(
+//                    fieldName: "In-Universe Year",
+//                    //view: AnyView(FieldVStack(fieldName: "In-Universe Year", info: "\(abs(year)) \(year > 0 ? "ABY" : "BBY")"))
+//                )
+//            )
+//        }
         
         return sections
     }

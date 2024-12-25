@@ -83,8 +83,8 @@ class Entity: DataNode, Record {
     var id: UUID
     var name: String
     var comments: String?
-    var firstAppearance: String?
-    var url: String{
+    var firstAppearance: String
+    var url: String {
         "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
     }
     
@@ -92,7 +92,7 @@ class Entity: DataNode, Record {
         self.id = id
         self.name = name
         self.comments = comments
-        self.firstAppearance = firstAppearance
+        self.firstAppearance = firstAppearance ?? ""
         
         super.init(recordType: recordType, tableName: tableName, recordID: self.id)
     }
@@ -109,7 +109,6 @@ class Entity: DataNode, Record {
         hasher.combine(id)
         hasher.combine(name)
     }
-    
 }
 
 protocol Record: Identifiable, Hashable {

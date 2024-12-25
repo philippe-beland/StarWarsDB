@@ -9,16 +9,17 @@ import SwiftUI
 
 struct RecordEntryView: View {
     var name: String
-    var imageName: String
+    var imageName: UUID
     var appearance: AppearanceType
     
     var body: some View {
         HStack {
-            Image(imageName)
+            imageOrPlaceholder(for: imageName)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50, alignment: .top)
                 .clipShape(Circle())
+                .foregroundStyle(.secondary)
             
             Text(name)
             Spacer()
@@ -26,8 +27,4 @@ struct RecordEntryView: View {
             
         }
     }
-}
-
-#Preview {
-    RecordEntryView(name: "Luke Skywalker", imageName: "Luke_Skywalker", appearance: .present)
 }

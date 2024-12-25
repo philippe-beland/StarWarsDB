@@ -11,23 +11,19 @@ struct EditCharacterView: View {
     @Bindable var character: Character
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceCharacters: [SourceCharacter] = SourceCharacter.example
+    @State private var sourceCharacters = [SourceCharacter]()
     
     @State private var selectedOption: SourceType = .movies
     
     var body: some View {
-        RecordContentView(record: character, sourceItems: sourceCharacters, InfosSection: InfosSection)
+        NavigationStack {
+            RecordContentView(record: character, sourceItems: sourceCharacters, InfosSection: CharacterInfoSection(character: character))
+        }
+        .task { await loadInitialSources() }
     }
     
-    private var InfosSection: some View {
-        Section("Infos") {
-            MultiFieldView(fieldName: "Aliases", infos: character.aliases)
-            FieldView(fieldName: "Gender", info: character.gender.rawValue)
-            FieldView(fieldName: "Species", info: character.species!.name)
-            FieldView(fieldName: "Homeworld", info: character.homeworld!.name)
-            MultiFieldView(fieldName: "Affiliation", entities: character.affiliations)
-            FieldView(fieldName: "First Appearance", info: character.firstAppearance ?? "")
-        }
+    private func loadInitialSources() async {
+        sourceCharacters = await loadSourceCharacters(recordField: "character", recordID: character.id.uuidString)
     }
 }
 

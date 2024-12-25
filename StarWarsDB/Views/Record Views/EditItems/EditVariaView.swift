@@ -15,17 +15,10 @@ struct EditVariaView: View {
     
     var body: some View {
         NavigationStack {
-                RecordContentView(record: varia, sourceItems: sourceVarias, InfosSection: InfosSection)
+            RecordContentView(record: varia, sourceItems: sourceVarias, InfosSection: VariaInfoSection(varia: varia))
             }
         .task { await loadInitialSources() }
         }
-        
-    
-    private var InfosSection: some View {
-        Section("Infos") {
-            FieldView(fieldName: "First Appearance", info: varia.firstAppearance ?? "")
-        }
-    }
     
     private func loadInitialSources() async {
         sourceVarias = await loadSourceVarias(recordField: "varia", recordID: varia.id.uuidString)

@@ -10,7 +10,7 @@ import Foundation
 @Observable
 class Artist: Entity {
     
-    init(name: String, comments: String = "") {
+    init(name: String, comments: String? = nil) {
         let id = UUID()
         super.init(id: id, name: name, comments: comments, firstAppearance: nil, recordType: "Artist", tableName: "artists")
     }

@@ -45,13 +45,13 @@ struct ChooseEntitiesView: View {
     private func handleSearchTextChange() {
         Task {
             if !searchText.isEmpty && searchText.count > 3 {
-                entities = await loadEntities(entityType: entityType, sort: "name", filter: searchText)
+                entities = await loadEntities(entityType: entityType, sort: .name, filter: searchText)
             }
         }
     }
     
     private func loadInitialEntities() async {
-        entities = await loadEntities(entityType: entityType, sort: "name")
+        entities = await loadEntities(entityType: entityType, sort: .name)
     }
     
     @ToolbarContentBuilder
@@ -63,12 +63,12 @@ struct ChooseEntitiesView: View {
             Button ("Create") {
                 showNewEntitySheet.toggle()
             }
-            .sheet(isPresented: $showNewEntitySheet)  {
-                AddEntityView(entityType: entityType) { selectedEntity in
-                    onEntitiesSelect(selectedEntities, appearanceType)
-                    dismiss()
-                }
-            }
+//            .sheet(isPresented: $showNewEntitySheet)  {
+//                AddEntityView(entityType: entityType) { selectedEntity in
+//                    onEntitiesSelect(selectedEntities, appearanceType)
+//                    dismiss()
+//                }
+//            }
         }
     }
 }

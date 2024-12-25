@@ -7,10 +7,11 @@
 
 import Foundation
 
-enum Gender: String, Codable {
+enum Gender: String, Codable, CaseIterable {
     case Male
     case Female
     case Other
+    case Unknown
 }
 
 @Observable
@@ -19,20 +20,20 @@ class Character: Entity {
     var species: Species?
     var homeworld: Planet?
     var gender: Gender
-    var affiliations: [Organization]
+    //var affiliations: [Organization]
     
     var alias: String {
         aliases.joined(separator: ", ")
     }
     
-    var affiliation: String {
-        var organizations: [String] = []
-        for org in affiliations{
-            organizations.append(org.name)
-        }
-         
-        return organizations.joined(separator: ", ")
-    }
+//    var affiliation: String {
+//        var organizations: [String] = []
+//        for org in affiliations{
+//            organizations.append(org.name)
+//        }
+//         
+//        return organizations.joined(separator: ", ")
+//    }
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -41,18 +42,18 @@ class Character: Entity {
         case species
         case homeworld
         case gender
-        case affiliations
+        //case affiliations
         case firstAppearance = "first_appearance"
         case comments
     }
     
-    init(name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender, affiliations: [Organization], comments: String = "", firstAppearance: String?) {
+    init(name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender?, firstAppearance: String?, comments: String? = nil) {
         let id = UUID()
         self.aliases = aliases
         self.species = species
         self.homeworld = homeworld
-        self.gender = gender
-        self.affiliations = affiliations
+        self.gender = gender ?? .Unknown
+        //self.affiliations = affiliations
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Character", tableName: "characters")
     }
@@ -64,19 +65,28 @@ class Character: Entity {
         let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
         let comments = try container.decodeIfPresent(String.self, forKey: .comments)
         
-        self.aliases = try container.decode([String].self, forKey: .aliases)
+        if let aliases = try container.decodeIfPresent([String].self, forKey: .aliases) {
+            self.aliases = aliases
+        } else {
+            self.aliases = []
+        }
+        
         self.species = try container.decodeIfPresent(Species.self, forKey: .species)
         self.homeworld = try container.decodeIfPresent(Planet.self, forKey: .homeworld)
-        self.gender = try container.decode(Gender.self, forKey: .gender)
-        self.affiliations = try container.decode([Organization].self, forKey: .affiliations)
+        self.gender = try container.decodeIfPresent(Gender.self, forKey: .gender) ?? .Unknown
+//        if let affiliations = try container.decodeIfPresent([Organization].self, forKey: .affiliations) {
+//            self.affiliations = affiliations
+//        } else {
+//            self.affiliations = []
+//        }
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Character", tableName: "characters")
 
     }
     
-    static let example = Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, affiliations: [Organization.example], firstAppearance: nil)
+    static let example = Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil)
     
     static let examples = [
-        Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, affiliations: [Organization.example], firstAppearance: nil),
-        Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, affiliations: [Organization.example], firstAppearance: nil)]
+        Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil),
+        Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil)]
 }

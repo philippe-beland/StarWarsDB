@@ -15,12 +15,7 @@ struct EditArtistView: View {
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: artist, sourceItems: sourceArtists, InfosSection: InfosSection)
-        }
-    }
-    
-    private var InfosSection: some View {
-        Section("Infos") {
+            RecordContentView(record: artist, sourceItems: sourceArtists, InfosSection: ArtistInfoSection(artist: artist))
         }
     }
 }

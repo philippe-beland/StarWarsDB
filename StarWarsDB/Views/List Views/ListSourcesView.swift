@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListSourcesView: View {
     @State private var sortOrder: SortingSourceOrder = .publicationDate
-    @State private var selectedView: SourceType = .movies
+    @State private var selectedView: SourceType = .all
     @State private var searchText: String = ""
     @State private var isDoneFilter: Bool = false
     @State private var showNewSourceSheet = false

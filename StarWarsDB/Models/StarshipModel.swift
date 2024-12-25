@@ -21,7 +21,7 @@ class StarshipModel: Entity {
         case comments
     }
     
-    init(name: String, classType: String?, line: String?, firstAppearance: String?, comments: String = "") {
+    init(name: String, classType: String?, line: String?, firstAppearance: String?, comments: String? = nil) {
         let id = UUID()
         
         self.classType = classType

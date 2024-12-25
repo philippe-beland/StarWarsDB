@@ -13,7 +13,7 @@ struct SidePanelView<Content: View>: View {
     
     var body: some View {
         Form {
-            ImageView(title: record.name)
+            ImageView(title: record.id.uuidString.lowercased())
             InfosSection
             CommentsView(comments: record.comments)
         }

@@ -17,7 +17,7 @@ class Organization: Entity {
         case comments
     }
     
-    init(name: String, firstAppearance: String?, comments: String = "") {
+    init(name: String, firstAppearance: String?, comments: String?) {
         let id = UUID()
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Organization", tableName: "organizations")

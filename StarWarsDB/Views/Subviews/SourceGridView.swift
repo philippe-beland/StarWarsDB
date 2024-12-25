@@ -35,8 +35,12 @@ struct SourceGridView: View {
     }
     
     private var sourceImage: Image {
-        if let image = source.image {
-            return Image(image)
+        let imageName = source.id.uuidString.lowercased()
+        let serieName = source.serie?.name ?? ""
+        if UIImage(named: imageName) != nil {
+            return Image(imageName)
+        } else if UIImage(named: serieName) != nil {
+            return Image(serieName)
         } else {
             return Image(systemName: "nosign")
         }

@@ -13,7 +13,7 @@ class SourceStarshipModel: SourceItem {
     enum CodingKeys: String, CodingKey {
         case id
         case source
-        case entity
+        case entity = "starship_model"
         case appearance
     }
     
@@ -28,8 +28,10 @@ class SourceStarshipModel: SourceItem {
         
         let id = try container.decode(UUID.self, forKey: .id)
         let source = try container.decode(Source.self, forKey: .source)
-        let entity = try container.decode(Artist.self, forKey: .entity)
-        let appearance = try container.decode(AppearanceType.self, forKey: .appearance)
+        let entity = try container.decode(StarshipModel.self, forKey: .entity)
+        let _appearance = try container.decode(Int.self, forKey: .appearance)
+        
+        let appearance = AppearanceType(rawValue: _appearance.description) ?? .present
         
         super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceStarshipModels", tableName: "source_starshipmodels")
     }

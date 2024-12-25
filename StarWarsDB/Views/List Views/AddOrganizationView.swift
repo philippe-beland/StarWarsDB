@@ -1,0 +1,42 @@
+//
+//  AddOrganizationView.swift
+//  StarWarsDB
+//
+//  Created by Philippe Beland on 12/24/24.
+//
+
+import SwiftUI
+
+struct AddOrganizationView: View {
+    @Environment(\.dismiss) var dismiss
+    
+    @State private var name: String = ""
+    @State private var firstAppearance: String?
+    @State private var comments: String?
+    
+    var onOrganizationCreation: (Entity) -> Void
+    
+    var body: some View {
+        NavigationStack{
+            Form {
+                Section("Infos") {
+                    
+                }
+                
+                Section {
+                    Button("Save", action: saveOrganization)
+                        .disabled(name.isEmpty)
+                }
+            }
+        }
+        .navigationTitle("Add new Organization")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    private func saveOrganization() {
+        let newOrganization = Organization(name: name, firstAppearance: firstAppearance, comments: comments)
+        newOrganization.save()
+        onOrganizationCreation(newOrganization)
+        dismiss()
+    }
+}

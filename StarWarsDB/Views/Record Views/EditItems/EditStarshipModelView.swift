@@ -11,17 +11,17 @@ struct EditStarshipModelView: View {
     @Bindable var starshipModel: StarshipModel
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceStarshipModels: [SourceStarshipModel] = SourceStarshipModel.example
+    @State private var sourceStarshipModels = [SourceStarshipModel]()
     
     var body: some View {
         NavigationStack {
-                RecordContentView(record: starshipModel, sourceItems: sourceStarshipModels, InfosSection: InfosSection)
+            RecordContentView(record: starshipModel, sourceItems: sourceStarshipModels, InfosSection: StarshipModelInfoSection(starshipModel: starshipModel))
             }
+        .task { await loadInitialSources() }
         }
-    private var InfosSection: some View {
-        Section("Infos") {
-            FieldView(fieldName: "First Appearance", info: starshipModel.firstAppearance ?? "")
-        }
+    
+    private func loadInitialSources() async {
+        sourceStarshipModels = await loadSourceStarshipModels(recordField: "starship_model", recordID: starshipModel.id.uuidString)
     }
 }
 

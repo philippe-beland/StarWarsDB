@@ -19,7 +19,7 @@ class Species: Entity {
         case comments
     }
     
-    init(name: String, homeworld: Planet?, firstAppearance: String?, comments: String = "") {
+    init(name: String, homeworld: Planet?, firstAppearance: String?, comments: String? = nil) {
         let id = UUID()
         self.homeworld = homeworld
         

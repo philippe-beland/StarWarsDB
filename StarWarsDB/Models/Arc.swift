@@ -9,7 +9,7 @@ import Foundation
 
 @Observable
 class Arc: Entity {
-    var serie: Serie
+    var serie: Serie?
     
     init(name: String, serie: Serie, comments: String?) {
         let id = UUID()
@@ -28,7 +28,7 @@ class Arc: Entity {
     required init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        self.serie = try container.decode(Serie.self, forKey: .serie)
+        self.serie = try container.decodeIfPresent(Serie.self, forKey: .serie)
         
         let id = try container.decode(UUID.self, forKey: .id)
         let name = try container.decode(String.self, forKey: .name)
