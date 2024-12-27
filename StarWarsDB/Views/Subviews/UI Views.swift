@@ -242,13 +242,13 @@ struct MultiFieldVStack: View {
     }
 }
 
-#Preview {
-    @State var era = Source.example.era
-    @State var year = Source.example.universeYear
-    YearPicker(era: era, universeYear: $year)
-    
-//    FieldView(fieldName: "Name", info: "Luke Skywalker")
-//    FieldVStack(fieldName: "Name", info: "Luke Skywalker")
-//    //MultiFieldView(fieldName: "Affiliation", entities: Character.example.affiliations)
-//    //MultiFieldVStack(fieldName: "Affiliation", entities: Character.example.affiliations)
-}
+//#Preview {
+//    @State var era = Source.example.era
+//    @State var year = Source.example.universeYear
+//    YearPicker(era: era, universeYear: $year)
+//    
+////    FieldView(fieldName: "Name", info: "Luke Skywalker")
+////    FieldVStack(fieldName: "Name", info: "Luke Skywalker")
+////    //MultiFieldView(fieldName: "Affiliation", entities: Character.example.affiliations)
+////    //MultiFieldVStack(fieldName: "Affiliation", entities: Character.example.affiliations)
+//}

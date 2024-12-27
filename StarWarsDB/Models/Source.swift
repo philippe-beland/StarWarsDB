@@ -48,7 +48,7 @@ enum Era: String, Decodable, CaseIterable {
     
 }
 
-enum SourceType: String, Decodable, CaseIterable {
+enum SourceType: String, Decodable, CaseIterable, Hashable {
     case all = "All"
     case movies = "Movie"
     case comics = "Comic Book"

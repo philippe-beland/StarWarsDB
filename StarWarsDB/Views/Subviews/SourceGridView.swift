@@ -22,13 +22,26 @@ struct SourceGridView: View {
             
             VStack {
                 Spacer()
-                Text(source.name)
+                if let serie = source.serie, let number = source.number {
+                    VStack {
+                        Text(source.name)
+                        Text("\(serie.name) \(number)")
+                    }
                     .bold()
                     .foregroundColor(.white)
                     .padding(3)
                     .background(Color.black.opacity(0.5))
                     .cornerRadius(5)
                     .padding(5)
+                } else {
+                    Text(source.name)
+                        .bold()
+                        .foregroundColor(.white)
+                        .padding(3)
+                        .background(Color.black.opacity(0.5))
+                        .cornerRadius(5)
+                        .padding(5)
+                }
             }
         }
         .padding(10)

@@ -11,6 +11,7 @@ struct AddSerieView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var name: String = ""
+    @State private var sourceType: SourceType = .comics
     @State private var comments: String = ""
     
     var onSerieCreation: (Entity) -> Void
@@ -22,6 +23,7 @@ struct AddSerieView: View {
                     .font(.title.bold())
                     .padding()
                 Form {
+                    SourceTypePicker(sourceType: $sourceType)
                     CommentsView(comments: $comments)
                     
                     Section {
@@ -36,7 +38,7 @@ struct AddSerieView: View {
     }
     
     private func saveSerie() {
-        let newSerie = Serie(name: name, comments: comments)
+        let newSerie = Serie(name: name, sourceType: sourceType, comments: comments)
         newSerie.save()
         onSerieCreation(newSerie)
         dismiss()

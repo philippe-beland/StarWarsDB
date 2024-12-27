@@ -35,14 +35,14 @@ func loadEntities(entityType: EntityType, sort: SortingItemOrder, filter: String
     case .varia:
         entities = await loadVarias(sort: sort.rawValue, filter: filter)
     case .serie:
-        print(entities)
+        entities = await loadSeries(filter: filter)
     case .arc:
-        print(entities)
+        entities = await loadArcs(sort: sort.rawValue, filter: filter)
     }
     return entities
 }
 
-func loadSources(sort: String, sourceType: SourceType, isDone: Bool, filter: String = "") async -> [Source] {
+func loadSources(sort: String, sourceType: SourceType, serie: Serie?, isDone: Bool, filter: String = "") async -> [Source] {
     var sources: [Source] = []
     
     do {
@@ -52,6 +52,10 @@ func loadSources(sort: String, sourceType: SourceType, isDone: Bool, filter: Str
         
         if sourceType != .all {
             query = query.eq("source_type", value: sourceType.rawValue)
+        }
+        
+        if let serie {
+            query = query.eq("serie", value: serie.id)
         }
         
         if isDone {
@@ -259,7 +263,7 @@ func loadArcs(sort: String, filter: String = "") async -> [Arc] {
     do {
         arcs = try await supabase
             .from("arcs")
-            .select("id, name, serie(id, name, comments), comments")
+            .select("id, name, serie(*), comments")
             .ilike("name", pattern: "%\(filter)%")
             .order(sort)
             .limit(40)
@@ -273,7 +277,7 @@ func loadArcs(sort: String, filter: String = "") async -> [Arc] {
     return arcs
 }
 
-func loadSeries(sort: String, filter: String = "") async -> [Serie] {
+func loadSeries(filter: String = "") async -> [Serie] {
     var series: [Serie] = []
     
     do {
@@ -281,8 +285,7 @@ func loadSeries(sort: String, filter: String = "") async -> [Serie] {
             .from("series")
             .select("*")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
-            .limit(40)
+            .order("name")
             .execute()
             .value
         print("Series successfully loaded")

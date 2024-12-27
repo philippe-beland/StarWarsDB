@@ -144,9 +144,11 @@ struct EditSourceView: View {
     private func addSourceItem(entityType: EntityType, entity: Entity, appearance: AppearanceType) {
         switch entityType {
         case .character:
+            let character = entity as! Character
+            
             let newSourceItem = SourceCharacter(
                 source: source,
-                entity: entity as! Character,
+                entity: character,
                 appearance: appearance
             )
             
@@ -156,6 +158,18 @@ struct EditSourceView: View {
             } else {
                 print("Already exists for that source")
             }
+            
+            if let species = character.species {
+                let newSourceSpecies = SourceSpecies(source: source, entity: species, appearance: appearance)
+                
+                if !sourceSpecies.contains(newSourceSpecies) {
+                    newSourceSpecies.save()
+                    sourceSpecies.append(newSourceSpecies)
+                }
+            }
+
+            
+            
         case .creature:
             let newSourceItem = SourceCreature(
                 source: source,

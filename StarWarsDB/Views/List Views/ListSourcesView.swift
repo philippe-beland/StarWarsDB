@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ListSourcesView: View {
+    var selectedView: SourceType
+    var serie: Serie? = nil
+    
     @State private var sortOrder: SortingSourceOrder = .publicationDate
-    @State private var selectedView: SourceType = .movies
     @State private var searchText: String = ""
     @State private var isDoneFilter: Bool = false
     @State private var showNewSourceSheet = false
@@ -42,20 +44,20 @@ struct ListSourcesView: View {
     
     private func handleParameterChange() {
         Task {
-            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, isDone: isDoneFilter, filter: searchText)
+            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchText)
         }
     }
     
     private func handleSearchTextChange() {
         Task {
             if !searchText.isEmpty && searchText.count > 3 {
-                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, isDone: isDoneFilter, filter: searchText)
+                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchText)
             }
         }
     }
     
     private func loadInitialSources() async {
-        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, isDone: isDoneFilter, filter: searchText)
+        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchText)
     }
     
     private func deleteSource(_ source: Source) {
@@ -98,16 +100,6 @@ struct ListSourcesView: View {
         }
         
         ToolbarItem(placement: .topBarLeading) {
-            Menu("Source Type") {
-                ForEach(SourceType.allCases, id: \.self) { sourceType in
-                    Button(sourceType.rawValue) {
-                        selectedView = sourceType
-                    }
-                }
-            }
-        }
-        
-        ToolbarItem(placement: .topBarLeading) {
             Toggle("ToDo", isOn: $isDoneFilter)
                 .toggleStyle(ButtonToggleStyle())
         }
@@ -115,5 +107,5 @@ struct ListSourcesView: View {
 }
 
 #Preview {
-    ListSourcesView()
+    ListSourcesView(selectedView: .movies)
 }
