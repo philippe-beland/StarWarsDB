@@ -22,6 +22,8 @@ struct EntityRowView: View {
             case .starshipModel: StarshipModelRowView(starshipModel: entity as! StarshipModel)
             case .starship: StarshipRowView(starship: entity as! Starship)
             case .varia: VariaRowView(varia: entity as! Varia)
+            case .arc: ArcRowView(arc: entity as! Arc)
+            case .serie: SerieRowView(serie: entity as! Serie)
         }
     }
     
@@ -47,11 +49,15 @@ struct CharacterRowView: View {
                     .clipShape(Circle())
                     .foregroundStyle(.secondary)
             
-            VStack (alignment: .leading) {
+            if !character.alias.isEmpty {
                 Text(character.name)
-                Text(character.alias)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+            } else {
+                VStack (alignment: .leading) {
+                    Text(character.name)
+                    Text(character.alias)
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
             }
             Spacer()
             Text(character.species?.name ?? "")
@@ -211,6 +217,22 @@ struct VariaRowView: View {
             
             Text(varia.name)
         }
+    }
+}
+
+struct ArcRowView: View {
+    let arc: Arc
+    
+    var body: some View {
+        Text(arc.name)
+    }
+}
+
+struct SerieRowView: View {
+    let serie: Serie
+    
+    var body: some View {
+        Text(serie.name)
     }
 }
 

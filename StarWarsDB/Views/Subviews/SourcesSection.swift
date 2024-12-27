@@ -65,12 +65,12 @@ struct SourceNameView: View {
                 Text(number?.description ?? "")
             }
             .font(.headline)
-            .foregroundColor(oldest ? Color.red : Color.black)
+            .foregroundColor(oldest ? Color.red : Color.primary)
             .frame(maxWidth: .infinity, alignment: .leading)
         } else if serie == nil {
             Text(name)
                 .font(.headline)
-                .foregroundColor(oldest ? Color.red : Color.black)
+                .foregroundColor(oldest ? Color.red : Color.primary)
                 .lineLimit(1) // Ensures text doesn't overflow
                 .frame(maxWidth: .infinity, alignment: .leading)
         } else {
@@ -78,7 +78,7 @@ struct SourceNameView: View {
                 
                 Text(name)
                     .font(.headline)
-                    .foregroundColor(oldest ? Color.red : Color.black)
+                    .foregroundColor(oldest ? Color.red : Color.primary)
                     .lineLimit(1) // Ensures text doesn't overflow
                 HStack (spacing: 4) {
                     Text(serie?.name ?? "")
@@ -137,12 +137,12 @@ struct SourceRow: View {
 }
 
 struct UniverseYear: View {
-    let year: Int?
+    let year: Float?
     
     var body: some View {
         VStack {
             if let year {
-                Text("\(abs(year))")
+                Text("\(abs(Int(year)))")
                 Text(year > 0 ? "ABY" : "BBY")
             } else {
                 Text("")

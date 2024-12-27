@@ -38,5 +38,18 @@ class Species: Entity {
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Species", tableName: "species")
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        if homeworld != nil && homeworld != .example {
+            try container.encode(homeworld?.id, forKey: .homeworld)
+        }
+        try container.encode(firstAppearance, forKey: .firstAppearance)
+        try container.encode(comments, forKey: .comments)
+    }
+    
     static let example = Species(name: "Twi'lek", homeworld: .example, firstAppearance: nil)
+    static let empty = Species(name: "", homeworld: .empty, firstAppearance: nil)
 }

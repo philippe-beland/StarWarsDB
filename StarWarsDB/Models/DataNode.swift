@@ -17,6 +17,8 @@ enum EntityType: String, Codable {
     case starshipModel = "Starship Model"
     case starship = "Starship"
     case varia = "Varia"
+    case arc = "Arc"
+    case serie = "Serie"
 }
 
 class DataNode: Codable {
@@ -79,10 +81,11 @@ class DataNode: Codable {
     }
 }
 
+@Observable
 class Entity: DataNode, Record {
     var id: UUID
     var name: String
-    var comments: String?
+    var comments: String
     var firstAppearance: String
     var url: String {
         "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
@@ -91,10 +94,10 @@ class Entity: DataNode, Record {
     init(id: UUID, name: String, comments: String?, firstAppearance: String?, recordType: String, tableName: String) {
         self.id = id
         self.name = name
-        self.comments = comments
+        self.comments = comments ?? ""
         self.firstAppearance = firstAppearance ?? ""
         
-        super.init(recordType: recordType, tableName: tableName, recordID: self.id)
+        super.init(recordType: recordType, tableName: tableName, recordID: id)
     }
     
     required init(from decoder: Decoder) throws {
@@ -114,6 +117,6 @@ class Entity: DataNode, Record {
 protocol Record: Identifiable, Hashable {
     var id: UUID { get }
     var name: String { get set }
-    var comments: String? { get set }
+    var comments: String { get set }
     var url: String { get }
 }

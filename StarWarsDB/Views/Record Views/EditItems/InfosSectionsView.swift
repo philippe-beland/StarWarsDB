@@ -17,13 +17,13 @@ struct CharacterInfoSection: View {
             EditEntityInfoView(
                 fieldName: "Species",
                 entity: Binding(
-                    get: {character.species ?? Species.example },
+                    get: {character.species ?? Species.empty },
                     set: {character.species = ($0 as! Species) }),
                 entityType: .species)
             EditEntityInfoView(
                 fieldName: "Homeworld",
                 entity: Binding(
-                    get: {character.homeworld ?? Planet.example },
+                    get: {character.homeworld ?? Planet.empty },
                     set: {character.homeworld = ($0 as! Planet) }),
                 entityType: .planet)
             //MultiFieldView(fieldName: "Affiliation", entities: character.affiliations)
@@ -49,7 +49,7 @@ struct CreatureInfoSection: View {
             EditEntityInfoView(
                 fieldName: "Homeworld",
                 entity: Binding(
-                    get: {creature.homeworld ?? Planet.example },
+                    get: {creature.homeworld ?? Planet.empty },
                     set: {creature.homeworld = ($0 as! Planet) }),
                 entityType: .planet)
             FieldView(fieldName: "First Appearance", info: $creature.firstAppearance)
@@ -63,7 +63,6 @@ struct DroidInfoSection: View {
     var body: some View {
         Section("Droid Infos") {
             FieldView(fieldName: "First Appearance", info: $droid.firstAppearance)
-
         }
     }
 }
@@ -74,7 +73,6 @@ struct OrganizationInfoSection: View {
     var body: some View {
         Section("Organization Infos") {
             FieldView(fieldName: "First Appearance", info: $organization.firstAppearance)
-
         }
     }
 }
@@ -99,15 +97,14 @@ struct SpeciesInfoSection: View {
     @State var species: Species
     
     var body: some View {
-        Section("Planet Infos") {
+        Section("Species Infos") {
             EditEntityInfoView(
                 fieldName: "Homeworld",
                 entity: Binding(
-                    get: {species.homeworld ?? Planet.example },
+                    get: {species.homeworld ?? Planet.empty },
                     set: {species.homeworld = ($0 as! Planet) }),
                 entityType: .planet)
             FieldView(fieldName: "First Appearance", info: $species.firstAppearance)
-
         }
     }
 }
@@ -117,6 +114,8 @@ struct StarshipModelInfoSection: View {
     
     var body: some View {
         Section("Starship Model Infos") {
+            FieldView(fieldName: "Class Type", info: $starshipModel.classType)
+            FieldView(fieldName: "Line", info: $starshipModel.line)
             FieldView(fieldName: "First Appearance", info: $starshipModel.firstAppearance)
         }
     }
@@ -130,7 +129,7 @@ struct StarshipInfoSection: View {
             EditEntityInfoView(
                 fieldName: "Model",
                 entity: Binding(
-                    get: {starship.model ?? StarshipModel.example },
+                    get: {starship.model ?? StarshipModel.empty },
                     set: {starship.model = ($0 as! StarshipModel) }),
                 entityType: .planet)
             FieldView(fieldName: "First Appearance", info: $starship.firstAppearance)
@@ -144,7 +143,30 @@ struct VariaInfoSection: View {
     var body: some View {
         Section("Varia Infos") {
             FieldView(fieldName: "First Appearance", info: $varia.firstAppearance)
+        }
+    }
+}
 
+struct ArcInfoSection: View {
+    @State var arc: Arc
+    
+    var body: some View {
+        Section("Arc Infos") {
+            EditEntityInfoView(
+                fieldName: "Serie",
+                entity: Binding(
+                    get: {arc.serie ?? StarshipModel.empty },
+                    set: {arc.serie = ($0 as! Serie) }),
+                entityType: .serie)
+        }
+    }
+}
+
+struct SerieInfoSection: View {
+    @State var serie: Serie
+    
+    var body: some View {
+        Section("Serie Infos") {
         }
     }
 }

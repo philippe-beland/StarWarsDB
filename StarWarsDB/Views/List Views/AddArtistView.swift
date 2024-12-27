@@ -11,20 +11,23 @@ struct AddArtistView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var name: String = ""
-    @State private var comments: String?
+    @State private var comments: String = ""
     
     var onArtistCreation: (Entity) -> Void
     
     var body: some View {
         NavigationStack{
-            Form {
-                Section("Infos") {
+            VStack(alignment: .center) {
+                TextField("Name", text: $name)
+                    .font(.title.bold())
+                    .padding()
+                Form {
+                    CommentsView(comments: $comments)
                     
-                }
-                
-                Section {
-                    Button("Save", action: saveArtist)
-                        .disabled(name.isEmpty)
+                    Section {
+                        Button("Save", action: saveArtist)
+                            .disabled(name.isEmpty)
+                    }
                 }
             }
         }

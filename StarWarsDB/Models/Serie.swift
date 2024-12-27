@@ -32,5 +32,15 @@ class Serie: Entity {
         super.init(id: id, name: name, comments: comments, firstAppearance: nil, recordType: "Serie", tableName: "series")
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(comments, forKey: .comments)
+    }
+    
     static let example = Serie(name: "Rebels", comments: "Series about the adventures of Ghost Squadron")
+    
+    static let empty = Serie(name: "", comments: nil)
 }

@@ -12,21 +12,33 @@ struct AddStarshipView: View {
     
     @State private var name: String = ""
     @State private var model: StarshipModel?
-    @State private var firstAppearance: String?
-    @State private var comments: String?
+    @State private var firstAppearance: String = ""
+    @State private var comments: String = ""
     
     var onStarshipCreation: (Entity) -> Void
     
     var body: some View {
         NavigationStack{
-            Form {
-                Section("Infos") {
+            VStack(alignment: .center) {
+                TextField("Name", text: $name)
+                    .font(.title.bold())
+                    .padding()
+                Form {
+                    Section("Starship Infos") {
+                        EditEntityInfoView(
+                            fieldName: "Model",
+                            entity: Binding(
+                                get: {model ?? StarshipModel.empty },
+                                set: {model = ($0 as! StarshipModel) }),
+                            entityType: .starshipModel)
+                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                    }
+                    CommentsView(comments: $comments)
                     
-                }
-                
-                Section {
-                    Button("Save", action: saveStarship)
-                        .disabled(name.isEmpty)
+                    Section {
+                        Button("Save", action: saveStarship)
+                            .disabled(name.isEmpty)
+                    }
                 }
             }
         }

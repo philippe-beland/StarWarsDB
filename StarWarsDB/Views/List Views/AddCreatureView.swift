@@ -11,23 +11,35 @@ struct AddCreatureView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var name: String = ""
-    @State private var designation: String?
+    @State private var designation: String = ""
     @State private var homeworld: Planet?
-    @State private var firstAppearance: String?
-    @State private var comments: String?
+    @State private var firstAppearance: String = ""
+    @State private var comments: String = ""
     
     var onCreatureCreation: (Entity) -> Void
     
     var body: some View {
         NavigationStack{
-            Form {
-                Section("Infos") {
+            VStack(alignment: .center) {
+                TextField("Name", text: $name)
+                    .font(.title.bold())
+                    .padding()
+                Form {
+                    Section("Creature Infos") {
+                        EditEntityInfoView(
+                            fieldName: "Homeworld",
+                            entity: Binding(
+                                get: {homeworld ?? Planet.empty },
+                                set: {homeworld = ($0 as! Planet) }),
+                            entityType: .planet)
+                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                    }
+                    CommentsView(comments: $comments)
                     
-                }
-                
-                Section {
-                    Button("Save", action: saveCreature)
-                        .disabled(name.isEmpty)
+                    Section {
+                        Button("Save", action: saveCreature)
+                            .disabled(name.isEmpty)
+                    }
                 }
             }
         }

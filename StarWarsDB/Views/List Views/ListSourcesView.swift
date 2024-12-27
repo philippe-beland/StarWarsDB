@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ListSourcesView: View {
     @State private var sortOrder: SortingSourceOrder = .publicationDate
-    @State private var selectedView: SourceType = .all
+    @State private var selectedView: SourceType = .movies
     @State private var searchText: String = ""
     @State private var isDoneFilter: Bool = false
     @State private var showNewSourceSheet = false
@@ -23,7 +23,9 @@ struct ListSourcesView: View {
                 LazyVGrid(columns: layout) {
                     ForEach(sources) { source in
                         SourceNavigationLink(source: source)
-                            .contextMenu { SourceContextMenu(source: source) }
+                            .contextMenu {
+                                SourceContextMenu(source: source)
+                            }
                     }
                 }
             }

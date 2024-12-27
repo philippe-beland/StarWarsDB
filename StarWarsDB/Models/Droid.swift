@@ -37,5 +37,17 @@ class Droid: Entity {
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Droid", tableName: "droids")
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(classType, forKey: .classType)
+        try container.encode(firstAppearance, forKey: .firstAppearance)
+        try container.encode(comments, forKey: .comments)
+    }
+    
     static let example = Droid(name: "R2 astromech droid", classType: "Astromech droid", firstAppearance: nil, comments: "Astromech droid with a high degree of mechanical aptitude.")
+    
+    static let empty = Droid(name: "", classType: nil, firstAppearance: nil, comments: nil)
 }

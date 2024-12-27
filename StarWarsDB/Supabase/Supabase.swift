@@ -13,7 +13,7 @@ let supabase = SupabaseClient(
     supabaseKey: Secrets.apiKey.rawValue)
 
 func loadEntities(entityType: EntityType, sort: SortingItemOrder, filter: String = "") async -> [Entity] {
-    let entities: [Entity]
+    var entities = [Entity]()
     
     switch entityType {
     case .character:
@@ -34,6 +34,10 @@ func loadEntities(entityType: EntityType, sort: SortingItemOrder, filter: String
         entities = await loadStarshipModels(sort: sort.rawValue, filter: filter)
     case .varia:
         entities = await loadVarias(sort: sort.rawValue, filter: filter)
+    case .serie:
+        print(entities)
+    case .arc:
+        print(entities)
     }
     return entities
 }
@@ -65,7 +69,6 @@ func loadSources(sort: String, sourceType: SourceType, isDone: Bool, filter: Str
     } catch {
         print("Failed to fetch Sources: \(error)")
     }
-    print(sources.count)
     
     return sources
 }
@@ -250,6 +253,46 @@ func loadVarias(sort: String, filter: String = "") async -> [Varia] {
     return varias
 }
 
+func loadArcs(sort: String, filter: String = "") async -> [Arc] {
+    var arcs: [Arc] = []
+    
+    do {
+        arcs = try await supabase
+            .from("arcs")
+            .select("id, name, serie(id, name, comments), comments")
+            .ilike("name", pattern: "%\(filter)%")
+            .order(sort)
+            .limit(40)
+            .execute()
+            .value
+        print("Arcs successfully loaded")
+    } catch {
+        print("Failed to fetch Arcs: \(error)")
+    }
+    
+    return arcs
+}
+
+func loadSeries(sort: String, filter: String = "") async -> [Serie] {
+    var series: [Serie] = []
+    
+    do {
+        series = try await supabase
+            .from("series")
+            .select("*")
+            .ilike("name", pattern: "%\(filter)%")
+            .order(sort)
+            .limit(40)
+            .execute()
+            .value
+        print("Series successfully loaded")
+    } catch {
+        print("Failed to fetch Series: \(error)")
+    }
+    
+    return series
+}
+
 func loadSourceCharacters(recordField: String, recordID: String) async -> [SourceCharacter] {
     var sourceItems = [SourceCharacter]()
     do {
@@ -392,6 +435,54 @@ func loadSourceVarias(recordField: String, recordID: String) async -> [SourceVar
         print("Failed to fetch SourceVarias: \(error)")
     }
     return sourceItems
+}
+
+func loadSourceArtists(recordField: String, recordID: String) async -> [SourceArtist] {
+    var sourceItems = [SourceArtist]()
+    do {
+        sourceItems = try await supabase
+            .from("source_artists")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), artist!inner(*)")
+            .eq(recordField, value: recordID)
+            .execute()
+            .value
+        print("SourceArtists successfully loaded")
+    } catch {
+        print("Failed to fetch SourceArtists: \(error)")
+    }
+    return sourceItems
+}
+
+func loadSourceAuthors(recordField: String, recordID: String) async -> [SourceAuthor] {
+    var sourceItems = [SourceAuthor]()
+    do {
+        sourceItems = try await supabase
+            .from("source_authors")
+            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), artist!inner(*)")
+            .eq(recordField, value: recordID)
+            .execute()
+            .value
+        print("SourceAuthors successfully loaded")
+    } catch {
+        print("Failed to fetch SourceAuthors: \(error)")
+    }
+    return sourceItems
+}
+
+func loadSourceFacts(recordField: String, recordID: String) async -> [Fact] {
+    var facts = [Fact]()
+    do {
+        facts = try await supabase
+            .from("facts")
+            .select("id, fact, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), keywords")
+            .eq(recordField, value: recordID)
+            .execute()
+            .value
+        print("Facts successfully loaded")
+    } catch {
+        print("Failed to fetch Facts: \(error)")
+    }
+    return facts
 }
 
 func downloadAndUploadImage(from imageUrl: URL, path: String) {

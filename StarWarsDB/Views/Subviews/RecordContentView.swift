@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecordContentView<Content: View>: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    var record: Entity
+    @Bindable var record: Entity
     var sourceItems: [SourceItem]
     var InfosSection: Content
     
@@ -35,6 +35,6 @@ struct RecordContentView<Content: View>: View {
     }
 }
 
-#Preview {
-    RecordContentView(record: Character.example, sourceItems: SourceCharacter.example, InfosSection: Text(Character.example.name))
-}
+//#Preview {
+//    RecordContentView(record: Character.example, sourceItems: SourceCharacter.example, InfosSection: Text(Character.example.name))
+//}

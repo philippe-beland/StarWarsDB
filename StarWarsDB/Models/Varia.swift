@@ -34,5 +34,15 @@ class Varia: Entity {
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Varia", tableName: "varias")
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(firstAppearance, forKey: .firstAppearance)
+        try container.encode(comments, forKey: .comments)
+    }
+    
     static let example = Varia(name: "Sabacc", firstAppearance: nil, comments: "Card Game")
+    static let empty = Varia(name: "", firstAppearance: nil, comments: nil)
 }

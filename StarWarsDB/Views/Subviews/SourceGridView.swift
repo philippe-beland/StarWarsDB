@@ -14,7 +14,7 @@ struct SourceGridView: View {
         ZStack {
             sourceImage
                 .resizable()
-                .scaledToFill()
+                .scaledToFit()
                 .frame(minWidth: 200, maxWidth: .infinity, minHeight: 300, maxHeight: .infinity)
                 .clipped()
                 .clipShape(.rect(cornerRadius: 15))

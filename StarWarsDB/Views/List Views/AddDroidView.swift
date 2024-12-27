@@ -11,22 +11,30 @@ struct AddDroidView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var name: String = ""
-    @State private var classType: String?
-    @State private var firstAppearance: String?
-    @State private var comments: String?
+    @State private var classType: String = ""
+    @State private var firstAppearance: String = ""
+    @State private var comments: String = ""
     
     var onDroidCreation: (Entity) -> Void
     
     var body: some View {
         NavigationStack{
-            Form {
-                Section("Infos") {
-                    
-                }
+            VStack(alignment: .center) {
+                TextField("Name", text: $name)
+                    .font(.title.bold())
+                    .padding()
                 
-                Section {
-                    Button("Save", action: saveDroid)
-                        .disabled(name.isEmpty)
+                Form {
+                    Section("Droid Infos") {
+                        FieldView(fieldName: "Class Type", info: $classType)
+                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                    }
+                    CommentsView(comments: $comments)
+                    
+                    Section {
+                        Button("Save", action: saveDroid)
+                            .disabled(name.isEmpty)
+                    }
                 }
             }
         }

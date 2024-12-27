@@ -34,5 +34,16 @@ class Organization: Entity {
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Organization", tableName: "organizations")
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(self.firstAppearance, forKey: .firstAppearance)
+        try container.encode(comments, forKey: .comments)
+    }
+    
     static let example = Organization(name: "Alphabet Squadron", firstAppearance: nil, comments: "The best squadron ever")
+    
+    static let empty = Organization(name: "", firstAppearance: nil, comments: nil)
 }

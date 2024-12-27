@@ -37,5 +37,18 @@ class Arc: Entity {
         super.init(id: id, name: name, comments: comments, firstAppearance: nil, recordType: "Arc", tableName: "arcs")
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        if serie != nil {
+            try container.encode(serie?.id, forKey: .serie)
+        }
+        try container.encode(comments, forKey: .comments)
+    }
+    
     static let example = Arc(name: "Battle for the Force", serie: .example, comments: nil)
+    
+    static let empty = Arc(name: "", serie: .empty, comments: nil)
 }

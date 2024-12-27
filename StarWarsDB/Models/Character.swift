@@ -84,9 +84,29 @@ class Character: Entity {
 
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(aliases, forKey: .aliases)
+        if species != nil && species != .example {
+            try container.encode(species?.id, forKey: .species)
+        }
+        if homeworld != nil && homeworld != .example {
+            try container.encode(homeworld?.id, forKey: .homeworld)
+        }
+        try container.encode(gender, forKey: .gender)
+        //try container.encode(affiliations, forKey: .affiliations)
+        try container.encode(firstAppearance, forKey: .firstAppearance)
+        try container.encode(comments, forKey: .comments)
+    }
+    
     static let example = Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil)
     
     static let examples = [
         Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil),
         Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil)]
+    
+    static let empty = Character(name: "", aliases: [], species: .empty, homeworld: .empty, gender: .Male, firstAppearance: nil)
 }

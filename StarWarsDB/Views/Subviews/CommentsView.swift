@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct CommentsView: View {
-    let comments: String?
+    @Binding var comments: String
     
     var body: some View {
         Section("Comments") {
-            Text(comments ?? "")
+            TextEditor(text: $comments)
         }
     }
 }
 
-#Preview {
-    CommentsView(comments: "Hello World!")
-}
+//#Preview {
+//    CommentsView(comments: "Hello World!")
+//}

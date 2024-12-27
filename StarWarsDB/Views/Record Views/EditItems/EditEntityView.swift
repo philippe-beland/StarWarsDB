@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditEntityView: View {
     @State var entityType: EntityType
-    @State var entity: Entity
+    var entity: Entity
     
     var body: some View {
         switch entityType {
@@ -22,6 +22,8 @@ struct EditEntityView: View {
         case .starshipModel: EditStarshipModelView(starshipModel: entity as! StarshipModel)
         case .starship: EditStarshipView(starship: entity as! Starship)
         case .varia: EditVariaView(varia: entity as! Varia)
+        case .arc: EditArcView(arc: entity as! Arc)
+        case .serie: EditSerieView(serie: entity as! Serie)
         }
     }
 }

@@ -1,20 +1,20 @@
 //
-//  AddVariaView.swift
+//  AddArcView.swift
 //  StarWarsDB
 //
-//  Created by Philippe Beland on 12/24/24.
+//  Created by Philippe Beland on 12/26/24.
 //
 
 import SwiftUI
 
-struct AddVariaView: View {
+struct AddArcView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var name: String = ""
-    @State private var firstAppearance: String = ""
     @State private var comments: String = ""
+    @State private var serie: Serie = .empty
     
-    var onVariaCreation: (Entity) -> Void
+    var onArcCreation: (Entity) -> Void
     
     var body: some View {
         NavigationStack{
@@ -23,26 +23,30 @@ struct AddVariaView: View {
                     .font(.title.bold())
                     .padding()
                 Form {
-                    Section("Varia Infos") {
-                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
-                    }
+                    EditEntityInfoView(
+                        fieldName: "Serie",
+                        entity: Binding(
+                            get: {serie },
+                            set: {serie = ($0 as! Serie) }),
+                        entityType: .serie)
+                    
                     CommentsView(comments: $comments)
                     
                     Section {
-                        Button("Save", action: saveVaria)
+                        Button("Save", action: saveArc)
                             .disabled(name.isEmpty)
                     }
                 }
             }
         }
-        .navigationTitle("Add new Varia")
+        .navigationTitle("Add new Arc")
         .navigationBarTitleDisplayMode(.inline)
     }
     
-    private func saveVaria() {
-        let newVaria = Varia(name: name, firstAppearance: firstAppearance, comments: comments)
-        newVaria.save()
-        onVariaCreation(newVaria)
+    private func saveArc() {
+        let newArc = Arc(name: name, serie: serie, comments: comments)
+        newArc.save()
+        onArcCreation(newArc)
         dismiss()
     }
 }

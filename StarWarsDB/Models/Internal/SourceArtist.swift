@@ -14,12 +14,11 @@ class SourceArtist: SourceItem {
         case id
         case source
         case entity = "artist"
-        case appearance
     }
     
-    init(source: Source, entity: Artist, appearance: AppearanceType) {
+    init(source: Source, entity: Artist) {
         let id = UUID()
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceArtists", tableName: "source_artists")
+        super.init(id: id, source: source, entity: entity, appearance: .present, recordType: "SourceArtists", tableName: "source_artists")
     }
     
     required init(from decoder: Decoder) throws {
@@ -28,15 +27,19 @@ class SourceArtist: SourceItem {
         let id = try container.decode(UUID.self, forKey: .id)
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Artist.self, forKey: .entity)
-        let _appearance = try container.decode(Int.self, forKey: .appearance)
         
-        let appearance = AppearanceType(rawValue: _appearance.description) ?? .present
+        super.init(id: id, source: source, entity: entity, appearance: .present, recordType: "SourceArtists", tableName: "source_artists")
+    }
+    
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceArtists", tableName: "source_artists")
+        try container.encode(source.id, forKey: .source)
+        try container.encode(entity.id, forKey: .entity)
     }
     
     static let example = [
-        SourceArtist(source: .example, entity: .example, appearance: .mentioned),
-        SourceArtist(source: .example, entity: .example, appearance: .mentioned)
+        SourceArtist(source: .example, entity: .example),
+        SourceArtist(source: .example, entity: .example)
     ]
 }

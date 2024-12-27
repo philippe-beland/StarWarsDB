@@ -84,6 +84,11 @@ struct ListEntitiesView: View {
                     entities.append(entity)}
                 case .varia: AddVariaView() { entity in
                     entities.append(entity)}
+                case .arc: AddArcView() { entity in
+                    entities.append(entity)}
+                case .serie: AddSerieView() { entity in
+                    entities.append(entity)
+                }
                 }
             }
         }

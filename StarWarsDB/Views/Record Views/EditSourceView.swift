@@ -21,6 +21,8 @@ enum RecordType: String, CaseIterable {
 struct EditSourceView: View {
     @Bindable var source: Source
     
+    @State private var showFactSheet = false
+    
     @State private var sourceCharacters = [SourceCharacter]()
     @State private var sourceCreatures = [SourceCreature]()
     @State private var sourceDroids = [SourceDroid]()
@@ -30,34 +32,18 @@ struct EditSourceView: View {
     @State private var sourceStarships = [SourceStarship]()
     @State private var sourceStarshipModels = [SourceStarshipModel]()
     @State private var sourceVarias = [SourceVaria]()
+    @State private var sourceArtists = [SourceArtist]()
+    @State private var sourceAuthors = [SourceAuthor]()
     
-    private var sortedCharacters: [SourceCharacter] {
-        sourceCharacters.sorted(by: { $0.entity.name < $1.entity.name })
+    private var sortedArtists: [SourceArtist] {
+        sourceArtists.sorted (by: { $0.entity.name < $1.entity.name })
     }
-    private var sortedCreatures: [SourceCreature] {
-        sourceCreatures.sorted(by: { $0.entity.name < $1.entity.name })
+    
+    private var sortedAuthors: [SourceAuthor] {
+        sourceAuthors.sorted(by: { $0.entity.name < $1.entity.name })
     }
-    private var sortedDroids: [SourceDroid] {
-        sourceDroids.sorted(by: { $0.entity.name < $1.entity.name })
-    }
-    private var sortedOrganizations: [SourceOrganization] {
-        sourceOrganizations.sorted(by: { $0.entity.name < $1.entity.name })
-    }
-    private var sortedPlanets: [SourcePlanet] {
-        sourcePlanets.sorted(by: { $0.entity.name < $1.entity.name })
-    }
-    private var sortedSpecies: [SourceSpecies] {
-        sourceSpecies.sorted(by: { $0.entity.name < $1.entity.name })
-    }
-    private var sortedStarships: [SourceStarship] {
-        sourceStarships.sorted(by: { $0.entity.name < $1.entity.name })
-    }
-    private var sortedStarshipModels: [SourceStarshipModel] {
-        sourceStarshipModels.sorted(by: { $0.entity.name < $1.entity.name })
-    }
-    private var sortedVarias: [SourceVaria] {
-        sourceVarias.sorted(by: { $0.entity.name < $1.entity.name })
-    }
+    
+    @State private var showEntitySelection = false
     
     let layout = [GridItem(.adaptive(minimum: 200, maximum: 300))]
     
@@ -66,6 +52,12 @@ struct EditSourceView: View {
             VStack {
                 HeaderView(name: source.name, urlString: source.url)
                 HStack {
+                    Button("Facts") {
+                        showFactSheet.toggle()
+                    }
+                    .sheet(isPresented: $showFactSheet) {
+                        FactsView(source: source)
+                    }
                     Spacer()
                     Toggle("Done", isOn: $source.isDone)
                         .font(.callout)
@@ -79,42 +71,41 @@ struct EditSourceView: View {
                     }
                 }
                 
-                CommentsView(comments: source.comments)
-                
                 Text("Appearances")
                     .bold()
                     .padding()
                     
                 Form {
-                    Section(header: headerWithButton(title: "Characters", action: {})) {
-                        ScrollAppearancesView(sourceItems: sortedCharacters, entityType: .character)
+                    Section(header: headerWithButton(title: "Characters", entityType: .character)) {
+                        ScrollAppearancesView(sourceItems: $sourceCharacters, entityType: .character)
                     }
-                    Section(header: headerWithButton(title: "Species", action: {})) {
-                        ScrollAppearancesView(sourceItems: sortedSpecies, entityType: .species)
+                    Section(header: headerWithButton(title: "Species", entityType: .species)) {
+                        ScrollAppearancesView(sourceItems: $sourceSpecies, entityType: .species)
                     }
-                    Section(header: headerWithButton(title: "Planets", action: {}))  {
-                        ScrollAppearancesView(sourceItems: sortedPlanets, entityType: .planet)
+                    Section(header: headerWithButton(title: "Planets", entityType: .planet))  {
+                        ScrollAppearancesView(sourceItems: $sourcePlanets, entityType: .planet)
                     }
-                    Section(header: headerWithButton(title: "Organizations", action: {})) {
-                        ScrollAppearancesView(sourceItems: sortedOrganizations, entityType: .organization)
+                    Section(header: headerWithButton(title: "Organizations", entityType: .organization)) {
+                        ScrollAppearancesView(sourceItems: $sourceOrganizations, entityType: .organization)
                     }
-                    Section(header: headerWithButton(title: "Starships", action: {}))  {
-                        ScrollAppearancesView(sourceItems: sortedStarships, entityType: .starship)
+                    Section(header: headerWithButton(title: "Starships", entityType: .starship))  {
+                        ScrollAppearancesView(sourceItems: $sourceStarships, entityType: .starship)
                     }
-                    Section(header: headerWithButton(title: "Creatures", action: {}))  {
-                        ScrollAppearancesView(sourceItems: sortedCreatures, entityType: .creature)
+                    Section(header: headerWithButton(title: "Creatures", entityType: .creature))  {
+                        ScrollAppearancesView(sourceItems: $sourceCreatures, entityType: .creature)
                     }
-                    Section(header: headerWithButton(title: "Droids", action: {})) {
-                        ScrollAppearancesView(sourceItems: sortedDroids, entityType: .droid)
+                    Section(header: headerWithButton(title: "Droids", entityType: .droid)) {
+                        ScrollAppearancesView(sourceItems: $sourceDroids, entityType: .droid)
                     }
-                    Section(header: headerWithButton(title: "Starship Models", action: {})) {
-                        ScrollAppearancesView(sourceItems: sortedStarshipModels, entityType: .starshipModel)
+                    Section(header: headerWithButton(title: "Starship Models", entityType: .starshipModel)) {
+                        ScrollAppearancesView(sourceItems: $sourceStarshipModels, entityType: .starshipModel)
                     }
-                    Section(header: headerWithButton(title: "Varias", action: {})) {
-                        ScrollAppearancesView(sourceItems: sortedVarias, entityType: .varia)
+                    Section(header: headerWithButton(title: "Varias", entityType: .varia)) {
+                        ScrollAppearancesView(sourceItems: $sourceVarias, entityType: .varia)
                     }
                 }
             }
+            .padding()
         }
         .task { await loadInitialSources() }
     }
@@ -125,18 +116,155 @@ struct EditSourceView: View {
         let view: AnyView
     }
     
-    private func headerWithButton(title: String, action: @escaping () -> Void) -> some View {
+    private func headerWithButton(title: String, entityType: EntityType) -> some View {
         HStack {
             Text(title)
                 .font(.subheadline)
             Spacer()
-            Button(action: action) {
+            Button(action: {}) {
+                Text("Expand")
+            }
+            Spacer()
+            Button(action: {showEntitySelection.toggle()}) {
                 Image(systemName: "plus")
                     .foregroundColor(.blue)
             }
             .buttonStyle(BorderlessButtonStyle()) // Ensures the button doesn't affect other interactions
         }
-        .padding(.vertical, 4) // Adjust padding if needed
+        .sheet(isPresented: $showEntitySelection) {
+            ChooseEntityView(entityType: entityType, isSourceItem: true) { selectedEntities, appearance in
+                for selectedEntity in selectedEntities {
+                    addSourceItem(entityType: entityType, entity: selectedEntity, appearance: appearance)
+                }
+            }
+        }
+        .padding(.vertical, 4)
+    }
+    
+    private func addSourceItem(entityType: EntityType, entity: Entity, appearance: AppearanceType) {
+        switch entityType {
+        case .character:
+            let newSourceItem = SourceCharacter(
+                source: source,
+                entity: entity as! Character,
+                appearance: appearance
+            )
+            
+            if !sourceCharacters.contains(newSourceItem) {
+                newSourceItem.save()
+                sourceCharacters.append(newSourceItem)
+            } else {
+                print("Already exists for that source")
+            }
+        case .creature:
+            let newSourceItem = SourceCreature(
+                source: source,
+                entity: entity as! Creature,
+                appearance: appearance
+            )
+            
+            if !sourceCreatures.contains(newSourceItem) {
+                newSourceItem.save()
+                sourceCreatures.append(newSourceItem)
+            } else {
+                print("Already exists for that source")
+            }
+        case .droid:
+            let newSourceItem = SourceDroid(
+                source: source,
+                entity: entity as! Droid,
+                appearance: appearance
+            )
+            
+            if !sourceDroids.contains(newSourceItem) {
+                newSourceItem.save()
+                sourceDroids.append(newSourceItem)
+            } else {
+                print("Already exists for that source")
+            }
+        case .organization:
+            let newSourceItem = SourceOrganization(
+                source: source,
+                entity: entity as! Organization,
+                appearance: appearance
+            )
+            
+            if !sourceOrganizations.contains(newSourceItem) {
+                newSourceItem.save()
+                sourceOrganizations.append(newSourceItem)
+            } else {
+                print("Already exists for that source")
+            }
+        case .planet:
+            let newSourceItem = SourcePlanet(
+                source: source,
+                entity: entity as! Planet,
+                appearance: appearance
+            )
+            
+            if !sourcePlanets.contains(newSourceItem) {
+                newSourceItem.save()
+                sourcePlanets.append(newSourceItem)
+            } else {
+                print("Already exists for that source")
+            }
+        case .species:
+            let newSourceItem = SourceSpecies(
+                source: source,
+                entity: entity as! Species,
+                appearance: appearance
+            )
+            
+            if !sourceSpecies.contains(newSourceItem) {
+                newSourceItem.save()
+                sourceSpecies.append(newSourceItem)
+            } else {
+                print("Already exists for that source")
+            }
+        case .starship:
+            let newSourceItem = SourceStarship(
+                source: source,
+                entity: entity as! Starship,
+                appearance: appearance
+            )
+            
+            if !sourceStarships.contains(newSourceItem) {
+                newSourceItem.save()
+                sourceStarships.append(newSourceItem)
+            } else {
+                print("Already exists for that source")
+            }
+        case .starshipModel:
+            let newSourceItem = SourceStarshipModel(
+                source: source,
+                entity: entity as! StarshipModel,
+                appearance: appearance
+            )
+            
+            if !sourceStarshipModels.contains(newSourceItem) {
+                newSourceItem.save()
+                sourceStarshipModels.append(newSourceItem)
+            } else {
+                print("Already exists for that source")
+            }
+        case .varia:
+            let newSourceItem = SourceVaria(
+                source: source,
+                entity: entity as! Varia,
+                appearance: appearance
+            )
+            
+            if !sourceVarias.contains(newSourceItem) {
+                newSourceItem.save()
+                sourceVarias.append(newSourceItem)
+            } else {
+                print("Already exists for that source")
+            }
+        case .arc:
+            print("arc")
+        case .serie:
+            print("Serie")
+        }
     }
     
     private func loadInitialSources() async {
@@ -149,33 +277,37 @@ struct EditSourceView: View {
         sourceStarships = await loadSourceStarships(recordField: "source", recordID: source.id.uuidString)
         sourceStarshipModels = await loadSourceStarshipModels(recordField: "source", recordID: source.id.uuidString)
         sourceVarias = await loadSourceVarias(recordField: "source", recordID: source.id.uuidString)
+        sourceAuthors = await loadSourceAuthors(recordField: "source", recordID: source.id.uuidString)
+        sourceArtists = await loadSourceArtists(recordField: "source", recordID: source.id.uuidString)
     }
     
     private var infosSection: [InfoSection] {
-        var sections: [InfoSection] = [
-            InfoSection(fieldName: "Serie", view: AnyView(Text("\(source.serie?.name ?? ""): \(source.number?.description ?? "")"))),
-            //InfoSection(fieldName: "Number", view: AnyView(FieldVStack(fieldName: "Number", info: source.number?.description ?? ""))),
-            //InfoSection(fieldName: "Arc", view: AnyView(FieldVStack(fieldName: "Arc", info: source.arc?.name ?? ""))),
-            //InfoSection(fieldName: "Era", view: AnyView(FieldVStack(fieldName: "Era", info: source.era.rawValue))),
-            //InfoSection(fieldName: "Source Type", view: AnyView(FieldVStack(fieldName: "Source Type", info: source.sourceType.rawValue))),
-            //InfoSection(fieldName: "Authors", view: AnyView(MultiFieldVStack(fieldName: "Authors", infos: source.authors))),
-            //InfoSection(fieldName: "Artists", view: AnyView(MultiFieldVStack(fieldName: "Artists", infos: source.artists))),
-            //InfoSection(fieldName: "Number Pages", view: AnyView(FieldVStack(fieldName: "Number Pages", info: source.numberPages?.description ?? ""))),
+        let sections: [InfoSection] = [
+            
+            InfoSection(fieldName: "Serie", view: AnyView(EditVEntityInfoView(
+                fieldName: "Serie",
+                entity: Binding(
+                    get: {source.serie ?? Serie.empty },
+                    set: {source.serie = ($0 as! Serie) }),
+                entityType: .serie))),
+            InfoSection(fieldName: "Arc", view: AnyView(EditVEntityInfoView(
+                fieldName: "Arc",
+                entity: Binding(
+                    get: {source.arc ?? Arc.empty },
+                    set: {source.arc = ($0 as! Arc) }),
+                entityType: .arc))),
+            InfoSection(fieldName: "Era", view: AnyView(EraPicker(era: $source.era))),
+            InfoSection(fieldName: "Type", view: AnyView(SourceTypePicker(sourceType: $source.sourceType))),
+            InfoSection(fieldName: "In-Universe Year", view: AnyView(YearPicker(era: source.era, universeYear: $source.universeYear))),
+            InfoSection(fieldName: "Authors", view: AnyView(ArtistsVStack(fieldName: "Authors", entities: sortedAuthors))),
+            InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(fieldName: "Artists", entities: sortedArtists))),
+            InfoSection(fieldName: "Number Pages", view: AnyView(Text(source.numberPages?.description ?? ""))),
         ]
-        
-//        if let year = source.universeYear {
-//            sections.append(
-//                InfoSection(
-//                    fieldName: "In-Universe Year",
-//                    //view: AnyView(FieldVStack(fieldName: "In-Universe Year", info: "\(abs(year)) \(year > 0 ? "ABY" : "BBY")"))
-//                )
-//            )
-//        }
         
         return sections
     }
 }
 
-#Preview {
-    EditSourceView(source: .example)
-}
+//#Preview {
+//    EditSourceView(source: .example)
+//}

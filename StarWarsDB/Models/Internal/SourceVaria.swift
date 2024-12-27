@@ -36,6 +36,14 @@ class SourceVaria: SourceItem {
         super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceVarias", tableName: "source_varias")
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(source.id, forKey: .source)
+        try container.encode(entity.id, forKey: .entity)
+        try container.encode(appearance.rawValue, forKey: .appearance)
+    }
+    
     static let example = [
         SourceVaria(source: .example, entity: .example, appearance: .mentioned),
         SourceVaria(source: .example, entity: .example, appearance: .mentioned),

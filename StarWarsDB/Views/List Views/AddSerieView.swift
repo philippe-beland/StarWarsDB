@@ -1,20 +1,19 @@
 //
-//  AddVariaView.swift
+//  AddSerieView.swift
 //  StarWarsDB
 //
-//  Created by Philippe Beland on 12/24/24.
+//  Created by Philippe Beland on 12/26/24.
 //
 
 import SwiftUI
 
-struct AddVariaView: View {
+struct AddSerieView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var name: String = ""
-    @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onVariaCreation: (Entity) -> Void
+    var onSerieCreation: (Entity) -> Void
     
     var body: some View {
         NavigationStack{
@@ -23,26 +22,23 @@ struct AddVariaView: View {
                     .font(.title.bold())
                     .padding()
                 Form {
-                    Section("Varia Infos") {
-                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
-                    }
                     CommentsView(comments: $comments)
                     
                     Section {
-                        Button("Save", action: saveVaria)
+                        Button("Save", action: saveSerie)
                             .disabled(name.isEmpty)
                     }
                 }
             }
         }
-        .navigationTitle("Add new Varia")
+        .navigationTitle("Add new Serie")
         .navigationBarTitleDisplayMode(.inline)
     }
     
-    private func saveVaria() {
-        let newVaria = Varia(name: name, firstAppearance: firstAppearance, comments: comments)
-        newVaria.save()
-        onVariaCreation(newVaria)
+    private func saveSerie() {
+        let newSerie = Serie(name: name, comments: comments)
+        newSerie.save()
+        onSerieCreation(newSerie)
         dismiss()
     }
 }

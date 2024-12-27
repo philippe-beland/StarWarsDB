@@ -14,13 +14,12 @@ class SourceAuthor: SourceItem {
         case id
         case source
         case entity = "artist"
-        case appearance
     }
     
-    init(source: Source, entity: Artist, appearance: AppearanceType) {
+    init(source: Source, entity: Artist) {
         let id = UUID()
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceAuthors", tableName: "source_authors")
+        super.init(id: id, source: source, entity: entity, appearance: .present, recordType: "SourceAuthors", tableName: "source_authors")
     }
     
     required init(from decoder: Decoder) throws {
@@ -29,16 +28,20 @@ class SourceAuthor: SourceItem {
         let id = try container.decode(UUID.self, forKey: .id)
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Artist.self, forKey: .entity)
-        let _appearance = try container.decode(Int.self, forKey: .appearance)
         
-        let appearance = AppearanceType(rawValue: _appearance.description) ?? .present
+        super.init(id: id, source: source, entity: entity, appearance: .present, recordType: "SourceAuthors", tableName: "source_authors")
+    }
+    
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceAuthors", tableName: "source_authors")
+        try container.encode(source.id, forKey: .source)
+        try container.encode(entity.id, forKey: .entity)
     }
     
     static let example = [
-        SourceAuthor(source: .example, entity: .example, appearance: .mentioned),
-        SourceAuthor(source: .example, entity: .example, appearance: .mentioned),
-        SourceAuthor(source: .example, entity: .example, appearance: .mentioned)
+        SourceAuthor(source: .example, entity: .example),
+        SourceAuthor(source: .example, entity: .example),
+        SourceAuthor(source: .example, entity: .example)
     ]
 }

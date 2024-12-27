@@ -11,7 +11,7 @@ struct EditArtistView: View {
     @Bindable var artist: Artist
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceArtists: [SourceArtist] = SourceArtist.example
+    @State private var sourceArtists = [SourceArtist]()
     
     var body: some View {
         NavigationStack {

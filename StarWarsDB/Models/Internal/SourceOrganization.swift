@@ -36,6 +36,14 @@ class SourceOrganization: SourceItem {
         super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceOrganizations", tableName: "source_organizations")
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(source.id, forKey: .source)
+        try container.encode(entity.id, forKey: .entity)
+        try container.encode(appearance.rawValue, forKey: .appearance)
+    }
+    
     static let example = [
         SourceOrganization(source: .example, entity: .example, appearance: .mentioned),
         SourceOrganization(source: .example, entity: .example, appearance: .mentioned),

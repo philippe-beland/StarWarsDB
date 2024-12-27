@@ -39,5 +39,19 @@ class Starship: Entity {
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Starship", tableName: "starships")
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        if model != nil && model != .example {
+            try container.encode(model?.id, forKey: .model)
+        }
+        try container.encode(firstAppearance, forKey: .firstAppearance)
+        try container.encode(comments, forKey: .comments)
+    }
+    
     static let example = Starship(name: "Millenium Falcon", model: .example, firstAppearance: nil, comments: "The best squadron ever")
+    
+    static let empty = Starship(name: "", model: nil, firstAppearance: nil, comments: "")
 }

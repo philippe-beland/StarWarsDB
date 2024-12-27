@@ -10,6 +10,7 @@ import SwiftUI
 struct ChooseEntityView: View {
     @Environment(\.dismiss) var dismiss
     var entityType: EntityType
+    var isSourceItem: Bool
     
     @State private var searchText = ""
     @State private var appearanceType: AppearanceType = .present
@@ -21,7 +22,9 @@ struct ChooseEntityView: View {
     
     var body: some View {
         VStack {
-            AppearancePickerView(appearance: $appearanceType)
+            if isSourceItem {
+                AppearancePickerView(appearance: $appearanceType)
+            }
             
             NavigationStack {
                 List(entities, id: \.self, selection: $selectedEntities) { entity in
@@ -56,8 +59,10 @@ struct ChooseEntityView: View {
     
     @ToolbarContentBuilder
     private var ToolbarContent: some ToolbarContent {
-        ToolbarItem(placement: .navigationBarLeading) {
-            EditButton()
+        if isSourceItem {
+            ToolbarItem(placement: .navigationBarLeading) {
+                EditButton()
+            }
         }
         ToolbarItem(placement: .navigationBarTrailing) {
             Button("Create", systemImage: "plus") {
@@ -82,6 +87,10 @@ struct ChooseEntityView: View {
                 case .starship: AddStarshipView() { entity in
                     entities.append(entity)}
                 case .varia: AddVariaView() { entity in
+                    entities.append(entity)}
+                case .serie: AddSerieView() { entity in
+                    entities.append(entity)}
+                case .arc: AddArcView() { entity in
                     entities.append(entity)}
                 }
             }
