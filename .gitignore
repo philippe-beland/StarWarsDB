@@ -88,3 +88,16 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+.DS_Store
+/Python/Star Wars raw Data
+/Python/StarWarsDB/Star Wars raw Data
+/Python/StarWarsDB.egg-info
+Python/keys.env
+/Python/StarWarsDB/Images
+/StarWarsDB/Assets.xcassets
+StarWarsDB/.DS_Store
+*.pyc
+*.pyc
+StarWarsDB/Secrets.swift
+*.pyc
+*.env

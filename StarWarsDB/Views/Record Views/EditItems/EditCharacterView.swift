@@ -1,0 +1,32 @@
+//
+//  EditCharacterView.swift
+//  StarWarsDB
+//
+//  Created by Philippe Beland on 12/12/24.
+//
+
+import SwiftUI
+
+struct EditCharacterView: View {
+    @Bindable var character: Character
+    @Environment(\.dismiss) var dismiss
+    
+    @State private var sourceCharacters = [SourceCharacter]()
+    
+    @State private var selectedOption: SourceType = .movies
+    
+    var body: some View {
+        NavigationStack {
+            RecordContentView(record: character, sourceItems: sourceCharacters, InfosSection: CharacterInfoSection(character: character))
+        }
+        .task { await loadInitialSources() }
+    }
+    
+    private func loadInitialSources() async {
+        sourceCharacters = await loadSourceCharacters(recordField: "character", recordID: character.id.uuidString)
+    }
+}
+
+#Preview {
+    EditCharacterView(character: .example)
+}
