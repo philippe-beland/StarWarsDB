@@ -1,6 +1,6 @@
-# Qu'est-ce qui se trame
+# Star Wars Database
 
-Various functions and classes for Qu'est-ce qui se trame radio show/podcast
+Various functions and classes for Star Wars Database, that started on FileMaker in 2018, to be continued into Ninox after, then for my personal app in Swift. This Python package is used to make the transition from Ninox to Supabase.
 
 ## Table of contents
 
@@ -23,8 +23,8 @@ Then put the folder in the location of your choice: "<your/folder/location>".
 Locate into the folder and create your virtual environment:
 ```python
 cd <your/folder/location>
-conda create --name qqst python=3.10
-conda activate qqst # Activate your environment
+conda create --name starwarsdb python=3.12
+conda activate starwarsdb # Activate your environment
 python setup.py install
 ```
 
@@ -33,5 +33,5 @@ python setup.py install
 This package contains multiple functions and basic classes
 
 ## Current caveats
-- The package works for Python 3.10 and was not tested on the other versions for the moment
+- The package works for Python 3.12 and was not tested on the other versions for the moment
 - The package is under construction. More functions will be coming soon.

@@ -13,5 +13,3 @@ for file in data_dir.iterdir():
         df = pd.DataFrame(data)
         print(df.head())
         df.to_csv(Path(data_dir, file.stem + ".csv"), index=False)
-
-        print(asdf)
