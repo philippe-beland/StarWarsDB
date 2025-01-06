@@ -19,6 +19,8 @@ class StarshipModel: Entity {
         case line
         case firstAppearance = "first_appearance"
         case comments
+        case nbApparitions = "appearances"
+        
     }
     
     init(name: String, classType: String?, line: String?, firstAppearance: String?, comments: String? = nil) {
@@ -39,8 +41,9 @@ class StarshipModel: Entity {
         self.line = try container.decodeIfPresent(String.self, forKey: .line) ?? ""
         let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
         let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        let nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Starship Model", tableName: "starship_models")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Starship Model", tableName: "starship_models")
     }
     
     override func encode(to encoder: Encoder) throws {

@@ -17,6 +17,7 @@ class Species: Entity {
         case homeworld
         case firstAppearance = "first_appearance"
         case comments
+        case nbApparitions = "appearances"
     }
     
     init(name: String, homeworld: Planet?, firstAppearance: String?, comments: String? = nil) {
@@ -34,8 +35,9 @@ class Species: Entity {
         self.homeworld = try container.decodeIfPresent(Planet.self, forKey: .homeworld)
         let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
         let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        let nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Species", tableName: "species")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Species", tableName: "species")
     }
     
     override func encode(to encoder: Encoder) throws {

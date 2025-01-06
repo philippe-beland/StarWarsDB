@@ -98,3 +98,4 @@ Python/keys.env
 StarWarsDB/.DS_Store
 *.pyc
 *.pyc
+StarWarsDB/Secrets.swift

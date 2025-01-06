@@ -86,7 +86,7 @@ struct EditVEntityInfoView: View {
             } label: {
                 if entity.name.isEmpty {
                     Text("Select \(fieldName)")
-                        .foregroundStyle(.secondary)
+                        .foregroundColor(.blue)
                 }
                 Text(entity.name)
             }
@@ -242,13 +242,14 @@ struct MultiFieldVStack: View {
     }
 }
 
-//#Preview {
-//    @State var era = Source.example.era
-//    @State var year = Source.example.universeYear
-//    YearPicker(era: era, universeYear: $year)
-//    
-////    FieldView(fieldName: "Name", info: "Luke Skywalker")
-////    FieldVStack(fieldName: "Name", info: "Luke Skywalker")
-////    //MultiFieldView(fieldName: "Affiliation", entities: Character.example.affiliations)
-////    //MultiFieldVStack(fieldName: "Affiliation", entities: Character.example.affiliations)
-//}
+#Preview {
+    @Previewable @State var era = Source.example.era
+    @Previewable @State var year = Source.example.universeYear
+    @Previewable @State var fieldName = "Luke Skywalker"
+    
+    YearPicker(era: era, universeYear: $year)
+    FieldView(fieldName: "Name", info: $fieldName)
+    FieldVStack(fieldName: "Name", info: $fieldName)
+    //MultiFieldView(fieldName: "Affiliation", entities: Character.example.affiliations)
+    //MultiFieldVStack(fieldName: "Affiliation", entities: Character.example.affiliations)
+}

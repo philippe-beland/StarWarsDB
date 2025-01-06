@@ -62,7 +62,6 @@ struct CharacterRowView: View {
             Spacer()
             Text(character.species?.name ?? "")
                 .font(.callout)
-            Spacer()
 //            Text(character.affiliation)
 //                .font(.callout)
         }

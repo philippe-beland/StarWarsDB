@@ -86,16 +86,19 @@ class Entity: DataNode, Record {
     var id: UUID
     var name: String
     var comments: String
+    var nbApparitions: Int
     var firstAppearance: String
     var url: String {
         "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
     }
     
-    init(id: UUID, name: String, comments: String?, firstAppearance: String?, recordType: String, tableName: String) {
+    init(id: UUID, name: String, comments: String?, firstAppearance: String?, nbApparitions: Int = 0, recordType: String, tableName: String) {
         self.id = id
         self.name = name
         self.comments = comments ?? ""
         self.firstAppearance = firstAppearance ?? ""
+        
+        self.nbApparitions = nbApparitions
         
         super.init(recordType: recordType, tableName: tableName, recordID: id)
     }
@@ -119,4 +122,8 @@ protocol Record: Identifiable, Hashable {
     var name: String { get set }
     var comments: String { get set }
     var url: String { get }
+}
+
+class SourceCount: Decodable {
+    var count: Int
 }

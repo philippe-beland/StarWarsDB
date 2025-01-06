@@ -15,6 +15,7 @@ class Varia: Entity {
         case name
         case firstAppearance = "first_appearance"
         case comments
+        case nbApparitions = "appearances"
     }
     
     init(name: String, firstAppearance: String?, comments: String? = nil) {
@@ -30,8 +31,9 @@ class Varia: Entity {
         let name = try container.decode(String.self, forKey: .name)
         let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
         let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        let nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Varia", tableName: "varias")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Varia", tableName: "varias")
     }
     
     override func encode(to encoder: Encoder) throws {

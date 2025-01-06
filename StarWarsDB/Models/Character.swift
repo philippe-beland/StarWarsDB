@@ -45,6 +45,7 @@ class Character: Entity {
         //case affiliations
         case firstAppearance = "first_appearance"
         case comments
+        case nbApparitions = "appearances"
     }
     
     init(name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender?, firstAppearance: String?, comments: String? = nil) {
@@ -79,9 +80,9 @@ class Character: Entity {
 //        } else {
 //            self.affiliations = []
 //        }
+        let nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Character", tableName: "characters")
-
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Character", tableName: "characters")
     }
     
     override func encode(to encoder: Encoder) throws {

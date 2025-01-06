@@ -13,6 +13,7 @@ class Droid: Entity {
     
     init(name: String, classType: String?, firstAppearance: String?, comments: String?) {
         let id = UUID()
+        self.classType = classType
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Droid", tableName: "droids")
     }
@@ -23,6 +24,7 @@ class Droid: Entity {
         case classType = "class_type"
         case firstAppearance = "first_appearance"
         case comments
+        case nbApparitions = "appearances"
     }
     
     required init(from decoder: Decoder) throws {
@@ -33,8 +35,9 @@ class Droid: Entity {
         self.classType = try container.decodeIfPresent(String.self, forKey: .classType)
         let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
         let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        let nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Droid", tableName: "droids")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Droid", tableName: "droids")
     }
     
     override func encode(to encoder: Encoder) throws {

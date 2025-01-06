@@ -25,10 +25,12 @@ struct SourceGridView: View {
                 if let serie = source.serie, let number = source.number {
                     VStack {
                         Text(source.name)
-                        Text("\(serie.name) \(number)")
+                            .bold()
+                            .foregroundColor(.white)
+                        Text("\(serie.name) #\(number)")
+                            .font(.callout)
+                            .foregroundStyle(Color(hue: 1.0, saturation: 0.0, brightness: 0.736))
                     }
-                    .bold()
-                    .foregroundColor(.white)
                     .padding(3)
                     .background(Color.black.opacity(0.5))
                     .cornerRadius(5)

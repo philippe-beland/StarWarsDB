@@ -16,6 +16,7 @@ enum RecordType: String, CaseIterable {
     case species = "Species"
     case starships = "Starships"
     case starshipModels = "Starship Models"
+    case varias = "Varias"
 }
 
 struct EditSourceView: View {
@@ -43,7 +44,7 @@ struct EditSourceView: View {
         sourceAuthors.sorted(by: { $0.entity.name < $1.entity.name })
     }
     
-    @State private var showEntitySelection = false
+    @State private var showEntityForSection: [EntityType: Bool] = [:]
     
     let layout = [GridItem(.adaptive(minimum: 200, maximum: 300))]
     
@@ -125,13 +126,18 @@ struct EditSourceView: View {
                 Text("Expand")
             }
             Spacer()
-            Button(action: {showEntitySelection.toggle()}) {
+            Button(action: {
+                showEntityForSection[entityType] = true
+            }) {
                 Image(systemName: "plus")
                     .foregroundColor(.blue)
             }
-            .buttonStyle(BorderlessButtonStyle()) // Ensures the button doesn't affect other interactions
+            .buttonStyle(BorderlessButtonStyle())
         }
-        .sheet(isPresented: $showEntitySelection) {
+        .sheet(isPresented: Binding(
+            get: { showEntityForSection[entityType] ?? false},
+            set: { showEntityForSection[entityType] = $0 }
+        )) {
             ChooseEntityView(entityType: entityType, isSourceItem: true) { selectedEntities, appearance in
                 for selectedEntity in selectedEntities {
                     addSourceItem(entityType: entityType, entity: selectedEntity, appearance: appearance)
@@ -160,7 +166,11 @@ struct EditSourceView: View {
             }
             
             if let species = character.species {
-                let newSourceSpecies = SourceSpecies(source: source, entity: species, appearance: appearance)
+                let newSourceSpecies = SourceSpecies(
+                    source: source,
+                    entity: species,
+                    appearance: appearance
+                )
                 
                 if !sourceSpecies.contains(newSourceSpecies) {
                     newSourceSpecies.save()
@@ -168,8 +178,6 @@ struct EditSourceView: View {
                 }
             }
 
-            
-            
         case .creature:
             let newSourceItem = SourceCreature(
                 source: source,

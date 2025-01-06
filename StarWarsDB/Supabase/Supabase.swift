@@ -82,10 +82,8 @@ func loadCharacters(sort: String, filter: String = "") async -> [Character] {
     
     do {
         characters = try await supabase
-            .from("characters")
-            .select("id, name, aliases, species(id, name, homeworld(*), first_appearance, comments), homeworld(*), gender, affiliations, first_appearance, comments")
+            .rpc("load_characters")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
             .limit(40)
             .execute()
             .value
@@ -102,10 +100,8 @@ func loadCreatures(sort: String, filter: String = "") async -> [Creature] {
     
     do {
         creatures = try await supabase
-            .from("creatures")
-            .select("id, name, designation, homeworld(*), first_appearance, comments")
+            .rpc("load_creatures")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
             .limit(40)
             .execute()
             .value
@@ -122,10 +118,8 @@ func loadDroids(sort: String, filter: String = "") async -> [Droid] {
     
     do {
         droids = try await supabase
-            .from("droids")
-            .select("*")
+            .rpc("load_droids")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
             .limit(40)
             .execute()
             .value
@@ -142,10 +136,8 @@ func loadOrganizations(sort: String, filter: String = "") async -> [Organization
     
     do {
         organizations = try await supabase
-            .from("organizations")
-            .select("*")
+            .rpc("load_organizations")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
             .limit(40)
             .execute()
             .value
@@ -162,10 +154,8 @@ func loadPlanets(sort: String, filter: String = "") async -> [Planet] {
     
     do {
         planets = try await supabase
-            .from("planets")
-            .select("*")
+            .rpc("load_planets")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
             .limit(40)
             .execute()
             .value
@@ -182,10 +172,8 @@ func loadSpecies(sort: String, filter: String = "") async -> [Species] {
     
     do {
         species = try await supabase
-            .from("species")
-            .select("id, name, homeworld(*), first_appearance, comments")
+            .rpc("load_species")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
             .limit(40)
             .execute()
             .value
@@ -202,10 +190,8 @@ func loadStarships(sort: String, filter: String = "") async -> [Starship] {
     
     do {
         starships = try await supabase
-            .from("starships")
-            .select("id, name, first_appearance, comments") // Misses model!inner(*),
+            .rpc("load_starships")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
             .limit(40)
             .execute()
             .value
@@ -222,10 +208,8 @@ func loadStarshipModels(sort: String, filter: String = "") async -> [StarshipMod
     
     do {
         starshipModels = try await supabase
-            .from("starship_models")
-            .select("*")
+            .rpc("load_starship_models")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
             .limit(40)
             .execute()
             .value
@@ -242,10 +226,8 @@ func loadVarias(sort: String, filter: String = "") async -> [Varia] {
     
     do {
         varias = try await supabase
-            .from("varias")
-            .select("*")
+            .rpc("load_varias")
             .ilike("name", pattern: "%\(filter)%")
-            .order(sort)
             .limit(40)
             .execute()
             .value
