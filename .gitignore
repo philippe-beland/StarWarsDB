@@ -100,3 +100,4 @@ StarWarsDB/.DS_Store
 *.pyc
 StarWarsDB/Secrets.swift
 *.pyc
+*.env
