@@ -99,3 +99,4 @@ StarWarsDB/.DS_Store
 *.pyc
 *.pyc
 StarWarsDB/Secrets.swift
+*.pyc
