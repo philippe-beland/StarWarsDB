@@ -46,12 +46,10 @@ struct EditSourceView: View {
     
     @State private var showEntityForSection: [EntityType: Bool] = [:]
     
-    let layout = [GridItem(.adaptive(minimum: 200, maximum: 300))]
-    
     var body: some View {
         NavigationStack {
-            VStack {
-                HeaderView(name: source.name, urlString: source.url)
+            VStack(alignment: .leading, spacing: 16) {
+                HeaderView(name: $source.name, urlString: source.url)
                 HStack {
                     Button("Facts") {
                         showFactSheet.toggle()
@@ -64,18 +62,22 @@ struct EditSourceView: View {
                         .font(.callout)
                         .frame(maxWidth: 110)
                 }
+                .padding([.horizontal])
                 
-                LazyVGrid(columns: layout) {
-                    ForEach(infosSection) { info in
-                        info.view
-                            .font(.caption)
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(infosSection) { info in
+                            info.view
+                                .font(.caption)
+                        }
                     }
                 }
+                .padding([.horizontal])
                 
                 Text("Appearances")
                     .bold()
                     .padding()
-                    
+                
                 Form {
                     Section(header: headerWithButton(title: "Characters", entityType: .character)) {
                         ScrollAppearancesView(sourceItems: $sourceCharacters, entityType: .character)
@@ -106,7 +108,7 @@ struct EditSourceView: View {
                     }
                 }
             }
-            .padding()
+            .padding(.vertical)
         }
         .task { await loadInitialSources() }
         .toolbar {

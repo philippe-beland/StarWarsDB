@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct HeaderView: View {
-    let name: String
+    @Binding var name: String
     let urlString: String
     
     var body: some View {
         HStack {
             Spacer()
-            Text(name)
+            TextField("Enter Source Name", text: $name)
                 .font(.title.bold())
                 .padding()
 
@@ -37,6 +37,6 @@ struct HeaderView: View {
     }
 }
 
-#Preview {
-    HeaderView(name: Character.example.name, urlString: Character.example.url)
-}
+//#Preview {
+//    HeaderView(name: Character.example.name, urlString: Character.example.url)
+//}
