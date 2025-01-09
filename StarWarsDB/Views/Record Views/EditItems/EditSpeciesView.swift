@@ -18,6 +18,9 @@ struct EditSpeciesView: View {
             RecordContentView(record: species, sourceItems: sourceSpecies, InfosSection: SpeciesInfoSection(species: species))
             }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: species.update)
+        }
         }
     
     private func loadInitialSources() async {

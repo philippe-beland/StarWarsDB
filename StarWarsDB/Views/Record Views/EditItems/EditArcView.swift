@@ -17,6 +17,9 @@ struct EditArcView: View {
         NavigationStack {
             RecordContentView(record: arc, sourceItems: sources, InfosSection: ArcInfoSection(arc: arc))
         }
+        .toolbar {
+            Button ("Update", action: arc.update)
+        }
     }
 }
 

@@ -20,6 +20,9 @@ struct EditCharacterView: View {
             RecordContentView(record: character, sourceItems: sourceCharacters, InfosSection: CharacterInfoSection(character: character))
         }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: character.update)
+        }
     }
     
     private func loadInitialSources() async {

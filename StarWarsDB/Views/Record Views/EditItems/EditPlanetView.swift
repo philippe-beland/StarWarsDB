@@ -18,6 +18,9 @@ struct EditPlanetView: View {
             RecordContentView(record: planet, sourceItems: sourcePlanets, InfosSection: PlanetInfoSection(planet: planet))
             }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: planet.update)
+        }
         }
 
     

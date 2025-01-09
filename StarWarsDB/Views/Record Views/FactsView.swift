@@ -22,6 +22,7 @@ struct FactsView: View {
                 ForEach($facts, id: \.id) { fact in
                     TextEditor(text: fact.fact)
                 }
+                .onDelete(perform: deleteFact)
             }
             .navigationTitle("Facts")
             .toolbar {
@@ -35,6 +36,14 @@ struct FactsView: View {
     
     private func loadInitialFacts(for source: Source) async {
         facts = await loadSourceFacts(recordField: "source", recordID: source.id.uuidString)
+    }
+    
+    private func deleteFact(_ indexSet: IndexSet) {
+        for index in indexSet {
+            let fact = facts[index]
+            facts.remove(at: index)
+            fact.delete()
+        }
     }
 }
 

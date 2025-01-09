@@ -18,6 +18,9 @@ struct EditCreatureView: View {
             RecordContentView(record: creature, sourceItems: sourceCreatures, InfosSection: CreatureInfoSection(creature: creature))
             }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: creature.update)
+        }
         }
 
     

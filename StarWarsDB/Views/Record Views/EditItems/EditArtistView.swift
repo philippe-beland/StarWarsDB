@@ -17,6 +17,9 @@ struct EditArtistView: View {
         NavigationStack {
             RecordContentView(record: artist, sourceItems: sourceArtists, InfosSection: ArtistInfoSection(artist: artist))
         }
+        .toolbar {
+            Button ("Update", action: artist.update)
+        }
     }
 }
 

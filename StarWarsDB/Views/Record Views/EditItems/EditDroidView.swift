@@ -18,6 +18,9 @@ struct EditDroidView: View {
             RecordContentView(record: droid, sourceItems: sourceDroids, InfosSection: DroidInfoSection(droid: droid))
             }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: droid.update)
+        }
         }
     
     private func loadInitialSources() async {

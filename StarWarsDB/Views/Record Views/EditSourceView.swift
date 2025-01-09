@@ -109,6 +109,9 @@ struct EditSourceView: View {
             .padding()
         }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: source.update)
+        }
     }
     
     private struct InfoSection: Identifiable {

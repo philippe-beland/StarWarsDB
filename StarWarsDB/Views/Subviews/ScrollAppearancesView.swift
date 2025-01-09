@@ -11,7 +11,7 @@ struct ScrollAppearancesView<T: SourceItem>: View {
     @Binding var sourceItems: [T]
     
     let entityType: EntityType
-    let layout = Array(repeating: GridItem(.flexible(), spacing: 16), count: 3)
+    let layout = Array(repeating: GridItem(.flexible(), spacing: 8), count: 3)
     
     private var sortedEntities: [SourceItem] {
         sourceItems.sorted(by: { $0.entity.name < $1.entity.name })
@@ -33,7 +33,6 @@ struct ScrollAppearancesView<T: SourceItem>: View {
                         .buttonStyle(PlainButtonStyle())
                     }
                 }
-                .frame(height: 300)
             }
         }
     
