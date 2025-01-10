@@ -51,7 +51,7 @@ struct SourceGridView: View {
     
     private var sourceImage: Image {
         let imageName = source.id.uuidString.lowercased()
-        let serieName = source.serie?.name ?? ""
+        let serieName = source.serie?.id.uuidString.lowercased() ?? ""
         if UIImage(named: imageName) != nil {
             return Image(imageName)
         } else if UIImage(named: serieName) != nil {

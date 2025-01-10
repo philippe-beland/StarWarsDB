@@ -323,12 +323,13 @@ struct EditSourceView: View {
                     get: {source.arc ?? Arc.empty },
                     set: {source.arc = ($0 as! Arc) }),
                 entityType: .arc))),
+            InfoSection(fieldName: "Number", view: AnyView(TextField("Number", value: $source.number, format: .number))),
             InfoSection(fieldName: "Era", view: AnyView(EraPicker(era: $source.era))),
             InfoSection(fieldName: "Type", view: AnyView(SourceTypePicker(sourceType: $source.sourceType))),
             InfoSection(fieldName: "In-Universe Year", view: AnyView(YearPicker(era: source.era, universeYear: $source.universeYear))),
-            InfoSection(fieldName: "Authors", view: AnyView(ArtistsVStack(fieldName: "Authors", entities: sortedAuthors))),
-            InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(fieldName: "Artists", entities: sortedArtists))),
-            InfoSection(fieldName: "Number Pages", view: AnyView(Text(source.numberPages?.description ?? ""))),
+            InfoSection(fieldName: "Authors", view: AnyView(AuthorsVStack(fieldName: "Authors", source: source, authors: sortedAuthors))),
+            InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(fieldName: "Artists", source: source, artists: sortedArtists))),
+            InfoSection(fieldName: "Number Pages", view: AnyView(TextField("Nb of pages", value: $source.numberPages, format: .number)))
         ]
         
         return sections

@@ -210,14 +210,71 @@ struct MultiFieldView: View {
 
 struct ArtistsVStack: View {
     var fieldName: String
-    @State var entities: [SourceItem] = []
+    var source: Source?
+    
+    @State var artists: [SourceArtist] = []
+    @State var showNewArtistSheet = false
     
     var body: some View {
         VStack {
             Text("\(fieldName):")
                 .bold()
-            ForEach(entities) { entity in
-                Text(entity.entity.name)
+            ForEach(artists) { artist in
+                Text(artist.entity.name)
+            }
+        }
+        .toolbar {
+            Button("Create", systemImage: "plus") {
+                showNewArtistSheet.toggle()
+            }
+            .sheet(isPresented: $showNewArtistSheet) {
+                AddArtistView { artist in
+                    if let source {
+                        let newArtist = SourceArtist(source: source, entity: artist as! Artist)
+                        if !artists.contains(newArtist) {
+                            newArtist.save()
+                            artists.append(newArtist)
+                        } else {
+                            print("Already exists for that source")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct AuthorsVStack: View {
+    var fieldName: String
+    var source: Source?
+    
+    @State var authors: [SourceAuthor] = []
+    @State var showNewAuthorSheet = false
+    
+    var body: some View {
+        VStack {
+            Text("\(fieldName):")
+                .bold()
+            ForEach(authors) { author in
+                Text(author.entity.name)
+            }
+        }
+        .toolbar {
+            Button("Create", systemImage: "plus") {
+                showNewAuthorSheet.toggle()
+            }
+            .sheet(isPresented: $showNewAuthorSheet) {
+                AddArtistView { author in
+                    if let source {
+                        let newAuthor = SourceAuthor(source: source, entity: author as! Artist)
+                        if !authors.contains(newAuthor) {
+                            newAuthor.save()
+                            authors.append(newAuthor)
+                        } else {
+                            print("Already exists for that source")
+                        }
+                    }
+                }
             }
         }
     }

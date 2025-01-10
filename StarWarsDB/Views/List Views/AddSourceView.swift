@@ -48,15 +48,15 @@ struct AddSourceView: View {
                         EraPicker(era: $era)
                         SourceTypePicker(sourceType: $sourceType)
                         YearPicker(era: era, universeYear: $universeYear)
-//                        ArtistsVStack(fieldName: "Authors", entities: sortedAuthors)
-//                        ArtistsVStack(fieldName: "Artists", entities: sortedArtists)
+                        //AuthorsVStack(fieldName: "Authors")
+                        //ArtistsVStack(fieldName: "Artists")
                         Text(numberPages?.description ?? "")
                     }
                     
                     CommentsView(comments: $comments)
                     Section {
                         Button("Save", action: saveSource)
-                            .disabled(name.isEmpty)
+                            .disabled(name.isEmpty && number == nil)
                     }
                 }
                 .navigationTitle("Add New Source")
