@@ -24,10 +24,12 @@ struct ListSourcesView: View {
             ScrollView {
                 LazyVGrid(columns: layout) {
                     ForEach(sources) { source in
-                        SourceNavigationLink(source: source)
-                            .contextMenu {
-                                SourceContextMenu(source: source)
-                            }
+                        NavigationLink(destination: EditSourceView(source: source)) {
+                            SourceGridView(source: source)
+                        }
+                        .contextMenu {
+                            Button("Delete", role: .destructive, action: { deleteSource(source) })
+                        }
                     }
                 }
             }
@@ -67,18 +69,6 @@ struct ListSourcesView: View {
         source.delete()
     }
     
-    @ViewBuilder
-    private func SourceNavigationLink(source: Source) -> some View {
-        NavigationLink(destination: EditSourceView(source: source)) {
-            SourceGridView(source: source)
-        }
-    }
-
-    @ViewBuilder
-    func SourceContextMenu(source: Source) -> some View {
-        Button("Delete", role: .destructive, action: { deleteSource(source) })
-    }
-    
     @ToolbarContentBuilder
     private var toolbarContent: some ToolbarContent {
         ToolbarItem(placement: .topBarTrailing) {
@@ -98,7 +88,6 @@ struct ListSourcesView: View {
                 }
             }
         }
-        
         ToolbarItem(placement: .topBarLeading) {
             Toggle("ToDo", isOn: $isDoneFilter)
                 .toggleStyle(ButtonToggleStyle())
