@@ -32,6 +32,7 @@ struct ListEntitiesView: View {
             }
             .searchable(text: $searchText, prompt: "Search")
             .navigationTitle(entityType.rawValue)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarContent }
         }
         .onChange(of: searchText) { handleSearchTextChange() }
@@ -65,31 +66,7 @@ struct ListEntitiesView: View {
                 showNewEntitySheet.toggle()
             }
             .sheet(isPresented: $showNewEntitySheet) {
-                switch entityType {
-                case .character: AddCharacterView() { entity in
-                    entities.append(entity)}
-                case .creature: AddCreatureView() { entity in
-                    entities.append(entity)}
-                case .droid: AddDroidView() { entity in
-                    entities.append(entity)}
-                case .organization: AddOrganizationView() { entity in
-                    entities.append(entity)}
-                case .planet: AddPlanetView() { entity in
-                    entities.append(entity)}
-                case .species: AddSpeciesView() { entity in
-                    entities.append(entity)}
-                case .starshipModel: AddStarshipModelView() { entity in
-                    entities.append(entity)}
-                case .starship: AddStarshipView() { entity in
-                    entities.append(entity)}
-                case .varia: AddVariaView() { entity in
-                    entities.append(entity)}
-                case .arc: AddArcView() { entity in
-                    entities.append(entity)}
-                case .serie: AddSerieView() { entity in
-                    entities.append(entity)
-                }
-                }
+                AddEntitySheet(entityType: entityType, onAdd: {entities.append($0) })
             }
         }
         
@@ -100,6 +77,27 @@ struct ListEntitiesView: View {
                     Text("Frequency").tag(SortingItemOrder.frequency)
                 }
             }
+        }
+    }
+}
+
+struct AddEntitySheet: View {
+    var entityType: EntityType
+    var onAdd: (Entity) -> Void
+    
+    var body: some View {
+        switch entityType {
+        case .character: AddCharacterView(onCharacterCreation: onAdd)
+        case .creature: AddCreatureView(onCreatureCreation: onAdd)
+        case .droid: AddDroidView(onDroidCreation: onAdd)
+        case .organization: AddOrganizationView(onOrganizationCreation: onAdd)
+        case .planet: AddPlanetView(onPlanetCreation: onAdd)
+        case .species: AddSpeciesView(onSpeciesCreation: onAdd)
+        case .starshipModel: AddStarshipModelView(onStarshipModelCreation: onAdd)
+        case .starship: AddStarshipView(onStarshipCreation: onAdd)
+        case .varia: AddVariaView(onVariaCreation: onAdd)
+        case .arc: AddArcView(onArcCreation: onAdd)
+        case .serie: AddSerieView(onSerieCreation: onAdd)
         }
     }
 }

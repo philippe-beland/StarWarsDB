@@ -16,34 +16,12 @@ struct SourceGridView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(minWidth: 200, maxWidth: .infinity, minHeight: 300, maxHeight: .infinity)
-                .clipped()
-                .clipShape(.rect(cornerRadius: 15))
+                .clipShape(RoundedRectangle(cornerRadius: 15))
                 .shadow(radius: 5)
             
             VStack {
                 Spacer()
-                if let serie = source.serie, let number = source.number {
-                    VStack {
-                        Text(source.name)
-                            .bold()
-                            .foregroundColor(.white)
-                        Text("\(serie.name) #\(number)")
-                            .font(.callout)
-                            .foregroundStyle(Color(hue: 1.0, saturation: 0.0, brightness: 0.736))
-                    }
-                    .padding(3)
-                    .background(Color.black.opacity(0.5))
-                    .cornerRadius(5)
-                    .padding(5)
-                } else {
-                    Text(source.name)
-                        .bold()
-                        .foregroundColor(.white)
-                        .padding(3)
-                        .background(Color.black.opacity(0.5))
-                        .cornerRadius(5)
-                        .padding(5)
-                }
+                sourceOverlay
             }
         }
         .padding(10)
@@ -52,6 +30,7 @@ struct SourceGridView: View {
     private var sourceImage: Image {
         let imageName = source.id.uuidString.lowercased()
         let serieName = source.serie?.id.uuidString.lowercased() ?? ""
+        
         if UIImage(named: imageName) != nil {
             return Image(imageName)
         } else if UIImage(named: serieName) != nil {
@@ -59,6 +38,24 @@ struct SourceGridView: View {
         } else {
             return Image(systemName: "nosign")
         }
+    }
+    
+    private var sourceOverlay: some View {
+        VStack(spacing: 2) {
+            Text(source.name)
+                .bold()
+                .foregroundColor(.white)
+            
+            if let serie = source.serie, let number = source.number {
+                Text("\(serie.name) #\(number)")
+                    .font(.callout)
+                    .foregroundStyle(Color(hue: 1.0, saturation: 0.0, brightness: 0.736))
+            }
+        }
+        .padding(6)
+        .background(Color.black.opacity(0.5))
+        .cornerRadius(5)
+        .padding(5)
     }
 }
 
