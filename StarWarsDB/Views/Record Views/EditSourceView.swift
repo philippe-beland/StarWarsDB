@@ -45,6 +45,7 @@ struct EditSourceView: View {
     }
     
     @State private var showEntityForSection: [EntityType: Bool] = [:]
+    @State private var showExpandedViewForSection: [EntityType: Bool] = [:]
     
     var body: some View {
         NavigationStack {
@@ -127,7 +128,7 @@ struct EditSourceView: View {
             Text(title)
                 .font(.subheadline)
             Spacer()
-            Button(action: {}) {
+            Button(action: {showExpandedViewForSection[entityType] = true}) {
                 Text("Expand")
             }
             Spacer()
@@ -149,7 +150,65 @@ struct EditSourceView: View {
                 }
             }
         }
+        .sheet(isPresented: Binding(
+            get: { showExpandedViewForSection[entityType] ?? false},
+            set: { showExpandedViewForSection[entityType] = $0 }
+        )) {
+            ExpandedSourceItemView(sourceItems: getSourceItemsBinding(entityType: entityType))
+            }
         .padding(.vertical, 4)
+    }
+    
+    private func getSourceItemsBinding(entityType: EntityType) -> Binding<[SourceItem]> {
+        switch entityType {
+        case .character:
+            return Binding(
+                get: { sourceCharacters as [SourceItem] },
+                set: { newItems in sourceCharacters = newItems.compactMap { $0 as? SourceCharacter } }
+            )
+        case .droid:
+            return Binding(
+                get: { sourceDroids as [SourceItem] },
+                set: { newItems in sourceDroids = newItems.compactMap { $0 as? SourceDroid } }
+            )
+        case .creature:
+            return Binding(
+                get: { sourceCreatures as [SourceItem] },
+                set: { newItems in sourceCreatures = newItems.compactMap { $0 as? SourceCreature } }
+            )
+        case .organization:
+            return Binding(
+                get: { sourceOrganizations as [SourceItem] },
+                set: { newItems in sourceOrganizations = newItems.compactMap { $0 as? SourceOrganization } }
+            )
+        case .planet:
+            return Binding(
+                get: { sourcePlanets as [SourceItem] },
+                set: { newItems in sourcePlanets = newItems.compactMap { $0 as? SourcePlanet } }
+            )
+        case .species:
+            return Binding(
+                get: { sourceSpecies as [SourceItem] },
+                set: { newItems in sourceSpecies = newItems.compactMap { $0 as? SourceSpecies } }
+            )
+        case .starshipModel:
+            return Binding(
+                get: { sourceStarshipModels as [SourceItem] },
+                set: { newItems in sourceStarshipModels = newItems.compactMap { $0 as? SourceStarshipModel } }
+            )
+        case .starship:
+            return Binding(
+                get: { sourceStarships as [SourceItem] },
+                set: { newItems in sourceStarships = newItems.compactMap { $0 as? SourceStarship } }
+            )
+        case .varia:
+            return Binding(
+                get: { sourceVarias as [SourceItem] },
+                set: { newItems in sourceVarias = newItems.compactMap { $0 as? SourceVaria } }
+            )
+        case .arc, .serie:
+            return .constant([]) // Return an empty, immutable Binding for unsupported cases
+        }
     }
     
     private func addSourceItem(entityType: EntityType, entity: Entity, appearance: AppearanceType) {
@@ -171,15 +230,17 @@ struct EditSourceView: View {
             }
             
             if let species = character.species {
-                let newSourceSpecies = SourceSpecies(
-                    source: source,
-                    entity: species,
-                    appearance: appearance
-                )
-                
-                if !sourceSpecies.contains(newSourceSpecies) {
-                    newSourceSpecies.save()
-                    sourceSpecies.append(newSourceSpecies)
+                if species.name.lowercased() != "droid" && appearance != .mentioned {
+                    let newSourceSpecies = SourceSpecies(
+                        source: source,
+                        entity: species,
+                        appearance: appearance
+                    )
+                    
+                    if !sourceSpecies.contains(newSourceSpecies) {
+                        newSourceSpecies.save()
+                        sourceSpecies.append(newSourceSpecies)
+                    }
                 }
             }
 
@@ -333,6 +394,55 @@ struct EditSourceView: View {
         ]
         
         return sections
+    }
+}
+
+struct ExpandedSourceItemView: View {
+    @Binding var sourceItems: [SourceItem]
+    
+    private var sortedEntities: [SourceItem] {
+        sourceItems.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+    
+    var body: some View {
+        List {
+            ForEach(sortedEntities) { sourceItem in
+                RecordEntryView(
+                    name: sourceItem.entity.name ,
+                    imageName: sourceItem.entity.id,
+                    appearance: sourceItem.appearance)
+                .contextMenu {
+                    appearanceContextMenu(for: sourceItem)
+                }
+            }
+            .onDelete(perform: deleteEntity)
+        }
+    }
+    
+    private func appearanceContextMenu(for sourceItem: SourceItem) -> some View {
+         Group {
+             Button(AppearanceType.present.description) { updateAppearance(of: sourceItem, to: .present) }
+             Button(AppearanceType.mentioned.description) { updateAppearance(of: sourceItem, to: .mentioned) }
+             Button(AppearanceType.flashback.description) { updateAppearance(of: sourceItem, to: .flashback) }
+             Button(AppearanceType.vision.description) { updateAppearance(of: sourceItem, to: .vision) }
+             Button(AppearanceType.image.description) { updateAppearance(of: sourceItem, to: .image)}
+             Button(AppearanceType.indirectMentioned.description) { updateAppearance(of: sourceItem, to: .indirectMentioned)}
+         }
+     }
+    
+    private func updateAppearance(of sourceItem: SourceItem, to appearance: AppearanceType) {
+        if let index = sourceItems.firstIndex(where: { $0.id == sourceItem.id }) {
+            sourceItems[index].appearance = appearance
+        }
+        sourceItem.update()
+    }
+    
+    private func deleteEntity(_ indexSet: IndexSet) {
+        for index in indexSet {
+            let entity = sourceItems[index]
+            sourceItems.remove(at: index)
+            entity.delete()
+        }
     }
 }
 

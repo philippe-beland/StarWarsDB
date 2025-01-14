@@ -20,7 +20,7 @@ class SourceStarshipModel: SourceItem {
     init(source: Source, entity: StarshipModel, appearance: AppearanceType) {
         let id = UUID()
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceStarshipModels", tableName: "source_starshipmodels")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceStarshipModels", tableName: "source_starship_models")
     }
     
     required init(from decoder: Decoder) throws {
@@ -33,7 +33,7 @@ class SourceStarshipModel: SourceItem {
         
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceStarshipModels", tableName: "source_starshipmodels")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceStarshipModels", tableName: "source_starship_models")
     }
     
     override func encode(to encoder: Encoder) throws {
