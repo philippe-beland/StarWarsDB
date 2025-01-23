@@ -23,6 +23,7 @@ struct ChooseEntityView: View {
     var body: some View {
         VStack {
             NavigationStack {
+                AppearancePickerView(appearance: $appearanceType)
                 TextField("Search", text: $searchText)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
@@ -63,9 +64,6 @@ struct ChooseEntityView: View {
         if isSourceItem {
             ToolbarItem(placement: .navigationBarLeading) {
                 EditButton()
-            }
-            ToolbarItem() {
-                AppearancePickerView(appearance: $appearanceType)
             }
         }
         ToolbarItem(placement: .navigationBarTrailing) {

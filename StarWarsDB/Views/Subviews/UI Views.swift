@@ -154,6 +154,19 @@ struct YearPicker: View {
     }
 }
 
+struct PublicationDatePicker: View {
+    @Binding var date: Date
+    
+    var body: some View {
+        VStack {
+            Text("Publication Date")
+            DatePicker("Publication Date", selection: $date, displayedComponents: [.date])
+                .datePickerStyle(.compact)
+                .labelsHidden()
+        }
+    }
+}
+
 struct EraPicker: View {
     @Binding var era: Era
     

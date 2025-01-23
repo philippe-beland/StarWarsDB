@@ -14,10 +14,8 @@ struct AppearancePickerView: View {
         HStack {
             Button("Present") { appearance = .present }
                 .tint((appearance == .present) ? .green.opacity(0.5) : .gray)
-            
             Button("Mentionned") { appearance = .mentioned }
                 .tint((appearance == .mentioned) ? .blue.opacity(0.5) : .gray)
-            
             Button("Flashback") { appearance = .flashback }
                 .tint((appearance == .flashback) ? .purple.opacity(0.5) : .gray)
             Button("Image") { appearance = .image }
@@ -28,7 +26,6 @@ struct AppearancePickerView: View {
         .font(.caption.bold())
         .buttonStyle(.borderedProminent)
         .padding(10)
-        .background(Color.gray.opacity(0.3))
     }
 }
 

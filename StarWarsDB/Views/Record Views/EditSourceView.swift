@@ -75,6 +75,7 @@ struct EditSourceView: View {
                         ForEach(infosSection) { info in
                             info.view
                                 .font(.caption)
+                                .padding(.horizontal)
                         }
                     }
                 }
@@ -395,6 +396,7 @@ struct EditSourceView: View {
             InfoSection(fieldName: "Number", view: AnyView(TextField("Number", value: $source.number, format: .number))),
             InfoSection(fieldName: "Era", view: AnyView(EraPicker(era: $source.era))),
             InfoSection(fieldName: "Type", view: AnyView(SourceTypePicker(sourceType: $source.sourceType))),
+            InfoSection(fieldName: "Publication Date", view: AnyView(PublicationDatePicker(date: $source.publicationDate))),
             InfoSection(fieldName: "In-Universe Year", view: AnyView(YearPicker(era: source.era, universeYear: $source.universeYear))),
             InfoSection(fieldName: "Authors", view: AnyView(AuthorsVStack(source: source, authors: sortedAuthors))),
             InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(source: source, artists: sortedArtists))),
