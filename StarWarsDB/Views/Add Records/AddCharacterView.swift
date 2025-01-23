@@ -10,7 +10,7 @@ import SwiftUI
 struct AddCharacterView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State private var name: String = ""
+    @State var name: String
     @State private var aliases: [String] = []
     @State private var species: Species?
     @State private var homeworld: Planet?

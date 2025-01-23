@@ -25,7 +25,7 @@ struct EditPlanetView: View {
 
     
     private func loadInitialSources() async {
-        sourcePlanets = await loadSourcePlanets(recordField: "planet", recordID: planet.id.uuidString)
+        sourcePlanets = await loadSourcePlanets(recordField: "planet", recordID: planet.id)
     }
 }
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct AddOrganizationView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State private var name: String = ""
+    @State var name: String
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     

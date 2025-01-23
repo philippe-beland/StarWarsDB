@@ -10,7 +10,7 @@ import SwiftUI
 struct AddSpeciesView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State private var name: String = ""
+    @State var name: String
     @State private var homeworld: Planet?
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""

@@ -10,7 +10,7 @@ import SwiftUI
 struct AddStarshipModelView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State private var name: String = ""
+    @State var name: String
     @State private var classType: String = ""
     @State private var line: String = ""
     @State private var firstAppearance: String = ""

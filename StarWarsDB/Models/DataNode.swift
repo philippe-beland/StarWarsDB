@@ -19,6 +19,8 @@ enum EntityType: String, Codable {
     case varia = "Varia"
     case arc = "Arc"
     case serie = "Serie"
+    case artist = "Artist"
+    case author = "Author"
 }
 
 class DataNode: Codable {

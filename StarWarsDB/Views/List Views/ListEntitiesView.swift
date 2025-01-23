@@ -87,17 +87,19 @@ struct AddEntitySheet: View {
     
     var body: some View {
         switch entityType {
-        case .character: AddCharacterView(onCharacterCreation: onAdd)
-        case .creature: AddCreatureView(onCreatureCreation: onAdd)
-        case .droid: AddDroidView(onDroidCreation: onAdd)
-        case .organization: AddOrganizationView(onOrganizationCreation: onAdd)
-        case .planet: AddPlanetView(onPlanetCreation: onAdd)
-        case .species: AddSpeciesView(onSpeciesCreation: onAdd)
-        case .starshipModel: AddStarshipModelView(onStarshipModelCreation: onAdd)
-        case .starship: AddStarshipView(onStarshipCreation: onAdd)
-        case .varia: AddVariaView(onVariaCreation: onAdd)
-        case .arc: AddArcView(onArcCreation: onAdd)
-        case .serie: AddSerieView(onSerieCreation: onAdd)
+        case .character: AddCharacterView(name: "", onCharacterCreation: onAdd)
+        case .creature: AddCreatureView(name: "", onCreatureCreation: onAdd)
+        case .droid: AddDroidView(name: "", onDroidCreation: onAdd)
+        case .organization: AddOrganizationView(name: "", onOrganizationCreation: onAdd)
+        case .planet: AddPlanetView(name: "", onPlanetCreation: onAdd)
+        case .species: AddSpeciesView(name: "", onSpeciesCreation: onAdd)
+        case .starshipModel: AddStarshipModelView(name: "", onStarshipModelCreation: onAdd)
+        case .starship: AddStarshipView(name: "", onStarshipCreation: onAdd)
+        case .varia: AddVariaView(name: "", onVariaCreation: onAdd)
+        case .arc: AddArcView(name: "", onArcCreation: onAdd)
+        case .serie: AddSerieView(name: "", onSerieCreation: onAdd)
+        case .artist: AddArtistView(name: "", onArtistCreation: onAdd)
+        case .author: AddArtistView(name: "", onArtistCreation: onAdd)
         }
     }
 }

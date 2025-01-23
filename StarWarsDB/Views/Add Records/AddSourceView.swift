@@ -10,7 +10,7 @@ import SwiftUI
 struct AddSourceView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State private var name: String = ""
+    @State var name: String = ""
     @State private var serie: Serie?
     @State private var number: Int?
     @State private var arc: Arc?

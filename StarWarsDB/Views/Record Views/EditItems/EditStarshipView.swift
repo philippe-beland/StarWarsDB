@@ -24,7 +24,7 @@ struct EditStarshipView: View {
         }
     
     private func loadInitialSources() async {
-        sourceStarships = await loadSourceStarships(recordField: "starship", recordID: starship.id.uuidString)
+        sourceStarships = await loadSourceStarships(recordField: "starship", recordID: starship.id)
     }
 }
 

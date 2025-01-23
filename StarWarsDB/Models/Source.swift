@@ -56,7 +56,6 @@ enum SourceType: String, Decodable, CaseIterable, Hashable {
     case shortStory = "Short Story"
     case tvShow = "TV Serie"
     case videoGame = "Video Game"
-    case referenceBook = "Reference Book"
 }
 
 enum SortingSourceOrder: String, CaseIterable {

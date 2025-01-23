@@ -11,11 +11,31 @@ struct ListSerieView: View {
     var sourceType: SourceType
     var series: [Serie]
     
+    @State private var searchText = ""
+    
+    private var filteredSeries: [Serie] {
+        series.filter {
+            if searchText != "" {
+                return $0.name.localizedStandardContains(searchText)
+            } else {
+                return true
+            }
+        }
+    }
+    
     var body: some View {
         NavigationStack {
-            List(series, id: \.self) { serie in
-                NavigationLink(destination: ListSourcesView(selectedView: sourceType, serie: serie)) {
-                    Text(serie.name)
+            VStack {
+                TextField("Search", text: $searchText)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal)
+                
+                List(filteredSeries) { serie in
+                    NavigationLink(destination: ListSourcesView(selectedView: sourceType, serie: serie)) {
+                        Text(serie.name)
+                    }
                 }
             }
         }

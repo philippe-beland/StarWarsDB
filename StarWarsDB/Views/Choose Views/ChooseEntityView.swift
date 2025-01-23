@@ -22,15 +22,16 @@ struct ChooseEntityView: View {
     
     var body: some View {
         VStack {
-            if isSourceItem {
-                AppearancePickerView(appearance: $appearanceType)
-            }
-            
             NavigationStack {
+                TextField("Search", text: $searchText)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal)
+                
                 List(entities, id: \.self, selection: $selectedEntities) { entity in
                     EntityRowView(entityType: entityType, entity: entity)
                 }
-                .searchable(text: $searchText, prompt: "Search")
                 .navigationTitle(entityType.rawValue)
                 .toolbar { ToolbarContent }
             }
@@ -63,6 +64,9 @@ struct ChooseEntityView: View {
             ToolbarItem(placement: .navigationBarLeading) {
                 EditButton()
             }
+            ToolbarItem() {
+                AppearancePickerView(appearance: $appearanceType)
+            }
         }
         ToolbarItem(placement: .navigationBarTrailing) {
             Button("Create", systemImage: "plus") {
@@ -70,28 +74,33 @@ struct ChooseEntityView: View {
             }
             .sheet(isPresented: $showNewEntitySheet) {
                 switch entityType {
-                case .character: AddCharacterView() { entity in
+                case .character: AddCharacterView(name: searchText) { entity in
                     entities.append(entity)}
-                case .creature: AddCreatureView() { entity in
+                case .creature: AddCreatureView(name: searchText) { entity in
                     entities.append(entity)}
-                case .droid: AddDroidView() { entity in
+                case .droid: AddDroidView(name: searchText) { entity in
                     entities.append(entity)}
-                case .organization: AddOrganizationView() { entity in
+                case .organization: AddOrganizationView(name: searchText) { entity in
                     entities.append(entity)}
-                case .planet: AddPlanetView() { entity in
+                case .planet: AddPlanetView(name: searchText) { entity in
                     entities.append(entity)}
-                case .species: AddSpeciesView() { entity in
+                case .species: AddSpeciesView(name: searchText) { entity in
                     entities.append(entity)}
-                case .starshipModel: AddStarshipModelView() { entity in
+                case .starshipModel: AddStarshipModelView(name: searchText) { entity in
                     entities.append(entity)}
-                case .starship: AddStarshipView() { entity in
+                case .starship: AddStarshipView(name: searchText) { entity in
                     entities.append(entity)}
-                case .varia: AddVariaView() { entity in
+                case .varia: AddVariaView(name: searchText) { entity in
                     entities.append(entity)}
-                case .serie: AddSerieView() { entity in
+                case .serie: AddSerieView(name: searchText) { entity in
                     entities.append(entity)}
-                case .arc: AddArcView() { entity in
+                case .arc: AddArcView(name: searchText) { entity in
                     entities.append(entity)}
+                case .artist: AddArtistView(name: searchText) { entity in
+                    entities.append(entity)}
+                case .author: AddArtistView(name: searchText) { entity in
+                    entities.append(entity)
+                }
                 }
             }
         }

@@ -10,7 +10,7 @@ import SwiftUI
 struct AddPlanetView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State private var name: String = ""
+    @State var name: String
     @State private var region: Region = .outerRim
     @State private var sector: String = ""
     @State private var system: String = ""

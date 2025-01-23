@@ -10,7 +10,7 @@ import SwiftUI
 struct AddSerieView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State private var name: String = ""
+    @State var name: String
     @State private var sourceType: SourceType = .comics
     @State private var comments: String = ""
     

@@ -50,7 +50,12 @@ struct EditSourceView: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 16) {
-                HeaderView(name: $source.name, urlString: source.url)
+                HStack {
+                    Spacer()
+                    HeaderView(name: $source.name, urlString: source.url)
+                    Spacer()
+                }
+                
                 HStack {
                     Button("Facts") {
                         showFactSheet.toggle()
@@ -128,17 +133,17 @@ struct EditSourceView: View {
             Text(title)
                 .font(.subheadline)
             Spacer()
-            Button(action: {showExpandedViewForSection[entityType] = true}) {
-                Text("Expand")
-            }
-            Spacer()
-            Button(action: {
+            Button {
                 showEntityForSection[entityType] = true
-            }) {
-                Image(systemName: "plus")
+            } label: {
+                Label("Add", systemImage: "plus")
                     .foregroundColor(.blue)
             }
             .buttonStyle(BorderlessButtonStyle())
+            Spacer()
+            Button(action: {showExpandedViewForSection[entityType] = true}) {
+                Text("Expand")
+            }
         }
         .sheet(isPresented: Binding(
             get: { showEntityForSection[entityType] ?? false},
@@ -154,7 +159,7 @@ struct EditSourceView: View {
             get: { showExpandedViewForSection[entityType] ?? false},
             set: { showExpandedViewForSection[entityType] = $0 }
         )) {
-            ExpandedSourceItemView(sourceItems: getSourceItemsBinding(entityType: entityType))
+            ExpandedSourceItemView(sourceItems: getSourceItemsBinding(entityType: entityType), entityType: entityType)
             }
         .padding(.vertical, 4)
     }
@@ -206,7 +211,7 @@ struct EditSourceView: View {
                 get: { sourceVarias as [SourceItem] },
                 set: { newItems in sourceVarias = newItems.compactMap { $0 as? SourceVaria } }
             )
-        case .arc, .serie:
+        case .arc, .serie, .artist, .author:
             return .constant([]) // Return an empty, immutable Binding for unsupported cases
         }
     }
@@ -352,26 +357,29 @@ struct EditSourceView: View {
             print("arc")
         case .serie:
             print("Serie")
+        case .artist:
+            print("Artist")
+        case .author:
+            print("Authors")
         }
     }
     
     private func loadInitialSources() async {
-        sourceCharacters = await loadSourceCharacters(recordField: "source", recordID: source.id.uuidString)
-        sourceCreatures = await loadSourceCreatures(recordField: "source", recordID: source.id.uuidString)
-        sourceDroids = await loadSourceDroids(recordField: "source", recordID: source.id.uuidString)
-        sourceOrganizations = await loadSourceOrganizations(recordField: "source", recordID: source.id.uuidString)
-        sourcePlanets = await loadSourcePlanets(recordField: "source", recordID: source.id.uuidString)
-        sourceSpecies = await loadSourceSpecies(recordField: "source", recordID: source.id.uuidString)
-        sourceStarships = await loadSourceStarships(recordField: "source", recordID: source.id.uuidString)
-        sourceStarshipModels = await loadSourceStarshipModels(recordField: "source", recordID: source.id.uuidString)
-        sourceVarias = await loadSourceVarias(recordField: "source", recordID: source.id.uuidString)
-        sourceAuthors = await loadSourceAuthors(recordField: "source", recordID: source.id.uuidString)
-        sourceArtists = await loadSourceArtists(recordField: "source", recordID: source.id.uuidString)
+        sourceCharacters = await loadSourceCharacters(recordField: "source", recordID: source.id)
+        sourceCreatures = await loadSourceCreatures(recordField: "source", recordID: source.id)
+        sourceDroids = await loadSourceDroids(recordField: "source", recordID: source.id)
+        sourceOrganizations = await loadSourceOrganizations(recordField: "source", recordID: source.id)
+        sourcePlanets = await loadSourcePlanets(recordField: "source", recordID: source.id)
+        sourceSpecies = await loadSourceSpecies(recordField: "source", recordID: source.id)
+        sourceStarships = await loadSourceStarships(recordField: "source", recordID: source.id)
+        sourceStarshipModels = await loadSourceStarshipModels(recordField: "source", recordID: source.id)
+        sourceVarias = await loadSourceVarias(recordField: "source", recordID: source.id)
+        sourceAuthors = await loadSourceAuthors(recordField: "source", recordID: source.id)
+        sourceArtists = await loadSourceArtists(recordField: "source", recordID: source.id)
     }
     
     private var infosSection: [InfoSection] {
         let sections: [InfoSection] = [
-            
             InfoSection(fieldName: "Serie", view: AnyView(EditVEntityInfoView(
                 fieldName: "Serie",
                 entity: Binding(
@@ -388,8 +396,8 @@ struct EditSourceView: View {
             InfoSection(fieldName: "Era", view: AnyView(EraPicker(era: $source.era))),
             InfoSection(fieldName: "Type", view: AnyView(SourceTypePicker(sourceType: $source.sourceType))),
             InfoSection(fieldName: "In-Universe Year", view: AnyView(YearPicker(era: source.era, universeYear: $source.universeYear))),
-            InfoSection(fieldName: "Authors", view: AnyView(AuthorsVStack(fieldName: "Authors", source: source, authors: sortedAuthors))),
-            InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(fieldName: "Artists", source: source, artists: sortedArtists))),
+            InfoSection(fieldName: "Authors", view: AnyView(AuthorsVStack(source: source, authors: sortedAuthors))),
+            InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(source: source, artists: sortedArtists))),
             InfoSection(fieldName: "Number Pages", view: AnyView(TextField("Nb of pages", value: $source.numberPages, format: .number)))
         ]
         
@@ -399,23 +407,27 @@ struct EditSourceView: View {
 
 struct ExpandedSourceItemView: View {
     @Binding var sourceItems: [SourceItem]
+    var entityType: EntityType
     
     private var sortedEntities: [SourceItem] {
         sourceItems.sorted(by: { $0.entity.name < $1.entity.name })
     }
     
     var body: some View {
-        List {
-            ForEach(sortedEntities) { sourceItem in
-                RecordEntryView(
-                    name: sourceItem.entity.name ,
-                    imageName: sourceItem.entity.id,
-                    appearance: sourceItem.appearance)
-                .contextMenu {
-                    appearanceContextMenu(for: sourceItem)
+        NavigationStack {
+            List {
+                ForEach(sortedEntities) { sourceItem in
+                    RecordEntryView(
+                        name: sourceItem.entity.name ,
+                        imageName: sourceItem.entity.id,
+                        appearance: sourceItem.appearance)
+                    .contextMenu {
+                        appearanceContextMenu(for: sourceItem)
+                    }
                 }
+                .onDelete(perform: deleteEntity)
             }
-            .onDelete(perform: deleteEntity)
+            .navigationTitle(entityType.rawValue)
         }
     }
     
@@ -439,8 +451,10 @@ struct ExpandedSourceItemView: View {
     
     private func deleteEntity(_ indexSet: IndexSet) {
         for index in indexSet {
-            let entity = sourceItems[index]
-            sourceItems.remove(at: index)
+            let entity = sortedEntities[index]
+            if let indexofSource = sourceItems.firstIndex(of: entity) {
+                sourceItems.remove(at: indexofSource)
+            }
             entity.delete()
         }
     }

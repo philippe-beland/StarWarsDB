@@ -11,7 +11,7 @@ struct ScrollAppearancesView<T: SourceItem>: View {
     @Binding var sourceItems: [T]
     
     let entityType: EntityType
-    let layout = Array(repeating: GridItem(.flexible(), spacing: 8), count: 3)
+    let layout = Array(repeating: GridItem(.flexible(), spacing: 24), count: 3)
     
     private var sortedEntities: [SourceItem] {
         sourceItems.sorted(by: { $0.entity.name < $1.entity.name })
@@ -27,21 +27,12 @@ struct ScrollAppearancesView<T: SourceItem>: View {
                                 imageName: sourceItem.entity.id,
                                 appearance: sourceItem.appearance)
                         }
-                        .contextMenu {
-                            Button("Delete", role: .destructive, action: {deleteEntity(sourceItem)})
-                        }
                         .buttonStyle(PlainButtonStyle())
                     }
                 }
             }
+            .padding(.vertical)
         }
-    
-    private func deleteEntity(_ entity: SourceItem) {
-        if let index = sourceItems.firstIndex(of: entity as! T) {
-            sourceItems.remove(at: index)
-        }
-        entity.delete()
-    }
 }
 
 //#Preview {

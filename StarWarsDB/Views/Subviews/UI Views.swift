@@ -209,76 +209,44 @@ struct MultiFieldView: View {
 }
 
 struct ArtistsVStack: View {
-    var fieldName: String
     var source: Source?
     
     @State var artists: [SourceArtist] = []
-    @State var showNewArtistSheet = false
+    @State var showEditArtistSheet = false
     
     var body: some View {
         VStack {
-            Text("\(fieldName):")
-                .bold()
+            Button("Artists") { showEditArtistSheet.toggle() }
             ForEach(artists) { artist in
                 Text(artist.entity.name)
             }
         }
-        .toolbar {
-            Button("Create", systemImage: "plus") {
-                showNewArtistSheet.toggle()
-            }
-            .sheet(isPresented: $showNewArtistSheet) {
-                AddArtistView { artist in
-                    if let source {
-                        let newArtist = SourceArtist(source: source, entity: artist as! Artist)
-                        if !artists.contains(newArtist) {
-                            newArtist.save()
-                            artists.append(newArtist)
-                        } else {
-                            print("Already exists for that source")
-                        }
-                    }
-                }
-            }
+        .sheet(isPresented: $showEditArtistSheet) {
+            ExpandedSourceArtistsView(sourceArtists: $artists, source: source)
         }
     }
 }
 
+
 struct AuthorsVStack: View {
-    var fieldName: String
     var source: Source?
     
     @State var authors: [SourceAuthor] = []
-    @State var showNewAuthorSheet = false
+    @State var showEditAuthorSheet = false
     
     var body: some View {
         VStack {
-            Text("\(fieldName):")
-                .bold()
+            Button("Authors") { showEditAuthorSheet.toggle() }
             ForEach(authors) { author in
                 Text(author.entity.name)
             }
         }
-        .toolbar {
-            Button("Create", systemImage: "plus") {
-                showNewAuthorSheet.toggle()
-            }
-            .sheet(isPresented: $showNewAuthorSheet) {
-                AddArtistView { author in
-                    if let source {
-                        let newAuthor = SourceAuthor(source: source, entity: author as! Artist)
-                        if !authors.contains(newAuthor) {
-                            newAuthor.save()
-                            authors.append(newAuthor)
-                        } else {
-                            print("Already exists for that source")
-                        }
-                    }
-                }
-            }
+        .sheet(isPresented: $showEditAuthorSheet) {
+            ExpandedSourceAuthorsView(sourceAuthors: $authors, source: source)
         }
     }
 }
+
 
 struct MultiFieldVStack: View {
     var fieldName: String
@@ -309,4 +277,96 @@ struct MultiFieldVStack: View {
     FieldVStack(fieldName: "Name", info: $fieldName)
     //MultiFieldView(fieldName: "Affiliation", entities: Character.example.affiliations)
     //MultiFieldVStack(fieldName: "Affiliation", entities: Character.example.affiliations)
+}
+
+struct ExpandedSourceArtistsView: View {
+    @Binding var sourceArtists: [SourceArtist]
+    var source: Source?
+    @State var showAddArtistSheet = false
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                ForEach(sourceArtists) { sourceItem in
+                    Text(sourceItem.entity.name)
+                }
+                .onDelete(perform: deleteEntity)
+            }
+            .navigationTitle("Artists")
+            .toolbar {
+                Button("Add Artist") {
+                    showAddArtistSheet.toggle()
+                }
+                .sheet(isPresented: $showAddArtistSheet) {
+                    ChooseEntityView(entityType: .artist, isSourceItem: false) { artists, _ in
+                        if let source {
+                            for artist in artists {
+                                let newArtist = SourceArtist(source: source, entity: artist as! Artist)
+                                if !sourceArtists.contains(newArtist) {
+                                    newArtist.save()
+                                    sourceArtists.append(newArtist)
+                                } else {
+                                    print("Already exists for that source")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    private func deleteEntity(_ indexSet: IndexSet) {
+        for index in indexSet {
+            let entity = sourceArtists[index]
+            sourceArtists.remove(at: index)
+            entity.delete()
+        }
+    }
+}
+
+struct ExpandedSourceAuthorsView: View {
+    @Binding var sourceAuthors: [SourceAuthor]
+    var source: Source?
+    @State var showAddAuthorSheet = false
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                ForEach(sourceAuthors) { sourceItem in
+                    Text(sourceItem.entity.name)
+                }
+                .onDelete(perform: deleteEntity)
+            }
+            .navigationTitle("Artists")
+            .toolbar {
+                Button("Add Artist") {
+                    showAddAuthorSheet.toggle()
+                }
+                .sheet(isPresented: $showAddAuthorSheet) {
+                    ChooseEntityView(entityType: .artist, isSourceItem: false) { artists, _ in
+                        if let source {
+                            for artist in artists {
+                                let newArtist = SourceAuthor(source: source, entity: artist as! Artist)
+                                if !sourceAuthors.contains(newArtist) {
+                                    newArtist.save()
+                                    sourceAuthors.append(newArtist)
+                                } else {
+                                    print("Already exists for that source")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    private func deleteEntity(_ indexSet: IndexSet) {
+        for index in indexSet {
+            let entity = sourceAuthors[index]
+            sourceAuthors.remove(at: index)
+            entity.delete()
+        }
+    }
 }
