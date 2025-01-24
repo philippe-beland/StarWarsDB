@@ -7,23 +7,43 @@
 
 import Foundation
 
+/// Represents miscellaneous items and concepts in the Star Wars universe
+///
+/// Varia encompasses elements that don't fit into other specific categories,
+/// such as games (like Sabacc), technologies, cultural practices, or other
+/// notable aspects of the Star Wars universe that aren't characters,
+/// vehicles, or locations.
 @Observable
 class Varia: Entity {
     
+    /// Keys used for encoding and decoding varia data
     enum CodingKeys: String, CodingKey {
+        /// Unique identifier
         case id
+        /// Item or concept name
         case name
+        /// First appearance in media
         case firstAppearance = "first_appearance"
+        /// Additional notes
         case comments
+        /// Number of appearances
         case nbApparitions = "appearances"
     }
     
+    /// Creates a new varia item
+    /// - Parameters:
+    ///   - name: The name of the item or concept
+    ///   - firstAppearance: First appearance in Star Wars media
+    ///   - comments: Additional notes about the item
     init(name: String, firstAppearance: String?, comments: String? = nil) {
         let id = UUID()
 
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Varia", tableName: "varias")
     }
     
+    /// Creates a varia item from decoded data
+    /// - Parameter decoder: The decoder to read data from
+    /// - Throws: An error if data reading fails
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -36,6 +56,9 @@ class Varia: Entity {
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Varia", tableName: "varias")
     }
     
+    /// Encodes the varia item into data for storage
+    /// - Parameter encoder: The encoder to write data to
+    /// - Throws: An error if data writing fails
     override func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         
@@ -45,6 +68,20 @@ class Varia: Entity {
         try container.encode(comments, forKey: .comments)
     }
     
-    static let example = Varia(name: "Sabacc", firstAppearance: nil, comments: "Card Game")
-    static let empty = Varia(name: "", firstAppearance: nil, comments: nil)
+    /// An example varia item for previews and testing
+    ///
+    /// Sabacc is a popular card game in the Star Wars universe, notably used
+    /// in the game where Han Solo won the Millennium Falcon from Lando Calrissian.
+    static let example = Varia(
+        name: "Sabacc",
+        firstAppearance: nil,
+        comments: "Card Game"
+    )
+    
+    /// An empty varia item for initialization
+    static let empty = Varia(
+        name: "",
+        firstAppearance: nil,
+        comments: nil
+    )
 }
