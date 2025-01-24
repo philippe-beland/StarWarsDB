@@ -81,9 +81,6 @@ class Droid: Entity {
     }
     
     /// An example droid for previews and testing
-    ///
-    /// R2 astromech droids are a popular and versatile class of utility droids,
-    /// known for their reliability in starship maintenance and navigation.
     static let example = Droid(
         name: "R2 astromech droid",
         classType: "Astromech droid",

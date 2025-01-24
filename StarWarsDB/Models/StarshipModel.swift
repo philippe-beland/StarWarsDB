@@ -91,9 +91,6 @@ class StarshipModel: Entity {
     }
     
     /// An example starship model for previews and testing
-    ///
-    /// The YT-1300 light freighter was a highly successful Corellian Engineering Corporation
-    /// freighter model, most famously represented by the Millennium Falcon.
     static let example = StarshipModel(
         name: "YT-1300",
         classType: "Starfighter",

@@ -150,11 +150,6 @@ class Planet: Entity {
     }
     
     /// An example planet for previews and testing
-    ///
-    /// Tatooine is an iconic desert planet in the Outer Rim, notable as the homeworld
-    /// of both Anakin and Luke Skywalker. Its harsh environment, twin suns, and
-    /// significance to the Skywalker saga make it one of the most recognizable
-    /// locations in Star Wars.
     static let example = Planet(
         name: "Tatooine",
         region: .outerRim,

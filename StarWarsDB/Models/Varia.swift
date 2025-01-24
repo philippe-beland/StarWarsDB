@@ -69,9 +69,6 @@ class Varia: Entity {
     }
     
     /// An example varia item for previews and testing
-    ///
-    /// Sabacc is a popular card game in the Star Wars universe, notably used
-    /// in the game where Han Solo won the Millennium Falcon from Lando Calrissian.
     static let example = Varia(
         name: "Sabacc",
         firstAppearance: nil,

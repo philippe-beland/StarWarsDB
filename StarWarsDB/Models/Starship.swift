@@ -83,10 +83,6 @@ class Starship: Entity {
     }
     
     /// An example starship for previews and testing
-    ///
-    /// The Millennium Falcon is one of the most iconic vessels in Star Wars,
-    /// a heavily modified YT-1300 light freighter famous for making the
-    /// Kessel Run in less than twelve parsecs.
     static let example = Starship(
         name: "Millennium Falcon",
         model: .example,

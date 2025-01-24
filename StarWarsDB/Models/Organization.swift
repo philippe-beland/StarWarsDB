@@ -71,10 +71,6 @@ class Organization: Entity {
     }
     
     /// An example organization for previews and testing
-    ///
-    /// Alphabet Squadron was an elite New Republic starfighter unit formed after
-    /// the Battle of Endor. The squadron was notable for using different types
-    /// of starfighters, unlike traditional squadrons that used a single fighter type.
     static let example = Organization(
         name: "Alphabet Squadron",
         firstAppearance: nil,

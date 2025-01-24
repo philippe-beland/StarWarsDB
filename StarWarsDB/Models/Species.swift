@@ -82,10 +82,6 @@ class Species: Entity {
     }
     
     /// An example species for previews and testing
-    ///
-    /// Twi'leks are a sentient species from the planet Ryloth, known for their
-    /// distinctive head-tails (lekku) and their presence throughout the galaxy
-    /// in various roles from politicians to dancers.
     static let example = Species(
         name: "Twi'lek",
         homeworld: .example,

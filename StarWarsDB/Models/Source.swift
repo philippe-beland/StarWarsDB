@@ -259,9 +259,6 @@ class Source: DataNode, Record, Hashable {
     }
     
     /// An example source for previews and testing
-    ///
-    /// Star Wars: Episode IV - A New Hope was the first Star Wars film released,
-    /// introducing audiences to the galaxy far, far away in 1977.
     static let example = Source(
         name: "Episode IV: A New Hope",
         serie: .example,

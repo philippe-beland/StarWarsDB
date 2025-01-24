@@ -71,10 +71,6 @@ class Serie: Entity {
     }
     
     /// An example series for previews and testing
-    ///
-    /// Star Wars: Rebels was an animated TV series that ran from 2014 to 2018,
-    /// following the adventures of the Ghost crew in the early days of the
-    /// Rebellion against the Galactic Empire.
     static let example = Serie(
         name: "Rebels",
         sourceType: .tvShow,

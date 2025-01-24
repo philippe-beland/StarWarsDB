@@ -87,9 +87,6 @@ class Creature: Entity {
     }
     
     /// An example creature for previews and testing
-    /// 
-    /// The Dianoga is a carnivorous creature that lives in sewers and garbage compactors.
-    /// It first appeared in Star Wars: Episode IV - A New Hope.
     static let example = Creature(name: "Dianoga", designation: "Non-sentient", homeworld: .example, firstAppearance: nil, comments: nil)
     
     /// An empty creature for initialization
