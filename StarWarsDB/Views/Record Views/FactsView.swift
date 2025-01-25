@@ -10,6 +10,7 @@ import SwiftUI
 struct FactsView: View {
     let source: Source
     @State private var facts = [Fact]()
+    @FocusState private var focusedFactID: UUID?
     
     var body: some View {
         NavigationStack {
@@ -19,15 +20,23 @@ struct FactsView: View {
                     .italic()
             }
             List {
-                ForEach($facts, id: \.id) { fact in
-                    TextEditor(text: fact.fact)
+                ForEach($facts) { $fact in
+                    TextEditor(text: $fact.fact)
+                        .focused($focusedFactID, equals: fact.id)
+                        .onChange(of: focusedFactID) { oldFocus, newFocus in
+                            if newFocus != fact.id {
+                                fact.update()
+                            }
+                        }
                 }
                 .onDelete(perform: deleteFact)
             }
             .navigationTitle("Facts")
             .toolbar {
                 Button ("Create", systemImage: "plus") {
-                    facts.insert(Fact(fact: "", source: source, keywords: []), at: 0)
+                    let fact = Fact(fact: "", source: source, keywords: [])
+                    facts.insert(fact, at: 0)
+                    fact.save()
                 }
             }
         }

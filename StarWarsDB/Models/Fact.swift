@@ -13,7 +13,7 @@ import Foundation
 /// Each fact is associated with a source and can be tagged with keywords for easy searching
 /// and categorization.
 @Observable
-class Fact: DataNode {
+class Fact: DataNode, Identifiable {
     /// Unique identifier for the fact
     let id: UUID
     

@@ -11,6 +11,7 @@ struct ChooseEntityView: View {
     @Environment(\.dismiss) var dismiss
     var entityType: EntityType
     var isSourceItem: Bool
+    var serie: Serie?
     
     @State private var searchText = ""
     @State private var appearanceType: AppearanceType = .present
@@ -49,13 +50,13 @@ struct ChooseEntityView: View {
     private func handleSearchTextChange() {
         Task {
             if !searchText.isEmpty && searchText.count > 3 {
-                entities = await loadEntities(entityType: entityType, sort: .name, filter: searchText)
+                entities = await loadEntities(serie: serie, entityType: entityType, sort: .name, filter: searchText)
             }
         }
     }
     
     private func loadInitialEntities() async {
-        entities = await loadEntities(entityType: entityType, sort: .name, filter: searchText)
+        entities = await loadEntities(serie: serie, entityType: entityType, sort: .name, filter: searchText)
     }
     
     

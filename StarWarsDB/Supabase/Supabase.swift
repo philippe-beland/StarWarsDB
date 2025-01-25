@@ -12,28 +12,28 @@ let supabase = SupabaseClient(
     supabaseURL: URL(string: Secrets.supabaseURL.rawValue)!,
     supabaseKey: Secrets.apiKey.rawValue)
 
-func loadEntities(entityType: EntityType, sort: SortingItemOrder, filter: String = "") async -> [Entity] {
+func loadEntities(serie: Serie? = nil, entityType: EntityType, sort: SortingItemOrder, filter: String = "") async -> [Entity] {
     var entities = [Entity]()
     
     switch entityType {
     case .character:
-        entities = await loadCharacters(sort: sort.rawValue, filter: filter)
+        entities = await loadCharacters(serie: serie, sort: sort.rawValue, filter: filter)
     case .creature:
-        entities = await loadCreatures(sort: sort.rawValue, filter: filter)
+        entities = await loadCreatures(serie: serie, sort: sort.rawValue, filter: filter)
     case .droid:
-        entities = await loadDroids(sort: sort.rawValue, filter: filter)
+        entities = await loadDroids(serie: serie, sort: sort.rawValue, filter: filter)
     case .organization:
-        entities = await loadOrganizations(sort: sort.rawValue, filter: filter)
+        entities = await loadOrganizations(serie: serie, sort: sort.rawValue, filter: filter)
     case .planet:
-        entities = await loadPlanets(sort: sort.rawValue, filter: filter)
+        entities = await loadPlanets(serie: serie, sort: sort.rawValue, filter: filter)
     case .species:
-        entities = await loadSpecies(sort: sort.rawValue, filter: filter)
+        entities = await loadSpecies(serie: serie, sort: sort.rawValue, filter: filter)
     case .starship:
-        entities = await loadStarships(sort: sort.rawValue, filter: filter)
+        entities = await loadStarships(serie: serie, sort: sort.rawValue, filter: filter)
     case .starshipModel:
-        entities = await loadStarshipModels(sort: sort.rawValue, filter: filter)
+        entities = await loadStarshipModels(serie: serie, sort: sort.rawValue, filter: filter)
     case .varia:
-        entities = await loadVarias(sort: sort.rawValue, filter: filter)
+        entities = await loadVarias(serie: serie, sort: sort.rawValue, filter: filter)
     case .serie:
         entities = await loadSeries(filter: filter)
     case .arc:
@@ -81,7 +81,7 @@ func loadSources(sort: String, sourceType: SourceType, serie: Serie?, isDone: Bo
     return sources
 }
 
-func loadCharacters(sort: String, filter: String = "") async -> [Character] {
+func loadCharacters(serie: Serie? = nil, sort: String, filter: String = "") async -> [Character] {
     var characters: [Character] = []
     
     do {
@@ -99,7 +99,7 @@ func loadCharacters(sort: String, filter: String = "") async -> [Character] {
     return characters
 }
 
-func loadCreatures(sort: String, filter: String = "") async -> [Creature] {
+func loadCreatures(serie: Serie? = nil, sort: String, filter: String = "") async -> [Creature] {
     var creatures: [Creature] = []
     
     do {
@@ -117,7 +117,7 @@ func loadCreatures(sort: String, filter: String = "") async -> [Creature] {
     return creatures
 }
 
-func loadDroids(sort: String, filter: String = "") async -> [Droid] {
+func loadDroids(serie: Serie? = nil, sort: String, filter: String = "") async -> [Droid] {
     var droids: [Droid] = []
     
     do {
@@ -135,7 +135,7 @@ func loadDroids(sort: String, filter: String = "") async -> [Droid] {
     return droids
 }
 
-func loadOrganizations(sort: String, filter: String = "") async -> [Organization] {
+func loadOrganizations(serie: Serie? = nil, sort: String, filter: String = "") async -> [Organization] {
     var organizations: [Organization] = []
     
     do {
@@ -153,7 +153,7 @@ func loadOrganizations(sort: String, filter: String = "") async -> [Organization
     return organizations
 }
 
-func loadPlanets(sort: String, filter: String = "") async -> [Planet] {
+func loadPlanets(serie: Serie? = nil, sort: String, filter: String = "") async -> [Planet] {
     var planets: [Planet] = []
     
     do {
@@ -171,7 +171,7 @@ func loadPlanets(sort: String, filter: String = "") async -> [Planet] {
     return planets
 }
 
-func loadSpecies(sort: String, filter: String = "") async -> [Species] {
+func loadSpecies(serie: Serie? = nil, sort: String, filter: String = "") async -> [Species] {
     var species: [Species] = []
     
     do {
@@ -189,7 +189,7 @@ func loadSpecies(sort: String, filter: String = "") async -> [Species] {
     return species
 }
 
-func loadStarships(sort: String, filter: String = "") async -> [Starship] {
+func loadStarships(serie: Serie? = nil, sort: String, filter: String = "") async -> [Starship] {
     var starships: [Starship] = []
     
     do {
@@ -207,7 +207,7 @@ func loadStarships(sort: String, filter: String = "") async -> [Starship] {
     return starships
 }
 
-func loadStarshipModels(sort: String, filter: String = "") async -> [StarshipModel] {
+func loadStarshipModels(serie: Serie? = nil, sort: String, filter: String = "") async -> [StarshipModel] {
     var starshipModels: [StarshipModel] = []
     
     do {
@@ -225,12 +225,12 @@ func loadStarshipModels(sort: String, filter: String = "") async -> [StarshipMod
     return starshipModels
 }
 
-func loadVarias(sort: String, filter: String = "") async -> [Varia] {
+func loadVarias(serie: Serie? = nil, sort: String, filter: String = "") async -> [Varia] {
     var varias: [Varia] = []
     
     do {
         varias = try await supabase
-            .rpc("load_varias")
+            .rpc("load_varias", params: ["series_id": serie?.id])
             .ilike("name", pattern: "%\(filter)%")
             .limit(40)
             .execute()
