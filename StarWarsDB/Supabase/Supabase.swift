@@ -86,7 +86,7 @@ func loadCharacters(serie: Serie? = nil, sort: String, filter: String = "") asyn
     
     do {
         characters = try await supabase
-            .rpc("load_characters")
+            .rpc("load_characters", params: ["series_id": serie?.id])
             .ilike("name", pattern: "%\(filter)%")
             .limit(40)
             .execute()
@@ -104,7 +104,7 @@ func loadCreatures(serie: Serie? = nil, sort: String, filter: String = "") async
     
     do {
         creatures = try await supabase
-            .rpc("load_creatures")
+            .rpc("load_creatures", params: ["series_id": serie?.id])
             .ilike("name", pattern: "%\(filter)%")
             .limit(40)
             .execute()
@@ -122,7 +122,7 @@ func loadDroids(serie: Serie? = nil, sort: String, filter: String = "") async ->
     
     do {
         droids = try await supabase
-            .rpc("load_droids")
+            .rpc("load_droids", params: ["series_id": serie?.id])
             .ilike("name", pattern: "%\(filter)%")
             .limit(40)
             .execute()
@@ -140,7 +140,7 @@ func loadOrganizations(serie: Serie? = nil, sort: String, filter: String = "") a
     
     do {
         organizations = try await supabase
-            .rpc("load_organizations")
+            .rpc("load_organizations", params: ["series_id": serie?.id])
             .ilike("name", pattern: "%\(filter)%")
             .limit(40)
             .execute()
@@ -158,7 +158,7 @@ func loadPlanets(serie: Serie? = nil, sort: String, filter: String = "") async -
     
     do {
         planets = try await supabase
-            .rpc("load_planets")
+            .rpc("load_planets", params: ["series_id": serie?.id])
             .ilike("name", pattern: "%\(filter)%")
             .limit(40)
             .execute()
@@ -176,7 +176,7 @@ func loadSpecies(serie: Serie? = nil, sort: String, filter: String = "") async -
     
     do {
         species = try await supabase
-            .rpc("load_species")
+            .rpc("load_species", params: ["series_id": serie?.id])
             .ilike("name", pattern: "%\(filter)%")
             .limit(40)
             .execute()
@@ -194,7 +194,7 @@ func loadStarships(serie: Serie? = nil, sort: String, filter: String = "") async
     
     do {
         starships = try await supabase
-            .rpc("load_starships")
+            .rpc("load_starships", params: ["series_id": serie?.id])
             .ilike("name", pattern: "%\(filter)%")
             .limit(40)
             .execute()
@@ -212,7 +212,7 @@ func loadStarshipModels(serie: Serie? = nil, sort: String, filter: String = "") 
     
     do {
         starshipModels = try await supabase
-            .rpc("load_starship_models")
+            .rpc("load_starship_models", params: ["series_id": serie?.id])
             .ilike("name", pattern: "%\(filter)%")
             .limit(40)
             .execute()

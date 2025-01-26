@@ -44,8 +44,10 @@ struct EditSourceView: View {
         sourceAuthors.sorted(by: { $0.entity.name < $1.entity.name })
     }
     
-    @State private var showEntityForSection: [EntityType: Bool] = [:]
-    @State private var showExpandedViewForSection: [EntityType: Bool] = [:]
+    @State private var selectedEntityType: EntityType?
+    @State private var isEntitySheetPresented = false
+    @State private var isExpandedViewPresented = false
+    @State private var expandedEntityType: EntityType?
     
     var body: some View {
         NavigationStack {
@@ -129,41 +131,58 @@ struct EditSourceView: View {
         let view: AnyView
     }
     
+    enum ActiveSheet: Identifiable {
+        case entitySheet(EntityType)
+        case expandedSheet(EntityType)
+
+        var id: String {
+            switch self {
+            case .entitySheet(let type):
+                return "entity-\(type)"
+            case .expandedSheet(let type):
+                return "expanded-\(type)"
+            }
+        }
+    }
+
+    @State private var activeSheet: ActiveSheet? = .entitySheet(.character)
+    
     private func headerWithButton(title: String, entityType: EntityType) -> some View {
         HStack {
             Text(title)
                 .font(.subheadline)
             Spacer()
             Button {
-                showEntityForSection[entityType] = true
+                DispatchQueue.main.async {
+                    activeSheet = .entitySheet(entityType)
+                }
             } label: {
                 Label("Add", systemImage: "plus")
                     .foregroundColor(.blue)
             }
             .buttonStyle(BorderlessButtonStyle())
             Spacer()
-            Button(action: {showExpandedViewForSection[entityType] = true}) {
+            Button {
+                DispatchQueue.main.async {
+                    activeSheet = .expandedSheet(entityType)
+                }
+            } label: {
                 Text("Expand")
             }
         }
-        .sheet(isPresented: Binding(
-            get: { showEntityForSection[entityType] ?? false},
-            set: { showEntityForSection[entityType] = $0 }
-        )) {
-            ChooseEntityView(entityType: entityType, isSourceItem: true) { selectedEntities, appearance in
-                for selectedEntity in selectedEntities {
-                    addSourceItem(entityType: entityType, entity: selectedEntity, appearance: appearance)
+        .sheet(item: $activeSheet) { sheet in
+                switch sheet {
+                case .entitySheet(let type):
+                    ChooseEntityView(entityType: type, isSourceItem: true, serie: source.serie) { selectedEntities, appearance in
+                        for selectedEntity in selectedEntities {
+                            addSourceItem(entityType: type, entity: selectedEntity, appearance: appearance)
+                        }
+                    }
+                case .expandedSheet(let type):
+                    ExpandedSourceItemView(sourceItems: getSourceItemsBinding(entityType: type), entityType: type)
                 }
             }
         }
-        .sheet(isPresented: Binding(
-            get: { showExpandedViewForSection[entityType] ?? false},
-            set: { showExpandedViewForSection[entityType] = $0 }
-        )) {
-            ExpandedSourceItemView(sourceItems: getSourceItemsBinding(entityType: entityType), entityType: entityType)
-            }
-        .padding(.vertical, 4)
-    }
     
     private func getSourceItemsBinding(entityType: EntityType) -> Binding<[SourceItem]> {
         switch entityType {
