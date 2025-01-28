@@ -173,7 +173,7 @@ struct EditSourceView: View {
         .sheet(item: $activeSheet) { sheet in
                 switch sheet {
                 case .entitySheet(let type):
-                    ChooseEntityView(entityType: type, isSourceItem: true, serie: source.serie) { selectedEntities, appearance in
+                    ChooseEntityView(entityType: type, isSourceItem: true, serie: source.serie, sourceItems: getSourceItems(entityType: type)) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             addSourceItem(entityType: type, entity: selectedEntity, appearance: appearance)
                         }
@@ -184,6 +184,31 @@ struct EditSourceView: View {
             }
         }
     
+    private func getSourceItems(entityType: EntityType) -> [SourceItem] {
+        switch entityType {
+        case .character:
+            return sourceCharacters
+        case .droid:
+            return sourceDroids
+        case .creature:
+            return sourceCreatures
+        case .organization:
+            return sourceOrganizations
+        case .planet:
+            return sourcePlanets
+        case .starship:
+            return sourceStarships
+        case .starshipModel:
+            return sourceStarshipModels
+        case .species:
+            return sourceSpecies
+        case .varia:
+            return sourceVarias
+        case .arc, .serie, .artist, .author:
+            return []
+
+        }
+    }
     private func getSourceItemsBinding(entityType: EntityType) -> Binding<[SourceItem]> {
         switch entityType {
         case .character:

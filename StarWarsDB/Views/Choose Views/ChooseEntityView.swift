@@ -12,12 +12,20 @@ struct ChooseEntityView: View {
     var entityType: EntityType
     var isSourceItem: Bool
     var serie: Serie?
+    let sourceItems: [SourceItem]
     
     @State private var searchText = ""
     @State private var appearanceType: AppearanceType = .present
     @State private var showNewEntitySheet = false
     @State private var entities = [Entity]()
     @State private var selectedEntities = Set<Entity>()
+    
+    var existingEntities: [Entity] {
+        sourceItems.map { $0.entity }
+    }
+    var filteredEntities: [Entity] {
+        entities.filter { !existingEntities.contains($0) }
+    }
     
     var onEntitySelect: (Set<Entity>, AppearanceType) -> Void
     
@@ -31,7 +39,7 @@ struct ChooseEntityView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.horizontal)
                 
-                List(entities, id: \.self, selection: $selectedEntities) { entity in
+                List(filteredEntities, id: \.self, selection: $selectedEntities) { entity in
                     EntityRowView(entityType: entityType, entity: entity)
                 }
                 .navigationTitle(entityType.rawValue)

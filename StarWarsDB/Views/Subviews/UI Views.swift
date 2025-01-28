@@ -60,7 +60,7 @@ struct EditEntityInfoView: View {
             .buttonStyle(PlainButtonStyle())
         }
         .sheet(isPresented: $showEntitySelection) {
-            ChooseEntityView(entityType: entityType, isSourceItem: false) { selectedEntities, appearance in
+            ChooseEntityView(entityType: entityType, isSourceItem: false, sourceItems: []) { selectedEntities, appearance in
                 if let selectedEntity = selectedEntities.first {
                     entity = selectedEntity
                 }
@@ -93,7 +93,7 @@ struct EditVEntityInfoView: View {
             .buttonStyle(PlainButtonStyle())
         }
         .sheet(isPresented: $showEntitySelection) {
-            ChooseEntityView(entityType: entityType, isSourceItem: false) { selectedEntities, appearance in
+            ChooseEntityView(entityType: entityType, isSourceItem: false, sourceItems: []) { selectedEntities, appearance in
                 if let selectedEntity = selectedEntities.first {
                     entity = selectedEntity
                 }
@@ -311,7 +311,7 @@ struct ExpandedSourceArtistsView: View {
                     showAddArtistSheet.toggle()
                 }
                 .sheet(isPresented: $showAddArtistSheet) {
-                    ChooseEntityView(entityType: .artist, isSourceItem: false) { artists, _ in
+                    ChooseEntityView(entityType: .artist, isSourceItem: false, sourceItems: []) { artists, _ in
                         if let source {
                             for artist in artists {
                                 let newArtist = SourceArtist(source: source, entity: artist as! Artist)
@@ -357,7 +357,7 @@ struct ExpandedSourceAuthorsView: View {
                     showAddAuthorSheet.toggle()
                 }
                 .sheet(isPresented: $showAddAuthorSheet) {
-                    ChooseEntityView(entityType: .artist, isSourceItem: false) { artists, _ in
+                    ChooseEntityView(entityType: .artist, isSourceItem: false, sourceItems: []) { artists, _ in
                         if let source {
                             for artist in artists {
                                 let newArtist = SourceAuthor(source: source, entity: artist as! Artist)
