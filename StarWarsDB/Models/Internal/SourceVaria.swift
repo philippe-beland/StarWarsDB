@@ -29,6 +29,8 @@ class SourceVaria: SourceItem {
         case entity = "varia"
         /// Type of appearance
         case appearance
+        /// Number of appearances
+        case number = "total_appearances"
     }
     
     /// Creates a new source-varia relationship
@@ -36,10 +38,10 @@ class SourceVaria: SourceItem {
     ///   - source: The source material where the item appears
     ///   - entity: The item that appears
     ///   - appearance: How the item appears (present, mentioned, etc.)
-    init(source: Source, entity: Varia, appearance: AppearanceType) {
+    init(source: Source, entity: Varia, appearance: AppearanceType, number: Int = 0) {
         let id = UUID()
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceVarias", tableName: "source_varias")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, number: number, recordType: "SourceVarias", tableName: "source_varias")
     }
     
     /// Creates a source-varia relationship from decoded data
@@ -52,6 +54,7 @@ class SourceVaria: SourceItem {
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Varia.self, forKey: .entity)
         let _appearance = try container.decode(Int.self, forKey: .appearance)
+        //let number = try container.decode(Int.self, forKey: .number)
         
         // Convert numeric appearance type to enum
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present

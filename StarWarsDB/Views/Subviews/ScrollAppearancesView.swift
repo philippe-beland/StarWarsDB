@@ -22,10 +22,7 @@ struct ScrollAppearancesView<T: SourceItem>: View {
                 LazyHGrid(rows: layout, spacing: 40) {
                     ForEach(sortedEntities) { sourceItem in
                         NavigationLink(destination: EditEntityView(entityType: entityType, entity: sourceItem.entity)) {
-                            RecordEntryView(
-                                name: sourceItem.entity.name ,
-                                imageName: sourceItem.entity.id,
-                                appearance: sourceItem.appearance)
+                            RecordEntryView(sourceItem: sourceItem)
                         }
                         .buttonStyle(PlainButtonStyle())
                     }

@@ -26,6 +26,8 @@ class SourceDroid: SourceItem {
         case entity = "droid"
         /// Type of appearance
         case appearance
+        /// Number of appearances
+        case number = "total_appearances"
     }
     
     /// Creates a new source-droid relationship
@@ -33,10 +35,10 @@ class SourceDroid: SourceItem {
     ///   - source: The source material where the droid appears
     ///   - entity: The droid that appears
     ///   - appearance: How the droid appears (present, mentioned, etc.)
-    init(source: Source, entity: Droid, appearance: AppearanceType) {
+    init(source: Source, entity: Droid, appearance: AppearanceType, number: Int = 0) {
         let id = UUID()
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceDroids", tableName: "source_droids")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, number: number, recordType: "SourceDroids", tableName: "source_droids")
     }
     
     /// Creates a source-droid relationship from decoded data
@@ -49,6 +51,7 @@ class SourceDroid: SourceItem {
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Droid.self, forKey: .entity)
         let _appearance = try container.decode(Int.self, forKey: .appearance)
+        //let number = try container.decode(Int.self, forKey: .number)
         
         // Convert numeric appearance type to enum
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present

@@ -29,6 +29,8 @@ class SourcePlanet: SourceItem {
         case entity = "planet"
         /// Type of appearance
         case appearance
+        /// Number of appearances
+        case number = "total_appearances"
     }
     
     /// Creates a new source-planet relationship
@@ -36,10 +38,10 @@ class SourcePlanet: SourceItem {
     ///   - source: The source material where the planet appears
     ///   - entity: The planet that appears
     ///   - appearance: How the planet appears (present, mentioned, etc.)
-    init(source: Source, entity: Planet, appearance: AppearanceType) {
+    init(source: Source, entity: Planet, appearance: AppearanceType, number: Int = 0) {
         let id = UUID()
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourcePlanets", tableName: "source_planets")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, number: number, recordType: "SourcePlanets", tableName: "source_planets")
     }
     
     /// Creates a source-planet relationship from decoded data
@@ -52,6 +54,7 @@ class SourcePlanet: SourceItem {
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Planet.self, forKey: .entity)
         let _appearance = try container.decode(Int.self, forKey: .appearance)
+        //let number = try container.decode(Int.self, forKey: .number)
         
         // Convert numeric appearance type to enum
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present

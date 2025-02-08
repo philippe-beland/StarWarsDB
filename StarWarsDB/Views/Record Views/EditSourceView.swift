@@ -334,10 +334,7 @@ struct ExpandedSourceItemView: View {
         NavigationStack {
             List {
                 ForEach(sortedEntities) { sourceItem in
-                    RecordEntryView(
-                        name: sourceItem.entity.name ,
-                        imageName: sourceItem.entity.id,
-                        appearance: sourceItem.appearance)
+                    RecordEntryView(sourceItem: sourceItem)
                     .contextMenu {
                         appearanceContextMenu(for: sourceItem)
                     }

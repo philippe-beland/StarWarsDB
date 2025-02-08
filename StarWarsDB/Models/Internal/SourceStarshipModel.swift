@@ -29,6 +29,8 @@ class SourceStarshipModel: SourceItem {
         case entity = "starship_model"
         /// Type of appearance
         case appearance
+        /// Number of appearances
+        case number = "total_appearances"
     }
     
     /// Creates a new source-starship model relationship
@@ -36,10 +38,10 @@ class SourceStarshipModel: SourceItem {
     ///   - source: The source material where the starship model appears
     ///   - entity: The starship model that appears
     ///   - appearance: How the model appears (present, mentioned, etc.)
-    init(source: Source, entity: StarshipModel, appearance: AppearanceType) {
+    init(source: Source, entity: StarshipModel, appearance: AppearanceType, number: Int = 0) {
         let id = UUID()
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceStarshipModels", tableName: "source_starship_models")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, number: number, recordType: "SourceStarshipModels", tableName: "source_starship_models")
     }
     
     /// Creates a source-starship model relationship from decoded data
@@ -52,6 +54,7 @@ class SourceStarshipModel: SourceItem {
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(StarshipModel.self, forKey: .entity)
         let _appearance = try container.decode(Int.self, forKey: .appearance)
+        //let number = try container.decode(Int.self, forKey: .number)
         
         // Convert numeric appearance type to enum
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present

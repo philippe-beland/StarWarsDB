@@ -29,6 +29,8 @@ class SourceOrganization: SourceItem {
         case entity = "organization"
         /// Type of appearance
         case appearance
+        /// Number of appearances
+        case number = "total_appearances"
     }
     
     /// Creates a new source-organization relationship
@@ -36,10 +38,10 @@ class SourceOrganization: SourceItem {
     ///   - source: The source material where the organization appears
     ///   - entity: The organization that appears
     ///   - appearance: How the organization appears (present, mentioned, etc.)
-    init(source: Source, entity: Organization, appearance: AppearanceType) {
+    init(source: Source, entity: Organization, appearance: AppearanceType, number: Int = 0) {
         let id = UUID()
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceOrganizations", tableName: "source_organizations")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, number: number, recordType: "SourceOrganizations", tableName: "source_organizations")
     }
     
     /// Creates a source-organization relationship from decoded data
@@ -52,6 +54,7 @@ class SourceOrganization: SourceItem {
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Organization.self, forKey: .entity)
         let _appearance = try container.decode(Int.self, forKey: .appearance)
+        //let number = try container.decode(Int.self, forKey: .number)
         
         // Convert numeric appearance type to enum
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present

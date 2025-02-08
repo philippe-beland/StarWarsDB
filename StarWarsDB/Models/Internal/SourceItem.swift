@@ -64,11 +64,15 @@ class SourceItem: DataNode, Equatable, Identifiable {
     ///   - appearance: How the entity appears
     ///   - recordType: Type of record for database
     ///   - tableName: Database table name
-    init (id: UUID, source: Source, entity: Entity, appearance: AppearanceType, recordType: String, tableName: String) {
+    ///
+    var number: Int
+    
+    init (id: UUID, source: Source, entity: Entity, appearance: AppearanceType, number: Int = 0, recordType: String, tableName: String) {
         self.id = id
         self.source = source
         self.entity = entity
         self.appearance = appearance
+        self.number = number
         
         super.init(recordType: recordType, tableName: tableName, recordID: self.id)
     }
