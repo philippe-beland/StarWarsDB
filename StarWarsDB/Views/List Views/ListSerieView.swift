@@ -11,12 +11,12 @@ struct ListSerieView: View {
     var sourceType: SourceType
     var series: [Serie]
     
-    @State private var searchText: String = ""
+    @StateObject var searchContext = SearchContext()
     
     private var filteredSeries: [Serie] {
         series.filter {
-            if searchText != "" {
-                return $0.name.localizedStandardContains(searchText)
+            if searchContext.debouncedQuery != "" {
+                return $0.name.localizedStandardContains(searchContext.debouncedQuery)
             } else {
                 return true
             }
@@ -26,7 +26,7 @@ struct ListSerieView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                TextField("Search", text: $searchText)
+                TextField("Search", text: $searchContext.query)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                     .frame(maxWidth: .infinity)

@@ -12,7 +12,7 @@ struct ListSourcesView: View {
     var serie: Serie? = nil
     
     @State private var sortOrder: SortingSourceOrder = .publicationDate
-    @State private var searchText: String = ""
+    @StateObject var searchContext = SearchContext()
     @State private var isDoneFilter: Bool = false
     @State private var showNewSourceSheet: Bool = false
     @State private var sources: [Source] = []
@@ -34,10 +34,10 @@ struct ListSourcesView: View {
                 }
             }
             .navigationTitle("Sources")
-            .searchable(text: $searchText, prompt: "Search")
+            .searchable(text: $searchContext.query, prompt: "Search")
             .toolbar { toolbarContent }
         }
-        .onChange(of: searchText) { handleSearchTextChange() }
+        .onChange(of: searchContext.debouncedQuery) { handleSearchTextChange() }
         .onChange(of: selectedView) { handleParameterChange() }
         .onChange(of: sortOrder) { handleParameterChange() }
         .onChange(of: isDoneFilter) { handleParameterChange() }
@@ -46,20 +46,20 @@ struct ListSourcesView: View {
     
     private func handleParameterChange() {
         Task {
-            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchText)
+            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
         }
     }
     
     private func handleSearchTextChange() {
         Task {
-            if !searchText.isEmpty && searchText.count > 3 {
-                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchText)
+            if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count > 3 {
+                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialSources() async {
-        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchText)
+        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
     }
     
     private func deleteSource(_ source: Source) {

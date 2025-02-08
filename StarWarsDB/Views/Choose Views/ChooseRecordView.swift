@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChooseRecordView: View {
-    @State private var searchText: String = ""
+    @StateObject var searchContext = SearchContext()
 
     var body: some View {
         NavigationStack {
@@ -30,7 +30,7 @@ struct ChooseRecordView: View {
                 }
             }
             .navigationTitle("Entities")
-            .searchable(text: $searchText)
+            .searchable(text: $searchContext.query)
         }
     }
     

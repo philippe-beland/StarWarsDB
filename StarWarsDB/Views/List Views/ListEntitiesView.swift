@@ -16,7 +16,7 @@ struct ListEntitiesView: View {
     var entityType: EntityType
     
     @State private var sortOrder: SortingItemOrder = .name
-    @State private var searchText: String = ""
+    @StateObject var searchContext = SearchContext()
     @State private var showNewEntitySheet: Bool = false
     @State private var entities = [Entity]()
     
@@ -30,25 +30,25 @@ struct ListEntitiesView: View {
                 }
                 .onDelete(perform: deleteEntity)
             }
-            .searchable(text: $searchText, prompt: "Search")
+            .searchable(text: $searchContext.query, prompt: "Search")
             .navigationTitle(entityType.rawValue)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarContent }
         }
-        .onChange(of: searchText) { handleSearchTextChange() }
+        .onChange(of: searchContext.debouncedQuery) { handleSearchTextChange() }
         .task { await loadInitialEntities() }
     }
     
     private func handleSearchTextChange() {
         Task {
-            if !searchText.isEmpty && searchText.count > 3 {
-                entities = await loadEntities(entityType: entityType, sort: sortOrder, filter: searchText)
+            if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count > 2 {
+                entities = await loadEntities(entityType: entityType, sort: sortOrder, filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialEntities() async {
-        entities = await loadEntities(entityType: entityType, sort: sortOrder, filter: searchText)
+        entities = await loadEntities(entityType: entityType, sort: sortOrder, filter: searchContext.debouncedQuery)
     }
     
     private func deleteEntity(_ indexSet: IndexSet) {

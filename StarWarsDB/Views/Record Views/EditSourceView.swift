@@ -173,27 +173,19 @@ struct SourcesAppearancesSection: View {
             case .entitySheet(let type):
                 ChooseEntityView(entityType: type, isSourceItem: true, serie: serie, sourceItems: getSourceItems(for: type)) { selectedEntities, appearance in
                     for selectedEntity in selectedEntities {
-                        switch type {
-                            case .character:
-                                if appearance != .mentioned {
-                                    if let character = selectedEntity as? Character {
-                                        onAddEntity(type, character, appearance)
-                                        if let species = character.species {
-                                            onAddEntity(.species, species, appearance)
-                                        }
-                                    }
-                                }
-                            case .starship:
-                            if appearance != .mentioned {
-                                if let starship = selectedEntity as? Starship {
-                                    onAddEntity(type, starship, appearance)
-                                    if let model = starship.model {
-                                        onAddEntity(.starshipModel, model, appearance)
-                                    }
+                        onAddEntity(type, selectedEntity, appearance)
+                        if type == .character && appearance != .mentioned {
+                            if let character = selectedEntity as? Character {
+                                if let species = character.species {
+                                    onAddEntity(.species, species, appearance)
                                 }
                             }
-                        default:
-                            onAddEntity(type, selectedEntity, appearance)
+                        } else if type == .starship && appearance != .mentioned {
+                            if let starship = selectedEntity as? Starship {
+                                if let model = starship.model {
+                                    onAddEntity(.starshipModel, model, appearance)
+                                }
+                            }
                         }
                     }
                 }
