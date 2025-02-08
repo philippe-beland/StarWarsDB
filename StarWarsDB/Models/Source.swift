@@ -91,11 +91,11 @@ enum SortingSourceOrder: String, CaseIterable {
 /// Provides shared date formatting functionality
 class DateFormatterProvider {
     /// Shared instance for consistent date formatting
-    static let shared = DateFormatterProvider()
+    static let shared: DateFormatterProvider = DateFormatterProvider()
     
     /// Date formatter configured for source dates
     let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
+        let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         return formatter
     }()
@@ -213,18 +213,18 @@ class Source: DataNode, Record, Hashable {
     /// - Parameter decoder: The decoder to read data from
     /// - Throws: An error if data reading fails
     required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let container: KeyedDecodingContainer<Source.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
         self.id = try container.decode(UUID.self, forKey: .id)
         self.name = try container.decodeIfPresent(String.self, forKey: .name) ?? ""
         self.serie = try container.decodeIfPresent(Serie.self, forKey: .serie)
         self.number = try container.decodeIfPresent(Int.self, forKey: .number)
         self.arc = try container.decodeIfPresent(Arc.self, forKey: .arc)
-        let era = try container.decode(Era.self, forKey: .era)
+        let era: Era = try container.decode(Era.self, forKey: .era)
         self.era = era
         self.sourceType = try container.decode(SourceType.self, forKey: .sourceType)
 
-        let publicationDate = try container.decode(String.self, forKey: .publicationDate)
+        let publicationDate: String = try container.decode(String.self, forKey: .publicationDate)
         self.publicationDate = DateFormatterProvider.shared.dateFormatter.date(from: publicationDate) ?? Date()
         self.universeYear = try container.decodeIfPresent(Float.self, forKey: .universeYear) ?? era.minimum
         self.numberPages = try container.decodeIfPresent(Int.self, forKey: .numberPages)
@@ -238,7 +238,7 @@ class Source: DataNode, Record, Hashable {
     /// - Parameter encoder: The encoder to write data to
     /// - Throws: An error if data writing fails
     override func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
+        var container: KeyedEncodingContainer<Source.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
         try container.encode(name, forKey: .name)

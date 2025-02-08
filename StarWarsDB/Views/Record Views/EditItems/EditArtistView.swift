@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditArtistView: View {
     @Bindable var artist: Artist
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State private var sourceArtists = [SourceArtist]()
     

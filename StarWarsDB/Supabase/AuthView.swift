@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct AuthView: View {
-    @State private var email = ""
-    @State private var password = ""
-    @State private var isLoading = false
+    @State private var email: String = ""
+    @State private var password: String = ""
+    @State private var isLoading: Bool = false
     @State private var result: Result<Void, Error>?
     
     var body: some View {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecordContentView<Content: View>: View {
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
     @Bindable var record: Entity
     
     var sourceItems: [SourceItem]

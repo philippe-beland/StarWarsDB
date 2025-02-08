@@ -7,147 +7,294 @@
 
 import SwiftUI
 
-enum RecordType: String, CaseIterable {
-    case characters = "Characters"
-    case creatures = "Creatures"
-    case droids = "Droids"
-    case organizations = "Organizations"
-    case planets = "Planets"
-    case species = "Species"
-    case starships = "Starships"
-    case starshipModels = "Starship Models"
-    case varias = "Varias"
+struct SourceItemCollection {
+    var characters: [SourceCharacter] = []
+    var creatures: [SourceCreature] = []
+    var droids: [SourceDroid] = []
+    var organizations: [SourceOrganization] = []
+    var planets: [SourcePlanet] = []
+    var species: [SourceSpecies] = []
+    var starships: [SourceStarship] = []
+    var starshipModels: [SourceStarshipModel] = []
+    var varias: [SourceVaria] = []
+    var artists: [SourceArtist] = []
+    var authors: [SourceAuthor] = []
+}
+
+enum ActiveSheet: Identifiable {
+    case entitySheet(EntityType)
+    case expandedSheet(EntityType)
+    
+    var id: String {
+        switch self {
+        case .entitySheet(let type):
+            return "entity-\(type)"
+        case .expandedSheet(let type):
+            return "expanded-\(type)"
+        }
+    }
 }
 
 struct EditSourceView: View {
-    @Bindable var source: Source
+    @StateObject private var viewModel: EditSourceViewModel
+    @State private var showFactSheet: Bool = false
     
-    @State private var showFactSheet = false
-    
-    @State private var sourceCharacters = [SourceCharacter]()
-    @State private var sourceCreatures = [SourceCreature]()
-    @State private var sourceDroids = [SourceDroid]()
-    @State private var sourceOrganizations = [SourceOrganization]()
-    @State private var sourcePlanets = [SourcePlanet]()
-    @State private var sourceSpecies = [SourceSpecies]()
-    @State private var sourceStarships = [SourceStarship]()
-    @State private var sourceStarshipModels = [SourceStarshipModel]()
-    @State private var sourceVarias = [SourceVaria]()
-    @State private var sourceArtists = [SourceArtist]()
-    @State private var sourceAuthors = [SourceAuthor]()
+    init(source: Source) {
+        _viewModel = StateObject(wrappedValue: EditSourceViewModel(source: source))
+    }
     
     private var sortedArtists: [SourceArtist] {
-        sourceArtists.sorted (by: { $0.entity.name < $1.entity.name })
+        viewModel.sourceItems.artists.sorted (by: { $0.entity.name < $1.entity.name })
     }
     
     private var sortedAuthors: [SourceAuthor] {
-        sourceAuthors.sorted(by: { $0.entity.name < $1.entity.name })
+        viewModel.sourceItems.authors.sorted(by: { $0.entity.name < $1.entity.name })
     }
-    
-    @State private var selectedEntityType: EntityType?
-    @State private var isEntitySheetPresented = false
-    @State private var isExpandedViewPresented = false
-    @State private var expandedEntityType: EntityType?
     
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 16) {
-                HStack {
-                    Spacer()
-                    HeaderView(name: $source.name, urlString: source.url)
-                    Spacer()
-                }
-                
-                HStack {
-                    Button("Facts") {
-                        showFactSheet.toggle()
-                    }
-                    .sheet(isPresented: $showFactSheet) {
-                        FactsView(source: source)
-                    }
-                    Spacer()
-                    Toggle("Done", isOn: $source.isDone)
-                        .font(.callout)
-                        .frame(maxWidth: 110)
-                }
-                .padding([.horizontal])
-                
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(infosSection) { info in
-                            info.view
-                                .font(.caption)
-                                .padding(.horizontal)
-                        }
-                    }
-                }
-                .padding([.horizontal])
-                
-                Text("Appearances")
-                    .bold()
-                    .padding()
-                
-                Form {
-                    Section(header: headerWithButton(title: "Characters", entityType: .character)) {
-                        ScrollAppearancesView(sourceItems: $sourceCharacters, entityType: .character)
-                    }
-                    Section(header: headerWithButton(title: "Species", entityType: .species)) {
-                        ScrollAppearancesView(sourceItems: $sourceSpecies, entityType: .species)
-                    }
-                    Section(header: headerWithButton(title: "Planets", entityType: .planet))  {
-                        ScrollAppearancesView(sourceItems: $sourcePlanets, entityType: .planet)
-                    }
-                    Section(header: headerWithButton(title: "Organizations", entityType: .organization)) {
-                        ScrollAppearancesView(sourceItems: $sourceOrganizations, entityType: .organization)
-                    }
-                    Section(header: headerWithButton(title: "Starships", entityType: .starship))  {
-                        ScrollAppearancesView(sourceItems: $sourceStarships, entityType: .starship)
-                    }
-                    Section(header: headerWithButton(title: "Creatures", entityType: .creature))  {
-                        ScrollAppearancesView(sourceItems: $sourceCreatures, entityType: .creature)
-                    }
-                    Section(header: headerWithButton(title: "Droids", entityType: .droid)) {
-                        ScrollAppearancesView(sourceItems: $sourceDroids, entityType: .droid)
-                    }
-                    Section(header: headerWithButton(title: "Starship Models", entityType: .starshipModel)) {
-                        ScrollAppearancesView(sourceItems: $sourceStarshipModels, entityType: .starshipModel)
-                    }
-                    Section(header: headerWithButton(title: "Varias", entityType: .varia)) {
-                        ScrollAppearancesView(sourceItems: $sourceVarias, entityType: .varia)
-                    }
-                }
+                SourceHeaderSection(source: $viewModel.source, showFactSheet: $showFactSheet)
+                SourceInfoSection(infosSection: infosSection)
+                SourcesAppearancesSection(
+                    sourceItems: $viewModel.sourceItems,
+                    activeSheet: $viewModel.activeSheet,
+                    serie: viewModel.source.serie,
+                    onAddEntity: viewModel.addSourceItem
+                )
             }
             .padding(.vertical)
         }
-        .task { await loadInitialSources() }
+        .task { await viewModel.loadInitialSources() }
         .toolbar {
-            Button ("Update", action: source.update)
+            Button("Update", action: viewModel.source.update)
         }
     }
     
-    private struct InfoSection: Identifiable {
-        let id = UUID()
-        let fieldName: String
-        let view: AnyView
+    private var infosSection: [InfoSection] {
+        let sections: [InfoSection] = [
+            InfoSection(fieldName: "Serie", view: AnyView(EditVEntityInfoView(
+                fieldName: "Serie",
+                entity: Binding(
+                    get: {viewModel.source.serie ?? Serie.empty },
+                    set: {viewModel.source.serie = ($0 as! Serie) }),
+                entityType: .serie))),
+            InfoSection(fieldName: "Arc", view: AnyView(EditVEntityInfoView(
+                fieldName: "Arc",
+                entity: Binding(
+                    get: {viewModel.source.arc ?? Arc.empty },
+                    set: {viewModel.source.arc = ($0 as! Arc) }),
+                entityType: .arc))),
+            InfoSection(fieldName: "Number", view: AnyView(TextField("Number", value: $viewModel.source.number, format: .number))),
+            InfoSection(fieldName: "Era", view: AnyView(EraPicker(era: $viewModel.source.era))),
+            InfoSection(fieldName: "Type", view: AnyView(SourceTypePicker(sourceType: $viewModel.source.sourceType))),
+            InfoSection(fieldName: "Publication Date", view: AnyView(PublicationDatePicker(date: $viewModel.source.publicationDate))),
+            InfoSection(fieldName: "In-Universe Year", view: AnyView(YearPicker(era: viewModel.source.era, universeYear: $viewModel.source.universeYear))),
+            InfoSection(fieldName: "Authors", view: AnyView(AuthorsVStack(source: viewModel.source, authors: sortedAuthors))),
+            InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(source: viewModel.source, artists: sortedArtists))),
+            InfoSection(fieldName: "Number Pages", view: AnyView(TextField("Nb of pages", value: $viewModel.source.numberPages, format: .number)))
+        ]
+        
+        return sections
     }
+}
     
-    enum ActiveSheet: Identifiable {
-        case entitySheet(EntityType)
-        case expandedSheet(EntityType)
-
-        var id: String {
-            switch self {
+private struct SourceHeaderSection: View {
+    @Binding var source: Source
+    @Binding var showFactSheet: Bool
+    
+    var body: some View {
+        HStack {
+            Spacer()
+            HeaderView(name: $source.name, urlString: source.url)
+            Spacer()
+        }
+        
+        HStack {
+            Button("Facts") {
+                showFactSheet.toggle()
+            }
+            .sheet(isPresented: $showFactSheet) {
+                FactsView(source: source)
+            }
+            Spacer()
+            Toggle("Done", isOn: $source.isDone)
+                .font(.callout)
+                .frame(maxWidth: 110)
+        }
+        .padding([.horizontal])
+    }
+}
+    
+private struct SourceInfoSection: View {
+    let infosSection: [InfoSection]
+    
+    var body: some View {
+        ScrollView(.horizontal) {
+            HStack {
+                ForEach(infosSection) { info in
+                    info.view
+                        .font(.caption)
+                        .padding(.horizontal)
+                }
+            }
+        }
+        .padding([.horizontal])
+    }
+}
+    
+struct SourcesAppearancesSection: View {
+    @Binding var sourceItems: SourceItemCollection
+    @Binding var activeSheet: ActiveSheet?
+    var serie: Serie?
+    let onAddEntity: (EntityType, Entity, AppearanceType) -> Void
+    
+    var body: some View {
+        VStack {
+            Text("Appearances")
+                .bold()
+            Form {
+                ForEach(EntityType.sourceTypes, id: \.self) { entityType in
+                    Section(header: EntitySectionHeader(
+                        title: entityType.displayName,
+                        entityType: entityType,
+                        activeSheet: $activeSheet
+                    )) {
+                        ScrollAppearancesView(
+                            sourceItems: getSourceItemsBinding(for: entityType),
+                            entityType: entityType
+                        )
+                    }
+                }
+            }
+        }
+        .sheet(item: $activeSheet) { sheet in
+            switch sheet {
             case .entitySheet(let type):
-                return "entity-\(type)"
+                ChooseEntityView(entityType: type, isSourceItem: true, serie: serie, sourceItems: getSourceItems(for: type)) { selectedEntities, appearance in
+                    for selectedEntity in selectedEntities {
+                        switch type {
+                            case .character:
+                                if appearance != .mentioned {
+                                    if let character = selectedEntity as? Character {
+                                        onAddEntity(type, character, appearance)
+                                        if let species = character.species {
+                                            onAddEntity(.species, species, appearance)
+                                        }
+                                    }
+                                }
+                            case .starship:
+                            if appearance != .mentioned {
+                                if let starship = selectedEntity as? Starship {
+                                    onAddEntity(type, starship, appearance)
+                                    if let model = starship.model {
+                                        onAddEntity(.starshipModel, model, appearance)
+                                    }
+                                }
+                            }
+                        default:
+                            onAddEntity(type, selectedEntity, appearance)
+                        }
+                    }
+                }
             case .expandedSheet(let type):
-                return "expanded-\(type)"
+                ExpandedSourceItemView(sourceItems: getSourceItemsBinding(for: type), entityType: type)
             }
         }
     }
-
-    @State private var activeSheet: ActiveSheet? = .entitySheet(.character)
     
-    private func headerWithButton(title: String, entityType: EntityType) -> some View {
+    private func getSourceItems(for entityType: EntityType) -> [SourceItem] {
+        switch entityType {
+        case .character:
+            return sourceItems.characters as [SourceItem]
+        case .droid:
+            return sourceItems.droids as [SourceItem]
+        case .creature:
+            return sourceItems.creatures as [SourceItem]
+        case .organization:
+            return sourceItems.organizations as [SourceItem]
+        case .planet:
+            return sourceItems.planets as [SourceItem]
+        case .species:
+            return sourceItems.species as [SourceItem]
+        case .starshipModel:
+            return sourceItems.starshipModels as [SourceItem]
+        case .starship:
+            return sourceItems.starships as [SourceItem]
+        case .varia:
+            return sourceItems.varias as [SourceItem]
+        default:
+            return []
+        }
+    }
+    
+    private func getSourceItemsBinding(for entityType: EntityType) -> Binding<[SourceItem]> {
+        switch entityType {
+        case .character:
+            return Binding(
+                get: { sourceItems.characters as [SourceItem] },
+                set: { newItems in sourceItems.characters = newItems.compactMap { $0 as? SourceCharacter } }
+            )
+        case .droid:
+            return Binding(
+                get: { sourceItems.droids as [SourceItem] },
+                set: { newItems in sourceItems.droids = newItems.compactMap { $0 as? SourceDroid } }
+            )
+        case .creature:
+            return Binding(
+                get: { sourceItems.creatures as [SourceItem] },
+                set: { newItems in sourceItems.creatures = newItems.compactMap { $0 as? SourceCreature } }
+            )
+        case .organization:
+            return Binding(
+                get: { sourceItems.organizations as [SourceItem] },
+                set: { newItems in sourceItems.organizations = newItems.compactMap { $0 as? SourceOrganization } }
+            )
+        case .planet:
+            return Binding(
+                get: { sourceItems.planets as [SourceItem] },
+                set: { newItems in sourceItems.planets = newItems.compactMap { $0 as? SourcePlanet } }
+            )
+        case .species:
+            return Binding(
+                get: { sourceItems.species as [SourceItem] },
+                set: { newItems in sourceItems.species = newItems.compactMap { $0 as? SourceSpecies } }
+            )
+        case .starshipModel:
+            return Binding(
+                get: { sourceItems.starshipModels as [SourceItem] },
+                set: { newItems in sourceItems.starshipModels = newItems.compactMap { $0 as? SourceStarshipModel } }
+            )
+        case .starship:
+            return Binding(
+                get: { sourceItems.starships as [SourceItem] },
+                set: { newItems in sourceItems.starships = newItems.compactMap { $0 as? SourceStarship } }
+            )
+        case .varia:
+            return Binding(
+                get: { sourceItems.varias as [SourceItem] },
+                set: { newItems in sourceItems.varias = newItems.compactMap { $0 as? SourceVaria } }
+            )
+        default:
+            return .constant([]) // Return an empty, immutable Binding for unsupported cases
+        }
+    }
+}
+        
+private struct InfoSection: Identifiable {
+    let id: UUID = UUID()
+    let fieldName: String
+    let view: AnyView
+}
+        
+        
+        
+private struct EntitySectionHeader: View {
+    let title: String
+    let entityType: EntityType
+    @Binding var activeSheet: ActiveSheet?
+    
+    var body: some View {
         HStack {
             Text(title)
                 .font(.subheadline)
@@ -170,286 +317,10 @@ struct EditSourceView: View {
                 Text("Expand")
             }
         }
-        .sheet(item: $activeSheet) { sheet in
-                switch sheet {
-                case .entitySheet(let type):
-                    ChooseEntityView(entityType: type, isSourceItem: true, serie: source.serie, sourceItems: getSourceItems(entityType: type)) { selectedEntities, appearance in
-                        for selectedEntity in selectedEntities {
-                            addSourceItem(entityType: type, entity: selectedEntity, appearance: appearance)
-                        }
-                    }
-                case .expandedSheet(let type):
-                    ExpandedSourceItemView(sourceItems: getSourceItemsBinding(entityType: type), entityType: type)
-                }
-            }
-        }
-    
-    private func getSourceItems(entityType: EntityType) -> [SourceItem] {
-        switch entityType {
-        case .character:
-            return sourceCharacters
-        case .droid:
-            return sourceDroids
-        case .creature:
-            return sourceCreatures
-        case .organization:
-            return sourceOrganizations
-        case .planet:
-            return sourcePlanets
-        case .starship:
-            return sourceStarships
-        case .starshipModel:
-            return sourceStarshipModels
-        case .species:
-            return sourceSpecies
-        case .varia:
-            return sourceVarias
-        case .arc, .serie, .artist, .author:
-            return []
-
-        }
-    }
-    private func getSourceItemsBinding(entityType: EntityType) -> Binding<[SourceItem]> {
-        switch entityType {
-        case .character:
-            return Binding(
-                get: { sourceCharacters as [SourceItem] },
-                set: { newItems in sourceCharacters = newItems.compactMap { $0 as? SourceCharacter } }
-            )
-        case .droid:
-            return Binding(
-                get: { sourceDroids as [SourceItem] },
-                set: { newItems in sourceDroids = newItems.compactMap { $0 as? SourceDroid } }
-            )
-        case .creature:
-            return Binding(
-                get: { sourceCreatures as [SourceItem] },
-                set: { newItems in sourceCreatures = newItems.compactMap { $0 as? SourceCreature } }
-            )
-        case .organization:
-            return Binding(
-                get: { sourceOrganizations as [SourceItem] },
-                set: { newItems in sourceOrganizations = newItems.compactMap { $0 as? SourceOrganization } }
-            )
-        case .planet:
-            return Binding(
-                get: { sourcePlanets as [SourceItem] },
-                set: { newItems in sourcePlanets = newItems.compactMap { $0 as? SourcePlanet } }
-            )
-        case .species:
-            return Binding(
-                get: { sourceSpecies as [SourceItem] },
-                set: { newItems in sourceSpecies = newItems.compactMap { $0 as? SourceSpecies } }
-            )
-        case .starshipModel:
-            return Binding(
-                get: { sourceStarshipModels as [SourceItem] },
-                set: { newItems in sourceStarshipModels = newItems.compactMap { $0 as? SourceStarshipModel } }
-            )
-        case .starship:
-            return Binding(
-                get: { sourceStarships as [SourceItem] },
-                set: { newItems in sourceStarships = newItems.compactMap { $0 as? SourceStarship } }
-            )
-        case .varia:
-            return Binding(
-                get: { sourceVarias as [SourceItem] },
-                set: { newItems in sourceVarias = newItems.compactMap { $0 as? SourceVaria } }
-            )
-        case .arc, .serie, .artist, .author:
-            return .constant([]) // Return an empty, immutable Binding for unsupported cases
-        }
-    }
-    
-    private func addSourceItem(entityType: EntityType, entity: Entity, appearance: AppearanceType) {
-        switch entityType {
-        case .character:
-            let character = entity as! Character
-            
-            let newSourceItem = SourceCharacter(
-                source: source,
-                entity: character,
-                appearance: appearance
-            )
-            
-            if !sourceCharacters.contains(newSourceItem) {
-                newSourceItem.save()
-                sourceCharacters.append(newSourceItem)
-            } else {
-                print("Already exists for that source")
-            }
-            
-            if let species = character.species {
-                if species.name.lowercased() != "droid" && appearance != .mentioned {
-                    let newSourceSpecies = SourceSpecies(
-                        source: source,
-                        entity: species,
-                        appearance: appearance
-                    )
-                    
-                    if !sourceSpecies.contains(newSourceSpecies) {
-                        newSourceSpecies.save()
-                        sourceSpecies.append(newSourceSpecies)
-                    }
-                }
-            }
-
-        case .creature:
-            let newSourceItem = SourceCreature(
-                source: source,
-                entity: entity as! Creature,
-                appearance: appearance
-            )
-            
-            if !sourceCreatures.contains(newSourceItem) {
-                newSourceItem.save()
-                sourceCreatures.append(newSourceItem)
-            } else {
-                print("Already exists for that source")
-            }
-        case .droid:
-            let newSourceItem = SourceDroid(
-                source: source,
-                entity: entity as! Droid,
-                appearance: appearance
-            )
-            
-            if !sourceDroids.contains(newSourceItem) {
-                newSourceItem.save()
-                sourceDroids.append(newSourceItem)
-            } else {
-                print("Already exists for that source")
-            }
-        case .organization:
-            let newSourceItem = SourceOrganization(
-                source: source,
-                entity: entity as! Organization,
-                appearance: appearance
-            )
-            
-            if !sourceOrganizations.contains(newSourceItem) {
-                newSourceItem.save()
-                sourceOrganizations.append(newSourceItem)
-            } else {
-                print("Already exists for that source")
-            }
-        case .planet:
-            let newSourceItem = SourcePlanet(
-                source: source,
-                entity: entity as! Planet,
-                appearance: appearance
-            )
-            
-            if !sourcePlanets.contains(newSourceItem) {
-                newSourceItem.save()
-                sourcePlanets.append(newSourceItem)
-            } else {
-                print("Already exists for that source")
-            }
-        case .species:
-            let newSourceItem = SourceSpecies(
-                source: source,
-                entity: entity as! Species,
-                appearance: appearance
-            )
-            
-            if !sourceSpecies.contains(newSourceItem) {
-                newSourceItem.save()
-                sourceSpecies.append(newSourceItem)
-            } else {
-                print("Already exists for that source")
-            }
-        case .starship:
-            let newSourceItem = SourceStarship(
-                source: source,
-                entity: entity as! Starship,
-                appearance: appearance
-            )
-            
-            if !sourceStarships.contains(newSourceItem) {
-                newSourceItem.save()
-                sourceStarships.append(newSourceItem)
-            } else {
-                print("Already exists for that source")
-            }
-        case .starshipModel:
-            let newSourceItem = SourceStarshipModel(
-                source: source,
-                entity: entity as! StarshipModel,
-                appearance: appearance
-            )
-            
-            if !sourceStarshipModels.contains(newSourceItem) {
-                newSourceItem.save()
-                sourceStarshipModels.append(newSourceItem)
-            } else {
-                print("Already exists for that source")
-            }
-        case .varia:
-            let newSourceItem = SourceVaria(
-                source: source,
-                entity: entity as! Varia,
-                appearance: appearance
-            )
-            
-            if !sourceVarias.contains(newSourceItem) {
-                newSourceItem.save()
-                sourceVarias.append(newSourceItem)
-            } else {
-                print("Already exists for that source")
-            }
-        case .arc:
-            print("arc")
-        case .serie:
-            print("Serie")
-        case .artist:
-            print("Artist")
-        case .author:
-            print("Authors")
-        }
-    }
-    
-    private func loadInitialSources() async {
-        sourceCharacters = await loadSourceCharacters(recordField: "source", recordID: source.id)
-        sourceCreatures = await loadSourceCreatures(recordField: "source", recordID: source.id)
-        sourceDroids = await loadSourceDroids(recordField: "source", recordID: source.id)
-        sourceOrganizations = await loadSourceOrganizations(recordField: "source", recordID: source.id)
-        sourcePlanets = await loadSourcePlanets(recordField: "source", recordID: source.id)
-        sourceSpecies = await loadSourceSpecies(recordField: "source", recordID: source.id)
-        sourceStarships = await loadSourceStarships(recordField: "source", recordID: source.id)
-        sourceStarshipModels = await loadSourceStarshipModels(recordField: "source", recordID: source.id)
-        sourceVarias = await loadSourceVarias(recordField: "source", recordID: source.id)
-        sourceAuthors = await loadSourceAuthors(recordField: "source", recordID: source.id)
-        sourceArtists = await loadSourceArtists(recordField: "source", recordID: source.id)
-    }
-    
-    private var infosSection: [InfoSection] {
-        let sections: [InfoSection] = [
-            InfoSection(fieldName: "Serie", view: AnyView(EditVEntityInfoView(
-                fieldName: "Serie",
-                entity: Binding(
-                    get: {source.serie ?? Serie.empty },
-                    set: {source.serie = ($0 as! Serie) }),
-                entityType: .serie))),
-            InfoSection(fieldName: "Arc", view: AnyView(EditVEntityInfoView(
-                fieldName: "Arc",
-                entity: Binding(
-                    get: {source.arc ?? Arc.empty },
-                    set: {source.arc = ($0 as! Arc) }),
-                entityType: .arc))),
-            InfoSection(fieldName: "Number", view: AnyView(TextField("Number", value: $source.number, format: .number))),
-            InfoSection(fieldName: "Era", view: AnyView(EraPicker(era: $source.era))),
-            InfoSection(fieldName: "Type", view: AnyView(SourceTypePicker(sourceType: $source.sourceType))),
-            InfoSection(fieldName: "Publication Date", view: AnyView(PublicationDatePicker(date: $source.publicationDate))),
-            InfoSection(fieldName: "In-Universe Year", view: AnyView(YearPicker(era: source.era, universeYear: $source.universeYear))),
-            InfoSection(fieldName: "Authors", view: AnyView(AuthorsVStack(source: source, authors: sortedAuthors))),
-            InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(source: source, artists: sortedArtists))),
-            InfoSection(fieldName: "Number Pages", view: AnyView(TextField("Nb of pages", value: $source.numberPages, format: .number)))
-        ]
-        
-        return sections
     }
 }
+        
+
 
 struct ExpandedSourceItemView: View {
     @Binding var sourceItems: [SourceItem]
@@ -478,15 +349,15 @@ struct ExpandedSourceItemView: View {
     }
     
     private func appearanceContextMenu(for sourceItem: SourceItem) -> some View {
-         Group {
-             Button(AppearanceType.present.description) { updateAppearance(of: sourceItem, to: .present) }
-             Button(AppearanceType.mentioned.description) { updateAppearance(of: sourceItem, to: .mentioned) }
-             Button(AppearanceType.flashback.description) { updateAppearance(of: sourceItem, to: .flashback) }
-             Button(AppearanceType.vision.description) { updateAppearance(of: sourceItem, to: .vision) }
-             Button(AppearanceType.image.description) { updateAppearance(of: sourceItem, to: .image)}
-             Button(AppearanceType.indirectMentioned.description) { updateAppearance(of: sourceItem, to: .indirectMentioned)}
-         }
-     }
+        Group {
+            Button(AppearanceType.present.description) { updateAppearance(of: sourceItem, to: .present) }
+            Button(AppearanceType.mentioned.description) { updateAppearance(of: sourceItem, to: .mentioned) }
+            Button(AppearanceType.flashback.description) { updateAppearance(of: sourceItem, to: .flashback) }
+            Button(AppearanceType.vision.description) { updateAppearance(of: sourceItem, to: .vision) }
+            Button(AppearanceType.image.description) { updateAppearance(of: sourceItem, to: .image)}
+            Button(AppearanceType.indirectMentioned.description) { updateAppearance(of: sourceItem, to: .indirectMentioned)}
+        }
+    }
     
     private func updateAppearance(of sourceItem: SourceItem, to appearance: AppearanceType) {
         if let index = sourceItems.firstIndex(where: { $0.id == sourceItem.id }) {
@@ -496,7 +367,7 @@ struct ExpandedSourceItemView: View {
     }
     
     private func deleteEntity(_ indexSet: IndexSet) {
-        for index in indexSet {
+        for index: IndexSet.Element in indexSet {
             let entity = sortedEntities[index]
             if let indexofSource = sourceItems.firstIndex(of: entity) {
                 sourceItems.remove(at: indexofSource)
@@ -506,6 +377,72 @@ struct ExpandedSourceItemView: View {
     }
 }
 
-//#Preview {
-//    EditSourceView(source: .example)
-//}
+extension Entity {
+    func isValid(for type: EntityType) -> Bool {
+        switch type {
+        case .character:
+            return self is Character
+        case .creature:
+            return self is Creature
+        case .droid:
+            return self is Droid
+        case .organization:
+            return self is Organization
+        case .planet:
+            return self is Planet
+        case .species:
+            return self is Species
+        case .starship:
+            return self is Starship
+        case .starshipModel:
+            return self is StarshipModel
+        case .varia:
+            return self is Varia
+        case .arc:
+            return self is Arc
+        case .serie:
+            return self is Serie
+        case .artist:
+            return self is Artist
+        case .author:
+            return self is Artist
+        }
+    }
+}
+
+extension EntityType {
+    static var sourceTypes: [EntityType] {
+        [.character, .species, .planet, .organization, .starship, .starshipModel, .creature, .droid, .varia]
+    }
+    
+    var displayName: String {
+        switch self {
+        case .character:
+            return "Characters"
+        case .creature:
+            return "Creatures"
+        case .droid:
+            return "Droids"
+        case .organization:
+            return "Organizations"
+        case .planet:
+            return "Planets"
+        case .species:
+            return "Species"
+        case .starship:
+            return "Starships"
+        case .starshipModel:
+            return "Starship Models"
+        case .varia:
+            return "Varias"
+        case .arc:
+            return "Arcs"
+        case .serie:
+            return "Series"
+        case .artist:
+            return "Artists"
+        case .author:
+            return "Authors"
+        }
+    }
+}

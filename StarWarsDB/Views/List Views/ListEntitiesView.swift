@@ -16,8 +16,8 @@ struct ListEntitiesView: View {
     var entityType: EntityType
     
     @State private var sortOrder: SortingItemOrder = .name
-    @State private var searchText = ""
-    @State private var showNewEntitySheet = false
+    @State private var searchText: String = ""
+    @State private var showNewEntitySheet: Bool = false
     @State private var entities = [Entity]()
     
     var body: some View {
@@ -52,7 +52,7 @@ struct ListEntitiesView: View {
     }
     
     private func deleteEntity(_ indexSet: IndexSet) {
-        for index in indexSet {
+        for index    in indexSet {
             let entity = entities[index]
             entities.remove(at: index)
             entity.delete()

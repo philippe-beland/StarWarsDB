@@ -32,7 +32,7 @@ struct HeaderView: View {
     }
     
     private func openLink() {
-        guard let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) else { return }
+        guard let url: URL = URL(string: urlString), UIApplication.shared.canOpenURL(url) else { return }
         UIApplication.shared.open(url)
     }
 }

@@ -22,7 +22,7 @@ class Arc: Entity {
     ///   - serie: The series this arc belongs to
     ///   - comments: Additional notes about the arc
     init(name: String, serie: Serie, comments: String?) {
-        let id = UUID()
+        let id: UUID = UUID()
         self.serie = serie
         
         super.init(id: id, name: name, comments: comments, firstAppearance: nil, recordType: "Arc", tableName: "arcs")
@@ -48,9 +48,9 @@ class Arc: Entity {
         
         self.serie = try container.decodeIfPresent(Serie.self, forKey: .serie)
         
-        let id = try container.decode(UUID.self, forKey: .id)
-        let name = try container.decode(String.self, forKey: .name)
-        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        let id: UUID = try container.decode(UUID.self, forKey: .id)
+        let name: String = try container.decode(String.self, forKey: .name)
+        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
         
         super.init(id: id, name: name, comments: comments, firstAppearance: nil, recordType: "Arc", tableName: "arcs")
     }
@@ -59,7 +59,7 @@ class Arc: Entity {
     /// - Parameter encoder: The encoder to write data to
     /// - Throws: An error if data writing fails
     override func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
+        var container: KeyedEncodingContainer<Arc.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
         try container.encode(name, forKey: .name)

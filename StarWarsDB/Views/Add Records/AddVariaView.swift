@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddVariaView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String
     @State private var firstAppearance: String = ""

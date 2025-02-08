@@ -14,10 +14,10 @@ struct ListSourcesView: View {
     @State private var sortOrder: SortingSourceOrder = .publicationDate
     @State private var searchText: String = ""
     @State private var isDoneFilter: Bool = false
-    @State private var showNewSourceSheet = false
+    @State private var showNewSourceSheet: Bool = false
     @State private var sources: [Source] = []
     
-    let layout = [GridItem(.adaptive(minimum: 200, maximum: 300)),]
+    let layout: [GridItem] = [GridItem(.adaptive(minimum: 200, maximum: 300))]
     
     var body: some View {
         NavigationStack {

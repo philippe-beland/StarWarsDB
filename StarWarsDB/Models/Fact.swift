@@ -62,7 +62,7 @@ class Fact: DataNode, Identifiable {
     /// - Parameter decoder: The decoder to read data from
     /// - Throws: An error if data reading fails
     required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let container: KeyedDecodingContainer<Fact.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
         self.id = try container.decode(UUID.self, forKey: .id)
         self.fact = try container.decode(String.self, forKey: .fact)
@@ -76,7 +76,7 @@ class Fact: DataNode, Identifiable {
     /// - Parameter encoder: The encoder to write data to
     /// - Throws: An error if data writing fails
     override func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
+        var container: KeyedEncodingContainer<Fact.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
         try container.encode(fact, forKey: .fact)

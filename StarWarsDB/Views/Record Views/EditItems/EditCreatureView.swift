@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditCreatureView: View {
     @Bindable var creature: Creature
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State private var sourceCreatures = [SourceCreature]()
     

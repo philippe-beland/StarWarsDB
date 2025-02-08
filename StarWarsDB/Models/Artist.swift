@@ -20,7 +20,7 @@ class Artist: Entity {
     ///   - name: The artist's name
     ///   - comments: Additional notes about the artist
     init(name: String, comments: String? = nil) {
-        let id = UUID()
+        let id: UUID = UUID()
         super.init(id: id, name: name, comments: comments, firstAppearance: nil, recordType: "Artist", tableName: "artists")
     }
     
@@ -38,11 +38,11 @@ class Artist: Entity {
     /// - Parameter decoder: The decoder to read data from
     /// - Throws: An error if data reading fails
     required init(from decoder: any Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let container: KeyedDecodingContainer<Artist.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id = try container.decode(UUID.self, forKey: .id)
-        let name = try container.decode(String.self, forKey: .name)
-        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        let id: UUID = try container.decode(UUID.self, forKey: .id)
+        let name: String = try container.decode(String.self, forKey: .name)
+        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
         
         super.init(id: id, name: name, comments: comments, firstAppearance: nil, recordType: "Artist", tableName: "artists")
     }

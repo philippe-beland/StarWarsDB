@@ -53,7 +53,7 @@ struct EditEntityInfoView: View {
             } label: {
                 if entity.name.isEmpty {
                     Text("Select \(fieldName)")
-                        .foregroundStyle(.secondary)
+                        .foregroundColor(.blue)
                 }
                 Text(entity.name)
             }
@@ -74,7 +74,7 @@ struct EditVEntityInfoView: View {
     @Binding var entity: Entity
     var entityType: EntityType
     
-    @State private var showEntitySelection = false
+    @State private var showEntitySelection: Bool = false
     
     var body: some View {
         VStack {
@@ -86,17 +86,17 @@ struct EditVEntityInfoView: View {
             } label: {
                 if entity.name.isEmpty {
                     Text("Select \(fieldName)")
-                        .foregroundColor(.blue)
+                        .foregroundStyle(.secondary)
+                } else {
+                    Text(entity.name)
                 }
-                Text(entity.name)
             }
             .buttonStyle(PlainButtonStyle())
         }
         .sheet(isPresented: $showEntitySelection) {
-            ChooseEntityView(entityType: entityType, isSourceItem: false, sourceItems: []) { selectedEntities, appearance in
-                if let selectedEntity = selectedEntities.first {
-                    entity = selectedEntity
-                }
+            ChooseEntityView(entityType: entityType, isSourceItem: false, sourceItems: []) { selectedEntities, _ in
+                guard let selectedEntity = selectedEntities.first else { return }
+                entity = selectedEntity
             }
         }
     }
@@ -280,22 +280,11 @@ struct MultiFieldVStack: View {
     }
 }
 
-#Preview {
-    @Previewable @State var era = Source.example.era
-    @Previewable @State var year = Source.example.universeYear
-    @Previewable @State var fieldName = "Luke Skywalker"
-    
-    YearPicker(era: era, universeYear: $year)
-    FieldView(fieldName: "Name", info: $fieldName)
-    FieldVStack(fieldName: "Name", info: $fieldName)
-    //MultiFieldView(fieldName: "Affiliation", entities: Character.example.affiliations)
-    //MultiFieldVStack(fieldName: "Affiliation", entities: Character.example.affiliations)
-}
 
 struct ExpandedSourceArtistsView: View {
     @Binding var sourceArtists: [SourceArtist]
     var source: Source?
-    @State var showAddArtistSheet = false
+    @State var showAddArtistSheet: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -330,7 +319,7 @@ struct ExpandedSourceArtistsView: View {
     }
     
     private func deleteEntity(_ indexSet: IndexSet) {
-        for index in indexSet {
+        for index: IndexSet.Element in indexSet {
             let entity = sourceArtists[index]
             sourceArtists.remove(at: index)
             entity.delete()
@@ -341,7 +330,7 @@ struct ExpandedSourceArtistsView: View {
 struct ExpandedSourceAuthorsView: View {
     @Binding var sourceAuthors: [SourceAuthor]
     var source: Source?
-    @State var showAddAuthorSheet = false
+    @State var showAddAuthorSheet: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -351,19 +340,19 @@ struct ExpandedSourceAuthorsView: View {
                 }
                 .onDelete(perform: deleteEntity)
             }
-            .navigationTitle("Artists")
+            .navigationTitle("Authors")
             .toolbar {
-                Button("Add Artist") {
+                Button("Add Author") {
                     showAddAuthorSheet.toggle()
                 }
                 .sheet(isPresented: $showAddAuthorSheet) {
-                    ChooseEntityView(entityType: .artist, isSourceItem: false, sourceItems: []) { artists, _ in
+                    ChooseEntityView(entityType: .artist, isSourceItem: false, sourceItems: []) { authors, _ in
                         if let source {
-                            for artist in artists {
-                                let newArtist = SourceAuthor(source: source, entity: artist as! Artist)
-                                if !sourceAuthors.contains(newArtist) {
-                                    newArtist.save()
-                                    sourceAuthors.append(newArtist)
+                            for author in authors {
+                                let newAuthor = SourceAuthor(source: source, entity: author as! Artist)
+                                if !sourceAuthors.contains(newAuthor) {
+                                    newAuthor.save()
+                                    sourceAuthors.append(newAuthor)
                                 } else {
                                     print("Already exists for that source")
                                 }
@@ -376,10 +365,22 @@ struct ExpandedSourceAuthorsView: View {
     }
     
     private func deleteEntity(_ indexSet: IndexSet) {
-        for index in indexSet {
+        for index: IndexSet.Element in indexSet {
             let entity = sourceAuthors[index]
             sourceAuthors.remove(at: index)
             entity.delete()
         }
     }
+}
+
+#Preview {
+    @Previewable @State var era = Source.example.era
+    @Previewable @State var year = Source.example.universeYear
+    @Previewable @State var fieldName = "Luke Skywalker"
+    
+    YearPicker(era: era, universeYear: $year)
+    FieldView(fieldName: "Name", info: $fieldName)
+    FieldVStack(fieldName: "Name", info: $fieldName)
+    //MultiFieldView(fieldName: "Affiliation", entities: Character.example.affiliations)
+    //MultiFieldVStack(fieldName: "Affiliation", entities: Character.example.affiliations)
 }

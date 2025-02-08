@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @State var username = ""
-    @State var fullName = ""
-    @State var website = ""
+    @State var username: String = ""
+    @State var fullName: String = ""
+    @State var website: String = ""
     
-    @State var isLoading = false
+    @State var isLoading: Bool = false
     
     var body: some View {
         NavigationStack {

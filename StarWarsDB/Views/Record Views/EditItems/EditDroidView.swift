@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditDroidView: View {
     @Bindable var droid: Droid
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State private var sourceDroids = [SourceDroid]()
     

@@ -49,7 +49,7 @@ class Character: Entity {
     }
     
     init(name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender?, firstAppearance: String?, comments: String? = nil) {
-        let id = UUID()
+        let id: UUID = UUID()
         self.aliases = aliases
         self.species = species
         self.homeworld = homeworld
@@ -61,12 +61,12 @@ class Character: Entity {
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id = try container.decode(UUID.self, forKey: .id)
-        let name = try container.decode(String.self, forKey: .name)
-        let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
-        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        let id: UUID = try container.decode(UUID.self, forKey: .id)
+        let name: String = try container.decode(String.self, forKey: .name)
+        let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
+        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
         
-        if let aliases = try container.decodeIfPresent([String].self, forKey: .aliases) {
+        if let aliases: [String] = try container.decodeIfPresent([String].self, forKey: .aliases) {
             self.aliases = aliases
         } else {
             self.aliases = []
@@ -80,13 +80,13 @@ class Character: Entity {
 //        } else {
 //            self.affiliations = []
 //        }
-        let nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
+        let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Character", tableName: "characters")
     }
     
     override func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
+        var container: KeyedEncodingContainer<Character.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
         try container.encode(name, forKey: .name)

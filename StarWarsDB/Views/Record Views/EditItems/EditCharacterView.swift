@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditCharacterView: View {
     @Bindable var character: Character
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State private var sourceCharacters = [SourceCharacter]()
     

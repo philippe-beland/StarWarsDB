@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditArcView: View {
     @Bindable var arc: Arc
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State private var sources = [SourceItem]()
     

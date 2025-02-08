@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddCharacterView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String
     @State private var aliases: [String] = []

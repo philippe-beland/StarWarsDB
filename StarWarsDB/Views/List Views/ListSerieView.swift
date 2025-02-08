@@ -11,7 +11,7 @@ struct ListSerieView: View {
     var sourceType: SourceType
     var series: [Serie]
     
-    @State private var searchText = ""
+    @State private var searchText: String = ""
     
     private var filteredSeries: [Serie] {
         series.filter {

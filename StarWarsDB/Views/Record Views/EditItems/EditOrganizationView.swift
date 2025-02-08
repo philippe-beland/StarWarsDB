@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditOrganizationView: View {
     @Bindable var organization: Organization
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State private var sourceOrganizations = [SourceOrganization]()
     

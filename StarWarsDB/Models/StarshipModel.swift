@@ -51,7 +51,7 @@ class StarshipModel: Entity {
     ///   - firstAppearance: First appearance in Star Wars media
     ///   - comments: Additional notes about the model
     init(name: String, classType: String?, line: String?, firstAppearance: String?, comments: String? = nil) {
-        let id = UUID()
+        let id: UUID = UUID()
         
         self.classType = classType ?? ""
         self.line = line ?? ""
@@ -63,15 +63,15 @@ class StarshipModel: Entity {
     /// - Parameter decoder: The decoder to read data from
     /// - Throws: An error if data reading fails
     required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let container: KeyedDecodingContainer<StarshipModel.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id = try container.decode(UUID.self, forKey: .id)
-        let name = try container.decode(String.self, forKey: .name)
+        let id: UUID = try container.decode(UUID.self, forKey: .id)
+        let name: String = try container.decode(String.self, forKey: .name)
         self.classType = try container.decodeIfPresent(String.self, forKey: .classType) ?? ""
         self.line = try container.decodeIfPresent(String.self, forKey: .line) ?? ""
-        let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
-        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
-        let nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
+        let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
+        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
+        let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Starship Model", tableName: "starship_models")
     }
@@ -80,7 +80,7 @@ class StarshipModel: Entity {
     /// - Parameter encoder: The encoder to write data to
     /// - Throws: An error if data writing fails
     override func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
+        var container: KeyedEncodingContainer<StarshipModel.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
         try container.encode(name, forKey: .name)
@@ -91,7 +91,7 @@ class StarshipModel: Entity {
     }
     
     /// An example starship model for previews and testing
-    static let example = StarshipModel(
+    static let example: StarshipModel = StarshipModel(
         name: "YT-1300",
         classType: "Starfighter",
         line: nil,
@@ -100,7 +100,7 @@ class StarshipModel: Entity {
     )
     
     /// An empty starship model for initialization
-    static let empty = StarshipModel(
+    static let empty: StarshipModel = StarshipModel(
         name: "",
         classType: nil,
         line: nil,

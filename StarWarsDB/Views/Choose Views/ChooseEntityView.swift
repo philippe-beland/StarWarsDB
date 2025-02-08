@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ChooseEntityView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     var entityType: EntityType
     var isSourceItem: Bool
     var serie: Serie?
     let sourceItems: [SourceItem]
     
-    @State private var searchText = ""
+    @State private var searchText: String = ""
     @State private var appearanceType: AppearanceType = .present
-    @State private var showNewEntitySheet = false
+    @State private var showNewEntitySheet: Bool = false
     @State private var entities = [Entity]()
     @State private var selectedEntities = Set<Entity>()
     

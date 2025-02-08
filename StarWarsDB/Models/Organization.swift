@@ -38,7 +38,7 @@ class Organization: Entity {
     ///   - firstAppearance: First appearance in Star Wars media
     ///   - comments: Additional notes about the organization
     init(name: String, firstAppearance: String?, comments: String?) {
-        let id = UUID()
+        let id: UUID = UUID()
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Organization", tableName: "organizations")
     }
@@ -47,13 +47,13 @@ class Organization: Entity {
     /// - Parameter decoder: The decoder to read data from
     /// - Throws: An error if data reading fails
     required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let container: KeyedDecodingContainer<Organization.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id = try container.decode(UUID.self, forKey: .id)
-        let name = try container.decode(String.self, forKey: .name)
-        let firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
-        let comments = try container.decodeIfPresent(String.self, forKey: .comments)
-        let nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
+        let id: UUID = try container.decode(UUID.self, forKey: .id)
+        let name: String = try container.decode(String.self, forKey: .name)
+        let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
+        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
+        let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
         super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Organization", tableName: "organizations")
     }
@@ -62,7 +62,7 @@ class Organization: Entity {
     /// - Parameter encoder: The encoder to write data to
     /// - Throws: An error if data writing fails
     override func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
+        var container: KeyedEncodingContainer<Organization.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
         try container.encode(name, forKey: .name)
@@ -71,14 +71,14 @@ class Organization: Entity {
     }
     
     /// An example organization for previews and testing
-    static let example = Organization(
+    static let example: Organization = Organization(
         name: "Alphabet Squadron",
         firstAppearance: nil,
         comments: "The best squadron ever"
     )
     
     /// An empty organization for initialization
-    static let empty = Organization(
+    static let empty: Organization = Organization(
         name: "",
         firstAppearance: nil,
         comments: nil
