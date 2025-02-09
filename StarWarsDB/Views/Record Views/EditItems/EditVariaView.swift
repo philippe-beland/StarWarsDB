@@ -24,7 +24,7 @@ struct EditVariaView: View {
         }
     
     private func loadInitialSources() async {
-        sourceVarias = await loadSourceVarias(recordField: "varia", recordID: varia.id)
+        sourceVarias = await loadVariaSources(variaID: varia.id)
     }
 }
 

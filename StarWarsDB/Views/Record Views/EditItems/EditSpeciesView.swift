@@ -24,7 +24,7 @@ struct EditSpeciesView: View {
         }
     
     private func loadInitialSources() async {
-        sourceSpecies = await loadSourceSpecies(recordField: "species", recordID: species.id)
+        sourceSpecies = await loadSpeciesSources(speciesID: species.id)
     }
 }
 

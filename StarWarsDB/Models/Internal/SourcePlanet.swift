@@ -25,12 +25,12 @@ class SourcePlanet: SourceItem {
         case id
         /// Source material reference
         case source
-        /// Planet being referenced (named "planet" in JSON)
-        case entity = "planet"
+        /// Planet being referenced
+        case entity
         /// Type of appearance
         case appearance
         /// Number of appearances
-        case number = "total_appearances"
+        case number = "nb_appearances"
     }
     
     /// Creates a new source-planet relationship
@@ -54,12 +54,12 @@ class SourcePlanet: SourceItem {
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Planet.self, forKey: .entity)
         let _appearance = try container.decode(Int.self, forKey: .appearance)
-        //let number = try container.decode(Int.self, forKey: .number)
+        let number = try container.decodeIfPresent(Int.self, forKey: .number) ?? 0
         
         // Convert numeric appearance type to enum
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourcePlanets", tableName: "source_planets")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, number: number, recordType: "SourcePlanets", tableName: "source_planets")
     }
     
     /// Encodes the source-planet relationship into data for storage

@@ -22,12 +22,12 @@ class SourceDroid: SourceItem {
         case id
         /// Source material reference
         case source
-        /// Droid being referenced (named "droid" in JSON)
-        case entity = "droid"
+        /// Droid being referenced
+        case entity
         /// Type of appearance
         case appearance
         /// Number of appearances
-        case number = "total_appearances"
+        case number = "nb_appearances"
     }
     
     /// Creates a new source-droid relationship
@@ -51,12 +51,12 @@ class SourceDroid: SourceItem {
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Droid.self, forKey: .entity)
         let _appearance = try container.decode(Int.self, forKey: .appearance)
-        //let number = try container.decode(Int.self, forKey: .number)
+        let number = try container.decodeIfPresent(Int.self, forKey: .number) ?? 0
         
         // Convert numeric appearance type to enum
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceDroids", tableName: "source_droids")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, number: number, recordType: "SourceDroids", tableName: "source_droids")
     }
     
     /// Encodes the source-droid relationship into data for storage

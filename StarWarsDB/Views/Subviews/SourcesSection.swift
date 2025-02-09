@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A section that displays a list of sources by era.
 struct SourcesSection: View {
     var sourceItems: [SourceItem]
     
@@ -29,6 +30,7 @@ struct SourcesSection: View {
     }
 }
 
+/// A view that displays a list of sources by era.
 struct SourcesByEraView: View {
     let era: Era
     let items: [SourceItem]
@@ -51,7 +53,8 @@ struct SourcesByEraView: View {
         }
     }
 }
-          
+
+/// A view that displays the name and series information of a source        
 struct SourceNameView: View {
     let name: String
     let serie: Serie?
@@ -95,10 +98,14 @@ struct SourceRow: View {
     let sourceItem: SourceItem
     let oldest: Bool
     
-    private var formattedDate: String {
+    private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
-        return formatter.string(from: sourceItem.source.publicationDate)
+        return formatter
+    }()
+    
+    private var formattedDate: String {
+        Self.dateFormatter.string(from: sourceItem.source.publicationDate)
     }
     
     var body: some View {
@@ -117,18 +124,12 @@ struct SourceRow: View {
                 number: sourceItem.source.number,
                 oldest: oldest
                 )
-            
-            Spacer()
-            
+                       
             Text(formattedDate)
                 .font(.caption)
                 .foregroundColor(.secondary)
-
-            .font(.callout)
-            .multilineTextAlignment(.center)
-            .frame(width: 100, alignment: .center)
-            
-            Spacer()
+                .multilineTextAlignment(.center)
+                .frame(width: 100, alignment: .center)
 
             AppearanceView(appearance: sourceItem.appearance.rawValue)
                 .frame(width: 80, alignment: .center)

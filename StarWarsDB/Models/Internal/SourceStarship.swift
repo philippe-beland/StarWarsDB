@@ -25,12 +25,12 @@ class SourceStarship: SourceItem {
         case id
         /// Source material reference
         case source
-        /// Starship being referenced (named "starship" in JSON)
-        case entity = "starship"
+        /// Starship being referenced
+        case entity
         /// Type of appearance
         case appearance
         /// Number of appearances
-        case number = "total_appearances"
+        case number = "nb_appearances"
     }
     
     /// Creates a new source-starship relationship
@@ -54,12 +54,12 @@ class SourceStarship: SourceItem {
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Starship.self, forKey: .entity)
         let _appearance = try container.decode(Int.self, forKey: .appearance)
-        //let number = try container.decode(Int.self, forKey: .number)
+        let number = try container.decodeIfPresent(Int.self, forKey: .number) ?? 0
         
         // Convert numeric appearance type to enum
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceStarships", tableName: "source_starships")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, number: number, recordType: "SourceStarships", tableName: "source_starships")
     }
     
     /// Encodes the source-starship relationship into data for storage

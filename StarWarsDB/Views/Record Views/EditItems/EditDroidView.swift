@@ -24,7 +24,7 @@ struct EditDroidView: View {
         }
     
     private func loadInitialSources() async {
-        sourceDroids = await loadSourceDroids(recordField: "droid", recordID: droid.id)
+        sourceDroids = await loadDroidSources(droidID: droid.id)
     }
 }
 

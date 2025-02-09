@@ -26,7 +26,7 @@ struct EditCharacterView: View {
     }
     
     private func loadInitialSources() async {
-        sourceCharacters = await loadSourceCharacters(recordField: "character", recordID: character.id)
+        sourceCharacters = await loadCharacterSources(characterID: character.id)
     }
 }
 

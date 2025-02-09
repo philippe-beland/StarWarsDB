@@ -25,12 +25,12 @@ class SourceOrganization: SourceItem {
         case id
         /// Source material reference
         case source
-        /// Organization being referenced (named "organization" in JSON)
-        case entity = "organization"
+        /// Organization being referenced
+        case entity
         /// Type of appearance
         case appearance
         /// Number of appearances
-        case number = "total_appearances"
+        case number = "nb_appearances"
     }
     
     /// Creates a new source-organization relationship
@@ -54,12 +54,12 @@ class SourceOrganization: SourceItem {
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Organization.self, forKey: .entity)
         let _appearance = try container.decode(Int.self, forKey: .appearance)
-        //let number = try container.decode(Int.self, forKey: .number)
+        let number = try container.decodeIfPresent(Int.self, forKey: .number) ?? 0
         
         // Convert numeric appearance type to enum
         let appearance = AppearanceType(rawValue: _appearance.description) ?? .present
         
-        super.init(id: id, source: source, entity: entity, appearance: appearance, recordType: "SourceOrganizations", tableName: "source_organizations")
+        super.init(id: id, source: source, entity: entity, appearance: appearance, number: number, recordType: "SourceOrganizations", tableName: "source_organizations")
     }
     
     /// Encodes the source-organization relationship into data for storage

@@ -20,7 +20,8 @@ struct RecordEntryView: View {
                 .foregroundStyle(.secondary)
             
             Text(sourceItem.entity.name)
-                //.foregroundStyle(sourceItem.number > 1 ? .primary :.secondary)
+                .foregroundStyle(sourceItem.number > 1 ? .primary :.secondary)
+                .font(sourceItem.number > 1 ? .body : .subheadline)
             Spacer()
             AppearanceView(appearance: sourceItem.appearance.rawValue)
             

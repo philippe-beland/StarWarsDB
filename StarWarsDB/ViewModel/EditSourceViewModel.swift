@@ -120,17 +120,17 @@ class EditSourceViewModel: ObservableObject {
     }
 
     func loadInitialSources() async {
-        async let characters = loadSourceCharacters(recordField: "source", recordID: source.id)
-        async let creatures = loadSourceCreatures(recordField: "source", recordID: source.id)
-        async let droids = loadSourceDroids(recordField: "source", recordID: source.id)
-        async let organizations = loadSourceOrganizations(recordField: "source", recordID: source.id)
-        async let planets = loadSourcePlanets(recordField: "source", recordID: source.id)
-        async let species = loadSourceSpecies(recordField: "source", recordID: source.id)
-        async let starships = loadSourceStarships(recordField: "source", recordID: source.id)
-        async let starshipModels = loadSourceStarshipModels(recordField: "source", recordID: source.id)
-        async let varias = loadSourceVarias(recordField: "source", recordID: source.id)
-        async let artists = loadSourceArtists(recordField: "source", recordID: source.id)
-        async let authors = loadSourceAuthors(recordField: "source", recordID: source.id)
+        async let characters = loadSourceCharacters(sourceID: source.id)
+        async let creatures = loadSourceCreatures(sourceID: source.id)
+        async let droids = loadSourceDroids(sourceID: source.id)
+        async let organizations = loadSourceOrganizations(sourceID: source.id)
+        async let planets = loadSourcePlanets(sourceID: source.id)
+        async let species = loadSourceSpecies(sourceID: source.id)
+        async let starships = loadSourceStarships(sourceID: source.id)
+        async let starshipModels = loadSourceStarshipModels(sourceID: source.id)
+        async let varias = loadSourceVarias(sourceID: source.id)
+        async let artists = loadSourceArtists(recordID: source.id)
+        async let authors = loadSourceAuthors(recordID: source.id)
 
         sourceItems.characters = await characters
         sourceItems.creatures = await creatures
