@@ -77,10 +77,6 @@ struct EditVEntityInfoView: View {
     @State private var showEntitySelection: Bool = false
     
     var body: some View {
-        VStack {
-            Text("\(fieldName):")
-                .font(.footnote)
-                .bold()
             Button {
                 showEntitySelection.toggle()
             } label: {
@@ -92,7 +88,6 @@ struct EditVEntityInfoView: View {
                 }
             }
             .buttonStyle(PlainButtonStyle())
-        }
         .sheet(isPresented: $showEntitySelection) {
             ChooseEntityView(entityType: entityType, isSourceItem: false, sourceItems: []) { selectedEntities, _ in
                 guard let selectedEntity = selectedEntities.first else { return }
@@ -139,7 +134,6 @@ struct YearPicker: View {
     
     var body: some View {
         VStack {
-            Text("In-Universe Year")
             Slider(value: $universeYear,
                    in: era.minimum...era.maximum,
                    step: 1,
@@ -158,12 +152,9 @@ struct PublicationDatePicker: View {
     @Binding var date: Date
     
     var body: some View {
-        VStack {
-            Text("Publication Date")
-            DatePicker("Publication Date", selection: $date, displayedComponents: [.date])
-                .datePickerStyle(.compact)
-                .labelsHidden()
-        }
+        DatePicker("Publication Date", selection: $date, displayedComponents: [.date])
+            .datePickerStyle(.compact)
+            .labelsHidden()
     }
 }
 
@@ -171,13 +162,10 @@ struct EraPicker: View {
     @Binding var era: Era
     
     var body: some View {
-        VStack(spacing: 0) {
-            Text("Era")
-            Picker(selection: $era, label: Text("Era").font(.footnote).bold()) {
-                ForEach(Era.allCases, id: \.self) {
-                    Text($0.rawValue)
-                        .font(.footnote)
-                }
+        Picker(selection: $era, label: Text("Era").font(.footnote).bold()) {
+            ForEach(Era.allCases, id: \.self) {
+                Text($0.rawValue)
+                    .font(.footnote)
             }
         }
     }
@@ -187,13 +175,10 @@ struct SourceTypePicker: View {
     @Binding var sourceType: SourceType
     
     var body: some View {
-        VStack(spacing: 0) {
-            Text("Source Type")
-            Picker(selection: $sourceType, label: Text("Source Type").font(.footnote).bold()) {
-                ForEach(SourceType.allCases, id: \.self) {
-                    Text($0.rawValue)
-                        .font(.footnote)
-                }
+        Picker(selection: $sourceType, label: Text("Source Type").font(.footnote).bold()) {
+            ForEach(SourceType.allCases, id: \.self) {
+                Text($0.rawValue)
+                    .font(.footnote)
             }
         }
     }

@@ -55,6 +55,7 @@ struct EditSourceView: View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 16) {
                 SourceHeaderSection(source: $viewModel.source, showFactSheet: $showFactSheet)
+                    .padding(.horizontal, 20)
                 SourceInfoSection(infosSection: infosSection)
                 SourcesAppearancesSection(
                     sourceItems: $viewModel.sourceItems,
@@ -62,8 +63,9 @@ struct EditSourceView: View {
                     serie: viewModel.source.serie,
                     onAddEntity: viewModel.addSourceItem
                 )
+                .padding(.top, 16)
             }
-            .padding(.vertical)
+            .navigationBarTitleDisplayMode(.inline)
         }
         .task { await viewModel.loadInitialSources() }
         .toolbar {
@@ -130,12 +132,19 @@ private struct SourceInfoSection: View {
     let infosSection: [InfoSection]
     
     var body: some View {
-        ScrollView(.horizontal) {
-            HStack {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 16) {
                 ForEach(infosSection) { info in
-                    info.view
-                        .font(.caption)
-                        .padding(.horizontal)
+                    VStack(alignment: .leading) {
+                        Text(info.fieldName)
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                        info.view
+                            .frame(minWidth: 120)
+                    }
+                    .padding(12)
+                    .background(Color(UIColor.secondarySystemBackground))
+                    .cornerRadius(10)
                 }
             }
         }
@@ -148,6 +157,7 @@ struct SourcesAppearancesSection: View {
     @Binding var activeSheet: ActiveSheet?
     var serie: Serie?
     let onAddEntity: (EntityType, Entity, AppearanceType) -> Void
+    @State private var refreshID = UUID()
     
     var body: some View {
         VStack {
@@ -164,6 +174,7 @@ struct SourcesAppearancesSection: View {
                             sourceItems: getSourceItemsBinding(for: entityType),
                             entityType: entityType
                         )
+                        .id(refreshID)
                     }
                 }
             }
@@ -191,6 +202,9 @@ struct SourcesAppearancesSection: View {
                 }
             case .expandedSheet(let type):
                 ExpandedSourceItemView(sourceItems: getSourceItemsBinding(for: type), entityType: type)
+                    .onDisappear {
+                        refreshID = UUID()
+                    }
             }
         }
     }
@@ -225,47 +239,83 @@ struct SourcesAppearancesSection: View {
         case .character:
             return Binding(
                 get: { sourceItems.characters as [SourceItem] },
-                set: { newItems in sourceItems.characters = newItems.compactMap { $0 as? SourceCharacter } }
+                set: { newItems in
+                    var updatedCollection = sourceItems
+                    updatedCollection.characters = newItems.compactMap { $0 as? SourceCharacter }
+                    sourceItems = updatedCollection
+                }
             )
         case .droid:
             return Binding(
                 get: { sourceItems.droids as [SourceItem] },
-                set: { newItems in sourceItems.droids = newItems.compactMap { $0 as? SourceDroid } }
+                set: { newItems in
+                    var updatedCollection = sourceItems
+                    updatedCollection.droids = newItems.compactMap { $0 as? SourceDroid }
+                    sourceItems = updatedCollection
+                }
             )
         case .creature:
             return Binding(
                 get: { sourceItems.creatures as [SourceItem] },
-                set: { newItems in sourceItems.creatures = newItems.compactMap { $0 as? SourceCreature } }
+                set: { newItems in
+                    var updatedCollection = sourceItems
+                    updatedCollection.creatures = newItems.compactMap { $0 as? SourceCreature }
+                    sourceItems = updatedCollection
+                }
             )
         case .organization:
             return Binding(
                 get: { sourceItems.organizations as [SourceItem] },
-                set: { newItems in sourceItems.organizations = newItems.compactMap { $0 as? SourceOrganization } }
+                set: { newItems in
+                    var updatedCollection = sourceItems
+                    updatedCollection.organizations = newItems.compactMap { $0 as? SourceOrganization }
+                    sourceItems = updatedCollection
+                }
             )
         case .planet:
             return Binding(
                 get: { sourceItems.planets as [SourceItem] },
-                set: { newItems in sourceItems.planets = newItems.compactMap { $0 as? SourcePlanet } }
+                set: { newItems in
+                    var updatedCollection = sourceItems
+                    updatedCollection.planets = newItems.compactMap { $0 as? SourcePlanet }
+                    sourceItems = updatedCollection
+                }
             )
         case .species:
             return Binding(
                 get: { sourceItems.species as [SourceItem] },
-                set: { newItems in sourceItems.species = newItems.compactMap { $0 as? SourceSpecies } }
+                set: { newItems in
+                    var updatedCollection = sourceItems
+                    updatedCollection.species = newItems.compactMap { $0 as? SourceSpecies }
+                    sourceItems = updatedCollection
+                }
             )
         case .starshipModel:
             return Binding(
                 get: { sourceItems.starshipModels as [SourceItem] },
-                set: { newItems in sourceItems.starshipModels = newItems.compactMap { $0 as? SourceStarshipModel } }
+                set: { newItems in
+                    var updatedCollection = sourceItems
+                    updatedCollection.starshipModels = newItems.compactMap { $0 as? SourceStarshipModel }
+                    sourceItems = updatedCollection
+                }
             )
         case .starship:
             return Binding(
                 get: { sourceItems.starships as [SourceItem] },
-                set: { newItems in sourceItems.starships = newItems.compactMap { $0 as? SourceStarship } }
+                set: { newItems in
+                    var updatedCollection = sourceItems
+                    updatedCollection.starships = newItems.compactMap { $0 as? SourceStarship }
+                    sourceItems = updatedCollection
+                }
             )
         case .varia:
             return Binding(
                 get: { sourceItems.varias as [SourceItem] },
-                set: { newItems in sourceItems.varias = newItems.compactMap { $0 as? SourceVaria } }
+                set: { newItems in
+                    var updatedCollection = sourceItems
+                    updatedCollection.varias = newItems.compactMap { $0 as? SourceVaria }
+                    sourceItems = updatedCollection
+                }
             )
         default:
             return .constant([]) // Return an empty, immutable Binding for unsupported cases
@@ -317,6 +367,7 @@ private struct EntitySectionHeader: View {
 struct ExpandedSourceItemView: View {
     @Binding var sourceItems: [SourceItem]
     var entityType: EntityType
+    @State private var refreshID = UUID()
     
     private var sortedEntities: [SourceItem] {
         sourceItems.sorted(by: { $0.entity.name < $1.entity.name })
@@ -327,9 +378,10 @@ struct ExpandedSourceItemView: View {
             List {
                 ForEach(sortedEntities) { sourceItem in
                     RecordEntryView(sourceItem: sourceItem)
-                    .contextMenu {
-                        appearanceContextMenu(for: sourceItem)
-                    }
+                        .id(refreshID)
+                        .contextMenu {
+                            appearanceContextMenu(for: sourceItem)
+                        }
                 }
                 .onDelete(perform: deleteEntity)
             }
@@ -339,20 +391,20 @@ struct ExpandedSourceItemView: View {
     
     private func appearanceContextMenu(for sourceItem: SourceItem) -> some View {
         Group {
-            Button(AppearanceType.present.description) { updateAppearance(of: sourceItem, to: .present) }
-            Button(AppearanceType.mentioned.description) { updateAppearance(of: sourceItem, to: .mentioned) }
-            Button(AppearanceType.flashback.description) { updateAppearance(of: sourceItem, to: .flashback) }
-            Button(AppearanceType.vision.description) { updateAppearance(of: sourceItem, to: .vision) }
-            Button(AppearanceType.image.description) { updateAppearance(of: sourceItem, to: .image)}
-            Button(AppearanceType.indirectMentioned.description) { updateAppearance(of: sourceItem, to: .indirectMentioned)}
+            ForEach(AppearanceType.allCases, id: \.self) { appearance in
+                Button(appearance.description) {
+                    updateAppearance(of: sourceItem, to: appearance)
+                }
+            }
         }
     }
     
     private func updateAppearance(of sourceItem: SourceItem, to appearance: AppearanceType) {
         if let index = sourceItems.firstIndex(where: { $0.id == sourceItem.id }) {
             sourceItems[index].appearance = appearance
+            sourceItem.update()
+            refreshID = UUID()
         }
-        sourceItem.update()
     }
     
     private func deleteEntity(_ indexSet: IndexSet) {
