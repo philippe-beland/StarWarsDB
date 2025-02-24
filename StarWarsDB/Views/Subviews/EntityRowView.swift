@@ -51,7 +51,7 @@ struct EntityRowView: View {
     private func detail(for entityType: EntityType, entity: any Record) -> String? {
         switch entityType {
         case .character:
-            return (entity as? Character)?.species?.name
+            return (entity as? Character).flatMap { "\($0.species?.name ?? ""), \($0.gender)" }
         case .planet:
             return (entity as? Planet)?.capitalCity
         case .species:

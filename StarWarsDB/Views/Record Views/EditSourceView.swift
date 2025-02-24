@@ -188,7 +188,9 @@ struct SourcesAppearancesSection: View {
                         if type == .character && appearance != .mentioned {
                             if let character = selectedEntity as? Character {
                                 if let species = character.species {
-                                    onAddEntity(.species, species, appearance)
+                                    if species.name.lowercased() != "droid" {
+                                        onAddEntity(.species, species, appearance)
+                                    }
                                 }
                             }
                         } else if type == .starship && appearance != .mentioned {
