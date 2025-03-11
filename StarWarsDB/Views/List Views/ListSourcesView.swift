@@ -14,6 +14,7 @@ struct ListSourcesView: View {
     @State private var sortOrder: SortingSourceOrder = .publicationDate
     @StateObject var searchContext = SearchContext()
     @State private var isDoneFilter: Bool = false
+    @State private var isHRFilter: Bool = false
     @State private var showNewSourceSheet: Bool = false
     @State private var sources: [Source] = []
     
@@ -41,25 +42,26 @@ struct ListSourcesView: View {
         .onChange(of: selectedView) { handleParameterChange() }
         .onChange(of: sortOrder) { handleParameterChange() }
         .onChange(of: isDoneFilter) { handleParameterChange() }
+        .onChange(of: isHRFilter) { handleParameterChange() }
         .task { await loadInitialSources() }
     }
     
     private func handleParameterChange() {
         Task {
-            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
+            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, isHR: isHRFilter, filter: searchContext.debouncedQuery)
         }
     }
     
     private func handleSearchTextChange() {
         Task {
             if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count > 3 {
-                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
+                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, isHR: isHRFilter, filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialSources() async {
-        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
+        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, isHR: isHRFilter, filter: searchContext.debouncedQuery)
     }
     
     private func deleteSource(_ source: Source) {
@@ -90,6 +92,10 @@ struct ListSourcesView: View {
         }
         ToolbarItem(placement: .topBarLeading) {
             Toggle("ToDo", isOn: $isDoneFilter)
+                .toggleStyle(ButtonToggleStyle())
+        }
+        ToolbarItem(placement: .topBarLeading) {
+            Toggle("High Republic", isOn: $isHRFilter)
                 .toggleStyle(ButtonToggleStyle())
         }
     }

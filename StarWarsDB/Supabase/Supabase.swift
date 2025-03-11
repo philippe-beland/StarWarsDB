@@ -46,7 +46,7 @@ func loadEntities(serie: Serie? = nil, entityType: EntityType, sort: SortingItem
     return entities
 }
 
-func loadSources(sort: String, sourceType: SourceType, serie: Serie?, isDone: Bool, filter: String = "") async -> [Source] {
+func loadSources(sort: String, sourceType: SourceType, serie: Serie?, isDone: Bool, isHR: Bool, filter: String = "") async -> [Source] {
     var sources: [Source] = []
     
     do {
@@ -64,6 +64,10 @@ func loadSources(sort: String, sourceType: SourceType, serie: Serie?, isDone: Bo
         
         if isDone {
             query = query.eq("is_done", value: false)
+        }
+        
+        if isHR {
+            query = query.eq("era", value: "High Republic")
         }
         
         if !filter.isEmpty {
