@@ -21,8 +21,14 @@ struct EntityRowView: View {
                 .foregroundStyle(.secondary)
             
             VStack(alignment: .leading) {
-                Text(entity.name)
-                    .bold()
+                if let specificEntity = entity as? Entity {
+                    Text(specificEntity.name)
+                        .foregroundColor(specificEntity.isExisting ? .gray : .primary)
+                        .bold()
+                } else {
+                    Text(entity.name)
+                        .bold()
+                }
                 if let subtitle = subtitle(for: entityType, entity: entity) {
                     Text(subtitle)
                         .font(.caption)
@@ -31,8 +37,14 @@ struct EntityRowView: View {
             }
             Spacer()
             if let detail = detail(for: entityType, entity: entity) {
-                Text(detail)
-                    .font(.callout)
+                if let specificEntity = entity as? Entity {
+                    Text(detail)
+                        .foregroundColor(specificEntity.isExisting ? .gray : .primary)
+                        .font(.callout)
+                } else {
+                    Text(detail)
+                        .font(.callout)
+                }
             }
         }
     }

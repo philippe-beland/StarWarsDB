@@ -20,11 +20,24 @@ struct ChooseEntityView: View {
     @State private var entities = [Entity]()
     @State private var selectedEntities = Set<Entity>()
     
-    var existingEntities: [Entity] {
-        sourceItems.map { $0.entity }
+    var existingEntities: Set<Entity> {
+        Set(sourceItems.map { $0.entity })
     }
     var filteredEntities: [Entity] {
-        entities.filter { !existingEntities.contains($0) }
+        let existingSet = Set(existingEntities.map { $0.id })
+        
+        if searchContext.query.count < 3 {
+            return entities.filter { !existingEntities.contains($0) }
+        }
+        else {
+            return entities.map {entity in
+                let newEntity = entity
+                if existingSet.contains(entity.id) {
+                    newEntity.isExisting = true
+                }
+                return newEntity
+            }
+        }
     }
     
     var onEntitySelect: (Set<Entity>, AppearanceType) -> Void
@@ -57,7 +70,7 @@ struct ChooseEntityView: View {
     
     private func handleSearchTextChange() {
         Task {
-            if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count > 2 {
+            if searchContext.debouncedQuery.isEmpty || searchContext.debouncedQuery.count > 2 {
                 entities = await loadEntities(serie: serie, entityType: entityType, sort: .name, filter: searchContext.debouncedQuery)
             }
         }

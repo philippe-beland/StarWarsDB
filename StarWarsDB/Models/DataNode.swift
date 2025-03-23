@@ -150,6 +150,8 @@ class Entity: DataNode, Record {
     /// First appearance in Star Wars media
     var firstAppearance: String
     
+    var isExisting: Bool = false
+    
     /// Wookieepedia URL for this entity
     var url: String {
         "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")

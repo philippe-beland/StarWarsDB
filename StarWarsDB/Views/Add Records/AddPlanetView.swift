@@ -11,7 +11,7 @@ struct AddPlanetView: View {
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String
-    @State private var region: Region = .outerRim
+    @State private var region: Region = .unknown
     @State private var sector: String = ""
     @State private var system: String = ""
     @State private var capitalCity: String = ""
