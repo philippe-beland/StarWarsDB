@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ChooseEntitiesView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     var entityType: EntityType
     
-    @State private var searchText = ""
-    @State private var showNewEntitySheet = false
+    @StateObject var searchContext = SearchContext()
+    @State private var showNewEntitySheet: Bool = false
     @State private var appearanceType: AppearanceType = .present
     @State private var entities = [Entity]()
     @State private var selectedEntities = Set<Entity>()
@@ -28,7 +28,7 @@ struct ChooseEntitiesView: View {
                 List(entities, id: \.self, selection: $selectedEntities) { entity in
                     EntityRowView(entityType: entityType, entity: entity )
                 }
-                .searchable(text: $searchText, prompt: "Search")
+                .searchable(text: $searchContext.query, prompt: "Search")
                 .navigationTitle(entityType.rawValue)
                 .toolbar{ ToolbarContent }
             }
@@ -38,14 +38,14 @@ struct ChooseEntitiesView: View {
             }
             .buttonStyle(.borderedProminent)
         }
-        .onChange(of: searchText) { handleSearchTextChange() }
+        .onChange(of: searchContext.debouncedQuery) { handleSearchTextChange() }
         .task { await loadInitialEntities() }
     }
     
     private func handleSearchTextChange() {
         Task {
-            if !searchText.isEmpty && searchText.count > 3 {
-                entities = await loadEntities(entityType: entityType, sort: .name, filter: searchText)
+            if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count > 2 {
+                entities = await loadEntities(entityType: entityType, sort: .name, filter: searchContext.debouncedQuery)
             }
         }
     }

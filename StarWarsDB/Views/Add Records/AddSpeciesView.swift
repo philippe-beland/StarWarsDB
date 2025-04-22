@@ -1,5 +1,5 @@
 //
-//  AddStarshipView.swift
+//  AddSpeciesView.swift
 //  StarWarsDB
 //
 //  Created by Philippe Beland on 12/24/24.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct AddStarshipView: View {
-    @Environment(\.dismiss) var dismiss
+struct AddSpeciesView: View {
+    @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var name: String = ""
-    @State private var model: StarshipModel?
+    @State var name: String
+    @State private var homeworld: Planet?
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onStarshipCreation: (Entity) -> Void
+    var onSpeciesCreation: (Entity) -> Void
     
     var body: some View {
         NavigationStack{
@@ -24,32 +24,32 @@ struct AddStarshipView: View {
                     .font(.title.bold())
                     .padding()
                 Form {
-                    Section("Starship Infos") {
+                    Section("Species Infos") {
                         EditEntityInfoView(
-                            fieldName: "Model",
+                            fieldName: "Homeworld",
                             entity: Binding(
-                                get: {model ?? StarshipModel.empty },
-                                set: {model = ($0 as! StarshipModel) }),
-                            entityType: .starshipModel)
+                                get: {homeworld ?? Planet.empty },
+                                set: {homeworld = ($0 as! Planet) }),
+                            entityType: .planet)
                         FieldView(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     
                     Section {
-                        Button("Save", action: saveStarship)
+                        Button("Save", action: saveSpecies)
                             .disabled(name.isEmpty)
                     }
                 }
             }
         }
-        .navigationTitle("Add new Starship")
+        .navigationTitle("Add new Species")
         .navigationBarTitleDisplayMode(.inline)
     }
     
-    private func saveStarship() {
-        let newStarship = Starship(name: name, model: model, firstAppearance: firstAppearance, comments: comments)
-        newStarship.save()
-        onStarshipCreation(newStarship)
+    private func saveSpecies() {
+        let newSpecies = Species(name: name, homeworld: homeworld, firstAppearance: firstAppearance, comments: comments)
+        newSpecies.save()
+        onSpeciesCreation(newSpecies)
         dismiss()
     }
 }

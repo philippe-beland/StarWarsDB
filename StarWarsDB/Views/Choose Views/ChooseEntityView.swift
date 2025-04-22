@@ -8,29 +8,53 @@
 import SwiftUI
 
 struct ChooseEntityView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     var entityType: EntityType
     var isSourceItem: Bool
+    var serie: Serie?
+    let sourceItems: [SourceItem]
     
-    @State private var searchText = ""
+    @StateObject var searchContext = SearchContext()
     @State private var appearanceType: AppearanceType = .present
-    @State private var showNewEntitySheet = false
+    @State private var showNewEntitySheet: Bool = false
     @State private var entities = [Entity]()
     @State private var selectedEntities = Set<Entity>()
+    
+    var existingEntities: Set<Entity> {
+        Set(sourceItems.map { $0.entity })
+    }
+    var filteredEntities: [Entity] {
+        let existingSet = Set(existingEntities.map { $0.id })
+        
+        if searchContext.query.count < 3 {
+            return entities.filter { !existingEntities.contains($0) }
+        }
+        else {
+            return entities.map {entity in
+                let newEntity = entity
+                if existingSet.contains(entity.id) {
+                    newEntity.isExisting = true
+                }
+                return newEntity
+            }
+        }
+    }
     
     var onEntitySelect: (Set<Entity>, AppearanceType) -> Void
     
     var body: some View {
         VStack {
-            if isSourceItem {
-                AppearancePickerView(appearance: $appearanceType)
-            }
-            
             NavigationStack {
-                List(entities, id: \.self, selection: $selectedEntities) { entity in
+                AppearancePickerView(appearance: $appearanceType)
+                TextField("Search", text: $searchContext.query)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .padding(.horizontal)
+                
+                List(filteredEntities, id: \.self, selection: $selectedEntities) { entity in
                     EntityRowView(entityType: entityType, entity: entity)
                 }
-                .searchable(text: $searchText, prompt: "Search")
                 .navigationTitle(entityType.rawValue)
                 .toolbar { ToolbarContent }
             }
@@ -40,20 +64,20 @@ struct ChooseEntityView: View {
             }
             .buttonStyle(.borderedProminent)
         }
-        .onChange(of: searchText)  { handleSearchTextChange() }
+        .onChange(of: searchContext.debouncedQuery)  { handleSearchTextChange() }
         .task { await loadInitialEntities() }
     }
     
     private func handleSearchTextChange() {
         Task {
-            if !searchText.isEmpty && searchText.count > 3 {
-                entities = await loadEntities(entityType: entityType, sort: .name, filter: searchText)
+            if searchContext.debouncedQuery.isEmpty || searchContext.debouncedQuery.count > 2 {
+                entities = await loadEntities(serie: serie, entityType: entityType, sort: .name, filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialEntities() async {
-        entities = await loadEntities(entityType: entityType, sort: .name, filter: searchText)
+        entities = await loadEntities(serie: serie, entityType: entityType, sort: .name, filter: searchContext.debouncedQuery)
     }
     
     
@@ -70,28 +94,33 @@ struct ChooseEntityView: View {
             }
             .sheet(isPresented: $showNewEntitySheet) {
                 switch entityType {
-                case .character: AddCharacterView() { entity in
-                    entities.append(entity)}
-                case .creature: AddCreatureView() { entity in
-                    entities.append(entity)}
-                case .droid: AddDroidView() { entity in
-                    entities.append(entity)}
-                case .organization: AddOrganizationView() { entity in
-                    entities.append(entity)}
-                case .planet: AddPlanetView() { entity in
-                    entities.append(entity)}
-                case .species: AddSpeciesView() { entity in
-                    entities.append(entity)}
-                case .starshipModel: AddStarshipModelView() { entity in
-                    entities.append(entity)}
-                case .starship: AddStarshipView() { entity in
-                    entities.append(entity)}
-                case .varia: AddVariaView() { entity in
-                    entities.append(entity)}
-                case .serie: AddSerieView() { entity in
-                    entities.append(entity)}
-                case .arc: AddArcView() { entity in
-                    entities.append(entity)}
+                    case .character: AddCharacterView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .creature: AddCreatureView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .droid: AddDroidView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .organization: AddOrganizationView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .planet: AddPlanetView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .species: AddSpeciesView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .starshipModel: AddStarshipModelView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .starship: AddStarshipView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .varia: AddVariaView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .serie: AddSerieView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .arc: AddArcView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .artist: AddArtistView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)}
+                    case .author: AddArtistView(name: searchContext.debouncedQuery) { entity in
+                        entities.append(entity)
+                    }
                 }
             }
         }

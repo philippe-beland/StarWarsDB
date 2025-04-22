@@ -1,5 +1,5 @@
 //
-//  AddOrganizationView.swift
+//  AddDroidView.swift
 //  StarWarsDB
 //
 //  Created by Philippe Beland on 12/24/24.
@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct AddOrganizationView: View {
-    @Environment(\.dismiss) var dismiss
+struct AddDroidView: View {
+    @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var name: String = ""
+    @State var name: String
+    @State private var classType: String = ""
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onOrganizationCreation: (Entity) -> Void
+    var onDroidCreation: (Entity) -> Void
     
     var body: some View {
         NavigationStack{
@@ -22,27 +23,29 @@ struct AddOrganizationView: View {
                 TextField("Name", text: $name)
                     .font(.title.bold())
                     .padding()
+                
                 Form {
-                    Section("Organization Infos") {
+                    Section("Droid Infos") {
+                        FieldView(fieldName: "Class Type", info: $classType)
                         FieldView(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     
                     Section {
-                        Button("Save", action: saveOrganization)
+                        Button("Save", action: saveDroid)
                             .disabled(name.isEmpty)
                     }
                 }
             }
         }
-        .navigationTitle("Add new Organization")
+        .navigationTitle("Add new Droid")
         .navigationBarTitleDisplayMode(.inline)
     }
     
-    private func saveOrganization() {
-        let newOrganization = Organization(name: name, firstAppearance: firstAppearance, comments: comments)
-        newOrganization.save()
-        onOrganizationCreation(newOrganization)
+    private func saveDroid() {
+        let newDroid = Droid(name: name, classType: classType, firstAppearance: firstAppearance, comments: comments)
+        newDroid.save()
+        onDroidCreation(newDroid)
         dismiss()
     }
 }

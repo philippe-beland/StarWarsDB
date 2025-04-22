@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct AddSourceView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var name: String = ""
+    @State var name: String = ""
     @State private var serie: Serie?
     @State private var number: Int?
     @State private var arc: Arc?
@@ -39,6 +39,13 @@ struct AddSourceView: View {
                                 get: {serie ?? Serie.empty },
                                 set: {serie = ($0 as! Serie) }),
                             entityType: .serie)
+                        HStack {
+                            Text("Number:")
+                                .font(.footnote)
+                                .bold()
+                            Spacer()
+                            TextField("Number", value: $number, format: .number)
+                        }
                         EditEntityInfoView(
                             fieldName: "Arc",
                             entity: Binding(
@@ -47,16 +54,17 @@ struct AddSourceView: View {
                             entityType: .arc)
                         EraPicker(era: $era)
                         SourceTypePicker(sourceType: $sourceType)
+                        PublicationDatePicker(date: $publicationDate)
                         YearPicker(era: era, universeYear: $universeYear)
-//                        ArtistsVStack(fieldName: "Authors", entities: sortedAuthors)
-//                        ArtistsVStack(fieldName: "Artists", entities: sortedArtists)
+                        //AuthorsVStack(fieldName: "Authors")
+                        //ArtistsVStack(fieldName: "Artists")
                         Text(numberPages?.description ?? "")
                     }
                     
                     CommentsView(comments: $comments)
                     Section {
                         Button("Save", action: saveSource)
-                            .disabled(name.isEmpty)
+                            .disabled(name.isEmpty && number == nil)
                     }
                 }
                 .navigationTitle("Add New Source")

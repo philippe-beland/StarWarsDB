@@ -18,10 +18,13 @@ struct EditStarshipModelView: View {
             RecordContentView(record: starshipModel, sourceItems: sourceStarshipModels, InfosSection: StarshipModelInfoSection(starshipModel: starshipModel))
             }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: starshipModel.update)
+        }
         }
     
     private func loadInitialSources() async {
-        sourceStarshipModels = await loadSourceStarshipModels(recordField: "starship_model", recordID: starshipModel.id.uuidString)
+        sourceStarshipModels = await loadStarshipModelSources(starshipModelID: starshipModel.id)
     }
 }
 

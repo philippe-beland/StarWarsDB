@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct RecordContentView<Content: View>: View {
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
     @Bindable var record: Entity
+    
     var sourceItems: [SourceItem]
     var InfosSection: Content
     
     var body: some View {
         VStack(spacing: 0) {
-            HeaderView(name: record.name, urlString: record.url)
+            HeaderView(name: $record.name, urlString: record.url)
             
             if horizontalSizeClass == .regular {
                 HStack {

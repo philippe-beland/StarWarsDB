@@ -18,11 +18,14 @@ struct EditPlanetView: View {
             RecordContentView(record: planet, sourceItems: sourcePlanets, InfosSection: PlanetInfoSection(planet: planet))
             }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: planet.update)
+        }
         }
 
     
     private func loadInitialSources() async {
-        sourcePlanets = await loadSourcePlanets(recordField: "planet", recordID: planet.id.uuidString)
+        sourcePlanets = await loadPlanetSources(planetID: planet.id)
     }
 }
 

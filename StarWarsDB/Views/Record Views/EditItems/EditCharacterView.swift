@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditCharacterView: View {
     @Bindable var character: Character
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State private var sourceCharacters = [SourceCharacter]()
     
@@ -20,10 +20,13 @@ struct EditCharacterView: View {
             RecordContentView(record: character, sourceItems: sourceCharacters, InfosSection: CharacterInfoSection(character: character))
         }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: character.update)
+        }
     }
     
     private func loadInitialSources() async {
-        sourceCharacters = await loadSourceCharacters(recordField: "character", recordID: character.id.uuidString)
+        sourceCharacters = await loadCharacterSources(characterID: character.id)
     }
 }
 

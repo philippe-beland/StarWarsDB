@@ -131,7 +131,7 @@ struct StarshipInfoSection: View {
                 entity: Binding(
                     get: {starship.model ?? StarshipModel.empty },
                     set: {starship.model = ($0 as! StarshipModel) }),
-                entityType: .planet)
+                entityType: .starshipModel)
             FieldView(fieldName: "First Appearance", info: $starship.firstAppearance)
         }
     }

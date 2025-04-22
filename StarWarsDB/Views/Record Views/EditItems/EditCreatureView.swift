@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditCreatureView: View {
     @Bindable var creature: Creature
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State private var sourceCreatures = [SourceCreature]()
     
@@ -18,11 +18,14 @@ struct EditCreatureView: View {
             RecordContentView(record: creature, sourceItems: sourceCreatures, InfosSection: CreatureInfoSection(creature: creature))
             }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: creature.update)
+        }
         }
 
     
     private func loadInitialSources() async {
-        sourceCreatures = await loadSourceCreatures(recordField: "creature", recordID: creature.id.uuidString)
+        sourceCreatures = await loadCreatureSources(creatureID: creature.id)
     }
 }
 

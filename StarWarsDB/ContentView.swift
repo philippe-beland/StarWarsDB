@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            ChooseSourceTypeView()
+            ChooseSourceView()
                 .tabItem {
                     Label("Sources", systemImage: "star")
                 }

@@ -1,5 +1,5 @@
 //
-//  AddDroidView.swift
+//  AddStarshipModelView.swift
 //  StarWarsDB
 //
 //  Created by Philippe Beland on 12/24/24.
@@ -7,15 +7,16 @@
 
 import SwiftUI
 
-struct AddDroidView: View {
-    @Environment(\.dismiss) var dismiss
+struct AddStarshipModelView: View {
+    @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var name: String = ""
+    @State var name: String
     @State private var classType: String = ""
+    @State private var line: String = ""
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onDroidCreation: (Entity) -> Void
+    var onStarshipModelCreation: (Entity) -> Void
     
     var body: some View {
         NavigationStack{
@@ -23,29 +24,29 @@ struct AddDroidView: View {
                 TextField("Name", text: $name)
                     .font(.title.bold())
                     .padding()
-                
                 Form {
-                    Section("Droid Infos") {
+                    Section("Starship Model Infos") {
                         FieldView(fieldName: "Class Type", info: $classType)
+                        FieldView(fieldName: "Line", info: $line)
                         FieldView(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     
                     Section {
-                        Button("Save", action: saveDroid)
+                        Button("Save", action: saveStarshipModel)
                             .disabled(name.isEmpty)
                     }
                 }
             }
         }
-        .navigationTitle("Add new Droid")
+        .navigationTitle("Add new Starship Model")
         .navigationBarTitleDisplayMode(.inline)
     }
     
-    private func saveDroid() {
-        let newDroid = Droid(name: name, classType: classType, firstAppearance: firstAppearance, comments: comments)
-        newDroid.save()
-        onDroidCreation(newDroid)
+    private func saveStarshipModel() {
+        let newStarshipModel = StarshipModel(name: name, classType: classType, line: line, firstAppearance: firstAppearance, comments: comments)
+        newStarshipModel.save()
+        onStarshipModelCreation(newStarshipModel)
         dismiss()
     }
 }

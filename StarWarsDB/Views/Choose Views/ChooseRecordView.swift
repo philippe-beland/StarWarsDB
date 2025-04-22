@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChooseRecordView: View {
-    @State private var searchText = ""
+    @StateObject var searchContext = SearchContext()
 
     var body: some View {
         NavigationStack {
@@ -30,7 +30,7 @@ struct ChooseRecordView: View {
                 }
             }
             .navigationTitle("Entities")
-            .searchable(text: $searchText)
+            .searchable(text: $searchContext.query)
         }
     }
     
@@ -50,7 +50,7 @@ struct ChooseRecordView: View {
 }
 
 struct RecordMenuItem: Identifiable {
-    let id = UUID()
+    let id: UUID = UUID()
     let imageName: String
     let type: EntityType
     let destinationView: AnyView

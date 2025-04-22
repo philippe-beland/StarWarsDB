@@ -24,6 +24,8 @@ struct EditEntityView: View {
         case .varia: EditVariaView(varia: entity as! Varia)
         case .arc: EditArcView(arc: entity as! Arc)
         case .serie: EditSerieView(serie: entity as! Serie)
+        case .artist: EditArtistView(artist: entity as! Artist)
+        case .author: EditArtistView(artist: entity as! Artist)
         }
     }
 }

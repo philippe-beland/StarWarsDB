@@ -17,6 +17,9 @@ struct EditSerieView: View {
         NavigationStack {
             RecordContentView(record: serie, sourceItems: sources, InfosSection: SerieInfoSection(serie: serie))
         }
+        .toolbar {
+            Button ("Update", action: serie.update)
+        }
     }
 }
 

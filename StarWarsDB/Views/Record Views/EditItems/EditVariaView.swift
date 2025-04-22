@@ -18,10 +18,13 @@ struct EditVariaView: View {
             RecordContentView(record: varia, sourceItems: sourceVarias, InfosSection: VariaInfoSection(varia: varia))
             }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: varia.update)
+        }
         }
     
     private func loadInitialSources() async {
-        sourceVarias = await loadSourceVarias(recordField: "varia", recordID: varia.id.uuidString)
+        sourceVarias = await loadVariaSources(variaID: varia.id)
     }
 }
 

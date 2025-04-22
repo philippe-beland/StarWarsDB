@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct AddArcView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var name: String = ""
+    @State var name: String
     @State private var comments: String = ""
     @State private var serie: Serie = .empty
     

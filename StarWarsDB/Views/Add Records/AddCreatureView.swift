@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct AddCreatureView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var name: String = ""
+    @State var name: String
     @State private var designation: String = ""
     @State private var homeworld: Planet?
     @State private var firstAppearance: String = ""

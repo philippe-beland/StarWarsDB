@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EditDroidView: View {
     @Bindable var droid: Droid
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss: DismissAction
     
     @State private var sourceDroids = [SourceDroid]()
     
@@ -18,10 +18,13 @@ struct EditDroidView: View {
             RecordContentView(record: droid, sourceItems: sourceDroids, InfosSection: DroidInfoSection(droid: droid))
             }
         .task { await loadInitialSources() }
+        .toolbar {
+            Button ("Update", action: droid.update)
+        }
         }
     
     private func loadInitialSources() async {
-        sourceDroids = await loadSourceDroids(recordField: "droid", recordID: droid.id.uuidString)
+        sourceDroids = await loadDroidSources(droidID: droid.id)
     }
 }
 

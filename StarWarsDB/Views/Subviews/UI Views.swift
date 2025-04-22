@@ -53,14 +53,14 @@ struct EditEntityInfoView: View {
             } label: {
                 if entity.name.isEmpty {
                     Text("Select \(fieldName)")
-                        .foregroundStyle(.secondary)
+                        .foregroundColor(.blue)
                 }
                 Text(entity.name)
             }
             .buttonStyle(PlainButtonStyle())
         }
         .sheet(isPresented: $showEntitySelection) {
-            ChooseEntityView(entityType: entityType, isSourceItem: false) { selectedEntities, appearance in
+            ChooseEntityView(entityType: entityType, isSourceItem: false, sourceItems: []) { selectedEntities, appearance in
                 if let selectedEntity = selectedEntities.first {
                     entity = selectedEntity
                 }
@@ -74,29 +74,24 @@ struct EditVEntityInfoView: View {
     @Binding var entity: Entity
     var entityType: EntityType
     
-    @State private var showEntitySelection = false
+    @State private var showEntitySelection: Bool = false
     
     var body: some View {
-        VStack {
-            Text("\(fieldName):")
-                .font(.footnote)
-                .bold()
             Button {
                 showEntitySelection.toggle()
             } label: {
                 if entity.name.isEmpty {
                     Text("Select \(fieldName)")
-                        .foregroundColor(.blue)
+                        .foregroundStyle(.secondary)
+                } else {
+                    Text(entity.name)
                 }
-                Text(entity.name)
             }
             .buttonStyle(PlainButtonStyle())
-        }
         .sheet(isPresented: $showEntitySelection) {
-            ChooseEntityView(entityType: entityType, isSourceItem: false) { selectedEntities, appearance in
-                if let selectedEntity = selectedEntities.first {
-                    entity = selectedEntity
-                }
+            ChooseEntityView(entityType: entityType, isSourceItem: false, sourceItems: []) { selectedEntities, _ in
+                guard let selectedEntity = selectedEntities.first else { return }
+                entity = selectedEntity
             }
         }
     }
@@ -139,7 +134,6 @@ struct YearPicker: View {
     
     var body: some View {
         VStack {
-            Text("In-Universe Year")
             Slider(value: $universeYear,
                    in: era.minimum...era.maximum,
                    step: 1,
@@ -154,17 +148,24 @@ struct YearPicker: View {
     }
 }
 
+struct PublicationDatePicker: View {
+    @Binding var date: Date
+    
+    var body: some View {
+        DatePicker("Publication Date", selection: $date, displayedComponents: [.date])
+            .datePickerStyle(.compact)
+            .labelsHidden()
+    }
+}
+
 struct EraPicker: View {
     @Binding var era: Era
     
     var body: some View {
-        VStack(spacing: 0) {
-            Text("Era")
-            Picker(selection: $era, label: Text("Era").font(.footnote).bold()) {
-                ForEach(Era.allCases, id: \.self) {
-                    Text($0.rawValue)
-                        .font(.footnote)
-                }
+        Picker(selection: $era, label: Text("Era").font(.footnote).bold()) {
+            ForEach(Era.allCases, id: \.self) {
+                Text($0.rawValue)
+                    .font(.footnote)
             }
         }
     }
@@ -174,13 +175,10 @@ struct SourceTypePicker: View {
     @Binding var sourceType: SourceType
     
     var body: some View {
-        VStack(spacing: 0) {
-            Text("Source Type")
-            Picker(selection: $sourceType, label: Text("Source Type").font(.footnote).bold()) {
-                ForEach(SourceType.allCases, id: \.self) {
-                    Text($0.rawValue)
-                        .font(.footnote)
-                }
+        Picker(selection: $sourceType, label: Text("Source Type").font(.footnote).bold()) {
+            ForEach(SourceType.allCases, id: \.self) {
+                Text($0.rawValue)
+                    .font(.footnote)
             }
         }
     }
@@ -209,19 +207,44 @@ struct MultiFieldView: View {
 }
 
 struct ArtistsVStack: View {
-    var fieldName: String
-    @State var entities: [SourceItem] = []
+    var source: Source?
+    
+    @State var artists: [SourceArtist] = []
+    @State var showEditArtistSheet = false
     
     var body: some View {
         VStack {
-            Text("\(fieldName):")
-                .bold()
-            ForEach(entities) { entity in
-                Text(entity.entity.name)
+            Button("Artists") { showEditArtistSheet.toggle() }
+            ForEach(artists) { artist in
+                Text(artist.entity.name)
             }
+        }
+        .sheet(isPresented: $showEditArtistSheet) {
+            ExpandedSourceArtistsView(sourceArtists: $artists, source: source)
         }
     }
 }
+
+
+struct AuthorsVStack: View {
+    var source: Source?
+    
+    @State var authors: [SourceAuthor] = []
+    @State var showEditAuthorSheet = false
+    
+    var body: some View {
+        VStack {
+            Button("Authors") { showEditAuthorSheet.toggle() }
+            ForEach(authors) { author in
+                Text(author.entity.name)
+            }
+        }
+        .sheet(isPresented: $showEditAuthorSheet) {
+            ExpandedSourceAuthorsView(sourceAuthors: $authors, source: source)
+        }
+    }
+}
+
 
 struct MultiFieldVStack: View {
     var fieldName: String
@@ -238,6 +261,99 @@ struct MultiFieldVStack: View {
             ForEach(entities) { entity in
                 Text(entity.name)
             }
+        }
+    }
+}
+
+
+struct ExpandedSourceArtistsView: View {
+    @Binding var sourceArtists: [SourceArtist]
+    var source: Source?
+    @State var showAddArtistSheet: Bool = false
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                ForEach(sourceArtists) { sourceItem in
+                    Text(sourceItem.entity.name)
+                }
+                .onDelete(perform: deleteEntity)
+            }
+            .navigationTitle("Artists")
+            .toolbar {
+                Button("Add Artist") {
+                    showAddArtistSheet.toggle()
+                }
+                .sheet(isPresented: $showAddArtistSheet) {
+                    ChooseEntityView(entityType: .artist, isSourceItem: false, sourceItems: []) { artists, _ in
+                        if let source {
+                            for artist in artists {
+                                let newArtist = SourceArtist(source: source, entity: artist as! Artist)
+                                if !sourceArtists.contains(newArtist) {
+                                    newArtist.save()
+                                    sourceArtists.append(newArtist)
+                                } else {
+                                    print("Already exists for that source")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    private func deleteEntity(_ indexSet: IndexSet) {
+        for index: IndexSet.Element in indexSet {
+            let entity = sourceArtists[index]
+            sourceArtists.remove(at: index)
+            entity.delete()
+        }
+    }
+}
+
+struct ExpandedSourceAuthorsView: View {
+    @Binding var sourceAuthors: [SourceAuthor]
+    var source: Source?
+    @State var showAddAuthorSheet: Bool = false
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                ForEach(sourceAuthors) { sourceItem in
+                    Text(sourceItem.entity.name)
+                }
+                .onDelete(perform: deleteEntity)
+            }
+            .navigationTitle("Authors")
+            .toolbar {
+                Button("Add Author") {
+                    showAddAuthorSheet.toggle()
+                }
+                .sheet(isPresented: $showAddAuthorSheet) {
+                    ChooseEntityView(entityType: .artist, isSourceItem: false, sourceItems: []) { authors, _ in
+                        if let source {
+                            for author in authors {
+                                let newAuthor = SourceAuthor(source: source, entity: author as! Artist)
+                                if !sourceAuthors.contains(newAuthor) {
+                                    newAuthor.save()
+                                    sourceAuthors.append(newAuthor)
+                                } else {
+                                    print("Already exists for that source")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    private func deleteEntity(_ indexSet: IndexSet) {
+        for index: IndexSet.Element in indexSet {
+            let entity = sourceAuthors[index]
+            sourceAuthors.remove(at: index)
+            entity.delete()
         }
     }
 }

@@ -12,52 +12,56 @@ struct ListSourcesView: View {
     var serie: Serie? = nil
     
     @State private var sortOrder: SortingSourceOrder = .publicationDate
-    @State private var searchText: String = ""
+    @StateObject var searchContext = SearchContext()
     @State private var isDoneFilter: Bool = false
-    @State private var showNewSourceSheet = false
+    @State private var isHRFilter: Bool = false
+    @State private var showNewSourceSheet: Bool = false
     @State private var sources: [Source] = []
     
-    let layout = [GridItem(.adaptive(minimum: 200, maximum: 300)),]
+    let layout: [GridItem] = [GridItem(.adaptive(minimum: 200, maximum: 300))]
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVGrid(columns: layout) {
                     ForEach(sources) { source in
-                        SourceNavigationLink(source: source)
-                            .contextMenu {
-                                SourceContextMenu(source: source)
-                            }
+                        NavigationLink(destination: EditSourceView(source: source)) {
+                            SourceGridView(source: source)
+                        }
+                        .contextMenu {
+                            Button("Delete", role: .destructive, action: { deleteSource(source) })
+                        }
                     }
                 }
             }
             .navigationTitle("Sources")
-            .searchable(text: $searchText, prompt: "Search")
+            .searchable(text: $searchContext.query, prompt: "Search")
             .toolbar { toolbarContent }
         }
-        .onChange(of: searchText) { handleSearchTextChange() }
+        .onChange(of: searchContext.debouncedQuery) { handleSearchTextChange() }
         .onChange(of: selectedView) { handleParameterChange() }
         .onChange(of: sortOrder) { handleParameterChange() }
         .onChange(of: isDoneFilter) { handleParameterChange() }
+        .onChange(of: isHRFilter) { handleParameterChange() }
         .task { await loadInitialSources() }
     }
     
     private func handleParameterChange() {
         Task {
-            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchText)
+            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, isHR: isHRFilter, filter: searchContext.debouncedQuery)
         }
     }
     
     private func handleSearchTextChange() {
         Task {
-            if !searchText.isEmpty && searchText.count > 3 {
-                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchText)
+            if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count > 3 {
+                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, isHR: isHRFilter, filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialSources() async {
-        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchText)
+        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, isHR: isHRFilter, filter: searchContext.debouncedQuery)
     }
     
     private func deleteSource(_ source: Source) {
@@ -65,18 +69,6 @@ struct ListSourcesView: View {
             sources.remove(at: index)
         }
         source.delete()
-    }
-    
-    @ViewBuilder
-    private func SourceNavigationLink(source: Source) -> some View {
-        NavigationLink(destination: EditSourceView(source: source)) {
-            SourceGridView(source: source)
-        }
-    }
-
-    @ViewBuilder
-    func SourceContextMenu(source: Source) -> some View {
-        Button("Delete", role: .destructive, action: { deleteSource(source) })
     }
     
     @ToolbarContentBuilder
@@ -98,9 +90,12 @@ struct ListSourcesView: View {
                 }
             }
         }
-        
         ToolbarItem(placement: .topBarLeading) {
             Toggle("ToDo", isOn: $isDoneFilter)
+                .toggleStyle(ButtonToggleStyle())
+        }
+        ToolbarItem(placement: .topBarLeading) {
+            Toggle("High Republic", isOn: $isHRFilter)
                 .toggleStyle(ButtonToggleStyle())
         }
     }
