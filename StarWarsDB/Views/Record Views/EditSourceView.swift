@@ -23,12 +23,15 @@ struct SourceItemCollection {
 
 enum ActiveSheet: Identifiable {
     case entitySheet(EntityType)
+    case referenceSheet(EntityType)
     case expandedSheet(EntityType)
     
     var id: String {
         switch self {
         case .entitySheet(let type):
             return "entity-\(type)"
+        case .referenceSheet(let type):
+            return "reference-\(type)"
         case .expandedSheet(let type):
             return "expanded-\(type)"
         }
@@ -61,6 +64,7 @@ struct EditSourceView: View {
                     sourceItems: $viewModel.sourceItems,
                     activeSheet: $viewModel.activeSheet,
                     serie: viewModel.source.serie,
+                    url: viewModel.source.url,
                     onAddEntity: viewModel.addSourceItem
                 )
                 .padding(.top, 16)
@@ -108,7 +112,7 @@ private struct SourceHeaderSection: View {
     var body: some View {
         HStack {
             Spacer()
-            HeaderView(name: $source.name, urlString: source.url)
+            HeaderView(name: $source.name, url: source.url)
             Spacer()
         }
         
@@ -156,6 +160,7 @@ struct SourcesAppearancesSection: View {
     @Binding var sourceItems: SourceItemCollection
     @Binding var activeSheet: ActiveSheet?
     var serie: Serie?
+    var url: URL?
     let onAddEntity: (EntityType, Entity, AppearanceType) -> Void
     @State private var refreshID = UUID()
     
@@ -202,6 +207,10 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 }
+                
+            case .referenceSheet(let type):
+                ReferenceItemView(entityType: type, url: url)
+                
             case .expandedSheet(let type):
                 ExpandedSourceItemView(sourceItems: getSourceItemsBinding(for: type), entityType: type)
                     .onDisappear {
@@ -355,6 +364,13 @@ private struct EntitySectionHeader: View {
             Spacer()
             Button {
                 DispatchQueue.main.async {
+                    activeSheet = .referenceSheet(entityType)
+                }
+            } label: {
+                Text("References")
+            }
+            Button {
+                DispatchQueue.main.async {
                     activeSheet = .expandedSheet(entityType)
                 }
             } label: {
@@ -364,7 +380,27 @@ private struct EntitySectionHeader: View {
     }
 }
         
-
+struct ReferenceItemView: View {
+    var entityType: EntityType
+    var url: URL?
+    @State var listEntities: String = ""
+    
+    var body: some View {
+        NavigationStack {
+            Text(listEntities)
+        }
+        .task { await fetch_list() }
+    }
+    
+    private func fetch_list() async {
+        do {
+            listEntities = try await fetchInfo(for: url, type: entityType)
+        }
+        catch {
+            print("Error fetching list: \(error)")
+        }
+    }
+}
 
 struct ExpandedSourceItemView: View {
     @Binding var sourceItems: [SourceItem]

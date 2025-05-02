@@ -147,8 +147,8 @@ class Source: DataNode, Record, Hashable {
     var comments: String
     
     /// Wookieepedia URL for this source
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    var url: URL? {
+        URL(string: "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_"))
     }
     
     /// Keys used for encoding and decoding source data

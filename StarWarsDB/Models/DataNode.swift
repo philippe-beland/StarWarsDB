@@ -153,8 +153,8 @@ class Entity: DataNode, Record {
     var isExisting: Bool = false
     
     /// Wookieepedia URL for this entity
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    var url: URL? {
+        URL(string: "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_"))
     }
     
     /// Creates a new entity
@@ -211,7 +211,7 @@ protocol Record: Identifiable, Hashable {
     var comments: String { get set }
     
     /// Online reference URL
-    var url: String { get }
+    var url: URL? { get }
 }
 
 /// Helper class for counting source appearances

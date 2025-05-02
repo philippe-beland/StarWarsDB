@@ -9,28 +9,58 @@ import Foundation
 import SwiftSoup
 
 
-func fetchInfo(for characterURL: String, key: String) async throws -> String? {
-    guard let url = URL(string: characterURL) else {
+func fetchInfo(for sourceURL: URL?, type: EntityType) async throws -> String {
+    guard let sourceURL else {
         throw NSError(domain: "Invalid URL", code: 0, userInfo: nil)
     }
 
-    let (data, _) = try await URLSession.shared.data(from: url)
+    let (data, _) = try await URLSession.shared.data(from: sourceURL)
     let html = String(data: data, encoding: .utf8) ?? ""
-
-    let doc: Document = try SwiftSoup.parse(html)
-    
-    // Look for the information in the infobox
-    let infoboxRows = try doc.getElementsByClass("pi-item pi-data pi-item-spacing pi-border-color")
-    
-    for row in infoboxRows {
-        let header = try row.attr("data-source")
-        
-        if header == key {
-            return try row.getElementsByClass("pi-data-value pi-font").first()?.text()
+    let headerText: String = switch type {
+        case .character:
+            "p#app_characters"
+        case .creature:
+            "p#app_organisms"
+        case .planet:
+            "p#app_locations"
+        case .droid:
+            "p#app_droids"
+        case .organization:
+            "p#app_organizations"
+        case .species:
+            "p#app_species"
+        case .starship:
+            "p#app_vehicles"
+        case .starshipModel:
+            "p#app_vehicles"
+        case .varia:
+            "p#app_miscellanea"
+        default:
+            "Not implemented yet"
         }
-    }
+    
+    do {
+        let doc: Document = try SwiftSoup.parse(html)
 
-    return "No info found"
+            
+        guard let header = try doc.select(headerText).first() else {
+            return "\(type.rawValue) header not found"
+        }
+        
+        // Traverse siblings until we find a non-empty one with <li> elements
+        var next: Element? = try header.nextElementSibling()
+        while let current = next {
+            let listItems = try current.select("li")
+            if !listItems.isEmpty() {
+                let entitiesNames = try listItems.map { try $0.text() }
+                return entitiesNames.joined(separator: ", ")
+            }
+            next = try current.nextElementSibling()
+        }
+        return "Section not found"
+    } catch {
+        return "No info found"
+    }
 }
 
 func fetchImageURL(for characterURL: String) async throws -> String? {
