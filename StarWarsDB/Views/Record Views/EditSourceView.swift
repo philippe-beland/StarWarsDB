@@ -23,12 +23,15 @@ struct SourceItemCollection {
 
 enum ActiveSheet: Identifiable {
     case entitySheet(EntityType)
+    case referenceSheet(EntityType)
     case expandedSheet(EntityType)
     
     var id: String {
         switch self {
         case .entitySheet(let type):
             return "entity-\(type)"
+        case .referenceSheet(let type):
+            return "reference-\(type)"
         case .expandedSheet(let type):
             return "expanded-\(type)"
         }
@@ -61,6 +64,7 @@ struct EditSourceView: View {
                     sourceItems: $viewModel.sourceItems,
                     activeSheet: $viewModel.activeSheet,
                     serie: viewModel.source.serie,
+                    url: viewModel.source.url,
                     onAddEntity: viewModel.addSourceItem
                 )
                 .padding(.top, 16)
@@ -108,7 +112,7 @@ private struct SourceHeaderSection: View {
     var body: some View {
         HStack {
             Spacer()
-            HeaderView(name: $source.name, urlString: source.url)
+            HeaderView(name: $source.name, url: source.url)
             Spacer()
         }
         
@@ -156,6 +160,7 @@ struct SourcesAppearancesSection: View {
     @Binding var sourceItems: SourceItemCollection
     @Binding var activeSheet: ActiveSheet?
     var serie: Serie?
+    var url: URL?
     let onAddEntity: (EntityType, Entity, AppearanceType) -> Void
     @State private var refreshID = UUID()
     
@@ -168,7 +173,8 @@ struct SourcesAppearancesSection: View {
                     Section(header: EntitySectionHeader(
                         title: entityType.displayName,
                         entityType: entityType,
-                        activeSheet: $activeSheet
+                        activeSheet: $activeSheet,
+                        sourceItems: getSourceItemsBinding(for: entityType)
                     )) {
                         ScrollAppearancesView(
                             sourceItems: getSourceItemsBinding(for: entityType),
@@ -202,6 +208,10 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 }
+                
+            case .referenceSheet(let type):
+                ReferenceItemView(entityType: type, url: url, sourceItems: getSourceItemsBinding(for: type))
+                
             case .expandedSheet(let type):
                 ExpandedSourceItemView(sourceItems: getSourceItemsBinding(for: type), entityType: type)
                     .onDisappear {
@@ -337,6 +347,7 @@ private struct EntitySectionHeader: View {
     let title: String
     let entityType: EntityType
     @Binding var activeSheet: ActiveSheet?
+    let sourceItems: Binding<[SourceItem]>
     
     var body: some View {
         HStack {
@@ -355,6 +366,13 @@ private struct EntitySectionHeader: View {
             Spacer()
             Button {
                 DispatchQueue.main.async {
+                    activeSheet = .referenceSheet(entityType)
+                }
+            } label: {
+                Text("References")
+            }
+            Button {
+                DispatchQueue.main.async {
                     activeSheet = .expandedSheet(entityType)
                 }
             } label: {
@@ -364,7 +382,56 @@ private struct EntitySectionHeader: View {
     }
 }
         
-
+struct ReferenceItemView: View {
+    var entityType: EntityType
+    var url: URL?
+    var sourceItems: Binding<[SourceItem]>
+    
+    @State var listEntities: [String] = []
+    @State var processedEntities: [WikiEntity] = []
+    
+    private var filteredEntities: [WikiEntity] {
+        let excludedNames = Set(sourceItems.wrappedValue.map { $0.entity.name })
+        return processedEntities.filter {
+            !excludedNames.contains($0.name)
+        }
+    }
+    
+    var body: some View {
+        NavigationStack {
+            if !filteredEntities.isEmpty {
+                List {
+                    ForEach(filteredEntities) { entity in
+                        HStack {
+                            Text(entity.name)
+                                .textSelection(.enabled)
+                            Spacer()
+                            Text(entity.modifiers.joined(separator: ", "))
+                            Spacer()
+                            AppearanceView(appearance: entity.appearance.rawValue)
+                                .frame(width: 80, alignment: .center)
+                        }
+                        .textSelection(.enabled)
+                    }
+                }
+                .navigationTitle("Missing Entries")
+            } else {
+                Text("All good!")
+            }
+        }
+        .task { await fetch_list() }
+    }
+    
+    private func fetch_list() async {
+        do {
+            listEntities = try await fetchInfo(for: url, type: entityType)
+            processedEntities = processWikiEntities(listEntities)
+        }
+        catch {
+            print("Error fetching list: \(error)")
+        }
+    }
+}
 
 struct ExpandedSourceItemView: View {
     @Binding var sourceItems: [SourceItem]
