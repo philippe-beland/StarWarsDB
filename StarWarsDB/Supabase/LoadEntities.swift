@@ -7,13 +7,19 @@
 
 import Foundation
 
+struct LoadCharactersParams: Encodable {
+    let series_id: UUID?
+    let filter: String
+}
+
 func loadCharacters(serie: Serie? = nil, sort: String, filter: String = "") async -> [Character] {
     var characters: [Character] = []
     
     do {
+        let params = LoadCharactersParams(series_id: serie?.id, filter: filter)
+        
         characters = try await supabase
-            .rpc("load_characters", params: ["series_id": serie?.id])
-            .ilike("name", pattern: "%\(filter)%")
+            .rpc("load_characters", params: ["input": params])
             .limit(40)
             .execute()
             .value
