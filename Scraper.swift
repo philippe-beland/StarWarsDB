@@ -109,7 +109,7 @@ func processWikiEntity(_ entity: String) -> WikiEntity {
     let imagePatterns = ["appears as a toy", "as statue", "emblem only", "first pictured", "as a tooka doll"]
     let mentionPatterns = ["mentioned only", "indirect mention only", "first mentioned"]
     let ignoredPatterns = ["first appearance", "voice only", "appears as hologram"]
-    let flashbackPatterns = ["in flashback(s)", "appears as hologram in flashback"]
+    let flashbackPatterns = ["in flashback(s)", "appears as a hologram in flashback", "appears as a hologram in flashback(s)"]
     var appearance: AppearanceType = .present
     var filteredModifiers: [String] = []
     

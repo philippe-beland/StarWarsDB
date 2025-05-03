@@ -392,9 +392,10 @@ struct ReferenceItemView: View {
     
     private var filteredEntities: [WikiEntity] {
         let excludedNames = Set(sourceItems.wrappedValue.map { $0.entity.name })
-        return processedEntities.filter {
+        let x = processedEntities.filter {
             !excludedNames.contains($0.name)
         }
+        return x.sorted { $0.name < $1.name }
     }
     
     var body: some View {
