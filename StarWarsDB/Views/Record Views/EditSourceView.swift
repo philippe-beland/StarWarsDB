@@ -98,7 +98,8 @@ struct EditSourceView: View {
             InfoSection(fieldName: "In-Universe Year", view: AnyView(YearPicker(era: viewModel.source.era, universeYear: $viewModel.source.universeYear))),
             InfoSection(fieldName: "Authors", view: AnyView(AuthorsVStack(source: viewModel.source, authors: sortedAuthors))),
             InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(source: viewModel.source, artists: sortedArtists))),
-            InfoSection(fieldName: "Number Pages", view: AnyView(TextField("Nb of pages", value: $viewModel.source.numberPages, format: .number)))
+            InfoSection(fieldName: "Number Pages", view: AnyView(TextField("Nb of pages", value: $viewModel.source.numberPages, format: .number))),
+            InfoSection(fieldName: "URL", view: AnyView(TextField("URL", text: $viewModel.source.wookieepediaTitle)))
         ]
         
         return sections

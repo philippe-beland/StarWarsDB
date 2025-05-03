@@ -12,7 +12,7 @@ struct CharacterInfoSection: View {
     
     var body: some View {
         Section("Character Infos") {
-            //MultiFieldView(fieldName: "Aliases", infos: character.aliases)
+            MultiFieldView(fieldName: "Aliases", infos: character.aliases)
             GenderPicker(gender: $character.gender)
             EditEntityInfoView(
                 fieldName: "Species",

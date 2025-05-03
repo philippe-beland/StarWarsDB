@@ -146,9 +146,13 @@ class Source: DataNode, Record, Hashable {
     /// Additional notes about the source
     var comments: String
     
-    /// Wookieepedia URL for this source
+    var wookieepediaTitle: String = ""
+    
+    /// Wookieepedia URL for this entity
     var url: URL? {
-        URL(string: "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_"))
+        let title = wookieepediaTitle.isEmpty ? name : wookieepediaTitle
+        let encodedTitle = title.replacingOccurrences(of: " ", with: "_")
+        return URL(string: "https://starwars.fandom.com/wiki/" + encodedTitle)
     }
     
     /// Keys used for encoding and decoding source data
