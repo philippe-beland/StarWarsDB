@@ -1,0 +1,20 @@
+StarWarsDB - Project Summary
+
+StarWarsDB is a personal Swift/Python application that serves as a comprehensive database for Star Wars content. The project combines:
+
+- iOS/macOS app built with SwiftUI and MVVM architecture
+- Python backend with web scraping capabilities to collect data from Wookieepedia
+- Supabase integration for cloud database storage
+- Detailed data models for Star Wars entities (characters, planets, species, starships, etc.)
+- User authentication and data management features
+
+The application allows users to browse, search, and manage information about the Star Wars universe, track relationships between different entities, and link them to their appearances in various media sources (books, comics, films, TV shows).
+
+Key technical features include:
+- Entity relationship management
+- Web scraping with BeautifulSoup
+- Cloud database integration
+- SwiftUI interface design
+- Authentication system
+
+This project demonstrates expertise in full-stack development while serving as a valuable reference tool for Star Wars enthusiasts.
