@@ -46,9 +46,10 @@ class Character: Entity {
         case firstAppearance = "first_appearance"
         case comments
         case nbApparitions = "appearances"
+        case wookieepediaTitle = "url"
     }
     
-    init(name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender?, firstAppearance: String?, comments: String? = nil) {
+    init(name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender?, firstAppearance: String?, comments: String? = nil, wookieepediaTitle: String = "") {
         let id: UUID = UUID()
         self.aliases = aliases
         self.species = species
@@ -56,7 +57,7 @@ class Character: Entity {
         self.gender = gender ?? .Unknown
         //self.affiliations = affiliations
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Character", tableName: "characters")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, wookieepediaTitle: wookieepediaTitle, recordType: "Character", tableName: "characters")
     }
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -65,6 +66,7 @@ class Character: Entity {
         let name: String = try container.decode(String.self, forKey: .name)
         let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
         let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
+        let wookieepediaTitle: String = try container.decode(String.self, forKey: .wookieepediaTitle)
         
         if let aliases: [String] = try container.decodeIfPresent([String].self, forKey: .aliases) {
             self.aliases = aliases
@@ -82,7 +84,7 @@ class Character: Entity {
 //        }
         let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Character", tableName: "characters")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, wookieepediaTitle: wookieepediaTitle, recordType: "Character", tableName: "characters")
     }
     
     override func encode(to encoder: Encoder) throws {
@@ -101,6 +103,7 @@ class Character: Entity {
         //try container.encode(affiliations, forKey: .affiliations)
         try container.encode(firstAppearance, forKey: .firstAppearance)
         try container.encode(comments, forKey: .comments)
+        try container.encode(wookieepediaTitle, forKey: .wookieepediaTitle)
     }
     
     static let example = Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil)

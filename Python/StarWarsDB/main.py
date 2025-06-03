@@ -5,38 +5,40 @@ from datetime import datetime
 from pathlib import Path
 
 import requests
-from StarWarsDB.database import StarWarsDB
+
+# from StarWarsDB.database import StarWarsDB
 from StarWarsDB.scrapper.web_scraping import WookieepediaScraping
 
-db = StarWarsDB()
+# db = StarWarsDB()
 scrapper = WookieepediaScraping()
 
 
 def download_image(image_url: str, image_file_name: str):
     response = requests.get(image_url)
     if response.status_code == 200:
+
         with open(image_file_name, "wb") as file:
             file.write(response.content)
 
 
-def update_character(character):
+def update_character(name, id):
     try:
-        character_info = scrapper.scrape_character(character.name)
-        if character.species_id is None:
-            character.species_id = db.find_species_id(character_info["species"])
-        if character.homeworld_id is None:
-            character.homeworld_id = db.find_planet_id(character_info["homeworld"])
+        character_info = scrapper.scrape_character(name)
+        # if character.species_id is None:
+        #     character.species_id = db.find_species_id(character_info["species"])
+        # if character.homeworld_id is None:
+        #     character.homeworld_id = db.find_planet_id(character_info["homeworld"])
 
-        character.is_scrapped = True
+        # character.is_scrapped = True
         if character_info["image_url"] is not None:
             download_image(
-                character_info["image_url"], f"Images/characters/{character.id}.jpg"
+                character_info["image_url"], f"Images/characters/new/{id}.jpg"
             )
 
         time.sleep(random.uniform(2, 5))
     except Exception as e:
         print(e)
-        print(character.name)
+        print(name)
 
 
 def update_characters(min: int, max: int):
@@ -366,7 +368,7 @@ def update_varias(min: int, max: int):
                     f"Images/varias/{varia.id}.jpg",
                 )
 
-            time.sleep(random.uniform(2, 5))
+            time.sleep(random.uniform(0.3, 1))
 
         except Exception as e:
             print(e)
@@ -419,4 +421,18 @@ def update_planets(min: int, max: int):
         )
 
 
-update_characters(0, 100000)
+import pandas as pd
+
+# Open the CSV file
+csv_file = Path("characters_rows.csv")
+df = pd.read_csv(csv_file)
+
+for row in df.iterrows():
+
+    # Check if the image exists
+    image_path = Path("Images/characters", f"{row[1]['id']}.jpg")
+    if image_path.exists():
+        print(f"Image for {row[1]['name']} already exists.")
+        continue
+
+    update_character(row[1]["name"], row[1]["id"])

@@ -10,13 +10,17 @@ import SwiftUI
 struct HeaderView: View {
     @Binding var name: String
     let url: URL?
+    @Binding var wookieeUrl: String
     
     var body: some View {
         HStack {
-            Spacer()
+            //Spacer()
             TextField("Enter Source Name", text: $name)
                 .font(.title.bold())
                 .padding()
+            
+            Spacer()
+            TextField("URL", text: $wookieeUrl)
 
             Button {
                 openLink()
@@ -27,7 +31,7 @@ struct HeaderView: View {
                     .frame(width: 36, height: 36)
             }
             .buttonStyle(.plain)
-            Spacer()
+            //Spacer()
         }
     }
     

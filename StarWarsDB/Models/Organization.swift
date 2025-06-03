@@ -30,6 +30,7 @@ class Organization: Entity {
         case comments
         /// Number of appearances
         case nbApparitions = "appearances"
+        case wookieepediaTitle = "url"
     }
     
     /// Creates a new organization
@@ -37,10 +38,10 @@ class Organization: Entity {
     ///   - name: The organization's name
     ///   - firstAppearance: First appearance in Star Wars media
     ///   - comments: Additional notes about the organization
-    init(name: String, firstAppearance: String?, comments: String?) {
+    init(name: String, firstAppearance: String?, comments: String?, wookieepediaTitle: String = "") {
         let id: UUID = UUID()
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Organization", tableName: "organizations")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, wookieepediaTitle: wookieepediaTitle, recordType: "Organization", tableName: "organizations")
     }
     
     /// Creates an organization from decoded data
@@ -54,8 +55,9 @@ class Organization: Entity {
         let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
         let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
         let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
+        let wookieepediaTitle: String = try container.decode(String.self, forKey: .wookieepediaTitle)
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Organization", tableName: "organizations")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, wookieepediaTitle: wookieepediaTitle, recordType: "Organization", tableName: "organizations")
     }
     
     /// Encodes the organization into data for storage
@@ -68,6 +70,7 @@ class Organization: Entity {
         try container.encode(name, forKey: .name)
         try container.encode(self.firstAppearance, forKey: .firstAppearance)
         try container.encode(comments, forKey: .comments)
+        try container.encode(wookieepediaTitle, forKey: .wookieepediaTitle)
     }
     
     /// An example organization for previews and testing

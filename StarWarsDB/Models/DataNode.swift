@@ -170,11 +170,12 @@ class Entity: DataNode, Record {
     ///   - nbApparitions: Number of appearances
     ///   - recordType: Type of record
     ///   - tableName: Database table
-    init(id: UUID, name: String, comments: String?, firstAppearance: String?, nbApparitions: Int = 0, recordType: String, tableName: String) {
+    init(id: UUID, name: String, comments: String?, firstAppearance: String?, nbApparitions: Int = 0, wookieepediaTitle: String, recordType: String, tableName: String) {
         self.id = id
         self.name = name
         self.comments = comments ?? ""
         self.firstAppearance = firstAppearance ?? ""
+        self.wookieepediaTitle = wookieepediaTitle
         self.nbApparitions = nbApparitions
         
         super.init(recordType: recordType, tableName: tableName, recordID: id)

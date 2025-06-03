@@ -15,7 +15,6 @@ struct SidePanelView<Content: View>: View {
         Form {
             ImageView(title: record.id.uuidString.lowercased())
             InfosSection
-            FieldView(fieldName: "URL", info: $record.wookieepediaTitle)
             CommentsView(comments: $record.comments)
         }
     }
