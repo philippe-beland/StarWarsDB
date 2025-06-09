@@ -74,7 +74,7 @@ func loadSources(sort: String, sourceType: SourceType, serie: Serie?, isDone: Bo
             query = query.ilike("name", pattern: "%\(filter)%")
         }
         
-        query = query.order(sort).order("number").limit(100) as! PostgrestFilterBuilder
+        query = query.order(sort).order("number").limit(500) as! PostgrestFilterBuilder
         sources = try await query.execute().value
 
         print("Sources successfully loaded")
