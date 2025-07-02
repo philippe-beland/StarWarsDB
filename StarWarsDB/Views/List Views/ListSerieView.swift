@@ -1,10 +1,3 @@
-//
-//  ListSerieView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 1/10/25.
-//
-
 import SwiftUI
 
 struct ListSerieView: View {

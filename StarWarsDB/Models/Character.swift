@@ -1,10 +1,3 @@
-//
-//  Character.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 2024-11-29.
-//
-
 import Foundation
 
 enum Gender: String, Codable, CaseIterable {
@@ -56,7 +49,7 @@ class Character: Entity {
         self.gender = gender ?? .Unknown
         //self.affiliations = affiliations
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Character", tableName: "characters")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Character", databaseTableName: "characters")
     }
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -82,7 +75,7 @@ class Character: Entity {
 //        }
         let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Character", tableName: "characters")
+        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Character", databaseTableName: "characters")
     }
     
     override func encode(to encoder: Encoder) throws {

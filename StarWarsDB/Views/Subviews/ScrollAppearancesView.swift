@@ -1,10 +1,3 @@
-//
-//  ScrollAppearancesView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/15/24.
-//
-
 import SwiftUI
 
 struct ScrollAppearancesView<T: SourceItem>: View {

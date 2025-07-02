@@ -1,10 +1,3 @@
-//
-//  AddOrganizationView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/24/24.
-//
-
 import SwiftUI
 
 struct AddOrganizationView: View {

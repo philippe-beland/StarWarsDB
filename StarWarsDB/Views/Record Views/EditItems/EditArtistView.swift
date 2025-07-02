@@ -1,11 +1,13 @@
-//
-//  EditArtistView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/14/24.
-//
-
 import SwiftUI
+
+struct ArtistInfoSection: View {
+    @State var artist: Artist
+    
+    var body: some View {
+        Section("Artist Infos") {
+        }
+    }
+}
 
 struct EditArtistView: View {
     @Bindable var artist: Artist

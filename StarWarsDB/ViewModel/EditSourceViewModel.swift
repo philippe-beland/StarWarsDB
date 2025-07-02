@@ -1,10 +1,3 @@
-//
-//  EditSourceViewModel.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 2/8/25.
-//
-
 import Foundation
 
 @MainActor

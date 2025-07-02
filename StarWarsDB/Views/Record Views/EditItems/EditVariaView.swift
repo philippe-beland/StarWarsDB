@@ -1,11 +1,14 @@
-//
-//  EditVariaView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/22/24.
-//
-
 import SwiftUI
+
+struct VariaInfoSection: View {
+    @State var varia: Varia
+    
+    var body: some View {
+        Section("Varia Infos") {
+            FieldView(fieldName: "First Appearance", info: $varia.firstAppearance)
+        }
+    }
+}
 
 struct EditVariaView: View {
     @Bindable var varia: Varia

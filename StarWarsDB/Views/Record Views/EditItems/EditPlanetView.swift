@@ -1,11 +1,20 @@
-//
-//  EditPlanetView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/14/24.
-//
-
 import SwiftUI
+
+struct PlanetInfoSection: View {
+    @State var planet: Planet
+    
+    var body: some View {
+        Section("Planet Infos") {
+            RegionPicker(region: $planet.region)
+            FieldView(fieldName: "Sector", info: $planet.sector)
+            FieldView(fieldName: "System", info: $planet.system)
+            FieldView(fieldName: "Capital", info: $planet.capitalCity)
+//            MultiFieldView(fieldName: "Destinations", infos: $planet.destinations)
+            FieldView(fieldName: "First Appearance", info: $planet.firstAppearance)
+
+        }
+    }
+}
 
 struct EditPlanetView: View {
     @Bindable var planet: Planet

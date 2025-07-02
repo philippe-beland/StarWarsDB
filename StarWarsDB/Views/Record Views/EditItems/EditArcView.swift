@@ -1,11 +1,19 @@
-//
-//  EditArcView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/26/24.
-//
-
 import SwiftUI
+
+struct ArcInfoSection: View {
+    @State var arc: Arc
+    
+    var body: some View {
+        Section("Arc Infos") {
+            EditEntityInfoView(
+                fieldName: "Serie",
+                entity: Binding(
+                    get: {arc.serie ?? StarshipModel.empty },
+                    set: {arc.serie = ($0 as! Serie) }),
+                entityType: .serie)
+        }
+    }
+}
 
 struct EditArcView: View {
     @Bindable var arc: Arc

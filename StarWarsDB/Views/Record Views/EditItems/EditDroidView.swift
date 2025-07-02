@@ -1,11 +1,14 @@
-//
-//  EditDroidView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/14/24.
-//
-
 import SwiftUI
+
+struct DroidInfoSection: View {
+    @State var droid: Droid
+    
+    var body: some View {
+        Section("Droid Infos") {
+            FieldView(fieldName: "First Appearance", info: $droid.firstAppearance)
+        }
+    }
+}
 
 struct EditDroidView: View {
     @Bindable var droid: Droid

@@ -1,10 +1,3 @@
-//
-//  SidePanelView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/14/24.
-//
-
 import SwiftUI
 
 struct SidePanelView<Content: View>: View {

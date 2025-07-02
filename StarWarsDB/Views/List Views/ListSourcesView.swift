@@ -1,10 +1,3 @@
-//
-//  ListSourcesView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/18/24.
-//
-
 import SwiftUI
 
 struct ListSourcesView: View {

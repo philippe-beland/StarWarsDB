@@ -1,10 +1,3 @@
-//
-//  Source.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 2024-11-29.
-//
-
 import Foundation
 
 /// Represents different eras in the Star Wars timeline
@@ -82,18 +75,14 @@ enum SourceType: String, Decodable, CaseIterable, Hashable {
 
 /// Options for sorting source content
 enum SortingSourceOrder: String, CaseIterable {
-    /// Sort by real-world release date
     case publicationDate = "publication_date"
-    /// Sort by in-universe chronological order
     case universeYear = "universe_year"
 }
 
 /// Provides shared date formatting functionality
 class DateFormatterProvider {
-    /// Shared instance for consistent date formatting
     static let shared: DateFormatterProvider = DateFormatterProvider()
     
-    /// Date formatter configured for source dates
     let dateFormatter: DateFormatter = {
         let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
@@ -106,46 +95,22 @@ class DateFormatterProvider {
 /// Represents a piece of Star Wars media content
 ///
 /// Sources are the individual pieces of media that make up the Star Wars universe,
-/// such as movies, TV episodes, comics, novels, etc. Each source is categorized by
-/// type, era, and can be part of a larger series or story arc.
+/// such as movies, TV episodes, comics, novels, etc.
 @Observable
 class Source: DataNode, Record, Hashable {
-    /// Unique identifier
     let id: UUID
-    
-    /// Title or name of the source
     var name: String
-    
-    /// Series this source belongs to (if any)
     var serie: Serie?
-    
-    /// Position within the series (if applicable)
     var number: Int?
-    
-    /// Story arc this source is part of (if any)
     var arc: Arc?
-    
-    /// Historical era in the Star Wars timeline
     var era: Era
-    
-    /// Type of media content
     var sourceType: SourceType
-    
-    /// Real-world release date
     var publicationDate: Date
-    
-    /// Year in the Star Wars timeline (BBY/ABY)
+    /// Year in the Star Wars timeline (BBY/ABY), but uses negative values for years before A New Hope
     var universeYear: Float
-    
-    /// Length in pages (if applicable)
     var numberPages: Int?
-    
-    /// Whether the source has been completed/consumed
     var isDone: Bool
-    
-    /// Additional notes about the source
     var comments: String
-    
     var wookieepediaTitle: String = ""
     
     /// Wookieepedia URL for this entity
@@ -155,47 +120,21 @@ class Source: DataNode, Record, Hashable {
         return URL(string: "https://starwars.fandom.com/wiki/" + encodedTitle)
     }
     
-    /// Keys used for encoding and decoding source data
     enum CodingKeys: String, CodingKey {
-        /// Unique identifier
         case id
-        /// Source title
         case name
-        /// Associated series
         case serie
-        /// Position in series
         case number
-        /// Associated story arc
         case arc
-        /// Historical era
         case era
-        /// Media type
         case sourceType = "source_type"
-        /// Release date
         case publicationDate = "publication_date"
-        /// Timeline year
         case universeYear = "universe_year"
-        /// Content length
         case numberPages = "number_pages"
-        /// Completion status
         case isDone = "is_done"
-        /// Additional notes
         case comments
     }
     
-    /// Creates a new source
-    /// - Parameters:
-    ///   - name: Title of the source
-    ///   - serie: Series this source belongs to
-    ///   - number: Position in the series
-    ///   - arc: Story arc this source is part of
-    ///   - era: Historical era in timeline
-    ///   - sourceType: Type of media content
-    ///   - publicationDate: Release date
-    ///   - universeYear: Year in Star Wars timeline
-    ///   - numberPages: Length in pages
-    ///   - comments: Additional notes
-    ///   - isDone: Completion status
     init(name: String = "", serie: Serie?, number: Int?, arc: Arc?, era: Era, sourceType: SourceType, publicationDate: Date, universeYear: Float?, numberPages: Int?, comments: String?, isDone: Bool = false) {
         self.id = UUID()
         self.name = name
@@ -210,12 +149,9 @@ class Source: DataNode, Record, Hashable {
         self.comments = comments ?? ""
         self.isDone = isDone
         
-        super.init(recordType: "Source", tableName: "sources", recordID: self.id)
+        super.init(recordType: "Source", databaseTableName: "sources", recordID: self.id)
     }
     
-    /// Creates a source from decoded data
-    /// - Parameter decoder: The decoder to read data from
-    /// - Throws: An error if data reading fails
     required init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<Source.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -235,12 +171,9 @@ class Source: DataNode, Record, Hashable {
         self.isDone = try container.decode(Bool.self, forKey: .isDone)
         self.comments = try container.decodeIfPresent(String.self, forKey: .comments) ?? ""
         
-        super.init(recordType: "Source", tableName: "sources", recordID: self.id)
+        super.init(recordType: "Source", databaseTableName: "sources", recordID: self.id)
     }
     
-    /// Encodes the source into data for storage
-    /// - Parameter encoder: The encoder to write data to
-    /// - Throws: An error if data writing fails
     override func encode(to encoder: Encoder) throws {
         var container: KeyedEncodingContainer<Source.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
@@ -262,7 +195,6 @@ class Source: DataNode, Record, Hashable {
         try container.encode(comments, forKey: .comments)
     }
     
-    /// An example source for previews and testing
     static let example = Source(
         name: "Episode IV: A New Hope",
         serie: .example,
@@ -277,14 +209,12 @@ class Source: DataNode, Record, Hashable {
         isDone: false
     )
     
-    /// Multiple example sources for previews and testing
     static let examples = [
         Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, numberPages: 200, comments: nil, isDone: false),
         Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, numberPages: 200, comments: nil, isDone: false),
         Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, numberPages: 200, comments: nil, isDone: false)
     ]
     
-    /// An empty source for initialization
     static let empty = Source(
         name: "",
         serie: .empty,

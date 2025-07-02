@@ -1,11 +1,29 @@
-//
-//  EditCharacterView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/12/24.
-//
-
 import SwiftUI
+
+struct CharacterInfoSection: View {
+    @State var character: Character
+    
+    var body: some View {
+        Section("Character Infos") {
+            MultiFieldView(fieldName: "Aliases", infos: character.aliases)
+            GenderPicker(gender: $character.gender)
+            EditEntityInfoView(
+                fieldName: "Species",
+                entity: Binding(
+                    get: {character.species ?? Species.empty },
+                    set: {character.species = ($0 as! Species) }),
+                entityType: .species)
+            EditEntityInfoView(
+                fieldName: "Homeworld",
+                entity: Binding(
+                    get: {character.homeworld ?? Planet.empty },
+                    set: {character.homeworld = ($0 as! Planet) }),
+                entityType: .planet)
+            //MultiFieldView(fieldName: "Affiliation", entities: character.affiliations)
+            FieldView(fieldName: "First Appearance", info: $character.firstAppearance)
+        }
+    }
+}
 
 struct EditCharacterView: View {
     @Bindable var character: Character

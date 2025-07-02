@@ -1,11 +1,14 @@
-//
-//  EditOrganizationView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/14/24.
-//
-
 import SwiftUI
+
+struct OrganizationInfoSection: View {
+    @State var organization: Organization
+    
+    var body: some View {
+        Section("Organization Infos") {
+            FieldView(fieldName: "First Appearance", info: $organization.firstAppearance)
+        }
+    }
+}
 
 struct EditOrganizationView: View {
     @Bindable var organization: Organization

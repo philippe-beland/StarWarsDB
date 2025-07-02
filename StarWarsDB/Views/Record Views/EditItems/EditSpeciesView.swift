@@ -1,11 +1,20 @@
-//
-//  EditSpeciesView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/14/24.
-//
-
 import SwiftUI
+
+struct SpeciesInfoSection: View {
+    @State var species: Species
+    
+    var body: some View {
+        Section("Species Infos") {
+            EditEntityInfoView(
+                fieldName: "Homeworld",
+                entity: Binding(
+                    get: {species.homeworld ?? Planet.empty },
+                    set: {species.homeworld = ($0 as! Planet) }),
+                entityType: .planet)
+            FieldView(fieldName: "First Appearance", info: $species.firstAppearance)
+        }
+    }
+}
 
 struct EditSpeciesView: View {
     @Bindable var species: Species

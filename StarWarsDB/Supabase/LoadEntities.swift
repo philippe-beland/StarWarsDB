@@ -1,10 +1,3 @@
-//
-//  LoadEntities.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 2/8/25.
-//
-
 import Foundation
 
 struct LoadCharactersParams: Encodable {

@@ -1,10 +1,3 @@
-//
-//  ChooseSourceView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/26/24.
-//
-
 import SwiftUI
 
 struct ChooseSourceView: View {

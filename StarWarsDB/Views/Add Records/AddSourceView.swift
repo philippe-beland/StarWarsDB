@@ -1,10 +1,3 @@
-//
-//  AddSourceView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/19/24.
-//
-
 import SwiftUI
 
 struct AddSourceView: View {

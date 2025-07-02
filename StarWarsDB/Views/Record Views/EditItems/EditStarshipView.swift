@@ -1,11 +1,20 @@
-//
-//  EditStarshipView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/14/24.
-//
-
 import SwiftUI
+
+struct StarshipInfoSection: View {
+    @State var starship: Starship
+    
+    var body: some View {
+        Section("Starship Infos") {
+            EditEntityInfoView(
+                fieldName: "Model",
+                entity: Binding(
+                    get: {starship.model ?? StarshipModel.empty },
+                    set: {starship.model = ($0 as! StarshipModel) }),
+                entityType: .starshipModel)
+            FieldView(fieldName: "First Appearance", info: $starship.firstAppearance)
+        }
+    }
+}
 
 struct EditStarshipView: View {
     @Bindable var starship: Starship

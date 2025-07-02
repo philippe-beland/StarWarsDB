@@ -1,10 +1,3 @@
-//
-//  EntityRow.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/17/24.
-//
-
 import SwiftUI
 
 struct EntityRowView: View {

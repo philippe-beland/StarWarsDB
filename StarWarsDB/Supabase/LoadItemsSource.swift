@@ -1,10 +1,3 @@
-//
-//  LoadItemsSource.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 2/8/25.
-//
-
 import Foundation
 
 func loadCharacterSources(characterID: UUID) async -> [SourceCharacter] {

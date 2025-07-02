@@ -1,11 +1,11 @@
-//
-//  ChooseRecordView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/14/24.
-//
-
 import SwiftUI
+
+struct RecordMenuItem: Identifiable {
+    let id: UUID = UUID()
+    let imageName: String
+    let type: EntityType
+    let destinationView: AnyView
+}
 
 struct ChooseRecordView: View {
     @StateObject var searchContext = SearchContext()
@@ -13,14 +13,6 @@ struct ChooseRecordView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section {
-                    NavigationLink {
-                        FavoritesView()
-                    } label: {
-                        Text("Favorites")
-                    }
-                }
-                
                 Section {
                     ForEach(recordMenuItems) { item in
                         NavigationLink(destination: ListEntitiesView(entityType: item.type)) {
@@ -47,13 +39,6 @@ struct ChooseRecordView: View {
             RecordMenuItem(imageName: "YT-1300", type: .varia, destinationView: AnyView(EditVariaView(varia: .example)))
         ]
     }
-}
-
-struct RecordMenuItem: Identifiable {
-    let id: UUID = UUID()
-    let imageName: String
-    let type: EntityType
-    let destinationView: AnyView
 }
 
 #Preview {

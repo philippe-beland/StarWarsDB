@@ -1,11 +1,13 @@
-//
-//  EditSerieView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/26/24.
-//
-
 import SwiftUI
+
+struct SerieInfoSection: View {
+    @State var serie: Serie
+    
+    var body: some View {
+        Section("Serie Infos") {
+        }
+    }
+}
 
 struct EditSerieView: View {
     @Bindable var serie: Serie

@@ -101,3 +101,6 @@ StarWarsDB/.DS_Store
 StarWarsDB/Secrets.swift
 *.pyc
 *.env
+*.jpg
+*.png
+/StarWarsDB/Ressources/Assets.xcassets

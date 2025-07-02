@@ -1,11 +1,20 @@
-//
-//  EditCreatureView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 12/14/24.
-//
-
 import SwiftUI
+
+struct CreatureInfoSection: View {
+    @State var creature: Creature
+    
+    var body: some View {
+        Section("Creature Infos") {
+            EditEntityInfoView(
+                fieldName: "Homeworld",
+                entity: Binding(
+                    get: {creature.homeworld ?? Planet.empty },
+                    set: {creature.homeworld = ($0 as! Planet) }),
+                entityType: .planet)
+            FieldView(fieldName: "First Appearance", info: $creature.firstAppearance)
+        }
+    }
+}
 
 struct EditCreatureView: View {
     @Bindable var creature: Creature
