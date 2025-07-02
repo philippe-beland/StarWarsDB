@@ -8,16 +8,10 @@
 import Foundation
 import Supabase
 
-/// Types of entities that can be tracked in the Star Wars database
-///
-/// This enum defines all the different types of elements that can be
-/// recorded and tracked in the database, from characters to starships.
 enum EntityType: String, Codable {
-    /// Individual characters
+
     case character = "Character"
-    /// Non-humanoid life forms
     case creature = "Creature"
-    /// Artificial beings
     case droid = "Droid"
     /// Groups and institutions
     case organization = "Organization"
@@ -39,6 +33,26 @@ enum EntityType: String, Codable {
     case artist = "Artist"
     /// Writers and authors
     case author = "Author"
+    
+    var id: String { self.rawValue }
+    
+    var iconName: String {
+            switch self {
+            case .character: return "person.fill"
+            case .creature: return "pawprint.fill"
+            case .droid: return "gearshape.2.fill"
+            case .organization: return "person.3.fill"
+            case .planet: return "globe.americas.fill"
+            case .species: return "leaf.fill"
+            case .starshipModel: return "cube.box.fill"
+            case .starship: return "airplane"
+            case .varia: return "sparkles"
+            case .arc: return "waveform.path.ecg"
+            case .serie: return "film.fill"
+            case .artist: return "paintpalette.fill"
+            case .author: return "book.fill"
+            }
+        }
 }
 
 /// Base class for database-persisted objects

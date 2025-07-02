@@ -49,7 +49,7 @@ class SourcePlanet: SourceItem {
     /// - Throws: An error if data reading fails
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
+               
         let id = try container.decode(UUID.self, forKey: .id)
         let source = try container.decode(Source.self, forKey: .source)
         let entity = try container.decode(Planet.self, forKey: .entity)

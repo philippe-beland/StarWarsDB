@@ -169,21 +169,27 @@ struct SourcesAppearancesSection: View {
         VStack {
             Text("Appearances")
                 .bold()
-            Form {
+            TabView {
                 ForEach(EntityType.sourceTypes, id: \.self) { entityType in
-                    Section(header: EntitySectionHeader(
-                        title: entityType.displayName,
-                        entityType: entityType,
-                        activeSheet: $activeSheet,
-                        sourceItems: getSourceItemsBinding(for: entityType)
-                    )) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        EntitySectionHeader(
+                            title: entityType.displayName,
+                            entityType: entityType,
+                            activeSheet: $activeSheet,
+                            sourceItems: getSourceItemsBinding(for: entityType)
+                        )
                         ScrollAppearancesView(
                             sourceItems: getSourceItemsBinding(for: entityType),
                             entityType: entityType
                         )
                         .id(refreshID)
                     }
+                    .padding()
+                    .tabItem {
+                        Label(entityType.displayName, systemImage: entityType.iconName)
+                    }
                 }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
             }
         }
         .sheet(item: $activeSheet) { sheet in
