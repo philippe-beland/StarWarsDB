@@ -3,6 +3,9 @@ import Foundation
 /// Represents a factual piece of information from the Star Wars universe
 @Observable
 class Fact: DatabaseEntity, Identifiable {
+    var recordType: String
+    var databaseTableName: String
+    
     let id: UUID
     
     var fact: String
@@ -29,8 +32,8 @@ class Fact: DatabaseEntity, Identifiable {
         self.fact = fact
         self.source = source
         self.keywords = keywords
-        
-        super.init(recordType: "Fact", databaseTableName: "facts", recordID: self.id)
+        self.databaseTableName = "facts"
+        self.recordType = "Fact"
     }
     
     required init(from decoder: Decoder) throws {
@@ -40,11 +43,11 @@ class Fact: DatabaseEntity, Identifiable {
         self.fact = try container.decode(String.self, forKey: .fact)
         self.source = try container.decode(Source.self, forKey: .source)
         self.keywords = try container.decodeIfPresent([String].self, forKey: .keywords) ?? []
-        
-        super.init(recordType: "Fact", databaseTableName: "facts", recordID: self.id)
+        self.databaseTableName = "facts"
+        self.recordType = "Fact"
     }
     
-    override func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container: KeyedEncodingContainer<Fact.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)

@@ -7,6 +7,9 @@ import Foundation
 /// and appearance tracking shared by all entity types.
 @Observable
 class Entity: DatabaseEntity, NamedEntity {
+    var recordType: String
+    var databaseTableName: String
+    
     var id: UUID
     var name: String
     var comments: String
@@ -28,8 +31,8 @@ class Entity: DatabaseEntity, NamedEntity {
         self.comments = comments ?? ""
         self.firstAppearance = firstAppearance ?? ""
         self.nbApparitions = nbApparitions
-        
-        super.init(recordType: recordType, databaseTableName: databaseTableName, recordID: id)
+        self.recordType = recordType
+        self.databaseTableName = databaseTableName
     }
     
     required init(from decoder: Decoder) throws {

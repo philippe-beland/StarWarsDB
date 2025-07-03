@@ -98,6 +98,9 @@ class DateFormatterProvider {
 /// such as movies, TV episodes, comics, novels, etc.
 @Observable
 class Source: DatabaseEntity, NamedEntity, Hashable {
+    var recordType: String
+    var databaseTableName: String
+    
     let id: UUID
     var name: String
     var serie: Serie?
@@ -148,8 +151,8 @@ class Source: DatabaseEntity, NamedEntity, Hashable {
         self.numberPages = numberPages
         self.comments = comments ?? ""
         self.isDone = isDone
-        
-        super.init(recordType: "Source", databaseTableName: "sources", recordID: self.id)
+        self.recordType = "Source"
+        self.databaseTableName = "sources"
     }
     
     required init(from decoder: Decoder) throws {
@@ -170,11 +173,11 @@ class Source: DatabaseEntity, NamedEntity, Hashable {
         self.numberPages = try container.decodeIfPresent(Int.self, forKey: .numberPages)
         self.isDone = try container.decode(Bool.self, forKey: .isDone)
         self.comments = try container.decodeIfPresent(String.self, forKey: .comments) ?? ""
-        
-        super.init(recordType: "Source", databaseTableName: "sources", recordID: self.id)
+        self.recordType = "Source"
+        self.databaseTableName = "sources"
     }
     
-    override func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container: KeyedEncodingContainer<Source.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)

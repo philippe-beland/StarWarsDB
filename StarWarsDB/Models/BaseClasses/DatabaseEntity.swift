@@ -8,7 +8,7 @@ protocol DatabaseEntity: Codable {
     /// The type of record this represents (e.g., "Character", "Planet")
     var recordType: String { get }
     var databaseTableName: String { get }
-    var recordID: UUID { get }
+    var id: UUID { get }
 }
 
 extension DatabaseEntity {
@@ -33,7 +33,7 @@ extension DatabaseEntity {
                 try await supabase
                     .from(self.databaseTableName)
                     .update(self)
-                    .eq("id", value: self.recordID.uuidString)
+                    .eq("id", value: self.id.uuidString)
                     .execute()
                 
                 print("\(self.recordType) successfully updated.")
@@ -49,7 +49,7 @@ extension DatabaseEntity {
                 try await supabase
                     .from(self.databaseTableName)
                     .delete()
-                    .eq("id", value: self.recordID.uuidString)
+                    .eq("id", value: self.id.uuidString)
                     .execute()
                 
                 print("\(self.recordType) successfully deleted.")
