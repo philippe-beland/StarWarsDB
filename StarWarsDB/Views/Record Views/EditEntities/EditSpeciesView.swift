@@ -24,7 +24,7 @@ struct EditSpeciesView: View {
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: species, sourceItems: sourceSpecies, InfosSection: SpeciesInfoSection(species: species))
+            EntityContentView(entity: species, sourceEntities: sourceSpecies, InfosSection: SpeciesInfoSection(species: species))
             }
         .task { await loadInitialSources() }
         .toolbar {

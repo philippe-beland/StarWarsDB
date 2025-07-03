@@ -2,11 +2,11 @@ import Foundation
 
 /// Base class for tracking entity appearances in Star Wars media sources
 ///
-/// SourceItem creates relationships between entities (characters, creatures, etc.)
+/// SourceEntity creates relationships between entities (characters, creatures, etc.)
 /// and the sources they appear in, along with the type of appearance (present,
 /// mentioned, flashback, etc.). This enables tracking how and where different
 /// elements of the Star Wars universe are referenced.
-class SourceItem: DataNode, Equatable, Identifiable {
+class SourceEntity: DatabaseEntity, Equatable, Identifiable {
     var id: UUID
     
     /// The source material where the entity appears
@@ -37,8 +37,8 @@ class SourceItem: DataNode, Equatable, Identifiable {
        fatalError("init(from:) has not been implemented")
     }
 
-    /// Compares two source items for equality
-    static func == (lhs: SourceItem, rhs: SourceItem) -> Bool {
+    /// Compares two sourceEntities for equality
+    static func == (lhs: SourceEntity, rhs: SourceEntity) -> Bool {
        lhs.source == rhs.source && lhs.entity == rhs.entity
     }
 }

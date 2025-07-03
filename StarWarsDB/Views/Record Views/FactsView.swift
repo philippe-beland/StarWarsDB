@@ -37,7 +37,7 @@ struct FactsView: View {
     }
     
     private func loadInitialFacts(for source: Source) async {
-        facts = await loadSourceFacts(recordField: "source", recordID: source.id)
+        facts = await loadSourceFacts(entityField: "source", entityID: source.id)
     }
     
     private func deleteFact(_ indexSet: IndexSet) {

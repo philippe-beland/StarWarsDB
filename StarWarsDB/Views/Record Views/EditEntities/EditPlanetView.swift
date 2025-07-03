@@ -24,7 +24,7 @@ struct EditPlanetView: View {
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: planet, sourceItems: sourcePlanets, InfosSection: PlanetInfoSection(planet: planet))
+            EntityContentView(entity: planet, sourceEntities: sourcePlanets, InfosSection: PlanetInfoSection(planet: planet))
             }
         .task { await loadInitialSources() }
         .toolbar {

@@ -2,7 +2,7 @@ import Foundation
 
 /// Tracks the primary writers/authors of Star Wars media sources
 @Observable
-class SourceAuthor: SourceItem {
+class SourceAuthor: SourceEntity {
     
     enum CodingKeys: String, CodingKey {
         case id

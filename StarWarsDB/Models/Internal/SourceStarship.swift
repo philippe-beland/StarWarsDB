@@ -2,7 +2,7 @@ import Foundation
 
 /// Tracks named starship appearances in Star Wars media sources
 @Observable
-class SourceStarship: SourceItem {
+class SourceStarship: SourceEntity {
     
     enum CodingKeys: String, CodingKey {
         case id

@@ -18,7 +18,7 @@ struct EditVariaView: View {
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: varia, sourceItems: sourceVarias, InfosSection: VariaInfoSection(varia: varia))
+            EntityContentView(entity: varia, sourceEntities: sourceVarias, InfosSection: VariaInfoSection(varia: varia))
             }
         .task { await loadInitialSources() }
         .toolbar {

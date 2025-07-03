@@ -1,21 +1,21 @@
 import SwiftUI
 
-struct ScrollAppearancesView<T: SourceItem>: View {
-    @Binding var sourceItems: [T]
+struct ScrollAppearancesView<T: SourceEntity>: View {
+    @Binding var sourceEntities: [T]
     
     let entityType: EntityType
     let layout = [GridItem(.adaptive(minimum: 225), spacing: 24)]
     
-    private var sortedEntities: [SourceItem] {
-        sourceItems.sorted(by: { $0.entity.name < $1.entity.name })
+    private var sortedEntities: [SourceEntity] {
+        sourceEntities.sorted(by: { $0.entity.name < $1.entity.name })
     }
 
     var body: some View {
             ScrollView(.vertical) {
                 LazyVGrid (columns: layout, spacing: 40) {
-                    ForEach(sortedEntities) { sourceItem in
-                        NavigationLink(destination: EditEntityView(entityType: entityType, entity: sourceItem.entity)) {
-                            RecordEntryView(sourceItem: sourceItem)
+                    ForEach(sortedEntities) { sourceEntity in
+                        NavigationLink(destination: EditEntityView(entityType: entityType, entity: sourceEntity.entity)) {
+                            EntityEntryView(sourceEntity: sourceEntity)
                         }
                         .buttonStyle(PlainButtonStyle())
                     }
@@ -26,5 +26,5 @@ struct ScrollAppearancesView<T: SourceItem>: View {
 }
 
 //#Preview {
-//    ScrollAppearancesView(sourceItems: $SourceCharacter.example, entityType: .character)
+//    ScrollAppearancesView(sourceEntities: $SourceCharacter.example, entityType: .character)
 //}

@@ -19,11 +19,11 @@ struct EditArcView: View {
     @Bindable var arc: Arc
     @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var sources = [SourceItem]()
+    @State private var sources = [SourceEntity]()
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: arc, sourceItems: sources, InfosSection: ArcInfoSection(arc: arc))
+            EntityContentView(entity: arc, sourceEntities: sources, InfosSection: ArcInfoSection(arc: arc))
         }
         .toolbar {
             Button ("Update", action: arc.update)

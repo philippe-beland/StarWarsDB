@@ -1,21 +1,17 @@
 import Foundation
 import Supabase
 
-/// DataNode provides the foundation for all objects that can be saved to
+/// DatabaseEntity provides the foundation for all objects that can be saved to
 /// and loaded from the database. It handles basic persistence operations
 /// and maintains metadata about the record type and storage location.
-class DataNode: Codable {
+protocol DatabaseEntity: Codable {
     /// The type of record this represents (e.g., "Character", "Planet")
-    let recordType: String
-    let databaseTableName: String
-    let recordID: UUID
-    
-    init(recordType: String, databaseTableName: String, recordID: UUID) {
-        self.recordType = recordType
-        self.databaseTableName = databaseTableName
-        self.recordID = recordID
-    }
+    var recordType: String { get }
+    var databaseTableName: String { get }
+    var recordID: UUID { get }
+}
 
+extension DatabaseEntity {
     func save() {
         Task {
             do {

@@ -24,7 +24,7 @@ struct EditCreatureView: View {
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: creature, sourceItems: sourceCreatures, InfosSection: CreatureInfoSection(creature: creature))
+            EntityContentView(entity: creature, sourceEntities: sourceCreatures, InfosSection: CreatureInfoSection(creature: creature))
             }
         .task { await loadInitialSources() }
         .toolbar {

@@ -9,9 +9,9 @@ struct ContentView: View {
                 .tabItem {
                     Label("Sources", systemImage: "star")
                 }
-            ChooseRecordView()
+            ChooseEntityTypeView()
                 .tabItem {
-                    Label("Records", systemImage: "star")
+                    Label("Entities", systemImage: "star")
                 }
             Group {
                 if isAuthenticated {

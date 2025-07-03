@@ -18,7 +18,7 @@ struct EditOrganizationView: View {
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: organization, sourceItems: sourceOrganizations, InfosSection: OrganizationInfoSection(organization: organization))
+            EntityContentView(entity: organization, sourceEntities: sourceOrganizations, InfosSection: OrganizationInfoSection(organization: organization))
             }
         .task { await loadInitialSources() }
         .toolbar {

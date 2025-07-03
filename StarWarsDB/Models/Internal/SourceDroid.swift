@@ -2,7 +2,7 @@ import Foundation
 
 /// Tracks droid appearances in Star Wars media sources
 @Observable
-class SourceDroid: SourceItem {
+class SourceDroid: SourceEntity {
     
     enum CodingKeys: String, CodingKey {
         case id

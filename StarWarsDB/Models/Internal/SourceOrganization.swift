@@ -2,7 +2,7 @@ import Foundation
 
 /// Tracks organization appearances in Star Wars media sources
 ///
-/// SourceOrganization specializes SourceItem for tracking how and where organizations
+/// SourceOrganization specializes SourceEntity for tracking how and where organizations
 /// appear in different sources. This covers all types of groups, including:
 /// - Political entities (Galactic Senate, First Order)
 /// - Military forces (Rebel Alliance, Imperial Navy)
@@ -10,7 +10,7 @@ import Foundation
 /// - Religious orders (Jedi Order, Sith)
 /// - Commercial enterprises (Trade Federation)
 @Observable
-class SourceOrganization: SourceItem {
+class SourceOrganization: SourceEntity {
     
     enum CodingKeys: String, CodingKey {
         case id

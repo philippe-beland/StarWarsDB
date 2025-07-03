@@ -35,7 +35,7 @@ struct EditCharacterView: View {
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: character, sourceItems: sourceCharacters, InfosSection: CharacterInfoSection(character: character))
+            EntityContentView(entity: character, sourceEntities: sourceCharacters, InfosSection: CharacterInfoSection(character: character))
         }
         .task { await loadInitialSources() }
         .toolbar {

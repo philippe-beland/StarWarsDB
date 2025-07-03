@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct RecordMenuView: View {
+struct EntityMenuView: View {
     var imageName: String
     var type: String
     
@@ -18,5 +18,5 @@ struct RecordMenuView: View {
 }
 
 #Preview {
-    RecordMenuView(imageName: "Luke_Skywalker", type: "Character")
+    EntityMenuView(imageName: "Luke_Skywalker", type: "Character")
 }

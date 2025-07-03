@@ -1,22 +1,22 @@
 import SwiftUI
 
-struct RecordEntryView: View {
-    var sourceItem: SourceItem
+struct EntityEntryView: View {
+    var sourceEntity: SourceEntity
     
     var body: some View {
         HStack {
-            imageOrPlaceholder(for: sourceItem.entity.id)
+            imageOrPlaceholder(for: sourceEntity.entity.id)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 50, height: 50, alignment: .top)
                 .clipShape(Circle())
                 .foregroundStyle(.secondary)
             
-            Text(sourceItem.entity.name)
-                .foregroundStyle(sourceItem.number > 1 ? .primary :.secondary)
-                .font(sourceItem.number > 1 ? .body : .subheadline)
+            Text(sourceEntity.entity.name)
+                .foregroundStyle(sourceEntity.number > 1 ? .primary :.secondary)
+                .font(sourceEntity.number > 1 ? .body : .subheadline)
             Spacer()
-            AppearanceView(appearance: sourceItem.appearance.rawValue)
+            AppearanceView(appearance: sourceEntity.appearance.rawValue)
             
         }
     }

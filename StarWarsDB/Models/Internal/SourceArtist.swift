@@ -2,7 +2,7 @@ import Foundation
 
 /// Tracks the real-world artists (writers, illustrators, directors) who contributed to Star Wars media sources.
 @Observable
-class SourceArtist: SourceItem {
+class SourceArtist: SourceEntity {
     
     enum CodingKeys: String, CodingKey {
         case id

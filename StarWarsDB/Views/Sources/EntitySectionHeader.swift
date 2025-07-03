@@ -4,7 +4,7 @@ struct EntitySectionHeader: View {
     let title: String
     let entityType: EntityType
     @Binding var activeSheet: ActiveSheet?
-    let sourceItems: Binding<[SourceItem]>
+    let sourceEntities: Binding<[SourceEntity]>
     
     var body: some View {
         HStack {

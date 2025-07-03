@@ -2,21 +2,21 @@ import SwiftUI
 
 /// A section that displays a list of sources by era.
 struct SourcesSection: View {
-    var sourceItems: [SourceItem]
+    var sourceEntities: [SourceEntity]
     
-    private var firstCanon: SourceItem? {
-        sourceItems.min(by: { $0.source.publicationDate < $1.source.publicationDate })
+    private var firstCanon: SourceEntity? {
+        sourceEntities.min(by: { $0.source.publicationDate < $1.source.publicationDate })
     }
     
-    private var groupedEras: [Era: [SourceItem]] {
-        Dictionary(grouping: sourceItems, by: { $0.source.era })
+    private var groupedEras: [Era: [SourceEntity]] {
+        Dictionary(grouping: sourceEntities, by: { $0.source.era })
     }
     
     var body: some View {
         List {
             ForEach(Era.allCases, id: \.self) { era in
-                if let items = groupedEras[era] {
-                    SourcesByEraView(era: era, items: items, firstCanon: firstCanon)
+                if let entities = groupedEras[era] {
+                    SourcesByEraView(era: era, entities: entities, firstCanon: firstCanon)
                 }
             }
         }
@@ -26,20 +26,20 @@ struct SourcesSection: View {
 /// A view that displays a list of sources by era.
 struct SourcesByEraView: View {
     let era: Era
-    let items: [SourceItem]
-    let firstCanon: SourceItem?
+    let entities: [SourceEntity]
+    let firstCanon: SourceEntity?
     
-    var sortedItems: [SourceItem] {
-        items.sorted { $0.source.publicationDate < $1.source.publicationDate }
+    var sortedEntities: [SourceEntity] {
+        entities.sorted { $0.source.publicationDate < $1.source.publicationDate }
     }
     
     var body: some View {
         Section(header: Text(era.rawValue)) {
-            ForEach(sortedItems) { sourceItem in
-                NavigationLink(destination: EditSourceView(source: sourceItem.source)) {
+            ForEach(sortedEntities) { sourceEntity in
+                NavigationLink(destination: EditSourceView(source: sourceEntity.source)) {
                     SourceRow(
-                        sourceItem: sourceItem,
-                        oldest: sourceItem.id == firstCanon?.id
+                        sourceEntity: sourceEntity,
+                        oldest: sourceEntity.id == firstCanon?.id
                     )
                 }
             }
@@ -88,7 +88,7 @@ struct SourceNameView: View {
 }
 
 struct SourceRow: View {
-    let sourceItem: SourceItem
+    let sourceEntity: SourceEntity
     let oldest: Bool
     
     private static let dateFormatter: DateFormatter = {
@@ -98,23 +98,23 @@ struct SourceRow: View {
     }()
     
     private var formattedDate: String {
-        Self.dateFormatter.string(from: sourceItem.source.publicationDate)
+        Self.dateFormatter.string(from: sourceEntity.source.publicationDate)
     }
     
     var body: some View {
         HStack(spacing: 20) {
-            UniverseYear(year: sourceItem.source.universeYear)
+            UniverseYear(year: sourceEntity.source.universeYear)
                 .frame(width: 50, alignment: .leading)
             
-            Image(sourceItem.source.id.uuidString.lowercased())
+            Image(sourceEntity.source.id.uuidString.lowercased())
                 .resizable()
                 .scaledToFill()
                 .frame(width: 30, height: 30)
             
             SourceNameView(
-                name: sourceItem.source.name,
-                serie: sourceItem.source.serie,
-                number: sourceItem.source.number,
+                name: sourceEntity.source.name,
+                serie: sourceEntity.source.serie,
+                number: sourceEntity.source.number,
                 oldest: oldest
                 )
                        
@@ -124,7 +124,7 @@ struct SourceRow: View {
                 .multilineTextAlignment(.center)
                 .frame(width: 100, alignment: .center)
 
-            AppearanceView(appearance: sourceItem.appearance.rawValue)
+            AppearanceView(appearance: sourceEntity.appearance.rawValue)
                 .frame(width: 80, alignment: .center)
         }
     }
@@ -148,5 +148,5 @@ struct UniverseYear: View {
 }
 
 #Preview {
-    SourcesSection(sourceItems: SourceCharacter.example)
+    SourcesSection(sourceEntities: SourceCharacter.example)
 }

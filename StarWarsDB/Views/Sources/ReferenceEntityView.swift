@@ -1,15 +1,15 @@
 import SwiftUI
 
-struct ReferenceItemView: View {
+struct ReferenceEntityView: View {
     var entityType: EntityType
     var url: URL?
-    var sourceItems: Binding<[SourceItem]>
+    var sourceEntities: Binding<[SourceEntity]>
     
     @State var listEntities: [String] = []
     @State var processedEntities: [WikiEntity] = []
     
     private var filteredEntities: [WikiEntity] {
-        let excludedNames = Set(sourceItems.wrappedValue.map { $0.entity.name.lowercased() })
+        let excludedNames = Set(sourceEntities.wrappedValue.map { $0.entity.name.lowercased() })
         let x = processedEntities.filter {
             !excludedNames.contains($0.name.lowercased())
         }

@@ -6,7 +6,7 @@ import Foundation
 /// in the Star Wars universe. This includes basic identification, naming,
 /// and appearance tracking shared by all entity types.
 @Observable
-class Entity: DataNode, Record {
+class Entity: DatabaseEntity, NamedEntity {
     var id: UUID
     var name: String
     var comments: String

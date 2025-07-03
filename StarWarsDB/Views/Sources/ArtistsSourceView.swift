@@ -27,8 +27,8 @@ struct ExpandedSourceArtistsView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(sourceArtists) { sourceItem in
-                    Text(sourceItem.entity.name)
+                ForEach(sourceArtists) { sourceEntity in
+                    Text(sourceEntity.entity.name)
                 }
                 .onDelete(perform: deleteEntity)
             }
@@ -38,7 +38,7 @@ struct ExpandedSourceArtistsView: View {
                     showAddArtistSheet.toggle()
                 }
                 .sheet(isPresented: $showAddArtistSheet) {
-                    ChooseEntityView(entityType: .artist, isSourceItem: false, sourceItems: []) { artists, _ in
+                    ChooseEntityView(entityType: .artist, isSourceEntity: false, sourceEntities: []) { artists, _ in
                         if let source {
                             for artist in artists {
                                 let newArtist = SourceArtist(source: source, entity: artist as! Artist)

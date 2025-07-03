@@ -2,7 +2,7 @@ import Foundation
 
 /// Represents a factual piece of information from the Star Wars universe
 @Observable
-class Fact: DataNode, Identifiable {
+class Fact: DatabaseEntity, Identifiable {
     let id: UUID
     
     var fact: String

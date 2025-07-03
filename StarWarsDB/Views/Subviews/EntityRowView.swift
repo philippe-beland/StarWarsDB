@@ -2,7 +2,7 @@ import SwiftUI
 
 struct EntityRowView: View {
     let entityType: EntityType
-    let entity: any Record
+    let entity: any NamedEntity
     
     var body: some View {
         HStack {
@@ -42,7 +42,7 @@ struct EntityRowView: View {
         }
     }
     
-    private func subtitle(for entityType: EntityType, entity: any Record) -> String? {
+    private func subtitle(for entityType: EntityType, entity: any NamedEntity) -> String? {
         switch entityType {
         case .character:
             return (entity as? Character)?.alias
@@ -53,7 +53,7 @@ struct EntityRowView: View {
         }
     }
     
-    private func detail(for entityType: EntityType, entity: any Record) -> String? {
+    private func detail(for entityType: EntityType, entity: any NamedEntity) -> String? {
         switch entityType {
         case .character:
             return (entity as? Character).flatMap { "\($0.species?.name ?? ""), \($0.gender)" }

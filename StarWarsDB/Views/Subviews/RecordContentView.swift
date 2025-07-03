@@ -1,28 +1,28 @@
 import SwiftUI
 
-struct RecordContentView<Content: View>: View {
+struct EntityContentView<Content: View>: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
-    @Bindable var record: Entity
+    @Bindable var entity: Entity
     
-    var sourceItems: [SourceItem]
+    var sourceEntities: [SourceEntity]
     var InfosSection: Content
     
     var body: some View {
         VStack(spacing: 0) {
-            HeaderView(name: $record.name, url: record.url)
+            HeaderView(name: $entity.name, url: entity.url)
             
             if horizontalSizeClass == .regular {
                 HStack {
-                    SidePanelView(record: record, InfosSection: InfosSection)
+                    SidePanelView(entity: entity, InfosSection: InfosSection)
                         .frame(width: 350)
                     Spacer()
-                    SourcesSection(sourceItems: sourceItems)
+                    SourcesSection(sourceEntities: sourceEntities)
                 }
             } else {
                 VStack {
-                    SidePanelView(record: record, InfosSection: InfosSection)
+                    SidePanelView(entity: entity, InfosSection: InfosSection)
                     Spacer()
-                    SourcesSection(sourceItems: sourceItems)
+                    SourcesSection(sourceEntities: sourceEntities)
                 }
             }
         }
@@ -30,5 +30,5 @@ struct RecordContentView<Content: View>: View {
 }
 
 //#Preview {
-//    RecordContentView(record: Character.example, sourceItems: SourceCharacter.example, InfosSection: Text(Character.example.name))
+//    EntityContentView(entity: Character.example, sourceEntities: SourceCharacter.example, InfosSection: Text(Character.example.name))
 //}

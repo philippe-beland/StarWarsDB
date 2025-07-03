@@ -24,7 +24,7 @@ struct EditStarshipView: View {
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: starship, sourceItems: sourceStarships, InfosSection: StarshipInfoSection(starship: starship))
+            EntityContentView(entity: starship, sourceEntities: sourceStarships, InfosSection: StarshipInfoSection(starship: starship))
             }
         .task { await loadInitialSources() }
         .toolbar {

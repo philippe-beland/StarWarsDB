@@ -2,7 +2,7 @@ import Foundation
 
 @MainActor
 class EditSourceViewModel: ObservableObject {
-    @Published var sourceItems = SourceItemCollection()
+    @Published var sourceEntities = SourceEntityCollection()
     @Published var activeSheet: ActiveSheet?
     var source: Source
     
@@ -12,11 +12,11 @@ class EditSourceViewModel: ObservableObject {
     
     enum SourceError: Error {
         case invalidEntityType
-        case duplicateItem
+        case duplicateEntity
         case saveFailed
     }
     
-    private func createSourceItem(entityType: EntityType, entity: Entity, appearance: AppearanceType) -> SourceItem {
+    private func createSourceEntity(entityType: EntityType, entity: Entity, appearance: AppearanceType) -> SourceEntity {
         switch entityType {
         case .character:
             return SourceCharacter(source: source, entity: entity as! Character, appearance: appearance)
@@ -41,68 +41,68 @@ class EditSourceViewModel: ObservableObject {
         }
     }
         
-    private func saveSourceItem(_ item: SourceItem, entityType: EntityType) throws {
+    private func saveSourceEntity(_ sourceEntity: SourceEntity, entityType: EntityType) throws {
         switch entityType {
             case .character:
-                if sourceItems.characters.contains(item as! SourceCharacter) {
-                    throw SourceError.duplicateItem
+                if sourceEntities.characters.contains(sourceEntity as! SourceCharacter) {
+                    throw SourceError.duplicateEntity
                 }
-                sourceItems.characters.append(item as! SourceCharacter)
+                sourceEntities.characters.append(sourceEntity as! SourceCharacter)
             case .creature:
-                if sourceItems.creatures.contains(item as! SourceCreature) {
-                    throw SourceError.duplicateItem
+                if sourceEntities.creatures.contains(sourceEntity as! SourceCreature) {
+                    throw SourceError.duplicateEntity
                 }
-                sourceItems.creatures.append(item as! SourceCreature)
+                sourceEntities.creatures.append(sourceEntity as! SourceCreature)
             case .droid:
-                if sourceItems.droids.contains(item as! SourceDroid) {
-                    throw SourceError.duplicateItem
+                if sourceEntities.droids.contains(sourceEntity as! SourceDroid) {
+                    throw SourceError.duplicateEntity
                 }
-                sourceItems.droids.append(item as! SourceDroid)
+                sourceEntities.droids.append(sourceEntity as! SourceDroid)
             case .organization:
-                if sourceItems.organizations.contains(item as! SourceOrganization) {
-                    throw SourceError.duplicateItem
+                if sourceEntities.organizations.contains(sourceEntity as! SourceOrganization) {
+                    throw SourceError.duplicateEntity
                 }
-                sourceItems.organizations.append(item as! SourceOrganization)
+                sourceEntities.organizations.append(sourceEntity as! SourceOrganization)
             case .planet:
-                if sourceItems.planets.contains(item as! SourcePlanet) {
-                    throw SourceError.duplicateItem
+                if sourceEntities.planets.contains(sourceEntity as! SourcePlanet) {
+                    throw SourceError.duplicateEntity
                 }
-                sourceItems.planets.append(item as! SourcePlanet)
+                sourceEntities.planets.append(sourceEntity as! SourcePlanet)
             case .species:
-                if sourceItems.species.contains(item as! SourceSpecies) {
-                    throw SourceError.duplicateItem
+                if sourceEntities.species.contains(sourceEntity as! SourceSpecies) {
+                    throw SourceError.duplicateEntity
                 }
-                sourceItems.species.append(item as! SourceSpecies)
+                sourceEntities.species.append(sourceEntity as! SourceSpecies)
             case .starship:
-                if sourceItems.starships.contains(item as! SourceStarship) {
-                    throw SourceError.duplicateItem
+                if sourceEntities.starships.contains(sourceEntity as! SourceStarship) {
+                    throw SourceError.duplicateEntity
                 }
-                sourceItems.starships.append(item as! SourceStarship)
+                sourceEntities.starships.append(sourceEntity as! SourceStarship)
             case .starshipModel:
-                if sourceItems.starshipModels.contains(item as! SourceStarshipModel) {
-                    throw SourceError.duplicateItem
+                if sourceEntities.starshipModels.contains(sourceEntity as! SourceStarshipModel) {
+                    throw SourceError.duplicateEntity
                 }
-                sourceItems.starshipModels.append(item as! SourceStarshipModel)
+                sourceEntities.starshipModels.append(sourceEntity as! SourceStarshipModel)
             case .varia:
-                if sourceItems.varias.contains(item as! SourceVaria) {
-                    throw SourceError.duplicateItem
+                if sourceEntities.varias.contains(sourceEntity as! SourceVaria) {
+                    throw SourceError.duplicateEntity
                 }
-                sourceItems.varias.append(item as! SourceVaria)
+                sourceEntities.varias.append(sourceEntity as! SourceVaria)
             default:
                 fatalError("Unsupported entity type")
         }
-        item.save()
+        sourceEntity.save()
     }
 
-    func addSourceItem(entityType: EntityType, entity: Entity, appearance: AppearanceType) {
+    func addSourceEntity(entityType: EntityType, entity: Entity, appearance: AppearanceType) {
         do {
             try validateEntity(entity, type: entityType)
-            let newItem = createSourceItem(entityType: entityType, entity: entity, appearance: appearance)
-            try saveSourceItem(newItem, entityType: entityType)
-        } catch SourceError.duplicateItem {
-            print("This item is already in the source")
+            let newEntity = createSourceEntity(entityType: entityType, entity: entity, appearance: appearance)
+            try saveSourceEntity(newEntity, entityType: entityType)
+        } catch SourceError.duplicateEntity {
+            print("This sourceEntity is already in the source")
         } catch {
-            print("Failed to add item: \(error.localizedDescription)")
+            print("Failed to add SourceEntity: \(error.localizedDescription)")
         }
     }
     
@@ -122,19 +122,19 @@ class EditSourceViewModel: ObservableObject {
         async let starships = loadSourceStarships(sourceID: source.id)
         async let starshipModels = loadSourceStarshipModels(sourceID: source.id)
         async let varias = loadSourceVarias(sourceID: source.id)
-        async let artists = loadSourceArtists(recordID: source.id)
-        async let authors = loadSourceAuthors(recordID: source.id)
+        async let artists = loadSourceArtists(sourceID: source.id)
+        async let authors = loadSourceAuthors(sourceID: source.id)
 
-        sourceItems.characters = await characters
-        sourceItems.creatures = await creatures
-        sourceItems.droids = await droids
-        sourceItems.organizations = await organizations
-        sourceItems.planets = await planets
-        sourceItems.species = await species
-        sourceItems.starships = await starships
-        sourceItems.starshipModels = await starshipModels
-        sourceItems.varias = await varias
-        sourceItems.artists = await artists
-        sourceItems.authors = await authors
+        sourceEntities.characters = await characters
+        sourceEntities.creatures = await creatures
+        sourceEntities.droids = await droids
+        sourceEntities.organizations = await organizations
+        sourceEntities.planets = await planets
+        sourceEntities.species = await species
+        sourceEntities.starships = await starships
+        sourceEntities.starshipModels = await starshipModels
+        sourceEntities.varias = await varias
+        sourceEntities.artists = await artists
+        sourceEntities.authors = await authors
     }
 }

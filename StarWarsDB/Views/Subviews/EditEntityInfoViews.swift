@@ -26,7 +26,7 @@ struct EditEntityInfoView: View {
             .buttonStyle(PlainButtonStyle())
         }
         .sheet(isPresented: $showEntitySelection) {
-            ChooseEntityView(entityType: entityType, isSourceItem: false, sourceItems: []) { selectedEntities, appearance in
+            ChooseEntityView(entityType: entityType, isSourceEntity: false, sourceEntities: []) { selectedEntities, appearance in
                 if let selectedEntity = selectedEntities.first {
                     entity = selectedEntity
                 }
@@ -55,7 +55,7 @@ struct EditVEntityInfoView: View {
             }
             .buttonStyle(PlainButtonStyle())
         .sheet(isPresented: $showEntitySelection) {
-            ChooseEntityView(entityType: entityType, isSourceItem: false, sourceItems: []) { selectedEntities, _ in
+            ChooseEntityView(entityType: entityType, isSourceEntity: false, sourceEntities: []) { selectedEntities, _ in
                 guard let selectedEntity = selectedEntities.first else { return }
                 entity = selectedEntity
             }

@@ -2,7 +2,7 @@ import Foundation
 
 /// Tracks planet appearances in Star Wars media sources
 @Observable
-class SourcePlanet: SourceItem {
+class SourcePlanet: SourceEntity {
     
     enum CodingKeys: String, CodingKey {
         case id

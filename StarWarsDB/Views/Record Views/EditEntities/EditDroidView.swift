@@ -18,7 +18,7 @@ struct EditDroidView: View {
     
     var body: some View {
         NavigationStack {
-            RecordContentView(record: droid, sourceItems: sourceDroids, InfosSection: DroidInfoSection(droid: droid))
+            EntityContentView(entity: droid, sourceEntities: sourceDroids, InfosSection: DroidInfoSection(droid: droid))
             }
         .task { await loadInitialSources() }
         .toolbar {

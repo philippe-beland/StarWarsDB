@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SourceItemCollection {
+struct SourceEntityCollection {
     var characters: [SourceCharacter] = []
     var creatures: [SourceCreature] = []
     var droids: [SourceDroid] = []
@@ -40,11 +40,11 @@ struct EditSourceView: View {
     }
     
     private var sortedArtists: [SourceArtist] {
-        viewModel.sourceItems.artists.sorted (by: { $0.entity.name < $1.entity.name })
+        viewModel.sourceEntities.artists.sorted (by: { $0.entity.name < $1.entity.name })
     }
     
     private var sortedAuthors: [SourceAuthor] {
-        viewModel.sourceItems.authors.sorted(by: { $0.entity.name < $1.entity.name })
+        viewModel.sourceEntities.authors.sorted(by: { $0.entity.name < $1.entity.name })
     }
     
     var body: some View {
@@ -54,11 +54,11 @@ struct EditSourceView: View {
                     .padding(.horizontal, 20)
                 SourceInfoSection(infosSection: infosSection)
                 SourcesAppearancesSection(
-                    sourceItems: $viewModel.sourceItems,
+                    sourceEntities: $viewModel.sourceEntities,
                     activeSheet: $viewModel.activeSheet,
                     serie: viewModel.source.serie,
                     url: viewModel.source.url,
-                    onAddEntity: viewModel.addSourceItem
+                    onAddEntity: viewModel.addSourceEntity
                 )
                 .padding(.top, 16)
             }

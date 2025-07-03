@@ -3,9 +3,9 @@ import SwiftUI
 struct ChooseEntityView: View {
     @Environment(\.dismiss) var dismiss: DismissAction
     var entityType: EntityType
-    var isSourceItem: Bool
+    var isSourceEntity: Bool
     var serie: Serie?
-    let sourceItems: [SourceItem]
+    let sourceEntities: [SourceEntity]
     
     @StateObject var searchContext = SearchContext()
     @State private var appearanceType: AppearanceType = .present
@@ -14,7 +14,7 @@ struct ChooseEntityView: View {
     @State private var selectedEntities = Set<Entity>()
     
     var existingEntities: Set<Entity> {
-        Set(sourceItems.map { $0.entity })
+        Set(sourceEntities.map { $0.entity })
     }
     var filteredEntities: [Entity] {
         let existingSet = Set(existingEntities.map { $0.id })
@@ -76,7 +76,7 @@ struct ChooseEntityView: View {
     
     @ToolbarContentBuilder
     private var ToolbarContent: some ToolbarContent {
-        if isSourceItem {
+        if isSourceEntity {
             ToolbarItem(placement: .navigationBarLeading) {
                 EditButton()
             }

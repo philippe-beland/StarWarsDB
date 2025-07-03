@@ -2,7 +2,7 @@ import Foundation
 
 /// Tracks character appearances in Star Wars media sources
 @Observable
-class SourceCharacter: SourceItem {
+class SourceCharacter: SourceEntity {
     
     enum CodingKeys: String, CodingKey {
         case id

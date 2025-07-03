@@ -97,7 +97,7 @@ class DateFormatterProvider {
 /// Sources are the individual pieces of media that make up the Star Wars universe,
 /// such as movies, TV episodes, comics, novels, etc.
 @Observable
-class Source: DataNode, Record, Hashable {
+class Source: DatabaseEntity, NamedEntity, Hashable {
     let id: UUID
     var name: String
     var serie: Serie?

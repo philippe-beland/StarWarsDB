@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SourcesAppearancesSection: View {
-    @Binding var sourceItems: SourceItemCollection
+    @Binding var sourceEntities: SourceEntityCollection
     @Binding var activeSheet: ActiveSheet?
     var serie: Serie?
     var url: URL?
@@ -19,10 +19,10 @@ struct SourcesAppearancesSection: View {
                             title: entityType.displayName,
                             entityType: entityType,
                             activeSheet: $activeSheet,
-                            sourceItems: getSourceItemsBinding(for: entityType)
+                            sourceEntities: getSourceEntitiesBinding(for: entityType)
                         )
                         ScrollAppearancesView(
-                            sourceItems: getSourceItemsBinding(for: entityType),
+                            sourceEntities: getSourceEntitiesBinding(for: entityType),
                             entityType: entityType
                         )
                         .id(refreshID)
@@ -38,7 +38,7 @@ struct SourcesAppearancesSection: View {
         .sheet(item: $activeSheet) { sheet in
             switch sheet {
             case .entitySheet(let type):
-                ChooseEntityView(entityType: type, isSourceItem: true, serie: serie, sourceItems: getSourceItems(for: type)) { selectedEntities, appearance in
+                ChooseEntityView(entityType: type, isSourceEntity: true, serie: serie, sourceEntities: getSourceEntities(for: type)) { selectedEntities, appearance in
                     for selectedEntity in selectedEntities {
                         onAddEntity(type, selectedEntity, appearance)
                         if type == .character && appearance != .mentioned {
@@ -60,10 +60,10 @@ struct SourcesAppearancesSection: View {
                 }
                 
             case .referenceSheet(let type):
-                ReferenceItemView(entityType: type, url: url, sourceItems: getSourceItemsBinding(for: type))
+                ReferenceEntityView(entityType: type, url: url, sourceEntities: getSourceEntitiesBinding(for: type))
                 
             case .expandedSheet(let type):
-                ExpandedSourceItemView(sourceItems: getSourceItemsBinding(for: type), entityType: type)
+                ExpandedSourceEntityView(sourceEntities: getSourceEntitiesBinding(for: type), entityType: type)
                     .onDisappear {
                         refreshID = UUID()
                     }
@@ -71,112 +71,112 @@ struct SourcesAppearancesSection: View {
         }
     }
     
-    private func getSourceItems(for entityType: EntityType) -> [SourceItem] {
+    private func getSourceEntities(for entityType: EntityType) -> [SourceEntity] {
         switch entityType {
         case .character:
-            return sourceItems.characters as [SourceItem]
+            return sourceEntities.characters as [SourceEntity]
         case .droid:
-            return sourceItems.droids as [SourceItem]
+            return sourceEntities.droids as [SourceEntity]
         case .creature:
-            return sourceItems.creatures as [SourceItem]
+            return sourceEntities.creatures as [SourceEntity]
         case .organization:
-            return sourceItems.organizations as [SourceItem]
+            return sourceEntities.organizations as [SourceEntity]
         case .planet:
-            return sourceItems.planets as [SourceItem]
+            return sourceEntities.planets as [SourceEntity]
         case .species:
-            return sourceItems.species as [SourceItem]
+            return sourceEntities.species as [SourceEntity]
         case .starshipModel:
-            return sourceItems.starshipModels as [SourceItem]
+            return sourceEntities.starshipModels as [SourceEntity]
         case .starship:
-            return sourceItems.starships as [SourceItem]
+            return sourceEntities.starships as [SourceEntity]
         case .varia:
-            return sourceItems.varias as [SourceItem]
+            return sourceEntities.varias as [SourceEntity]
         default:
             return []
         }
     }
     
-    private func getSourceItemsBinding(for entityType: EntityType) -> Binding<[SourceItem]> {
+    private func getSourceEntitiesBinding(for entityType: EntityType) -> Binding<[SourceEntity]> {
         switch entityType {
         case .character:
             return Binding(
-                get: { sourceItems.characters as [SourceItem] },
-                set: { newItems in
-                    var updatedCollection = sourceItems
-                    updatedCollection.characters = newItems.compactMap { $0 as? SourceCharacter }
-                    sourceItems = updatedCollection
+                get: { sourceEntities.characters as [SourceEntity] },
+                set: { newEntities in
+                    var updatedCollection = sourceEntities
+                    updatedCollection.characters = newEntities.compactMap { $0 as? SourceCharacter }
+                    sourceEntities = updatedCollection
                 }
             )
         case .droid:
             return Binding(
-                get: { sourceItems.droids as [SourceItem] },
-                set: { newItems in
-                    var updatedCollection = sourceItems
-                    updatedCollection.droids = newItems.compactMap { $0 as? SourceDroid }
-                    sourceItems = updatedCollection
+                get: { sourceEntities.droids as [SourceEntity] },
+                set: { newEntities in
+                    var updatedCollection = sourceEntities
+                    updatedCollection.droids = newEntities.compactMap { $0 as? SourceDroid }
+                    sourceEntities = updatedCollection
                 }
             )
         case .creature:
             return Binding(
-                get: { sourceItems.creatures as [SourceItem] },
-                set: { newItems in
-                    var updatedCollection = sourceItems
-                    updatedCollection.creatures = newItems.compactMap { $0 as? SourceCreature }
-                    sourceItems = updatedCollection
+                get: { sourceEntities.creatures as [SourceEntity] },
+                set: { newEntities in
+                    var updatedCollection = sourceEntities
+                    updatedCollection.creatures = newEntities.compactMap { $0 as? SourceCreature }
+                    sourceEntities = updatedCollection
                 }
             )
         case .organization:
             return Binding(
-                get: { sourceItems.organizations as [SourceItem] },
-                set: { newItems in
-                    var updatedCollection = sourceItems
-                    updatedCollection.organizations = newItems.compactMap { $0 as? SourceOrganization }
-                    sourceItems = updatedCollection
+                get: { sourceEntities.organizations as [SourceEntity] },
+                set: { newEntities in
+                    var updatedCollection = sourceEntities
+                    updatedCollection.organizations = newEntities.compactMap { $0 as? SourceOrganization }
+                    sourceEntities = updatedCollection
                 }
             )
         case .planet:
             return Binding(
-                get: { sourceItems.planets as [SourceItem] },
-                set: { newItems in
-                    var updatedCollection = sourceItems
-                    updatedCollection.planets = newItems.compactMap { $0 as? SourcePlanet }
-                    sourceItems = updatedCollection
+                get: { sourceEntities.planets as [SourceEntity] },
+                set: { newEntities in
+                    var updatedCollection = sourceEntities
+                    updatedCollection.planets = newEntities.compactMap { $0 as? SourcePlanet }
+                    sourceEntities = updatedCollection
                 }
             )
         case .species:
             return Binding(
-                get: { sourceItems.species as [SourceItem] },
-                set: { newItems in
-                    var updatedCollection = sourceItems
-                    updatedCollection.species = newItems.compactMap { $0 as? SourceSpecies }
-                    sourceItems = updatedCollection
+                get: { sourceEntities.species as [SourceEntity] },
+                set: { newEntities in
+                    var updatedCollection = sourceEntities
+                    updatedCollection.species = newEntities.compactMap { $0 as? SourceSpecies }
+                    sourceEntities = updatedCollection
                 }
             )
         case .starshipModel:
             return Binding(
-                get: { sourceItems.starshipModels as [SourceItem] },
-                set: { newItems in
-                    var updatedCollection = sourceItems
-                    updatedCollection.starshipModels = newItems.compactMap { $0 as? SourceStarshipModel }
-                    sourceItems = updatedCollection
+                get: { sourceEntities.starshipModels as [SourceEntity] },
+                set: { newEntities in
+                    var updatedCollection = sourceEntities
+                    updatedCollection.starshipModels = newEntities.compactMap { $0 as? SourceStarshipModel }
+                    sourceEntities = updatedCollection
                 }
             )
         case .starship:
             return Binding(
-                get: { sourceItems.starships as [SourceItem] },
-                set: { newItems in
-                    var updatedCollection = sourceItems
-                    updatedCollection.starships = newItems.compactMap { $0 as? SourceStarship }
-                    sourceItems = updatedCollection
+                get: { sourceEntities.starships as [SourceEntity] },
+                set: { newEntities in
+                    var updatedCollection = sourceEntities
+                    updatedCollection.starships = newEntities.compactMap { $0 as? SourceStarship }
+                    sourceEntities = updatedCollection
                 }
             )
         case .varia:
             return Binding(
-                get: { sourceItems.varias as [SourceItem] },
-                set: { newItems in
-                    var updatedCollection = sourceItems
-                    updatedCollection.varias = newItems.compactMap { $0 as? SourceVaria }
-                    sourceItems = updatedCollection
+                get: { sourceEntities.varias as [SourceEntity] },
+                set: { newEntities in
+                    var updatedCollection = sourceEntities
+                    updatedCollection.varias = newEntities.compactMap { $0 as? SourceVaria }
+                    sourceEntities = updatedCollection
                 }
             )
         default:

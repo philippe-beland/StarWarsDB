@@ -1,9 +1,9 @@
 import Foundation
 
 func loadCharacterSources(characterID: UUID) async -> [SourceCharacter] {
-    var sourceItems = [SourceCharacter]()
+    var sourceEntities = [SourceCharacter]()
     do {
-        sourceItems =
+        sourceEntities =
             try await supabase
             .from("source_characters")
             .select(
@@ -16,13 +16,13 @@ func loadCharacterSources(characterID: UUID) async -> [SourceCharacter] {
     } catch {
         print("Failed to fetch SourceCharacters: \(error)")
     }
-    return sourceItems
+    return sourceEntities
 }
 
 func loadCreatureSources(creatureID: UUID) async -> [SourceCreature] {
-    var sourceItems = [SourceCreature]()
+    var sourceEntities = [SourceCreature]()
     do {
-        sourceItems =
+        sourceEntities =
             try await supabase
             .from("source_creatures")
             .select(
@@ -35,13 +35,13 @@ func loadCreatureSources(creatureID: UUID) async -> [SourceCreature] {
     } catch {
         print("Failed to fetch SourceCreatures: \(error)")
     }
-    return sourceItems
+    return sourceEntities
 }
 
 func loadDroidSources(droidID: UUID) async -> [SourceDroid] {
-    var sourceItems = [SourceDroid]()
+    var sourceEntities = [SourceDroid]()
     do {
-        sourceItems =
+        sourceEntities =
             try await supabase
             .from("source_droids")
             .select(
@@ -54,14 +54,14 @@ func loadDroidSources(droidID: UUID) async -> [SourceDroid] {
     } catch {
         print("Failed to fetch SourceDroids: \(error)")
     }
-    return sourceItems
+    return sourceEntities
 }
 
 func loadOrganizationSources(organizationID: UUID) async -> [SourceOrganization]
 {
-    var sourceItems = [SourceOrganization]()
+    var sourceEntities = [SourceOrganization]()
     do {
-        sourceItems =
+        sourceEntities =
             try await supabase
             .from("source_organizations")
             .select(
@@ -74,13 +74,13 @@ func loadOrganizationSources(organizationID: UUID) async -> [SourceOrganization]
     } catch {
         print("Failed to fetch SourceOrganizations: \(error)")
     }
-    return sourceItems
+    return sourceEntities
 }
 
 func loadPlanetSources(planetID: UUID) async -> [SourcePlanet] {
-    var sourceItems = [SourcePlanet]()
+    var sourceEntities = [SourcePlanet]()
     do {
-        sourceItems =
+        sourceEntities =
             try await supabase
             .from("source_planets")
             .select(
@@ -93,13 +93,13 @@ func loadPlanetSources(planetID: UUID) async -> [SourcePlanet] {
     } catch {
         print("Failed to fetch SourcePlanets: \(error)")
     }
-    return sourceItems
+    return sourceEntities
 }
 
 func loadSpeciesSources(speciesID: UUID) async -> [SourceSpecies] {
-    var sourceItems = [SourceSpecies]()
+    var sourceEntities = [SourceSpecies]()
     do {
-        sourceItems =
+        sourceEntities =
             try await supabase
             .from("source_species")
             .select(
@@ -112,13 +112,13 @@ func loadSpeciesSources(speciesID: UUID) async -> [SourceSpecies] {
     } catch {
         print("Failed to fetch SourceSpecies: \(error)")
     }
-    return sourceItems
+    return sourceEntities
 }
 
 func loadStarshipSources(starshipID: UUID) async -> [SourceStarship] {
-    var sourceItems = [SourceStarship]()
+    var sourceEntities = [SourceStarship]()
     do {
-        sourceItems =
+        sourceEntities =
             try await supabase
             .from("source_starships")
             .select(
@@ -131,15 +131,15 @@ func loadStarshipSources(starshipID: UUID) async -> [SourceStarship] {
     } catch {
         print("Failed to fetch SourceStarships: \(error)")
     }
-    return sourceItems
+    return sourceEntities
 }
 
 func loadStarshipModelSources(starshipModelID: UUID) async
     -> [SourceStarshipModel]
 {
-    var sourceItems = [SourceStarshipModel]()
+    var sourceEntities = [SourceStarshipModel]()
     do {
-        sourceItems =
+        sourceEntities =
             try await supabase
             .from("source_starship_models")
             .select(
@@ -152,13 +152,13 @@ func loadStarshipModelSources(starshipModelID: UUID) async
     } catch {
         print("Failed to fetch SourceStarshipModels: \(error)")
     }
-    return sourceItems
+    return sourceEntities
 }
 
 func loadVariaSources(variaID: UUID) async -> [SourceVaria] {
-    var sourceItems = [SourceVaria]()
+    var sourceEntities = [SourceVaria]()
     do {
-        sourceItems =
+        sourceEntities =
             try await supabase
             .from("source_varias")
             .select(
@@ -171,5 +171,5 @@ func loadVariaSources(variaID: UUID) async -> [SourceVaria] {
     } catch {
         print("Failed to fetch SourceVarias: \(error)")
     }
-    return sourceItems
+    return sourceEntities
 }
