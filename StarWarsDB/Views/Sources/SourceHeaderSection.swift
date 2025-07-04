@@ -26,3 +26,7 @@ struct SourceHeaderSection: View {
         .padding([.horizontal])
     }
 }
+
+#Preview {
+    SourceHeaderSection(source: <#Binding<Source>#>, showFactSheet: <#Binding<Bool>#>)
+}

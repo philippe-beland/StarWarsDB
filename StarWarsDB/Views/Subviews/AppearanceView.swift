@@ -27,3 +27,7 @@ struct AppearanceView: View {
         }
     }
 }
+
+#Preview {
+    AppearanceView(appearance: "Present")
+}

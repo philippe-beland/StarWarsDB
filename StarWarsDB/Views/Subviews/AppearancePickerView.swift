@@ -22,6 +22,12 @@ struct AppearancePickerView: View {
     }
 }
 
+#Preview {
+    AppearancePickerView(appearance: .present)
+}
+
+
+
 
 
 

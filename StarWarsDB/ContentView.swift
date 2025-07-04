@@ -5,19 +5,19 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            ChooseSourceView()
+            SourceBrowserView()
                 .tabItem {
-                    Label("Sources", systemImage: "star")
+                    Label("Sources", systemImage: "play.square.stack")
                 }
-            ChooseEntityTypeView()
+            EntityBrowserView()
                 .tabItem {
-                    Label("Entities", systemImage: "star")
+                    Label("Entities", systemImage: "list.bullet.clipboard.fill")
                 }
             Group {
                 if isAuthenticated {
-                    ProfileView()
+                    UserProfileView()
                 } else {
-                    AuthView()
+                    AuthenticationView()
                 }
             }
             .tabItem{

@@ -1,4 +1,4 @@
-enum EntityType: String, Codable, CaseIterable {
+enum EntityType: String, Codable, CaseIterable, Identifiable {
 
     case character = "Character"
     case creature = "Creature"
@@ -16,16 +16,16 @@ enum EntityType: String, Codable, CaseIterable {
     
     var id: String { self.rawValue }
     
-    var iconName: String {
+    var imageName: String {
             switch self {
-            case .character: return "person.fill"
-            case .creature: return "pawprint.fill"
-            case .droid: return "gearshape.2.fill"
-            case .organization: return "person.3.fill"
-            case .planet: return "globe.americas.fill"
-            case .species: return "leaf.fill"
-            case .starshipModel: return "cube.box.fill"
-            case .starship: return "airplane"
+            case .character: return "Luke_Skywalker"
+            case .creature: return "Dianoga"
+            case .droid: return "R2_astromech_droid"
+            case .organization: return "Alphabet_Squadron"
+            case .planet: return "Tatooine"
+            case .species: return "Twi'lek"
+            case .starshipModel: return "YT-1300"
+            case .starship: return "Millenium_Falcon"
             case .varia: return "sparkles"
             case .arc: return "waveform.path.ecg"
             case .serie: return "film.fill"

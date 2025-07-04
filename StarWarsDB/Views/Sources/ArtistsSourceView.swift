@@ -64,3 +64,7 @@ struct ExpandedSourceArtistsView: View {
         }
     }
 }
+
+#Preview {
+    ExpandedSourceArtistsView(sourceArtists: <#Binding<[SourceArtist]>#>)
+}

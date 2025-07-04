@@ -87,3 +87,12 @@ struct SourceTypePicker: View {
         }
     }
 }
+
+#Preview {
+    GenderPicker()
+    RegionPicker()
+    YearPicker()
+    PublicationDatePicker()
+    EraPicker()
+    SourceTypePicker()
+}

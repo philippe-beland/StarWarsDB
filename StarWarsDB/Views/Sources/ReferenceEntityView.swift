@@ -51,3 +51,7 @@ struct ReferenceEntityView: View {
         }
     }
 }
+
+#Preview {
+    ReferenceEntityView(entityType: .planet, sourceEntities: <#Binding<[SourceEntity]>#>)
+}

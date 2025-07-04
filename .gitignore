@@ -104,3 +104,4 @@ StarWarsDB/Secrets.swift
 *.jpg
 *.png
 /StarWarsDB/Ressources/Assets.xcassets
+StarWarsDB/Utilities/Secrets.swift

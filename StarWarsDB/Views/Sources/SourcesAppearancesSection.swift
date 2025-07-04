@@ -29,7 +29,7 @@ struct SourcesAppearancesSection: View {
                     }
                     .padding()
                     .tabItem {
-                        Label(entityType.displayName, systemImage: entityType.iconName)
+                        Label(entityType.displayName, systemImage: entityType.imageName)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
@@ -183,4 +183,8 @@ struct SourcesAppearancesSection: View {
             return .constant([]) // Return an empty, immutable Binding for unsupported cases
         }
     }
+}
+
+#Preview {
+    SourcesAppearancesSection(sourceEntities: <#Binding<SourceEntityCollection>#>, activeSheet: <#Binding<ActiveSheet?>#>, onAddEntity: <#(EntityType, Entity, AppearanceType) -> Void#>)
 }

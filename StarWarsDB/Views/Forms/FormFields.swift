@@ -68,3 +68,10 @@ struct MultiFieldVStack: View {
         }
     }
 }
+
+#Preview {
+    FieldView()
+    FieldVStack()
+    MultiFieldView()
+    MultiFieldVStack()
+}

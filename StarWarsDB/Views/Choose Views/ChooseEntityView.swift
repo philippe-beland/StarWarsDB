@@ -63,7 +63,7 @@ struct ChooseEntityView: View {
     
     private func handleSearchTextChange() {
         Task {
-            if searchContext.debouncedQuery.isEmpty || searchContext.debouncedQuery.count > 2 {
+            if searchContext.debouncedQuery.isEmpty || searchContext.debouncedQuery.count >= Constants.Search.minSearchLength {
                 entities = await loadEntities(serie: serie, entityType: entityType, sort: .name, filter: searchContext.debouncedQuery)
             }
         }
@@ -118,4 +118,8 @@ struct ChooseEntityView: View {
             }
         }
     }
+}
+
+#Preview {
+    ChooseEntityView(entityType: .character, isSourceEntity: false, sourceEntities: SourceCharacter.example, onEntitySelect: <#(Set<Entity>, AppearanceType) -> Void#>)
 }

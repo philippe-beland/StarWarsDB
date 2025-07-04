@@ -10,6 +10,6 @@ struct CommentsView: View {
     }
 }
 
-//#Preview {
-//    CommentsView(comments: "Hello World!")
-//}
+#Preview {
+    CommentsView(comments: "Hello World!")
+}

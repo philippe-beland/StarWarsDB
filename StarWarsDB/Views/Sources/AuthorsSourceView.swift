@@ -64,3 +64,7 @@ struct ExpandedSourceAuthorsView: View {
         }
     }
 }
+
+#Preview {
+    ExpandedSourceAuthorsView(sourceAuthors: <#Binding<[SourceAuthor]>#>)
+}

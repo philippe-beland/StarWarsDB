@@ -14,7 +14,7 @@ struct ScrollAppearancesView<T: SourceEntity>: View {
             ScrollView(.vertical) {
                 LazyVGrid (columns: layout, spacing: 40) {
                     ForEach(sortedEntities) { sourceEntity in
-                        NavigationLink(destination: EditEntityView(entityType: entityType, entity: sourceEntity.entity)) {
+                        NavigationLink(destination: EntityDetailView(entityType: entityType, entity: sourceEntity.entity)) {
                             EntityEntryView(sourceEntity: sourceEntity)
                         }
                         .buttonStyle(PlainButtonStyle())
@@ -25,6 +25,6 @@ struct ScrollAppearancesView<T: SourceEntity>: View {
         }
 }
 
-//#Preview {
-//    ScrollAppearancesView(sourceEntities: $SourceCharacter.example, entityType: .character)
-//}
+#Preview {
+    ScrollAppearancesView(sourceEntities: $SourceCharacter.example, entityType: .character)
+}

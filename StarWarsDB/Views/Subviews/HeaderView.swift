@@ -30,6 +30,6 @@ struct HeaderView: View {
     }
 }
 
-//#Preview {
-//    HeaderView(name: Character.example.name, urlString: Character.example.url)
-//}
+#Preview {
+    HeaderView(name: Character.example.name, urlString: Character.example.url)
+}

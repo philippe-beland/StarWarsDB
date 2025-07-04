@@ -53,3 +53,7 @@ struct ExpandedSourceEntityView: View {
         }
     }
 }
+
+#Preview {
+    ExpandedSourceEntityView(sourceEntities: <#Binding<[SourceEntity]>#>, entityType: .species)
+}

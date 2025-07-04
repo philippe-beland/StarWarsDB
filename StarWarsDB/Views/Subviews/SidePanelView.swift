@@ -14,6 +14,6 @@ struct SidePanelView<Content: View>: View {
     }
 }
 
-//#Preview {
-//    SidePanelView(entity: Character.example, InfosSection: Text(Character.example.name))
-//}
+#Preview {
+    SidePanelView(entity: Character.example, InfosSection: Text(Character.example.name))
+}

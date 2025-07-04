@@ -38,3 +38,7 @@ struct EntitySectionHeader: View {
         }
     }
 }
+
+#Preview {
+    EntitySectionHeader(title: <#String#>, entityType: <#EntityType#>, activeSheet: <#Binding<ActiveSheet?>#>, sourceEntities: <#Binding<[SourceEntity]>#>)
+}
