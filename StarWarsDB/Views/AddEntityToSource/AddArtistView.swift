@@ -37,5 +37,5 @@ struct AddArtistView: View {
 }
 
 #Preview {
-    AddArtistView()
+    AddArtistView(onArtistCreation: { _ in })
 }

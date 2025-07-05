@@ -17,7 +17,7 @@ struct SourcesListView: View {
             ScrollView {
                 LazyVGrid(columns: layout) {
                     ForEach(sources) { source in
-                        NavigationLink(destination: EditSourceView(source: source)) {
+                        NavigationLink(destination: SourceDetailView(source: source)) {
                             SourceGridView(source: source)
                         }
                         .contextMenu {

@@ -31,5 +31,6 @@ struct HeaderView: View {
 }
 
 #Preview {
-    HeaderView(name: Character.example.name, urlString: Character.example.url)
+    @Previewable @State var name = Character.example.name
+    HeaderView(name: $name, url: Character.example.url)
 }

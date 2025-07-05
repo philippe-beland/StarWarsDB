@@ -51,5 +51,5 @@ struct AddPlanetView: View {
 }
 
 #Preview {
-    AddPlanetView()
+    AddPlanetView(onPlanetCreation: { _ in })
 }

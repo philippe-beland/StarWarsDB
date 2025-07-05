@@ -28,5 +28,7 @@ struct SourceHeaderSection: View {
 }
 
 #Preview {
-    SourceHeaderSection(source: <#Binding<Source>#>, showFactSheet: <#Binding<Bool>#>)
+    @Previewable @State var source: Source = .example
+    @Previewable @State var showFactSheet: Bool = false
+    SourceHeaderSection(source: $source, showFactSheet: $showFactSheet)
 }

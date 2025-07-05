@@ -76,5 +76,5 @@ struct AddSourceView: View {
 }
 
 #Preview {
-    AddSourceView(, onSourceCreation: <#(Source) -> Void#>)
+    AddSourceView(onSourceCreation: { _ in })
 }

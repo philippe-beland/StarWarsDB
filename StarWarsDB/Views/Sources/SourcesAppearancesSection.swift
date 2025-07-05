@@ -186,5 +186,7 @@ struct SourcesAppearancesSection: View {
 }
 
 #Preview {
-    SourcesAppearancesSection(sourceEntities: <#Binding<SourceEntityCollection>#>, activeSheet: <#Binding<ActiveSheet?>#>, onAddEntity: <#(EntityType, Entity, AppearanceType) -> Void#>)
+    @Previewable @State var sourceEntities: SourceEntityCollection = .init()
+    @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
+    SourcesAppearancesSection(sourceEntities: $sourceEntities, activeSheet: $activeSheet, onAddEntity: { _, _, _ in })
 }

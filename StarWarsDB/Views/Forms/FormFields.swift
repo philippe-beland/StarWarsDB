@@ -70,8 +70,11 @@ struct MultiFieldVStack: View {
 }
 
 #Preview {
-    FieldView()
-    FieldVStack()
-    MultiFieldView()
-    MultiFieldVStack()
+    @Previewable @State var info = "Luke Skywalker"
+    var fieldName = "Name"
+    
+    FieldView(fieldName: fieldName, info: $info)
+    FieldVStack(fieldName: fieldName, info: $info)
+    MultiFieldView(fieldName: fieldName)
+    MultiFieldVStack(fieldName: fieldName)
 }

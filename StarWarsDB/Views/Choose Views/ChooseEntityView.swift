@@ -121,5 +121,5 @@ struct ChooseEntityView: View {
 }
 
 #Preview {
-    ChooseEntityView(entityType: .character, isSourceEntity: false, sourceEntities: SourceCharacter.example, onEntitySelect: <#(Set<Entity>, AppearanceType) -> Void#>)
+    ChooseEntityView(entityType: .character, isSourceEntity: false, sourceEntities: SourceCharacter.example, onEntitySelect: { _, _ in })
 }

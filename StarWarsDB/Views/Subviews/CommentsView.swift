@@ -11,5 +11,6 @@ struct CommentsView: View {
 }
 
 #Preview {
-    CommentsView(comments: "Hello World!")
+    @Previewable @State var comments: String = "Hello World!"
+    CommentsView(comments: $comments)
 }

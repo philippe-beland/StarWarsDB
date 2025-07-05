@@ -39,5 +39,5 @@ struct AddSerieView: View {
 }
 
 #Preview {
-    AddSerieView()
+    AddSerieView(onSerieCreation: { _ in })
 }

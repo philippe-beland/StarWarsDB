@@ -44,5 +44,5 @@ struct AddDroidView: View {
 }
 
 #Preview {
-    AddDroidView()
+    AddDroidView(onDroidCreation: { _ in })
 }

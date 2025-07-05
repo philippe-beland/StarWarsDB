@@ -66,5 +66,6 @@ struct ExpandedSourceAuthorsView: View {
 }
 
 #Preview {
-    ExpandedSourceAuthorsView(sourceAuthors: <#Binding<[SourceAuthor]>#>)
+    @Previewable @State var sourceAuthors: [SourceAuthor] = SourceAuthor.example
+    ExpandedSourceAuthorsView(sourceAuthors: $sourceAuthors)
 }

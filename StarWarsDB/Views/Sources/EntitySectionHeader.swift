@@ -40,5 +40,8 @@ struct EntitySectionHeader: View {
 }
 
 #Preview {
-    EntitySectionHeader(title: <#String#>, entityType: <#EntityType#>, activeSheet: <#Binding<ActiveSheet?>#>, sourceEntities: <#Binding<[SourceEntity]>#>)
+    @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
+    @Previewable @State var sourceEntities: [SourceEntity] = SourceCharacter.example
+    
+    EntitySectionHeader(title: "Characters", entityType: .character, activeSheet: $activeSheet, sourceEntities: $sourceEntities)
 }

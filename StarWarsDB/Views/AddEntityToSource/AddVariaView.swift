@@ -41,5 +41,5 @@ struct AddVariaView: View {
 }
 
 #Preview {
-    AddVariaView(onVariaCreation: <#(Entity) -> Void#>)
+    AddVariaView(onVariaCreation: { _ in })
 }

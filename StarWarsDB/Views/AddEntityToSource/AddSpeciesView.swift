@@ -48,5 +48,5 @@ struct AddSpeciesView: View {
 }
 
 #Preview {
-    AddSpeciesView()
+    AddSpeciesView(onSpeciesCreation: { _ in })
 }

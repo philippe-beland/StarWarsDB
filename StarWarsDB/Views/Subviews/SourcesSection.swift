@@ -36,7 +36,7 @@ struct SourcesByEraView: View {
     var body: some View {
         Section(header: Text(era.rawValue)) {
             ForEach(sortedEntities) { sourceEntity in
-                NavigationLink(destination: EditSourceView(source: sourceEntity.source)) {
+                NavigationLink(destination: SourceDetailView(source: sourceEntity.source)) {
                     SourceRow(
                         sourceEntity: sourceEntity,
                         oldest: sourceEntity.id == firstCanon?.id

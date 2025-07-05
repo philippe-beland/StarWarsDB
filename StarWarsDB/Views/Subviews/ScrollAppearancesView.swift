@@ -26,5 +26,6 @@ struct ScrollAppearancesView<T: SourceEntity>: View {
 }
 
 #Preview {
-    ScrollAppearancesView(sourceEntities: $SourceCharacter.example, entityType: .character)
+    @Previewable @State var sourceEntities: [SourceCharacter] = SourceCharacter.example
+    ScrollAppearancesView(sourceEntities: $sourceEntities, entityType: .character)
 }

@@ -53,5 +53,6 @@ struct ReferenceEntityView: View {
 }
 
 #Preview {
-    ReferenceEntityView(entityType: .planet, sourceEntities: <#Binding<[SourceEntity]>#>)
+    @Previewable @State var sourceEntities: [SourceEntity] = SourceCharacter.example
+    ReferenceEntityView(entityType: .planet, sourceEntities: $sourceEntities)
 }

@@ -89,10 +89,17 @@ struct SourceTypePicker: View {
 }
 
 #Preview {
-    GenderPicker()
-    RegionPicker()
-    YearPicker()
-    PublicationDatePicker()
-    EraPicker()
-    SourceTypePicker()
+    @Previewable @State var gender: Gender = .Male
+    @Previewable @State var region: Region = .unknownRegion
+    @Previewable @State var universeYear: Float = 0
+    @Previewable @State var publicationDate: Date = Date()
+    @Previewable @State var era: Era = .dawnJedi
+    @Previewable @State var sourceType: SourceType = .novels
+    
+    GenderPicker(gender: $gender)
+    RegionPicker(region: $region)
+    YearPicker(era: .dawnJedi, universeYear: $universeYear)
+    PublicationDatePicker(date: $publicationDate)
+    EraPicker(era: $era)
+    SourceTypePicker(sourceType: $sourceType)
 }

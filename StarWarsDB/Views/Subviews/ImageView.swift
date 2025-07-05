@@ -2,17 +2,26 @@ import SwiftUI
 
 struct ImageView: View {
     var title: String
+    let baseURL = "https://pub-84c7e404f0cb414d8809fe98cb5dedff.r2.dev/"
     
     var body: some View {
-        Image(title.replacingOccurrences(of: " ", with: "_"))
-            .resizable()
-            .scaledToFill()
-            .frame(width: 300 , height: 300, alignment: .top)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
-            .shadow(radius: 5)
+        AsyncImage(url: URL(string: "\(baseURL)\(title.replacingOccurrences(of: " ", with: "_").lowercased()).jpg")) { image in
+            if let image = image.image {
+                image
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 300 , height: 300, alignment: .top)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .shadow(radius: 5)
+            } else if image.error != nil {
+                Image(systemName: "xmark.circle")
+            } else {
+                ProgressView()
+            }
+        }
     }
 }
 
 #Preview {
-    ImageView(title: "Luke Skywalker")
+    ImageView(title: Character.example.id.uuidString)
 }

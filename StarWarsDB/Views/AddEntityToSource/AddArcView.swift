@@ -45,5 +45,5 @@ struct AddArcView: View {
 }
 
 #Preview {
-    AddArcView()
+    AddArcView(onArcCreation: { _ in })
 }

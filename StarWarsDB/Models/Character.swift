@@ -41,8 +41,7 @@ class Character: Entity {
         case nbApparitions = "appearances"
     }
     
-    init(name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender?, firstAppearance: String?, comments: String? = nil) {
-        let id: UUID = UUID()
+    init(id: UUID = UUID(), name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender?, firstAppearance: String?, comments: String? = nil) {
         self.aliases = aliases
         self.species = species
         self.homeworld = homeworld
@@ -96,7 +95,7 @@ class Character: Entity {
         try container.encode(comments, forKey: .comments)
     }
     
-    static let example = Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil)
+    static let example = Character(id: UUID(uuidString: "0c9b1708-799f-4277-b45c-c365029ce580") ?? UUID(), name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil)
     
     static let examples = [
         Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil),

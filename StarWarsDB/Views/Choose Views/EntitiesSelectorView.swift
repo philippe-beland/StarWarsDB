@@ -67,5 +67,5 @@ struct EntitiesSelectorView: View {
 }
 
 #Preview {
-    EntitiesSelectorView(entityType: .character, onEntitiesSelect: <#T##(Set<Entity>, AppearanceType) -> Void#>)
+    EntitiesSelectorView(entityType: .character, onEntitiesSelect: { _, _ in })
 }

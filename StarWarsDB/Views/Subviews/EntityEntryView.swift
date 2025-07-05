@@ -5,12 +5,7 @@ struct EntityEntryView: View {
     
     var body: some View {
         HStack {
-            imageOrPlaceholder(for: sourceEntity.entity.id)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50, alignment: .top)
-                .clipShape(Circle())
-                .foregroundStyle(.secondary)
+            imageOrPlaceholder(for: sourceEntity.entity.id, size:50)
             
             Text(sourceEntity.entity.name)
                 .foregroundStyle(sourceEntity.number > 1 ? .primary :.secondary)

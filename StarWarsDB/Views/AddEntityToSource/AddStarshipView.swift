@@ -48,5 +48,5 @@ struct AddStarshipView: View {
 }
 
 #Preview {
-    AddStarshipView()
+    AddStarshipView(onStarshipCreation: { _ in })
 }

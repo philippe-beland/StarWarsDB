@@ -41,5 +41,5 @@ struct AddOrganizationView: View {
 }
 
 #Preview {
-    AddOrganizationView()
+    AddOrganizationView(onOrganizationCreation: { _ in })
 }

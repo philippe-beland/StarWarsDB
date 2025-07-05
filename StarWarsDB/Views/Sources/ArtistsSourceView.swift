@@ -66,5 +66,6 @@ struct ExpandedSourceArtistsView: View {
 }
 
 #Preview {
-    ExpandedSourceArtistsView(sourceArtists: <#Binding<[SourceArtist]>#>)
+    @Previewable @State var sourceArtists: [SourceArtist] = SourceArtist.example
+    ExpandedSourceArtistsView(sourceArtists: $sourceArtists)
 }

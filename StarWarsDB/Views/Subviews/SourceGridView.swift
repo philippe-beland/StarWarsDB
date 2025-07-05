@@ -6,11 +6,6 @@ struct SourceGridView: View {
     var body: some View {
         ZStack {
             sourceImage
-                .resizable()
-                .scaledToFit()
-                .frame(minWidth: 200, maxWidth: .infinity, minHeight: 300, maxHeight: .infinity)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
-                .shadow(radius: 5)
             
             VStack {
                 Spacer()
@@ -20,17 +15,60 @@ struct SourceGridView: View {
         .padding(10)
     }
     
-    private var sourceImage: Image {
-        let imageName = source.id.uuidString.lowercased()
-        let serieName = source.serie?.id.uuidString.lowercased() ?? ""
+    @ViewBuilder
+    private var sourceImage: some View {
+        let baseURL = "https://pub-84c7e404f0cb414d8809fe98cb5dedff.r2.dev/"
+        let sourceURL = URL(string: "\(baseURL)\(source.id.uuidString.lowercased()).jpg")
+        let serieID = source.serie?.id.uuidString.lowercased()
+        let serieURL = serieID != nil ? URL(string: "\(baseURL)\(serieID!).jpg"): nil
         
-        if UIImage(named: imageName) != nil {
-            return Image(imageName)
-        } else if UIImage(named: serieName) != nil {
-            return Image(serieName)
-        } else {
-            return Image(systemName: "nosign")
+        AsyncImage(url: sourceURL) { phase in
+            switch phase {
+            case .empty:
+                ProgressView()
+                    .frame(height: 300)
+            case .success(let image):
+                imageView(from: image)
+            case .failure:
+                // Try the serie image if available
+                if let serieURL {
+                    AsyncImage(url: serieURL) { seriePhase in
+                        switch seriePhase {
+                        case .empty:
+                            ProgressView()
+                                .frame(height: 300)
+                        case .success(let serieImage):
+                            imageView(from: serieImage)
+                        case .failure:
+                            fallbackImage
+                        @unknown default:
+                            fallbackImage
+                        }
+                    }
+                } else {
+                    fallbackImage
+                }
+            @unknown default:
+                fallbackImage
+            }
         }
+    }
+    
+    private func imageView(from image: Image) -> some View {
+        image
+            .resizable()
+            .scaledToFill()
+            .frame(minWidth: 200, maxWidth: .infinity, minHeight: 300)
+            .clipShape(RoundedRectangle(cornerRadius: 15))
+            .shadow(radius: 5)
+    }
+    
+    private var fallbackImage: some View {
+        Image(systemName: "nosign")
+            .resizable()
+            .scaledToFit()
+            .frame(height: 100)
+            .foregroundColor(.gray)
     }
     
     private var sourceOverlay: some View {

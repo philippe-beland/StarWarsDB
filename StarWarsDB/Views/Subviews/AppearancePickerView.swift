@@ -23,7 +23,8 @@ struct AppearancePickerView: View {
 }
 
 #Preview {
-    AppearancePickerView(appearance: .present)
+    @Previewable @State var appearance: AppearanceType = .present
+    AppearancePickerView(appearance: $appearance)
 }
 
 

@@ -55,5 +55,6 @@ struct ExpandedSourceEntityView: View {
 }
 
 #Preview {
-    ExpandedSourceEntityView(sourceEntities: <#Binding<[SourceEntity]>#>, entityType: .species)
+    @Previewable @State var sourceEntities: [SourceEntity] = SourceCharacter.example
+    ExpandedSourceEntityView(sourceEntities: $sourceEntities, entityType: .species)
 }

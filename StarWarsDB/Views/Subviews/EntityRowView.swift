@@ -7,11 +7,6 @@ struct EntityRowView: View {
     var body: some View {
         HStack {
             imageOrPlaceholder(for: entity.id)
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
-                .foregroundStyle(.secondary)
             
             VStack(alignment: .leading) {
                 if let specificEntity = entity as? Entity {
@@ -71,11 +66,31 @@ struct EntityRowView: View {
     }
 }
 
-func imageOrPlaceholder(for id: UUID) -> Image {
-    if let uiImage = UIImage(named: id.uuidString.lowercased()) {
-        return Image(uiImage: uiImage)
-    } else {
-        return Image(systemName: "person.crop.circle.fill")
+func imageOrPlaceholder(for id: UUID, size: CGFloat=50) -> some View {
+    let baseURL = "https://pub-84c7e404f0cb414d8809fe98cb5dedff.r2.dev/"
+    let url = URL(string: "\(baseURL)\(id.uuidString.lowercased()).jpg")
+
+    return AsyncImage(url: url) { phase in
+        switch phase {
+        case .empty:
+            ProgressView()
+                .frame(width: size, height: size)
+        case .success(let image):
+            image
+                .resizable()
+                .scaledToFill()
+                .frame(width: size, height: size, alignment: .top)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .shadow(radius: 5)
+        case .failure:
+            Image(systemName: "person.crop.circle.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: size, height: size)
+                .foregroundStyle(.secondary)
+        @unknown default:
+            EmptyView()
+        }
     }
 }
 

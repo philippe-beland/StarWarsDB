@@ -61,5 +61,5 @@ struct AddCharacterView: View {
 }
 
 #Preview {
-    AddCharacterView()
+    AddCharacterView(onCharacterCreation: { _ in })
 }
