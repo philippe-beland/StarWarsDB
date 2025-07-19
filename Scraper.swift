@@ -34,7 +34,7 @@ func fetchInfo<T: Entity>(entityType: T.Type, for sourceURL: URL?) async throws 
 
             let filteredItems: [Element] = try allListItems.filter { item in
                 let hasChildren = try !item.select("> ul").isEmpty()
-                let isNestedInLi = try item.parents().first(where: { try $0.tagName() == "li" }) != nil
+                let isNestedInLi = item.parents().first(where: { $0.tagName() == "li" }) != nil
 
                 if T.self == Species.self {
                     // For species: keep top-level items (with or without children)

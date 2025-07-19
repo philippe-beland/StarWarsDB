@@ -36,13 +36,13 @@ struct EntitiesListView<T:Entity>: View {
     private func handleSearchTextChange() {
         Task {
             if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count >= Constants.Search.minSearchLength {
-                entities = await loadEntities<T>(serie: nil, sort: sortOrder, filter: searchContext.debouncedQuery)
+                entities = await loadEntities(serie: nil, sort: sortOrder, filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialEntities() async {
-        entities = await loadEntities<T>(serie: nil, sort: sortOrder, filter: searchContext.debouncedQuery)
+        entities = await loadEntities(serie: nil, sort: sortOrder, filter: searchContext.debouncedQuery)
     }
     
     private func deleteEntity(_ indexSet: IndexSet) {

@@ -92,7 +92,7 @@ final class Character: TrackableEntity {
 //        } else {
 //            self.affiliations = []
 //        }
-        let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
+        self.nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
     }
     
     func encode(to encoder: Encoder) throws {

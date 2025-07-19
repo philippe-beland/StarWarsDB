@@ -29,9 +29,9 @@ struct EntityRowView<T: Entity>: View {
     
     private func subtitle(entity: T) -> String? {
         if let character = entity as? Character {
-            return (entity as? Character)?.alias
+            return character.alias
         } else if let planet = entity as? Planet {
-            return (entity as? Planet)?.region.rawValue
+            return planet.region.rawValue
         } else {
             return nil
         }
@@ -39,15 +39,15 @@ struct EntityRowView<T: Entity>: View {
     
     private func detail(entity: T) -> String? {
         if let character = entity as? Character {
-            return (entity as? Character).flatMap { "\($0.species?.name ?? ""), \($0.gender)" }
+            return "\(character.species?.name ?? ""), \(character.gender)"
         } else if let planet = entity as? Planet {
-            return (entity as? Planet)?.capitalCity
+            return planet.capitalCity
         } else if let species = entity as? Species {
-            return (entity as? Species)?.homeworld?.name
+            return species.homeworld?.name
         } else if let starship = entity as? Starship {
-            return (entity as? Starship)?.model?.name
+            return starship.model?.name
         } else if let creature = entity as? Creature {
-            return (entity as? Creature)?.homeworld?.name
+            return creature.homeworld?.name
         } else {
             return nil
         }

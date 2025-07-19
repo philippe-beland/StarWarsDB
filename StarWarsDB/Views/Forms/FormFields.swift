@@ -71,7 +71,7 @@ struct MultiFieldVStack<T: Entity>: View {
 
 #Preview {
     @Previewable @State var info = "Luke Skywalker"
-    var fieldName = "Name"
+    let fieldName = "Name"
     
     FieldView(fieldName: fieldName, info: $info)
     FieldVStack(fieldName: fieldName, info: $info)

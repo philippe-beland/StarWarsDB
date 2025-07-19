@@ -33,16 +33,16 @@ struct EntitiesSelectorView<T: Entity>: View {
         .task { await loadInitialEntities() }
     }
     
-    private func handleSearchTextChange() {
-        Task {
-            if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count >= Constants.Search.minSearchLength {
-                entities = await loadEntities<T>(serie: nil, sort: .name, filter: searchContext.debouncedQuery)
+        private func handleSearchTextChange() {
+            Task {
+                if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count >= Constants.Search.minSearchLength {
+                    entities = await loadEntities(serie: nil, sort: .name, filter: searchContext.debouncedQuery)
+                }
             }
         }
-    }
     
     private func loadInitialEntities() async {
-        entities = await loadEntities<T>(serie: nil, sort: .name, filter: "")
+        entities = await loadEntities(serie: nil, sort: .name, filter: "")
     }
     
     @ToolbarContentBuilder
