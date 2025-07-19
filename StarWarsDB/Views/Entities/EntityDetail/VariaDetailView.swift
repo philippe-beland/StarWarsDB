@@ -14,12 +14,25 @@ struct VariaDetailView: View {
     @Bindable var varia: Varia
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceVarias = [SourceVaria]()
+    @State private var sourceVarias = [SourceEntity<Varia>]()
     
     var body: some View {
         NavigationStack {
-            EntityDetailContentView(entity: varia, sourceEntities: sourceVarias, InfosSection: VariaInfoSection(varia: varia))
-            }
+            EntityDetailContentView(
+                headerSection: HeaderView(
+                    name: $varia.name,
+                    url: varia.url
+                ),
+                sidePanel: SidePanelView(
+                    id: varia.id,
+                    comments: Binding(
+                        get: { varia.comments ?? "" },
+                        set: { varia.comments = $0 }
+                    ),
+                    InfosSection: VariaInfoSection(varia: varia)
+                ),
+                sourceEntities: sourceVarias)
+        }
         .task { await loadInitialSources() }
         .toolbar {
             Button ("Update", action: varia.update)

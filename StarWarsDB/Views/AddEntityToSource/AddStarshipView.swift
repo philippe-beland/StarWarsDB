@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct AddStarshipView: View {
+struct AddStarshipView: View, AddEntityView {
+    typealias EntityType = Starship
+    
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
@@ -8,7 +10,7 @@ struct AddStarshipView: View {
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onStarshipCreation: (Entity) -> Void
+    var onAdd: (Starship) -> Void
     
     var body: some View {
         NavigationStack{
@@ -22,8 +24,8 @@ struct AddStarshipView: View {
                             fieldName: "Model",
                             entity: Binding(
                                 get: {model ?? StarshipModel.empty },
-                                set: {model = ($0 as! StarshipModel) }),
-                            entityType: .starshipModel)
+                                set: {model = ($0 ) }),
+                            )
                         FieldView(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
@@ -42,11 +44,11 @@ struct AddStarshipView: View {
     private func saveStarship() {
         let newStarship = Starship(name: name, model: model, firstAppearance: firstAppearance, comments: comments)
         newStarship.save()
-        onStarshipCreation(newStarship)
+        onAdd(newStarship)
         dismiss()
     }
 }
 
 #Preview {
-    AddStarshipView(onStarshipCreation: { _ in })
+    AddStarshipView(onAdd: { _ in })
 }

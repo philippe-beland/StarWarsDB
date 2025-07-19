@@ -1,11 +1,10 @@
 import SwiftUI
 
-struct ExpandedSourceEntityView: View {
-    @Binding var sourceEntities: [SourceEntity]
-    var entityType: EntityType
+struct ExpandedSourceEntityView<T: Entity>: View {
+    @Binding var sourceEntities: [SourceEntity<T>]
     @State private var refreshID = UUID()
     
-    private var sortedEntities: [SourceEntity] {
+    private var sortedEntities: [SourceEntity<T>] {
         sourceEntities.sorted(by: { $0.entity.name < $1.entity.name })
     }
     
@@ -21,11 +20,11 @@ struct ExpandedSourceEntityView: View {
                 }
                 .onDelete(perform: deleteEntity)
             }
-            .navigationTitle(entityType.rawValue)
+            .navigationTitle(T.displayName)
         }
     }
     
-    private func appearanceContextMenu(for sourceEntity: SourceEntity) -> some View {
+    private func appearanceContextMenu(for sourceEntity: SourceEntity<T>) -> some View {
         Group {
             ForEach(AppearanceType.allCases, id: \.self) { appearance in
                 Button(appearance.description) {
@@ -35,7 +34,7 @@ struct ExpandedSourceEntityView: View {
         }
     }
     
-    private func updateAppearance(of sourceEntity: SourceEntity, to appearance: AppearanceType) {
+    private func updateAppearance(of sourceEntity: SourceEntity<T>, to appearance: AppearanceType) {
         if let index = sourceEntities.firstIndex(where: { $0.id == sourceEntity.id }) {
             sourceEntities[index].appearance = appearance
             sourceEntity.update()
@@ -54,7 +53,8 @@ struct ExpandedSourceEntityView: View {
     }
 }
 
-#Preview {
-    @Previewable @State var sourceEntities: [SourceEntity] = SourceCharacter.example
-    ExpandedSourceEntityView(sourceEntities: $sourceEntities, entityType: .species)
-}
+//#Preview {
+//    @Previewable var sourceEntities = SourceEntity<Species>(source: .example, entity: Species.example, appearance: .present)
+//    @Previewable @State var examples: [SourceEntity<Species>] = sourceEntities.examples
+//    ExpandedSourceEntityView<Species>(sourceEntities: $examples)
+//}

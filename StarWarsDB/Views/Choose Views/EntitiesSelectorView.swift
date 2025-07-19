@@ -1,17 +1,15 @@
 import SwiftUI
 
-struct EntitiesSelectorView: View {
+struct EntitiesSelectorView<T: Entity>: View {
     @Environment(\.dismiss) var dismiss: DismissAction
-    
-    var entityType: EntityType
     
     @StateObject var searchContext = SearchContext()
     @State private var showNewEntitySheet: Bool = false
     @State private var appearanceType: AppearanceType = .present
-    @State private var entities = [Entity]()
-    @State private var selectedEntities = Set<Entity>()
+    @State private var entities = [T]()
+    @State private var selectedEntities = Set<T>()
     
-    var onEntitiesSelect: (Set<Entity>, AppearanceType) -> Void
+    var onEntitiesSelect: (Set<T>, AppearanceType) -> Void
     
     var body: some View {
         VStack {
@@ -19,10 +17,10 @@ struct EntitiesSelectorView: View {
             
             NavigationStack {
                 List(entities, id: \.self, selection: $selectedEntities) { entity in
-                    EntityRowView(entityType: entityType, entity: entity )
+                    EntityRowView<T>(entity: entity )
                 }
                 .searchable(text: $searchContext.query, prompt: "Search")
-                .navigationTitle(entityType.rawValue)
+                .navigationTitle(T.displayName)
                 .toolbar{ ToolbarContent }
             }
             Button("Done") {
@@ -38,13 +36,13 @@ struct EntitiesSelectorView: View {
     private func handleSearchTextChange() {
         Task {
             if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count >= Constants.Search.minSearchLength {
-                entities = await loadEntities(entityType: entityType, sort: .name, filter: searchContext.debouncedQuery)
+                entities = await loadEntities<T>(serie: nil, sort: .name, filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialEntities() async {
-        entities = await loadEntities(entityType: entityType, sort: .name)
+        entities = await loadEntities<T>(serie: nil, sort: .name, filter: "")
     }
     
     @ToolbarContentBuilder
@@ -67,5 +65,5 @@ struct EntitiesSelectorView: View {
 }
 
 #Preview {
-    EntitiesSelectorView(entityType: .character, onEntitiesSelect: { _, _ in })
+    EntitiesSelectorView<Character>(onEntitiesSelect: { _, _ in })
 }

@@ -1,13 +1,14 @@
 import SwiftUI
 
-struct AddArcView: View {
+struct AddArcView: View, AddEntityView {
+    typealias EntityType = Arc
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
     @State private var comments: String = ""
     @State private var serie: Serie = .empty
-    
-    var onArcCreation: (Entity) -> Void
+
+    var onAdd: (Arc) -> Void
     
     var body: some View {
         NavigationStack{
@@ -16,12 +17,12 @@ struct AddArcView: View {
                     .font(.title.bold())
                     .padding()
                 Form {
-                    EditEntityInfoView(
-                        fieldName: "Serie",
-                        entity: Binding(
-                            get: {serie },
-                            set: {serie = ($0 as! Serie) }),
-                        entityType: .serie)
+//                    EditEntityInfoView<Serie>(
+//                        fieldName: "Serie",
+//                        entity: Binding(
+//                            get: {serie },
+//                            set: {serie = ($0 ) }),
+//                        )
                     
                     CommentsView(comments: $comments)
                     
@@ -39,11 +40,11 @@ struct AddArcView: View {
     private func saveArc() {
         let newArc = Arc(name: name, serie: serie, comments: comments)
         newArc.save()
-        onArcCreation(newArc)
+        onAdd(newArc)
         dismiss()
     }
 }
 
 #Preview {
-    AddArcView(onArcCreation: { _ in })
+    AddArcView(onAdd: { _ in })
 }

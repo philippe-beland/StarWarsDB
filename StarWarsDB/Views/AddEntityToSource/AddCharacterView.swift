@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct AddCharacterView: View {
+struct AddCharacterView: View, AddEntityView {
+    typealias EntityType = Character
+    
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
@@ -12,7 +14,7 @@ struct AddCharacterView: View {
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onCharacterCreation: (Entity) -> Void
+    var onAdd: (Character) -> Void
     
     var body: some View {
         NavigationStack{
@@ -28,14 +30,14 @@ struct AddCharacterView: View {
                             fieldName: "Species",
                             entity: Binding(
                                 get: {species ?? Species.empty },
-                                set: {species = ($0 as! Species) }),
-                            entityType: .species)
+                                set: {species = ($0 ) })
+                            )
                         EditEntityInfoView(
                             fieldName: "Homeworld",
                             entity: Binding(
                                 get: {homeworld ?? Planet.empty },
-                                set: {homeworld = ($0 as! Planet) }),
-                            entityType: .planet)
+                                set: {homeworld = ($0 ) }),
+                            )
                         //MultiFieldView(fieldName: "Affiliation", entities: affiliations)
                         FieldView(fieldName: "First Appearance", info: $firstAppearance)
                     }
@@ -55,11 +57,11 @@ struct AddCharacterView: View {
     private func saveCharacter() {
         let newCharacter = Character(name: name, aliases: aliases, species: species, homeworld: homeworld, gender: gender, firstAppearance: firstAppearance, comments: comments)
         newCharacter.save()
-        onCharacterCreation(newCharacter)
+        onAdd(newCharacter)
         dismiss()
     }
 }
 
 #Preview {
-    AddCharacterView(onCharacterCreation: { _ in })
+    AddCharacterView(onAdd: { _ in })
 }

@@ -1,46 +1,50 @@
 import SwiftUI
 
-/// A section that displays a list of sources by era.
-struct SourcesSection: View {
-    var sourceEntities: [SourceEntity]
+// Global date formatter to avoid static properties in generics
+private let sourceDateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+    return formatter
+}()
+
+/// A section that displays a list of sources by era for a specific entity type.
+struct SourcesSection<T: Entity>: View {
+    var sourceEntities: [SourceEntity<T>]
     
-    private var firstCanon: SourceEntity? {
+    private var firstCanon: SourceEntity<T>? {
         sourceEntities.min(by: { $0.source.publicationDate < $1.source.publicationDate })
     }
     
-    private var groupedEras: [Era: [SourceEntity]] {
+    private var groupedEras: [Era: [SourceEntity<T>]] {
         Dictionary(grouping: sourceEntities, by: { $0.source.era })
     }
     
     var body: some View {
         List {
-            ForEach(Era.allCases, id: \.self) { era in
+            ForEach(Era.allCases, id: \ .self) { era in
                 if let entities = groupedEras[era] {
-                    SourcesByEraView(era: era, entities: entities, firstCanon: firstCanon)
+                    SourcesByEraView<T>(era: era, entities: entities, firstCanon: firstCanon)
                 }
             }
         }
     }
 }
 
-/// A view that displays a list of sources by era.
-struct SourcesByEraView: View {
+/// A view that displays a list of sources by era for a specific entity type.
+struct SourcesByEraView<T: Entity>: View {
     let era: Era
-    let entities: [SourceEntity]
-    let firstCanon: SourceEntity?
+    let entities: [SourceEntity<T>]
+    let firstCanon: SourceEntity<T>?
     
-    var sortedEntities: [SourceEntity] {
+    var sortedEntities: [SourceEntity<T>] {
         entities.sorted { $0.source.publicationDate < $1.source.publicationDate }
     }
     
     var body: some View {
         Section(header: Text(era.rawValue)) {
-            ForEach(sortedEntities) { sourceEntity in
+            ForEach(sortedEntities, id: \ .id) { sourceEntity in
                 NavigationLink(destination: SourceDetailView(source: sourceEntity.source)) {
-                    SourceRow(
-                        sourceEntity: sourceEntity,
-                        oldest: sourceEntity.id == firstCanon?.id
-                    )
+                    SourceRow<T>(sourceEntity: sourceEntity, oldest: sourceEntity.id == firstCanon?.id)
                 }
             }
         }
@@ -87,18 +91,12 @@ struct SourceNameView: View {
     }
 }
 
-struct SourceRow: View {
-    let sourceEntity: SourceEntity
+struct SourceRow<T: Entity>: View {
+    let sourceEntity: SourceEntity<T>
     let oldest: Bool
     
-    private static let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        return formatter
-    }()
-    
     private var formattedDate: String {
-        Self.dateFormatter.string(from: sourceEntity.source.publicationDate)
+        sourceDateFormatter.string(from: sourceEntity.source.publicationDate)
     }
     
     var body: some View {
@@ -116,14 +114,14 @@ struct SourceRow: View {
                 serie: sourceEntity.source.serie,
                 number: sourceEntity.source.number,
                 oldest: oldest
-                )
-                       
+            )
+            
             Text(formattedDate)
                 .font(.caption)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
                 .frame(width: 100, alignment: .center)
-
+            
             AppearanceView(appearance: sourceEntity.appearance.rawValue)
                 .frame(width: 80, alignment: .center)
         }
@@ -147,6 +145,8 @@ struct UniverseYear: View {
     }
 }
 
-#Preview {
-    SourcesSection(sourceEntities: SourceCharacter.example)
-}
+//#Preview {
+//    var sourceCharacters = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
+//    var examples = sourceCharacters.examples
+//    SourcesSection<Character>(sourceEntities: examples)
+//}

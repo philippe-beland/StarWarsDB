@@ -14,12 +14,25 @@ struct OrganizationDetailView: View {
     @Bindable var organization: Organization
     @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var sourceOrganizations = [SourceOrganization]()
+    @State private var sourceOrganizations = [SourceEntity<Organization>]()
     
     var body: some View {
         NavigationStack {
-            EntityDetailContentView(entity: organization, sourceEntities: sourceOrganizations, InfosSection: OrganizationInfoSection(organization: organization))
-            }
+            EntityDetailContentView(
+                headerSection: HeaderView(
+                    name: $organization.name,
+                    url: organization.url
+                ),
+                sidePanel: SidePanelView(
+                    id: organization.id,
+                    comments: Binding(
+                        get: { organization.comments ?? "" },
+                        set: { organization.comments = $0 }
+                    ),
+                    InfosSection: OrganizationInfoSection(organization: organization)
+                ),
+                sourceEntities: sourceOrganizations)
+        }
         .task { await loadInitialSources() }
         .toolbar {
             Button ("Update", action: organization.update)

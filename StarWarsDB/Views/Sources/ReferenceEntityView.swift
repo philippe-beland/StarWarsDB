@@ -1,9 +1,8 @@
 import SwiftUI
 
-struct ReferenceEntityView: View {
-    var entityType: EntityType
+struct ReferenceEntityView<T: Entity>: View {
     var url: URL?
-    var sourceEntities: Binding<[SourceEntity]>
+    var sourceEntities: Binding<[SourceEntity<T>]>
     
     @State var listEntities: [String] = []
     @State var processedEntities: [WikiEntity] = []
@@ -43,7 +42,7 @@ struct ReferenceEntityView: View {
     
     private func fetch_list() async {
         do {
-            listEntities = try await fetchInfo(for: url, type: entityType)
+            listEntities = try await fetchInfo(entityType: T.self, for: url)
             processedEntities = processWikiEntities(listEntities)
         }
         catch {
@@ -52,7 +51,8 @@ struct ReferenceEntityView: View {
     }
 }
 
-#Preview {
-    @Previewable @State var sourceEntities: [SourceEntity] = SourceCharacter.example
-    ReferenceEntityView(entityType: .planet, sourceEntities: $sourceEntities)
-}
+//#Preview {
+//    @Previewable var sourceEntities = SourceEntity<Planet>(source: .example, entity: .example, appearance: .present)
+//    @Previewable @State var examples: [SourceEntity<Planet>] = sourceEntities.examples
+//    ReferenceEntityView<Planet>(sourceEntities: $examples)
+//}

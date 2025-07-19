@@ -1,7 +1,7 @@
 import Foundation
 
-func loadSourceCharacters(sourceID: UUID) async -> [SourceCharacter] {
-    var sourceEntities = [SourceCharacter]()
+func loadSourceCharacters(sourceID: UUID) async -> [SourceEntity<Character>] {
+    var sourceEntities = [SourceEntity<Character>]()
     do {
         sourceEntities = try await supabase
             .rpc("load_sourcecharacters", params: ["source_id": sourceID])
@@ -14,8 +14,8 @@ func loadSourceCharacters(sourceID: UUID) async -> [SourceCharacter] {
     return sourceEntities
 }
 
-func loadSourceCreatures(sourceID: UUID) async -> [SourceCreature] {
-    var sourceEntities = [SourceCreature]()
+func loadSourceCreatures(sourceID: UUID) async -> [SourceEntity<Creature>] {
+    var sourceEntities = [SourceEntity<Creature>]()
     do {
         sourceEntities = try await supabase
             .rpc("load_sourcecreatures", params: ["source_id": sourceID])
@@ -28,8 +28,8 @@ func loadSourceCreatures(sourceID: UUID) async -> [SourceCreature] {
     return sourceEntities
 }
 
-func loadSourceDroids(sourceID: UUID) async -> [SourceDroid] {
-    var sourceEntities = [SourceDroid]()
+func loadSourceDroids(sourceID: UUID) async -> [SourceEntity<Droid>] {
+    var sourceEntities = [SourceEntity<Droid>]()
     do {
         sourceEntities = try await supabase
             .rpc("load_sourcedroids", params: ["source_id": sourceID])
@@ -42,8 +42,8 @@ func loadSourceDroids(sourceID: UUID) async -> [SourceDroid] {
     return sourceEntities
 }
 
-func loadSourceOrganizations(sourceID: UUID) async -> [SourceOrganization] {
-    var sourceEntities = [SourceOrganization]()
+func loadSourceOrganizations(sourceID: UUID) async -> [SourceEntity<Organization>] {
+    var sourceEntities = [SourceEntity<Organization>]()
     do {
         sourceEntities = try await supabase
             .rpc("load_sourceorganizations", params: ["source_id": sourceID])
@@ -56,8 +56,8 @@ func loadSourceOrganizations(sourceID: UUID) async -> [SourceOrganization] {
     return sourceEntities
 }
 
-func loadSourcePlanets(sourceID: UUID) async -> [SourcePlanet] {
-    var sourceEntities = [SourcePlanet]()
+func loadSourcePlanets(sourceID: UUID) async -> [SourceEntity<Planet>] {
+    var sourceEntities = [SourceEntity<Planet>]()
     do {
         sourceEntities = try await supabase
             .rpc("load_sourceplanets", params: ["source_id": sourceID])
@@ -70,8 +70,8 @@ func loadSourcePlanets(sourceID: UUID) async -> [SourcePlanet] {
     return sourceEntities
 }
 
-func loadSourceSpecies(sourceID: UUID) async -> [SourceSpecies] {
-    var sourceEntities = [SourceSpecies]()
+func loadSourceSpecies(sourceID: UUID) async -> [SourceEntity<Species>] {
+    var sourceEntities = [SourceEntity<Species>]()
     do {
         sourceEntities = try await supabase
             .rpc("load_sourcespecies", params: ["source_id": sourceID])
@@ -84,8 +84,8 @@ func loadSourceSpecies(sourceID: UUID) async -> [SourceSpecies] {
     return sourceEntities
 }
 
-func loadSourceStarships(sourceID: UUID) async -> [SourceStarship] {
-    var sourceEntities = [SourceStarship]()
+func loadSourceStarships(sourceID: UUID) async -> [SourceEntity<Starship>] {
+    var sourceEntities = [SourceEntity<Starship>]()
     do {
         sourceEntities = try await supabase
             .rpc("load_sourcestarships", params: ["source_id": sourceID])
@@ -98,8 +98,8 @@ func loadSourceStarships(sourceID: UUID) async -> [SourceStarship] {
     return sourceEntities
 }
 
-func loadSourceStarshipModels(sourceID: UUID) async -> [SourceStarshipModel] {
-    var sourceEntities = [SourceStarshipModel]()
+func loadSourceStarshipModels(sourceID: UUID) async -> [SourceEntity<StarshipModel>] {
+    var sourceEntities = [SourceEntity<StarshipModel>]()
     do {
         sourceEntities = try await supabase
             .rpc("load_sourcestarshipmodels", params: ["source_id": sourceID])
@@ -112,8 +112,8 @@ func loadSourceStarshipModels(sourceID: UUID) async -> [SourceStarshipModel] {
     return sourceEntities
 }
 
-func loadSourceVarias(sourceID: UUID) async -> [SourceVaria] {
-    var sourceEntities = [SourceVaria]()
+func loadSourceVarias(sourceID: UUID) async -> [SourceEntity<Varia>] {
+    var sourceEntities = [SourceEntity<Varia>]()
     do {
         sourceEntities = try await supabase
             .rpc("load_sourcevarias", params: ["source_id": sourceID])
@@ -126,8 +126,8 @@ func loadSourceVarias(sourceID: UUID) async -> [SourceVaria] {
     return sourceEntities
 }
 
-func loadSourceArtists(sourceID: UUID) async -> [SourceArtist] {
-    var sourceEntities = [SourceArtist]()
+func loadSourceArtists(sourceID: UUID) async -> [SourceEntity<Artist>] {
+    var sourceEntities = [SourceEntity<Artist>]()
     do {
         sourceEntities = try await supabase
             .from("source_artists")
@@ -142,8 +142,8 @@ func loadSourceArtists(sourceID: UUID) async -> [SourceArtist] {
     return sourceEntities
 }
 
-func loadSourceAuthors(sourceID: UUID) async -> [SourceAuthor] {
-    var sourceEntities = [SourceAuthor]()
+func loadSourceAuthors(sourceID: UUID) async -> [SourceEntity<Author>] {
+    var sourceEntities = [SourceEntity<Author>]()
     do {
         sourceEntities = try await supabase
             .from("source_authors")

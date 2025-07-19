@@ -5,20 +5,20 @@ struct CharacterInfoSection: View {
     
     var body: some View {
         Section("Character Infos") {
-            MultiFieldView(fieldName: "Aliases", infos: character.aliases)
+            MultiFieldView<Character>(fieldName: "Aliases", infos: character.aliases)
             GenderPicker(gender: $character.gender)
             EditEntityInfoView(
                 fieldName: "Species",
                 entity: Binding(
                     get: {character.species ?? Species.empty },
-                    set: {character.species = ($0 as! Species) }),
-                entityType: .species)
+                    set: {character.species = ($0) }),
+                )
             EditEntityInfoView(
                 fieldName: "Homeworld",
                 entity: Binding(
                     get: {character.homeworld ?? Planet.empty },
-                    set: {character.homeworld = ($0 as! Planet) }),
-                entityType: .planet)
+                    set: {character.homeworld = ($0) }),
+                )
             //MultiFieldView(fieldName: "Affiliation", entities: character.affiliations)
             FieldView(fieldName: "First Appearance", info: $character.firstAppearance)
         }
@@ -29,13 +29,25 @@ struct CharacterDetailView: View {
     @Bindable var character: Character
     @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var sourceCharacters = [SourceCharacter]()
-    
+    @State private var sourceCharacters = [SourceEntity<Character>]()
     @State private var selectedOption: SourceType = .movies
     
     var body: some View {
         NavigationStack {
-            EntityDetailContentView(entity: character, sourceEntities: sourceCharacters, InfosSection: CharacterInfoSection(character: character))
+            EntityDetailContentView(
+                headerSection: HeaderView(
+                    name: $character.name,
+                    url: character.url
+                ),
+                sidePanel: SidePanelView(
+                    id: character.id,
+                    comments: Binding(
+                        get: { character.comments ?? "" },
+                        set: { character.comments = $0 }
+                    ),
+                    InfosSection: CharacterInfoSection(character: character)
+                ),
+                sourceEntities: sourceCharacters)
         }
         .task { await loadInitialSources() }
         .toolbar {

@@ -2,9 +2,24 @@ import Foundation
 
 /// Represents a series (comic book, TV show, novel, etc.) of related Star Wars media content
 @Observable
-class Serie: Entity {
+final class Serie: BaseEntity {
+    let id: UUID
+    var name: String
+    var comments: String?
     var sourceType: SourceType
     
+    var wookieepediaTitle: String = ""
+
+    let recordType: String = "Serie"
+    let databaseTableName: String = "series"
+    
+    init(name: String, sourceType: SourceType, comments: String?) {
+        self.id = UUID()
+        self.name = name
+        self.comments = comments
+        self.sourceType = sourceType
+    }
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -12,25 +27,16 @@ class Serie: Entity {
         case comments
     }
     
-    init(name: String, sourceType: SourceType, comments: String?) {
-        let id: UUID = UUID()
-        self.sourceType = sourceType
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: nil, recordType: "Serie", databaseTableName: "series")
-    }
-    
     required init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<Serie.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id: UUID = try container.decode(UUID.self, forKey: .id)
-        let name: String = try container.decode(String.self, forKey: .name)
+        self.id = try container.decode(UUID.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
         self.sourceType = try container.decode(SourceType.self, forKey: .sourceType)
-        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: nil, recordType: "Serie", databaseTableName: "series")
+        self.comments = try container.decodeIfPresent(String.self, forKey: .comments)
     }
     
-    override func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container: KeyedEncodingContainer<Serie.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
@@ -50,4 +56,17 @@ class Serie: Entity {
         sourceType: .tvShow,
         comments: nil
     )
+
+    static func == (lhs: Serie, rhs: Serie) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Serie] {
+        // Serie-specific loading logic
+        return await loadSeries(filter: filter)
+    }
 }

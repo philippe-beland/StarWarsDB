@@ -4,19 +4,37 @@ import Foundation
 ///
 /// Creatures are non-humanoid life forms that can be either sentient or non-sentient.
 @Observable
-class Creature: Entity {
+final class Creature: TrackableEntity {
+    let id: UUID
+    var name: String
+    var comments: String?
+    var firstAppearance: String
+    
     /// The creature's sentience designation (e.g., "Sentient", "Non-sentient")
     var designation: String? ///TODO: Change to SentienceType
     
     /// The creature's home planet
     var homeworld: Planet?
+
+    var alreadyInSource: Bool = false
+    var wookieepediaTitle: String = ""
+    var nbApparitions: Int = 0
+    
+    static let exampleImageName: String = "Dianoga"
+    static let displayName: String = "Creatures"
+
+    let recordType: String = "Creature"
+    let databaseTableName: String = "creatures"
+    static let sourceRecordType: String = "SourceCreatures"
+    static let sourceDatabaseTableName: String = "source_creatures"
     
     init(name: String, designation: String?, homeworld: Planet?, firstAppearance: String?, comments: String?) {
-        let id: UUID = UUID()
+        self.id = UUID()
+        self.name = name
+        self.comments = comments
+        self.firstAppearance = firstAppearance ?? ""
         self.designation = designation
         self.homeworld = homeworld
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Creature", databaseTableName: "creatures")
     }
     
     enum CodingKeys: String, CodingKey {
@@ -32,18 +50,16 @@ class Creature: Entity {
     required init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<Creature.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id: UUID = try container.decode(UUID.self, forKey: .id)
-        let name: String = try container.decode(String.self, forKey: .name)
+        self.id = try container.decode(UUID.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
         self.designation = try container.decodeIfPresent(String.self, forKey: .designation)
         self.homeworld = try container.decodeIfPresent(Planet.self, forKey: .homeworld)
-        let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
-        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
-        let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Creature", databaseTableName: "creatures")
+        self.firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance) ?? ""
+        self.comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        self.nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
     }
     
-    override func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container: KeyedEncodingContainer<Creature.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
@@ -58,4 +74,17 @@ class Creature: Entity {
     
     static let example = Creature(name: "Dianoga", designation: "Non-sentient", homeworld: .example, firstAppearance: nil, comments: nil)
     static let empty = Creature(name: "", designation: "", homeworld: nil, firstAppearance: nil, comments: nil)
+
+    static func == (lhs: Creature, rhs: Creature) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Creature] {
+        // Creature-specific loading logic
+        return await loadCreatures(serie: serie, sort: sort, filter: filter)
+    }
 }

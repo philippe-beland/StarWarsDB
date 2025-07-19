@@ -2,38 +2,28 @@ import Foundation
 
 /// Represents a factual piece of information from the Star Wars universe
 @Observable
-class Fact: DatabaseEntity, Identifiable {
-    var recordType: String
-    var databaseTableName: String
-    
+final class Fact: DatabaseRecord {
     let id: UUID
     
     var fact: String
     var source: Source
-    
-    /// Keywords or tags associated with this fact for categorization and searching
-    ///
-    /// Keywords help organize and find related facts. They might include:
-    /// - Character names
-    /// - Locations
-    /// - Events
-    /// - Concepts or themes
     var keywords: [String]
     
-    enum CodingKeys: String, CodingKey {
-        case id
-        case fact
-        case source
-        case keywords
-    }
+    var recordType: String = "Fact"
+    var databaseTableName: String = "facts"
     
     init(fact: String, source: Source, keywords: [String] = []) {
         self.id = UUID()
         self.fact = fact
         self.source = source
         self.keywords = keywords
-        self.databaseTableName = "facts"
-        self.recordType = "Fact"
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case fact
+        case source
+        case keywords
     }
     
     required init(from decoder: Decoder) throws {
@@ -43,8 +33,6 @@ class Fact: DatabaseEntity, Identifiable {
         self.fact = try container.decode(String.self, forKey: .fact)
         self.source = try container.decode(Source.self, forKey: .source)
         self.keywords = try container.decodeIfPresent([String].self, forKey: .keywords) ?? []
-        self.databaseTableName = "facts"
-        self.recordType = "Fact"
     }
     
     func encode(to encoder: Encoder) throws {
@@ -67,4 +55,12 @@ class Fact: DatabaseEntity, Identifiable {
         source: .example,
         keywords: []
     )
+
+    static func == (lhs: Fact, rhs: Fact) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }

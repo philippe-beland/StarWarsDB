@@ -2,20 +2,39 @@ import Foundation
 
 /// Represents a droid in the Star Wars universe
 @Observable
-class Droid: Entity {
+final class Droid: TrackableEntity {
+    let id: UUID
+    var name: String
+    var comments: String?
+    var firstAppearance: String
+    
     /// The droid's classification type (e.g., "Astromech", "Protocol", "Battle")
     ///
     /// This indicates the droid's primary function and capabilities. For example:
     /// - Astromech droids specialize in starship maintenance and navigation
     /// - Protocol droids focus on translation and diplomatic functions
     /// - Battle droids are designed for combat operations
+    
     var classType: String? ///TODO: Change to DroidType
+
+    var alreadyInSource: Bool = false
+    var wookieepediaTitle: String = ""
+    var nbApparitions: Int = 0
+    
+    static let exampleImageName: String = "R2_astromech_droid"
+    static let displayName: String = "Droids"
+
+    let recordType: String = "Droid"
+    let databaseTableName: String = "droids"
+    static let sourceRecordType: String = "SourceDroids"
+    static let sourceDatabaseTableName: String = "source_droids"
     
     init(name: String, classType: String?, firstAppearance: String?, comments: String?) {
-        let id: UUID = UUID()
+        self.id = UUID()
+        self.name = name
+        self.comments = comments
+        self.firstAppearance = firstAppearance ?? ""
         self.classType = classType
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Droid", databaseTableName: "droids")
     }
     
     enum CodingKeys: String, CodingKey {
@@ -30,17 +49,15 @@ class Droid: Entity {
     required init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<Droid.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id: UUID = try container.decode(UUID.self, forKey: .id)
-        let name: String = try container.decode(String.self, forKey: .name)
+        self.id = try container.decode(UUID.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
         self.classType = try container.decodeIfPresent(String.self, forKey: .classType)
-        let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
-        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
-        let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Droid", databaseTableName: "droids")
+        self.firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance) ?? ""
+        self.comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        self.nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
     }
     
-    override func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container: KeyedEncodingContainer<Droid.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
@@ -57,4 +74,17 @@ class Droid: Entity {
         comments: "Astromech droid with a high degree of mechanical aptitude."
     )
     static let empty: Droid = Droid(name: "", classType: nil, firstAppearance: nil, comments: nil)
+
+    static func == (lhs: Droid, rhs: Droid) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Droid] {
+        // Droid-specific loading logic
+        return await loadDroids(serie: serie, sort: sort, filter: filter)
+    }
 }

@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct AddDroidView: View {
+struct AddDroidView: View, AddEntityView {
+    typealias EntityType = Droid
+    
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
@@ -8,7 +10,7 @@ struct AddDroidView: View {
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onDroidCreation: (Entity) -> Void
+    var onAdd: (Droid) -> Void
     
     var body: some View {
         NavigationStack{
@@ -38,11 +40,11 @@ struct AddDroidView: View {
     private func saveDroid() {
         let newDroid = Droid(name: name, classType: classType, firstAppearance: firstAppearance, comments: comments)
         newDroid.save()
-        onDroidCreation(newDroid)
+        onAdd(newDroid)
         dismiss()
     }
 }
 
 #Preview {
-    AddDroidView(onDroidCreation: { _ in })
+    AddDroidView(onAdd: { _ in })
 }

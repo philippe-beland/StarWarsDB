@@ -1,12 +1,14 @@
 import SwiftUI
 
-struct AddArtistView: View {
+struct AddArtistView: View, AddEntityView {
+    typealias EntityType = Artist
+    
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
     @State private var comments: String = ""
     
-    var onArtistCreation: (Entity) -> Void
+    var onAdd: (Artist) -> Void
     
     var body: some View {
         NavigationStack{
@@ -31,11 +33,11 @@ struct AddArtistView: View {
     private func saveArtist() {
         let newArtist = Artist(name: name, comments: comments)
         newArtist.save()
-        onArtistCreation(newArtist)
+        onAdd(newArtist)
         dismiss()
     }
 }
 
 #Preview {
-    AddArtistView(onArtistCreation: { _ in })
+    AddArtistView(onAdd: { _ in })
 }

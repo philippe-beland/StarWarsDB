@@ -5,38 +5,8 @@ let supabase = SupabaseClient(
     supabaseURL: URL(string: Secrets.supabaseURL.rawValue)!,
     supabaseKey: Secrets.apiKey.rawValue)
 
-func loadEntities(serie: Serie? = nil, entityType: EntityType, sort: SortingItemOrder, filter: String = "") async -> [Entity] {
-    var entities = [Entity]()
-    
-    switch entityType {
-    case .character:
-        entities = await loadCharacters(serie: serie, sort: sort.rawValue, filter: filter)
-    case .creature:
-        entities = await loadCreatures(serie: serie, sort: sort.rawValue, filter: filter)
-    case .droid:
-        entities = await loadDroids(serie: serie, sort: sort.rawValue, filter: filter)
-    case .organization:
-        entities = await loadOrganizations(serie: serie, sort: sort.rawValue, filter: filter)
-    case .planet:
-        entities = await loadPlanets(serie: serie, sort: sort.rawValue, filter: filter)
-    case .species:
-        entities = await loadSpecies(serie: serie, sort: sort.rawValue, filter: filter)
-    case .starship:
-        entities = await loadStarships(serie: serie, sort: sort.rawValue, filter: filter)
-    case .starshipModel:
-        entities = await loadStarshipModels(serie: serie, sort: sort.rawValue, filter: filter)
-    case .varia:
-        entities = await loadVarias(serie: serie, sort: sort.rawValue, filter: filter)
-    case .serie:
-        entities = await loadSeries(filter: filter)
-    case .arc:
-        entities = await loadArcs(sort: sort.rawValue, filter: filter)
-    case .artist:
-        entities = await loadArtists(sort: sort.rawValue, filter: filter)
-    case .author:
-        entities = await loadArtists(sort: sort.rawValue, filter: filter)
-    }
-    return entities
+func loadEntities<T: BaseEntity>(serie: Serie? = nil, sort: SortingItemOrder, filter: String = "") async -> [T] {
+    await T.loadAll(serie: serie, sort: sort.rawValue, filter: filter)
 }
 
 func loadSources(sort: String, sourceType: SourceType, serie: Serie?, isDone: Bool, filter: String = "") async -> [Source] {

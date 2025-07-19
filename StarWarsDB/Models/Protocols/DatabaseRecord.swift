@@ -1,17 +1,16 @@
 import Foundation
 import Supabase
 
-/// DatabaseEntity provides the foundation for all objects that can be saved to
+/// DatabaseRecord provides the foundation for all objects that can be saved to
 /// and loaded from the database. It handles basic persistence operations
 /// and maintains metadata about the record type and storage location.
-protocol DatabaseEntity: Codable {
-    /// The type of record this represents (e.g., "Character", "Planet")
+protocol DatabaseRecord: Codable, Identifiable, Equatable, Hashable {
+    var id: UUID { get }
     var recordType: String { get }
     var databaseTableName: String { get }
-    var id: UUID { get }
 }
 
-extension DatabaseEntity {
+extension DatabaseRecord {
     func save() {
         Task {
             do {

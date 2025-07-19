@@ -1,13 +1,15 @@
 import SwiftUI
 
-struct AddSerieView: View {
+struct AddSerieView: View, AddEntityView {
+    typealias EntityType = Serie
+    
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
     @State private var sourceType: SourceType = .comics
     @State private var comments: String = ""
     
-    var onSerieCreation: (Entity) -> Void
+    var onAdd: (Serie) -> Void
     
     var body: some View {
         NavigationStack{
@@ -33,11 +35,11 @@ struct AddSerieView: View {
     private func saveSerie() {
         let newSerie = Serie(name: name, sourceType: sourceType, comments: comments)
         newSerie.save()
-        onSerieCreation(newSerie)
+        onAdd(newSerie)
         dismiss()
     }
 }
 
 #Preview {
-    AddSerieView(onSerieCreation: { _ in })
+    AddSerieView(onAdd: { _ in })
 }

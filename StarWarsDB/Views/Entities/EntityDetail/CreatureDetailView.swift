@@ -9,8 +9,8 @@ struct CreatureInfoSection: View {
                 fieldName: "Homeworld",
                 entity: Binding(
                     get: {creature.homeworld ?? Planet.empty },
-                    set: {creature.homeworld = ($0 as! Planet) }),
-                entityType: .planet)
+                    set: {creature.homeworld = ($0 ) }),
+                )
             FieldView(fieldName: "First Appearance", info: $creature.firstAppearance)
         }
     }
@@ -20,11 +20,24 @@ struct CreatureDetailView: View {
     @Bindable var creature: Creature
     @Environment(\.dismiss) var dismiss: DismissAction
     
-    @State private var sourceCreatures = [SourceCreature]()
+    @State private var sourceCreatures = [SourceEntity<Creature>]()
     
     var body: some View {
         NavigationStack {
-            EntityDetailContentView(entity: creature, sourceEntities: sourceCreatures, InfosSection: CreatureInfoSection(creature: creature))
+            EntityDetailContentView(
+                headerSection: HeaderView(
+                    name: $creature.name,
+                    url: creature.url
+                ),
+                sidePanel: SidePanelView(
+                    id: creature.id,
+                    comments: Binding(
+                        get: { creature.comments ?? "" },
+                        set: { creature.comments = $0 }
+                    ),
+                    InfosSection: CreatureInfoSection(creature: creature)
+                ),
+                sourceEntities: sourceCreatures)
         }
         .task { await loadInitialSources() }
         .toolbar {

@@ -20,12 +20,25 @@ struct PlanetDetailView: View {
     @Bindable var planet: Planet
     @Environment(\.dismiss) var dismiss
 
-    @State private var sourcePlanets = [SourcePlanet]()
+    @State private var sourcePlanets = [SourceEntity<Planet>]()
     
     var body: some View {
         NavigationStack {
-            EntityDetailContentView(entity: planet, sourceEntities: sourcePlanets, InfosSection: PlanetInfoSection(planet: planet))
-            }
+            EntityDetailContentView(
+                headerSection: HeaderView(
+                    name: $planet.name,
+                    url: planet.url
+                ),
+                sidePanel: SidePanelView(
+                    id: planet.id,
+                    comments: Binding(
+                        get: { planet.comments ?? "" },
+                        set: { planet.comments = $0 }
+                    ),
+                    InfosSection: PlanetInfoSection(planet: planet)
+                ),
+                sourceEntities: sourcePlanets)
+        }
         .task { await loadInitialSources() }
         .toolbar {
             Button ("Update", action: planet.update)

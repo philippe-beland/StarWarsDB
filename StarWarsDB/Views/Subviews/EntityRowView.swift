@@ -1,66 +1,54 @@
 import SwiftUI
 
-struct EntityRowView: View {
-    let entityType: EntityType
-    let entity: any NamedEntity
+struct EntityRowView<T: Entity>: View {
+    let entity: T
     
     var body: some View {
         HStack {
             imageOrPlaceholder(for: entity.id)
             
             VStack(alignment: .leading) {
-                if let specificEntity = entity as? Entity {
-                    Text(specificEntity.name)
-                        .foregroundColor(specificEntity.isExisting ? .gray : .primary)
-                        .bold()
-                } else {
                     Text(entity.name)
+                        .foregroundColor(entity.alreadyInSource ? .gray : .primary)
                         .bold()
-                }
-                if let subtitle = subtitle(for: entityType, entity: entity) {
+
+                if let subtitle = subtitle(entity: entity) {
                     Text(subtitle)
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }
             }
             Spacer()
-            if let detail = detail(for: entityType, entity: entity) {
-                if let specificEntity = entity as? Entity {
-                    Text(detail)
-                        .foregroundColor(specificEntity.isExisting ? .gray : .primary)
-                        .font(.callout)
-                } else {
-                    Text(detail)
-                        .font(.callout)
-                }
+            if let detail = detail(entity: entity) {
+                Text(detail)
+                    .foregroundColor(entity.alreadyInSource ? .gray : .primary)
+                    .font(.callout)
             }
         }
     }
     
-    private func subtitle(for entityType: EntityType, entity: any NamedEntity) -> String? {
-        switch entityType {
-        case .character:
+    private func subtitle(entity: T) -> String? {
+        if let character = entity as? Character {
             return (entity as? Character)?.alias
-        case .planet:
+        } else if let planet = entity as? Planet {
             return (entity as? Planet)?.region.rawValue
-        default:
+        } else {
             return nil
         }
     }
     
-    private func detail(for entityType: EntityType, entity: any NamedEntity) -> String? {
-        switch entityType {
-        case .character:
+    private func detail(entity: T) -> String? {
+        if let character = entity as? Character {
             return (entity as? Character).flatMap { "\($0.species?.name ?? ""), \($0.gender)" }
-        case .planet:
+        } else if let planet = entity as? Planet {
             return (entity as? Planet)?.capitalCity
-        case .species:
+        } else if let species = entity as? Species {
             return (entity as? Species)?.homeworld?.name
-        case .starship:
+        } else if let starship = entity as? Starship {
             return (entity as? Starship)?.model?.name
-        case .creature:
+        } else if let creature = entity as? Creature {
             return (entity as? Creature)?.homeworld?.name
-        default:
+        } else {
             return nil
         }
     }
@@ -95,5 +83,5 @@ func imageOrPlaceholder(for id: UUID, size: CGFloat=50) -> some View {
 }
 
 #Preview {
-    EntityRowView(entityType: .organization, entity: Organization.example)
+    EntityRowView<Organization>(entity: .example)
 }

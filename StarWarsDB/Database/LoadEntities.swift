@@ -256,3 +256,24 @@ func loadArtists(sort: String, filter: String = "") async -> [Artist] {
 
     return artists
 }
+
+func loadAuthors(sort: String, filter: String = "") async -> [Author] {
+    var authors: [Author] = []
+
+    do {
+        authors =
+            try await supabase
+                .from("artists")
+                .select("*")
+                .ilike("name", pattern: "%\(filter)%")
+                .order(sort)
+                .limit(40)
+                .execute()
+                .value
+        print("Artists successfully loaded")
+    } catch {
+        print("Failed to fetch Authors: \(error)")
+    }
+
+    return authors
+}

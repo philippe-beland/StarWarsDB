@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct EntityEntryView: View {
-    var sourceEntity: SourceEntity
+struct EntityEntryView<T: Entity>: View {
+    var sourceEntity: SourceEntity<T>
     
     var body: some View {
         HStack {
@@ -17,6 +17,7 @@ struct EntityEntryView: View {
     }
 }
 
-#Preview {
-    EntityEntryView(sourceEntity: SourceDroid.example[0])
-}
+//#Preview {
+//    let sourceEntity: SourceEntity<Droid> = SourceEntity(source: .example, entity: Droid.example, appearance: .present)
+//    EntityEntryView<Droid>(sourceEntity: sourceEntity.example)
+//}

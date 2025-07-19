@@ -97,10 +97,7 @@ class DateFormatterProvider {
 /// Sources are the individual pieces of media that make up the Star Wars universe,
 /// such as movies, TV episodes, comics, novels, etc.
 @Observable
-class Source: DatabaseEntity, NamedEntity, Hashable {
-    var recordType: String
-    var databaseTableName: String
-    
+final class Source: BaseEntity {
     let id: UUID
     var name: String
     var serie: Serie?
@@ -113,29 +110,18 @@ class Source: DatabaseEntity, NamedEntity, Hashable {
     var universeYear: Float
     var numberPages: Int?
     var isDone: Bool
-    var comments: String
+    var comments: String?
+    var alreadyInSource: Bool = false
     var wookieepediaTitle: String = ""
+
+    var recordType: String { "Source" }
+    var databaseTableName: String { "sources" }
     
     /// Wookieepedia URL for this entity
     var url: URL? {
         let title = wookieepediaTitle.isEmpty ? name : wookieepediaTitle
         let encodedTitle = title.replacingOccurrences(of: " ", with: "_")
         return URL(string: "https://starwars.fandom.com/wiki/" + encodedTitle)
-    }
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case serie
-        case number
-        case arc
-        case era
-        case sourceType = "source_type"
-        case publicationDate = "publication_date"
-        case universeYear = "universe_year"
-        case numberPages = "number_pages"
-        case isDone = "is_done"
-        case comments
     }
     
     init(name: String = "", serie: Serie?, number: Int?, arc: Arc?, era: Era, sourceType: SourceType, publicationDate: Date, universeYear: Float?, numberPages: Int?, comments: String?, isDone: Bool = false) {
@@ -151,8 +137,21 @@ class Source: DatabaseEntity, NamedEntity, Hashable {
         self.numberPages = numberPages
         self.comments = comments ?? ""
         self.isDone = isDone
-        self.recordType = "Source"
-        self.databaseTableName = "sources"
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case serie
+        case number
+        case arc
+        case era
+        case sourceType = "source_type"
+        case publicationDate = "publication_date"
+        case universeYear = "universe_year"
+        case numberPages = "number_pages"
+        case isDone = "is_done"
+        case comments
     }
     
     required init(from decoder: Decoder) throws {
@@ -173,8 +172,6 @@ class Source: DatabaseEntity, NamedEntity, Hashable {
         self.numberPages = try container.decodeIfPresent(Int.self, forKey: .numberPages)
         self.isDone = try container.decode(Bool.self, forKey: .isDone)
         self.comments = try container.decodeIfPresent(String.self, forKey: .comments) ?? ""
-        self.recordType = "Source"
-        self.databaseTableName = "sources"
     }
     
     func encode(to encoder: Encoder) throws {
@@ -212,12 +209,6 @@ class Source: DatabaseEntity, NamedEntity, Hashable {
         isDone: false
     )
     
-    static let examples = [
-        Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, numberPages: 200, comments: nil, isDone: false),
-        Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, numberPages: 200, comments: nil, isDone: false),
-        Source(name: "Episode IV: A New Hope", serie: .example, number: 1, arc: .example, era: .ageRebellion, sourceType: .movies, publicationDate: Date(), universeYear: 0, numberPages: 200, comments: nil, isDone: false)
-    ]
-    
     static let empty = Source(
         name: "",
         serie: .empty,
@@ -233,11 +224,14 @@ class Source: DatabaseEntity, NamedEntity, Hashable {
     )
     
     static func == (lhs: Source, rhs: Source) -> Bool {
-        lhs.id == rhs.id
+        return lhs.id == rhs.id
     }
-    
+
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
-        hasher.combine(name)
+    }
+    
+    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Source] {
+        return []
     }
 }

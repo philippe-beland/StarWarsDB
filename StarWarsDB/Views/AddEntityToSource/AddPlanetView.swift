@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct AddPlanetView: View {
+struct AddPlanetView: View, AddEntityView {
+    typealias EntityType = Planet
+    
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
@@ -12,7 +14,7 @@ struct AddPlanetView: View {
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onPlanetCreation: (Entity) -> Void
+    var onAdd: (Planet) -> Void
     
     var body: some View {
         NavigationStack{
@@ -45,11 +47,11 @@ struct AddPlanetView: View {
     private func savePlanet() {
         let newPlanet = Planet(name: name, region: region, sector: sector, system: system, capitalCity: capitalCity, destinations: destinations, firstAppearance: firstAppearance, comments: comments)
         newPlanet.save()
-        onPlanetCreation(newPlanet)
+        onAdd(newPlanet)
         dismiss()
     }
 }
 
 #Preview {
-    AddPlanetView(onPlanetCreation: { _ in })
+    AddPlanetView(onAdd: { _ in })
 }

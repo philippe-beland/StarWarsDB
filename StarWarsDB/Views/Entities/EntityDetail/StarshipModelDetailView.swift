@@ -16,12 +16,25 @@ struct StarshipModelDetailView: View {
     @Bindable var starshipModel: StarshipModel
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceStarshipModels = [SourceStarshipModel]()
+    @State private var sourceStarshipModels = [SourceEntity<StarshipModel>]()
     
     var body: some View {
         NavigationStack {
-            EntityDetailContentView(entity: starshipModel, sourceEntities: sourceStarshipModels, InfosSection: StarshipModelInfoSection(starshipModel: starshipModel))
-            }
+            EntityDetailContentView(
+                headerSection: HeaderView(
+                    name: $starshipModel.name,
+                    url: starshipModel.url
+                ),
+                sidePanel: SidePanelView(
+                    id: starshipModel.id,
+                    comments: Binding(
+                        get: { starshipModel.comments ?? "" },
+                        set: { starshipModel.comments = $0 }
+                    ),
+                    InfosSection: StarshipModelInfoSection(starshipModel: starshipModel)
+                ),
+                sourceEntities: sourceStarshipModels)
+        }
         .task { await loadInitialSources() }
         .toolbar {
             Button ("Update", action: starshipModel.update)

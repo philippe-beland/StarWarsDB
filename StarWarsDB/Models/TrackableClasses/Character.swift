@@ -8,11 +8,16 @@ enum Gender: String, Codable, CaseIterable {
 }
 
 @Observable
-class Character: Entity {
+final class Character: TrackableEntity {
+    let id: UUID
+    var name: String
+    var comments: String?
+    var firstAppearance: String
     var aliases: [String]
     var species: Species?
     var homeworld: Planet?
     var gender: Gender
+
     //var affiliations: [Organization]
     
     var alias: String {
@@ -27,7 +32,31 @@ class Character: Entity {
 //         
 //        return organizations.joined(separator: ", ")
 //    }
+
+    var alreadyInSource: Bool = false
+    var wookieepediaTitle: String = ""
+    var nbApparitions: Int = 0
     
+    static let exampleImageName: String = "Luke_Skywalker"
+    static let displayName: String = "Characters"
+
+    var recordType: String { "Character" }
+    var databaseTableName: String { "characters" }
+    static let sourceRecordType: String = "SourceCharacters"
+    static let sourceDatabaseTableName: String = "source_characters"
+    
+    init(id: UUID = UUID(), name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender?, firstAppearance: String?, comments: String? = nil) {
+        self.id = id
+        self.name = name
+        self.comments = comments
+        self.firstAppearance = firstAppearance ?? ""
+        self.aliases = aliases
+        self.species = species
+        self.homeworld = homeworld
+        self.gender = gender ?? .Unknown
+        //self.affiliations = affiliations
+    }
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -40,23 +69,14 @@ class Character: Entity {
         case comments
         case nbApparitions = "appearances"
     }
-    
-    init(id: UUID = UUID(), name: String, aliases: [String], species: Species?, homeworld: Planet?, gender: Gender?, firstAppearance: String?, comments: String? = nil) {
-        self.aliases = aliases
-        self.species = species
-        self.homeworld = homeworld
-        self.gender = gender ?? .Unknown
-        //self.affiliations = affiliations
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Character", databaseTableName: "characters")
-    }
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id: UUID = try container.decode(UUID.self, forKey: .id)
-        let name: String = try container.decode(String.self, forKey: .name)
-        let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
-        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
+        self.id = try container.decode(UUID.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance) ?? ""
+        self.comments = try container.decodeIfPresent(String.self, forKey: .comments)
         
         if let aliases: [String] = try container.decodeIfPresent([String].self, forKey: .aliases) {
             self.aliases = aliases
@@ -73,11 +93,9 @@ class Character: Entity {
 //            self.affiliations = []
 //        }
         let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Character", databaseTableName: "characters")
     }
     
-    override func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container: KeyedEncodingContainer<Character.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
@@ -97,9 +115,18 @@ class Character: Entity {
     
     static let example = Character(id: UUID(uuidString: "0c9b1708-799f-4277-b45c-c365029ce580") ?? UUID(), name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil)
     
-    static let examples = [
-        Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil),
-        Character(name: "Luke Skywalker", aliases: ["Red 5", "Red 4", "Red 3", "Red 2"], species: .example, homeworld: .example, gender: .Male, firstAppearance: nil)]
-    
     static let empty = Character(name: "", aliases: [], species: .empty, homeworld: .empty, gender: .Male, firstAppearance: nil)
+
+    static func == (lhs: Character, rhs: Character) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Character] {
+        // Character-specific loading logic
+        return await loadCharacters(serie: serie, sort: sort, filter: filter)
+    }
 }

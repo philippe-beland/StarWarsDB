@@ -6,7 +6,11 @@ import Foundation
 /// type of vessel. Multiple individual starships can be of the same model, such as
 /// how many YT-1300 light freighters exist besides the Millennium Falcon.
 @Observable
-class StarshipModel: Entity {
+final class StarshipModel: TrackableEntity {
+    let id: UUID
+    var name: String
+    var comments: String?
+    var firstAppearance: String
     /// The vessel's classification (e.g., "Starfighter", "Capital Ship", "Freighter")
     var classType: String  ///TODO: Change to StarshipType
     
@@ -15,7 +19,28 @@ class StarshipModel: Entity {
     /// For example, the X-wing belongs to the "T-65" line of starfighters
     /// manufactured by Incom Corporation. //TODO: Change to Manufacturer?!?
     var line: String
+
+    var alreadyInSource: Bool = false
+    var wookieepediaTitle: String = ""
+    var nbApparitions: Int = 0
     
+    static let exampleImageName: String = "YT-1300"
+    static let displayName: String = "Starship Models"
+
+    let recordType: String = "StarshipModel"
+    let databaseTableName: String = "starship_models"
+    static let sourceRecordType: String = "SourceStarshipModels"
+    static let sourceDatabaseTableName: String = "source_starship_models"
+    
+    init(name: String, classType: String?, line: String?, firstAppearance: String?, comments: String? = nil) {
+        self.id = UUID()
+        self.name = name
+        self.comments = comments
+        self.firstAppearance = firstAppearance ?? ""
+        self.classType = classType ?? ""
+        self.line = line ?? ""
+    }
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -26,30 +51,20 @@ class StarshipModel: Entity {
         case nbApparitions = "appearances"
     }
     
-    init(name: String, classType: String?, line: String?, firstAppearance: String?, comments: String? = nil) {
-        let id: UUID = UUID()
-        
-        self.classType = classType ?? ""
-        self.line = line ?? ""
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Starship Model", databaseTableName: "starship_models")
-    }
-    
     required init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<StarshipModel.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id: UUID = try container.decode(UUID.self, forKey: .id)
-        let name: String = try container.decode(String.self, forKey: .name)
+        self.id = try container.decode(UUID.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
         self.classType = try container.decodeIfPresent(String.self, forKey: .classType) ?? ""
         self.line = try container.decodeIfPresent(String.self, forKey: .line) ?? ""
-        let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
-        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
-        let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
+        self.firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance) ?? ""
+        self.comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        self.nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
         
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Starship Model", databaseTableName: "starship_models")
     }
     
-    override func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container: KeyedEncodingContainer<StarshipModel.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
@@ -75,4 +90,17 @@ class StarshipModel: Entity {
         firstAppearance: nil,
         comments: nil
     )
+
+    static func == (lhs: StarshipModel, rhs: StarshipModel) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [StarshipModel] {
+        // StarshipModel-specific loading logic
+        return await loadStarshipModels(serie: serie, sort: sort, filter: filter)
+    }
 }

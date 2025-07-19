@@ -1,19 +1,20 @@
 import SwiftUI
 
 struct SidePanelView<Content: View>: View {
-    @Bindable var entity: Entity
+    var id: UUID
+    @Binding var comments: String
     var InfosSection: Content
     
     var body: some View {
         Form {
-            ImageView(title: entity.id.uuidString.lowercased())
+            ImageView(title: id.uuidString.lowercased())
             InfosSection
-            FieldView(fieldName: "URL", info: $entity.wookieepediaTitle)
-            CommentsView(comments: $entity.comments)
+            CommentsView(comments: $comments)
         }
     }
 }
 
 #Preview {
-    SidePanelView(entity: Character.example, InfosSection: Text(Character.example.name))
+    @Previewable @State var comments: String = "This is a comment"
+    SidePanelView(id: Character.example.id, comments: $comments, InfosSection: Text(Character.example.name))
 }

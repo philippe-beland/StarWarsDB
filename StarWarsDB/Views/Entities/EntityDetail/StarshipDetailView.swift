@@ -9,8 +9,8 @@ struct StarshipInfoSection: View {
                 fieldName: "Model",
                 entity: Binding(
                     get: {starship.model ?? StarshipModel.empty },
-                    set: {starship.model = ($0 as! StarshipModel) }),
-                entityType: .starshipModel)
+                    set: {starship.model = ($0 ) }),
+                )
             FieldView(fieldName: "First Appearance", info: $starship.firstAppearance)
         }
     }
@@ -20,12 +20,25 @@ struct StarshipDetailView: View {
     @Bindable var starship: Starship
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceStarships = [SourceStarship]()
+    @State private var sourceStarships = [SourceEntity<Starship>]()
     
     var body: some View {
         NavigationStack {
-            EntityDetailContentView(entity: starship, sourceEntities: sourceStarships, InfosSection: StarshipInfoSection(starship: starship))
-            }
+            EntityDetailContentView(
+                headerSection: HeaderView(
+                    name: $starship.name,
+                    url: starship.url
+                ),
+                sidePanel: SidePanelView(
+                    id: starship.id,
+                    comments: Binding(
+                        get: { starship.comments ?? "" },
+                        set: { starship.comments = $0 }
+                    ),
+                    InfosSection: StarshipInfoSection(starship: starship)
+                ),
+                sourceEntities: sourceStarships)
+        }
         .task { await loadInitialSources() }
         .toolbar {
             Button ("Update", action: starship.update)

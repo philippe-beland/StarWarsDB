@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct AddSpeciesView: View {
+struct AddSpeciesView: View, AddEntityView {
+    typealias EntityType = Species
+    
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
@@ -8,7 +10,7 @@ struct AddSpeciesView: View {
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onSpeciesCreation: (Entity) -> Void
+    var onAdd: (Species) -> Void
     
     var body: some View {
         NavigationStack{
@@ -22,8 +24,8 @@ struct AddSpeciesView: View {
                             fieldName: "Homeworld",
                             entity: Binding(
                                 get: {homeworld ?? Planet.empty },
-                                set: {homeworld = ($0 as! Planet) }),
-                            entityType: .planet)
+                                set: {homeworld = ($0 ) }),
+                            )
                         FieldView(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
@@ -42,11 +44,11 @@ struct AddSpeciesView: View {
     private func saveSpecies() {
         let newSpecies = Species(name: name, homeworld: homeworld, firstAppearance: firstAppearance, comments: comments)
         newSpecies.save()
-        onSpeciesCreation(newSpecies)
+        onAdd(newSpecies)
         dismiss()
     }
 }
 
 #Preview {
-    AddSpeciesView(onSpeciesCreation: { _ in })
+    AddSpeciesView(onAdd: { _ in })
 }

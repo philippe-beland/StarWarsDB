@@ -3,7 +3,7 @@ import SwiftUI
 struct AuthorsVStack: View {
     var source: Source?
     
-    @State var authors: [SourceAuthor] = []
+    @State var authors: [SourceEntity<Author>] = []
     @State var showEditAuthorSheet = false
     
     var body: some View {
@@ -20,7 +20,7 @@ struct AuthorsVStack: View {
 }
 
 struct ExpandedSourceAuthorsView: View {
-    @Binding var sourceAuthors: [SourceAuthor]
+    @Binding var sourceAuthors: [SourceEntity<Author>]
     var source: Source?
     @State var showAddAuthorSheet: Bool = false
     
@@ -38,10 +38,10 @@ struct ExpandedSourceAuthorsView: View {
                     showAddAuthorSheet.toggle()
                 }
                 .sheet(isPresented: $showAddAuthorSheet) {
-                    ChooseEntityView(entityType: .artist, isSourceEntity: false, sourceEntities: []) { authors, _ in
+                    ChooseEntityView<Author>(isSourceEntity: false, sourceEntities: []) { authors, _ in
                         if let source {
                             for author in authors {
-                                let newAuthor = SourceAuthor(source: source, entity: author as! Artist)
+                                let newAuthor = SourceEntity<Author>(source: source, entity: author, appearance: .present)
                                 if !sourceAuthors.contains(newAuthor) {
                                     newAuthor.save()
                                     sourceAuthors.append(newAuthor)
@@ -65,7 +65,8 @@ struct ExpandedSourceAuthorsView: View {
     }
 }
 
-#Preview {
-    @Previewable @State var sourceAuthors: [SourceAuthor] = SourceAuthor.example
-    ExpandedSourceAuthorsView(sourceAuthors: $sourceAuthors)
-}
+//#Preview {
+//    @Previewable var sourceAuthors = SourceEntity<Author>(source: .example, entity: .example, appearance: .present)
+//    @Previewable @State var examples = sourceAuthors.examples
+//    ExpandedSourceAuthorsView(sourceAuthors: $examples)
+//}

@@ -1,12 +1,10 @@
 import SwiftUI
 
-struct ScrollAppearancesView<T: SourceEntity>: View {
-    @Binding var sourceEntities: [T]
-    
-    let entityType: EntityType
+struct ScrollAppearancesView<T: Entity>: View {
+    @Binding var sourceEntities: [SourceEntity<T>]
     let layout = [GridItem(.adaptive(minimum: 225), spacing: 24)]
     
-    private var sortedEntities: [SourceEntity] {
+    private var sortedEntities: [SourceEntity<T>] {
         sourceEntities.sorted(by: { $0.entity.name < $1.entity.name })
     }
 
@@ -14,7 +12,7 @@ struct ScrollAppearancesView<T: SourceEntity>: View {
             ScrollView(.vertical) {
                 LazyVGrid (columns: layout, spacing: 40) {
                     ForEach(sortedEntities) { sourceEntity in
-                        NavigationLink(destination: EntityDetailView(entityType: entityType, entity: sourceEntity.entity)) {
+                        NavigationLink(destination: EntityDetailView<T>(entity: sourceEntity.entity)) {
                             EntityEntryView(sourceEntity: sourceEntity)
                         }
                         .buttonStyle(PlainButtonStyle())
@@ -25,7 +23,8 @@ struct ScrollAppearancesView<T: SourceEntity>: View {
         }
 }
 
-#Preview {
-    @Previewable @State var sourceEntities: [SourceCharacter] = SourceCharacter.example
-    ScrollAppearancesView(sourceEntities: $sourceEntities, entityType: .character)
-}
+//#Preview {
+//    @Previewable var sourceEntities = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
+//    @Previewable @State var examples: [SourceEntity<Character>] = sourceEntities.examples
+//    ScrollAppearancesView<Character>(sourceEntities: $examples)
+//}

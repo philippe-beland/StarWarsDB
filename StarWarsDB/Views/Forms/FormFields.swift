@@ -28,10 +28,10 @@ struct FieldVStack: View {
     }
 }
 
-struct MultiFieldView: View {
+struct MultiFieldView<T: Entity>: View {
     var fieldName: String
     var infos: [String] = []
-    var entities: [Entity] = []
+    var entities: [T] = []
     
     var body: some View {
         HStack {
@@ -50,10 +50,10 @@ struct MultiFieldView: View {
     }
 }
 
-struct MultiFieldVStack: View {
+struct MultiFieldVStack<T: Entity>: View {
     var fieldName: String
     var infos: [String] = []
-    var entities: [Entity] = []
+    var entities: [T] = []
     
     var body: some View {
         VStack {
@@ -75,6 +75,6 @@ struct MultiFieldVStack: View {
     
     FieldView(fieldName: fieldName, info: $info)
     FieldVStack(fieldName: fieldName, info: $info)
-    MultiFieldView(fieldName: fieldName)
-    MultiFieldVStack(fieldName: fieldName)
+    MultiFieldView<Character>(fieldName: fieldName)
+    MultiFieldVStack<Planet>(fieldName: fieldName)
 }

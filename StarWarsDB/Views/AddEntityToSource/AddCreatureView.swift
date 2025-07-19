@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct AddCreatureView: View {
+struct AddCreatureView: View, AddEntityView {
+    typealias EntityType = Creature
+    
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
@@ -9,7 +11,7 @@ struct AddCreatureView: View {
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onCreatureCreation: (Entity) -> Void
+    var onAdd: (Creature) -> Void
     
     var body: some View {
         NavigationStack{
@@ -23,8 +25,8 @@ struct AddCreatureView: View {
                             fieldName: "Homeworld",
                             entity: Binding(
                                 get: {homeworld ?? Planet.empty },
-                                set: {homeworld = ($0 as! Planet) }),
-                            entityType: .planet)
+                                set: {homeworld = ($0 ) }),
+                            )
                         FieldView(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
@@ -43,11 +45,11 @@ struct AddCreatureView: View {
     private func saveCreature() {
         let newCreature = Creature(name: name, designation: designation, homeworld: homeworld, firstAppearance: firstAppearance, comments: comments)
         newCreature.save()
-        onCreatureCreation(newCreature)
+        onAdd(newCreature)
         dismiss()
     }
 }
 
 #Preview {
-    AddCreatureView(onCreatureCreation: { _ in })
+    AddCreatureView(onAdd: { _ in })
 }

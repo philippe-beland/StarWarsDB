@@ -30,7 +30,11 @@ enum Region: String, Codable, CaseIterable {
 
 /// Represents a planet or space station in the Star Wars universe
 @Observable
-class Planet: Entity {
+final class Planet: TrackableEntity {
+    let id: UUID
+    var name: String
+    var comments: String?
+    var firstAppearance: String
     var region: Region
     var sector: String
     var system: String
@@ -38,7 +42,31 @@ class Planet: Entity {
     
     /// Notable locations or points of interest on the planet
     var destinations: [String]
+
+    var alreadyInSource: Bool = false
+    var wookieepediaTitle: String = ""
+    var nbApparitions: Int = 0
     
+    static let exampleImageName: String = "Tatooine"
+    static let displayName: String = "Planets"
+
+    var recordType: String { "Planet" }
+    var databaseTableName: String { "planets" }
+    static let sourceRecordType: String = "SourcePlanets"
+    static let sourceDatabaseTableName: String = "source_planets"
+    
+    init(name: String, region: Region? = nil, sector: String? = nil, system: String? = nil, capitalCity: String? = nil, destinations: [String], firstAppearance: String? = nil, comments: String? = nil) {
+        self.id = UUID()
+        self.name = name
+        self.comments = comments
+        self.firstAppearance = firstAppearance ?? ""
+        self.region = region ?? .unknown
+        self.sector = sector ?? ""
+        self.system = system ?? ""
+        self.capitalCity = capitalCity ?? ""
+        self.destinations = destinations
+    }
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -52,35 +80,22 @@ class Planet: Entity {
         case nbApparitions = "appearances"
     }
     
-    init(name: String, region: Region? = nil, sector: String? = nil, system: String? = nil, capitalCity: String? = nil, destinations: [String], firstAppearance: String? = nil, comments: String? = nil) {
-        let id: UUID = UUID()
-        self.region = region ?? .unknown
-        self.sector = sector ?? ""
-        self.system = system ?? ""
-        self.capitalCity = capitalCity ?? ""
-        self.destinations = destinations
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, recordType: "Planet", databaseTableName: "planets")
-    }
-    
     required init(from decoder: Decoder) throws {
         let container: KeyedDecodingContainer<Planet.CodingKeys> = try decoder.container(keyedBy: CodingKeys.self)
         
-        let id: UUID = try container.decode(UUID.self, forKey: .id)
-        let name: String = try container.decode(String.self, forKey: .name)
+        self.id = try container.decode(UUID.self, forKey: .id)
+        self.name = try container.decode(String.self, forKey: .name)
         self.region = try container.decodeIfPresent(Region.self, forKey: .region) ?? .unknown
         self.sector = try container.decodeIfPresent(String.self, forKey: .sector) ?? ""
         self.system = try container.decodeIfPresent(String.self, forKey: .system) ?? ""
         self.capitalCity = try container.decodeIfPresent(String.self, forKey: .capitalCity) ?? ""
         self.destinations = try container.decode([String].self, forKey: .destinations)
-        let firstAppearance: String? = try container.decodeIfPresent(String.self, forKey: .firstAppearance)
-        let comments: String? = try container.decodeIfPresent(String.self, forKey: .comments)
-        let nbApparitions: Int = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
-        
-        super.init(id: id, name: name, comments: comments, firstAppearance: firstAppearance, nbApparitions: nbApparitions, recordType: "Planet", databaseTableName: "planets")
+        self.firstAppearance = try container.decodeIfPresent(String.self, forKey: .firstAppearance) ?? ""
+        self.comments = try container.decodeIfPresent(String.self, forKey: .comments)
+        self.nbApparitions = try container.decodeIfPresent(Int.self, forKey: .nbApparitions) ?? 0
     }
     
-    override func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container: KeyedEncodingContainer<Planet.CodingKeys> = encoder.container(keyedBy: CodingKeys.self)
         
         try container.encode(id, forKey: .id)
@@ -121,4 +136,17 @@ class Planet: Entity {
         firstAppearance: "",
         comments: ""
     )
+
+    static func == (lhs: Planet, rhs: Planet) -> Bool {
+        return lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+
+    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Planet] {
+        // Planet-specific loading logic
+        return await loadPlanets(serie: serie, sort: sort, filter: filter)
+    }
 }

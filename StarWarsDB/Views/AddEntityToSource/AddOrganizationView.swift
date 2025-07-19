@@ -1,13 +1,15 @@
 import SwiftUI
 
-struct AddOrganizationView: View {
+struct AddOrganizationView: View, AddEntityView {
+    typealias EntityType = Organization
+    
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onOrganizationCreation: (Entity) -> Void
+    var onAdd: (Organization) -> Void
     
     var body: some View {
         NavigationStack{
@@ -35,11 +37,11 @@ struct AddOrganizationView: View {
     private func saveOrganization() {
         let newOrganization = Organization(name: name, firstAppearance: firstAppearance, comments: comments)
         newOrganization.save()
-        onOrganizationCreation(newOrganization)
+        onAdd(newOrganization)
         dismiss()
     }
 }
 
 #Preview {
-    AddOrganizationView(onOrganizationCreation: { _ in })
+    AddOrganizationView(onAdd: { _ in })
 }

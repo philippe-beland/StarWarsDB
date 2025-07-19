@@ -26,12 +26,12 @@ struct AddSourceView: View {
                 
                 Form {
                     Section("Source Infos") {
-                        EditEntityInfoView(
-                            fieldName: "Serie",
-                            entity: Binding(
-                                get: {serie ?? Serie.empty },
-                                set: {serie = ($0 as! Serie) }),
-                            entityType: .serie)
+//                        EditEntityInfoView(
+//                            fieldName: "Serie",
+//                            entity: Binding(
+//                                get: {serie ?? Serie.empty },
+//                                set: {serie = ($0 ) }),
+//                            )
                         HStack {
                             Text("Number:")
                                 .font(.footnote)
@@ -39,12 +39,12 @@ struct AddSourceView: View {
                             Spacer()
                             TextField("Number", value: $number, format: .number)
                         }
-                        EditEntityInfoView(
-                            fieldName: "Arc",
-                            entity: Binding(
-                                get: {arc ?? Arc.empty },
-                                set: {arc = ($0 as! Arc) }),
-                            entityType: .arc)
+//                        EditEntityInfoView(
+//                            fieldName: "Arc",
+//                            entity: Binding(
+//                                get: {arc ?? Arc.empty },
+//                                set: {arc = ($0 ) }),
+//                            )
                         EraPicker(era: $era)
                         SourceTypePicker(sourceType: $sourceType)
                         PublicationDatePicker(date: $publicationDate)

@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct AddVariaView: View {
+struct AddVariaView: View, AddEntityView {
     @Environment(\.dismiss) var dismiss: DismissAction
-    
+    typealias EntityType = Varia
     @State var name: String = ""
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
-    var onVariaCreation: (Entity) -> Void
+    var onAdd: (Varia) -> Void
     
     var body: some View {
         NavigationStack{
@@ -35,11 +35,11 @@ struct AddVariaView: View {
     private func saveVaria() {
         let newVaria = Varia(name: name, firstAppearance: firstAppearance, comments: comments)
         newVaria.save()
-        onVariaCreation(newVaria)
+        onAdd(newVaria)
         dismiss()
     }
 }
 
 #Preview {
-    AddVariaView(onVariaCreation: { _ in })
+    AddVariaView(onAdd: { _ in })
 }

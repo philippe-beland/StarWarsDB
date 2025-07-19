@@ -1,10 +1,9 @@
 import SwiftUI
 
-struct EntitySectionHeader: View {
+struct EntitySectionHeader<T: Entity>: View {
     let title: String
-    let entityType: EntityType
     @Binding var activeSheet: ActiveSheet?
-    let sourceEntities: Binding<[SourceEntity]>
+    let sourceEntities: Binding<[SourceEntity<T>]>
     
     var body: some View {
         HStack {
@@ -13,9 +12,9 @@ struct EntitySectionHeader: View {
             Spacer()
             Button {
                 DispatchQueue.main.async {
-                    activeSheet = .entitySheet(entityType)
+                    activeSheet = .entitySheet(type: T.self)
                 }
-            } label: {
+           } label: {
                 Label("Add", systemImage: "plus")
                     .foregroundColor(.blue)
             }
@@ -23,14 +22,14 @@ struct EntitySectionHeader: View {
             Spacer()
             Button {
                 DispatchQueue.main.async {
-                    activeSheet = .referenceSheet(entityType)
+                    activeSheet = .referenceSheet(type: T.self)
                 }
             } label: {
                 Text("References")
             }
             Button {
                 DispatchQueue.main.async {
-                    activeSheet = .expandedSheet(entityType)
+                    activeSheet = .expandedSheet(type: T.self)
                 }
             } label: {
                 Text("Expand")
@@ -39,9 +38,10 @@ struct EntitySectionHeader: View {
     }
 }
 
-#Preview {
-    @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
-    @Previewable @State var sourceEntities: [SourceEntity] = SourceCharacter.example
-    
-    EntitySectionHeader(title: "Characters", entityType: .character, activeSheet: $activeSheet, sourceEntities: $sourceEntities)
-}
+//#Preview {
+//    @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
+//    @Previewable var sourceEntities = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
+//    @Previewable @State var examples: [SourceEntity<Character>] = sourceEntities.examples
+//    
+//    EntitySectionHeader<Character>(title: "Characters", activeSheet: $activeSheet, sourceEntities: $examples)
+//}

@@ -9,42 +9,22 @@ import Foundation
 import SwiftSoup
 
 
-func fetchInfo(for sourceURL: URL?, type: EntityType) async throws -> [String] {
+func fetchInfo<T: Entity>(entityType: T.Type, for sourceURL: URL?) async throws -> [String] {
     guard let sourceURL else {
         throw NSError(domain: "Invalid URL", code: 0, userInfo: nil)
     }
 
     let (data, _) = try await URLSession.shared.data(from: sourceURL)
     let html = String(data: data, encoding: .utf8) ?? ""
-    let headerText: String = switch type {
-        case .character:
-            "p#app_characters"
-        case .creature:
-            "p#app_organisms"
-        case .planet:
-            "p#app_locations"
-        case .droid:
-            "p#app_droids"
-        case .organization:
-            "p#app_organizations"
-        case .species:
-            "p#app_species"
-        case .starship:
-            "p#app_vehicles"
-        case .starshipModel:
-            "p#app_vehicles"
-        case .varia:
-            "p#app_miscellanea"
-        default:
-            "Not implemented yet"
-        }
+    let headerText: String = getSelector(for: entityType)
+    
     
     do {
         let doc: Document = try SwiftSoup.parse(html)
 
             
         guard let header = try doc.select(headerText).first() else {
-            return ["\(type.rawValue) header not found"]
+            return ["\(T.displayName) header not found"]
         }
         
         // Traverse siblings until we find a non-empty one with <li> elements
@@ -56,7 +36,7 @@ func fetchInfo(for sourceURL: URL?, type: EntityType) async throws -> [String] {
                 let hasChildren = try !item.select("> ul").isEmpty()
                 let isNestedInLi = try item.parents().first(where: { try $0.tagName() == "li" }) != nil
 
-                if type == .species {
+                if T.self == Species.self {
                     // For species: keep top-level items (with or without children)
                     return !isNestedInLi
                 } else {
@@ -79,6 +59,31 @@ func fetchInfo(for sourceURL: URL?, type: EntityType) async throws -> [String] {
         return ["Section not found"]
     } catch {
         return ["No info found"]
+    }
+}
+
+private func getSelector<T: Entity>(for entityType: T.Type) -> String {
+    switch entityType {
+    case is Character.Type:
+        return "p#app_characters"
+    case is Creature.Type:
+        return "p#app_organisms"
+    case is Planet.Type:
+        return "p#app_locations"
+    case is Droid.Type:
+        return "p#app_droids"
+    case is Organization.Type:
+        return "p#app_organizations"
+    case is Species.Type:
+        return "p#app_species"
+    case is Starship.Type:
+        return "p#app_vehicles"
+    case is StarshipModel.Type:
+        return "p#app_vehicles"
+    case is Varia.Type:
+        return "p#app_miscellanea"
+    default:
+        return "Not implemented yet"
     }
 }
 

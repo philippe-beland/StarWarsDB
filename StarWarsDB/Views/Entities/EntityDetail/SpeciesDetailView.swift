@@ -9,8 +9,8 @@ struct SpeciesInfoSection: View {
                 fieldName: "Homeworld",
                 entity: Binding(
                     get: {species.homeworld ?? Planet.empty },
-                    set: {species.homeworld = ($0 as! Planet) }),
-                entityType: .planet)
+                    set: {species.homeworld = ($0 ) }),
+                )
             FieldView(fieldName: "First Appearance", info: $species.firstAppearance)
         }
     }
@@ -20,12 +20,25 @@ struct SpeciesDetailView: View {
     @Bindable var species: Species
     @Environment(\.dismiss) var dismiss
     
-    @State private var sourceSpecies = [SourceSpecies]()
+    @State private var sourceSpecies = [SourceEntity<Species>]()
     
     var body: some View {
         NavigationStack {
-            EntityDetailContentView(entity: species, sourceEntities: sourceSpecies, InfosSection: SpeciesInfoSection(species: species))
-            }
+            EntityDetailContentView(
+                headerSection: HeaderView(
+                    name: $species.name,
+                    url: species.url
+                ),
+                sidePanel: SidePanelView(
+                    id: species.id,
+                    comments: Binding(
+                        get: { species.comments ?? "" },
+                        set: { species.comments = $0 }
+                    ),
+                    InfosSection: SpeciesInfoSection(species: species)
+                ),
+                sourceEntities: sourceSpecies)
+        }
         .task { await loadInitialSources() }
         .toolbar {
             Button ("Update", action: species.update)

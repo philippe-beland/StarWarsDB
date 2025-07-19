@@ -1,23 +1,23 @@
 import SwiftUI
 
 struct SourceEntityCollection {
-    var characters: [SourceCharacter] = []
-    var creatures: [SourceCreature] = []
-    var droids: [SourceDroid] = []
-    var organizations: [SourceOrganization] = []
-    var planets: [SourcePlanet] = []
-    var species: [SourceSpecies] = []
-    var starships: [SourceStarship] = []
-    var starshipModels: [SourceStarshipModel] = []
-    var varias: [SourceVaria] = []
-    var artists: [SourceArtist] = []
-    var authors: [SourceAuthor] = []
+    var characters: [SourceEntity<Character>] = []
+    var creatures: [SourceEntity<Creature>] = []
+    var droids: [SourceEntity<Droid>] = []
+    var organizations: [SourceEntity<Organization>] = []
+    var planets: [SourceEntity<Planet>] = []
+    var species: [SourceEntity<Species>] = []
+    var starships: [SourceEntity<Starship>] = []
+    var starshipModels: [SourceEntity<StarshipModel>] = []
+    var varias: [SourceEntity<Varia>] = []
+    var artists: [SourceEntity<Artist>] = []
+    var authors: [SourceEntity<Author>] = []
 }
 
 enum ActiveSheet: Identifiable {
-    case entitySheet(EntityType)
-    case referenceSheet(EntityType)
-    case expandedSheet(EntityType)
+    case entitySheet(type: any Entity.Type)
+    case referenceSheet(type: any Entity.Type)
+    case expandedSheet(type: any Entity.Type)
     
     var id: String {
         switch self {
@@ -39,11 +39,11 @@ struct SourceDetailView: View {
         _viewModel = StateObject(wrappedValue: EditSourceViewModel(source: source))
     }
     
-    private var sortedArtists: [SourceArtist] {
+    private var sortedArtists: [SourceEntity<Artist>] {
         viewModel.sourceEntities.artists.sorted (by: { $0.entity.name < $1.entity.name })
     }
     
-    private var sortedAuthors: [SourceAuthor] {
+    private var sortedAuthors: [SourceEntity<Author>] {
         viewModel.sourceEntities.authors.sorted(by: { $0.entity.name < $1.entity.name })
     }
     
@@ -58,7 +58,7 @@ struct SourceDetailView: View {
                     activeSheet: $viewModel.activeSheet,
                     serie: viewModel.source.serie,
                     url: viewModel.source.url,
-                    onAddEntity: viewModel.addSourceEntity
+                    onAddEntity: viewModel.addAnyEntity
                 )
                 .padding(.top, 16)
             }
@@ -72,18 +72,18 @@ struct SourceDetailView: View {
     
     private var infosSection: [InfoSection] {
         let sections: [InfoSection] = [
-            InfoSection(fieldName: "Serie", view: AnyView(EditVEntityInfoView(
-                fieldName: "Serie",
-                entity: Binding(
-                    get: {viewModel.source.serie ?? Serie.empty },
-                    set: {viewModel.source.serie = ($0 as! Serie) }),
-                entityType: .serie))),
-            InfoSection(fieldName: "Arc", view: AnyView(EditVEntityInfoView(
-                fieldName: "Arc",
-                entity: Binding(
-                    get: {viewModel.source.arc ?? Arc.empty },
-                    set: {viewModel.source.arc = ($0 as! Arc) }),
-                entityType: .arc))),
+//            InfoSection(fieldName: "Serie", view: AnyView(EditVEntityInfoView(
+//                fieldName: "Serie",
+//                entity: Binding(
+//                    get: {viewModel.source.serie ?? Serie.empty },
+//                    set: {viewModel.source.serie = ($0 ) }),
+//                ))),
+//            InfoSection(fieldName: "Arc", view: AnyView(EditVEntityInfoView(
+//                fieldName: "Arc",
+//                entity: Binding(
+//                    get: {viewModel.source.arc ?? Arc.empty },
+//                    set: {viewModel.source.arc = ($0 ) }),
+//                ))),
             InfoSection(fieldName: "Number", view: AnyView(TextField("Number", value: $viewModel.source.number, format: .number))),
             InfoSection(fieldName: "Era", view: AnyView(EraPicker(era: $viewModel.source.era))),
             InfoSection(fieldName: "Type", view: AnyView(SourceTypePicker(sourceType: $viewModel.source.sourceType))),
