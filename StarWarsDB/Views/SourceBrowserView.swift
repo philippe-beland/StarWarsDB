@@ -1,35 +1,35 @@
 import SwiftUI
 
 struct SourceBrowserView: View {
-    @State private var sourceType: SourceType = .all
-    @State var series: [Serie] = []
+    @State private var selectedSourceType: SourceType = .all
+    @State var availableSeries: [Serie] = []
     
     private var filteredSeries: [Serie] {
-        var filtered = series.filter { $0.sourceType == sourceType }
-        let allSerie = Serie(name: "All", sourceType: sourceType, comments: "")
-        filtered.insert(allSerie, at: 0)
+        var filtered = availableSeries.filter { $0.sourceType == selectedSourceType }
+        let allSerieOption = Serie(name: "All", sourceType: selectedSourceType, comments: "")
+        filtered.insert(allSerieOption, at: 0)
         return filtered
     }
     
     var body: some View {
         NavigationStack {
             VStack {
-                Picker("Select a type", selection: $sourceType) {
-                    ForEach(SourceType.allCases, id: \.self) { type in
-                        Text(type.rawValue).tag(type)
+                Picker("Select a type", selection: $selectedSourceType) {
+                    ForEach(SourceType.allCases, id: \.self) { sourceType in
+                        Text(sourceType.rawValue).tag(sourceType)
                     }
                 }
                 .pickerStyle(.segmented)
                 
-                if sourceType == .tvShow || sourceType == .comics || sourceType == .shortStory {
-                    SerieListBrowserView(sourceType: sourceType, series: filteredSeries)
+                if selectedSourceType == .tvShow || selectedSourceType == .comics || selectedSourceType == .shortStory {
+                    SerieListBrowserView(sourceType: selectedSourceType, series: filteredSeries)
                 } else {
-                    SourceListBrowserView(selectedView: sourceType)
+                    SourceListBrowserView(selectedView: selectedSourceType)
                 }
             }
         }
         .task {
-            series = await loadSeries()
+            availableSeries = await loadSeries()
         }
     }
 }
