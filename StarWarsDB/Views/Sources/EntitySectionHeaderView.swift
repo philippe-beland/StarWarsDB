@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntitySectionHeader<T: Entity>: View {
+struct EntitySectionHeaderView<T: Entity>: View {
     let title: String
     @Binding var activeSheet: ActiveSheet?
     let sourceEntities: Binding<[SourceEntity<T>]>
@@ -43,5 +43,5 @@ struct EntitySectionHeader<T: Entity>: View {
 //    @Previewable var sourceEntities = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
 //    @Previewable @State var examples: [SourceEntity<Character>] = sourceEntities.examples
 //    
-//    EntitySectionHeader<Character>(title: "Characters", activeSheet: $activeSheet, sourceEntities: $examples)
+//    EntitySectionHeaderView<Character>(title: "Characters", activeSheet: $activeSheet, sourceEntities: $examples)
 //}

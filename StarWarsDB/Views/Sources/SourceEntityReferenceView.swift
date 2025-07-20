@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ReferenceEntityView<T: Entity>: View {
+struct SourceEntityReferenceView<T: Entity>: View {
     var url: URL?
     var sourceEntities: Binding<[SourceEntity<T>]>
     
@@ -54,5 +54,5 @@ struct ReferenceEntityView<T: Entity>: View {
 //#Preview {
 //    @Previewable var sourceEntities = SourceEntity<Planet>(source: .example, entity: .example, appearance: .present)
 //    @Previewable @State var examples: [SourceEntity<Planet>] = sourceEntities.examples
-//    ReferenceEntityView<Planet>(sourceEntities: $examples)
+//    SourceEntityReferenceView<Planet>(sourceEntities: $examples)
 //}

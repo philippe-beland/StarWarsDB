@@ -50,10 +50,10 @@ struct SourceDetailView: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 16) {
-                SourceHeaderSection(source: $viewModel.source, showFactSheet: $showFactSheet)
+                SourceHeaderView(source: $viewModel.source, showFactSheet: $showFactSheet)
                     .padding(.horizontal, 20)
                 SourceInfoSection(infosSection: infosSection)
-                SourcesAppearancesSection(
+                SourceAppearancesSection(
                     sourceEntities: $viewModel.sourceEntities,
                     activeSheet: $viewModel.activeSheet,
                     serie: viewModel.source.serie,
@@ -72,13 +72,13 @@ struct SourceDetailView: View {
     
     private var infosSection: [InfoSection] {
         let sections: [InfoSection] = [
-//            InfoSection(fieldName: "Serie", view: AnyView(EditVEntityInfoView(
+//            InfoSection(fieldName: "Serie", view: AnyView(VEntityInfoEditView(
 //                fieldName: "Serie",
 //                entity: Binding(
 //                    get: {viewModel.source.serie ?? Serie.empty },
 //                    set: {viewModel.source.serie = ($0 ) }),
 //                ))),
-//            InfoSection(fieldName: "Arc", view: AnyView(EditVEntityInfoView(
+//            InfoSection(fieldName: "Arc", view: AnyView(VEntityInfoEditView(
 //                fieldName: "Arc",
 //                entity: Binding(
 //                    get: {viewModel.source.arc ?? Arc.empty },

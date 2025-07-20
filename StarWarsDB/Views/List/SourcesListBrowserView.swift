@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SourcesListView: View {
+struct SourceListBrowserView: View {
     var selectedView: SourceType
     var serie: Serie? = nil
     
@@ -89,5 +89,5 @@ struct SourcesListView: View {
 }
 
 #Preview {
-    SourcesListView(selectedView: .movies)
+    SourceListBrowserView(selectedView: .movies)
 }

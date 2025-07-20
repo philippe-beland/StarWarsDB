@@ -20,7 +20,7 @@ struct AddSpeciesView: View, AddEntityView {
                     .padding()
                 Form {
                     Section("Species Infos") {
-                        EditEntityInfoView(
+                        EntityInfoEditView(
                             fieldName: "Homeworld",
                             entity: Binding(
                                 get: {homeworld ?? Planet.empty },

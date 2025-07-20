@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ExpandedSourceEntityView<T: Entity>: View {
+struct SourceEntityExpandedView<T: Entity>: View {
     @Binding var sourceEntities: [SourceEntity<T>]
     @State private var refreshID = UUID()
     
@@ -56,5 +56,5 @@ struct ExpandedSourceEntityView<T: Entity>: View {
 //#Preview {
 //    @Previewable var sourceEntities = SourceEntity<Species>(source: .example, entity: Species.example, appearance: .present)
 //    @Previewable @State var examples: [SourceEntity<Species>] = sourceEntities.examples
-//    ExpandedSourceEntityView<Species>(sourceEntities: $examples)
+//    SourceEntityExpandedView<Species>(sourceEntities: $examples)
 //}

@@ -38,7 +38,7 @@ struct ExpandedSourceArtistsView: View {
                     showAddArtistSheet.toggle()
                 }
                 .sheet(isPresented: $showAddArtistSheet) {
-                    ChooseEntityView<Artist>(isSourceEntity: false, sourceEntities: []) { artists, _ in
+                    EntitySelectorView<Artist>(isSourceEntity: false, sourceEntities: []) { artists, _ in
                         if let source {
                             for artist in artists {
                                 let newArtist = SourceEntity<Artist>(source: source, entity: artist , appearance: .present)

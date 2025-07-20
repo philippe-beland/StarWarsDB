@@ -20,7 +20,7 @@ struct AddStarshipView: View, AddEntityView {
                     .padding()
                 Form {
                     Section("Starship Infos") {
-                        EditEntityInfoView(
+                        EntityInfoEditView(
                             fieldName: "Model",
                             entity: Binding(
                                 get: {model ?? StarshipModel.empty },

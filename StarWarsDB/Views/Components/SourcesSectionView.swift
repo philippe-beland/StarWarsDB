@@ -8,7 +8,7 @@ private let sourceDateFormatter: DateFormatter = {
 }()
 
 /// A section that displays a list of sources by era for a specific entity type.
-struct SourcesSection<T: Entity>: View {
+struct SourcesSectionView<T: Entity>: View {
     var sourceEntities: [SourceEntity<T>]
     
     private var firstCanon: SourceEntity<T>? {
@@ -148,5 +148,5 @@ struct UniverseYear: View {
 //#Preview {
 //    var sourceCharacters = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
 //    var examples = sourceCharacters.examples
-//    SourcesSection<Character>(sourceEntities: examples)
+//    SourcesSectionView<Character>(sourceEntities: examples)
 //}

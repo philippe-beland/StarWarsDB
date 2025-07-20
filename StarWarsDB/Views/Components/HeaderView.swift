@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HeaderView: View {
+struct SectionHeaderView: View {
     @Binding var name: String
     let url: URL?
     
@@ -32,5 +32,5 @@ struct HeaderView: View {
 
 #Preview {
     @Previewable @State var name = Character.example.name
-    HeaderView(name: $name, url: Character.example.url)
+    SectionHeaderView(name: $name, url: Character.example.url)
 }

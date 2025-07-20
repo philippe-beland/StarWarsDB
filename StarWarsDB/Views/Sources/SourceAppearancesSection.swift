@@ -6,19 +6,19 @@ struct EntityAppearanceSection<T: Entity>: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            EntitySectionHeader<T>(
+            EntitySectionHeaderView<T>(
                 title: T.displayName,
                 activeSheet: $activeSheet,
                 sourceEntities: sourceEntities
             )
-            ScrollAppearancesView(
+            EntityAppearancesScrollView(
                 sourceEntities: sourceEntities
             )
         }
     }
 }
 
-struct SourcesAppearancesSection: View {
+struct SourceAppearancesSection: View {
     @Binding var sourceEntities: SourceEntityCollection
     @Binding var activeSheet: ActiveSheet?
     var serie: Serie?
@@ -128,7 +128,7 @@ struct SourcesAppearancesSection: View {
             switch sheet {
             case .add(let type):
                 if type == Character.self {
-                    ChooseEntityView<Character>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.characters) { selectedEntities, appearance in
+                    EntitySelectorView<Character>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.characters) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -136,7 +136,7 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 } else if type == Droid.self {
-                    ChooseEntityView<Droid>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.droids) { selectedEntities, appearance in
+                    EntitySelectorView<Droid>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.droids) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -144,7 +144,7 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 } else if type == Creature.self {
-                    ChooseEntityView<Creature>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.creatures) { selectedEntities, appearance in
+                    EntitySelectorView<Creature>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.creatures) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -152,7 +152,7 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 } else if type == Organization.self {
-                    ChooseEntityView<Organization>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.organizations) { selectedEntities, appearance in
+                    EntitySelectorView<Organization>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.organizations) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -160,7 +160,7 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 } else if type == Planet.self {
-                    ChooseEntityView<Planet>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.planets) { selectedEntities, appearance in
+                    EntitySelectorView<Planet>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.planets) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -168,7 +168,7 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 } else if type == Species.self {
-                    ChooseEntityView<Species>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.species) { selectedEntities, appearance in
+                    EntitySelectorView<Species>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.species) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -176,7 +176,7 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 } else if type == StarshipModel.self {
-                    ChooseEntityView<StarshipModel>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.starshipModels) { selectedEntities, appearance in
+                    EntitySelectorView<StarshipModel>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.starshipModels) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -184,7 +184,7 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 } else if type == Starship.self {
-                    ChooseEntityView<Starship>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.starships) { selectedEntities, appearance in
+                    EntitySelectorView<Starship>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.starships) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -192,7 +192,7 @@ struct SourcesAppearancesSection: View {
                         }
                     }
                 } else if type == Varia.self {
-                    ChooseEntityView<Varia>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.varias) { selectedEntities, appearance in
+                    EntitySelectorView<Varia>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.varias) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -203,68 +203,68 @@ struct SourcesAppearancesSection: View {
                 
             case .referenceSheet(let type):
                 if type == Character.self {
-                    ReferenceEntityView<Character>(url: url, sourceEntities: getBinding(for: \.characters))
+                    SourceEntityReferenceView<Character>(url: url, sourceEntities: getBinding(for: \.characters))
                 } else if type == Droid.self {
-                    ReferenceEntityView<Droid>(url: url, sourceEntities: getBinding(for: \.droids))
+                    SourceEntityReferenceView<Droid>(url: url, sourceEntities: getBinding(for: \.droids))
                 } else if type == Creature.self {
-                    ReferenceEntityView<Creature>(url: url, sourceEntities: getBinding(for: \.creatures))
+                    SourceEntityReferenceView<Creature>(url: url, sourceEntities: getBinding(for: \.creatures))
                 } else if type == Organization.self {
-                    ReferenceEntityView<Organization>(url: url, sourceEntities: getBinding(for: \.organizations))
+                    SourceEntityReferenceView<Organization>(url: url, sourceEntities: getBinding(for: \.organizations))
                 } else if type == Planet.self {
-                    ReferenceEntityView<Planet>(url: url, sourceEntities: getBinding(for: \.planets))
+                    SourceEntityReferenceView<Planet>(url: url, sourceEntities: getBinding(for: \.planets))
                 } else if type == Species.self {
-                    ReferenceEntityView<Species>(url: url, sourceEntities: getBinding(for: \.species))
+                    SourceEntityReferenceView<Species>(url: url, sourceEntities: getBinding(for: \.species))
                 } else if type == StarshipModel.self {
-                    ReferenceEntityView<StarshipModel>(url: url, sourceEntities: getBinding(for: \.starshipModels))
+                    SourceEntityReferenceView<StarshipModel>(url: url, sourceEntities: getBinding(for: \.starshipModels))
                 } else if type == Starship.self {
-                    ReferenceEntityView<Starship>(url: url, sourceEntities: getBinding(for: \.starships))
+                    SourceEntityReferenceView<Starship>(url: url, sourceEntities: getBinding(for: \.starships))
                 } else if type == Varia.self {
-                    ReferenceEntityView<Varia>(url: url, sourceEntities: getBinding(for: \.varias))
+                    SourceEntityReferenceView<Varia>(url: url, sourceEntities: getBinding(for: \.varias))
                 }
                 
             case .expandedSheet(let type):
                 if type == Character.self {
-                    ExpandedSourceEntityView<Character>(sourceEntities: getBinding(for: \.characters))
+                    SourceEntityExpandedView<Character>(sourceEntities: getBinding(for: \.characters))
                         .onDisappear {
                             refreshID = UUID()
                         }
                 } else if type == Droid.self {
-                    ExpandedSourceEntityView<Droid>(sourceEntities: getBinding(for: \.droids))
+                    SourceEntityExpandedView<Droid>(sourceEntities: getBinding(for: \.droids))
                         .onDisappear {
                             refreshID = UUID()
                         }
                 } else if type == Creature.self {
-                    ExpandedSourceEntityView<Creature>(sourceEntities: getBinding(for: \.creatures))
+                    SourceEntityExpandedView<Creature>(sourceEntities: getBinding(for: \.creatures))
                         .onDisappear {
                             refreshID = UUID()
                         }
                 } else if type == Organization.self {
-                    ExpandedSourceEntityView<Organization>(sourceEntities: getBinding(for: \.organizations))
+                    SourceEntityExpandedView<Organization>(sourceEntities: getBinding(for: \.organizations))
                         .onDisappear {
                             refreshID = UUID()
                         }
                 } else if type == Planet.self {
-                    ExpandedSourceEntityView<Planet>(sourceEntities: getBinding(for: \.planets))
+                    SourceEntityExpandedView<Planet>(sourceEntities: getBinding(for: \.planets))
                         .onDisappear {
                             refreshID = UUID()
                         }
                 } else if type == Species.self {
-                    ExpandedSourceEntityView<Species>(sourceEntities: getBinding(for: \.species))
+                    SourceEntityExpandedView<Species>(sourceEntities: getBinding(for: \.species))
                         .onDisappear {
                             refreshID = UUID()
                         }
                 } else if type == StarshipModel.self {
-                    ExpandedSourceEntityView<StarshipModel>(sourceEntities: getBinding(for: \.starshipModels))
+                    SourceEntityExpandedView<StarshipModel>(sourceEntities: getBinding(for: \.starshipModels))
                         .onDisappear {
                             refreshID = UUID()
                         }
                 } else if type == Starship.self {
-                    ExpandedSourceEntityView<Starship>(sourceEntities: getBinding(for: \.starships))
+                    SourceEntityExpandedView<Starship>(sourceEntities: getBinding(for: \.starships))
                         .onDisappear {
                             refreshID = UUID()
                         }
                 } else if type == Varia.self {
-                    ExpandedSourceEntityView<Varia>(sourceEntities: getBinding(for: \.varias))
+                    SourceEntityExpandedView<Varia>(sourceEntities: getBinding(for: \.varias))
                         .onDisappear {
                             refreshID = UUID()
                         }
@@ -300,5 +300,5 @@ struct SourcesAppearancesSection: View {
 #Preview {
     @Previewable @State var sourceEntities: SourceEntityCollection = .init()
     @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
-    SourcesAppearancesSection(sourceEntities: $sourceEntities, activeSheet: $activeSheet, onAddEntity: { _, _ in })
+    SourceAppearancesSection(sourceEntities: $sourceEntities, activeSheet: $activeSheet, onAddEntity: { _, _ in })
 }

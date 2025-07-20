@@ -26,7 +26,7 @@ struct AddSourceView: View {
                 
                 Form {
                     Section("Source Infos") {
-//                        EditEntityInfoView(
+//                        EntityInfoEditView(
 //                            fieldName: "Serie",
 //                            entity: Binding(
 //                                get: {serie ?? Serie.empty },
@@ -39,7 +39,7 @@ struct AddSourceView: View {
                             Spacer()
                             TextField("Number", value: $number, format: .number)
                         }
-//                        EditEntityInfoView(
+//                        EntityInfoEditView(
 //                            fieldName: "Arc",
 //                            entity: Binding(
 //                                get: {arc ?? Arc.empty },

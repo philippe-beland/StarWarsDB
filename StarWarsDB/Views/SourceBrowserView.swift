@@ -22,9 +22,9 @@ struct SourceBrowserView: View {
                 .pickerStyle(.segmented)
                 
                 if sourceType == .tvShow || sourceType == .comics || sourceType == .shortStory {
-                    SerieListView(sourceType: sourceType, series: filteredSeries)
+                    SerieListBrowserView(sourceType: sourceType, series: filteredSeries)
                 } else {
-                    SourcesListView(selectedView: sourceType)
+                    SourceListBrowserView(selectedView: sourceType)
                 }
             }
         }

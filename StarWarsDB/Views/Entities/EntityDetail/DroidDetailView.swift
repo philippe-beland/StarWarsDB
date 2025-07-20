@@ -19,7 +19,7 @@ struct DroidDetailView: View {
     var body: some View {
         NavigationStack {
             EntityDetailContentView(
-                headerSection: HeaderView(
+                headerSection: SectionHeaderView(
                     name: $droid.name,
                     url: droid.url
                 ),

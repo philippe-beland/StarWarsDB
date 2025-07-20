@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ScrollAppearancesView<T: Entity>: View {
+struct EntityAppearancesScrollView<T: Entity>: View {
     @Binding var sourceEntities: [SourceEntity<T>]
     let layout = [GridItem(.adaptive(minimum: 225), spacing: 24)]
     
@@ -26,5 +26,5 @@ struct ScrollAppearancesView<T: Entity>: View {
 //#Preview {
 //    @Previewable var sourceEntities = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
 //    @Previewable @State var examples: [SourceEntity<Character>] = sourceEntities.examples
-//    ScrollAppearancesView<Character>(sourceEntities: $examples)
+//    EntityAppearancesScrollView<Character>(sourceEntities: $examples)
 //}

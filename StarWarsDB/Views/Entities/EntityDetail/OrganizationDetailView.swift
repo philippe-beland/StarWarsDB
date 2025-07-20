@@ -19,7 +19,7 @@ struct OrganizationDetailView: View {
     var body: some View {
         NavigationStack {
             EntityDetailContentView(
-                headerSection: HeaderView(
+                headerSection: SectionHeaderView(
                     name: $organization.name,
                     url: organization.url
                 ),

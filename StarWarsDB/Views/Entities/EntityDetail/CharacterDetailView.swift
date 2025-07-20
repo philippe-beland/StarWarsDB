@@ -7,13 +7,13 @@ struct CharacterInfoSection: View {
         Section("Character Infos") {
             MultiFieldView<Character>(fieldName: "Aliases", infos: character.aliases)
             GenderPicker(gender: $character.gender)
-            EditEntityInfoView(
+            EntityInfoEditView(
                 fieldName: "Species",
                 entity: Binding(
                     get: {character.species ?? Species.empty },
                     set: {character.species = ($0) }),
                 )
-            EditEntityInfoView(
+            EntityInfoEditView(
                 fieldName: "Homeworld",
                 entity: Binding(
                     get: {character.homeworld ?? Planet.empty },
@@ -35,7 +35,7 @@ struct CharacterDetailView: View {
     var body: some View {
         NavigationStack {
             EntityDetailContentView(
-                headerSection: HeaderView(
+                headerSection: SectionHeaderView(
                     name: $character.name,
                     url: character.url
                 ),

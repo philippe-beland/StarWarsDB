@@ -21,7 +21,7 @@ struct StarshipModelDetailView: View {
     var body: some View {
         NavigationStack {
             EntityDetailContentView(
-                headerSection: HeaderView(
+                headerSection: SectionHeaderView(
                     name: $starshipModel.name,
                     url: starshipModel.url
                 ),

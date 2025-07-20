@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ChooseEntityView<T: Entity>: View {
+struct EntitySelectorView<T: Entity>: View {
     @Environment(\.dismiss) var dismiss: DismissAction
     var isSourceEntity: Bool
     var serie: Serie?
@@ -149,5 +149,5 @@ struct ChooseEntityView<T: Entity>: View {
 
 //#Preview {
 //    let sourceEntities: SourceEntity<Character> = SourceEntity(source: .example, entity: Character.example, appearance: .present)
-//    ChooseEntityView<Character>(isSourceEntity: false, sourceEntities: sourceEntities.examples, onEntitySelect: { _, _ in })
+//    EntitySelectorView<Character>(isSourceEntity: false, sourceEntities: sourceEntities.examples, onEntitySelect: { _, _ in })
 //}

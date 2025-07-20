@@ -25,11 +25,11 @@ struct EntityDetailContentView<T: Entity, Header: View, SidePanel: View>: View {
             HStack {
                 sidePanel.frame(width: 350)
                 Spacer()
-                SourcesSection<T>(sourceEntities: sourceEntities)
+                SourcesSectionView<T>(sourceEntities: sourceEntities)
             }
         } else {
             TabView {
-                SourcesSection<T>(sourceEntities: sourceEntities)
+                SourcesSectionView<T>(sourceEntities: sourceEntities)
                     .tabItem { Text("Sources") }
                 sidePanel
                     .tabItem { Text("Infos") }
@@ -45,7 +45,7 @@ struct EntityDetailContentView<T: Entity, Header: View, SidePanel: View>: View {
 //    var sourceCharacters = sourceEntity.examples
 //    
 //    EntityDetailContentView(
-//        headerSection: HeaderView(
+//        headerSection: SectionHeaderView(
 //            name: $character.name,
 //            url: character.url
 //        ),

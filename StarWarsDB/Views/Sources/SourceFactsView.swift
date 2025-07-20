@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct FactsView: View {
+struct SourceFactsView: View {
     let source: Source
     @State private var facts = [Fact]()
     @FocusState private var focusedFactID: UUID?
@@ -50,5 +50,5 @@ struct FactsView: View {
 }
 
 #Preview {
-    FactsView(source: .example)
+    SourceFactsView(source: .example)
 }

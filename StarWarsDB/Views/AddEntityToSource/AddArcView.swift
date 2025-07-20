@@ -17,7 +17,7 @@ struct AddArcView: View, AddEntityView {
                     .font(.title.bold())
                     .padding()
                 Form {
-//                    EditEntityInfoView<Serie>(
+//                    EntityInfoEditView<Serie>(
 //                        fieldName: "Serie",
 //                        entity: Binding(
 //                            get: {serie },

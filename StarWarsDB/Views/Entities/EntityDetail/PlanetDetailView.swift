@@ -25,7 +25,7 @@ struct PlanetDetailView: View {
     var body: some View {
         NavigationStack {
             EntityDetailContentView(
-                headerSection: HeaderView(
+                headerSection: SectionHeaderView(
                     name: $planet.name,
                     url: planet.url
                 ),

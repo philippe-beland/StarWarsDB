@@ -8,7 +8,7 @@ enum SortingItemOrder: String {
 /// View that shows a list of entities of a specific type.
 /// Users can search, sort, and delete entities.
 /// The list updates automatically when searching or changing sort order.
-struct EntitiesListView<T:Entity>: View {
+struct EntityListBrowserView<T:Entity>: View {
     @State private var sortOrder: SortingItemOrder = .name
     @StateObject var searchContext = SearchContext()
     @State private var showNewEntitySheet: Bool = false
@@ -76,5 +76,5 @@ struct EntitiesListView<T:Entity>: View {
 }
 
 #Preview {
-    EntitiesListView<Creature>()
+    EntityListBrowserView<Creature>()
 }

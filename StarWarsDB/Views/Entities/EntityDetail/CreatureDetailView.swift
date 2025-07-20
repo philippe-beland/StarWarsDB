@@ -5,7 +5,7 @@ struct CreatureInfoSection: View {
     
     var body: some View {
         Section("Creature Infos") {
-            EditEntityInfoView(
+            EntityInfoEditView(
                 fieldName: "Homeworld",
                 entity: Binding(
                     get: {creature.homeworld ?? Planet.empty },
@@ -25,7 +25,7 @@ struct CreatureDetailView: View {
     var body: some View {
         NavigationStack {
             EntityDetailContentView(
-                headerSection: HeaderView(
+                headerSection: SectionHeaderView(
                     name: $creature.name,
                     url: creature.url
                 ),

@@ -1,13 +1,13 @@
 import SwiftUI
 
-struct SourceHeaderSection: View {
+struct SourceHeaderView: View {
     @Binding var source: Source
     @Binding var showFactSheet: Bool
     
     var body: some View {
         HStack {
             Spacer()
-            HeaderView(name: $source.name, url: source.url)
+            SectionHeaderView(name: $source.name, url: source.url)
             Spacer()
         }
         
@@ -16,7 +16,7 @@ struct SourceHeaderSection: View {
                 showFactSheet.toggle()
             }
             .sheet(isPresented: $showFactSheet) {
-                FactsView(source: source)
+                SourceFactsView(source: source)
             }
             Spacer()
             Toggle("Done", isOn: $source.isDone)
@@ -30,5 +30,5 @@ struct SourceHeaderSection: View {
 #Preview {
     @Previewable @State var source: Source = .example
     @Previewable @State var showFactSheet: Bool = false
-    SourceHeaderSection(source: $source, showFactSheet: $showFactSheet)
+    SourceHeaderView(source: $source, showFactSheet: $showFactSheet)
 }

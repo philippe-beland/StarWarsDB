@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SerieListView: View {
+struct SerieListBrowserView: View {
     var sourceType: SourceType
     var series: [Serie]
     
@@ -26,7 +26,7 @@ struct SerieListView: View {
                     .padding(.horizontal)
                 
                 List(filteredSeries) { serie in
-                    NavigationLink(destination: SourcesListView(selectedView: sourceType, serie: serie)) {
+                    NavigationLink(destination: SourceListBrowserView(selectedView: sourceType, serie: serie)) {
                         Text(serie.name)
                     }
                 }
@@ -40,5 +40,5 @@ struct SerieListView: View {
         Serie(name: "Darth Vader(2020)", sourceType: .comics, comments: ""),
         Serie(name: "Age of Rebellion", sourceType: .comics, comments: "")
     ]
-    SerieListView(sourceType: .comics, series: mockSeries)
+    SerieListBrowserView(sourceType: .comics, series: mockSeries)
 }

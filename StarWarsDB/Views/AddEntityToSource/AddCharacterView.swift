@@ -26,13 +26,13 @@ struct AddCharacterView: View, AddEntityView {
                     Section("Character Infos") {
                         //MultiFieldView(fieldName: "Aliases", infos: aliases)
                         GenderPicker(gender: $gender)
-                        EditEntityInfoView(
+                        EntityInfoEditView(
                             fieldName: "Species",
                             entity: Binding(
                                 get: {species ?? Species.empty },
                                 set: {species = ($0 ) })
                             )
-                        EditEntityInfoView(
+                        EntityInfoEditView(
                             fieldName: "Homeworld",
                             entity: Binding(
                                 get: {homeworld ?? Planet.empty },

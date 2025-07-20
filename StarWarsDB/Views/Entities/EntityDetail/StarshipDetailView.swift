@@ -5,7 +5,7 @@ struct StarshipInfoSection: View {
     
     var body: some View {
         Section("Starship Infos") {
-            EditEntityInfoView(
+            EntityInfoEditView(
                 fieldName: "Model",
                 entity: Binding(
                     get: {starship.model ?? StarshipModel.empty },
@@ -25,7 +25,7 @@ struct StarshipDetailView: View {
     var body: some View {
         NavigationStack {
             EntityDetailContentView(
-                headerSection: HeaderView(
+                headerSection: SectionHeaderView(
                     name: $starship.name,
                     url: starship.url
                 ),
