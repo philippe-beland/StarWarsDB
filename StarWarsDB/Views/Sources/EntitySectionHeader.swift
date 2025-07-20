@@ -12,7 +12,7 @@ struct EntitySectionHeader<T: Entity>: View {
             Spacer()
             Button {
                 DispatchQueue.main.async {
-                    activeSheet = .entitySheet(type: T.self)
+                    activeSheet = .add(type: T.self)
                 }
            } label: {
                 Label("Add", systemImage: "plus")

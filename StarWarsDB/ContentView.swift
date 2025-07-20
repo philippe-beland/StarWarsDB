@@ -9,7 +9,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Sources", systemImage: "play.square.stack")
                 }
-            EntityBrowserView()
+            ChooseEntityTypeView()
                 .tabItem {
                     Label("Entities", systemImage: "list.bullet.clipboard.fill")
                 }

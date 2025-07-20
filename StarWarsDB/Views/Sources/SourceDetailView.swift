@@ -15,14 +15,14 @@ struct SourceEntityCollection {
 }
 
 enum ActiveSheet: Identifiable {
-    case entitySheet(type: any Entity.Type)
+    case add(type: any Entity.Type)
     case referenceSheet(type: any Entity.Type)
     case expandedSheet(type: any Entity.Type)
     
     var id: String {
         switch self {
-        case .entitySheet(let type):
-            return "entity-\(type)"
+        case .add(let type):
+            return "add-\(type)"
         case .referenceSheet(let type):
             return "reference-\(type)"
         case .expandedSheet(let type):

@@ -18,7 +18,7 @@ struct EntitiesListView<T:Entity>: View {
         NavigationStack {
             List {
                 ForEach(entities) { entity in
-                    NavigationLink(destination: EntityDetailView<T>(entity: entity)) {
+                    NavigationLink(destination: EntityDetailRouter<T>(entity: entity)) {
                         EntityRowView<T>(entity: entity)
                     }
                 }

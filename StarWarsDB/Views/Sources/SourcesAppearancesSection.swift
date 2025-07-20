@@ -126,7 +126,7 @@ struct SourcesAppearancesSection: View {
         }
         .sheet(item: $activeSheet) { sheet in
             switch sheet {
-            case .entitySheet(let type):
+            case .add(let type):
                 if type == Character.self {
                     ChooseEntityView<Character>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.characters) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {

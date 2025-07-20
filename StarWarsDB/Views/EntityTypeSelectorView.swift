@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntityBrowserImageView: View {
+struct EntityTypeSelectorImageView: View {
     let imageName: String
     
     var body: some View {
@@ -12,7 +12,7 @@ struct EntityBrowserImageView: View {
     }
 }
 
-struct EntityBrowserView: View {
+struct EntityTypeSelectorView: View {
     var body: some View {
         NavigationStack {
             Form {
@@ -20,7 +20,7 @@ struct EntityBrowserView: View {
                     // Characters
                     NavigationLink(destination: EntitiesListView<Character>()) {
                         HStack {
-                            EntityBrowserImageView(imageName: Character.exampleImageName)
+                            EntityTypeSelectorImageView(imageName: Character.exampleImageName)
                             Text(Character.displayName)
                         }
                     }
@@ -28,7 +28,7 @@ struct EntityBrowserView: View {
                     // Species
                     NavigationLink(destination: EntitiesListView<Species>()) {
                         HStack {
-                            EntityBrowserImageView(imageName: Species.exampleImageName)                           
+                            EntityTypeSelectorImageView(imageName: Species.exampleImageName)
                             Text(Species.displayName)
                         }
                     }
@@ -36,7 +36,7 @@ struct EntityBrowserView: View {
                     // Planets
                     NavigationLink(destination: EntitiesListView<Planet>()) {
                         HStack {
-                            EntityBrowserImageView(imageName: Planet.exampleImageName)
+                            EntityTypeSelectorImageView(imageName: Planet.exampleImageName)
                             Text(Planet.displayName)
                         }
                     }
@@ -44,7 +44,7 @@ struct EntityBrowserView: View {
                     // Organizations
                     NavigationLink(destination: EntitiesListView<Organization>()) {
                         HStack {
-                            EntityBrowserImageView(imageName: Organization.exampleImageName)
+                            EntityTypeSelectorImageView(imageName: Organization.exampleImageName)
                             Text(Organization.displayName)
                         }
                     }
@@ -52,7 +52,7 @@ struct EntityBrowserView: View {
                     // Starships
                     NavigationLink(destination: EntitiesListView<Starship>()) {
                         HStack {
-                            EntityBrowserImageView(imageName: Starship.exampleImageName)
+                            EntityTypeSelectorImageView(imageName: Starship.exampleImageName)
                             Text(Starship.displayName)
                         }
                     }
@@ -60,7 +60,7 @@ struct EntityBrowserView: View {
                     // Starship Models
                     NavigationLink(destination: EntitiesListView<StarshipModel>()) {
                         HStack {
-                            EntityBrowserImageView(imageName: StarshipModel.exampleImageName)
+                            EntityTypeSelectorImageView(imageName: StarshipModel.exampleImageName)
                             Text(StarshipModel.displayName)
                         }
                     }
@@ -69,7 +69,7 @@ struct EntityBrowserView: View {
                     // Creatures
                     NavigationLink(destination: EntitiesListView<Creature>()) {
                         HStack {
-                            EntityBrowserImageView(imageName: Creature.exampleImageName)
+                            EntityTypeSelectorImageView(imageName: Creature.exampleImageName)
                             Text(Creature.displayName)
                         }
                     }
@@ -77,7 +77,7 @@ struct EntityBrowserView: View {
                     // Droids
                     NavigationLink(destination: EntitiesListView<Droid>()) {
                         HStack {
-                            EntityBrowserImageView(imageName: Droid.exampleImageName)
+                            EntityTypeSelectorImageView(imageName: Droid.exampleImageName)
                             Text(Droid.displayName)
                         }
                     }
@@ -85,7 +85,7 @@ struct EntityBrowserView: View {
                     // Varias
                     NavigationLink(destination: EntitiesListView<Varia>()) {
                         HStack {
-                            EntityBrowserImageView(imageName: Varia.exampleImageName)
+                            EntityTypeSelectorImageView(imageName: Varia.exampleImageName)
                             Text(Varia.displayName)
                         }
                     }
@@ -97,5 +97,5 @@ struct EntityBrowserView: View {
 }
 
 #Preview {
-    EntityBrowserView()
+    ChooseEntityTypeView()
 }

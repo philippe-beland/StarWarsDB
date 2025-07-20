@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntityDetailView<T: Entity>: View {
+struct EntityDetailRouter<T: Entity>: View {
     var entity: T
     
     var body: some View {
@@ -31,5 +31,5 @@ struct EntityDetailView<T: Entity>: View {
 }
 
 #Preview {
-    EntityDetailView<Character>(entity: Character.example)
+    EntityDetailRouter<Character>(entity: Character.example)
 }
