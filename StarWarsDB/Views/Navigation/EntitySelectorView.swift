@@ -1,65 +1,65 @@
 import SwiftUI
 
-struct EntitySelectorView<T: Entity>: View {
-    @Environment(\.dismiss) var dismiss: DismissAction
-    var isSourceEntity: Bool
-    var serie: Serie?
-    let sourceEntities: [SourceEntity<T>]
+struct EntityPickerList<T: BaseEntity>: View {
+    // MARK: - Configuration
+    var allowMultiSelection: Bool = false
+    var serie: Serie? = nil
+    var excludedEntityIDs: Set<UUID> = []
+    
+    @Binding var selectedEntities: Set<T>
+    var onFinish: (_ selected: Set<T>) -> Void
+    
+    // MARK: - State
+    @State private var availableEntities: [T] = []
+    @State private var showNewEntitySheet: Bool = false
     
     @StateObject var searchContext = SearchContext()
-    @State private var selectedAppearanceType: AppearanceType = .present
-    @State private var showNewEntitySheet: Bool = false
-    @State private var availableEntities: [T] = []
-    @State private var selectedEntities = Set<T>()
-    
-    var existingEntities: Set<T> {
-        Set(sourceEntities.map { $0.entity })
-    }
-    var filteredEntities: [T] {
-        let existingEntityIds = Set(existingEntities.map { $0.id })
+
+    // MARK: - Computed
+    private var filteredEntities: [T] {
+        let filtered = availableEntities.filter { !excludedEntityIDs.contains($0.id) }
         
         if searchContext.query.count < 3 {
-            return availableEntities.filter { !existingEntities.contains($0) }
+            return filtered
         }
         else {
-            return availableEntities.map {entity in
-                var updatedEntity = entity
-                if existingEntityIds.contains(entity.id) {
-                    updatedEntity.alreadyInSource = true
+            return filtered.map {entity in
+                var updated = entity
+                if excludedEntityIDs.contains(entity.id) {
+                    updated.alreadyInSource = true
                 }
-                return updatedEntity
+                return updated
             }
         }
     }
-    
-    var onEntitySelect: (Set<T>, AppearanceType) -> Void
-    
+
+    // MARK: - View
     var body: some View {
         VStack {
-            NavigationStack {
-                AppearancePickerView(appearance: $selectedAppearanceType)
-                TextField("Search", text: $searchContext.query)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(Constants.Spacing.md)
-                    .frame(maxWidth: .infinity)
-                    .padding(.horizontal, Constants.Spacing.md)
-                
-                List(filteredEntities, id: \.self, selection: $selectedEntities) { entity in
-                    EntityRowView<T>(entity: entity)
-                }
-                .navigationTitle(T.displayName)
-                .toolbar { ToolbarContent }
+            TextField("Search", text: $searchContext.query)
+                .textFieldStyle(.roundedBorder)
+                .padding(.horizontal, Constants.Spacing.md)
+            
+            List(filteredEntities, id: \.self, selection: $selectedEntities) { entity in
+                EntityRowView(entity: entity)
             }
+            .navigationTitle(T.displayName)
+            .toolbar { ToolbarContent }
+            
             Button("Done") {
-                onEntitySelect(selectedEntities, selectedAppearanceType)
-                dismiss()
+                onFinish(selectedEntities)
             }
             .buttonStyle(.borderedProminent)
+            .padding()
         }
         .onChange(of: searchContext.debouncedQuery)  { handleSearchTextChange() }
         .task { await loadInitialEntities() }
+        .sheet(isPresented: $showNewEntitySheet) {
+            addEntitySheet()
+        }
     }
-    
+
+    // MARK: - Data Loading
     private func handleSearchTextChange() {
         Task {
             if searchContext.debouncedQuery.isEmpty || searchContext.debouncedQuery.count >= Constants.Search.minSearchLength {
@@ -71,11 +71,11 @@ struct EntitySelectorView<T: Entity>: View {
     private func loadInitialEntities() async {
         availableEntities = await loadEntities(serie: serie, sort: .name, filter: searchContext.debouncedQuery)
     }
-    
-    
+
+    // MARK: - Toolbar
     @ToolbarContentBuilder
     private var ToolbarContent: some ToolbarContent {
-        if isSourceEntity {
+        if allowMultiSelection {
             ToolbarItem(placement: .navigationBarLeading) {
                 EditButton()
             }
@@ -83,9 +83,6 @@ struct EntitySelectorView<T: Entity>: View {
         ToolbarItem(placement: .navigationBarTrailing) {
             Button("Create", systemImage: "plus") {
                 showNewEntitySheet.toggle()
-            }
-            .sheet(isPresented: $showNewEntitySheet) {
-                addEntitySheet()
             }
         }
     }
@@ -147,6 +144,63 @@ struct EntitySelectorView<T: Entity>: View {
     }
 }
 
+// MARK: - BaseEntity Selector Wrapper
+struct BaseEntitySelectorView<T: BaseEntity>: View {
+    @Environment(\.dismiss) var dismiss: DismissAction
+    @State private var selectedEntities = Set<T>()
+
+    var onSelect: (T) -> Void
+
+    var body: some View {
+        NavigationStack {
+            VStack {
+                EntityPickerList(
+                    selectedEntities: $selectedEntities,
+                    onFinish: { entity in
+                        if let first = entity.first {
+                            onSelect(first)
+                            dismiss()
+                        }
+                    }
+                )
+                .buttonStyle(.borderedProminent)
+            }
+        }
+    }
+}
+
+// MARK: - Entity Selector Wrapper
+struct EntitySelectorView<T: Entity>: View {
+    @Environment(\.dismiss) var dismiss: DismissAction
+    var serie: Serie?
+    let sourceEntities: [SourceEntity<T>]
+    
+    @State private var selectedAppearanceType: AppearanceType = .present
+    @State private var selectedEntities = Set<T>()
+    
+    var onSelect: (_ selected: Set<T>, _ appearance: AppearanceType) -> Void
+    
+    var body: some View {
+        NavigationStack {
+            VStack {
+                AppearancePickerView(appearance: $selectedAppearanceType)
+                
+                EntityPickerList(
+                    allowMultiSelection: true,
+                    serie: serie,
+                    excludedEntityIDs: Set(sourceEntities.map { $0.entity.id }),
+                    selectedEntities: $selectedEntities,
+                    onFinish: { selected in
+                        onSelect(selected, selectedAppearanceType)
+                        dismiss()
+                    }
+                )
+            }
+        }
+    }
+}
+
+// MARK: - Preview
 //#Preview {
 //    let sourceEntities: SourceEntity<Character> = SourceEntity(source: .example, entity: Character.example, appearance: .present)
 //    EntitySelectorView<Character>(isSourceEntity: false, sourceEntities: sourceEntities.examples, onEntitySelect: { _, _ in })

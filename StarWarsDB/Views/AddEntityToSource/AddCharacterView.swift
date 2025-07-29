@@ -7,8 +7,8 @@ struct AddCharacterView: View, AddEntityView {
     
     @State var name: String = ""
     @State private var aliases: [String] = []
-    @State private var species: Species?
-    @State private var homeworld: Planet?
+    @State private var species: Species = .empty
+    @State private var homeworld: Planet = .empty
     @State private var gender: Gender = .Unknown
     //@State private var affiliations: [Organization] = []
     @State private var firstAppearance: String = ""
@@ -26,18 +26,8 @@ struct AddCharacterView: View, AddEntityView {
                     Section("Character Infos") {
                         //MultiFieldView(fieldName: "Aliases", infos: aliases)
                         GenderPicker(gender: $gender)
-                        EditableLinkedEntityField(
-                            fieldName: "Species",
-                            entity: Binding(
-                                get: {species ?? Species.empty },
-                                set: {species = ($0 ) })
-                            )
-                        EditableLinkedEntityField(
-                            fieldName: "Homeworld",
-                            entity: Binding(
-                                get: {homeworld ?? Planet.empty },
-                                set: {homeworld = ($0 ) }),
-                            )
+                        EditableLinkedEntityField(entity: $species)
+                        EditableLinkedEntityField(entity: $homeworld)
                         //MultiFieldView(fieldName: "Affiliation", entities: affiliations)
                         EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }

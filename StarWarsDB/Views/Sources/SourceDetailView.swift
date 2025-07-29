@@ -54,24 +54,38 @@ struct SourceDetailView: View {
                     HStack(spacing: Constants.Spacing.md) {
                         // Serie
                         InfoBlock(title: "Serie") {
-                            EditableLinkedEntity(
-                                fieldName: "Serie",
-                                entity: Binding(
+                            EditableLinkedBaseEntity(
+                                baseEntity: Binding(
                                     get: { viewModel.source.serie ?? Serie.empty },
                                     set: { viewModel.source.serie = $0 }
                                 )
-                            )
+                            ) {
+                                if let serieName = viewModel.source.serie?.name {
+                                    Text ("(\(serieName))")
+                                        .foregroundColor(.blue)
+                                } else {
+                                    Text("Select Serie")
+                                        .foregroundColor(.blue)
+                                }
+                            }
                         }
                         
                         //Arc
                         InfoBlock(title: "Arc") {
-                            EditableLinkedEntity(
-                                fieldName: "Arc",
-                                entity: Binding(
+                            EditableLinkedBaseEntity(
+                                baseEntity: Binding(
                                     get: { viewModel.source.arc ?? Arc.empty },
                                     set: { viewModel.source.arc = $0 }
                                 )
-                            )
+                            ){
+                                if let arcName = viewModel.source.arc?.name {
+                                    Text ("(\(arcName))")
+                                        .foregroundColor(.blue)
+                                } else {
+                                    Text("Select Arc")
+                                        .foregroundColor(.blue)
+                                }
+                            }
                         }
                         
                         // Number

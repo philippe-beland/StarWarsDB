@@ -6,7 +6,7 @@ struct AddStarshipView: View, AddEntityView {
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
-    @State private var model: StarshipModel?
+    @State private var model: StarshipModel = .empty
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
@@ -20,12 +20,7 @@ struct AddStarshipView: View, AddEntityView {
                     .padding(Constants.Spacing.md)
                 Form {
                     Section("Starship Infos") {
-                        EditableLinkedEntityField(
-                            fieldName: "Model",
-                            entity: Binding(
-                                get: {model ?? StarshipModel.empty },
-                                set: {model = ($0 ) }),
-                            )
+                        EditableLinkedEntityField(entity: $model)
                         EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)

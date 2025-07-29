@@ -6,7 +6,6 @@ struct CreatureInfoSection: View {
     var body: some View {
         Section("Creature Infos") {
             EditableLinkedEntityField(
-                fieldName: "Homeworld",
                 entity: Binding(
                     get: {creature.homeworld ?? Planet.empty },
                     set: {creature.homeworld = ($0 ) }),

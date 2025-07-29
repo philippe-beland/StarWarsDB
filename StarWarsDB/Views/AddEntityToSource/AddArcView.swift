@@ -17,13 +17,7 @@ struct AddArcView: View, AddEntityView {
                     .font(.title.bold())
                     .padding(Constants.Spacing.md)
                 Form {
-                    EditableLinkedEntityField<Serie>(
-                        fieldName: "Serie",
-                        entity: Binding(
-                            get: {serie },
-                            set: {serie = ($0 ) }),
-                        )
-                    
+                    EditableLinkedBaseEntityField(baseEntity: $serie)
                     CommentsView(comments: $comments)
                     
                     Section {

@@ -9,6 +9,9 @@ final class Serie: BaseEntity {
     var sourceType: SourceType
     
     var wookieepediaTitle: String = ""
+    
+    static let displayName: String = "Series"
+    var alreadyInSource: Bool = false
 
     let recordType: String = "Serie"
     let databaseTableName: String = "series"

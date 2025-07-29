@@ -6,7 +6,7 @@ struct AddSpeciesView: View, AddEntityView {
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
-    @State private var homeworld: Planet?
+    @State private var homeworld: Planet = .empty
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
@@ -20,12 +20,7 @@ struct AddSpeciesView: View, AddEntityView {
                     .padding(Constants.Spacing.md)
                 Form {
                     Section("Species Infos") {
-                        EditableLinkedEntityField(
-                            fieldName: "Homeworld",
-                            entity: Binding(
-                                get: {homeworld ?? Planet.empty },
-                                set: {homeworld = ($0 ) }),
-                            )
+                        EditableLinkedEntityField(entity: $homeworld)
                         EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)

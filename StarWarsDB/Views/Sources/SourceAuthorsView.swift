@@ -38,7 +38,7 @@ struct ExpandedSourceAuthorsView: View {
                     showAddAuthorSheet.toggle()
                 }
                 .sheet(isPresented: $showAddAuthorSheet) {
-                    EntitySelectorView<Author>(isSourceEntity: false, sourceEntities: []) { authors, _ in
+                    EntitySelectorView<Author>(sourceEntities: []) { authors, _ in
                         if let source {
                             for author in authors {
                                 let newAuthor = SourceEntity<Author>(source: source, entity: author, appearance: .present)

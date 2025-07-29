@@ -6,7 +6,12 @@ protocol BaseEntity: DatabaseRecord {
     static var example: Self { get }
     static var empty: Self { get }
     var wookieepediaTitle: String { get }
-
+    
+    /// Used only in `Entity`-conforming types for highlighting existing links in selectors. Added for compliance for EntityPickerView
+    /// Defaults to `false` and unused in `BaseEntity`.
+    var alreadyInSource: Bool { get set }
+    
+    static var displayName: String { get }
     static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Self]
 }
 

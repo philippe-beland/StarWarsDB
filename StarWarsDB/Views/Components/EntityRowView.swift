@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntityRowView<T: Entity>: View {
+struct EntityRowView<T: BaseEntity>: View {
     let entity: T
     
     var body: some View {

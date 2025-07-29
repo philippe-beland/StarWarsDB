@@ -111,8 +111,10 @@ final class Source: BaseEntity {
     var numberPages: Int?
     var isDone: Bool
     var comments: String?
-    var alreadyInSource: Bool = false
+    
     var wookieepediaTitle: String = ""
+    var alreadyInSource: Bool = false
+    static let displayName: String = "Sources"
 
     var recordType: String { "Source" }
     var databaseTableName: String { "sources" }

@@ -8,13 +8,11 @@ struct CharacterInfoSection: View {
             MultiFieldView<Character>(fieldName: "Aliases", infos: character.aliases)
             GenderPicker(gender: $character.gender)
             EditableLinkedEntityField(
-                fieldName: "Species",
                 entity: Binding(
                     get: {character.species ?? Species.empty },
                     set: {character.species = ($0) }),
                 )
             EditableLinkedEntityField(
-                fieldName: "Homeworld",
                 entity: Binding(
                     get: {character.homeworld ?? Planet.empty },
                     set: {character.homeworld = ($0) }),

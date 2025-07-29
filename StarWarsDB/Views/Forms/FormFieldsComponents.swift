@@ -1,33 +1,32 @@
 import SwiftUI
 
-struct FieldView: View {
+struct EditableTextField: View {
     var fieldName: String
     var info: Binding<String>
+    var isVertical: Bool = false
     
     var body: some View {
-        HStack {
-            Text("\(fieldName):")
-                .font(.footnote)
-                .bold()
+        if isVertical {
+            VStack {
+                Text("\(fieldName):")
+                    .font(.footnote)
+                    .bold()
             TextField("Enter \(fieldName.lowercased())", text: info)
                 .multilineTextAlignment(.trailing)
+            }
+        } else {
+            HStack {
+                Text("\(fieldName):")
+                    .font(.footnote)
+                    .bold()
+                TextField("Enter \(fieldName.lowercased())", text: info)
+                    .multilineTextAlignment(.trailing)
+            }
         }
     }
 }
 
-struct FieldVStack: View {
-    var fieldName: String
-    var info: Binding<String>
-    
-    var body: some View {
-        VStack {
-            Text("\(fieldName):")
-                .bold()
-            TextField("Info", text: info)
-        }
-    }
-}
-
+// TODO: Refactor this whole class
 struct MultiFieldView<T: Entity>: View {
     var fieldName: String
     var infos: [String] = []
@@ -35,7 +34,7 @@ struct MultiFieldView<T: Entity>: View {
     
     var body: some View {
         HStack {
-            Text(fieldName).bold()
+            Text(T.displayName).bold()
             Spacer()
             VStack {
                 ForEach(infos, id:\.self) { info in
@@ -50,20 +49,79 @@ struct MultiFieldView<T: Entity>: View {
     }
 }
 
-struct MultiFieldVStack<T: Entity>: View {
-    var fieldName: String
-    var infos: [String] = []
-    var entities: [T] = []
+struct EditableLinkedBaseEntityField<T: BaseEntity>: View {
+    @Binding var baseEntity: T
+        
+    var body: some View {
+        HStack {
+            Text("\(T.displayName):")
+                .font(.footnote)
+                .bold()
+            Spacer()
+            EditableLinkedBaseEntity(baseEntity: $baseEntity) {
+                Text(baseEntity.name.isEmpty ? "Select \(T.displayName)" : baseEntity.name)
+                    .foregroundColor(.blue)
+            }
+        }
+    }
+}
+
+struct EditableLinkedEntityField<T: Entity>: View {
+    @Binding var entity: T
+        
+    var body: some View {
+        HStack {
+            Text("\(T.displayName):")
+                .font(.footnote)
+                .bold()
+            Spacer()
+            EditableLinkedEntity(entity: $entity) {
+                Text(entity.name.isEmpty ? "Select \(T.displayName)" : entity.name)
+                    .foregroundColor(.blue)
+            }
+        }
+    }
+}
+
+struct EditableLinkedEntity<T: Entity, Label: View>: View {
+    @Binding var entity: T
+    var label: () -> Label
+    
+    @State private var showEntitySelection: Bool = false
     
     var body: some View {
-        VStack {
-            Text("\(fieldName):")
-                .bold()
-            ForEach(infos, id:\.self) { info in
-                Text(info)
+        Button {
+            showEntitySelection.toggle()
+        } label: {
+            label()
+        }
+        .buttonStyle(PlainButtonStyle())
+        .sheet(isPresented: $showEntitySelection) {
+            EntitySelectorView<T>(sourceEntities: []) { selectedEntities, _ in
+                if let selected = selectedEntities.first {
+                    entity = selected
+                }
             }
-            ForEach(entities) { entity in
-                Text(entity.name)
+        }
+    }
+}
+
+struct EditableLinkedBaseEntity<T: BaseEntity, Label: View>: View {
+    @Binding var baseEntity: T
+    var label: () -> Label
+    
+    @State private var showEntitySelection: Bool = false
+    
+    var body: some View {
+        Button {
+            showEntitySelection.toggle()
+        } label: {
+            label()
+        }
+        .buttonStyle(PlainButtonStyle())
+        .sheet(isPresented: $showEntitySelection) {
+            BaseEntitySelectorView<T>() { selectedEntity in
+                baseEntity = selectedEntity
             }
         }
     }
@@ -73,8 +131,11 @@ struct MultiFieldVStack<T: Entity>: View {
     @Previewable @State var info = "Luke Skywalker"
     let fieldName = "Name"
     
-    FieldView(fieldName: fieldName, info: $info)
-    FieldVStack(fieldName: fieldName, info: $info)
+    EditableTextField(fieldName: fieldName, info: $info)
     MultiFieldView<Character>(fieldName: fieldName)
-    MultiFieldVStack<Planet>(fieldName: fieldName)
+
+//    EditableLinkedEntityField<Planet>(
+//        entity: Planet.empty,
+//    )
+
 }

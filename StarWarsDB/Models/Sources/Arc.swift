@@ -2,12 +2,15 @@ import Foundation
 
 /// Represents a story arc in the Star Wars universe
 @Observable
-final class Arc: BaseEntity {   
+final class Arc: BaseEntity {    
     let id: UUID
     var name: String
     var comments: String?
     var serie: Serie?
     var wookieepediaTitle: String = ""
+    
+    static let displayName: String = "Arcs"
+    var alreadyInSource: Bool = false
 
     var recordType: String { "Arc" }
     var databaseTableName: String { "arcs" }

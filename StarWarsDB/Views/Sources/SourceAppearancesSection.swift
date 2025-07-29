@@ -128,7 +128,7 @@ struct SourceAppearancesSection: View {
             switch sheet {
             case .add(let type):
                 if type == Character.self {
-                    EntitySelectorView<Character>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.characters) { selectedEntities, appearance in
+                    EntitySelectorView<Character>(serie: serie, sourceEntities: sourceEntities.characters) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -136,7 +136,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Droid.self {
-                    EntitySelectorView<Droid>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.droids) { selectedEntities, appearance in
+                    EntitySelectorView<Droid>(serie: serie, sourceEntities: sourceEntities.droids) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -144,7 +144,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Creature.self {
-                    EntitySelectorView<Creature>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.creatures) { selectedEntities, appearance in
+                    EntitySelectorView<Creature>(serie: serie, sourceEntities: sourceEntities.creatures) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -152,7 +152,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Organization.self {
-                    EntitySelectorView<Organization>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.organizations) { selectedEntities, appearance in
+                    EntitySelectorView<Organization>(serie: serie, sourceEntities: sourceEntities.organizations) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -160,7 +160,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Planet.self {
-                    EntitySelectorView<Planet>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.planets) { selectedEntities, appearance in
+                    EntitySelectorView<Planet>(serie: serie, sourceEntities: sourceEntities.planets) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -168,7 +168,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Species.self {
-                    EntitySelectorView<Species>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.species) { selectedEntities, appearance in
+                    EntitySelectorView<Species>(serie: serie, sourceEntities: sourceEntities.species) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -176,7 +176,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == StarshipModel.self {
-                    EntitySelectorView<StarshipModel>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.starshipModels) { selectedEntities, appearance in
+                    EntitySelectorView<StarshipModel>(serie: serie, sourceEntities: sourceEntities.starshipModels) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -184,7 +184,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Starship.self {
-                    EntitySelectorView<Starship>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.starships) { selectedEntities, appearance in
+                    EntitySelectorView<Starship>(serie: serie, sourceEntities: sourceEntities.starships) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -192,7 +192,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Varia.self {
-                    EntitySelectorView<Varia>(isSourceEntity: true, serie: serie, sourceEntities: sourceEntities.varias) { selectedEntities, appearance in
+                    EntitySelectorView<Varia>(serie: serie, sourceEntities: sourceEntities.varias) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities

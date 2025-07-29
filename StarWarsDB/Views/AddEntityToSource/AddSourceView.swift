@@ -4,9 +4,9 @@ struct AddSourceView: View {
     @Environment(\.dismiss) var dismiss: DismissAction
     
     @State var name: String = ""
-    @State private var serie: Serie?
+    @State private var serie: Serie = .empty
     @State private var number: Int?
-    @State private var arc: Arc?
+    @State private var arc: Arc = .empty
     @State private var era: Era = .ageRebellion
     @State private var sourceType: SourceType = .comics
     @State private var publicationDate: Date = Date()
@@ -26,12 +26,7 @@ struct AddSourceView: View {
                 
                 Form {
                     Section("Source Infos") {
-                        EditableLinkedEntityField(
-                            fieldName: "Serie",
-                            entity: Binding(
-                                get: {serie ?? Serie.empty },
-                                set: {serie = ($0 ) }),
-                            )
+                        EditableLinkedBaseEntityField(baseEntity: $serie)
                         HStack {
                             Text("Number:")
                                 .font(.footnote)
@@ -39,12 +34,7 @@ struct AddSourceView: View {
                             Spacer()
                             TextField("Number", value: $number, format: .number)
                         }
-                        EditableLinkedEntityField(
-                            fieldName: "Arc",
-                            entity: Binding(
-                                get: {arc ?? Arc.empty },
-                                set: {arc = ($0 ) }),
-                            )
+                        EditableLinkedBaseEntityField(baseEntity: $arc)
                         EraPicker(era: $era)
                         SourceTypePicker(sourceType: $sourceType)
                         PublicationDatePicker(date: $publicationDate)

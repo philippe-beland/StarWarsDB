@@ -7,7 +7,7 @@ struct AddCreatureView: View, AddEntityView {
     
     @State var name: String = ""
     @State private var designation: String = ""
-    @State private var homeworld: Planet?
+    @State private var homeworld: Planet = .empty
     @State private var firstAppearance: String = ""
     @State private var comments: String = ""
     
@@ -21,12 +21,7 @@ struct AddCreatureView: View, AddEntityView {
                     .padding(Constants.Spacing.md)
                 Form {
                     Section("Creature Infos") {
-                        EditableLinkedEntityField(
-                            fieldName: "Homeworld",
-                            entity: Binding(
-                                get: {homeworld ?? Planet.empty },
-                                set: {homeworld = ($0 ) }),
-                            )
+                        EditableLinkedEntityField(entity: $homeworld)
                         EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)

@@ -6,7 +6,6 @@ struct StarshipInfoSection: View {
     var body: some View {
         Section("Starship Infos") {
             EditableLinkedEntityField(
-                fieldName: "Model",
                 entity: Binding(
                     get: {starship.model ?? StarshipModel.empty },
                     set: {starship.model = ($0 ) }),

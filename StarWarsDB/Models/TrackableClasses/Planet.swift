@@ -128,7 +128,7 @@ final class Planet: TrackableEntity {
     
     static let empty: Planet = Planet(
         name: "",
-        region: .outerRim,
+        region: .unknown,
         sector: "",
         system: "",
         capitalCity: "",
