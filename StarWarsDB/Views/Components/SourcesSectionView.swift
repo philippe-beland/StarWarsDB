@@ -74,13 +74,13 @@ struct SourceNameView: View {
                 .lineLimit(1) // Ensures text doesn't overflow
                 .frame(maxWidth: .infinity, alignment: .leading)
         } else {
-            VStack (alignment: .leading, spacing: 4) {
+            VStack (alignment: .leading, spacing: Constants.Spacing.xs) {
                 
                 Text(name)
                     .font(.headline)
                     .foregroundColor(oldest ? Color.red : Color.primary)
                     .lineLimit(1) // Ensures text doesn't overflow
-                HStack (spacing: 4) {
+                HStack (spacing: Constants.Spacing.xs) {
                     Text(serie?.name ?? "")
                     Text(number?.description ?? "")
                 }
@@ -100,9 +100,9 @@ struct SourceRow<T: Entity>: View {
     }
     
     var body: some View {
-        HStack(spacing: 20) {
+        HStack(spacing: Constants.Spacing.xl) {
             UniverseYear(year: sourceEntity.source.universeYear)
-                .frame(width: 50, alignment: .leading)
+                .frame(width: Constants.Layout.yearViewWidth, alignment: .leading)
             
             Image(sourceEntity.source.id.uuidString.lowercased())
                 .resizable()
@@ -120,10 +120,10 @@ struct SourceRow<T: Entity>: View {
                 .font(.caption)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
-                .frame(width: 100, alignment: .center)
+                .frame(width: Constants.Layout.dateViewWidth, alignment: .center)
             
             AppearanceView(appearance: sourceEntity.appearance.rawValue)
-                .frame(width: 80, alignment: .center)
+                .frame(width: Constants.Layout.appearanceViewWidth, alignment: .center)
         }
     }
 }

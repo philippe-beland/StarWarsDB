@@ -12,7 +12,7 @@ struct SourceGridView: View {
                 sourceOverlay
             }
         }
-        .padding(10)
+        .padding(Constants.Spacing.sm)
     }
     
     @ViewBuilder

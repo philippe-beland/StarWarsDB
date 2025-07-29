@@ -40,9 +40,9 @@ struct EntitySelectorView<T: Entity>: View {
                 AppearancePickerView(appearance: $selectedAppearanceType)
                 TextField("Search", text: $searchContext.query)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
+                    .padding(Constants.Spacing.md)
                     .frame(maxWidth: .infinity)
-                    .padding(.horizontal)
+                    .padding(.horizontal, Constants.Spacing.md)
                 
                 List(filteredEntities, id: \.self, selection: $selectedEntities) { entity in
                     EntityRowView<T>(entity: entity)

@@ -54,21 +54,22 @@ struct EntityRowView<T: Entity>: View {
     }
 }
 
-func imageOrPlaceholder(for id: UUID, size: CGFloat=50) -> some View {
+func imageOrPlaceholder(for id: UUID, size: CGFloat = Constants.Layout.entityImageSize) -> some View {
     let baseURL = "https://pub-84c7e404f0cb414d8809fe98cb5dedff.r2.dev/"
     let url = URL(string: "\(baseURL)\(id.uuidString.lowercased()).jpg")
 
     return AsyncImage(url: url) { phase in
         switch phase {
         case .empty:
-            ProgressView()
-                .frame(width: size, height: size)
+            RoundedRectangle(cornerRadius: Constants.CornerRadius.sm)
+                .fill(Color.gray.opacity(0.3))
+                .frame(width: size, height: size, alignment: .top)
         case .success(let image):
             image
                 .resizable()
                 .scaledToFill()
                 .frame(width: size, height: size, alignment: .top)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .clipShape(RoundedRectangle(cornerRadius: Constants.CornerRadius.sm))
                 .shadow(radius: 5)
         case .failure:
             Image(systemName: "person.crop.circle.fill")

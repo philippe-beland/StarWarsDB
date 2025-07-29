@@ -1,18 +1,8 @@
 import SwiftUI
 
-struct SourceEntityCollection {
-    var characters: [SourceEntity<Character>] = []
-    var creatures: [SourceEntity<Creature>] = []
-    var droids: [SourceEntity<Droid>] = []
-    var organizations: [SourceEntity<Organization>] = []
-    var planets: [SourceEntity<Planet>] = []
-    var species: [SourceEntity<Species>] = []
-    var starships: [SourceEntity<Starship>] = []
-    var starshipModels: [SourceEntity<StarshipModel>] = []
-    var varias: [SourceEntity<Varia>] = []
-    var artists: [SourceEntity<Artist>] = []
-    var authors: [SourceEntity<Author>] = []
-}
+
+
+// MARK: - ActiveSheet
 
 enum ActiveSheet: Identifiable {
     case add(type: any Entity.Type)
@@ -31,28 +21,106 @@ enum ActiveSheet: Identifiable {
     }
 }
 
+// MARK: - Main View
 struct SourceDetailView: View {
     @StateObject private var viewModel: EditSourceViewModel
     @State private var showFactSheet: Bool = false
+    
+    // MARK: - Init
     
     init(source: Source) {
         _viewModel = StateObject(wrappedValue: EditSourceViewModel(source: source))
     }
     
+    // MARK: - Computed Properties
+    
     private var sortedArtists: [SourceEntity<Artist>] {
-        viewModel.sourceEntities.artists.sorted (by: { $0.entity.name < $1.entity.name })
+        viewModel.sourceEntities.artists.sorted(by: { $0.entity.name < $1.entity.name })
     }
     
     private var sortedAuthors: [SourceEntity<Author>] {
         viewModel.sourceEntities.authors.sorted(by: { $0.entity.name < $1.entity.name })
     }
     
+    // MARK: - View Body
+    
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading, spacing: 16) {
+            VStack(alignment: .leading, spacing: Constants.Spacing.md) {
                 SourceHeaderView(source: $viewModel.source, showFactSheet: $showFactSheet)
-                    .padding(.horizontal, 20)
-                SourceInfoSection(infosSection: infosSection)
+                    .padding(.horizontal, Constants.Spacing.lg)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: Constants.Spacing.md) {
+                        // Serie
+                        InfoBlock(title: "Serie") {
+                            VEntityInfoEditView(
+                                fieldName: "Serie",
+                                entity: Binding(
+                                    get: { viewModel.source.serie ?? Serie.empty },
+                                    set: { viewModel.source.serie = $0 }
+                                )
+                            )
+                        }
+                        
+                        //Arc
+                        InfoBlock(title: "Arc") {
+                            VEntityInfoEditView(
+                                fieldName: "Arc",
+                                entity: Binding(
+                                    get: { viewModel.source.arc ?? Arc.empty },
+                                    set: { viewModel.source.arc = $0 }
+                                )
+                            )
+                        }
+                        
+                        // Number
+                        InfoBlock(title: "Number") {
+                            TextField("Number", value: $viewModel.source.number, format: .number)
+                        }
+                        
+                        // Era
+                        InfoBlock(title: "Era") {
+                            EraPicker(era: $viewModel.source.era)
+                        }
+                        
+                        // Type
+                        InfoBlock(title: "Type") {
+                            SourceTypePicker(sourceType: $viewModel.source.sourceType)
+                        }
+                        
+                        // Publication Date
+                        InfoBlock(title: "Publication Date") {
+                            PublicationDatePicker(date: $viewModel.source.publicationDate)
+                        }
+                        
+                        // In-Universe Year
+                        InfoBlock(title: "In-Universe Year") {
+                            YearPicker(era: viewModel.source.era, universeYear: $viewModel.source.universeYear)
+                        }
+                        
+                        // Authors
+                        InfoBlock(title: "Authors") {
+                            AuthorsVStack(source: viewModel.source, authors: sortedAuthors)
+                        }
+                        
+                        // Authors
+                        InfoBlock(title: "Artists") {
+                            ArtistsVStack(source: viewModel.source, artists: sortedArtists)
+                        }
+                        
+                        // Number of Pages
+                        InfoBlock(title: "Number of pages") {
+                            TextField("Nb of pages", value: $viewModel.source.numberPages, format: .number)
+                        }
+                        
+                        // URL
+                        InfoBlock(title: "URL") {
+                            TextField("URL", text: $viewModel.source.wookieepediaTitle)
+                        }
+                    }
+                }
+                
                 SourceAppearancesSection(
                     sourceEntities: $viewModel.sourceEntities,
                     activeSheet: $viewModel.activeSheet,
@@ -60,7 +128,7 @@ struct SourceDetailView: View {
                     url: viewModel.source.url,
                     onAddEntity: viewModel.addAnyEntity
                 )
-                .padding(.top, 16)
+                .padding(.top, Constants.Spacing.md)
             }
             .navigationBarTitleDisplayMode(.inline)
         }
@@ -69,66 +137,27 @@ struct SourceDetailView: View {
             Button("Update", action: viewModel.source.update)
         }
     }
-    
-    private var infosSection: [InfoSection] {
-        let sections: [InfoSection] = [
-//            InfoSection(fieldName: "Serie", view: AnyView(VEntityInfoEditView(
-//                fieldName: "Serie",
-//                entity: Binding(
-//                    get: {viewModel.source.serie ?? Serie.empty },
-//                    set: {viewModel.source.serie = ($0 ) }),
-//                ))),
-//            InfoSection(fieldName: "Arc", view: AnyView(VEntityInfoEditView(
-//                fieldName: "Arc",
-//                entity: Binding(
-//                    get: {viewModel.source.arc ?? Arc.empty },
-//                    set: {viewModel.source.arc = ($0 ) }),
-//                ))),
-            InfoSection(fieldName: "Number", view: AnyView(TextField("Number", value: $viewModel.source.number, format: .number))),
-            InfoSection(fieldName: "Era", view: AnyView(EraPicker(era: $viewModel.source.era))),
-            InfoSection(fieldName: "Type", view: AnyView(SourceTypePicker(sourceType: $viewModel.source.sourceType))),
-            InfoSection(fieldName: "Publication Date", view: AnyView(PublicationDatePicker(date: $viewModel.source.publicationDate))),
-            InfoSection(fieldName: "In-Universe Year", view: AnyView(YearPicker(era: viewModel.source.era, universeYear: $viewModel.source.universeYear))),
-            InfoSection(fieldName: "Authors", view: AnyView(AuthorsVStack(source: viewModel.source, authors: sortedAuthors))),
-            InfoSection(fieldName: "Artists", view: AnyView(ArtistsVStack(source: viewModel.source, artists: sortedArtists))),
-            InfoSection(fieldName: "Number Pages", view: AnyView(TextField("Nb of pages", value: $viewModel.source.numberPages, format: .number))),
-            InfoSection(fieldName: "URL", view: AnyView(TextField("URL", text: $viewModel.source.wookieepediaTitle)))
-        ]
-        
-        return sections
-    }
 }
 
-private struct SourceInfoSection: View {
-    let infosSection: [InfoSection]
+private struct InfoBlock<Content: View>: View {
+    let title: String
+    let content: () -> Content
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 16) {
-                ForEach(infosSection) { info in
-                    VStack(alignment: .leading) {
-                        Text(info.fieldName)
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                        info.view
-                            .frame(minWidth: 120)
-                    }
-                    .padding(12)
-                    .background(Color(UIColor.secondarySystemBackground))
-                    .cornerRadius(10)
-                }
-            }
+        VStack(alignment: .leading) {
+            Text(title)
+                .font(.caption)
+                .foregroundColor(.secondary)
+            content()
+                .frame(minWidth: Constants.Layout.minInfoWidth)
         }
-        .padding([.horizontal])
+        .padding(Constants.Spacing.sm)
+        .background(Color(UIColor.secondarySystemBackground))
+        .cornerRadius(Constants.CornerRadius.md)
     }
 }
-        
-private struct InfoSection: Identifiable {
-    let id: UUID = UUID()
-    let fieldName: String
-    let view: AnyView
-}
 
+// MARK: - Preview
 #Preview {
     SourceDetailView(source: .example)
 }

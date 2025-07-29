@@ -18,7 +18,7 @@ struct AddStarshipModelView: View, AddEntityView {
             VStack(alignment: .center) {
                 TextField("Name", text: $name)
                     .font(.title.bold())
-                    .padding()
+                    .padding(Constants.Spacing.md)
                 Form {
                     Section("Starship Model Infos") {
                         FieldView(fieldName: "Class Type", info: $classType)

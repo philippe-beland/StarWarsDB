@@ -23,7 +23,7 @@ struct SourceHeaderView: View {
                 .font(.callout)
                 .frame(maxWidth: 110)
         }
-        .padding([.horizontal])
+        .padding(.horizontal, Constants.Spacing.md)
     }
 }
 

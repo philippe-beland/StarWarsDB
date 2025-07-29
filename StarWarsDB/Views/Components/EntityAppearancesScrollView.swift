@@ -19,7 +19,7 @@ struct EntityAppearancesScrollView<T: Entity>: View {
                     }
                 }
             }
-            .padding(.vertical)
+            .padding(.vertical, Constants.Spacing.md)
         }
 }
 

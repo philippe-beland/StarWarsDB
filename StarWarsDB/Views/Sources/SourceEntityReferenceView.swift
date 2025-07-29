@@ -27,7 +27,7 @@ struct SourceEntityReferenceView<T: Entity>: View {
                             Text(entity.modifiers.joined(separator: ", "))
                             Spacer()
                             AppearanceView(appearance: entity.appearance.rawValue)
-                                .frame(width: 80, alignment: .center)
+                                .frame(width: Constants.Layout.appearanceViewWidth, alignment: .center)
                         }
                         .textSelection(.enabled)
                     }

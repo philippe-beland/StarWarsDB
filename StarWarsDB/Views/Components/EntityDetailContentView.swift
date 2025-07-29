@@ -23,7 +23,7 @@ struct EntityDetailContentView<T: Entity, Header: View, SidePanel: View>: View {
             
         if isSplitLayout {
             HStack {
-                sidePanel.frame(width: 350)
+                sidePanel.frame(width: Constants.Layout.sidePanelWidth)
                 Spacer()
                 SourcesSectionView<T>(sourceEntities: sourceEntities)
             }

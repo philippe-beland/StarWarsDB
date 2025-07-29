@@ -10,7 +10,7 @@ struct ImageView: View {
                 image
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 300 , height: 300, alignment: .top)
+                    .frame(width: Constants.Layout.imageViewSize , height: Constants.Layout.imageViewSize, alignment: .top)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .shadow(radius: 5)
             } else if image.error != nil {

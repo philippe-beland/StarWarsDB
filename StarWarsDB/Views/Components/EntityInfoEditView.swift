@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct EntityInfoEditView<T: Entity>: View {
+struct EntityInfoEditView<T: BaseEntity>: View {
     var fieldName: String
     @Binding var entity: T
     
@@ -26,7 +26,7 @@ struct EntityInfoEditView<T: Entity>: View {
             .buttonStyle(PlainButtonStyle())
         }
         .sheet(isPresented: $showEntitySelection) {
-            EntitySelectorView<T>(isSourceEntity: false, sourceEntities: []) { selectedEntities, appearance in
+            EntitySelectorView(isSourceEntity: false, sourceEntities: []) { selectedEntities, _ in
                 if let selectedEntity = selectedEntities.first {
                     entity = selectedEntity
                 }
@@ -35,7 +35,7 @@ struct EntityInfoEditView<T: Entity>: View {
     }
 }
 
-struct VEntityInfoEditView<T: Entity>: View {
+struct VEntityInfoEditView<T: BaseEntity>: View {
     var fieldName: String
     @Binding var entity: T
     

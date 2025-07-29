@@ -7,7 +7,7 @@ struct EntityTypeSelectorImageView: View {
         Image(imageName)
             .resizable()
             .scaledToFill()
-            .frame(width: 50, height: 50)
+            .frame(width: Constants.Layout.entityImageSize, height: Constants.Layout.entityImageSize)
             .clipShape(Circle())
     }
 }

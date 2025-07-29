@@ -18,7 +18,7 @@ struct AppearancePickerView: View {
         }
         .font(.caption.bold())
         .buttonStyle(.borderedProminent)
-        .padding(10)
+        .padding(Constants.Spacing.sm)
     }
 }
 

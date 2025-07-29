@@ -17,7 +17,7 @@ struct SectionHeaderView: View {
                 Image("Site-logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 36, height: 36)
+                    .frame(width: Constants.Layout.headerIconSize, height: Constants.Layout.headerIconSize)
             }
             .buttonStyle(.plain)
             Spacer()

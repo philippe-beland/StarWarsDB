@@ -16,7 +16,7 @@ struct AddSerieView: View, AddEntityView {
             VStack(alignment: .center) {
                 TextField("Name", text: $name)
                     .font(.title.bold())
-                    .padding()
+                    .padding(Constants.Spacing.md)
                 Form {
                     SourceTypePicker(sourceType: $sourceType)
                     CommentsView(comments: $comments)

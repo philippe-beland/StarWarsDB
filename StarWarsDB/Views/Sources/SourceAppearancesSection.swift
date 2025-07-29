@@ -37,7 +37,7 @@ struct SourceAppearancesSection: View {
                     sourceEntities: getBinding(for: \.characters),
                     activeSheet: $activeSheet
                 )
-                .padding()
+                .padding(Constants.Spacing.md)
                 .tabItem {
                     Label(Character.displayName, systemImage: Character.exampleImageName)
                 }
@@ -47,7 +47,7 @@ struct SourceAppearancesSection: View {
                     sourceEntities: getBinding(for: \.species),
                     activeSheet: $activeSheet
                 )
-                .padding()
+                .padding(Constants.Spacing.md)
                 .tabItem {
                     Label(Species.displayName, systemImage: Species.exampleImageName)
                 }
@@ -57,7 +57,7 @@ struct SourceAppearancesSection: View {
                     sourceEntities: getBinding(for: \.planets),
                     activeSheet: $activeSheet
                 )
-                .padding()
+                .padding(Constants.Spacing.md)
                 .tabItem {
                     Label(Planet.displayName, systemImage: Planet.exampleImageName)
                 }
@@ -67,7 +67,7 @@ struct SourceAppearancesSection: View {
                     sourceEntities: getBinding(for: \.organizations),
                     activeSheet: $activeSheet
                 )
-                .padding()
+                .padding(Constants.Spacing.md)
                 .tabItem {
                     Label(Organization.displayName, systemImage: Organization.exampleImageName)
                 }
@@ -77,7 +77,7 @@ struct SourceAppearancesSection: View {
                     sourceEntities: getBinding(for: \.starships),
                     activeSheet: $activeSheet
                 )
-                .padding()
+                .padding(Constants.Spacing.md)
                 .tabItem {
                     Label(Starship.displayName, systemImage: Starship.exampleImageName)
                 }
@@ -87,7 +87,7 @@ struct SourceAppearancesSection: View {
                     sourceEntities: getBinding(for: \.starshipModels),
                     activeSheet: $activeSheet
                 )
-                .padding()
+                .padding(Constants.Spacing.md)
                 .tabItem {
                     Label(StarshipModel.displayName, systemImage: StarshipModel.exampleImageName)
                 }
@@ -97,7 +97,7 @@ struct SourceAppearancesSection: View {
                     sourceEntities: getBinding(for: \.creatures),
                     activeSheet: $activeSheet
                 )
-                .padding()
+                .padding(Constants.Spacing.md)
                 .tabItem {
                     Label(Creature.displayName, systemImage: Creature.exampleImageName)
                 }
@@ -107,7 +107,7 @@ struct SourceAppearancesSection: View {
                     sourceEntities: getBinding(for: \.droids),
                     activeSheet: $activeSheet
                 )
-                .padding()
+                .padding(Constants.Spacing.md)
                 .tabItem {
                     Label(Droid.displayName, systemImage: Droid.exampleImageName)
                 }
@@ -117,7 +117,7 @@ struct SourceAppearancesSection: View {
                     sourceEntities: getBinding(for: \.varias),
                     activeSheet: $activeSheet
                 )
-                .padding()
+                .padding(Constants.Spacing.md)
                 .tabItem {
                     Label(Varia.displayName, systemImage: Varia.exampleImageName)
                 }

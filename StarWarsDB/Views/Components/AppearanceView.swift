@@ -22,7 +22,7 @@ struct AppearanceView: View {
         var body: some View {
             Text(text)
                 .font(.caption)
-                .padding(5)
+                .padding(Constants.Spacing.sm)
                 .background(color)
         }
     }

@@ -1,5 +1,20 @@
 import Foundation
 
+// MARK: - Data Structures
+struct SourceEntityCollection {
+    var characters: [SourceEntity<Character>] = []
+    var creatures: [SourceEntity<Creature>] = []
+    var droids: [SourceEntity<Droid>] = []
+    var organizations: [SourceEntity<Organization>] = []
+    var planets: [SourceEntity<Planet>] = []
+    var species: [SourceEntity<Species>] = []
+    var starships: [SourceEntity<Starship>] = []
+    var starshipModels: [SourceEntity<StarshipModel>] = []
+    var varias: [SourceEntity<Varia>] = []
+    var artists: [SourceEntity<Artist>] = []
+    var authors: [SourceEntity<Author>] = []
+}
+
 @MainActor
 class EditSourceViewModel: ObservableObject {
     @Published var sourceEntities = SourceEntityCollection()
