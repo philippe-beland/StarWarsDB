@@ -26,20 +26,20 @@ struct AddCharacterView: View, AddEntityView {
                     Section("Character Infos") {
                         //MultiFieldView(fieldName: "Aliases", infos: aliases)
                         GenderPicker(gender: $gender)
-                        EntityInfoEditView(
+                        EditableLinkedEntityField(
                             fieldName: "Species",
                             entity: Binding(
                                 get: {species ?? Species.empty },
                                 set: {species = ($0 ) })
                             )
-                        EntityInfoEditView(
+                        EditableLinkedEntityField(
                             fieldName: "Homeworld",
                             entity: Binding(
                                 get: {homeworld ?? Planet.empty },
                                 set: {homeworld = ($0 ) }),
                             )
                         //MultiFieldView(fieldName: "Affiliation", entities: affiliations)
-                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     

@@ -20,13 +20,13 @@ struct AddStarshipView: View, AddEntityView {
                     .padding(Constants.Spacing.md)
                 Form {
                     Section("Starship Infos") {
-                        EntityInfoEditView(
+                        EditableLinkedEntityField(
                             fieldName: "Model",
                             entity: Binding(
                                 get: {model ?? StarshipModel.empty },
                                 set: {model = ($0 ) }),
                             )
-                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     

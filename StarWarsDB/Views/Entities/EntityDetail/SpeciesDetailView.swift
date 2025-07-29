@@ -5,13 +5,13 @@ struct SpeciesInfoSection: View {
     
     var body: some View {
         Section("Species Infos") {
-            EntityInfoEditView(
+            EditableLinkedEntityField(
                 fieldName: "Homeworld",
                 entity: Binding(
                     get: {species.homeworld ?? Planet.empty },
                     set: {species.homeworld = ($0 ) }),
                 )
-            FieldView(fieldName: "First Appearance", info: $species.firstAppearance)
+            EditableTextField(fieldName: "First Appearance", info: $species.firstAppearance)
         }
     }
 }

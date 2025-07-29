@@ -54,7 +54,7 @@ struct SourceDetailView: View {
                     HStack(spacing: Constants.Spacing.md) {
                         // Serie
                         InfoBlock(title: "Serie") {
-                            VEntityInfoEditView(
+                            EditableLinkedEntity(
                                 fieldName: "Serie",
                                 entity: Binding(
                                     get: { viewModel.source.serie ?? Serie.empty },
@@ -65,7 +65,7 @@ struct SourceDetailView: View {
                         
                         //Arc
                         InfoBlock(title: "Arc") {
-                            VEntityInfoEditView(
+                            EditableLinkedEntity(
                                 fieldName: "Arc",
                                 entity: Binding(
                                     get: { viewModel.source.arc ?? Arc.empty },

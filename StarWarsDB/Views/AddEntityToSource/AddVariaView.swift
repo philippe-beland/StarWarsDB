@@ -17,7 +17,7 @@ struct AddVariaView: View, AddEntityView {
                     .padding(Constants.Spacing.md)
                 Form {
                     Section("Varia Infos") {
-                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     

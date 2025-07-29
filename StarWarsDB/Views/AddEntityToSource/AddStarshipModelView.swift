@@ -21,9 +21,9 @@ struct AddStarshipModelView: View, AddEntityView {
                     .padding(Constants.Spacing.md)
                 Form {
                     Section("Starship Model Infos") {
-                        FieldView(fieldName: "Class Type", info: $classType)
-                        FieldView(fieldName: "Line", info: $line)
-                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                        EditableTextField(fieldName: "Class Type", info: $classType)
+                        EditableTextField(fieldName: "Line", info: $line)
+                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     

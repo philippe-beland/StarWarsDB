@@ -25,11 +25,11 @@ struct AddPlanetView: View, AddEntityView {
                 Form {
                     Section("Planet Infos") {
                         RegionPicker(region: $region)
-                        FieldView(fieldName: "Sector", info: $sector)
-                        FieldView(fieldName: "System", info: $system)
-                        FieldView(fieldName: "Capital", info: $capitalCity)
+                        EditableTextField(fieldName: "Sector", info: $sector)
+                        EditableTextField(fieldName: "System", info: $system)
+                        EditableTextField(fieldName: "Capital", info: $capitalCity)
             //            MultiFieldView(fieldName: "Destinations", infos: $planet.destinations)
-                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     

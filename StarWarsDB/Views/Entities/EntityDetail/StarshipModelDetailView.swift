@@ -5,9 +5,9 @@ struct StarshipModelInfoSection: View {
     
     var body: some View {
         Section("Starship Model Infos") {
-            FieldView(fieldName: "Class Type", info: $starshipModel.classType)
-            FieldView(fieldName: "Line", info: $starshipModel.line)
-            FieldView(fieldName: "First Appearance", info: $starshipModel.firstAppearance)
+            EditableTextField(fieldName: "Class Type", info: $starshipModel.classType)
+            EditableTextField(fieldName: "Line", info: $starshipModel.line)
+            EditableTextField(fieldName: "First Appearance", info: $starshipModel.firstAppearance)
         }
     }
 }

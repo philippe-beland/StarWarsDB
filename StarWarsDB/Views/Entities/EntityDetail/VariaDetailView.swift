@@ -5,7 +5,7 @@ struct VariaInfoSection: View {
     
     var body: some View {
         Section("Varia Infos") {
-            FieldView(fieldName: "First Appearance", info: $varia.firstAppearance)
+            EditableTextField(fieldName: "First Appearance", info: $varia.firstAppearance)
         }
     }
 }

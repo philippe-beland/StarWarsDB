@@ -6,11 +6,11 @@ struct PlanetInfoSection: View {
     var body: some View {
         Section("Planet Infos") {
             RegionPicker(region: $planet.region)
-            FieldView(fieldName: "Sector", info: $planet.sector)
-            FieldView(fieldName: "System", info: $planet.system)
-            FieldView(fieldName: "Capital", info: $planet.capitalCity)
+            EditableTextField(fieldName: "Sector", info: $planet.sector)
+            EditableTextField(fieldName: "System", info: $planet.system)
+            EditableTextField(fieldName: "Capital", info: $planet.capitalCity)
 //            MultiFieldView(fieldName: "Destinations", infos: $planet.destinations)
-            FieldView(fieldName: "First Appearance", info: $planet.firstAppearance)
+            EditableTextField(fieldName: "First Appearance", info: $planet.firstAppearance)
 
         }
     }

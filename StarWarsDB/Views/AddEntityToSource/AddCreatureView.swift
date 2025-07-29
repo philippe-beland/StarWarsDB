@@ -21,13 +21,13 @@ struct AddCreatureView: View, AddEntityView {
                     .padding(Constants.Spacing.md)
                 Form {
                     Section("Creature Infos") {
-                        EntityInfoEditView(
+                        EditableLinkedEntityField(
                             fieldName: "Homeworld",
                             entity: Binding(
                                 get: {homeworld ?? Planet.empty },
                                 set: {homeworld = ($0 ) }),
                             )
-                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     

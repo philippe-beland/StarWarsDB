@@ -5,7 +5,7 @@ struct DroidInfoSection: View {
     
     var body: some View {
         Section("Droid Infos") {
-            FieldView(fieldName: "First Appearance", info: $droid.firstAppearance)
+            EditableTextField(fieldName: "First Appearance", info: $droid.firstAppearance)
         }
     }
 }

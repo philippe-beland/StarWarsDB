@@ -21,8 +21,8 @@ struct AddDroidView: View, AddEntityView {
                 
                 Form {
                     Section("Droid Infos") {
-                        FieldView(fieldName: "Class Type", info: $classType)
-                        FieldView(fieldName: "First Appearance", info: $firstAppearance)
+                        EditableTextField(fieldName: "Class Type", info: $classType)
+                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
                     }
                     CommentsView(comments: $comments)
                     

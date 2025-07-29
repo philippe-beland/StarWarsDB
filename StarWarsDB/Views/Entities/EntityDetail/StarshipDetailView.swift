@@ -5,13 +5,13 @@ struct StarshipInfoSection: View {
     
     var body: some View {
         Section("Starship Infos") {
-            EntityInfoEditView(
+            EditableLinkedEntityField(
                 fieldName: "Model",
                 entity: Binding(
                     get: {starship.model ?? StarshipModel.empty },
                     set: {starship.model = ($0 ) }),
                 )
-            FieldView(fieldName: "First Appearance", info: $starship.firstAppearance)
+            EditableTextField(fieldName: "First Appearance", info: $starship.firstAppearance)
         }
     }
 }
