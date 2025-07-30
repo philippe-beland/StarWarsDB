@@ -225,7 +225,7 @@ final class Source: BaseEntity {
         hasher.combine(id)
     }
     
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Source] {
+    static func loadAll(serie: Serie?, filter: String) async -> [Source] {
         return []
     }
 }

@@ -79,8 +79,7 @@ final class Varia: TrackableEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Varia] {
-        // Varia-specific loading logic
-        return await loadVarias(serie: serie, sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Varia] {
+        await loadVarias(serie: serie, filter: filter)
     }
 }

@@ -1,15 +1,9 @@
 import SwiftUI
 
-enum SortingItemOrder: String {
-    case name = "name"
-    case frequency = "number"
-}
-
 /// View that shows a list of entities of a specific type.
-/// Users can search, sort, and delete entities.
+/// Users can search and delete entities.
 /// The list updates automatically when searching or changing sort order.
 struct EntityListBrowserView<T:Entity>: View {
-    @State private var sortOrder: SortingItemOrder = .name
     @StateObject var searchContext = SearchContext()
     @State private var showNewEntitySheet: Bool = false
     @State private var entities = [T]()
@@ -36,13 +30,13 @@ struct EntityListBrowserView<T:Entity>: View {
     private func handleSearchTextChange() {
         Task {
             if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count >= Constants.Search.minSearchLength {
-                entities = await loadEntities(serie: nil, sort: sortOrder, filter: searchContext.debouncedQuery)
+                entities = await loadEntities(filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialEntities() async {
-        entities = await loadEntities(serie: nil, sort: sortOrder, filter: searchContext.debouncedQuery)
+        entities = await loadEntities(filter: searchContext.debouncedQuery)
     }
     
     private func deleteEntity(_ indexSet: IndexSet) {
@@ -61,15 +55,6 @@ struct EntityListBrowserView<T:Entity>: View {
             }
             .sheet(isPresented: $showNewEntitySheet) {
                 AddSourceEntitySheet<T>(onAdd: {entities.append($0) })
-            }
-        }
-        
-        ToolbarItem(placement: .navigationBarTrailing) {
-            Menu("Sort", systemImage: "arrow.up.arrow.down") {
-                Picker("Sort", selection: $sortOrder) {
-                    Text("Name").tag(SortingItemOrder.name)
-                    Text("Frequency").tag(SortingItemOrder.frequency)
-                }
             }
         }
     }

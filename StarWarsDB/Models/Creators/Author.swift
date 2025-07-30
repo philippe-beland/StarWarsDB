@@ -59,8 +59,7 @@ final class Author: CreatorEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Author] {
-        // Author-specific loading logic
-        return await loadAuthors(sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Author] {
+        await loadAuthors(serie: serie, filter: filter)
     }
 }

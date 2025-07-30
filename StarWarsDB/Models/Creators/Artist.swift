@@ -59,8 +59,7 @@ final class Artist: CreatorEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Artist] {
-        // Artist-specific loading logic
-        return await loadArtists(sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Artist] {
+        await loadArtists(serie: serie, filter: filter)
     }
 }

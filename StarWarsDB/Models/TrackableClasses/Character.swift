@@ -124,8 +124,7 @@ final class Character: TrackableEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Character] {
-        // Character-specific loading logic
-        return await loadCharacters(serie: serie, sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Character] {
+        await loadCharacters(serie: serie, filter: filter)
     }
 }

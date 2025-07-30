@@ -81,8 +81,7 @@ final class Organization: TrackableEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Organization] {
-        // Organization-specific loading logic
-        return await loadOrganizations(serie: serie, sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Organization] {
+        await loadOrganizations(serie: serie, filter: filter)
     }
 }

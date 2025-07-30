@@ -5,8 +5,8 @@ let supabase = SupabaseClient(
     supabaseURL: URL(string: Secrets.supabaseURL.rawValue)!,
     supabaseKey: Secrets.apiKey.rawValue)
 
-func loadEntities<T: BaseEntity>(serie: Serie? = nil, sort: SortingItemOrder, filter: String = "") async -> [T] {
-    await T.loadAll(serie: serie, sort: sort.rawValue, filter: filter)
+func loadEntities<T: BaseEntity>(serie: Serie? = nil, filter: String = "") async -> [T] {
+    await T.loadAll(serie: serie, filter: filter)
 }
 
 func loadSources(sort: String, sourceType: SourceType?, serie: Serie?, isDone: Bool, filter: String = "") async -> [Source] {

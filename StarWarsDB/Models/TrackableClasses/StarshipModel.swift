@@ -98,8 +98,7 @@ final class StarshipModel: TrackableEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [StarshipModel] {
-        // StarshipModel-specific loading logic
-        return await loadStarshipModels(serie: serie, sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [StarshipModel] {
+        await loadStarshipModels(serie: serie, filter: filter)
     }
 }

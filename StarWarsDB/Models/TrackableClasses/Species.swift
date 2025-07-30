@@ -80,8 +80,7 @@ final class Species: TrackableEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Species] {
-        // Species-specific loading logic
-        return await loadSpecies(serie: serie, sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Species] {
+        await loadSpecies(serie: serie, filter: filter)
     }
 }

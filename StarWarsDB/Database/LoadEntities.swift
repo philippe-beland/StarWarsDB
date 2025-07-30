@@ -5,7 +5,7 @@ struct LoadCharactersParams: Encodable {
     let filter: String
 }
 
-func loadCharacters(serie: Serie? = nil, sort: String, filter: String = "")
+func loadCharacters(serie: Serie? = nil, filter: String = "")
     async -> [Character]
 {
     var characters: [Character] = []
@@ -27,7 +27,7 @@ func loadCharacters(serie: Serie? = nil, sort: String, filter: String = "")
     return characters
 }
 
-func loadCreatures(serie: Serie? = nil, sort: String, filter: String = "") async
+func loadCreatures(serie: Serie? = nil, filter: String = "") async
     -> [Creature]
 {
     var creatures: [Creature] = []
@@ -48,7 +48,7 @@ func loadCreatures(serie: Serie? = nil, sort: String, filter: String = "") async
     return creatures
 }
 
-func loadDroids(serie: Serie? = nil, sort: String, filter: String = "") async
+func loadDroids(serie: Serie? = nil, filter: String = "") async
     -> [Droid]
 {
     var droids: [Droid] = []
@@ -69,7 +69,7 @@ func loadDroids(serie: Serie? = nil, sort: String, filter: String = "") async
     return droids
 }
 
-func loadOrganizations(serie: Serie? = nil, sort: String, filter: String = "")
+func loadOrganizations(serie: Serie? = nil, filter: String = "")
     async -> [Organization]
 {
     var organizations: [Organization] = []
@@ -90,7 +90,7 @@ func loadOrganizations(serie: Serie? = nil, sort: String, filter: String = "")
     return organizations
 }
 
-func loadPlanets(serie: Serie? = nil, sort: String, filter: String = "") async
+func loadPlanets(serie: Serie? = nil, filter: String = "") async
     -> [Planet]
 {
     var planets: [Planet] = []
@@ -111,7 +111,7 @@ func loadPlanets(serie: Serie? = nil, sort: String, filter: String = "") async
     return planets
 }
 
-func loadSpecies(serie: Serie? = nil, sort: String, filter: String = "") async
+func loadSpecies(serie: Serie? = nil, filter: String = "") async
     -> [Species]
 {
     var species: [Species] = []
@@ -132,7 +132,7 @@ func loadSpecies(serie: Serie? = nil, sort: String, filter: String = "") async
     return species
 }
 
-func loadStarships(serie: Serie? = nil, sort: String, filter: String = "") async
+func loadStarships(serie: Serie? = nil, filter: String = "") async
     -> [Starship]
 {
     var starships: [Starship] = []
@@ -153,7 +153,7 @@ func loadStarships(serie: Serie? = nil, sort: String, filter: String = "") async
     return starships
 }
 
-func loadStarshipModels(serie: Serie? = nil, sort: String, filter: String = "")
+func loadStarshipModels(serie: Serie? = nil, filter: String = "")
     async -> [StarshipModel]
 {
     var starshipModels: [StarshipModel] = []
@@ -174,7 +174,7 @@ func loadStarshipModels(serie: Serie? = nil, sort: String, filter: String = "")
     return starshipModels
 }
 
-func loadVarias(serie: Serie? = nil, sort: String, filter: String = "") async
+func loadVarias(serie: Serie? = nil, filter: String = "") async
     -> [Varia]
 {
     var varias: [Varia] = []
@@ -195,7 +195,7 @@ func loadVarias(serie: Serie? = nil, sort: String, filter: String = "") async
     return varias
 }
 
-func loadArcs(sort: String, filter: String = "") async -> [Arc] {
+func loadArcs(filter: String = "") async -> [Arc] {
     var arcs: [Arc] = []
 
     do {
@@ -204,7 +204,7 @@ func loadArcs(sort: String, filter: String = "") async -> [Arc] {
                 .from("arcs")
                 .select("id, name, serie(*), comments")
                 .ilike("name", pattern: "%\(filter)%")
-                .order(sort)
+                .order("name")
                 .limit(40)
                 .execute()
                 .value
@@ -236,7 +236,7 @@ func loadSeries(filter: String = "") async -> [Serie] {
     return series
 }
 
-func loadArtists(sort: String, filter: String = "") async -> [Artist] {
+func loadArtists(serie: Serie? = nil, filter: String = "") async -> [Artist] {
     var artists: [Artist] = []
 
     do {
@@ -245,7 +245,6 @@ func loadArtists(sort: String, filter: String = "") async -> [Artist] {
                 .from("artists")
                 .select("*")
                 .ilike("name", pattern: "%\(filter)%")
-                .order(sort)
                 .limit(40)
                 .execute()
                 .value
@@ -257,7 +256,7 @@ func loadArtists(sort: String, filter: String = "") async -> [Artist] {
     return artists
 }
 
-func loadAuthors(sort: String, filter: String = "") async -> [Author] {
+func loadAuthors(serie: Serie? = nil, filter: String = "") async -> [Author] {
     var authors: [Author] = []
 
     do {
@@ -266,7 +265,6 @@ func loadAuthors(sort: String, filter: String = "") async -> [Author] {
                 .from("artists")
                 .select("*")
                 .ilike("name", pattern: "%\(filter)%")
-                .order(sort)
                 .limit(40)
                 .execute()
                 .value

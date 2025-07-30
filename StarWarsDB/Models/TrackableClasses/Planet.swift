@@ -144,8 +144,7 @@ final class Planet: TrackableEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Planet] {
-        // Planet-specific loading logic
-        return await loadPlanets(serie: serie, sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Planet] {
+        await loadPlanets(serie: serie, filter: filter)
     }
 }

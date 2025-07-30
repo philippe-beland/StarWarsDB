@@ -12,7 +12,7 @@ protocol BaseEntity: DatabaseRecord {
     var alreadyInSource: Bool { get set }
     
     static var displayName: String { get }
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Self]
+    static func loadAll(serie: Serie?, filter: String) async -> [Self]
 }
 
 extension BaseEntity {

@@ -68,8 +68,7 @@ final class Serie: BaseEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Serie] {
-        // Serie-specific loading logic
-        return await loadSeries(filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Serie] {
+        await loadSeries(filter: filter)
     }
 }

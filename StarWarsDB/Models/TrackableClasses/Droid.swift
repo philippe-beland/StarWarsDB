@@ -82,8 +82,7 @@ final class Droid: TrackableEntity {
         hasher.combine(id)
     }
 
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Droid] {
-        // Droid-specific loading logic
-        return await loadDroids(serie: serie, sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Droid] {
+        await loadDroids(serie: serie, filter: filter)
     }
 }

@@ -63,13 +63,13 @@ struct EntityPickerList<T: BaseEntity>: View {
     private func handleSearchTextChange() {
         Task {
             if searchContext.debouncedQuery.isEmpty || searchContext.debouncedQuery.count >= Constants.Search.minSearchLength {
-                availableEntities = await loadEntities(serie: serie, sort: .name, filter: searchContext.debouncedQuery)
+                availableEntities = await loadEntities(serie: serie, filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialEntities() async {
-        availableEntities = await loadEntities(serie: serie, sort: .name, filter: searchContext.debouncedQuery)
+        availableEntities = await loadEntities(serie: serie, filter: searchContext.debouncedQuery)
     }
 
     // MARK: - Toolbar

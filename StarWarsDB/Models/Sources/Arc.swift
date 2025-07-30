@@ -60,8 +60,7 @@ final class Arc: BaseEntity {
         hasher.combine(id)
     }
     
-    static func loadAll(serie: Serie?, sort: String, filter: String) async -> [Arc] {
-        // Droid-specific loading logic
-        return await loadArcs(sort: sort, filter: filter)
+    static func loadAll(serie: Serie?, filter: String) async -> [Arc] {
+        await loadArcs(filter: filter)
     }
 }
