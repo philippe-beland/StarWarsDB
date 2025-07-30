@@ -43,10 +43,27 @@ struct SourcesByEraView<T: TrackableEntity>: View {
     var body: some View {
         Section(header: Text(era.rawValue)) {
             ForEach(sortedEntities, id: \ .id) { sourceEntity in
-                NavigationLink(destination: SourceDetailView(source: sourceEntity.source)) {
-                    SourceRow<T>(sourceEntity: sourceEntity, oldest: sourceEntity.id == firstCanon?.id)
-                }
+                SourceRowNavigation(sourceEntity: sourceEntity, isOldest: sourceEntity.id == firstCanon?.id)
             }
+        }
+    }
+}
+
+struct SourceRowNavigation<T: TrackableEntity>: View {
+    let sourceEntity: SourceEntity<T>
+    let isOldest: Bool
+
+    @State private var viewModel: EditSourceViewModel
+
+    init(sourceEntity: SourceEntity<T>, isOldest: Bool) {
+        self.sourceEntity = sourceEntity
+        self.isOldest = isOldest
+        _viewModel = State(initialValue: EditSourceViewModel(source: sourceEntity.source))
+    }
+
+    var body: some View {
+        NavigationLink(destination: SourceDetailView(viewModel: viewModel)) {
+            SourceRow(sourceEntity: sourceEntity, oldest: isOldest)
         }
     }
 }
@@ -112,7 +129,7 @@ struct SourceRow<T: TrackableEntity>: View {
                 .multilineTextAlignment(.center)
                 .frame(width: Constants.Layout.dateViewWidth, alignment: .center)
             
-            AppearanceView(appearance: sourceEntity.appearance.rawValue)
+            AppearanceView(appearance: sourceEntity.appearance)
                 .frame(width: Constants.Layout.appearanceViewWidth, alignment: .center)
         }
     }

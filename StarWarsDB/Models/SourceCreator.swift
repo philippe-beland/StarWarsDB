@@ -1,6 +1,7 @@
 import Foundation
 
 /// Base class for tracking creator appearances in Star Wars media sources
+@Observable
 class SourceCreator<T: CreatorEntity>: SourceEntityProtocol {
     var id: UUID
     var source: Source

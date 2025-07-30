@@ -35,7 +35,11 @@ struct OrganizationDetailView: View {
         }
         .task { await loadInitialSources() }
         .toolbar {
-            Button ("Update", action: organization.update)
+            Button ("Update") {
+                Task {
+                    await organization.update()
+                }
+            }
         }
         }
     

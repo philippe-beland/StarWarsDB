@@ -43,7 +43,7 @@ class SourceFactsViewModel: ObservableObject {
         saveTask = Task {
             try? await Task.sleep(nanoseconds: 500_000_000) // 0.5 seconds
             if !Task.isCancelled {
-                fact.update()
+                await fact.update()
             }
         }
     }

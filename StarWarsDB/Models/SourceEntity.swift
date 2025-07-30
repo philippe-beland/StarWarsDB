@@ -6,6 +6,7 @@ import Foundation
 /// and the sources they appear in, along with the type of appearance (present,
 /// mentioned, flashback, etc.). This enables tracking how and where different
 /// elements of the Star Wars universe are referenced.
+@Observable
 class SourceEntity<T: TrackableEntity>: SourceEntityProtocol {
     var id: UUID
     

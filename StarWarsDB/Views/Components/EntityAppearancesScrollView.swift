@@ -1,26 +1,26 @@
 import SwiftUI
 
 struct EntityAppearancesScrollView<T: TrackableEntity>: View {
-    @Binding var sourceEntities: [SourceEntity<T>]
+    var sourceEntities: [SourceEntity<T>]
     let layout = [GridItem(.adaptive(minimum: 225), spacing: 24)]
     
     private var sortedEntities: [SourceEntity<T>] {
-        sourceEntities.sorted(by: { $0.entity.name < $1.entity.name })
+        sourceEntities.sorted { $0.entity.name < $1.entity.name }
     }
 
     var body: some View {
-            ScrollView(.vertical) {
-                LazyVGrid (columns: layout, spacing: 40) {
-                    ForEach(sortedEntities) { sourceEntity in
-                        NavigationLink(destination: EntityDetailRouter<T>(entity: sourceEntity.entity)) {
-                            EntityEntryView(sourceEntity: sourceEntity)
-                        }
-                        .buttonStyle(PlainButtonStyle())
+        ScrollView(.vertical) {
+            LazyVGrid (columns: layout, spacing: 40) {
+                ForEach(sortedEntities) { sourceEntity in
+                    NavigationLink(destination: EntityDetailRouter<T>(entity: sourceEntity.entity)) {
+                        EntityEntryView(sourceEntity: sourceEntity)
                     }
+                    .buttonStyle(PlainButtonStyle())
                 }
             }
-            .padding(.vertical, Constants.Spacing.md)
         }
+        .padding(.vertical, Constants.Spacing.md)
+    }
 }
 
 //#Preview {

@@ -21,14 +21,8 @@ enum ActiveSheet: Identifiable {
 
 // MARK: - Main View
 struct SourceDetailView: View {
-    @StateObject private var viewModel: EditSourceViewModel
+    @Bindable var viewModel: EditSourceViewModel
     @State private var showFactSheet: Bool = false
-    
-    // MARK: - Init
-    
-    init(source: Source) {
-        _viewModel = StateObject(wrappedValue: EditSourceViewModel(source: source))
-    }
     
     // MARK: - View Body
     
@@ -103,12 +97,12 @@ struct SourceDetailView: View {
                         
                         // Authors
                         InfoBlock(title: "Authors") {
-                            AuthorsVStack(source: viewModel.source, sourceAuthors: $viewModel.sourceEntities.authors)
+                            AuthorsVStack(source: viewModel.source, sourceAuthors: $viewModel.authors)
                         }
                         
                         // Authors
                         InfoBlock(title: "Artists") {
-                            ArtistsVStack(source: viewModel.source, sourceArtists: $viewModel.sourceEntities.artists)
+                            ArtistsVStack(source: viewModel.source, sourceArtists: $viewModel.artists)
                         }
                         
                         // Number of Pages
@@ -119,8 +113,7 @@ struct SourceDetailView: View {
                 }
                 
                 SourceAppearancesSection(
-                    sourceEntities: $viewModel.sourceEntities,
-                    activeSheet: $viewModel.activeSheet,
+                    viewModel: viewModel,
                     serie: viewModel.source.serie,
                     url: viewModel.source.url,
                     onAddEntity: viewModel.addAnyEntity
@@ -131,7 +124,11 @@ struct SourceDetailView: View {
         }
         .task { await viewModel.loadInitialSources() }
         .toolbar {
-            Button("Update", action: viewModel.source.update)
+            Button("Update") {
+                Task {
+                    await viewModel.source.update()
+                }
+            }
         }
     }
 }
@@ -154,7 +151,7 @@ private struct InfoBlock<Content: View>: View {
     }
 }
 
-// MARK: - Preview
-#Preview {
-    SourceDetailView(source: .example)
-}
+//// MARK: - Preview
+//#Preview {
+//    SourceDetailView(source: .example)
+//}

@@ -1,17 +1,16 @@
 import SwiftUI
 
 struct AppearanceView: View {
-    @State var appearance: String
+    let appearance: AppearanceType
     
     var body: some View {
         switch appearance {
-        case "1": Button(text: "Present", color: .green.opacity(0.5))
-            case "2": Button(text: "Mentionned", color: .blue.opacity(0.5))
-            case "3": Button(text: "Flashback", color: .purple.opacity(0.5))
-            case "4": Button(text: "Image", color: .pink.opacity(0.5))
-            case "5": Button(text: "Indirect Mention", color: .yellow.opacity(0.5))
-            case "6": Button(text: "Vision", color: .cyan.opacity(0.5))
-            default: Text("Absent")
+        case .present: Button(text: "Present", color: .green.opacity(0.5))
+        case .mentioned: Button(text: "Mentionned", color: .blue.opacity(0.5))
+        case .flashback: Button(text: "Flashback", color: .purple.opacity(0.5))
+        case .image: Button(text: "Image", color: .pink.opacity(0.5))
+        case .indirectMentioned: Button(text: "Indirect Mention", color: .yellow.opacity(0.5))
+        case .vision: Button(text: "Vision", color: .cyan.opacity(0.5))
         }
     }
     
@@ -29,5 +28,5 @@ struct AppearanceView: View {
 }
 
 #Preview {
-    AppearanceView(appearance: "Present")
+    AppearanceView(appearance: .present)
 }

@@ -40,7 +40,11 @@ struct CreatureDetailView: View {
         }
         .task { await loadInitialSources() }
         .toolbar {
-            Button ("Update", action: creature.update)
+            Button ("Update") {
+                Task {
+                    await creature.update()
+                }
+            }
         }
     }
 

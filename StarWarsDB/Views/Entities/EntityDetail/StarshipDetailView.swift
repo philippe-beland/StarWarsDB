@@ -40,7 +40,11 @@ struct StarshipDetailView: View {
         }
         .task { await loadInitialSources() }
         .toolbar {
-            Button ("Update", action: starship.update)
+            Button ("Update") {
+                Task {
+                    await starship.update()
+                }
+            }
         }
         }
     

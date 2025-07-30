@@ -49,7 +49,11 @@ struct CharacterDetailView: View {
         }
         .task { await loadInitialSources() }
         .toolbar {
-            Button ("Update", action: character.update)
+            Button ("Update") {
+                Task {
+                    await character.update()
+                }
+            }
         }
     }
     

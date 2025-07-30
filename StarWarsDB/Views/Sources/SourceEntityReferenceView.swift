@@ -2,13 +2,13 @@ import SwiftUI
 
 struct SourceEntityReferenceView<T: TrackableEntity>: View {
     var url: URL?
-    var sourceEntities: Binding<[SourceEntity<T>]>
-    
+    var sourceEntities: [SourceEntity<T>]
+        
     @State var listEntities: [String] = []
     @State var processedEntities: [WikiEntity] = []
     
     private var filteredEntities: [WikiEntity] {
-        let excludedNames = Set(sourceEntities.wrappedValue.map { $0.entity.name.lowercased() })
+        let excludedNames = Set(sourceEntities.map { $0.entity.name.lowercased() })
         let x = processedEntities.filter {
             !excludedNames.contains($0.name.lowercased())
         }
@@ -26,7 +26,7 @@ struct SourceEntityReferenceView<T: TrackableEntity>: View {
                             Spacer()
                             Text(entity.modifiers.joined(separator: ", "))
                             Spacer()
-                            AppearanceView(appearance: entity.appearance.rawValue)
+                            AppearanceView(appearance: entity.appearance)
                                 .frame(width: Constants.Layout.appearanceViewWidth, alignment: .center)
                         }
                         .textSelection(.enabled)

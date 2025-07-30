@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct EntityAppearanceSection<T: TrackableEntity>: View {
-    var sourceEntities: Binding<[SourceEntity<T>]>
+    var sourceEntities: [SourceEntity<T>]
     @Binding var activeSheet: ActiveSheet?
 
     var body: some View {
@@ -19,13 +19,10 @@ struct EntityAppearanceSection<T: TrackableEntity>: View {
 }
 
 struct SourceAppearancesSection: View {
-    @Binding var sourceEntities: SourceEntityCollection
-    @Binding var activeSheet: ActiveSheet?
+    @Bindable var viewModel: EditSourceViewModel
     var serie: Serie?
     var url: URL?
     let onAddEntity: (any Entity, AppearanceType) -> Void
-
-    @State private var refreshID = UUID()
     
     var body: some View {
         VStack {
@@ -34,83 +31,83 @@ struct SourceAppearancesSection: View {
             TabView {
                 // Characters
                 EntityAppearanceSection<Character>(
-                    sourceEntities: getBinding(for: \.characters),
-                    activeSheet: $activeSheet
+                    sourceEntities: viewModel.characters,
+                    activeSheet: $viewModel.activeSheet
                 )
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Character.displayName) }
 
                 // Species
                 EntityAppearanceSection<Species>(
-                    sourceEntities: getBinding(for: \.species),
-                    activeSheet: $activeSheet
+                    sourceEntities: viewModel.species,
+                    activeSheet: $viewModel.activeSheet,
                 )
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Species.displayName) }
 
                 // Planets
                 EntityAppearanceSection<Planet>(
-                    sourceEntities: getBinding(for: \.planets),
-                    activeSheet: $activeSheet
+                    sourceEntities: viewModel.planets,
+                    activeSheet: $viewModel.activeSheet,
                 )
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Planet.displayName) }
 
                 // Organizations
                 EntityAppearanceSection<Organization>(
-                    sourceEntities: getBinding(for: \.organizations),
-                    activeSheet: $activeSheet
+                    sourceEntities: viewModel.organizations,
+                    activeSheet: $viewModel.activeSheet,
                 )
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Organization.displayName) }
 
                 // Starships
                 EntityAppearanceSection<Starship>(
-                    sourceEntities: getBinding(for: \.starships),
-                    activeSheet: $activeSheet
+                    sourceEntities: viewModel.starships,
+                    activeSheet: $viewModel.activeSheet,
                 )
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Starship.displayName) }
 
                 // Starship Models
                 EntityAppearanceSection<StarshipModel>(
-                    sourceEntities: getBinding(for: \.starshipModels),
-                    activeSheet: $activeSheet
+                    sourceEntities: viewModel.starshipModels,
+                    activeSheet: $viewModel.activeSheet,
                 )
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(StarshipModel.displayName) }
 
                 // Creatures
                 EntityAppearanceSection<Creature>(
-                    sourceEntities: getBinding(for: \.creatures),
-                    activeSheet: $activeSheet
+                    sourceEntities: viewModel.creatures,
+                    activeSheet: $viewModel.activeSheet,
                 )
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Creature.displayName) }
                 
                 // Droids
                 EntityAppearanceSection<Droid>(
-                    sourceEntities: getBinding(for: \.droids),
-                    activeSheet: $activeSheet
+                    sourceEntities: viewModel.droids,
+                    activeSheet: $viewModel.activeSheet,
                 )
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Droid.displayName) }
                 
                 // Varia
                 EntityAppearanceSection<Varia>(
-                    sourceEntities: getBinding(for: \.varias),
-                    activeSheet: $activeSheet
+                    sourceEntities: viewModel.varias,
+                    activeSheet: $viewModel.activeSheet,
                 )
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Varia.displayName) }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         }
-        .sheet(item: $activeSheet) { sheet in
+        .sheet(item: $viewModel.activeSheet) { sheet in
             switch sheet {
             case .add(let type):
                 if type == Character.self {
-                    EntitySelectorView<Character>(serie: serie, sourceEntities: sourceEntities.characters) { selectedEntities, appearance in
+                    EntitySelectorView<Character>(serie: serie, sourceEntities: viewModel.characters) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -118,7 +115,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Droid.self {
-                    EntitySelectorView<Droid>(serie: serie, sourceEntities: sourceEntities.droids) { selectedEntities, appearance in
+                    EntitySelectorView<Droid>(serie: serie, sourceEntities: viewModel.droids) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -126,7 +123,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Creature.self {
-                    EntitySelectorView<Creature>(serie: serie, sourceEntities: sourceEntities.creatures) { selectedEntities, appearance in
+                    EntitySelectorView<Creature>(serie: serie, sourceEntities: viewModel.creatures) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -134,7 +131,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Organization.self {
-                    EntitySelectorView<Organization>(serie: serie, sourceEntities: sourceEntities.organizations) { selectedEntities, appearance in
+                    EntitySelectorView<Organization>(serie: serie, sourceEntities: viewModel.organizations) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -142,7 +139,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Planet.self {
-                    EntitySelectorView<Planet>(serie: serie, sourceEntities: sourceEntities.planets) { selectedEntities, appearance in
+                    EntitySelectorView<Planet>(serie: serie, sourceEntities: viewModel.planets) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -150,7 +147,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Species.self {
-                    EntitySelectorView<Species>(serie: serie, sourceEntities: sourceEntities.species) { selectedEntities, appearance in
+                    EntitySelectorView<Species>(serie: serie, sourceEntities: viewModel.species) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -158,7 +155,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == StarshipModel.self {
-                    EntitySelectorView<StarshipModel>(serie: serie, sourceEntities: sourceEntities.starshipModels) { selectedEntities, appearance in
+                    EntitySelectorView<StarshipModel>(serie: serie, sourceEntities: viewModel.starshipModels) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -166,7 +163,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Starship.self {
-                    EntitySelectorView<Starship>(serie: serie, sourceEntities: sourceEntities.starships) { selectedEntities, appearance in
+                    EntitySelectorView<Starship>(serie: serie, sourceEntities: viewModel.starships) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -174,7 +171,7 @@ struct SourceAppearancesSection: View {
                         }
                     }
                 } else if type == Varia.self {
-                    EntitySelectorView<Varia>(serie: serie, sourceEntities: sourceEntities.varias) { selectedEntities, appearance in
+                    EntitySelectorView<Varia>(serie: serie, sourceEntities: viewModel.varias) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -185,82 +182,55 @@ struct SourceAppearancesSection: View {
                 
             case .referenceSheet(let type):
                 if type == Character.self {
-                    SourceEntityReferenceView<Character>(url: url, sourceEntities: getBinding(for: \.characters))
+                    SourceEntityReferenceView<Character>(url: url, sourceEntities: viewModel.characters)
                 } else if type == Droid.self {
-                    SourceEntityReferenceView<Droid>(url: url, sourceEntities: getBinding(for: \.droids))
+                    SourceEntityReferenceView<Droid>(url: url, sourceEntities: viewModel.droids)
                 } else if type == Creature.self {
-                    SourceEntityReferenceView<Creature>(url: url, sourceEntities: getBinding(for: \.creatures))
+                    SourceEntityReferenceView<Creature>(url: url, sourceEntities: viewModel.creatures)
                 } else if type == Organization.self {
-                    SourceEntityReferenceView<Organization>(url: url, sourceEntities: getBinding(for: \.organizations))
+                    SourceEntityReferenceView<Organization>(url: url, sourceEntities: viewModel.organizations)
                 } else if type == Planet.self {
-                    SourceEntityReferenceView<Planet>(url: url, sourceEntities: getBinding(for: \.planets))
+                    SourceEntityReferenceView<Planet>(url: url, sourceEntities: viewModel.planets)
                 } else if type == Species.self {
-                    SourceEntityReferenceView<Species>(url: url, sourceEntities: getBinding(for: \.species))
+                    SourceEntityReferenceView<Species>(url: url, sourceEntities: viewModel.species)
                 } else if type == StarshipModel.self {
-                    SourceEntityReferenceView<StarshipModel>(url: url, sourceEntities: getBinding(for: \.starshipModels))
+                    SourceEntityReferenceView<StarshipModel>(url: url, sourceEntities: viewModel.starshipModels)
                 } else if type == Starship.self {
-                    SourceEntityReferenceView<Starship>(url: url, sourceEntities: getBinding(for: \.starships))
+                    SourceEntityReferenceView<Starship>(url: url, sourceEntities: viewModel.starships)
                 } else if type == Varia.self {
-                    SourceEntityReferenceView<Varia>(url: url, sourceEntities: getBinding(for: \.varias))
+                    SourceEntityReferenceView<Varia>(url: url, sourceEntities: viewModel.varias)
                 }
                 
             case .expandedSheet(let type):
                 if type == Character.self {
-                    SourceEntityExpandedView<Character>(sourceEntities: getBinding(for: \.characters))
-                        .onDisappear {
-                            refreshID = UUID()
-                        }
+                    SourceEntityExpandedView(sourceEntities: $viewModel.characters)
+                    
                 } else if type == Droid.self {
-                    SourceEntityExpandedView<Droid>(sourceEntities: getBinding(for: \.droids))
-                        .onDisappear {
-                            refreshID = UUID()
-                        }
+                    SourceEntityExpandedView(sourceEntities: $viewModel.droids)
+
                 } else if type == Creature.self {
-                    SourceEntityExpandedView<Creature>(sourceEntities: getBinding(for: \.creatures))
-                        .onDisappear {
-                            refreshID = UUID()
-                        }
+                    SourceEntityExpandedView(sourceEntities: $viewModel.creatures)
+
                 } else if type == Organization.self {
-                    SourceEntityExpandedView<Organization>(sourceEntities: getBinding(for: \.organizations))
-                        .onDisappear {
-                            refreshID = UUID()
-                        }
+                    SourceEntityExpandedView(sourceEntities: $viewModel.organizations)
+
                 } else if type == Planet.self {
-                    SourceEntityExpandedView<Planet>(sourceEntities: getBinding(for: \.planets))
-                        .onDisappear {
-                            refreshID = UUID()
-                        }
+                    SourceEntityExpandedView(sourceEntities: $viewModel.planets)
+
                 } else if type == Species.self {
-                    SourceEntityExpandedView<Species>(sourceEntities: getBinding(for: \.species))
-                        .onDisappear {
-                            refreshID = UUID()
-                        }
+                    SourceEntityExpandedView(sourceEntities: $viewModel.species)
+
                 } else if type == StarshipModel.self {
-                    SourceEntityExpandedView<StarshipModel>(sourceEntities: getBinding(for: \.starshipModels))
-                        .onDisappear {
-                            refreshID = UUID()
-                        }
+                    SourceEntityExpandedView(sourceEntities: $viewModel.starshipModels)
+
                 } else if type == Starship.self {
-                    SourceEntityExpandedView<Starship>(sourceEntities: getBinding(for: \.starships))
-                        .onDisappear {
-                            refreshID = UUID()
-                        }
+                    SourceEntityExpandedView(sourceEntities: $viewModel.starships)
+
                 } else if type == Varia.self {
-                    SourceEntityExpandedView<Varia>(sourceEntities: getBinding(for: \.varias))
-                        .onDisappear {
-                            refreshID = UUID()
-                        }
+                    SourceEntityExpandedView(sourceEntities: $viewModel.varias)
                 }
             }
         }
-    }
-    
-    // Helper function to create bindings
-    private func getBinding<T: Entity>(for keyPath: WritableKeyPath<SourceEntityCollection, [SourceEntity<T>]>) -> Binding<[SourceEntity<T>]> {
-        Binding(
-            get: { sourceEntities[keyPath: keyPath] },
-            set: { sourceEntities[keyPath: keyPath] = $0 }
-        )
     }
     
     // Helper method to handle related entities
@@ -279,8 +249,8 @@ struct SourceAppearancesSection: View {
     }
 }
 
-#Preview {
-    @Previewable @State var sourceEntities: SourceEntityCollection = .init()
-    @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
-    SourceAppearancesSection(sourceEntities: $sourceEntities, activeSheet: $activeSheet, onAddEntity: { _, _ in })
-}
+//#Preview {
+//    @Previewable @State var sourceEntities: SourceEntityCollection = .init()
+//    @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
+//    SourceAppearancesSection(sourceEntities: $sourceEntities, activeSheet: $activeSheet, onAddEntity: { _, _ in })
+//}

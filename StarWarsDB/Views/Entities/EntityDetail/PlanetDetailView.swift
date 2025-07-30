@@ -41,7 +41,11 @@ struct PlanetDetailView: View {
         }
         .task { await loadInitialSources() }
         .toolbar {
-            Button ("Update", action: planet.update)
+            Button ("Update") {
+                Task {
+                    await planet.update()
+                }
+            }
         }
         }
 

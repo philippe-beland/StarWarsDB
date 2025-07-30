@@ -3,7 +3,7 @@ import SwiftUI
 struct EntitySectionHeaderView<T: TrackableEntity>: View {
     let title: String
     @Binding var activeSheet: ActiveSheet?
-    let sourceEntities: Binding<[SourceEntity<T>]>
+    let sourceEntities: [SourceEntity<T>]
     
     var body: some View {
         HStack {
@@ -11,26 +11,22 @@ struct EntitySectionHeaderView<T: TrackableEntity>: View {
                 .font(.subheadline)
             Spacer()
             Button {
-                DispatchQueue.main.async {
-                    activeSheet = .add(type: T.self)
-                }
+                activeSheet = .add(type: T.self)
            } label: {
                 Label("Add", systemImage: "plus")
                     .foregroundColor(.blue)
             }
             .buttonStyle(BorderlessButtonStyle())
+            
             Spacer()
+            
             Button {
-                DispatchQueue.main.async {
-                    activeSheet = .referenceSheet(type: T.self)
-                }
+                activeSheet = .referenceSheet(type: T.self)
             } label: {
                 Text("References")
             }
             Button {
-                DispatchQueue.main.async {
-                    activeSheet = .expandedSheet(type: T.self)
-                }
+                activeSheet = .expandedSheet(type: T.self)
             } label: {
                 Text("Expand")
             }

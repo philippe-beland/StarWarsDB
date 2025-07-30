@@ -37,7 +37,11 @@ struct StarshipModelDetailView: View {
         }
         .task { await loadInitialSources() }
         .toolbar {
-            Button ("Update", action: starshipModel.update)
+            Button ("Update") {
+                Task {
+                    await starshipModel.update()
+                }
+            }
         }
         }
     

@@ -35,7 +35,11 @@ struct VariaDetailView: View {
         }
         .task { await loadInitialSources() }
         .toolbar {
-            Button ("Update", action: varia.update)
+            Button ("Update") {
+                Task {
+                    await varia.update()
+                }
+            }
         }
         }
     

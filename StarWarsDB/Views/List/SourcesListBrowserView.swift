@@ -16,13 +16,11 @@ struct SourceListBrowserView: View {
         NavigationStack {
             ScrollView {
                 LazyVGrid(columns: layout) {
-                    ForEach(sources) { source in
-                        NavigationLink(destination: SourceDetailView(source: source)) {
-                            SourceGridView(source: source)
-                        }
-                        .contextMenu {
-                            Button("Delete", role: .destructive, action: { deleteSource(source) })
-                        }
+                    ForEach(sources) { source in    
+                        SourceGridItem(
+                        source: source,
+                        onDelete: { deleteSource(source) }
+                    )
                     }
                 }
             }
@@ -84,6 +82,28 @@ struct SourceListBrowserView: View {
         ToolbarItem(placement: .topBarLeading) {
             Toggle("ToDo", isOn: $isDoneFilter)
                 .toggleStyle(ButtonToggleStyle())
+        }
+    }
+}
+
+struct SourceGridItem: View {
+    let source: Source
+    let onDelete: () -> Void
+
+    @State private var viewModel: EditSourceViewModel
+
+    init(source: Source, onDelete: @escaping () -> Void) {
+        self.source = source
+        self.onDelete = onDelete
+        _viewModel = State(initialValue: EditSourceViewModel(source: source))
+    }
+
+    var body: some View {
+        NavigationLink(destination: SourceDetailView(viewModel: viewModel)) {
+            SourceGridView(source: source)
+        }
+        .contextMenu {
+            Button("Delete", role: .destructive, action: onDelete)
         }
     }
 }

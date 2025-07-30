@@ -26,19 +26,17 @@ extension DatabaseRecord {
         }
     }
     
-    func update() {
-        Task {
-            do {
-                try await supabase
-                    .from(self.databaseTableName)
-                    .update(self)
-                    .eq("id", value: self.id.uuidString)
-                    .execute()
-                
-                databaseLogger.info("\(self.recordType) successfully updated.")
-            } catch {
-                databaseLogger.error("\(self.recordType) update failed: \(error.localizedDescription)")
-            }
+    func update() async {
+        do {
+            try await supabase
+                .from(self.databaseTableName)
+                .update(self)
+                .eq("id", value: self.id.uuidString)
+                .execute()
+            
+            databaseLogger.info("\(self.recordType) successfully updated.")
+        } catch {
+            databaseLogger.error("\(self.recordType) update failed: \(error.localizedDescription)")
         }
     }
     

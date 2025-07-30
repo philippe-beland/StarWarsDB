@@ -2,53 +2,47 @@ import SwiftUI
 
 struct SourceEntityExpandedView<T: TrackableEntity>: View {
     @Binding var sourceEntities: [SourceEntity<T>]
-    @State private var refreshID = UUID()
-    
-    private var sortedEntities: [SourceEntity<T>] {
-        sourceEntities.sorted(by: { $0.entity.name < $1.entity.name })
-    }
     
     var body: some View {
         NavigationStack {
             List {
                 ForEach(sortedEntities) { sourceEntity in
-                    EntityEntryView(sourceEntity: sourceEntity)
-                        .id(refreshID)
-                        .contextMenu {
-                            appearanceContextMenu(for: sourceEntity)
-                        }
+                    EntityExpandedRow(sourceEntity: sourceEntity)
                 }
-                .onDelete(perform: deleteEntity)
+                .onDelete { indexSet in
+                    let toDelete = indexSet.map { sortedEntities[$0].id }
+                    sourceEntities.removeAll { toDelete.contains($0.id) }
+                    toDelete.forEach { id in
+                        if let deleted = sourceEntities.first(where: { $0.id == id }) {
+                            deleted.delete()
+                        }
+                    }
+                }
             }
             .navigationTitle(T.displayName)
         }
     }
     
-    private func appearanceContextMenu(for sourceEntity: SourceEntity<T>) -> some View {
-        Group {
+    private var sortedEntities: [SourceEntity<T>] {
+        sourceEntities.sorted(by: { $0.entity.name < $1.entity.name })
+    }
+}
+
+struct EntityExpandedRow<T: TrackableEntity>: View {
+    @Bindable var sourceEntity: SourceEntity<T>
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            EntityEntryView(sourceEntity: sourceEntity)
+            
+        }
+        .contextMenu {
             ForEach(AppearanceType.allCases, id: \.self) { appearance in
                 Button(appearance.description) {
-                    updateAppearance(of: sourceEntity, to: appearance)
+                    sourceEntity.appearance = appearance
+                    Task { await sourceEntity.update() }
                 }
             }
-        }
-    }
-    
-    private func updateAppearance(of sourceEntity: SourceEntity<T>, to appearance: AppearanceType) {
-        if let index = sourceEntities.firstIndex(where: { $0.id == sourceEntity.id }) {
-            sourceEntities[index].appearance = appearance
-            sourceEntity.update()
-            refreshID = UUID()
-        }
-    }
-    
-    private func deleteEntity(_ indexSet: IndexSet) {
-        for index: IndexSet.Element in indexSet {
-            let entity = sortedEntities[index]
-            if let indexofSource = sourceEntities.firstIndex(of: entity) {
-                sourceEntities.remove(at: indexofSource)
-            }
-            entity.delete()
         }
     }
 }

@@ -1,7 +1,8 @@
 import Foundation
 
-// MARK: - Data Structures
-struct SourceEntityCollection {
+@MainActor
+@Observable
+final class EditSourceViewModel {
     var characters: [SourceEntity<Character>] = []
     var creatures: [SourceEntity<Creature>] = []
     var droids: [SourceEntity<Droid>] = []
@@ -13,12 +14,7 @@ struct SourceEntityCollection {
     var varias: [SourceEntity<Varia>] = []
     var artists: [SourceCreator<Artist>] = []
     var authors: [SourceCreator<Author>] = []
-}
-
-@MainActor
-class EditSourceViewModel: ObservableObject {
-    @Published var sourceEntities = SourceEntityCollection()
-    @Published var activeSheet: ActiveSheet?
+    var activeSheet: ActiveSheet?
     var source: Source
     
     init(source: Source) {
@@ -41,50 +37,50 @@ class EditSourceViewModel: ObservableObject {
         
     private func saveSourceEntity<T: Entity>(_ sourceEntity: SourceEntity<T>) throws {      
         if let characterEntity = sourceEntity as? SourceEntity<Character> {
-        if sourceEntities.characters.contains(where: { $0.entity.id == characterEntity.entity.id }) {
+        if characters.contains(where: { $0.entity.id == characterEntity.entity.id }) {
             throw SourceError.duplicateEntity
         }
-        sourceEntities.characters.append(characterEntity)
+        characters.append(characterEntity)
         } else if let creatureEntity = sourceEntity as? SourceEntity<Creature> {
-            if sourceEntities.creatures.contains(where: { $0.entity.id == creatureEntity.entity.id }) {
+            if creatures.contains(where: { $0.entity.id == creatureEntity.entity.id }) {
                 throw SourceError.duplicateEntity
             }
-            sourceEntities.creatures.append(creatureEntity)
+            creatures.append(creatureEntity)
         } else if let droidEntity = sourceEntity as? SourceEntity<Droid> {
-            if sourceEntities.droids.contains(where: { $0.entity.id == droidEntity.entity.id }) {
+            if droids.contains(where: { $0.entity.id == droidEntity.entity.id }) {
                 throw SourceError.duplicateEntity
             }
-            sourceEntities.droids.append(droidEntity)
+            droids.append(droidEntity)
         } else if let organizationEntity = sourceEntity as? SourceEntity<Organization> {
-            if sourceEntities.organizations.contains(where: { $0.entity.id == organizationEntity.entity.id }) {
+            if organizations.contains(where: { $0.entity.id == organizationEntity.entity.id }) {
                 throw SourceError.duplicateEntity
             }
-            sourceEntities.organizations.append(organizationEntity)
+            organizations.append(organizationEntity)
         } else if let planetEntity = sourceEntity as? SourceEntity<Planet> {
-            if sourceEntities.planets.contains(where: { $0.entity.id == planetEntity.entity.id }) {
+            if planets.contains(where: { $0.entity.id == planetEntity.entity.id }) {
                 throw SourceError.duplicateEntity
             }
-            sourceEntities.planets.append(planetEntity)
+            planets.append(planetEntity)
         } else if let speciesEntity = sourceEntity as? SourceEntity<Species> {
-            if sourceEntities.species.contains(where: { $0.entity.id == speciesEntity.entity.id }) {
+            if species.contains(where: { $0.entity.id == speciesEntity.entity.id }) {
                 throw SourceError.duplicateEntity
             }
-            sourceEntities.species.append(speciesEntity)
+            species.append(speciesEntity)
         } else if let starshipEntity = sourceEntity as? SourceEntity<Starship> {
-            if sourceEntities.starships.contains(where: { $0.entity.id == starshipEntity.entity.id }) {
+            if starships.contains(where: { $0.entity.id == starshipEntity.entity.id }) {
                 throw SourceError.duplicateEntity
             }
-            sourceEntities.starships.append(starshipEntity)
+            starships.append(starshipEntity)
         } else if let starshipModelEntity = sourceEntity as? SourceEntity<StarshipModel> {
-            if sourceEntities.starshipModels.contains(where: { $0.entity.id == starshipModelEntity.entity.id }) {
+            if starshipModels.contains(where: { $0.entity.id == starshipModelEntity.entity.id }) {
                 throw SourceError.duplicateEntity
             }
-            sourceEntities.starshipModels.append(starshipModelEntity)
+            starshipModels.append(starshipModelEntity)
         } else if let variaEntity = sourceEntity as? SourceEntity<Varia> {
-            if sourceEntities.varias.contains(where: { $0.entity.id == variaEntity.entity.id }) {
+            if varias.contains(where: { $0.entity.id == variaEntity.entity.id }) {
                 throw SourceError.duplicateEntity
             }
-            sourceEntities.varias.append(variaEntity)
+            varias.append(variaEntity)
         } else {
             fatalError("Unsupported entity type")
         }
@@ -115,30 +111,30 @@ class EditSourceViewModel: ObservableObject {
 //    }
 
     func loadInitialSources() async {
-        async let characters = loadSourceCharacters(sourceID: source.id)
-        async let creatures = loadSourceCreatures(sourceID: source.id)
-        async let droids = loadSourceDroids(sourceID: source.id)
-        async let organizations = loadSourceOrganizations(sourceID: source.id)
-        async let planets = loadSourcePlanets(sourceID: source.id)
-        async let species = loadSourceSpecies(sourceID: source.id)
-        async let starships = loadSourceStarships(sourceID: source.id)
-        async let starshipModels = loadSourceStarshipModels(sourceID: source.id)
-        async let varias = loadSourceVarias(sourceID: source.id)
-        async let artists = loadSourceArtists(sourceID: source.id)
-        async let authors = loadSourceAuthors(sourceID: source.id)
+        async let _characters = loadSourceCharacters(sourceID: source.id)
+        async let _creatures = loadSourceCreatures(sourceID: source.id)
+        async let _droids = loadSourceDroids(sourceID: source.id)
+        async let _organizations = loadSourceOrganizations(sourceID: source.id)
+        async let _planets = loadSourcePlanets(sourceID: source.id)
+        async let _species = loadSourceSpecies(sourceID: source.id)
+        async let _starships = loadSourceStarships(sourceID: source.id)
+        async let _starshipModels = loadSourceStarshipModels(sourceID: source.id)
+        async let _varias = loadSourceVarias(sourceID: source.id)
+        async let _artists = loadSourceArtists(sourceID: source.id)
+        async let _authors = loadSourceAuthors(sourceID: source.id)
         
 
-        sourceEntities.characters = await characters
-        sourceEntities.creatures = await creatures
-        sourceEntities.droids = await droids
-        sourceEntities.organizations = await organizations
-        sourceEntities.planets = await planets
-        sourceEntities.species = await species
-        sourceEntities.starships = await starships
-        sourceEntities.starshipModels = await starshipModels
-        sourceEntities.varias = await varias
-        sourceEntities.artists = await artists
-        sourceEntities.authors = await authors
+        characters = await _characters
+        creatures = await _creatures
+        droids = await _droids
+        organizations = await _organizations
+        planets = await _planets
+        species = await _species
+        starships = await _starships
+        starshipModels = await _starshipModels
+        varias = await _varias
+        artists = await _artists
+        authors = await _authors
     }
 
     func addAnyEntity(_ entity: any Entity, appearance: AppearanceType) {

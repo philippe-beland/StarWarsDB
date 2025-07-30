@@ -35,7 +35,11 @@ struct DroidDetailView: View {
         }
         .task { await loadInitialSources() }
         .toolbar {
-            Button ("Update", action: droid.update)
+            Button ("Update") {
+                Task {
+                    await droid.update()
+                }
+            }
         }
         }
     

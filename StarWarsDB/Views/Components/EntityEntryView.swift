@@ -11,8 +11,7 @@ struct EntityEntryView<T: TrackableEntity>: View {
                 .foregroundStyle(sourceEntity.number > 1 ? .primary :.secondary)
                 .font(sourceEntity.number > 1 ? .body : .subheadline)
             Spacer()
-            AppearanceView(appearance: sourceEntity.appearance.rawValue)
-            
+            AppearanceView(appearance: sourceEntity.appearance)
         }
     }
 }
