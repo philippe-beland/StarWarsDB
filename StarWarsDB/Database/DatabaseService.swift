@@ -36,9 +36,9 @@ func loadSources(sort: String, sourceType: SourceType?, serie: Serie?, isDone: B
         query = query.order(sort).order("number").limit(500) as! PostgrestFilterBuilder
         sources = try await query.execute().value
 
-        print("Sources successfully loaded")
+        databaseLogger.info("Sources successfully loaded")
     } catch {
-        print("Failed to fetch Sources: \(error)")
+        databaseLogger.error("Failed to fetch Sources: \(error)")
     }
     
     return sources
@@ -47,7 +47,7 @@ func loadSources(sort: String, sourceType: SourceType?, serie: Serie?, isDone: B
 func downloadAndUploadImage(from imageUrl: URL, path: String) {
     let task = URLSession.shared.dataTask(with: imageUrl) { data, response, error in
         guard let data = data, error == nil else {
-            print("Error downloading image: \(error?.localizedDescription ?? "No error info")")
+            databaseLogger.error("Error downloading image: \(error?.localizedDescription ?? "No error info")")
             return
         }
         
@@ -62,9 +62,9 @@ private func uploadImageToSupabase(data: Data, path: String) {
             try await supabase.storage
                 .from("character_images")
                 .upload(path, data: data, options: FileOptions(cacheControl: "3600", contentType: "image/png", upsert: false))
-            print("Image uploaded successfully")
+            databaseLogger.info("Image uploaded successfully")
         } catch {
-            print("Failed to upload image: \(error)")
+            databaseLogger.error("Failed to upload image: \(error)")
         }
     }
 }

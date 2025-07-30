@@ -7,9 +7,9 @@ func loadSourceCharacters(sourceID: UUID) async -> [SourceEntity<Character>] {
             .rpc("load_sourcecharacters", params: ["source_id": sourceID])
             .execute()
             .value
-        print("SourceCharacters successfully loaded")
+        databaseLogger.info("SourceCharacters successfully loaded")
     } catch {
-        print("Failed to fetch SourceCharacters: \(error)")
+        databaseLogger.error("Failed to fetch SourceCharacters: \(error)")
     }
     return sourceCharacters
 }
@@ -21,9 +21,9 @@ func loadSourceCreatures(sourceID: UUID) async -> [SourceEntity<Creature>] {
             .rpc("load_sourcecreatures", params: ["source_id": sourceID])
             .execute()
             .value
-        print("SourceCreatures successfully loaded")
+        databaseLogger.info("SourceCreatures successfully loaded")
     } catch {
-        print("Failed to fetch SourceCreatures: \(error)")
+        databaseLogger.error("Failed to fetch SourceCreatures: \(error)")
     }
     return sourceCreatures
 }
@@ -35,9 +35,9 @@ func loadSourceDroids(sourceID: UUID) async -> [SourceEntity<Droid>] {
             .rpc("load_sourcedroids", params: ["source_id": sourceID])
             .execute()
             .value
-        print("SourceDroids successfully loaded")
+        databaseLogger.info("SourceDroids successfully loaded")
     } catch {
-        print("Failed to fetch SourceDroids: \(error)")
+        databaseLogger.error("Failed to fetch SourceDroids: \(error)")
     }
     return sourceDroids
 }
@@ -49,9 +49,9 @@ func loadSourceOrganizations(sourceID: UUID) async -> [SourceEntity<Organization
             .rpc("load_sourceorganizations", params: ["source_id": sourceID])
             .execute()
             .value
-        print("SourceOrganizations successfully loaded")
+        databaseLogger.info("SourceOrganizations successfully loaded")
     } catch {
-        print("Failed to fetch SourceOrganizations: \(error)")
+        databaseLogger.error("Failed to fetch SourceOrganizations: \(error)")
     }
     return sourceOrganizations
 }
@@ -63,9 +63,9 @@ func loadSourcePlanets(sourceID: UUID) async -> [SourceEntity<Planet>] {
             .rpc("load_sourceplanets", params: ["source_id": sourceID])
             .execute()
             .value
-        print("SourcePlanets successfully loaded")
+        databaseLogger.info("SourcePlanets successfully loaded")
     } catch {
-        print("Failed to fetch SourcePlanets: \(error)")
+        databaseLogger.error("Failed to fetch SourcePlanets: \(error)")
     }
     return sourcePlanets
 }
@@ -77,9 +77,9 @@ func loadSourceSpecies(sourceID: UUID) async -> [SourceEntity<Species>] {
             .rpc("load_sourcespecies", params: ["source_id": sourceID])
             .execute()
             .value
-        print("SourceSpecies successfully loaded")
+        databaseLogger.info("SourceSpecies successfully loaded")
     } catch {
-        print("Failed to fetch SourceSpecies: \(error)")
+        databaseLogger.error("Failed to fetch SourceSpecies: \(error)")
     }
     return sourceSpecies
 }
@@ -91,9 +91,9 @@ func loadSourceStarships(sourceID: UUID) async -> [SourceEntity<Starship>] {
             .rpc("load_sourcestarships", params: ["source_id": sourceID])
             .execute()
             .value
-        print("SourceStarships successfully loaded")
+        databaseLogger.info("SourceStarships successfully loaded")
     } catch {
-        print("Failed to fetch SourceStarships: \(error)")
+        databaseLogger.error("Failed to fetch SourceStarships: \(error)")
     }
     return sourceStarships
 }
@@ -105,9 +105,9 @@ func loadSourceStarshipModels(sourceID: UUID) async -> [SourceEntity<StarshipMod
             .rpc("load_sourcestarshipmodels", params: ["source_id": sourceID])
             .execute()
             .value
-        print("SourceStarshipModels successfully loaded")
+        databaseLogger.info("SourceStarshipModels successfully loaded")
     } catch {
-        print("Failed to fetch SourceStarshipModels: \(error)")
+        databaseLogger.error("Failed to fetch SourceStarshipModels: \(error)")
     }
     return sourceStarshipModels
 }
@@ -119,9 +119,9 @@ func loadSourceVarias(sourceID: UUID) async -> [SourceEntity<Varia>] {
             .rpc("load_sourcevarias", params: ["source_id": sourceID])
             .execute()
             .value
-        print("SourceVarias successfully loaded")
+        databaseLogger.info("SourceVarias successfully loaded")
     } catch {
-        print("Failed to fetch SourceVarias: \(error)")
+        databaseLogger.error("Failed to fetch SourceVarias: \(error)")
     }
     return sourceVarias
 }
@@ -139,9 +139,9 @@ func loadSourceArtists(sourceID: UUID) async -> [SourceCreator<Artist>] {
             .eq("source", value: sourceID.uuidString)
             .execute()
             .value
-        print("SourceArtists successfully loaded")
+        databaseLogger.info("SourceArtists successfully loaded")
     } catch {
-        print("Failed to fetch SourceArtists: \(error)")
+        databaseLogger.error("Failed to fetch SourceArtists: \(error)")
     }
     return sourceArtists
 }
@@ -159,9 +159,9 @@ func loadSourceAuthors(sourceID: UUID) async -> [SourceCreator<Author>] {
             .eq("source", value: sourceID.uuidString)
             .execute()
             .value
-        print("SourceAuthors successfully loaded")
+        databaseLogger.info("SourceAuthors successfully loaded")
     } catch {
-        print("Failed to fetch SourceAuthors: \(error)")
+        databaseLogger.error("Failed to fetch SourceAuthors: \(error)")
     }
     return sourceAuthors
 }
@@ -175,9 +175,9 @@ func loadSourceFacts(entityField: String, sourceID: UUID) async -> [Fact] {
             .eq(entityField, value: sourceID.uuidString)
             .execute()
             .value
-        print("Facts successfully loaded")
+        databaseLogger.info("Facts successfully loaded")
     } catch {
-        print("Failed to fetch Facts: \(error)")
+        databaseLogger.error("Failed to fetch Facts: \(error)")
     }
     return facts
 }

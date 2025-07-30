@@ -17,9 +17,9 @@ func loadCharacterSources(characterID: UUID) async -> [SourceEntity<Character>] 
             .eq("entity", value: characterID.uuidString)
             .execute()
             .value
-        print("SourceCharacters successfully loaded")
+        databaseLogger.info("SourceCharacters successfully loaded")
     } catch {
-        print("Failed to fetch SourceCharacters: \(error)")
+        databaseLogger.error("Failed to fetch SourceCharacters: \(error)")
     }
     return sourceEntities
 }
@@ -41,9 +41,9 @@ func loadCreatureSources(creatureID: UUID) async -> [SourceEntity<Creature>] {
             .eq("entity", value: creatureID.uuidString)
             .execute()
             .value
-        print("SourceCreatures successfully loaded")
+        databaseLogger.info("SourceCreatures successfully loaded")
     } catch {
-        print("Failed to fetch SourceCreatures: \(error)")
+        databaseLogger.error("Failed to fetch SourceCreatures: \(error)")
     }
     return sourceEntities
 }
@@ -65,9 +65,9 @@ func loadDroidSources(droidID: UUID) async -> [SourceEntity<Droid>] {
             .eq("entity", value: droidID.uuidString)
             .execute()
             .value
-        print("SourceDroids successfully loaded")
+        databaseLogger.info("SourceDroids successfully loaded")
     } catch {
-        print("Failed to fetch SourceDroids: \(error)")
+        databaseLogger.error("Failed to fetch SourceDroids: \(error)")
     }
     return sourceEntities
 }
@@ -90,9 +90,9 @@ func loadOrganizationSources(organizationID: UUID) async -> [SourceEntity<Organi
             .eq("entity", value: organizationID.uuidString)
             .execute()
             .value
-        print("SourceOrganizations successfully loaded")
+        databaseLogger.info("SourceOrganizations successfully loaded")
     } catch {
-        print("Failed to fetch SourceOrganizations: \(error)")
+        databaseLogger.error("Failed to fetch SourceOrganizations: \(error)")
     }
     return sourceEntities
 }
@@ -114,9 +114,9 @@ func loadPlanetSources(planetID: UUID) async -> [SourceEntity<Planet>] {
             .eq("entity", value: planetID.uuidString)
             .execute()
             .value
-        print("SourcePlanets successfully loaded")
+        databaseLogger.info("SourcePlanets successfully loaded")
     } catch {
-        print("Failed to fetch SourcePlanets: \(error)")
+        databaseLogger.error("Failed to fetch SourcePlanets: \(error)")
     }
     return sourceEntities
 }
@@ -138,9 +138,9 @@ func loadSpeciesSources(speciesID: UUID) async -> [SourceEntity<Species>] {
             .eq("entity", value: speciesID.uuidString)
             .execute()
             .value
-        print("SourceSpecies successfully loaded")
+        databaseLogger.info("SourceSpecies successfully loaded")
     } catch {
-        print("Failed to fetch SourceSpecies: \(error)")
+        databaseLogger.error("Failed to fetch SourceSpecies: \(error)")
     }
     return sourceEntities
 }
@@ -162,9 +162,9 @@ func loadStarshipSources(starshipID: UUID) async -> [SourceEntity<Starship>] {
             .eq("entity", value: starshipID.uuidString)
             .execute()
             .value
-        print("SourceStarships successfully loaded")
+        databaseLogger.info("SourceStarships successfully loaded")
     } catch {
-        print("Failed to fetch SourceStarships: \(error)")
+        databaseLogger.error("Failed to fetch SourceStarships: \(error)")
     }
     return sourceEntities
 }
@@ -188,9 +188,9 @@ func loadStarshipModelSources(starshipModelID: UUID) async
             .eq("entity", value: starshipModelID.uuidString)
             .execute()
             .value
-        print("SourceStarshipModels successfully loaded")
+        databaseLogger.info("SourceStarshipModels successfully loaded")
     } catch {
-        print("Failed to fetch SourceStarshipModels: \(error)")
+        databaseLogger.error("Failed to fetch SourceStarshipModels: \(error)")
     }
     return sourceEntities
 }
@@ -212,9 +212,9 @@ func loadVariaSources(variaID: UUID) async -> [SourceEntity<Varia>] {
             .eq("entity", value: variaID.uuidString)
             .execute()
             .value
-        print("SourceVarias successfully loaded")
+        databaseLogger.info("SourceVarias successfully loaded")
     } catch {
-        print("Failed to fetch SourceVarias: \(error)")
+        databaseLogger.error("Failed to fetch SourceVarias: \(error)")
     }
     return sourceEntities
 }

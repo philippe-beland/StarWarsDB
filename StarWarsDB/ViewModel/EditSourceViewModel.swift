@@ -97,9 +97,9 @@ class EditSourceViewModel: ObservableObject {
             let newEntity = createSourceEntity(entity: entity, appearance: appearance)
             try saveSourceEntity(newEntity)
         } catch SourceError.duplicateEntity {
-            print("This sourceEntity is already in the source")
+            appLogger.info("This sourceEntity is already in the source")
         } catch {
-            print("Failed to add SourceEntity: \(error.localizedDescription)")
+            appLogger.error("Failed to add SourceEntity: \(error.localizedDescription)")
         }
     }
     
@@ -108,9 +108,9 @@ class EditSourceViewModel: ObservableObject {
 //            let newCreator = createSourceCreator(creator: creator)
 //            try saveSourceEntity(newCreator)
 //        } catch SourceError.duplicateEntity {
-//            print("This sourceEntity is already in the source")
+//            appLogger.info("This sourceEntity is already in the source")
 //        } catch {
-//            print("Failed to add SourceEntity: \(error.localizedDescription)")
+//            appLogger.error("Failed to add SourceEntity: \(error.localizedDescription)")
 //        }
 //    }
 

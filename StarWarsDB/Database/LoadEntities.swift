@@ -19,9 +19,9 @@ func loadCharacters(serie: Serie? = nil, filter: String = "")
                 .limit(40)
                 .execute()
                 .value
-        print("Characters successfully loaded")
+        databaseLogger.info("Characters successfully loaded")
     } catch {
-        print("Failed to fetch Characters: \(error)")
+        databaseLogger.error("Failed to fetch Characters: \(error)")
     }
 
     return characters
@@ -40,9 +40,9 @@ func loadCreatures(serie: Serie? = nil, filter: String = "") async
                 .limit(40)
                 .execute()
                 .value
-        print("Creatures successfully loaded")
+        databaseLogger.info("Creatures successfully loaded")
     } catch {
-        print("Failed to fetch Creatures: \(error)")
+        databaseLogger.error("Failed to fetch Creatures: \(error)")
     }
 
     return creatures
@@ -61,9 +61,9 @@ func loadDroids(serie: Serie? = nil, filter: String = "") async
                 .limit(40)
                 .execute()
                 .value
-        print("Droids successfully loaded")
+        databaseLogger.info("Droids successfully loaded")
     } catch {
-        print("Failed to fetch Droids: \(error)")
+        databaseLogger.error("Failed to fetch Droids: \(error)")
     }
 
     return droids
@@ -82,9 +82,9 @@ func loadOrganizations(serie: Serie? = nil, filter: String = "")
                 .limit(40)
                 .execute()
                 .value
-        print("Organizations successfully loaded")
+        databaseLogger.info("Organizations successfully loaded")
     } catch {
-        print("Failed to fetch Organizations: \(error)")
+        databaseLogger.error("Failed to fetch Organizations: \(error)")
     }
 
     return organizations
@@ -103,9 +103,9 @@ func loadPlanets(serie: Serie? = nil, filter: String = "") async
                 .limit(40)
                 .execute()
                 .value
-        print("Planets successfully loaded")
+        databaseLogger.info("Planets successfully loaded")
     } catch {
-        print("Failed to fetch Planets: \(error)")
+        databaseLogger.error("Failed to fetch Planets: \(error)")
     }
 
     return planets
@@ -124,9 +124,9 @@ func loadSpecies(serie: Serie? = nil, filter: String = "") async
                 .limit(40)
                 .execute()
                 .value
-        print("Species successfully loaded")
+        databaseLogger.info("Species successfully loaded")
     } catch {
-        print("Failed to fetch Species: \(error)")
+        databaseLogger.error("Failed to fetch Species: \(error)")
     }
 
     return species
@@ -145,9 +145,9 @@ func loadStarships(serie: Serie? = nil, filter: String = "") async
                 .limit(40)
                 .execute()
                 .value
-        print("Starships successfully loaded")
+        databaseLogger.info("Starships successfully loaded")
     } catch {
-        print("Failed to fetch Starships: \(error)")
+        databaseLogger.error("Failed to fetch Starships: \(error)")
     }
 
     return starships
@@ -166,9 +166,9 @@ func loadStarshipModels(serie: Serie? = nil, filter: String = "")
                 .limit(40)
                 .execute()
                 .value
-        print("StarshipModels successfully loaded")
+        databaseLogger.info("StarshipModels successfully loaded")
     } catch {
-        print("Failed to fetch StarshipModels: \(error)")
+        databaseLogger.error("Failed to fetch StarshipModels: \(error)")
     }
 
     return starshipModels
@@ -187,9 +187,9 @@ func loadVarias(serie: Serie? = nil, filter: String = "") async
                 .limit(40)
                 .execute()
                 .value
-        print("Varias successfully loaded")
+            databaseLogger.info("Varias successfully loaded")
     } catch {
-        print("Failed to fetch Varias: \(error)")
+        databaseLogger.error("Failed to fetch Varias: \(error)")
     }
 
     return varias
@@ -208,9 +208,9 @@ func loadArcs(filter: String = "") async -> [Arc] {
                 .limit(40)
                 .execute()
                 .value
-        print("Arcs successfully loaded")
+        databaseLogger.info("Arcs successfully loaded")
     } catch {
-        print("Failed to fetch Arcs: \(error)")
+        databaseLogger.error("Failed to fetch Arcs: \(error)")
     }
 
     return arcs
@@ -228,9 +228,9 @@ func loadSeries(filter: String = "") async -> [Serie] {
                 .order("name")
                 .execute()
                 .value
-        print("Series successfully loaded")
+        databaseLogger.info("Series successfully loaded")
     } catch {
-        print("Failed to fetch Series: \(error)")
+        databaseLogger.error("Failed to fetch Series: \(error)")
     }
 
     return series
@@ -248,9 +248,9 @@ func loadArtists(serie: Serie? = nil, filter: String = "") async -> [Artist] {
                 .limit(40)
                 .execute()
                 .value
-        print("Artists successfully loaded")
+        databaseLogger.info("Artists successfully loaded")
     } catch {
-        print("Failed to fetch Artists: \(error)")
+        databaseLogger.error("Failed to fetch Artists: \(error)")
     }
 
     return artists
@@ -268,9 +268,9 @@ func loadAuthors(serie: Serie? = nil, filter: String = "") async -> [Author] {
                 .limit(40)
                 .execute()
                 .value
-        print("Artists successfully loaded")
+        databaseLogger.info("Artists successfully loaded")
     } catch {
-        print("Failed to fetch Authors: \(error)")
+        databaseLogger.error("Failed to fetch Authors: \(error)")
     }
 
     return authors

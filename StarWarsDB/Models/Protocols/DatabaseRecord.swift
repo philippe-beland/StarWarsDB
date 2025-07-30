@@ -19,9 +19,9 @@ extension DatabaseRecord {
                     .insert(self)
                     .execute()
                 
-                print("\(self.recordType) saved successfully")
+                databaseLogger.info("\(self.recordType) saved successfully")
             } catch {
-                print("Failed to save \(self.recordType): \(error)")
+                databaseLogger.error("Failed to save \(self.recordType): \(error)")
             }
         }
     }
@@ -35,9 +35,9 @@ extension DatabaseRecord {
                     .eq("id", value: self.id.uuidString)
                     .execute()
                 
-                print("\(self.recordType) successfully updated.")
+                databaseLogger.info("\(self.recordType) successfully updated.")
             } catch {
-                print("\(self.recordType) update failed: \(error.localizedDescription)")
+                databaseLogger.error("\(self.recordType) update failed: \(error.localizedDescription)")
             }
         }
     }
@@ -51,10 +51,10 @@ extension DatabaseRecord {
                     .eq("id", value: self.id.uuidString)
                     .execute()
                 
-                print("\(self.recordType) successfully deleted.")
+                databaseLogger.info("\(self.recordType) successfully deleted.")
                 
             } catch {
-                print("Failed to delete \(self.recordType): \(error)")
+                databaseLogger.error("Failed to delete \(self.recordType): \(error)")
             }
         }
     }

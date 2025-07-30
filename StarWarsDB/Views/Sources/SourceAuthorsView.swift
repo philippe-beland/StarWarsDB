@@ -20,9 +20,6 @@ struct AuthorsVStack: View {
         .sheet(isPresented: $showEditAuthorSheet) {
             ExpandedSourceAuthorsView(sourceAuthors: $sourceAuthors, source: source)
         }
-        .task {
-            print(sourceAuthors)
-        }
     }
 }
 
@@ -53,7 +50,7 @@ struct ExpandedSourceAuthorsView: View {
                                     newAuthor.save()
                                     sourceAuthors.append(newAuthor)
                                 } else {
-                                    print("Already exists for that source")
+                                    appLogger.info("Already exists for that source")
                                 }
                             }
                         }

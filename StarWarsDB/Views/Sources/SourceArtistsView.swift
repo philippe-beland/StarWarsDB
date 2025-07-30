@@ -50,7 +50,7 @@ struct ExpandedSourceArtistsView: View {
                                     newArtist.save()
                                     sourceArtists.append(newArtist)
                                 } else {
-                                    print("Already exists for that source")
+                                    appLogger.info("Already exists for that source")
                                 }
                             }
                         }

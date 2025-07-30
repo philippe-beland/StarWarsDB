@@ -197,7 +197,7 @@ func fetchImageURL(for characterURL: String) async throws -> String? {
             }
         }
     } catch {
-        print("Error parsing HTML: \(error)")
+        scraperLogger.error("Error parsing HTML: \(error)")
     }
     
     return "No image found"

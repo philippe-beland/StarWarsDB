@@ -46,7 +46,7 @@ struct SourceEntityReferenceView<T: TrackableEntity>: View {
             processedEntities = processWikiEntities(listEntities)
         }
         catch {
-            print("Error fetching list: \(error)")
+            appLogger.error("Error fetching list: \(error)")
         }
     }
 }
