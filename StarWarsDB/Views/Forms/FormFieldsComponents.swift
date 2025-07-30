@@ -66,7 +66,28 @@ struct EditableLinkedBaseEntityField<T: BaseEntity>: View {
     }
 }
 
-struct EditableLinkedEntityField<T: Entity>: View {
+struct EditableLinkedBaseEntity<T: BaseEntity, Label: View>: View {
+    @Binding var baseEntity: T
+    var label: () -> Label
+    
+    @State private var showEntitySelection: Bool = false
+    
+    var body: some View {
+        Button {
+            showEntitySelection.toggle()
+        } label: {
+            label()
+        }
+        .buttonStyle(PlainButtonStyle())
+        .sheet(isPresented: $showEntitySelection) {
+            BaseEntitySelectorView<T>() { selectedEntity in
+                baseEntity = selectedEntity
+            }
+        }
+    }
+}
+
+struct EditableLinkedEntityField<T: TrackableEntity>: View {
     @Binding var entity: T
         
     var body: some View {
@@ -83,7 +104,7 @@ struct EditableLinkedEntityField<T: Entity>: View {
     }
 }
 
-struct EditableLinkedEntity<T: Entity, Label: View>: View {
+struct EditableLinkedEntity<T: TrackableEntity, Label: View>: View {
     @Binding var entity: T
     var label: () -> Label
     
@@ -106,8 +127,25 @@ struct EditableLinkedEntity<T: Entity, Label: View>: View {
     }
 }
 
-struct EditableLinkedBaseEntity<T: BaseEntity, Label: View>: View {
-    @Binding var baseEntity: T
+struct EditableLinkedCreatorField<T: CreatorEntity>: View {
+    @Binding var creator: T
+        
+    var body: some View {
+        HStack {
+            Text("\(T.displayName):")
+                .font(.footnote)
+                .bold()
+            Spacer()
+            EditableLinkedCreator(creator: $creator) {
+                Text(creator.name.isEmpty ? "Select \(T.displayName)" : creator.name)
+                    .foregroundColor(.blue)
+            }
+        }
+    }
+}
+
+struct EditableLinkedCreator<T: CreatorEntity, Label: View>: View {
+    @Binding var creator: T
     var label: () -> Label
     
     @State private var showEntitySelection: Bool = false
@@ -120,12 +158,16 @@ struct EditableLinkedBaseEntity<T: BaseEntity, Label: View>: View {
         }
         .buttonStyle(PlainButtonStyle())
         .sheet(isPresented: $showEntitySelection) {
-            BaseEntitySelectorView<T>() { selectedEntity in
-                baseEntity = selectedEntity
+            CreatorSelectorView<T>(sourceCreators: []) { selectedCreators in
+                if let selected = selectedCreators.first {
+                    creator = selected
+                }
             }
         }
     }
 }
+
+
 
 #Preview {
     @Previewable @State var info = "Luke Skywalker"

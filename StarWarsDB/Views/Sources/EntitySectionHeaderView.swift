@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntitySectionHeaderView<T: Entity>: View {
+struct EntitySectionHeaderView<T: TrackableEntity>: View {
     let title: String
     @Binding var activeSheet: ActiveSheet?
     let sourceEntities: Binding<[SourceEntity<T>]>

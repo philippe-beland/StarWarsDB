@@ -170,7 +170,7 @@ struct BaseEntitySelectorView<T: BaseEntity>: View {
 }
 
 // MARK: - Entity Selector Wrapper
-struct EntitySelectorView<T: Entity>: View {
+struct EntitySelectorView<T: TrackableEntity>: View {
     @Environment(\.dismiss) var dismiss: DismissAction
     var serie: Serie?
     let sourceEntities: [SourceEntity<T>]
@@ -192,6 +192,34 @@ struct EntitySelectorView<T: Entity>: View {
                     selectedEntities: $selectedEntities,
                     onFinish: { selected in
                         onSelect(selected, selectedAppearanceType)
+                        dismiss()
+                    }
+                )
+            }
+        }
+    }
+}
+
+// MARK: - Creator Selector Wrapper
+struct CreatorSelectorView<T: CreatorEntity>: View {
+    @Environment(\.dismiss) var dismiss: DismissAction
+    var serie: Serie?
+    let sourceCreators: [SourceCreator<T>]
+    
+    @State private var selectedCreators = Set<T>()
+    
+    var onSelect: (_ selected: Set<T>) -> Void
+    
+    var body: some View {
+        NavigationStack {
+            VStack {
+                EntityPickerList(
+                    allowMultiSelection: true,
+                    serie: serie,
+                    excludedEntityIDs: Set(sourceCreators.map { $0.creator.id }),
+                    selectedEntities: $selectedCreators,
+                    onFinish: { selected in
+                        onSelect(selected)
                         dismiss()
                     }
                 )

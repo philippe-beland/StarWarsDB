@@ -16,7 +16,7 @@ final class Author: CreatorEntity {
     static let displayName: String = "Artists"
 
     let recordType: String = "Author"
-    let databaseTableName: String = "authors"
+    let databaseTableName: String = "artists"
     static let sourceRecordType: String = "SourceAuthors"
     static let sourceDatabaseTableName: String = "source_authors"
 

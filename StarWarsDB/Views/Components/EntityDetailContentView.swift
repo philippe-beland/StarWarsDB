@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntityDetailContentView<T: Entity, Header: View, SidePanel: View>: View {
+struct EntityDetailContentView<T: TrackableEntity, Header: View, SidePanel: View>: View {
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
     var headerSection: Header
     var sidePanel: SidePanel

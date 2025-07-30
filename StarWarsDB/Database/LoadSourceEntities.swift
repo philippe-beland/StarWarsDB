@@ -1,9 +1,9 @@
 import Foundation
 
 func loadSourceCharacters(sourceID: UUID) async -> [SourceEntity<Character>] {
-    var sourceEntities = [SourceEntity<Character>]()
+    var sourceCharacters = [SourceEntity<Character>]()
     do {
-        sourceEntities = try await supabase
+        sourceCharacters = try await supabase
             .rpc("load_sourcecharacters", params: ["source_id": sourceID])
             .execute()
             .value
@@ -11,13 +11,13 @@ func loadSourceCharacters(sourceID: UUID) async -> [SourceEntity<Character>] {
     } catch {
         print("Failed to fetch SourceCharacters: \(error)")
     }
-    return sourceEntities
+    return sourceCharacters
 }
 
 func loadSourceCreatures(sourceID: UUID) async -> [SourceEntity<Creature>] {
-    var sourceEntities = [SourceEntity<Creature>]()
+    var sourceCreatures = [SourceEntity<Creature>]()
     do {
-        sourceEntities = try await supabase
+        sourceCreatures = try await supabase
             .rpc("load_sourcecreatures", params: ["source_id": sourceID])
             .execute()
             .value
@@ -25,13 +25,13 @@ func loadSourceCreatures(sourceID: UUID) async -> [SourceEntity<Creature>] {
     } catch {
         print("Failed to fetch SourceCreatures: \(error)")
     }
-    return sourceEntities
+    return sourceCreatures
 }
 
 func loadSourceDroids(sourceID: UUID) async -> [SourceEntity<Droid>] {
-    var sourceEntities = [SourceEntity<Droid>]()
+    var sourceDroids = [SourceEntity<Droid>]()
     do {
-        sourceEntities = try await supabase
+        sourceDroids = try await supabase
             .rpc("load_sourcedroids", params: ["source_id": sourceID])
             .execute()
             .value
@@ -39,13 +39,13 @@ func loadSourceDroids(sourceID: UUID) async -> [SourceEntity<Droid>] {
     } catch {
         print("Failed to fetch SourceDroids: \(error)")
     }
-    return sourceEntities
+    return sourceDroids
 }
 
 func loadSourceOrganizations(sourceID: UUID) async -> [SourceEntity<Organization>] {
-    var sourceEntities = [SourceEntity<Organization>]()
+    var sourceOrganizations = [SourceEntity<Organization>]()
     do {
-        sourceEntities = try await supabase
+        sourceOrganizations = try await supabase
             .rpc("load_sourceorganizations", params: ["source_id": sourceID])
             .execute()
             .value
@@ -53,13 +53,13 @@ func loadSourceOrganizations(sourceID: UUID) async -> [SourceEntity<Organization
     } catch {
         print("Failed to fetch SourceOrganizations: \(error)")
     }
-    return sourceEntities
+    return sourceOrganizations
 }
 
 func loadSourcePlanets(sourceID: UUID) async -> [SourceEntity<Planet>] {
-    var sourceEntities = [SourceEntity<Planet>]()
+    var sourcePlanets = [SourceEntity<Planet>]()
     do {
-        sourceEntities = try await supabase
+        sourcePlanets = try await supabase
             .rpc("load_sourceplanets", params: ["source_id": sourceID])
             .execute()
             .value
@@ -67,13 +67,13 @@ func loadSourcePlanets(sourceID: UUID) async -> [SourceEntity<Planet>] {
     } catch {
         print("Failed to fetch SourcePlanets: \(error)")
     }
-    return sourceEntities
+    return sourcePlanets
 }
 
 func loadSourceSpecies(sourceID: UUID) async -> [SourceEntity<Species>] {
-    var sourceEntities = [SourceEntity<Species>]()
+    var sourceSpecies = [SourceEntity<Species>]()
     do {
-        sourceEntities = try await supabase
+        sourceSpecies = try await supabase
             .rpc("load_sourcespecies", params: ["source_id": sourceID])
             .execute()
             .value
@@ -81,13 +81,13 @@ func loadSourceSpecies(sourceID: UUID) async -> [SourceEntity<Species>] {
     } catch {
         print("Failed to fetch SourceSpecies: \(error)")
     }
-    return sourceEntities
+    return sourceSpecies
 }
 
 func loadSourceStarships(sourceID: UUID) async -> [SourceEntity<Starship>] {
-    var sourceEntities = [SourceEntity<Starship>]()
+    var sourceStarships = [SourceEntity<Starship>]()
     do {
-        sourceEntities = try await supabase
+        sourceStarships = try await supabase
             .rpc("load_sourcestarships", params: ["source_id": sourceID])
             .execute()
             .value
@@ -95,13 +95,13 @@ func loadSourceStarships(sourceID: UUID) async -> [SourceEntity<Starship>] {
     } catch {
         print("Failed to fetch SourceStarships: \(error)")
     }
-    return sourceEntities
+    return sourceStarships
 }
 
 func loadSourceStarshipModels(sourceID: UUID) async -> [SourceEntity<StarshipModel>] {
-    var sourceEntities = [SourceEntity<StarshipModel>]()
+    var sourceStarshipModels = [SourceEntity<StarshipModel>]()
     do {
-        sourceEntities = try await supabase
+        sourceStarshipModels = try await supabase
             .rpc("load_sourcestarshipmodels", params: ["source_id": sourceID])
             .execute()
             .value
@@ -109,13 +109,13 @@ func loadSourceStarshipModels(sourceID: UUID) async -> [SourceEntity<StarshipMod
     } catch {
         print("Failed to fetch SourceStarshipModels: \(error)")
     }
-    return sourceEntities
+    return sourceStarshipModels
 }
 
 func loadSourceVarias(sourceID: UUID) async -> [SourceEntity<Varia>] {
-    var sourceEntities = [SourceEntity<Varia>]()
+    var sourceVarias = [SourceEntity<Varia>]()
     do {
-        sourceEntities = try await supabase
+        sourceVarias = try await supabase
             .rpc("load_sourcevarias", params: ["source_id": sourceID])
             .execute()
             .value
@@ -123,15 +123,19 @@ func loadSourceVarias(sourceID: UUID) async -> [SourceEntity<Varia>] {
     } catch {
         print("Failed to fetch SourceVarias: \(error)")
     }
-    return sourceEntities
+    return sourceVarias
 }
 
-func loadSourceArtists(sourceID: UUID) async -> [SourceEntity<Artist>] {
-    var sourceEntities = [SourceEntity<Artist>]()
+func loadSourceArtists(sourceID: UUID) async -> [SourceCreator<Artist>] {
+    var sourceArtists = [SourceCreator<Artist>]()
     do {
-        sourceEntities = try await supabase
+        sourceArtists = try await supabase
             .from("source_artists")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), artist!inner(*)")
+            .select("""
+                    id,
+                    source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), 
+                    entity!inner(*)
+                    """)
             .eq("source", value: sourceID.uuidString)
             .execute()
             .value
@@ -139,15 +143,19 @@ func loadSourceArtists(sourceID: UUID) async -> [SourceEntity<Artist>] {
     } catch {
         print("Failed to fetch SourceArtists: \(error)")
     }
-    return sourceEntities
+    return sourceArtists
 }
 
-func loadSourceAuthors(sourceID: UUID) async -> [SourceEntity<Author>] {
-    var sourceEntities = [SourceEntity<Author>]()
+func loadSourceAuthors(sourceID: UUID) async -> [SourceCreator<Author>] {
+    var sourceAuthors = [SourceCreator<Author>]()
     do {
-        sourceEntities = try await supabase
+        sourceAuthors = try await supabase
             .from("source_authors")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), artist!inner(*)")
+            .select("""
+                    id, 
+                    source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), 
+                    entity!inner(*)
+                    """)
             .eq("source", value: sourceID.uuidString)
             .execute()
             .value
@@ -155,7 +163,7 @@ func loadSourceAuthors(sourceID: UUID) async -> [SourceEntity<Author>] {
     } catch {
         print("Failed to fetch SourceAuthors: \(error)")
     }
-    return sourceEntities
+    return sourceAuthors
 }
 
 func loadSourceFacts(entityField: String, sourceID: UUID) async -> [Fact] {

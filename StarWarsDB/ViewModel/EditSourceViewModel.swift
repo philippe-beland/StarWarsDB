@@ -11,8 +11,8 @@ struct SourceEntityCollection {
     var starships: [SourceEntity<Starship>] = []
     var starshipModels: [SourceEntity<StarshipModel>] = []
     var varias: [SourceEntity<Varia>] = []
-    var artists: [SourceEntity<Artist>] = []
-    var authors: [SourceEntity<Author>] = []
+    var artists: [SourceCreator<Artist>] = []
+    var authors: [SourceCreator<Author>] = []
 }
 
 @MainActor
@@ -31,8 +31,12 @@ class EditSourceViewModel: ObservableObject {
         case saveFailed
     }
     
-    private func createSourceEntity<T: Entity>(entity: T, appearance: AppearanceType) -> SourceEntity<T> {
+    private func createSourceEntity<T: TrackableEntity>(entity: T, appearance: AppearanceType) -> SourceEntity<T> {
         return SourceEntity<T>(source: source, entity: entity, appearance: appearance)
+    }
+    
+    private func createSourceCreator<T: CreatorEntity>(creator: T) -> SourceCreator<T> {
+        return SourceCreator<T>(source: source, creator: creator)
     }
         
     private func saveSourceEntity<T: Entity>(_ sourceEntity: SourceEntity<T>) throws {      
@@ -88,7 +92,7 @@ class EditSourceViewModel: ObservableObject {
         sourceEntity.save()
     }
 
-    func addSourceEntity<T: Entity>(entity: T, appearance: AppearanceType) {
+    func addSourceEntity<T: TrackableEntity>(entity: T, appearance: AppearanceType) {
         do {
             let newEntity = createSourceEntity(entity: entity, appearance: appearance)
             try saveSourceEntity(newEntity)
@@ -98,6 +102,17 @@ class EditSourceViewModel: ObservableObject {
             print("Failed to add SourceEntity: \(error.localizedDescription)")
         }
     }
+    
+//    func addSourceCreator<T: CreatorEntity>(creator: T) {
+//        do {
+//            let newCreator = createSourceCreator(creator: creator)
+//            try saveSourceEntity(newCreator)
+//        } catch SourceError.duplicateEntity {
+//            print("This sourceEntity is already in the source")
+//        } catch {
+//            print("Failed to add SourceEntity: \(error.localizedDescription)")
+//        }
+//    }
 
     func loadInitialSources() async {
         async let characters = loadSourceCharacters(sourceID: source.id)
@@ -111,6 +126,7 @@ class EditSourceViewModel: ObservableObject {
         async let varias = loadSourceVarias(sourceID: source.id)
         async let artists = loadSourceArtists(sourceID: source.id)
         async let authors = loadSourceAuthors(sourceID: source.id)
+        
 
         sourceEntities.characters = await characters
         sourceEntities.creatures = await creatures

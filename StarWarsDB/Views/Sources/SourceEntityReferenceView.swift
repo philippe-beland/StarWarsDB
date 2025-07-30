@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SourceEntityReferenceView<T: Entity>: View {
+struct SourceEntityReferenceView<T: TrackableEntity>: View {
     var url: URL?
     var sourceEntities: Binding<[SourceEntity<T>]>
     

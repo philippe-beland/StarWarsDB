@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntityEntryView<T: Entity>: View {
+struct EntityEntryView<T: TrackableEntity>: View {
     var sourceEntity: SourceEntity<T>
     
     var body: some View {

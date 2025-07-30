@@ -3,32 +3,36 @@ import SwiftUI
 struct ArtistsVStack: View {
     var source: Source?
     
-    @State var artists: [SourceEntity<Artist>] = []
+    @Binding var sourceArtists: [SourceCreator<Artist>]
     @State var showEditArtistSheet = false
+    
+    private var sortedArtists: [SourceCreator<Artist>] {
+        sourceArtists.sorted(by: { $0.creator.name < $1.creator.name })
+    }
     
     var body: some View {
         VStack {
             Button("Artists") { showEditArtistSheet.toggle() }
-            ForEach(artists) { artist in
-                Text(artist.entity.name)
+            ForEach(sortedArtists) { sourceArtist in
+                Text(sourceArtist.creator.name)
             }
         }
         .sheet(isPresented: $showEditArtistSheet) {
-            ExpandedSourceArtistsView(sourceArtists: $artists, source: source)
+            ExpandedSourceArtistsView(sourceArtists: $sourceArtists, source: source)
         }
     }
 }
 
 struct ExpandedSourceArtistsView: View {
-    @Binding var sourceArtists: [SourceEntity<Artist>]
+    @Binding var sourceArtists: [SourceCreator<Artist>]
     var source: Source?
     @State var showAddArtistSheet: Bool = false
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(sourceArtists) { sourceEntity in
-                    Text(sourceEntity.entity.name)
+                ForEach(sourceArtists) { sourceArtist in
+                    Text(sourceArtist.creator.name)
                 }
                 .onDelete(perform: deleteEntity)
             }
@@ -38,10 +42,10 @@ struct ExpandedSourceArtistsView: View {
                     showAddArtistSheet.toggle()
                 }
                 .sheet(isPresented: $showAddArtistSheet) {
-                    EntitySelectorView<Artist>(sourceEntities: []) { artists, _ in
+                    CreatorSelectorView<Artist>(sourceCreators: []) { artists in
                         if let source {
                             for artist in artists {
-                                let newArtist = SourceEntity<Artist>(source: source, entity: artist , appearance: .present)
+                                let newArtist = SourceCreator<Artist>(source: source, creator: artist)
                                 if !sourceArtists.contains(newArtist) {
                                     newArtist.save()
                                     sourceArtists.append(newArtist)

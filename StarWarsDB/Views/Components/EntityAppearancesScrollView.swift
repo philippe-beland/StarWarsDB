@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntityAppearancesScrollView<T: Entity>: View {
+struct EntityAppearancesScrollView<T: TrackableEntity>: View {
     @Binding var sourceEntities: [SourceEntity<T>]
     let layout = [GridItem(.adaptive(minimum: 225), spacing: 24)]
     

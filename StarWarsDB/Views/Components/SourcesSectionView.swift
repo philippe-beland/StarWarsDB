@@ -8,7 +8,7 @@ private let sourceDateFormatter: DateFormatter = {
 }()
 
 /// A section that displays a list of sources by era for a specific entity type.
-struct SourcesSectionView<T: Entity>: View {
+struct SourcesSectionView<T: TrackableEntity>: View {
     var sourceEntities: [SourceEntity<T>]
     
     private var firstCanon: SourceEntity<T>? {
@@ -31,7 +31,7 @@ struct SourcesSectionView<T: Entity>: View {
 }
 
 /// A view that displays a list of sources by era for a specific entity type.
-struct SourcesByEraView<T: Entity>: View {
+struct SourcesByEraView<T: TrackableEntity>: View {
     let era: Era
     let entities: [SourceEntity<T>]
     let firstCanon: SourceEntity<T>?
@@ -59,39 +59,29 @@ struct SourceNameView: View {
     let oldest: Bool
     
     var body: some View {
-        if name == "" {
-            HStack (spacing: 4) {
-                Text(serie?.name ?? "")
-                Text(number?.description ?? "")
-            }
-            .font(.headline)
-            .foregroundColor(oldest ? Color.red : Color.primary)
-            .frame(maxWidth: .infinity, alignment: .leading)
-        } else if serie == nil {
-            Text(name)
-                .font(.headline)
-                .foregroundColor(oldest ? Color.red : Color.primary)
-                .lineLimit(1) // Ensures text doesn't overflow
-                .frame(maxWidth: .infinity, alignment: .leading)
-        } else {
-            VStack (alignment: .leading, spacing: Constants.Spacing.xs) {
-                
+        VStack(alignment: .leading, spacing: Constants.Spacing.xs) {
+            if !name.isEmpty {
                 Text(name)
-                    .font(.headline)
-                    .foregroundColor(oldest ? Color.red : Color.primary)
-                    .lineLimit(1) // Ensures text doesn't overflow
-                HStack (spacing: Constants.Spacing.xs) {
-                    Text(serie?.name ?? "")
-                    Text(number?.description ?? "")
-                }
-                .foregroundColor(.secondary)
+                    .lineLimit(1)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
+            
+            if let serie = serie {
+                HStack (spacing: Constants.Spacing.xs) {
+                    Text(serie.name)
+                    if let number = number {
+                        Text(String(number))
+                    }
+                }
+                .foregroundColor(name.isEmpty ? (oldest ? .red : .primary) : .secondary)
+            }
         }
+        .font(.headline)
+        .foregroundColor(oldest && serie == nil ? .red : .primary)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
-struct SourceRow<T: Entity>: View {
+struct SourceRow<T: TrackableEntity>: View {
     let sourceEntity: SourceEntity<T>
     let oldest: Bool
     

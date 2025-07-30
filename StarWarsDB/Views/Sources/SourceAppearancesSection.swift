@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EntityAppearanceSection<T: Entity>: View {
+struct EntityAppearanceSection<T: TrackableEntity>: View {
     var sourceEntities: Binding<[SourceEntity<T>]>
     @Binding var activeSheet: ActiveSheet?
 
@@ -38,9 +38,7 @@ struct SourceAppearancesSection: View {
                     activeSheet: $activeSheet
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem {
-                    Label(Character.displayName, systemImage: Character.exampleImageName)
-                }
+                .tabItem { Text(Character.displayName) }
 
                 // Species
                 EntityAppearanceSection<Species>(
@@ -48,9 +46,7 @@ struct SourceAppearancesSection: View {
                     activeSheet: $activeSheet
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem {
-                    Label(Species.displayName, systemImage: Species.exampleImageName)
-                }
+                .tabItem { Text(Species.displayName) }
 
                 // Planets
                 EntityAppearanceSection<Planet>(
@@ -58,9 +54,7 @@ struct SourceAppearancesSection: View {
                     activeSheet: $activeSheet
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem {
-                    Label(Planet.displayName, systemImage: Planet.exampleImageName)
-                }
+                .tabItem { Text(Planet.displayName) }
 
                 // Organizations
                 EntityAppearanceSection<Organization>(
@@ -68,9 +62,7 @@ struct SourceAppearancesSection: View {
                     activeSheet: $activeSheet
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem {
-                    Label(Organization.displayName, systemImage: Organization.exampleImageName)
-                }
+                .tabItem { Text(Organization.displayName) }
 
                 // Starships
                 EntityAppearanceSection<Starship>(
@@ -78,9 +70,7 @@ struct SourceAppearancesSection: View {
                     activeSheet: $activeSheet
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem {
-                    Label(Starship.displayName, systemImage: Starship.exampleImageName)
-                }
+                .tabItem { Text(Starship.displayName) }
 
                 // Starship Models
                 EntityAppearanceSection<StarshipModel>(
@@ -88,9 +78,7 @@ struct SourceAppearancesSection: View {
                     activeSheet: $activeSheet
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem {
-                    Label(StarshipModel.displayName, systemImage: StarshipModel.exampleImageName)
-                }
+                .tabItem { Text(StarshipModel.displayName) }
 
                 // Creatures
                 EntityAppearanceSection<Creature>(
@@ -98,9 +86,7 @@ struct SourceAppearancesSection: View {
                     activeSheet: $activeSheet
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem {
-                    Label(Creature.displayName, systemImage: Creature.exampleImageName)
-                }
+                .tabItem { Text(Creature.displayName) }
                 
                 // Droids
                 EntityAppearanceSection<Droid>(
@@ -108,9 +94,7 @@ struct SourceAppearancesSection: View {
                     activeSheet: $activeSheet
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem {
-                    Label(Droid.displayName, systemImage: Droid.exampleImageName)
-                }
+                .tabItem { Text(Droid.displayName) }
                 
                 // Varia
                 EntityAppearanceSection<Varia>(
@@ -118,9 +102,7 @@ struct SourceAppearancesSection: View {
                     activeSheet: $activeSheet
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem {
-                    Label(Varia.displayName, systemImage: Varia.exampleImageName)
-                }
+                .tabItem { Text(Varia.displayName) }
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         }

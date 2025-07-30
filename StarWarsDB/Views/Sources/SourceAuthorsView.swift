@@ -2,33 +2,40 @@ import SwiftUI
 
 struct AuthorsVStack: View {
     var source: Source?
+    @Binding var sourceAuthors: [SourceCreator<Author>]
     
-    @State var authors: [SourceEntity<Author>] = []
     @State var showEditAuthorSheet = false
+    
+    private var sortedAuthors: [SourceCreator<Author>] {
+        sourceAuthors.sorted(by: { $0.creator.name < $1.creator.name })
+    }
     
     var body: some View {
         VStack {
             Button("Authors") { showEditAuthorSheet.toggle() }
-            ForEach(authors) { author in
-                Text(author.entity.name)
+            ForEach(sortedAuthors) { sourceAuthor in
+                Text(sourceAuthor.creator.name)
             }
         }
         .sheet(isPresented: $showEditAuthorSheet) {
-            ExpandedSourceAuthorsView(sourceAuthors: $authors, source: source)
+            ExpandedSourceAuthorsView(sourceAuthors: $sourceAuthors, source: source)
+        }
+        .task {
+            print(sourceAuthors)
         }
     }
 }
 
 struct ExpandedSourceAuthorsView: View {
-    @Binding var sourceAuthors: [SourceEntity<Author>]
+    @Binding var sourceAuthors: [SourceCreator<Author>]
     var source: Source?
     @State var showAddAuthorSheet: Bool = false
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(sourceAuthors) { sourceEntity in
-                    Text(sourceEntity.entity.name)
+                ForEach(sourceAuthors) { sourceAuthor in
+                    Text(sourceAuthor.creator.name)
                 }
                 .onDelete(perform: deleteEntity)
             }
@@ -38,10 +45,10 @@ struct ExpandedSourceAuthorsView: View {
                     showAddAuthorSheet.toggle()
                 }
                 .sheet(isPresented: $showAddAuthorSheet) {
-                    EntitySelectorView<Author>(sourceEntities: []) { authors, _ in
+                    CreatorSelectorView<Author>(sourceCreators: []) { authors in
                         if let source {
                             for author in authors {
-                                let newAuthor = SourceEntity<Author>(source: source, entity: author, appearance: .present)
+                                let newAuthor = SourceCreator<Author>(source: source, creator: author)
                                 if !sourceAuthors.contains(newAuthor) {
                                     newAuthor.save()
                                     sourceAuthors.append(newAuthor)

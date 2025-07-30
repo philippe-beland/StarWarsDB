@@ -1,7 +1,5 @@
 import SwiftUI
 
-
-
 // MARK: - ActiveSheet
 
 enum ActiveSheet: Identifiable {
@@ -30,16 +28,6 @@ struct SourceDetailView: View {
     
     init(source: Source) {
         _viewModel = StateObject(wrappedValue: EditSourceViewModel(source: source))
-    }
-    
-    // MARK: - Computed Properties
-    
-    private var sortedArtists: [SourceEntity<Artist>] {
-        viewModel.sourceEntities.artists.sorted(by: { $0.entity.name < $1.entity.name })
-    }
-    
-    private var sortedAuthors: [SourceEntity<Author>] {
-        viewModel.sourceEntities.authors.sorted(by: { $0.entity.name < $1.entity.name })
     }
     
     // MARK: - View Body
@@ -115,12 +103,12 @@ struct SourceDetailView: View {
                         
                         // Authors
                         InfoBlock(title: "Authors") {
-                            AuthorsVStack(source: viewModel.source, authors: sortedAuthors)
+                            AuthorsVStack(source: viewModel.source, sourceAuthors: $viewModel.sourceEntities.authors)
                         }
                         
                         // Authors
                         InfoBlock(title: "Artists") {
-                            ArtistsVStack(source: viewModel.source, artists: sortedArtists)
+                            ArtistsVStack(source: viewModel.source, sourceArtists: $viewModel.sourceEntities.artists)
                         }
                         
                         // Number of Pages

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SourceEntityExpandedView<T: Entity>: View {
+struct SourceEntityExpandedView<T: TrackableEntity>: View {
     @Binding var sourceEntities: [SourceEntity<T>]
     @State private var refreshID = UUID()
     
