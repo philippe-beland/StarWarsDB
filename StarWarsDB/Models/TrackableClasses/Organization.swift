@@ -19,7 +19,6 @@ final class Organization: TrackableEntity {
     var wookieepediaTitle: String = ""
     var nbApparitions: Int = 0
     
-    static let exampleImageName: String = "Alphabet_Squadron"
     static let displayName: String = "Organizations"
 
     let recordType: String = "Organization"

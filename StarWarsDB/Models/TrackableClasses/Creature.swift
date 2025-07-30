@@ -20,7 +20,6 @@ final class Creature: TrackableEntity {
     var wookieepediaTitle: String = ""
     var nbApparitions: Int = 0
     
-    static let exampleImageName: String = "Dianoga"
     static let displayName: String = "Creatures"
 
     let recordType: String = "Creature"

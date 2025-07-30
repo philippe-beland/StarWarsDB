@@ -47,7 +47,6 @@ final class Planet: TrackableEntity {
     var wookieepediaTitle: String = ""
     var nbApparitions: Int = 0
     
-    static let exampleImageName: String = "Tatooine"
     static let displayName: String = "Planets"
 
     var recordType: String { "Planet" }

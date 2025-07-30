@@ -21,7 +21,6 @@ final class Droid: TrackableEntity {
     var wookieepediaTitle: String = ""
     var nbApparitions: Int = 0
     
-    static let exampleImageName: String = "R2_astromech_droid"
     static let displayName: String = "Droids"
 
     let recordType: String = "Droid"

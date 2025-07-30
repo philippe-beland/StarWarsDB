@@ -24,7 +24,6 @@ final class StarshipModel: TrackableEntity {
     var wookieepediaTitle: String = ""
     var nbApparitions: Int = 0
     
-    static let exampleImageName: String = "YT-1300"
     static let displayName: String = "Starship Models"
 
     let recordType: String = "StarshipModel"

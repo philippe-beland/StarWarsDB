@@ -18,7 +18,6 @@ final class Starship: TrackableEntity {
     var wookieepediaTitle: String = ""
     var nbApparitions: Int = 0
     
-    static let exampleImageName: String = "Millenium_Falcon"
     static let displayName: String = "Starships"
 
     var recordType: String { "Starship" }

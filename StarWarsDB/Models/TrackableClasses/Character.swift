@@ -37,7 +37,6 @@ final class Character: TrackableEntity {
     var wookieepediaTitle: String = ""
     var nbApparitions: Int = 0
     
-    static let exampleImageName: String = "Luke_Skywalker"
     static let displayName: String = "Characters"
 
     var recordType: String { "Character" }

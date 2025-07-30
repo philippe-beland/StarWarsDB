@@ -22,7 +22,6 @@ final class Varia: TrackableEntity {
     var wookieepediaTitle: String = ""
     var nbApparitions: Int = 0
     
-    static let exampleImageName: String = "sparkles"
     static let displayName: String = "Varias"
     
     init(name: String, firstAppearance: String?, comments: String? = nil) {
