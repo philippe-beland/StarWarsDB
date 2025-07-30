@@ -26,7 +26,7 @@ struct SerieListBrowserView: View {
                     .padding(.horizontal)
                 
                 List(filteredSeries) { serie in
-                    NavigationLink(destination: SourceListBrowserView(selectedView: sourceType, serie: serie)) {
+                    NavigationLink(destination: SourceListBrowserView(selectedType: sourceType, serie: serie)) {
                         Text(serie.name)
                     }
                 }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SourceListBrowserView: View {
-    var selectedView: SourceType
+    var selectedType: SourceType?
     var serie: Serie? = nil
     
     @State private var sortOrder: SortingSourceOrder = .publicationDate
@@ -31,7 +31,7 @@ struct SourceListBrowserView: View {
             .toolbar { toolbarContent }
         }
         .onChange(of: searchContext.debouncedQuery) { handleSearchTextChange() }
-        .onChange(of: selectedView) { handleParameterChange() }
+        .onChange(of: selectedType) { handleParameterChange() }
         .onChange(of: sortOrder) { handleParameterChange() }
         .onChange(of: isDoneFilter) { handleParameterChange() }
         .task { await loadInitialSources() }
@@ -39,20 +39,20 @@ struct SourceListBrowserView: View {
     
     private func handleParameterChange() {
         Task {
-            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
+            sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedType, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
         }
     }
     
     private func handleSearchTextChange() {
         Task {
             if !searchContext.debouncedQuery.isEmpty && searchContext.debouncedQuery.count >= Constants.Search.minSearchLength {
-                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
+                sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedType, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
             }
         }
     }
     
     private func loadInitialSources() async {
-        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedView, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
+        sources = await loadSources(sort: sortOrder.rawValue, sourceType: selectedType, serie: serie, isDone: isDoneFilter, filter: searchContext.debouncedQuery)
     }
     
     private func deleteSource(_ source: Source) {
@@ -89,5 +89,5 @@ struct SourceListBrowserView: View {
 }
 
 #Preview {
-    SourceListBrowserView(selectedView: .movies)
+    SourceListBrowserView(selectedType: .movies)
 }

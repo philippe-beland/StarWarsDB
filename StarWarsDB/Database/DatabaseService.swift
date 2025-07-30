@@ -9,7 +9,7 @@ func loadEntities<T: BaseEntity>(serie: Serie? = nil, sort: SortingItemOrder, fi
     await T.loadAll(serie: serie, sort: sort.rawValue, filter: filter)
 }
 
-func loadSources(sort: String, sourceType: SourceType, serie: Serie?, isDone: Bool, filter: String = "") async -> [Source] {
+func loadSources(sort: String, sourceType: SourceType?, serie: Serie?, isDone: Bool, filter: String = "") async -> [Source] {
     var sources: [Source] = []
     
     do {
@@ -17,7 +17,7 @@ func loadSources(sort: String, sourceType: SourceType, serie: Serie?, isDone: Bo
             .from("sources")
             .select("id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments")
         
-        if sourceType != .all {
+        if let sourceType = sourceType {
             query = query.eq("source_type", value: sourceType.rawValue)
         }
         

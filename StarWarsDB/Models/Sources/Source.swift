@@ -57,19 +57,11 @@ enum Era: String, Decodable, CaseIterable {
 
 /// Types of Star Wars media content
 enum SourceType: String, Decodable, CaseIterable, Hashable {
-    /// All types of content
-    case all = "All"
-    /// Feature films
     case movies = "Movie"
-    /// Comic books and graphic novels
     case comics = "Comic Book"
-    /// Full-length novels
     case novels = "Novel"
-    /// Brief stories and novellas
     case shortStory = "Short Story"
-    /// Television series
     case tvShow = "TV Serie"
-    /// Interactive video games
     case videoGame = "Video Game"
 }
 
