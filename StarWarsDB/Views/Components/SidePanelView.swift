@@ -7,7 +7,7 @@ struct SidePanelView<Content: View>: View {
     
     var body: some View {
         Form {
-            ImageView(title: id.uuidString.lowercased())
+            CDNImageView(primaryID: id)
             InfosSection
             CommentsView(comments: $comments)
         }

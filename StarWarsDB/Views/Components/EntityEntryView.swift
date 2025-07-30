@@ -5,7 +5,10 @@ struct EntityEntryView<T: TrackableEntity>: View {
     
     var body: some View {
         HStack {
-            imageOrPlaceholder(for: sourceEntity.entity.id, size:50)
+            CDNImageView(primaryID: sourceEntity.entity.id)
+                .frame(width: 50, height: 50, alignment: .top)
+                .clipShape(RoundedRectangle(cornerRadius: Constants.CornerRadius.sm))
+                .shadow(radius: 5)
             
             Text(sourceEntity.entity.name)
                 .foregroundStyle(sourceEntity.number > 1 ? .primary :.secondary)

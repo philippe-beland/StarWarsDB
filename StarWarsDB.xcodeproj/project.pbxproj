@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0907EB2E3AC78D00C6362D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4C0907EA2E3AC78D00C6362D /* Kingfisher */; };
 		4C1262392D0BBB0700855120 /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1262382D0BBB0700855120 /* Scraper.swift */; };
 		4C1262412D0BBB5E00855120 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 4C1262402D0BBB5E00855120 /* SwiftSoup */; };
 		4C882E272D0BBF7B00A3C0EB /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4C882E262D0BBF7B00A3C0EB /* Supabase */; };
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0907EB2E3AC78D00C6362D /* Kingfisher in Frameworks */,
 				4C882E272D0BBF7B00A3C0EB /* Supabase in Frameworks */,
 				4C1262412D0BBB5E00855120 /* SwiftSoup in Frameworks */,
 			);
@@ -85,6 +87,7 @@
 			packageProductDependencies = (
 				4C1262402D0BBB5E00855120 /* SwiftSoup */,
 				4C882E262D0BBF7B00A3C0EB /* Supabase */,
+				4C0907EA2E3AC78D00C6362D /* Kingfisher */,
 			);
 			productName = StarWarsDB;
 			productReference = 4C63D31D2CFAA5210058A423 /* StarWarsDB.app */;
@@ -117,6 +120,7 @@
 			packageReferences = (
 				4C12623F2D0BBB5E00855120 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 				4C882E242D0BBF6600A3C0EB /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				4C0907E92E3AC78D00C6362D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4C63D31E2CFAA5210058A423 /* Products */;
@@ -351,6 +355,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4C0907E92E3AC78D00C6362D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
 		4C12623F2D0BBB5E00855120 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scinfu/SwiftSoup";
@@ -370,6 +382,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4C0907EA2E3AC78D00C6362D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C0907E92E3AC78D00C6362D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		4C1262402D0BBB5E00855120 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4C12623F2D0BBB5E00855120 /* XCRemoteSwiftPackageReference "SwiftSoup" */;

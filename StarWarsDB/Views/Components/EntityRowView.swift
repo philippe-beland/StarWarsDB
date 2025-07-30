@@ -5,7 +5,10 @@ struct EntityRowView<T: BaseEntity>: View {
     
     var body: some View {
         HStack {
-            imageOrPlaceholder(for: entity.id)
+            CDNImageView(primaryID: entity.id)
+                .frame(width: 50, height: 50, alignment: .top)
+                .clipShape(RoundedRectangle(cornerRadius: Constants.CornerRadius.sm))
+                .shadow(radius: 5)
             
             VStack(alignment: .leading) {
                     Text(entity.name)
@@ -50,35 +53,6 @@ struct EntityRowView<T: BaseEntity>: View {
             return creature.homeworld?.name
         } else {
             return nil
-        }
-    }
-}
-
-func imageOrPlaceholder(for id: UUID, size: CGFloat = Constants.Layout.entityImageSize) -> some View {
-    let baseURL = "https://pub-84c7e404f0cb414d8809fe98cb5dedff.r2.dev/"
-    let url = URL(string: "\(baseURL)\(id.uuidString.lowercased()).jpg")
-
-    return AsyncImage(url: url) { phase in
-        switch phase {
-        case .empty:
-            RoundedRectangle(cornerRadius: Constants.CornerRadius.sm)
-                .fill(Color.gray.opacity(0.3))
-                .frame(width: size, height: size, alignment: .top)
-        case .success(let image):
-            image
-                .resizable()
-                .scaledToFill()
-                .frame(width: size, height: size, alignment: .top)
-                .clipShape(RoundedRectangle(cornerRadius: Constants.CornerRadius.sm))
-                .shadow(radius: 5)
-        case .failure:
-            Image(systemName: "person.crop.circle.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width: size, height: size)
-                .foregroundStyle(.secondary)
-        @unknown default:
-            EmptyView()
         }
     }
 }

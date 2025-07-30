@@ -111,9 +111,7 @@ struct SourceRow<T: TrackableEntity>: View {
             UniverseYear(year: sourceEntity.source.universeYear)
                 .frame(width: Constants.Layout.yearViewWidth, alignment: .leading)
             
-            Image(sourceEntity.source.id.uuidString.lowercased())
-                .resizable()
-                .scaledToFill()
+            CDNImageView(primaryID: sourceEntity.source.id)
                 .frame(width: 30, height: 30)
             
             SourceNameView(
