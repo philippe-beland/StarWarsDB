@@ -115,11 +115,6 @@ struct SourceDetailView: View {
                         InfoBlock(title: "Number of pages") {
                             TextField("Nb of pages", value: $viewModel.source.numberPages, format: .number)
                         }
-                        
-                        // URL
-                        InfoBlock(title: "URL") {
-                            TextField("URL", text: $viewModel.source.wookieepediaTitle)
-                        }
                     }
                 }
                 
