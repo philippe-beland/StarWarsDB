@@ -53,7 +53,7 @@ StarWarsDB is a Swift-based iOS/macOS application with a Python backend componen
 - Arcs
 - Sources (books, comics, films, etc.)
 - Artists/Authors
-- Varia (miscellaneous items)
+- Miscellaneous (miscellaneous items)
 
 ## Getting Started
 

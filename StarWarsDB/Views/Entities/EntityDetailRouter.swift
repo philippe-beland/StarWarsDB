@@ -21,8 +21,8 @@ struct EntityDetailRouter<T: Entity>: View {
             StarshipModelDetailView(starshipModel: starshipModel)
         } else if let starship = entity as? Starship {
             StarshipDetailView(starship: starship)
-        } else if let varia = entity as? Varia {
-            VariaDetailView(varia: varia)
+        } else if let misc = entity as? Misc {
+            MiscDetailView(misc: misc)
         } else {
             // Fallback for unsupported types
             Text("Unsupported entity type: \(type(of: entity))")

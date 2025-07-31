@@ -195,12 +195,12 @@ func loadStarshipModelSources(starshipModelID: UUID) async
     return sourceEntities
 }
 
-func loadVariaSources(variaID: UUID) async -> [SourceEntity<Varia>] {
-    var sourceEntities = [SourceEntity<Varia>]()
+func loadMiscSources(miscID: UUID) async -> [SourceEntity<Misc>] {
+    var sourceEntities = [SourceEntity<Misc>]()
     do {
         sourceEntities =
             try await supabase
-            .from("source_varias")
+            .from("source_misc")
             .select(
                 """
                 id, 
@@ -209,12 +209,12 @@ func loadVariaSources(variaID: UUID) async -> [SourceEntity<Varia>] {
                 appearance
                 """
             )
-            .eq("entity", value: variaID.uuidString)
+            .eq("entity", value: miscID.uuidString)
             .execute()
             .value
-        databaseLogger.info("SourceVarias successfully loaded")
+        databaseLogger.info("SourceMisc successfully loaded")
     } catch {
-        databaseLogger.error("Failed to fetch SourceVarias: \(error)")
+        databaseLogger.error("Failed to fetch SourceMisc: \(error)")
     }
     return sourceEntities
 }

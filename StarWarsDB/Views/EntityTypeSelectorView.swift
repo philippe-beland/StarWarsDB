@@ -82,11 +82,11 @@ struct EntityTypeSelectorView: View {
                         }
                     }
 
-                    // Varias
-                    NavigationLink(destination: EntityListBrowserView<Varia>()) {
+                    // Miscellaneous
+                    NavigationLink(destination: EntityListBrowserView<Misc>()) {
                         HStack {
-                            EntityTypeSelectorImageView(imageName: Varia.displayName)
-                            Text(Varia.displayName)
+                            EntityTypeSelectorImageView(imageName: Misc.displayName)
+                            Text(Misc.displayName)
                         }
                     }
                 }

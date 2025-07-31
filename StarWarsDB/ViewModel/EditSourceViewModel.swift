@@ -11,7 +11,7 @@ final class EditSourceViewModel {
     var species: [SourceEntity<Species>] = []
     var starships: [SourceEntity<Starship>] = []
     var starshipModels: [SourceEntity<StarshipModel>] = []
-    var varias: [SourceEntity<Varia>] = []
+    var misc: [SourceEntity<Misc>] = []
     var artists: [SourceCreator<Artist>] = []
     var authors: [SourceCreator<Author>] = []
     var activeSheet: ActiveSheet?
@@ -76,11 +76,11 @@ final class EditSourceViewModel {
                 throw SourceError.duplicateEntity
             }
             starshipModels.append(starshipModelEntity)
-        } else if let variaEntity = sourceEntity as? SourceEntity<Varia> {
-            if varias.contains(where: { $0.entity.id == variaEntity.entity.id }) {
+        } else if let miscEntity = sourceEntity as? SourceEntity<Misc> {
+            if misc.contains(where: { $0.entity.id == miscEntity.entity.id }) {
                 throw SourceError.duplicateEntity
             }
-            varias.append(variaEntity)
+            misc.append(miscEntity)
         } else {
             fatalError("Unsupported entity type")
         }
@@ -119,7 +119,7 @@ final class EditSourceViewModel {
         async let _species = loadSourceSpecies(sourceID: source.id)
         async let _starships = loadSourceStarships(sourceID: source.id)
         async let _starshipModels = loadSourceStarshipModels(sourceID: source.id)
-        async let _varias = loadSourceVarias(sourceID: source.id)
+        async let _misc = loadSourceMisc(sourceID: source.id)
         async let _artists = loadSourceArtists(sourceID: source.id)
         async let _authors = loadSourceAuthors(sourceID: source.id)
         
@@ -132,7 +132,7 @@ final class EditSourceViewModel {
         species = await _species
         starships = await _starships
         starshipModels = await _starshipModels
-        varias = await _varias
+        misc = await _misc
         artists = await _artists
         authors = await _authors
     }
@@ -155,8 +155,8 @@ final class EditSourceViewModel {
             addSourceEntity(entity: starship, appearance: appearance)
         } else if let starshipModel = entity as? StarshipModel {
             addSourceEntity(entity: starshipModel, appearance: appearance)
-        } else if let varia = entity as? Varia {
-            addSourceEntity(entity: varia, appearance: appearance)
+        } else if let misc = entity as? Misc {
+            addSourceEntity(entity: misc, appearance: appearance)
         }
     }
 }
