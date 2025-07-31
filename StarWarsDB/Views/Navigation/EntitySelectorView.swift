@@ -17,13 +17,13 @@ struct EntityPickerList<T: BaseEntity>: View {
 
     // MARK: - Computed
     private var filteredEntities: [T] {
-        let filtered = availableEntities.filter { !excludedEntityIDs.contains($0.id) }
-        
         if searchContext.query.count < 3 {
-            return filtered
+            // Return only non-present entities, with no search criterias
+            return availableEntities.filter { !excludedEntityIDs.contains($0.id) }
         }
         else {
-            return filtered.map {entity in
+            // Return all entities from the search, but mark the already present
+            return availableEntities.map {entity in
                 var updated = entity
                 if excludedEntityIDs.contains(entity.id) {
                     updated.alreadyInSource = true
