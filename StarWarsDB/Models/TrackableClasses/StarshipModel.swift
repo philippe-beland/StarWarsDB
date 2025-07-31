@@ -11,6 +11,7 @@ final class StarshipModel: TrackableEntity {
     var name: String
     var comments: String?
     var firstAppearance: String
+    var description: String = ""
     /// The vessel's classification (e.g., "Starfighter", "Capital Ship", "Freighter")
     var classType: String  ///TODO: Change to StarshipType
     

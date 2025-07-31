@@ -35,6 +35,7 @@ struct PlanetDetailView: View {
                         get: { planet.comments ?? "" },
                         set: { planet.comments = $0 }
                     ),
+                    description: planet.description,
                     InfosSection: PlanetInfoSection(planet: planet)
                 ),
                 sourceEntities: sourcePlanets)

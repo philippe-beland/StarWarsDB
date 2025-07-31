@@ -34,6 +34,7 @@ struct StarshipDetailView: View {
                         get: { starship.comments ?? "" },
                         set: { starship.comments = $0 }
                     ),
+                    description: starship.description,
                     InfosSection: StarshipInfoSection(starship: starship)
                 ),
                 sourceEntities: sourceStarships)

@@ -12,6 +12,7 @@ import Foundation
 final class Organization: TrackableEntity {
     let id: UUID
     var name: String
+    var description: String = ""
     var comments: String?
     var firstAppearance: String
     

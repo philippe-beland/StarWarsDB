@@ -11,6 +11,7 @@ enum Gender: String, Codable, CaseIterable {
 final class Character: TrackableEntity {
     let id: UUID
     var name: String
+    var description: String = ""
     var comments: String?
     var firstAppearance: String
     var aliases: [String]

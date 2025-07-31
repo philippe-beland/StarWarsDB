@@ -33,6 +33,7 @@ enum Region: String, Codable, CaseIterable {
 final class Planet: TrackableEntity {
     let id: UUID
     var name: String
+    var description: String = ""
     var comments: String?
     var firstAppearance: String
     var region: Region

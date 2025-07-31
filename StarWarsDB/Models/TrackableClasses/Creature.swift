@@ -7,6 +7,7 @@ import Foundation
 final class Creature: TrackableEntity {
     let id: UUID
     var name: String
+    var description: String = ""
     var comments: String?
     var firstAppearance: String
     

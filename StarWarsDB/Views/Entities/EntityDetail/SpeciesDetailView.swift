@@ -34,6 +34,7 @@ struct SpeciesDetailView: View {
                         get: { species.comments ?? "" },
                         set: { species.comments = $0 }
                     ),
+                    description: species.description,
                     InfosSection: SpeciesInfoSection(species: species)
                 ),
                 sourceEntities: sourceSpecies)

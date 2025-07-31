@@ -29,6 +29,7 @@ struct DroidDetailView: View {
                         get: { droid.comments ?? "" },
                         set: { droid.comments = $0 }
                     ),
+                    description: droid.description,
                     InfosSection: DroidInfoSection(droid: droid)
                 ),
                 sourceEntities: sourceDroids)

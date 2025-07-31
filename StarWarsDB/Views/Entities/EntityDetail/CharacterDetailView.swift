@@ -43,6 +43,7 @@ struct CharacterDetailView: View {
                         get: { character.comments ?? "" },
                         set: { character.comments = $0 }
                     ),
+                    description: character.description,
                     InfosSection: CharacterInfoSection(character: character)
                 ),
                 sourceEntities: sourceCharacters)

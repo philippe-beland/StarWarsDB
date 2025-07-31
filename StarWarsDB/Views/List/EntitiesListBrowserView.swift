@@ -3,7 +3,7 @@ import SwiftUI
 /// View that shows a list of entities of a specific type.
 /// Users can search and delete entities.
 /// The list updates automatically when searching or changing sort order.
-struct EntityListBrowserView<T:Entity>: View {
+struct EntityListBrowserView<T: TrackableEntity>: View {
     @StateObject var searchContext = SearchContext()
     @State private var showNewEntitySheet: Bool = false
     @State private var entities = [T]()

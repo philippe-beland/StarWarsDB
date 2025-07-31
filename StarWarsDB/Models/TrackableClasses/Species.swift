@@ -7,6 +7,7 @@ final class Species: TrackableEntity {
     var name: String
     var comments: String?
     var firstAppearance: String
+    var description: String = ""
     var homeworld: Planet?
 
     var alreadyInSource: Bool = false

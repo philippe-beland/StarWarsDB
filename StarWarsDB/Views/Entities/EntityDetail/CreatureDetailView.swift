@@ -34,6 +34,7 @@ struct CreatureDetailView: View {
                         get: { creature.comments ?? "" },
                         set: { creature.comments = $0 }
                     ),
+                    description: creature.description,
                     InfosSection: CreatureInfoSection(creature: creature)
                 ),
                 sourceEntities: sourceCreatures)

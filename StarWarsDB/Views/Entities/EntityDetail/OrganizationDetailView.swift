@@ -29,6 +29,7 @@ struct OrganizationDetailView: View {
                         get: { organization.comments ?? "" },
                         set: { organization.comments = $0 }
                     ),
+                    description: organization.description,
                     InfosSection: OrganizationInfoSection(organization: organization)
                 ),
                 sourceEntities: sourceOrganizations)

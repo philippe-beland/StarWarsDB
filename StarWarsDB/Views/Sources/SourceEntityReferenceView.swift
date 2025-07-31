@@ -42,7 +42,7 @@ struct SourceEntityReferenceView<T: TrackableEntity>: View {
     
     private func fetch_list() async {
         do {
-            listEntities = try await fetchInfo(entityType: T.self, for: url)
+            listEntities = try await fetchMissingEntities(entityType: T.self, for: url)
             processedEntities = processWikiEntities(listEntities)
         }
         catch {

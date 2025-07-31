@@ -29,6 +29,7 @@ struct MiscDetailView: View {
                         get: { misc.comments ?? "" },
                         set: { misc.comments = $0 }
                     ),
+                    description: misc.description,
                     InfosSection: MiscInfoSection(misc: misc)
                 ),
                 sourceEntities: sourceMisc)

@@ -55,6 +55,7 @@ struct EntityDetailContentView<T: TrackableEntity, Header: View, SidePanel: View
                 get: { character.comments ?? "" },
                 set: { character.comments = $0 }
             ),
+            description: "This is a fake description",
             InfosSection: CharacterInfoSection(character: character)
         ),
         sourceEntities: sourceCharacters)

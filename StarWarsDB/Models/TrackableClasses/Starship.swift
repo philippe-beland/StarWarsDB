@@ -12,6 +12,7 @@ final class Starship: TrackableEntity {
     var name: String
     var comments: String?
     var firstAppearance: String
+    var description: String = ""
     var model: StarshipModel?
 
     var alreadyInSource: Bool = false
