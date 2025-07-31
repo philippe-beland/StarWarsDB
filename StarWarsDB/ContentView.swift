@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  StarWarsDB
-//
-//  Created by Philippe Beland on 2024-11-29.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -12,19 +5,19 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            ChooseSourceView()
+            SourceBrowserView()
                 .tabItem {
-                    Label("Sources", systemImage: "star")
+                    Label("Sources", systemImage: "play.square.stack")
                 }
-            ChooseRecordView()
+            EntityTypeSelectorView()
                 .tabItem {
-                    Label("Records", systemImage: "star")
+                    Label("Entities", systemImage: "list.bullet.clipboard.fill")
                 }
             Group {
                 if isAuthenticated {
-                    ProfileView()
+                    UserProfileView()
                 } else {
-                    AuthView()
+                    AuthenticationView()
                 }
             }
             .tabItem{
