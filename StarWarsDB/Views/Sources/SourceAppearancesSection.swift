@@ -101,7 +101,6 @@ struct SourceAppearancesSection: View {
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Varia.displayName) }
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         }
         .sheet(item: $viewModel.activeSheet) { sheet in
             switch sheet {

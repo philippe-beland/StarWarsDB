@@ -59,8 +59,8 @@ final class Starship: TrackableEntity {
         
         try container.encode(id, forKey: .id)
         try container.encode(name, forKey: .name)
-        if model != nil && model != .example {
-            try container.encode(model?.id, forKey: .model)
+        if let model = model, ![.example, .empty].contains(model) {
+            try container.encode(model.id, forKey: .model)
         }
         try container.encode(firstAppearance, forKey: .firstAppearance)
         try container.encode(comments, forKey: .comments)

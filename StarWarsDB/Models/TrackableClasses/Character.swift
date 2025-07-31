@@ -100,11 +100,11 @@ final class Character: TrackableEntity {
         try container.encode(id, forKey: .id)
         try container.encode(name, forKey: .name)
         try container.encode(aliases, forKey: .aliases)
-        if species != nil && species != .example {
-            try container.encode(species?.id, forKey: .species)
+        if let species = species, ![.example, .empty].contains(species) {
+            try container.encode(species.id, forKey: .species)
         }
-        if homeworld != nil && homeworld != .example {
-            try container.encode(homeworld?.id, forKey: .homeworld)
+        if let homeworld = homeworld, ![.example, .empty].contains(homeworld) {
+            try container.encode(homeworld.id, forKey: .homeworld)
         }
         try container.encode(gender, forKey: .gender)
         //try container.encode(affiliations, forKey: .affiliations)

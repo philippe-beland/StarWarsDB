@@ -53,8 +53,8 @@ final class Species: TrackableEntity {
         
         try container.encode(id, forKey: .id)
         try container.encode(name, forKey: .name)
-        if homeworld != nil && homeworld != .example {
-            try container.encode(homeworld?.id, forKey: .homeworld)
+        if let homeworld = homeworld, ![.example, .empty].contains(homeworld) {
+            try container.encode(homeworld.id, forKey: .homeworld)
         }
         try container.encode(firstAppearance, forKey: .firstAppearance)
         try container.encode(comments, forKey: .comments)
