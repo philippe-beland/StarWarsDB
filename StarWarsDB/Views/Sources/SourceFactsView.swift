@@ -36,15 +36,8 @@ class SourceFactsViewModel: ObservableObject {
     }
     
     func updateFact(_ fact: Fact) {
-        // Cancel previous save task
-        saveTask?.cancel()
-        
-        // Debounce the save operation
-        saveTask = Task {
-            try? await Task.sleep(nanoseconds: 500_000_000) // 0.5 seconds
-            if !Task.isCancelled {
-                await fact.update()
-            }
+        Task {
+            await fact.update()
         }
     }
 }
@@ -97,6 +90,7 @@ struct SourceFactsView: View {
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .padding()
+                    
                 } else if viewModel.facts.isEmpty {
                     VStack(spacing: 16) {
                         Image(systemName: "note.text")
@@ -149,7 +143,7 @@ struct SourceFactsView: View {
                 FactRowView(
                     fact: $fact,
                     focusedFactID: _focusedFactID,
-                    onUpdate: { viewModel.updateFact(fact) }
+                    onSave: { viewModel.updateFact(fact) }
                 )
                 .listRowSeparator(.hidden)
                 .listRowBackground(Color.clear)
@@ -168,7 +162,7 @@ struct SourceFactsView: View {
 struct FactRowView: View {
     @Binding var fact: Fact
     @FocusState var focusedFactID: UUID?
-    let onUpdate: () -> Void
+    let onSave: () -> Void
     
     private var calculatedHeight: CGFloat {
         let lineHeight: CGFloat = 20 // Approximate line height
@@ -179,14 +173,9 @@ struct FactRowView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        HStack {
             TextEditor(text: $fact.fact)
                 .focused($focusedFactID, equals: fact.id)
-                .onChange(of: focusedFactID) { _, newFocus in
-                    if newFocus != fact.id {
-                        onUpdate()
-                    }
-                }
                 .frame(height: calculatedHeight)
                 .padding(12)
                 .background(
@@ -202,6 +191,13 @@ struct FactRowView: View {
                     RoundedRectangle(cornerRadius: 12)
                         .stroke(focusedFactID == fact.id ? Color.blue : Color.clear, lineWidth: 2)
                 )
+            
+            Spacer()
+            Button(action: onSave) {
+                Label("Save", systemImage: "checkmark.circle.fill")
+                    .labelStyle(.iconOnly)
+            }
+            .buttonStyle(.borderless)
         }
         .padding(.vertical, 4)
     }
