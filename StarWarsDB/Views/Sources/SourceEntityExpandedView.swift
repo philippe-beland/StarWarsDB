@@ -10,7 +10,7 @@ struct SourceEntityExpandedView<T: TrackableEntity>: View {
                     EntityExpandedRow(sourceEntity: sourceEntity)
                 }
                 .onDelete { indexSet in
-                    let toDelete = indexSet.map { sortedEntities[$0] }  // Store entities, not just IDs
+                    let toDelete = indexSet.map { sortedEntities[$0] }
                     toDelete.forEach { entity in
                         entity.delete()
                     }
