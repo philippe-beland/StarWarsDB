@@ -39,23 +39,23 @@ struct EntityDetailContentView<T: TrackableEntity, Header: View, SidePanel: View
     }
 }
 
-//#Preview {
-//    @Previewable @State var character = Character.example
-//    let sourceEntity: SourceEntity<Character> = SourceEntity(source: .example, entity: Character.example, appearance: .present)
-//    var sourceCharacters = sourceEntity.examples
-//    
-//    EntityDetailContentView(
-//        headerSection: SectionHeaderView(
-//            name: $character.name,
-//            url: character.url
-//        ),
-//        sidePanel: SidePanelView(
-//            id: character.id,
-//            comments: Binding(
-//                get: { character.comments ?? "" },
-//                set: { character.comments = $0 }
-//            ),
-//            InfosSection: CharacterInfoSection(character: character)
-//        ),
-//        sourceEntities: sourceCharacters)
-//}
+#Preview {
+    @Previewable @State var character = Character.example
+    let sourceEntity: SourceEntity<Character> = SourceEntity(source: .example, entity: Character.example, appearance: .present)
+    let sourceCharacters = [sourceEntity]
+    
+    EntityDetailContentView(
+        headerSection: SectionHeaderView(
+            name: $character.name,
+            url: character.url
+        ),
+        sidePanel: SidePanelView(
+            id: character.id,
+            comments: Binding(
+                get: { character.comments ?? "" },
+                set: { character.comments = $0 }
+            ),
+            InfosSection: CharacterInfoSection(character: character)
+        ),
+        sourceEntities: sourceCharacters)
+}

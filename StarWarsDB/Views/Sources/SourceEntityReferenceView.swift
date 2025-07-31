@@ -51,8 +51,7 @@ struct SourceEntityReferenceView<T: TrackableEntity>: View {
     }
 }
 
-//#Preview {
-//    @Previewable var sourceEntities = SourceEntity<Planet>(source: .example, entity: .example, appearance: .present)
-//    @Previewable @State var examples: [SourceEntity<Planet>] = sourceEntities.examples
-//    SourceEntityReferenceView<Planet>(sourceEntities: $examples)
-//}
+#Preview {
+    @Previewable var sourceEntities = [SourceEntity<Planet>(source: .example, entity: .example, appearance: .present)]
+    SourceEntityReferenceView<Planet>(sourceEntities: sourceEntities)
+}

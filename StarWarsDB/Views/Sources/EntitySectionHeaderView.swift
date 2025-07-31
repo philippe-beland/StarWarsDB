@@ -34,10 +34,9 @@ struct EntitySectionHeaderView<T: TrackableEntity>: View {
     }
 }
 
-//#Preview {
-//    @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
-//    @Previewable var sourceEntities = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
-//    @Previewable @State var examples: [SourceEntity<Character>] = sourceEntities.examples
-//    
-//    EntitySectionHeaderView<Character>(title: "Characters", activeSheet: $activeSheet, sourceEntities: $examples)
-//}
+#Preview {
+    @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
+    @Previewable @State var sourceEntities = [SourceEntity<Character>(source: .example, entity: .example, appearance: .present)]
+    
+    EntitySectionHeaderView<Character>(title: "Characters", activeSheet: $activeSheet, sourceEntities: sourceEntities)
+}

@@ -19,7 +19,7 @@ struct EntityEntryView<T: TrackableEntity>: View {
     }
 }
 
-//#Preview {
-//    let sourceEntity: SourceEntity<Droid> = SourceEntity(source: .example, entity: Droid.example, appearance: .present)
-//    EntityEntryView<Droid>(sourceEntity: sourceEntity.example)
-//}
+#Preview {
+    let sourceEntity: SourceEntity<Droid> = SourceEntity(source: .example, entity: Droid.example, appearance: .present)
+    EntityEntryView<Droid>(sourceEntity: sourceEntity)
+}

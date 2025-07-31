@@ -150,8 +150,8 @@ struct UniverseYear: View {
     }
 }
 
-//#Preview {
-//    var sourceCharacters = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
-//    var examples = sourceCharacters.examples
-//    SourcesSectionView<Character>(sourceEntities: examples)
-//}
+#Preview {
+    let sourceCharacters = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
+    let examples = [sourceCharacters, sourceCharacters]
+    SourcesSectionView<Character>(sourceEntities: examples)
+}

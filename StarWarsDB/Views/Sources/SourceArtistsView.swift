@@ -69,8 +69,7 @@ struct ExpandedSourceArtistsView: View {
     }
 }
 
-//#Preview {
-//    @Previewable var sourceArtists = SourceEntity<Artist>(source: .example, entity: .example, appearance: .present)
-//    @Previewable @State var examples = sourceArtists.examples
-//    ExpandedSourceArtistsView(sourceArtists: $examples)
-//}
+#Preview {
+    @Previewable @State var sourceArtists = [SourceCreator<Artist>(source: .example, creator: .example)]
+    ExpandedSourceArtistsView(sourceArtists: $sourceArtists)
+}

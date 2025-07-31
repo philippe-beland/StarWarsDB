@@ -47,8 +47,7 @@ struct EntityExpandedRow<T: TrackableEntity>: View {
     }
 }
 
-//#Preview {
-//    @Previewable var sourceEntities = SourceEntity<Species>(source: .example, entity: Species.example, appearance: .present)
-//    @Previewable @State var examples: [SourceEntity<Species>] = sourceEntities.examples
-//    SourceEntityExpandedView<Species>(sourceEntities: $examples)
-//}
+#Preview {
+    @Previewable @State var sourceEntities = [SourceEntity<Species>(source: .example, entity: Species.example, appearance: .present)]
+    SourceEntityExpandedView<Species>(sourceEntities: $sourceEntities)
+}

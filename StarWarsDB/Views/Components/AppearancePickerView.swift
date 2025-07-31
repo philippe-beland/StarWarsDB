@@ -26,9 +26,3 @@ struct AppearancePickerView: View {
     @Previewable @State var appearance: AppearanceType = .present
     AppearancePickerView(appearance: $appearance)
 }
-
-
-
-
-
-

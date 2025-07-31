@@ -175,9 +175,4 @@ struct EditableLinkedCreator<T: CreatorEntity, Label: View>: View {
     
     EditableTextField(fieldName: fieldName, info: $info)
     MultiFieldView<Character>(fieldName: fieldName)
-
-//    EditableLinkedEntityField<Planet>(
-//        entity: Planet.empty,
-//    )
-
 }

@@ -151,7 +151,8 @@ private struct InfoBlock<Content: View>: View {
     }
 }
 
-//// MARK: - Preview
-//#Preview {
-//    SourceDetailView(source: .example)
-//}
+// MARK: - Preview
+#Preview {
+    @Previewable @State var viewModel = EditSourceViewModel(source: .example)
+    SourceDetailView(viewModel: viewModel)
+}

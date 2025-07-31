@@ -229,7 +229,7 @@ struct CreatorSelectorView<T: CreatorEntity>: View {
 }
 
 // MARK: - Preview
-//#Preview {
-//    let sourceEntities: SourceEntity<Character> = SourceEntity(source: .example, entity: Character.example, appearance: .present)
-//    EntitySelectorView<Character>(isSourceEntity: false, sourceEntities: sourceEntities.examples, onEntitySelect: { _, _ in })
-//}
+#Preview {
+    let sourceEntities: [SourceEntity<Character>] = [SourceEntity(source: .example, entity: Character.example, appearance: .present)]
+    EntitySelectorView<Character>(sourceEntities: sourceEntities, onSelect: { _, _ in })
+}

@@ -69,8 +69,7 @@ struct ExpandedSourceAuthorsView: View {
     }
 }
 
-//#Preview {
-//    @Previewable var sourceAuthors = SourceEntity<Author>(source: .example, entity: .example, appearance: .present)
-//    @Previewable @State var examples = sourceAuthors.examples
-//    ExpandedSourceAuthorsView(sourceAuthors: $examples)
-//}
+#Preview {
+    @Previewable @State var sourceAuthors = [SourceCreator<Author>(source: .example, creator: .example)]
+    ExpandedSourceAuthorsView(sourceAuthors: $sourceAuthors)
+}

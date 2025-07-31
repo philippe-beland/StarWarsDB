@@ -249,8 +249,7 @@ struct SourceAppearancesSection: View {
     }
 }
 
-//#Preview {
-//    @Previewable @State var sourceEntities: SourceEntityCollection = .init()
-//    @Previewable @State var activeSheet: ActiveSheet? = EditSourceViewModel(source: .example).activeSheet
-//    SourceAppearancesSection(sourceEntities: $sourceEntities, activeSheet: $activeSheet, onAddEntity: { _, _ in })
-//}
+#Preview {
+    @Previewable @State var viewModel = EditSourceViewModel(source: .example)
+    SourceAppearancesSection(viewModel: viewModel, onAddEntity: { _, _ in })
+}

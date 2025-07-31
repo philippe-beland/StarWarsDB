@@ -23,8 +23,8 @@ struct EntityAppearancesScrollView<T: TrackableEntity>: View {
     }
 }
 
-//#Preview {
-//    @Previewable var sourceEntities = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
-//    @Previewable @State var examples: [SourceEntity<Character>] = sourceEntities.examples
-//    EntityAppearancesScrollView<Character>(sourceEntities: $examples)
-//}
+#Preview {
+    let sourceEntities = SourceEntity<Character>(source: .example, entity: .example, appearance: .present)
+    let examples: [SourceEntity<Character>] = [sourceEntities]
+    EntityAppearancesScrollView<Character>(sourceEntities: examples)
+}
