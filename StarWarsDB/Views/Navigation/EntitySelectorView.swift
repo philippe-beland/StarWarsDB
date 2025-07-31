@@ -122,8 +122,8 @@ struct EntityPickerList<T: BaseEntity>: View {
             AddStarshipView(name: searchContext.debouncedQuery) { entity in
                 availableEntities.append(entity as! T)
             }
-        case is Varia.Type:
-            AddVariaView(name: searchContext.debouncedQuery) { entity in
+        case is Misc.Type:
+            AddMiscView(name: searchContext.debouncedQuery) { entity in
                 availableEntities.append(entity as! T)
             }
         case is Serie.Type:

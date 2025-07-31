@@ -34,8 +34,8 @@ struct AddViewFactory {
             return AnyView(AddStarshipModelView(onAdd: onAdd as! (StarshipModel) -> Void))
         case is Starship.Type:
             return AnyView(AddStarshipView(onAdd: onAdd as! (Starship) -> Void))
-        case is Varia.Type:
-            return AnyView(AddVariaView(onAdd: onAdd as! (Varia) -> Void))
+        case is Misc.Type:
+            return AnyView(AddMiscView(onAdd: onAdd as! (Misc) -> Void))
         case is Arc.Type:
             return AnyView(AddArcView(onAdd: onAdd as! (Arc) -> Void))
         case is Serie.Type:

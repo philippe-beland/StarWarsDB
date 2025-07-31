@@ -174,25 +174,25 @@ func loadStarshipModels(serie: Serie? = nil, filter: String = "")
     return starshipModels
 }
 
-func loadVarias(serie: Serie? = nil, filter: String = "") async
-    -> [Varia]
+func loadMisc(serie: Serie? = nil, filter: String = "") async
+    -> [Misc]
 {
-    var varias: [Varia] = []
+    var misc: [Misc] = []
 
     do {
-        varias =
+        misc =
             try await supabase
-                .rpc("load_varias", params: ["series_id": serie?.id])
+                .rpc("load_misc", params: ["series_id": serie?.id])
                 .ilike("name", pattern: "%\(filter)%")
                 .limit(40)
                 .execute()
                 .value
-            databaseLogger.info("Varias successfully loaded")
+            databaseLogger.info("Misc successfully loaded")
     } catch {
-        databaseLogger.error("Failed to fetch Varias: \(error)")
+        databaseLogger.error("Failed to fetch Misc: \(error)")
     }
 
-    return varias
+    return misc
 }
 
 func loadArcs(filter: String = "") async -> [Arc] {

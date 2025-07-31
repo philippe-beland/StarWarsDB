@@ -80,7 +80,7 @@ private func getSelector<T: Entity>(for entityType: T.Type) -> String {
         return "p#app_vehicles"
     case is StarshipModel.Type:
         return "p#app_vehicles"
-    case is Varia.Type:
+    case is Misc.Type:
         return "p#app_miscellanea"
     default:
         return "Not implemented yet"

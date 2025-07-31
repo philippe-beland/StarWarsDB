@@ -112,18 +112,18 @@ func loadSourceStarshipModels(sourceID: UUID) async -> [SourceEntity<StarshipMod
     return sourceStarshipModels
 }
 
-func loadSourceVarias(sourceID: UUID) async -> [SourceEntity<Varia>] {
-    var sourceVarias = [SourceEntity<Varia>]()
+func loadSourceMisc(sourceID: UUID) async -> [SourceEntity<Misc>] {
+    var sourceMisc = [SourceEntity<Misc>]()
     do {
-        sourceVarias = try await supabase
-            .rpc("load_sourcevarias", params: ["source_id": sourceID])
+        sourceMisc = try await supabase
+            .rpc("load_sourcemisc", params: ["source_id": sourceID])
             .execute()
             .value
-        databaseLogger.info("SourceVarias successfully loaded")
+        databaseLogger.info("SourceMisc successfully loaded")
     } catch {
-        databaseLogger.error("Failed to fetch SourceVarias: \(error)")
+        databaseLogger.error("Failed to fetch SourceMisc: \(error)")
     }
-    return sourceVarias
+    return sourceMisc
 }
 
 func loadSourceArtists(sourceID: UUID) async -> [SourceCreator<Artist>] {

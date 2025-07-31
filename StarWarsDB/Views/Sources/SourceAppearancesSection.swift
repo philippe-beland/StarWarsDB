@@ -93,13 +93,13 @@ struct SourceAppearancesSection: View {
                 .padding(Constants.Spacing.md)
                 .tabItem { Text(Droid.displayName) }
                 
-                // Varia
-                EntityAppearanceSection<Varia>(
-                    sourceEntities: viewModel.varias,
+                // Miscellaneous
+                EntityAppearanceSection<Misc>(
+                    sourceEntities: viewModel.misc,
                     activeSheet: $viewModel.activeSheet,
                 )
                 .padding(Constants.Spacing.md)
-                .tabItem { Text(Varia.displayName) }
+                .tabItem { Text(Misc.displayName) }
             }
         }
         .sheet(item: $viewModel.activeSheet) { sheet in
@@ -169,8 +169,8 @@ struct SourceAppearancesSection: View {
                             handleRelatedEntities(selectedEntity, appearance)
                         }
                     }
-                } else if type == Varia.self {
-                    EntitySelectorView<Varia>(serie: serie, sourceEntities: viewModel.varias) { selectedEntities, appearance in
+                } else if type == Misc.self {
+                    EntitySelectorView<Misc>(serie: serie, sourceEntities: viewModel.misc) { selectedEntities, appearance in
                         for selectedEntity in selectedEntities {
                             onAddEntity(selectedEntity, appearance)
                             // Handle related entities
@@ -196,8 +196,8 @@ struct SourceAppearancesSection: View {
                     SourceEntityReferenceView<StarshipModel>(url: url, sourceEntities: viewModel.starshipModels)
                 } else if type == Starship.self {
                     SourceEntityReferenceView<Starship>(url: url, sourceEntities: viewModel.starships)
-                } else if type == Varia.self {
-                    SourceEntityReferenceView<Varia>(url: url, sourceEntities: viewModel.varias)
+                } else if type == Misc.self {
+                    SourceEntityReferenceView<Misc>(url: url, sourceEntities: viewModel.misc)
                 }
                 
             case .expandedSheet(let type):
@@ -225,8 +225,8 @@ struct SourceAppearancesSection: View {
                 } else if type == Starship.self {
                     SourceEntityExpandedView(sourceEntities: $viewModel.starships)
 
-                } else if type == Varia.self {
-                    SourceEntityExpandedView(sourceEntities: $viewModel.varias)
+                } else if type == Misc.self {
+                    SourceEntityExpandedView(sourceEntities: $viewModel.misc)
                 }
             }
         }
