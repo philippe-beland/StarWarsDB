@@ -10,13 +10,12 @@ struct SourceEntityExpandedView<T: TrackableEntity>: View {
                     EntityExpandedRow(sourceEntity: sourceEntity)
                 }
                 .onDelete { indexSet in
-                    let toDelete = indexSet.map { sortedEntities[$0].id }
-                    sourceEntities.removeAll { toDelete.contains($0.id) }
-                    toDelete.forEach { id in
-                        if let deleted = sourceEntities.first(where: { $0.id == id }) {
-                            deleted.delete()
-                        }
+                    let toDelete = indexSet.map { sortedEntities[$0] }  // Store entities, not just IDs
+                    toDelete.forEach { entity in
+                        entity.delete()
                     }
+                    let toDeleteIDs = toDelete.map { $0.id }
+                    sourceEntities.removeAll { toDeleteIDs.contains($0.id) }
                 }
             }
             .navigationTitle(T.displayName)
