@@ -22,6 +22,7 @@ final class Droid: TrackableEntity {
     var nbApparitions: Int = 0
     
     static let displayName: String = "Droids"
+    static let htmlTag: String = "p#app_droids"
 
     let recordType: String = "Droid"
     let databaseTableName: String = "droids"

@@ -38,6 +38,7 @@ final class Character: TrackableEntity {
     var nbApparitions: Int = 0
     
     static let displayName: String = "Characters"
+    static let htmlTag: String = "p#app_characters"
 
     var recordType: String { "Character" }
     var databaseTableName: String { "characters" }

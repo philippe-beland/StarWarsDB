@@ -48,6 +48,7 @@ final class Planet: TrackableEntity {
     var nbApparitions: Int = 0
     
     static let displayName: String = "Planets"
+    static let htmlTag: String = "p#app_locations"
 
     var recordType: String { "Planet" }
     var databaseTableName: String { "planets" }

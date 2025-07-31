@@ -23,6 +23,7 @@ final class Misc: TrackableEntity {
     var nbApparitions: Int = 0
     
     static let displayName: String = "Misc"
+    static let htmlTag: String = "p#app_miscellanea"
     
     init(name: String, firstAppearance: String?, comments: String? = nil) {
         self.id = UUID()

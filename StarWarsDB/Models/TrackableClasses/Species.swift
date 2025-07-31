@@ -14,6 +14,7 @@ final class Species: TrackableEntity {
     var nbApparitions: Int = 0
     
     static let displayName: String = "Species"
+    static let htmlTag: String = "p#app_species"
 
     var recordType: String { "Species" }
     var databaseTableName: String { "species" }

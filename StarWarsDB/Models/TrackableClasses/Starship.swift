@@ -19,6 +19,7 @@ final class Starship: TrackableEntity {
     var nbApparitions: Int = 0
     
     static let displayName: String = "Starships"
+    static let htmlTag: String = "p#app_vehicles"
 
     var recordType: String { "Starship" }
     var databaseTableName: String { "starships" }

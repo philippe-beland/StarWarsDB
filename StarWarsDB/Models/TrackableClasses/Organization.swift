@@ -20,6 +20,7 @@ final class Organization: TrackableEntity {
     var nbApparitions: Int = 0
     
     static let displayName: String = "Organizations"
+    static let htmlTag: String = "p#app_organizations"
 
     let recordType: String = "Organization"
     let databaseTableName: String = "organizations"

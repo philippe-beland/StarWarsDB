@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4C0907EB2E3AC78D00C6362D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4C0907EA2E3AC78D00C6362D /* Kingfisher */; };
-		4C1262392D0BBB0700855120 /* Scraper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1262382D0BBB0700855120 /* Scraper.swift */; };
 		4C1262412D0BBB5E00855120 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 4C1262402D0BBB5E00855120 /* SwiftSoup */; };
 		4C882E272D0BBF7B00A3C0EB /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4C882E262D0BBF7B00A3C0EB /* Supabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C1262382D0BBB0700855120 /* Scraper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scraper.swift; sourceTree = "<group>"; };
 		4C63D31D2CFAA5210058A423 /* StarWarsDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,7 +41,6 @@
 		4C63D3142CFAA5210058A423 = {
 			isa = PBXGroup;
 			children = (
-				4C1262382D0BBB0700855120 /* Scraper.swift */,
 				4C63D31F2CFAA5210058A423 /* StarWarsDB */,
 				4C882E252D0BBF7B00A3C0EB /* Frameworks */,
 				4C63D31E2CFAA5210058A423 /* Products */,
@@ -147,7 +144,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1262392D0BBB0700855120 /* Scraper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
