@@ -8,16 +8,10 @@
 import Foundation
 import Supabase
 
-/// Types of entities that can be tracked in the Star Wars database
-///
-/// This enum defines all the different types of elements that can be
-/// recorded and tracked in the database, from characters to starships.
 enum EntityType: String, Codable {
-    /// Individual characters
+
     case character = "Character"
-    /// Non-humanoid life forms
     case creature = "Creature"
-    /// Artificial beings
     case droid = "Droid"
     /// Groups and institutions
     case organization = "Organization"
@@ -39,6 +33,26 @@ enum EntityType: String, Codable {
     case artist = "Artist"
     /// Writers and authors
     case author = "Author"
+    
+    var id: String { self.rawValue }
+    
+    var iconName: String {
+            switch self {
+            case .character: return "person.fill"
+            case .creature: return "pawprint.fill"
+            case .droid: return "gearshape.2.fill"
+            case .organization: return "person.3.fill"
+            case .planet: return "globe.americas.fill"
+            case .species: return "leaf.fill"
+            case .starshipModel: return "cube.box.fill"
+            case .starship: return "airplane"
+            case .varia: return "sparkles"
+            case .arc: return "waveform.path.ecg"
+            case .serie: return "film.fill"
+            case .artist: return "paintpalette.fill"
+            case .author: return "book.fill"
+            }
+        }
 }
 
 /// Base class for database-persisted objects
@@ -152,9 +166,13 @@ class Entity: DataNode, Record {
     
     var isExisting: Bool = false
     
+    var wookieepediaTitle: String = ""
+    
     /// Wookieepedia URL for this entity
-    var url: String {
-        "https://starwars.fandom.com/wiki/" + name.replacingOccurrences(of: " ", with: "_")
+    var url: URL? {
+        let title = wookieepediaTitle.isEmpty ? name : wookieepediaTitle
+        let encodedTitle = title.replacingOccurrences(of: " ", with: "_")
+        return URL(string: "https://starwars.fandom.com/wiki/" + encodedTitle)
     }
     
     /// Creates a new entity
@@ -211,7 +229,7 @@ protocol Record: Identifiable, Hashable {
     var comments: String { get set }
     
     /// Online reference URL
-    var url: String { get }
+    var url: URL? { get }
 }
 
 /// Helper class for counting source appearances

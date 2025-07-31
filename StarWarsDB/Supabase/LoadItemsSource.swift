@@ -10,9 +10,12 @@ import Foundation
 func loadCharacterSources(characterID: UUID) async -> [SourceCharacter] {
     var sourceItems = [SourceCharacter]()
     do {
-        sourceItems = try await supabase
+        sourceItems =
+            try await supabase
             .from("source_characters")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(id, name, aliases, species(id, name, homeworld(*), first_appearance, comments), homeworld(*), gender, affiliations, first_appearance, comments), appearance")
+            .select(
+                "id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(id, name, aliases, species(id, name, homeworld(*), first_appearance, comments), homeworld(*), gender, affiliations, first_appearance, comments), appearance"
+            )
             .eq("entity", value: characterID.uuidString)
             .execute()
             .value
@@ -26,9 +29,12 @@ func loadCharacterSources(characterID: UUID) async -> [SourceCharacter] {
 func loadCreatureSources(creatureID: UUID) async -> [SourceCreature] {
     var sourceItems = [SourceCreature]()
     do {
-        sourceItems = try await supabase
+        sourceItems =
+            try await supabase
             .from("source_creatures")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(id, name, designation, homeworld(*), first_appearance, comments), appearance")
+            .select(
+                "id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(id, name, designation, homeworld(*), first_appearance, comments), appearance"
+            )
             .eq("entity", value: creatureID.uuidString)
             .execute()
             .value
@@ -42,9 +48,12 @@ func loadCreatureSources(creatureID: UUID) async -> [SourceCreature] {
 func loadDroidSources(droidID: UUID) async -> [SourceDroid] {
     var sourceItems = [SourceDroid]()
     do {
-        sourceItems = try await supabase
+        sourceItems =
+            try await supabase
             .from("source_droids")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance")
+            .select(
+                "id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance"
+            )
             .eq("entity", value: droidID.uuidString)
             .execute()
             .value
@@ -55,12 +64,16 @@ func loadDroidSources(droidID: UUID) async -> [SourceDroid] {
     return sourceItems
 }
 
-func loadOrganizationSources(organizationID: UUID) async -> [SourceOrganization] {
+func loadOrganizationSources(organizationID: UUID) async -> [SourceOrganization]
+{
     var sourceItems = [SourceOrganization]()
     do {
-        sourceItems = try await supabase
+        sourceItems =
+            try await supabase
             .from("source_organizations")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance")
+            .select(
+                "id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance"
+            )
             .eq("entity", value: organizationID.uuidString)
             .execute()
             .value
@@ -74,9 +87,12 @@ func loadOrganizationSources(organizationID: UUID) async -> [SourceOrganization]
 func loadPlanetSources(planetID: UUID) async -> [SourcePlanet] {
     var sourceItems = [SourcePlanet]()
     do {
-        sourceItems = try await supabase
+        sourceItems =
+            try await supabase
             .from("source_planets")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance")
+            .select(
+                "id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance"
+            )
             .eq("entity", value: planetID.uuidString)
             .execute()
             .value
@@ -90,9 +106,12 @@ func loadPlanetSources(planetID: UUID) async -> [SourcePlanet] {
 func loadSpeciesSources(speciesID: UUID) async -> [SourceSpecies] {
     var sourceItems = [SourceSpecies]()
     do {
-        sourceItems = try await supabase
+        sourceItems =
+            try await supabase
             .from("source_species")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(id, name, homeworld(*), first_appearance, comments), appearance")
+            .select(
+                "id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(id, name, homeworld(*), first_appearance, comments), appearance"
+            )
             .eq("entity", value: speciesID.uuidString)
             .execute()
             .value
@@ -106,9 +125,12 @@ func loadSpeciesSources(speciesID: UUID) async -> [SourceSpecies] {
 func loadStarshipSources(starshipID: UUID) async -> [SourceStarship] {
     var sourceItems = [SourceStarship]()
     do {
-        sourceItems = try await supabase
+        sourceItems =
+            try await supabase
             .from("source_starships")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(id, name, first_appearance, comments), appearance")
+            .select(
+                "id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(id, name, first_appearance, comments), appearance"
+            )
             .eq("entity", value: starshipID.uuidString)
             .execute()
             .value
@@ -119,12 +141,17 @@ func loadStarshipSources(starshipID: UUID) async -> [SourceStarship] {
     return sourceItems
 }
 
-func loadStarshipModelSources(starshipModelID: UUID) async -> [SourceStarshipModel] {
+func loadStarshipModelSources(starshipModelID: UUID) async
+    -> [SourceStarshipModel]
+{
     var sourceItems = [SourceStarshipModel]()
     do {
-        sourceItems = try await supabase
+        sourceItems =
+            try await supabase
             .from("source_starship_models")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance")
+            .select(
+                "id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance"
+            )
             .eq("entity", value: starshipModelID.uuidString)
             .execute()
             .value
@@ -138,9 +165,12 @@ func loadStarshipModelSources(starshipModelID: UUID) async -> [SourceStarshipMod
 func loadVariaSources(variaID: UUID) async -> [SourceVaria] {
     var sourceItems = [SourceVaria]()
     do {
-        sourceItems = try await supabase
+        sourceItems =
+            try await supabase
             .from("source_varias")
-            .select("id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance")
+            .select(
+                "id, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), entity!inner(*), appearance"
+            )
             .eq("entity", value: variaID.uuidString)
             .execute()
             .value
