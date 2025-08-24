@@ -15,9 +15,9 @@ final class Misc: TrackableEntity {
     var firstAppearance: String
 
     let recordType: String = "Misc"
-    let databaseTableName: String = "miscellaneous"
+    let databaseTableName: String = "misc"
     static let sourceRecordType: String = "SourceMisc"
-    static let sourceDatabaseTableName: String = "source_miscellaneous"
+    static let sourceDatabaseTableName: String = "source_misc"
 
     var alreadyInSource: Bool = false
     var wookieepediaTitle: String = ""
