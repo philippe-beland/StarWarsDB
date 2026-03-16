@@ -242,8 +242,7 @@ func loadArtists(serie: Serie? = nil, filter: String = "") async -> [Artist] {
     do {
         artists =
             try await supabase
-                .from("artists")
-                .select("*")
+                .rpc("load_artists", params: ["series_id": serie?.id])
                 .ilike("name", pattern: "%\(filter)%")
                 .limit(40)
                 .execute()
@@ -262,13 +261,12 @@ func loadAuthors(serie: Serie? = nil, filter: String = "") async -> [Author] {
     do {
         authors =
             try await supabase
-                .from("artists")
-                .select("*")
+                .rpc("load_authors", params: ["series_id": serie?.id])
                 .ilike("name", pattern: "%\(filter)%")
                 .limit(40)
                 .execute()
                 .value
-        databaseLogger.info("Artists successfully loaded")
+        databaseLogger.info("Authors successfully loaded")
     } catch {
         databaseLogger.error("Failed to fetch Authors: \(error)")
     }

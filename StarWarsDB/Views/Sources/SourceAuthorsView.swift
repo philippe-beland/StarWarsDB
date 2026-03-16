@@ -42,7 +42,7 @@ struct ExpandedSourceAuthorsView: View {
                     showAddAuthorSheet.toggle()
                 }
                 .sheet(isPresented: $showAddAuthorSheet) {
-                    CreatorSelectorView<Author>(sourceCreators: []) { authors in
+                    CreatorSelectorView<Author>(serie: source?.serie, sourceCreators: sourceAuthors) { authors in
                         if let source {
                             for author in authors {
                                 let newAuthor = SourceCreator<Author>(source: source, creator: author)
