@@ -13,27 +13,26 @@ struct AddSpeciesView: View, AddEntityView {
     var onAdd: (Species) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    Section("Species Infos") {
-                        EditableLinkedEntityField(entity: $homeworld)
-                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
-                    }
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveSpecies)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                Section("Species Infos") {
+                    EditableLinkedEntityField(entity: $homeworld)
+                    EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
+                }
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: saveSpecies)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Species")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Species")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveSpecies() {

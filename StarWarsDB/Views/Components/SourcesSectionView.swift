@@ -74,26 +74,27 @@ struct SourceNameView: View {
     let serie: Serie?
     let number: Int?
     let oldest: Bool
-    
+
     var body: some View {
-        VStack(alignment: .leading, spacing: Constants.Spacing.xs) {
+        VStack(alignment: .leading, spacing: 2) {
             if !name.isEmpty {
                 Text(name)
-                    .lineLimit(1)
+                    .font(.subheadline.weight(.semibold))
+                    .lineLimit(2)
             }
-            
-            if let serie = serie {
-                HStack (spacing: Constants.Spacing.xs) {
+
+            if let serie {
+                HStack(spacing: Constants.Spacing.xs) {
                     Text(serie.name)
-                    if let number = number {
-                        Text(String(number))
+                    if let number {
+                        Text("#\(number)")
                     }
                 }
-                .foregroundColor(name.isEmpty ? (oldest ? .red : .primary) : .secondary)
+                .font(.caption)
+                .foregroundStyle(name.isEmpty ? (oldest ? .red : .primary) : .secondary)
             }
         }
-        .font(.headline)
-        .foregroundColor(oldest && serie == nil ? .red : .primary)
+        .foregroundStyle(oldest && serie == nil ? .red : .primary)
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
@@ -101,32 +102,81 @@ struct SourceNameView: View {
 struct SourceRow<T: TrackableEntity>: View {
     let sourceEntity: SourceEntity<T>
     let oldest: Bool
-    
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    private var isCompact: Bool { horizontalSizeClass == .compact }
+
     private var formattedDate: String {
         sourceDateFormatter.string(from: sourceEntity.source.publicationDate)
     }
-    
+
+    private var yearText: String {
+        let year = sourceEntity.source.universeYear
+        return "\(abs(Int(year))) \(year > 0 ? "ABY" : "BBY")"
+    }
+
+    private var appearanceColor: Color { sourceEntity.appearance.color }
+
     var body: some View {
-        HStack(spacing: Constants.Spacing.xl) {
+        HStack(spacing: isCompact ? Constants.Spacing.sm : Constants.Spacing.lg) {
+            CDNImageView(primaryID: sourceEntity.source.id)
+                .frame(width: 36, height: 36)
+                .clipShape(.rect(cornerRadius: 6))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 6)
+                        .strokeBorder(appearanceColor.opacity(0.5), lineWidth: 1.5)
+                )
+
+            if isCompact {
+                compactContent
+            } else {
+                regularContent
+            }
+        }
+    }
+
+    private var compactContent: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 2) {
+                SourceNameView(
+                    name: sourceEntity.source.name,
+                    serie: sourceEntity.source.serie,
+                    number: sourceEntity.source.number,
+                    oldest: oldest
+                )
+
+                HStack(spacing: Constants.Spacing.xs) {
+                    Text(yearText)
+                    Text("·")
+                    Text(formattedDate)
+                }
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            }
+
+            Spacer()
+
+            AppearanceView(appearance: sourceEntity.appearance)
+        }
+    }
+
+    private var regularContent: some View {
+        HStack(spacing: Constants.Spacing.lg) {
             UniverseYear(year: sourceEntity.source.universeYear)
                 .frame(width: Constants.Layout.yearViewWidth, alignment: .leading)
-            
-            CDNImageView(primaryID: sourceEntity.source.id)
-                .frame(width: 30, height: 30)
-            
+
             SourceNameView(
                 name: sourceEntity.source.name,
                 serie: sourceEntity.source.serie,
                 number: sourceEntity.source.number,
                 oldest: oldest
             )
-            
+
             Text(formattedDate)
                 .font(.caption)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
+                .foregroundStyle(.secondary)
                 .frame(width: Constants.Layout.dateViewWidth, alignment: .center)
-            
+
             AppearanceView(appearance: sourceEntity.appearance)
                 .frame(width: Constants.Layout.appearanceViewWidth, alignment: .center)
         }

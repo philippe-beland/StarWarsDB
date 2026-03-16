@@ -11,23 +11,22 @@ struct AddArtistView: View, AddEntityView {
     var onAdd: (Artist) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveArtist)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: saveArtist)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Artist")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Artist")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveArtist() {

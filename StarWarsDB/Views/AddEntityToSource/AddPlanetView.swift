@@ -17,31 +17,29 @@ struct AddPlanetView: View, AddEntityView {
     var onAdd: (Planet) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    Section("Planet Infos") {
-                        RegionPicker(region: $region)
-                        EditableTextField(fieldName: "Sector", info: $sector)
-                        EditableTextField(fieldName: "System", info: $system)
-                        EditableTextField(fieldName: "Capital", info: $capitalCity)
-            //            MultiFieldView(fieldName: "Destinations", infos: $planet.destinations)
-                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
-                    }
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: savePlanet)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                Section("Planet Infos") {
+                    RegionPicker(region: $region)
+                    EditableTextField(fieldName: "Sector", info: $sector)
+                    EditableTextField(fieldName: "System", info: $system)
+                    EditableTextField(fieldName: "Capital", info: $capitalCity)
+                    EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
+                }
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: savePlanet)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Planet")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Planet")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func savePlanet() {

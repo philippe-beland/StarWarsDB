@@ -25,9 +25,7 @@ struct SourceAppearancesSection: View {
     let onAddEntity: (any Entity, AppearanceType) -> Void
     
     var body: some View {
-        VStack {
-            Text("Appearances")
-                .bold()
+        VStack(spacing: 0) {
             TabView {
                 // Characters
                 EntityAppearanceSection<Character>(

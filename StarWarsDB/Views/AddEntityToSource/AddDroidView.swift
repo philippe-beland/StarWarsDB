@@ -13,28 +13,26 @@ struct AddDroidView: View, AddEntityView {
     var onAdd: (Droid) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                Section("Droid Infos") {
+                    EditableTextField(fieldName: "Class Type", info: $classType)
+                    EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
+                }
+                CommentsView(comments: $comments)
                 
-                Form {
-                    Section("Droid Infos") {
-                        EditableTextField(fieldName: "Class Type", info: $classType)
-                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
-                    }
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveDroid)
-                            .disabled(name.isEmpty)
-                    }
+                Section {
+                    Button("Save", action: saveDroid)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Droid")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Droid")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveDroid() {

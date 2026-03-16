@@ -25,7 +25,7 @@ struct EntityDetailRouter<T: TrackableEntity>: View {
                 MiscDetailView(misc: misc)
             } else {
                 // Fallback for unsupported types
-                Text("Unsupported entity type: \(type(of: entity))")
+                Text("Unsupported entity type: " + String(describing: type(of: entity)))
             }
         }
         .task{

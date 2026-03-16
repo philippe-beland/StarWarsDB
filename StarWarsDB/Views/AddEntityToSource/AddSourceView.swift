@@ -19,40 +19,36 @@ struct AddSourceView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                
-                Form {
-                    Section("Source Infos") {
-                        EditableLinkedBaseEntityField(baseEntity: $serie)
-                        HStack {
-                            Text("Number:")
-                                .font(.footnote)
-                                .bold()
-                            Spacer()
-                            TextField("Number", value: $number, format: .number)
-                        }
-                        EditableLinkedBaseEntityField(baseEntity: $arc)
-                        EraPicker(era: $era)
-                        SourceTypePicker(sourceType: $sourceType)
-                        PublicationDatePicker(date: $publicationDate)
-                        YearPicker(era: era, universeYear: $universeYear)
-                        //AuthorsVStack(fieldName: "Authors")
-                        //ArtistsVStack(fieldName: "Artists")
-                        Text(numberPages?.description ?? "")
-                    }
-                    
-                    CommentsView(comments: $comments)
-                    Section {
-                        Button("Save", action: saveSource)
-                            .disabled(name.isEmpty && number == nil)
-                    }
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
                 }
-                .navigationTitle("Add New Source")
-                .navigationBarTitleDisplayMode(.inline)
+                Section("Source Infos") {
+                    EditableLinkedBaseEntityField(baseEntity: $serie)
+                    HStack {
+                        Text("Number:")
+                            .font(.footnote)
+                            .bold()
+                        Spacer()
+                        TextField("Number", value: $number, format: .number)
+                    }
+                    EditableLinkedBaseEntityField(baseEntity: $arc)
+                    EraPicker(era: $era)
+                    SourceTypePicker(sourceType: $sourceType)
+                    PublicationDatePicker(date: $publicationDate)
+                    YearPicker(era: era, universeYear: $universeYear)
+                    Text(numberPages?.description ?? "")
+                }
+                
+                CommentsView(comments: $comments)
+                Section {
+                    Button("Save", action: saveSource)
+                        .disabled(name.isEmpty && number == nil)
+                }
             }
+            .navigationTitle("Add New Source")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
     

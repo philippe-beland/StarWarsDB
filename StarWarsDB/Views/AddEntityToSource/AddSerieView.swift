@@ -12,24 +12,23 @@ struct AddSerieView: View, AddEntityView {
     var onAdd: (Serie) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    SourceTypePicker(sourceType: $sourceType)
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveSerie)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                SourceTypePicker(sourceType: $sourceType)
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: saveSerie)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Serie")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Serie")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveSerie() {

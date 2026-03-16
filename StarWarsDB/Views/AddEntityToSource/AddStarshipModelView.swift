@@ -14,28 +14,27 @@ struct AddStarshipModelView: View, AddEntityView {
     var onAdd: (StarshipModel) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    Section("Starship Model Infos") {
-                        EditableTextField(fieldName: "Class Type", info: $classType)
-                        EditableTextField(fieldName: "Line", info: $line)
-                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
-                    }
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveStarshipModel)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                Section("Starship Model Infos") {
+                    EditableTextField(fieldName: "Class Type", info: $classType)
+                    EditableTextField(fieldName: "Line", info: $line)
+                    EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
+                }
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: saveStarshipModel)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Starship Model")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Starship Model")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveStarshipModel() {

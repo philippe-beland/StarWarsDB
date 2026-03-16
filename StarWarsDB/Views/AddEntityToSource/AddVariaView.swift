@@ -10,26 +10,25 @@ struct AddMiscView: View, AddEntityView {
     var onAdd: (Misc) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    Section("Misc Infos") {
-                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
-                    }
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveMisc)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                Section("Misc Infos") {
+                    EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
+                }
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: saveMisc)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Misc")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Misc")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveMisc() {

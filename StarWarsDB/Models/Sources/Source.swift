@@ -113,7 +113,14 @@ final class Source: BaseEntity {
     
     /// Wookieepedia URL for this entity
     var url: URL? {
-        let title = wookieepediaTitle.isEmpty ? name : wookieepediaTitle
+        let title: String
+        if sourceType == .comics, let serie = serie, let number = number {
+            let serieTitle = serie.wookieepediaTitle.isEmpty ? serie.name : serie.wookieepediaTitle
+            title = "\(serieTitle)_\(number)"
+        } else {
+            let baseTitle = wookieepediaTitle.isEmpty ? name : wookieepediaTitle
+            title = baseTitle
+        }
         let encodedTitle = title.replacingOccurrences(of: " ", with: "_")
         return URL(string: "https://starwars.fandom.com/wiki/" + encodedTitle)
     }

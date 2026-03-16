@@ -1,4 +1,4 @@
-import Foundation
+import SwiftUI
 
 /// The type of appearance of an entity in a specific source
 enum AppearanceType: String, Codable, CaseIterable {
@@ -25,6 +25,18 @@ enum AppearanceType: String, Codable, CaseIterable {
         case .vision: return "Vision"
         case .image: return "Image"
         case .indirectMentioned: return "Indirect Mentioned"
+        }
+    }
+
+    /// The color associated with this appearance type
+    var color: Color {
+        switch self {
+        case .present: .green
+        case .mentioned: .blue
+        case .flashback: .purple
+        case .vision: .cyan
+        case .indirectMentioned: .yellow
+        case .image: .pink
         }
     }
 }

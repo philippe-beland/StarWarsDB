@@ -11,24 +11,23 @@ struct AddArcView: View, AddEntityView {
     var onAdd: (Arc) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    EditableLinkedBaseEntityField(baseEntity: $serie)
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveArc)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                EditableLinkedBaseEntityField(baseEntity: $serie)
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: saveArc)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Arc")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Arc")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveArc() {

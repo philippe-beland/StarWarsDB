@@ -6,152 +6,198 @@ enum ActiveSheet: Identifiable {
     case add(type: any Entity.Type)
     case referenceSheet(type: any Entity.Type)
     case expandedSheet(type: any Entity.Type)
-    
+
     var id: String {
         switch self {
         case .add(let type):
-            return "add-\(type)"
+            "add-\(type)"
         case .referenceSheet(let type):
-            return "reference-\(type)"
+            "reference-\(type)"
         case .expandedSheet(let type):
-            return "expanded-\(type)"
+            "expanded-\(type)"
         }
     }
 }
 
 // MARK: - Main View
+
 struct SourceDetailView: View {
     @Bindable var viewModel: EditSourceViewModel
-    @State private var showFactSheet: Bool = false
-    
-    // MARK: - View Body
-    
+    @State private var showFactSheet = false
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    private var isCompact: Bool { horizontalSizeClass == .compact }
+
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading, spacing: Constants.Spacing.md) {
+            VStack(spacing: 0) {
                 SourceHeaderView(source: $viewModel.source, showFactSheet: $showFactSheet)
-                    .padding(.horizontal, Constants.Spacing.lg)
-                
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: Constants.Spacing.md) {
-                        // Serie
-                        InfoBlock(title: "Serie") {
-                            EditableLinkedBaseEntity(
-                                baseEntity: Binding(
-                                    get: { viewModel.source.serie ?? Serie.empty },
-                                    set: { viewModel.source.serie = $0 }
-                                )
-                            ) {
-                                if let serieName = viewModel.source.serie?.name {
-                                    Text ("(\(serieName))")
-                                        .foregroundColor(.blue)
-                                } else {
-                                    Text("Select Serie")
-                                        .foregroundColor(.blue)
-                                }
-                            }
-                        }
-                        
-                        //Arc
-                        InfoBlock(title: "Arc") {
-                            EditableLinkedBaseEntity(
-                                baseEntity: Binding(
-                                    get: { viewModel.source.arc ?? Arc.empty },
-                                    set: { viewModel.source.arc = $0 }
-                                )
-                            ){
-                                if let arcName = viewModel.source.arc?.name {
-                                    Text ("(\(arcName))")
-                                        .foregroundColor(.blue)
-                                } else {
-                                    Text("Select Arc")
-                                        .foregroundColor(.blue)
-                                }
-                            }
-                        }
-                        
-                        // Number
-                        InfoBlock(title: "Number") {
-                            TextField("Number", value: $viewModel.source.number, format: .number)
-                        }
-                        
-                        // Era
-                        InfoBlock(title: "Era") {
-                            EraPicker(era: $viewModel.source.era)
-                        }
-                        
-                        // Type
-                        InfoBlock(title: "Type") {
-                            SourceTypePicker(sourceType: $viewModel.source.sourceType)
-                        }
-                        
-                        // Publication Date
-                        InfoBlock(title: "Publication Date") {
-                            PublicationDatePicker(date: $viewModel.source.publicationDate)
-                        }
-                        
-                        // In-Universe Year
-                        InfoBlock(title: "In-Universe Year") {
-                            YearPicker(era: viewModel.source.era, universeYear: $viewModel.source.universeYear)
-                        }
-                        
-                        // Authors
-                        InfoBlock(title: "Authors") {
-                            AuthorsVStack(source: viewModel.source, sourceAuthors: $viewModel.authors)
-                        }
-                        
-                        // Authors
-                        InfoBlock(title: "Artists") {
-                            ArtistsVStack(source: viewModel.source, sourceArtists: $viewModel.artists)
-                        }
-                        
-                        // Number of Pages
-                        InfoBlock(title: "Number of pages") {
-                            TextField("Nb of pages", value: $viewModel.source.numberPages, format: .number)
-                        }
-                    }
-                }
-                
+                    .padding(.horizontal, Constants.Spacing.md)
+                    .padding(.vertical, Constants.Spacing.sm)
+
+                metadataSection
+
                 SourceAppearancesSection(
                     viewModel: viewModel,
                     serie: viewModel.source.serie,
                     url: viewModel.source.url,
                     onAddEntity: viewModel.addAnyEntity
                 )
-                .padding(.top, Constants.Spacing.md)
             }
+            .background(Color(.systemGroupedBackground))
             .navigationBarTitleDisplayMode(.inline)
         }
         .task { await viewModel.loadInitialSources() }
         .toolbar {
-            Button("Update") {
-                Task {
-                    await viewModel.source.update()
-                }
+            Button {
+                Task { await viewModel.source.update() }
+            } label: {
+                Text("Save")
+                    .fontWeight(.semibold)
             }
         }
     }
+
+    // MARK: - Metadata Section
+
+    private var gridColumns: [GridItem] {
+        if isCompact {
+            return [GridItem(.flexible())]
+        } else {
+            return [GridItem(.adaptive(minimum: 160, maximum: 300), spacing: Constants.Spacing.sm)]
+        }
+    }
+
+    private var metadataSection: some View {
+        ScrollView {
+            LazyVGrid(columns: gridColumns, alignment: .leading, spacing: Constants.Spacing.sm) {
+                MetadataField("Serie", systemImage: "film.stack", color: .blue) {
+                    EditableLinkedBaseEntity(
+                        baseEntity: Binding(
+                            get: { viewModel.source.serie ?? Serie.empty },
+                            set: { viewModel.source.serie = $0 }
+                        )
+                    ) {
+                        Text(viewModel.source.serie?.name ?? "Select Serie")
+                            .foregroundStyle(.tint)
+                    }
+                }
+
+                MetadataField("Arc", systemImage: "arrow.triangle.branch", color: .indigo) {
+                    EditableLinkedBaseEntity(
+                        baseEntity: Binding(
+                            get: { viewModel.source.arc ?? Arc.empty },
+                            set: { viewModel.source.arc = $0 }
+                        )
+                    ) {
+                        Text(viewModel.source.arc?.name ?? "Select Arc")
+                            .foregroundStyle(.tint)
+                    }
+                }
+
+                MetadataField("Number", systemImage: "number", color: .orange) {
+                    TextField("—", value: $viewModel.source.number, format: .number)
+                }
+
+                MetadataField("Era", systemImage: "clock.arrow.circlepath", color: .purple) {
+                    EraPicker(era: $viewModel.source.era)
+                }
+
+                MetadataField("Type", systemImage: "tag", color: .teal) {
+                    SourceTypePicker(sourceType: $viewModel.source.sourceType)
+                }
+
+                MetadataField("Publication Date", systemImage: "calendar", color: .red) {
+                    PublicationDatePicker(date: $viewModel.source.publicationDate)
+                }
+
+                MetadataField("In-Universe Year", systemImage: "sparkles", color: .yellow) {
+                    YearPicker(era: viewModel.source.era, universeYear: $viewModel.source.universeYear)
+                }
+
+                MetadataField("Pages", systemImage: "doc.plaintext", color: .gray) {
+                    TextField("—", value: $viewModel.source.numberPages, format: .number)
+                }
+
+                MetadataField("Authors", systemImage: "pencil.line", color: .mint) {
+                    AuthorsVStack(source: viewModel.source, sourceAuthors: $viewModel.authors)
+                }
+
+                MetadataField("Artists", systemImage: "paintbrush", color: .pink) {
+                    ArtistsVStack(source: viewModel.source, sourceArtists: $viewModel.artists)
+                }
+            }
+            .padding(Constants.Spacing.md)
+        }
+        .scrollIndicators(isCompact ? .visible : .hidden)
+        .frame(maxHeight: isCompact ? 200 : 260)
+    }
 }
 
-private struct InfoBlock<Content: View>: View {
+// MARK: - MetadataField
+
+private struct MetadataField<Content: View>: View {
     let title: String
-    let content: () -> Content
-    
-    var body: some View {
-        VStack(alignment: .leading) {
+    let systemImage: String
+    let iconColor: Color
+    @ViewBuilder let content: Content
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    init(_ title: String, systemImage: String, color: Color = .accentColor, @ViewBuilder content: () -> Content) {
+        self.title = title
+        self.systemImage = systemImage
+        self.iconColor = color
+        self.content = content()
+    }
+
+    private var isCompact: Bool { horizontalSizeClass == .compact }
+
+    private var iconLabel: some View {
+        HStack(spacing: 5) {
+            Image(systemName: systemImage)
+                .font(.caption2)
+                .fontWeight(.semibold)
+                .foregroundStyle(.white)
+                .frame(width: 18, height: 18)
+                .background(iconColor.gradient, in: .rect(cornerRadius: 4))
+
             Text(title)
                 .font(.caption)
-                .foregroundColor(.secondary)
-            content()
-                .frame(minWidth: Constants.Layout.minInfoWidth)
+                .fontWeight(.medium)
+                .textCase(.uppercase)
+                .tracking(0.5)
+                .foregroundStyle(.secondary)
         }
-        .padding(Constants.Spacing.sm)
-        .background(Color(UIColor.secondarySystemBackground))
-        .cornerRadius(Constants.CornerRadius.md)
+    }
+
+    var body: some View {
+        Group {
+            if isCompact {
+                HStack {
+                    iconLabel
+                    Spacer()
+                    content
+                        .font(.subheadline)
+                        .multilineTextAlignment(.trailing)
+                }
+            } else {
+                VStack(alignment: .leading, spacing: 6) {
+                    iconLabel
+                    content
+                        .font(.subheadline)
+                }
+            }
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, isCompact ? 8 : 10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(.background, in: .rect(cornerRadius: Constants.CornerRadius.lg))
+        .shadow(color: .black.opacity(0.04), radius: 2, y: 1)
     }
 }
 
 // MARK: - Preview
+
 #Preview {
     @Previewable @State var viewModel = EditSourceViewModel(source: .example)
     SourceDetailView(viewModel: viewModel)

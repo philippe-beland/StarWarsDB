@@ -3,30 +3,30 @@ import SwiftUI
 struct SectionHeaderView: View {
     @Binding var name: String
     let url: URL?
-    
-    var body: some View {
-        HStack {
-            Spacer()
-            TextField("Enter Source Name", text: $name)
-                .font(.title.bold())
-                .padding()
+    @Environment(\.openURL) private var openURL
 
-            Button {
-                openLink()
-            } label: {
-                Image("Site-logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: Constants.Layout.headerIconSize, height: Constants.Layout.headerIconSize)
-            }
-            .buttonStyle(.plain)
+    var body: some View {
+        HStack(spacing: Constants.Spacing.sm) {
+            TextField("Enter Source Name", text: $name)
+                .font(.title2.weight(.bold))
+                .multilineTextAlignment(.leading)
+
             Spacer()
+
+            if let url {
+                Button {
+                    openURL(url)
+                } label: {
+                    Image("Site-logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 28, height: 28)
+                        .clipShape(.circle)
+                        .overlay(Circle().strokeBorder(.quaternary, lineWidth: 1))
+                }
+                .buttonStyle(.plain)
+            }
         }
-    }
-    
-    private func openLink() {
-        guard let url: URL = url, UIApplication.shared.canOpenURL(url) else { return }
-        UIApplication.shared.open(url)
     }
 }
 

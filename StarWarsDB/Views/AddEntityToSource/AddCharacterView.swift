@@ -17,31 +17,28 @@ struct AddCharacterView: View, AddEntityView {
     var onAdd: (Character) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    Section("Character Infos") {
-                        //MultiFieldView(fieldName: "Aliases", infos: aliases)
-                        GenderPicker(gender: $gender)
-                        EditableLinkedEntityField(entity: $species)
-                        EditableLinkedEntityField(entity: $homeworld)
-                        //MultiFieldView(fieldName: "Affiliation", entities: affiliations)
-                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
-                    }
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveCharacter)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                Section("Character Infos") {
+                    GenderPicker(gender: $gender)
+                    EditableLinkedEntityField(entity: $species)
+                    EditableLinkedEntityField(entity: $homeworld)
+                    EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
+                }
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: saveCharacter)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Character")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Character")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveCharacter() {

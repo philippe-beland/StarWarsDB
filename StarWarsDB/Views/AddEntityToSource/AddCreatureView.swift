@@ -14,27 +14,26 @@ struct AddCreatureView: View, AddEntityView {
     var onAdd: (Creature) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    Section("Creature Infos") {
-                        EditableLinkedEntityField(entity: $homeworld)
-                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
-                    }
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveCreature)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                Section("Creature Infos") {
+                    EditableLinkedEntityField(entity: $homeworld)
+                    EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
+                }
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: saveCreature)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Creature")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Creature")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveCreature() {

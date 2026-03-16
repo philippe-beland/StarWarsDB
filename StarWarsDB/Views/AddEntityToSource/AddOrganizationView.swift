@@ -12,26 +12,25 @@ struct AddOrganizationView: View, AddEntityView {
     var onAdd: (Organization) -> Void
     
     var body: some View {
-        NavigationStack{
-            VStack(alignment: .center) {
-                TextField("Name", text: $name)
-                    .font(.title.bold())
-                    .padding(Constants.Spacing.md)
-                Form {
-                    Section("Organization Infos") {
-                        EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
-                    }
-                    CommentsView(comments: $comments)
-                    
-                    Section {
-                        Button("Save", action: saveOrganization)
-                            .disabled(name.isEmpty)
-                    }
+        NavigationStack {
+            Form {
+                Section {
+                    TextField("Name", text: $name)
+                        .font(.title.bold())
+                }
+                Section("Organization Infos") {
+                    EditableTextField(fieldName: "First Appearance", info: $firstAppearance)
+                }
+                CommentsView(comments: $comments)
+                
+                Section {
+                    Button("Save", action: saveOrganization)
+                        .disabled(name.isEmpty)
                 }
             }
+            .navigationTitle("Add new Organization")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("Add new Organization")
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     private func saveOrganization() {
