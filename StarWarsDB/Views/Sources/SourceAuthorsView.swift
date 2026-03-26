@@ -32,7 +32,9 @@ struct ExpandedSourceAuthorsView: View {
         NavigationStack {
             List {
                 ForEach(sourceAuthors) { sourceAuthor in
-                    Text(sourceAuthor.creator.name)
+                    NavigationLink(destination: CreatorDetailView<Author>(creator: sourceAuthor.creator)) {
+                        Text(sourceAuthor.creator.name)
+                    }
                 }
                 .onDelete(perform: deleteEntity)
             }

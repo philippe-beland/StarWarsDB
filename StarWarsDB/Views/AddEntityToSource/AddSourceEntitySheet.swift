@@ -43,6 +43,8 @@ struct AddViewFactory {
             AddSerieView(onAdd: onAdd as! (Serie) -> Void)
         case is Artist.Type:
             AddArtistView(onAdd: onAdd as! (Artist) -> Void)
+        case is Author.Type:
+            AddAuthorView(onAdd: onAdd as! (Author) -> Void)
         default:
             Text("Unsupported entity type")
         }

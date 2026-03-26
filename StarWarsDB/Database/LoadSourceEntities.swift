@@ -166,6 +166,46 @@ func loadSourceAuthors(sourceID: UUID) async -> [SourceCreator<Author>] {
     return sourceAuthors
 }
 
+func loadArtistSources(artistID: UUID) async -> [SourceCreator<Artist>] {
+    var sourceCreators = [SourceCreator<Artist>]()
+    do {
+        sourceCreators = try await supabase
+            .from("source_artists")
+            .select("""
+                    id,
+                    source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments),
+                    entity!inner(*)
+                    """)
+            .eq("entity", value: artistID.uuidString)
+            .execute()
+            .value
+        databaseLogger.info("ArtistSources successfully loaded")
+    } catch {
+        databaseLogger.error("Failed to fetch ArtistSources: \(error)")
+    }
+    return sourceCreators
+}
+
+func loadAuthorSources(authorID: UUID) async -> [SourceCreator<Author>] {
+    var sourceCreators = [SourceCreator<Author>]()
+    do {
+        sourceCreators = try await supabase
+            .from("source_authors")
+            .select("""
+                    id,
+                    source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments),
+                    entity!inner(*)
+                    """)
+            .eq("entity", value: authorID.uuidString)
+            .execute()
+            .value
+        databaseLogger.info("AuthorSources successfully loaded")
+    } catch {
+        databaseLogger.error("Failed to fetch AuthorSources: \(error)")
+    }
+    return sourceCreators
+}
+
 func loadSourceFacts(entityField: String, sourceID: UUID) async -> [Fact] {
     var facts = [Fact]()
     do {

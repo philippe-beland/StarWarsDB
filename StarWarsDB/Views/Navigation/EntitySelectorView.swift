@@ -138,6 +138,10 @@ struct EntityPickerList<T: BaseEntity>: View {
             AddArtistView(name: searchContext.debouncedQuery) { entity in
                 availableEntities.append(entity as! T)
             }
+        case is Author.Type:
+            AddAuthorView(name: searchContext.debouncedQuery) { entity in
+                availableEntities.append(entity as! T)
+            }
         default:
             Text("Unsupported entity type")
         }
