@@ -201,6 +201,7 @@ func loadArcs(filter: String = "") async -> [Arc] {
     do {
         arcs =
             try await supabase
+                .schema("starwarsdb")
                 .from("arcs")
                 .select("id, name, serie(*), comments")
                 .ilike("name", pattern: "%\(filter)%")
@@ -222,6 +223,7 @@ func loadSeries(filter: String = "") async -> [Serie] {
     do {
         series =
             try await supabase
+                .schema("starwarsdb")
                 .from("series")
                 .select("*")
                 .ilike("name", pattern: "%\(filter)%")
