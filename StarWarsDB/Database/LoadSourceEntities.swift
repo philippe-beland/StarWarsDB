@@ -130,6 +130,7 @@ func loadSourceArtists(sourceID: UUID) async -> [SourceCreator<Artist>] {
     var sourceArtists = [SourceCreator<Artist>]()
     do {
         sourceArtists = try await supabase
+            .schema("starwarsdb")
             .from("source_artists")
             .select("""
                     id,
@@ -150,6 +151,7 @@ func loadSourceAuthors(sourceID: UUID) async -> [SourceCreator<Author>] {
     var sourceAuthors = [SourceCreator<Author>]()
     do {
         sourceAuthors = try await supabase
+            .schema("starwarsdb")
             .from("source_authors")
             .select("""
                     id, 
@@ -170,6 +172,7 @@ func loadArtistSources(artistID: UUID) async -> [SourceCreator<Artist>] {
     var sourceCreators = [SourceCreator<Artist>]()
     do {
         sourceCreators = try await supabase
+            .schema("starwarsdb")
             .from("source_artists")
             .select("""
                     id,
@@ -190,6 +193,7 @@ func loadAuthorSources(authorID: UUID) async -> [SourceCreator<Author>] {
     var sourceCreators = [SourceCreator<Author>]()
     do {
         sourceCreators = try await supabase
+            .schema("starwarsdb")
             .from("source_authors")
             .select("""
                     id,
@@ -210,6 +214,7 @@ func loadSourceFacts(entityField: String, sourceID: UUID) async -> [Fact] {
     var facts = [Fact]()
     do {
         facts = try await supabase
+            .schema("starwarsdb")
             .from("facts")
             .select("id, fact, source!inner(id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments), keywords")
             .eq(entityField, value: sourceID.uuidString)

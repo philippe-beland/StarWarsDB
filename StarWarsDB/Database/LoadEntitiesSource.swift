@@ -5,6 +5,7 @@ func loadCharacterSources(characterID: UUID) async -> [SourceEntity<Character>] 
     do {
         sourceEntities =
             try await supabase
+            .schema("starwarsdb")
             .from("source_characters")
             .select(
                 """
@@ -29,6 +30,7 @@ func loadCreatureSources(creatureID: UUID) async -> [SourceEntity<Creature>] {
     do {
         sourceEntities =
             try await supabase
+            .schema("starwarsdb")
             .from("source_creatures")
             .select(
                 """
@@ -53,6 +55,7 @@ func loadDroidSources(droidID: UUID) async -> [SourceEntity<Droid>] {
     do {
         sourceEntities =
             try await supabase
+            .schema("starwarsdb")
             .from("source_droids")
             .select(
                 """
@@ -78,6 +81,7 @@ func loadOrganizationSources(organizationID: UUID) async -> [SourceEntity<Organi
     do {
         sourceEntities =
             try await supabase
+            .schema("starwarsdb")
             .from("source_organizations")
             .select(
                 """
@@ -102,6 +106,7 @@ func loadPlanetSources(planetID: UUID) async -> [SourceEntity<Planet>] {
     do {
         sourceEntities =
             try await supabase
+            .schema("starwarsdb")
             .from("source_planets")
             .select(
                 """
@@ -126,6 +131,7 @@ func loadSpeciesSources(speciesID: UUID) async -> [SourceEntity<Species>] {
     do {
         sourceEntities =
             try await supabase
+            .schema("starwarsdb")
             .from("source_species")
             .select(
                 """
@@ -150,6 +156,7 @@ func loadStarshipSources(starshipID: UUID) async -> [SourceEntity<Starship>] {
     do {
         sourceEntities =
             try await supabase
+            .schema("starwarsdb")
             .from("source_starships")
             .select(
                 """
@@ -176,6 +183,7 @@ func loadStarshipModelSources(starshipModelID: UUID) async
     do {
         sourceEntities =
             try await supabase
+            .schema("starwarsdb")
             .from("source_starship_models")
             .select(
                 """
@@ -200,6 +208,7 @@ func loadMiscSources(miscID: UUID) async -> [SourceEntity<Misc>] {
     do {
         sourceEntities =
             try await supabase
+            .schema("starwarsdb")
             .from("source_misc")
             .select(
                 """

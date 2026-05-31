@@ -14,6 +14,7 @@ func loadSources(sort: String, sourceType: SourceType?, serie: Serie?, isDone: B
     
     do {
         var query = supabase
+            .schema("starwarsdb")
             .from("sources")
             .select("id, name, serie(*), number, arc(id, name, serie(*), comments), era, source_type, publication_date, universe_year, number_pages, is_done, comments")
         
